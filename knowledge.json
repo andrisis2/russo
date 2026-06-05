@@ -2,9 +2,10 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 1,
+    "versione": 2,
     "aggiornato": "2026-06-05",
-    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'."
+    "fonti": ["Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01"],
+    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc."
   },
   "alfabeto": [
     { "ru": "А а", "translit": "a",   "suono": "a come in 'casa'" },
@@ -66,7 +67,16 @@
     { "id": "v022", "tipo": "numero", "ru": "два", "translit": "dva", "it": "due", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
     { "id": "v023", "tipo": "numero", "ru": "три", "translit": "tri", "it": "tre", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
     { "id": "v024", "tipo": "numero", "ru": "четыре", "translit": "četýre", "it": "quattro", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
-    { "id": "v025", "tipo": "numero", "ru": "пять", "translit": "pjatʹ", "it": "cinque", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" }
+    { "id": "v025", "tipo": "numero", "ru": "пять", "translit": "pjatʹ", "it": "cinque", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v026", "tipo": "vocabolo", "ru": "отлично", "translit": "atlíčno", "it": "benissimo / ottimo", "tag": ["saluti", "stato", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v027", "tipo": "vocabolo", "ru": "пока", "translit": "paká", "it": "ciao (per congedarsi)", "tag": ["saluti", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v028", "tipo": "vocabolo", "ru": "плохо", "translit": "plóha", "it": "male", "tag": ["stato", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v029", "tipo": "vocabolo", "ru": "окей", "translit": "okéj", "it": "ok", "tag": ["stato", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v030", "tipo": "vocabolo", "ru": "давай", "translit": "davái", "it": "dai / forza / andiamo (invito a fare insieme)", "tag": ["espressioni", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v031", "tipo": "vocabolo", "ru": "читать", "translit": "čitátʹ", "it": "leggere", "tag": ["verbi", "video-01"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v032", "tipo": "vocabolo", "ru": "где", "translit": "gdje", "it": "dove", "tag": ["domande", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v033", "tipo": "vocabolo", "ru": "жаба", "translit": "žába", "it": "rospo / rana", "genere": "femminile", "tag": ["sostantivi", "animali", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v034", "tipo": "vocabolo", "ru": "ёж", "translit": "jož", "it": "riccio", "genere": "maschile", "tag": ["sostantivi", "animali", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" }
   ],
   "frasi": [
     { "id": "f001", "ru": "Меня зовут Андрей.", "translit": "Minjá zavút Andréj.", "it": "Mi chiamo Andrea.", "tag": ["presentarsi", "lezione-1"], "difficolta": 2, "aggiunto": "2026-06-05" },
@@ -74,7 +84,10 @@
     { "id": "f003", "ru": "Я не понимаю.", "translit": "Ja ni panimáju.", "it": "Non capisco.", "tag": ["conversazione", "lezione-1"], "difficolta": 2, "aggiunto": "2026-06-05" },
     { "id": "f004", "ru": "Это моя книга.", "translit": "Èto majá kníga.", "it": "Questo è il mio libro.", "tag": ["frasi", "lezione-2"], "difficolta": 2, "aggiunto": "2026-06-05" },
     { "id": "f005", "ru": "Где вода?", "translit": "Gdje vadá?", "it": "Dov'è l'acqua?", "tag": ["frasi", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
-    { "id": "f006", "ru": "Спасибо большое!", "translit": "Spasíbo balʹšóe!", "it": "Grazie mille!", "tag": ["cortesia", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" }
+    { "id": "f006", "ru": "Спасибо большое!", "translit": "Spasíbo balʹšóe!", "it": "Grazie mille!", "tag": ["cortesia", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f007", "ru": "Привет! Как дела?", "translit": "Privét! Kak dilá?", "it": "Ciao! Come va?", "tag": ["saluti", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f008", "ru": "Отлично, а у тебя?", "translit": "Atlíčno, a u tibjá?", "it": "Benissimo, e tu?", "tag": ["saluti", "video-01"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f009", "ru": "Давай читать!", "translit": "Davái čitátʹ!", "it": "Dai, leggiamo!", "tag": ["espressioni", "video-01"], "difficolta": 2, "aggiunto": "2026-06-05" }
   ],
   "grammatica": [
     {
@@ -101,6 +114,30 @@
         { "domanda": "lei", "risposta": "она" },
         { "domanda": "noi", "risposta": "мы" },
         { "domanda": "voi / Lei", "risposta": "вы" }
+      ]
+    },
+    {
+      "id": "g003",
+      "titolo": "Salutare in modo informale (video L01)",
+      "spiegazione": "In russo i saluti d'inizio e di fine sono DIVERSI (a differenza dell'italiano «ciao» che vale per entrambi): all'inizio si dice привет, alla fine пока. Per chiedere come va: «Как дела?» (lett. 'come [vanno gli] affari'). Si risponde отлично (benissimo), хорошо (bene), нормально/окей (così così/ok), плохо (male), e si rilancia «А у тебя?» (e tu?, lett. 'e da te?').",
+      "drill": [
+        { "domanda": "ciao (quando arrivi)", "risposta": "привет" },
+        { "domanda": "ciao (quando vai via)", "risposta": "пока" },
+        { "domanda": "come va?", "risposta": "как дела?" },
+        { "domanda": "benissimo", "risposta": "отлично" },
+        { "domanda": "male", "risposta": "плохо" },
+        { "domanda": "e tu?", "risposta": "а у тебя?" }
+      ]
+    },
+    {
+      "id": "g004",
+      "titolo": "Lettere 'iotate' Е, Ё e la Й corta (video L01)",
+      "spiegazione": "Alcune lettere russe valgono DUE suoni: Е = й+э (suono 'ye', come in 'ieri'), Ё = й+о (suono 'yo', come in 'yogurt') — ed è sempre accentata. La Й è la 'i corta': una CONSONANTE (la y di 'yogurt'), da non confondere con И che è la vocale 'i'. Per pronunciarle si alza la lingua verso il palato.",
+      "drill": [
+        { "domanda": "Suono della lettera Е", "risposta": "ye" },
+        { "domanda": "Suono della lettera Ё", "risposta": "yo" },
+        { "domanda": "La Й è una...", "risposta": "consonante (i corta)" },
+        { "domanda": "La И è una...", "risposta": "vocale (i)" }
       ]
     }
   ]
