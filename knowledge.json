@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "progetto": "Russo",
+    "livello": "A1",
+    "versione": 1,
+    "aggiornato": "2026-06-05",
+    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'."
+  },
+  "alfabeto": [
+    { "ru": "А а", "translit": "a",   "suono": "a come in 'casa'" },
+    { "ru": "Б б", "translit": "b",   "suono": "b come in 'banco'" },
+    { "ru": "В в", "translit": "v",   "suono": "v come in 'vino'" },
+    { "ru": "Г г", "translit": "g",   "suono": "g dura come in 'gatto'" },
+    { "ru": "Д д", "translit": "d",   "suono": "d come in 'dado'" },
+    { "ru": "Е е", "translit": "je",  "suono": "ie come in 'ieri'" },
+    { "ru": "Ё ё", "translit": "jo",  "suono": "io come in 'iodio' (sempre accentata)" },
+    { "ru": "Ж ж", "translit": "ž",   "suono": "j francese, come 'je'" },
+    { "ru": "З з", "translit": "z",   "suono": "s sonora come in 'rosa'" },
+    { "ru": "И и", "translit": "i",   "suono": "i come in 'vino'" },
+    { "ru": "Й й", "translit": "j",   "suono": "i breve, come la 'y' di 'yacht'" },
+    { "ru": "К к", "translit": "k",   "suono": "c dura come in 'cane'" },
+    { "ru": "Л л", "translit": "l",   "suono": "l come in 'luna'" },
+    { "ru": "М м", "translit": "m",   "suono": "m come in 'mano'" },
+    { "ru": "Н н", "translit": "n",   "suono": "n come in 'naso'" },
+    { "ru": "О о", "translit": "o",   "suono": "o come in 'sole' (atona suona 'a')" },
+    { "ru": "П п", "translit": "p",   "suono": "p come in 'pane'" },
+    { "ru": "Р р", "translit": "r",   "suono": "r vibrata come in 'roma'" },
+    { "ru": "С с", "translit": "s",   "suono": "s sorda come in 'sole'" },
+    { "ru": "Т т", "translit": "t",   "suono": "t come in 'tavolo'" },
+    { "ru": "У у", "translit": "u",   "suono": "u come in 'luna'" },
+    { "ru": "Ф ф", "translit": "f",   "suono": "f come in 'foglia'" },
+    { "ru": "Х х", "translit": "h",   "suono": "ch tedesca, come 'Bach'" },
+    { "ru": "Ц ц", "translit": "c",   "suono": "z sorda come in 'pizza'" },
+    { "ru": "Ч ч", "translit": "č",   "suono": "c dolce come in 'cena'" },
+    { "ru": "Ш ш", "translit": "š",   "suono": "sc come in 'scena'" },
+    { "ru": "Щ щ", "translit": "šč",  "suono": "sc lunga e molle" },
+    { "ru": "Ъ ъ", "translit": "ʺ",   "suono": "segno duro (non si pronuncia)" },
+    { "ru": "Ы ы", "translit": "y",   "suono": "i gutturale, suono tra i e u" },
+    { "ru": "Ь ь", "translit": "ʹ",   "suono": "segno molle (addolcisce la consonante)" },
+    { "ru": "Э э", "translit": "è",   "suono": "e aperta come in 'erba'" },
+    { "ru": "Ю ю", "translit": "ju",  "suono": "iu come in 'piuma'" },
+    { "ru": "Я я", "translit": "ja",  "suono": "ia come in 'piano'" }
+  ],
+  "voci": [
+    { "id": "v001", "tipo": "vocabolo", "ru": "привет", "translit": "privét", "it": "ciao", "tag": ["saluti", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v002", "tipo": "vocabolo", "ru": "здравствуйте", "translit": "zdrávstvujte", "it": "salve (formale)", "tag": ["saluti", "lezione-1"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v003", "tipo": "vocabolo", "ru": "спасибо", "translit": "spasíbo", "it": "grazie", "tag": ["cortesia", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v004", "tipo": "vocabolo", "ru": "пожалуйста", "translit": "požálujsta", "it": "prego / per favore", "tag": ["cortesia", "lezione-1"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v005", "tipo": "vocabolo", "ru": "да", "translit": "da", "it": "sì", "tag": ["base", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v006", "tipo": "vocabolo", "ru": "нет", "translit": "njet", "it": "no", "tag": ["base", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v007", "tipo": "vocabolo", "ru": "я", "translit": "ja", "it": "io", "tag": ["pronomi", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v008", "tipo": "vocabolo", "ru": "ты", "translit": "ty", "it": "tu", "tag": ["pronomi", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v009", "tipo": "vocabolo", "ru": "он", "translit": "on", "it": "lui", "tag": ["pronomi", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v010", "tipo": "vocabolo", "ru": "она", "translit": "aná", "it": "lei", "tag": ["pronomi", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v011", "tipo": "vocabolo", "ru": "вода", "translit": "vadá", "it": "acqua", "genere": "femminile", "tag": ["sostantivi", "cibo", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v012", "tipo": "vocabolo", "ru": "хлеб", "translit": "hljeb", "it": "pane", "genere": "maschile", "tag": ["sostantivi", "cibo", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v013", "tipo": "vocabolo", "ru": "дом", "translit": "dom", "it": "casa", "genere": "maschile", "tag": ["sostantivi", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v014", "tipo": "vocabolo", "ru": "книга", "translit": "kníga", "it": "libro", "genere": "femminile", "tag": ["sostantivi", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v015", "tipo": "vocabolo", "ru": "друг", "translit": "drug", "it": "amico", "genere": "maschile", "tag": ["sostantivi", "persone", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v016", "tipo": "vocabolo", "ru": "мама", "translit": "máma", "it": "mamma", "genere": "femminile", "tag": ["sostantivi", "famiglia", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v017", "tipo": "vocabolo", "ru": "окно", "translit": "aknó", "it": "finestra", "genere": "neutro", "tag": ["sostantivi", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v018", "tipo": "vocabolo", "ru": "имя", "translit": "ímja", "it": "nome", "genere": "neutro", "tag": ["sostantivi", "lezione-2"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v019", "tipo": "vocabolo", "ru": "хорошо", "translit": "harašó", "it": "bene", "tag": ["avverbi", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v020", "tipo": "vocabolo", "ru": "сегодня", "translit": "sevódnja", "it": "oggi", "tag": ["tempo", "lezione-3"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v021", "tipo": "numero", "ru": "один", "translit": "adín", "it": "uno", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v022", "tipo": "numero", "ru": "два", "translit": "dva", "it": "due", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v023", "tipo": "numero", "ru": "три", "translit": "tri", "it": "tre", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v024", "tipo": "numero", "ru": "четыре", "translit": "četýre", "it": "quattro", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v025", "tipo": "numero", "ru": "пять", "translit": "pjatʹ", "it": "cinque", "tag": ["numeri", "lezione-3"], "difficolta": 1, "aggiunto": "2026-06-05" }
+  ],
+  "frasi": [
+    { "id": "f001", "ru": "Меня зовут Андрей.", "translit": "Minjá zavút Andréj.", "it": "Mi chiamo Andrea.", "tag": ["presentarsi", "lezione-1"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f002", "ru": "Как дела?", "translit": "Kak dilá?", "it": "Come va?", "tag": ["conversazione", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f003", "ru": "Я не понимаю.", "translit": "Ja ni panimáju.", "it": "Non capisco.", "tag": ["conversazione", "lezione-1"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f004", "ru": "Это моя книга.", "translit": "Èto majá kníga.", "it": "Questo è il mio libro.", "tag": ["frasi", "lezione-2"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f005", "ru": "Где вода?", "translit": "Gdje vadá?", "it": "Dov'è l'acqua?", "tag": ["frasi", "lezione-2"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f006", "ru": "Спасибо большое!", "translit": "Spasíbo balʹšóe!", "it": "Grazie mille!", "tag": ["cortesia", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" }
+  ],
+  "grammatica": [
+    {
+      "id": "g001",
+      "titolo": "Il genere dei sostantivi",
+      "spiegazione": "In russo i sostantivi hanno tre generi, riconoscibili dalla terminazione al nominativo: consonante → maschile (дом), -а/-я → femminile (вода, мама), -о/-е → neutro (окно). Eccezioni: имя (nome) finisce in -я ma è neutro.",
+      "drill": [
+        { "domanda": "дом", "risposta": "maschile" },
+        { "domanda": "вода", "risposta": "femminile" },
+        { "domanda": "окно", "risposta": "neutro" },
+        { "domanda": "книга", "risposta": "femminile" },
+        { "domanda": "хлеб", "risposta": "maschile" },
+        { "domanda": "имя", "risposta": "neutro" }
+      ]
+    },
+    {
+      "id": "g002",
+      "titolo": "I pronomi personali",
+      "spiegazione": "я (io), ты (tu informale), он (lui), она (lei), оно (esso/neutro), мы (noi), вы (voi / Lei formale), они (loro). Il verbo 'essere' al presente si omette: 'Я студент' = 'Io [sono] studente'.",
+      "drill": [
+        { "domanda": "io", "risposta": "я" },
+        { "domanda": "tu", "risposta": "ты" },
+        { "domanda": "lui", "risposta": "он" },
+        { "domanda": "lei", "risposta": "она" },
+        { "domanda": "noi", "risposta": "мы" },
+        { "domanda": "voi / Lei", "risposta": "вы" }
+      ]
+    }
+  ]
+}

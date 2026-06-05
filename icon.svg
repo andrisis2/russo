@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0e1116"/>
+  <rect x="56" y="150" width="400" height="70" rx="8" fill="#ffffff"/>
+  <rect x="56" y="221" width="400" height="70" fill="#0039a6"/>
+  <rect x="56" y="292" width="400" height="70" rx="8" fill="#d52b1e"/>
+  <text x="256" y="300" font-family="Georgia, serif" font-size="150" font-weight="700"
+        fill="#e64b5d" text-anchor="middle" dominant-baseline="central"
+        style="paint-order:stroke;stroke:#0e1116;stroke-width:14px">Я</text>
+</svg>
