@@ -69,7 +69,8 @@ Legenda: ✅ fatto · ⬜ da fare · ⏪ **PROSSIMO**
 
 ## CONTENUTI GIÀ NELL'APP (per non duplicare id)
 - `knowledge.json` **versione 4** — **87 voci** (ultimo id `v087`), **23 frasi** (ultimo `f023`), **12 regole** quiz (ultimo `g012`).
-- **Sezione `riferimento`** (chiave a parte): 8 schede di consultazione "Regole grammaticali" (`r001`–`r008`: sei casi, pronomi declinati, possessivi, verbi al presente, passato, aspetto, plurale, numeri). Generata da `scripts/add_riferimento.py` (idempotente). NON sono drill: solo display + tap-per-ascoltare. Resa in `index.html` da `runReference()`. **Service worker a `russo-v2`** (se modifichi `index.html` ricordati di bumpare la cache in `sw.js`, altrimenti i client di ritorno non vedono il nuovo file).
+- **Sezione `riferimento`** (chiave a parte): 8 schede di consultazione "Regole grammaticali" (`r001`–`r008`: sei casi, pronomi declinati, possessivi, verbi al presente, passato, aspetto, plurale, numeri). Generata da `scripts/add_riferimento.py` (idempotente). NON sono drill: solo display + tap-per-ascoltare. Resa in `index.html` da `runReference()`. **Service worker a `russo-v3`** (se modifichi `index.html` ricordati di bumpare la cache in `sw.js`, altrimenti i client di ritorno non vedono il nuovo file).
+- **Tema grafico: chiaro** (light theme, palette in `:root` di `index.html`, `theme_color` bianco in `manifest.json`). Card bianche con ombre, icone in badge, titolo a gradiente rosso→blu.
 - Lezioni elaborate: **L01, L02, L03, 1000-parole, L04, L05**.
 - Prossimi id da usare: voci `v088…`, frasi `f024…`, grammatica `g013…`.
 
