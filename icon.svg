@@ -1,87 +1,116 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- sfondo azzurro (richiama la tavoletta Alёnka) -->
-  <rect width="512" height="512" rx="96" fill="#a9dcec"/>
-  <rect width="512" height="512" rx="96" fill="url(#sky)"/>
   <defs>
-    <radialGradient id="sky" cx="50%" cy="38%" r="75%">
-      <stop offset="0%" stop-color="#cdeefb"/>
-      <stop offset="100%" stop-color="#9ad2e6"/>
+    <radialGradient id="sky" cx="50%" cy="36%" r="78%">
+      <stop offset="0%" stop-color="#e3f4fd"/>
+      <stop offset="55%" stop-color="#bfe6f6"/>
+      <stop offset="100%" stop-color="#9fd4ea"/>
     </radialGradient>
-    <clipPath id="round"><rect width="512" height="512" rx="96"/></clipPath>
+    <radialGradient id="cheek" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5a7ad"/>
+      <stop offset="100%" stop-color="#f5a7ad" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scarfSh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#7e2f33" stop-opacity="0.30"/>
+    </linearGradient>
+    <radialGradient id="faceSh" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#fbdcc4"/>
+      <stop offset="100%" stop-color="#f1c3a2"/>
+    </radialGradient>
+    <clipPath id="round"><rect width="512" height="512" rx="104"/></clipPath>
   </defs>
 
   <g clip-path="url(#round)">
-    <!-- fazzoletto (scarf) marrone-rosso che incornicia il viso e ricade fino in basso -->
-    <path d="M 92,520 C 92,300 108,176 198,118 C 230,96 282,96 314,118
-             C 404,176 420,300 420,520 Z" fill="#b9543b"/>
-    <path d="M 92,520 C 92,300 108,176 198,118 C 230,96 282,96 314,118
-             C 404,176 420,300 420,520 Z" fill="url(#scarf)" opacity="0.25"/>
-    <defs>
-      <linearGradient id="scarf" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#ffffff"/>
-        <stop offset="100%" stop-color="#7d2f1d"/>
-      </linearGradient>
-    </defs>
+    <!-- sfondo azzurro -->
+    <rect width="512" height="512" fill="url(#sky)"/>
+    <ellipse cx="256" cy="250" rx="190" ry="200" fill="#ffffff" opacity="0.18"/>
 
-    <!-- pois bianchi sul fazzoletto -->
-    <g fill="#fdf3ec" opacity="0.9">
-      <circle cx="256" cy="120" r="11"/>
-      <circle cx="200" cy="146" r="9"/>
-      <circle cx="312" cy="146" r="9"/>
-      <circle cx="158" cy="210" r="10"/>
-      <circle cx="354" cy="210" r="10"/>
-      <circle cx="150" cy="402" r="12"/>
-      <circle cx="256" cy="430" r="13"/>
-      <circle cx="362" cy="402" r="12"/>
-      <circle cx="116" cy="470" r="11"/>
-      <circle cx="396" cy="470" r="11"/>
-      <circle cx="206" cy="466" r="10"/>
-      <circle cx="306" cy="466" r="10"/>
+    <!-- fazzoletto (platok) -->
+    <path d="M 70,524 C 62,360 82,198 176,126 C 212,98 300,98 336,126
+             C 430,198 450,360 442,524 Z" fill="#d05f66"/>
+    <path d="M 70,524 C 62,360 82,198 176,126 C 212,98 300,98 336,126
+             C 430,198 450,360 442,524 Z" fill="url(#scarfSh)"/>
+
+    <!-- pois bianchi -->
+    <g fill="#fdf2ec">
+      <circle cx="256" cy="128" r="10"/>
+      <circle cx="198" cy="150" r="8"/>
+      <circle cx="314" cy="150" r="8"/>
+      <circle cx="150" cy="216" r="9"/>
+      <circle cx="362" cy="216" r="9"/>
+      <circle cx="138" cy="330" r="9"/>
+      <circle cx="374" cy="330" r="9"/>
+      <circle cx="150" cy="420" r="11"/>
+      <circle cx="256" cy="446" r="12"/>
+      <circle cx="362" cy="420" r="11"/>
+      <circle cx="112" cy="492" r="10"/>
+      <circle cx="400" cy="492" r="10"/>
+      <circle cx="210" cy="486" r="9"/>
+      <circle cx="302" cy="486" r="9"/>
     </g>
 
-    <!-- nodo del fazzoletto sotto il mento -->
-    <g fill="#a8482f">
-      <ellipse cx="226" cy="372" rx="30" ry="20" transform="rotate(-18 226 372)"/>
-      <ellipse cx="288" cy="372" rx="30" ry="20" transform="rotate(18 288 372)"/>
-      <circle cx="256" cy="368" r="18"/>
+    <!-- nodo sotto il mento -->
+    <g fill="#bb5057">
+      <ellipse cx="224" cy="388" rx="32" ry="21" transform="rotate(-20 224 388)"/>
+      <ellipse cx="290" cy="388" rx="32" ry="21" transform="rotate(20 290 388)"/>
     </g>
+    <circle cx="257" cy="382" r="19" fill="#c8565d"/>
 
-    <!-- bordo crema del fazzoletto attorno al viso -->
-    <ellipse cx="256" cy="250" rx="108" ry="116" fill="#fdf3ec"/>
+    <!-- bordo crema attorno al viso -->
+    <ellipse cx="256" cy="256" rx="115" ry="123" fill="#fbeee2"/>
 
     <!-- viso -->
-    <ellipse cx="256" cy="252" rx="92" ry="100" fill="#f7d2b6"/>
+    <ellipse cx="256" cy="258" rx="99" ry="107" fill="url(#faceSh)"/>
 
-    <!-- frangia bionda sotto il bordo del fazzoletto -->
-    <path d="M 182,182 Q 256,150 330,182 Q 332,200 312,198 Q 300,214 286,196
-             Q 272,214 256,196 Q 240,214 226,196 Q 212,214 200,198 Q 180,200 182,182 Z"
-          fill="#f0c46a"/>
+    <!-- orecchie -->
+    <circle cx="158" cy="272" r="15" fill="#f1c3a2"/>
+    <circle cx="354" cy="272" r="15" fill="#f1c3a2"/>
 
-    <!-- guance rosee -->
-    <circle cx="198" cy="282" r="20" fill="#f3a3a0" opacity="0.65"/>
-    <circle cx="314" cy="282" r="20" fill="#f3a3a0" opacity="0.65"/>
+    <!-- frangia bionda -->
+    <path d="M 168,196 C 168,158 210,140 256,140 C 302,140 344,158 344,196
+             C 330,196 326,176 312,178 C 304,200 286,196 282,178
+             C 274,202 256,200 250,180 C 242,202 224,200 220,180
+             C 214,198 198,196 200,180 C 186,178 182,196 168,196 Z"
+          fill="#f1ca74"/>
+    <path d="M 256,140 C 302,140 344,158 344,196 C 332,194 328,178 314,178
+             C 306,196 290,194 286,180 L 282,160 C 274,150 264,144 256,143 Z"
+          fill="#f7d98f" opacity="0.7"/>
+
+    <!-- guance -->
+    <circle cx="196" cy="296" r="26" fill="url(#cheek)"/>
+    <circle cx="316" cy="296" r="26" fill="url(#cheek)"/>
 
     <!-- sopracciglia -->
-    <path d="M 204,222 Q 222,215 240,221" stroke="#c79356" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-    <path d="M 272,221 Q 290,215 308,222" stroke="#c79356" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+    <path d="M 200,232 Q 222,224 244,231" stroke="#cf9a55" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M 268,231 Q 290,224 312,232" stroke="#cf9a55" stroke-width="5" fill="none" stroke-linecap="round"/>
 
     <!-- occhi -->
     <g>
-      <ellipse cx="222" cy="246" rx="18" ry="15" fill="#ffffff"/>
-      <ellipse cx="290" cy="246" rx="18" ry="15" fill="#ffffff"/>
-      <circle cx="224" cy="248" r="9" fill="#3a78b5"/>
-      <circle cx="288" cy="248" r="9" fill="#3a78b5"/>
-      <circle cx="224" cy="248" r="4.5" fill="#1c2a36"/>
-      <circle cx="288" cy="248" r="4.5" fill="#1c2a36"/>
-      <circle cx="221" cy="244" r="2.5" fill="#ffffff"/>
-      <circle cx="285" cy="244" r="2.5" fill="#ffffff"/>
+      <!-- bianco -->
+      <ellipse cx="220" cy="262" rx="22" ry="20" fill="#ffffff"/>
+      <ellipse cx="292" cy="262" rx="22" ry="20" fill="#ffffff"/>
+      <!-- iride -->
+      <circle cx="222" cy="264" r="14" fill="#4a86c5"/>
+      <circle cx="290" cy="264" r="14" fill="#4a86c5"/>
+      <circle cx="222" cy="264" r="7" fill="#21323f"/>
+      <circle cx="290" cy="264" r="7" fill="#21323f"/>
+      <!-- luci -->
+      <circle cx="217" cy="258" r="4.5" fill="#ffffff"/>
+      <circle cx="285" cy="258" r="4.5" fill="#ffffff"/>
+      <circle cx="227" cy="269" r="2.2" fill="#ffffff" opacity="0.8"/>
+      <circle cx="295" cy="269" r="2.2" fill="#ffffff" opacity="0.8"/>
+      <!-- ciglia superiori -->
+      <path d="M 200,254 Q 220,243 242,253" stroke="#5a3b2a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M 270,253 Q 292,243 312,254" stroke="#5a3b2a" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <path d="M 240,252 l 6,-5 M 272,252 l -6,-5" stroke="#5a3b2a" stroke-width="3" stroke-linecap="round"/>
     </g>
 
-    <!-- naso -->
-    <path d="M 256,258 Q 250,278 256,284 Q 262,284 264,280" stroke="#d9a07e" stroke-width="4"
-          fill="none" stroke-linecap="round"/>
+    <!-- nasino -->
+    <ellipse cx="256" cy="290" rx="6" ry="4.5" fill="#eab791"/>
 
-    <!-- bocca sorridente -->
-    <path d="M 232,302 Q 256,322 280,302 Q 256,312 232,302 Z" fill="#d8584f"/>
+    <!-- bocca -->
+    <path d="M 234,308 Q 256,330 278,308 Q 256,318 234,308 Z" fill="#d76a6c"/>
+    <path d="M 240,310 Q 256,320 272,310 Q 256,314 240,310 Z" fill="#f4a3a0" opacity="0.7"/>
   </g>
 </svg>
