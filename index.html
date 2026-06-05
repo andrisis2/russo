@@ -94,6 +94,37 @@
   .gram-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;width:100%;margin-bottom:14px}
   .gram-card h3{margin:0 0 8px;font-size:17px;color:var(--accent)}
   .gram-card p{margin:0;font-size:14.5px;line-height:1.6;color:var(--text)}
+
+  /* tile in evidenza (full width) */
+  .tile.wide{grid-column:1/-1;flex-direction:row;align-items:center;min-height:auto;gap:16px}
+  .tile.wide .ico{font-size:34px}
+  .tile.wide .txt{display:flex;flex-direction:column;gap:6px}
+
+  /* ---------- Regole grammaticali (riferimento) ---------- */
+  .ref-nav{display:flex;gap:8px;overflow-x:auto;padding:2px 0 10px;width:100%;-webkit-overflow-scrolling:touch}
+  .ref-nav::-webkit-scrollbar{height:0}
+  .ref-chip{flex:0 0 auto;background:var(--card2);border:1px solid var(--line);color:var(--muted);
+    border-radius:20px;padding:7px 13px;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.12s}
+  .ref-chip:hover{border-color:var(--accent);color:var(--text)}
+  .ref-sec{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;width:100%;margin-bottom:16px;scroll-margin-top:74px}
+  .ref-sec .head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .ref-sec .head .ico{font-size:26px;line-height:1}
+  .ref-sec h3{margin:0;font-size:18px;color:var(--accent)}
+  .ref-sec .sub{font-size:12.5px;color:var(--muted);margin:0 0 14px}
+  .ref-sec p.txt{font-size:14px;line-height:1.6;margin:0 0 14px}
+  .ref-note{background:var(--card2);border-left:3px solid var(--accent2);border-radius:8px;
+    padding:10px 13px;font-size:13.5px;line-height:1.55;color:var(--text);margin:0 0 12px}
+  .ref-note b{color:#fff}
+  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 14px;border-radius:12px;border:1px solid var(--line)}
+  table.ref{border-collapse:collapse;width:100%;font-size:14px;min-width:max-content}
+  table.ref th,table.ref td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+  table.ref thead th{background:var(--card2);color:var(--muted);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;position:sticky;top:0}
+  table.ref tbody tr:last-child td{border-bottom:none}
+  table.ref tbody td:first-child{color:var(--muted);font-weight:600}
+  table.ref td.ru{color:var(--text);font-weight:600}
+  table.ref td.ru.tap{cursor:pointer}
+  table.ref td.ru.tap:hover{color:var(--accent2)}
+  table.ref td.ru.tap:active{color:var(--accent)}
 </style>
 </head>
 <body>
@@ -170,7 +201,7 @@ function renderHome(){
   const tiles = [
     ["🃏","Flashcard","Vocaboli e frasi RU↔IT con ripetizione dilazionata","flash"],
     ["🔤","Cirillico","Riconosci lettere e leggi parole in cirillico","cyr"],
-    ["📐","Grammatica","Generi, pronomi e regole di base","gram"],
+    ["📐","Grammatica","Quiz su generi, pronomi e regole","gram"],
     ["💬","Frasi & ascolto","Completa la frase e ascolta la pronuncia","phrase"],
   ];
   tiles.forEach(([ico,t,d,mode])=>{
@@ -181,6 +212,17 @@ function renderHome(){
         <div class="d">${d}</div>
       </button>`)).onclick = ()=>start(mode);
   });
+  // scheda in evidenza: consultazione delle regole
+  if(DB.riferimento && DB.riferimento.length){
+    grid.appendChild($(`
+      <button class="tile wide">
+        <div class="ico">📖</div>
+        <div class="txt">
+          <div class="t">Regole grammaticali</div>
+          <div class="d">Pronomi declinati, verbi coniugati e regole di base — da ripassare quando vuoi</div>
+        </div>
+      </button>`)).onclick = ()=>start("ref");
+  }
   app.appendChild(grid);
   app.appendChild($(`<p class="muted" style="margin-top:22px">Livello A1 · ${DB.meta.aggiornato}<br>Apri il menu del browser e scegli <b>“Aggiungi a schermata Home”</b> per usarla come app.</p>`));
 }
@@ -200,6 +242,67 @@ function start(mode){
   if(mode==="cyr") return runCyr();
   if(mode==="gram") return runGram();
   if(mode==="phrase") return runPhrase();
+  if(mode==="ref") return runReference();
+}
+
+// ---------- 0. REGOLE GRAMMATICALI (consultazione) ----------
+const onlyCyrillic = s => (s.match(/[а-яёА-ЯЁ\s]+/g)||[]).join(" ").replace(/\s+/g," ").trim();
+const hasCyrillic = s => /[а-яё]/i.test(s);
+
+function runReference(){
+  const stage = header();
+  const secs = DB.riferimento;
+
+  // navigazione a chip per saltare alle sezioni
+  const nav = $(`<div class="ref-nav"></div>`);
+  secs.forEach(s=>{
+    const chip = $(`<button class="ref-chip">${s.icona||""} ${s.categoria}</button>`);
+    chip.onclick = ()=>document.getElementById("sec-"+s.id).scrollIntoView({behavior:"smooth",block:"start"});
+    nav.appendChild(chip);
+  });
+  stage.appendChild(nav);
+
+  secs.forEach(s=>{
+    const sec = $(`<section class="ref-sec" id="sec-${s.id}"></section>`);
+    sec.appendChild($(`
+      <div class="head">
+        <span class="ico">${s.icona||"📌"}</span>
+        <h3>${s.categoria}</h3>
+      </div>`));
+    if(s.sottotitolo) sec.appendChild($(`<p class="sub">${s.sottotitolo}</p>`));
+
+    (s.blocchi||[]).forEach(b=>{
+      if(b.tipo==="testo"){
+        sec.appendChild($(`<p class="txt">${b.testo}</p>`));
+      } else if(b.tipo==="nota"){
+        sec.appendChild($(`<div class="ref-note">💡 ${b.testo}</div>`));
+      } else if(b.tipo==="tabella"){
+        const wrap = $(`<div class="tbl-wrap"></div>`);
+        const t = $(`<table class="ref"></table>`);
+        const thead = $(`<thead></thead>`);
+        const trh = $(`<tr></tr>`);
+        b.intestazioni.forEach(h=>trh.appendChild($(`<th>${h}</th>`)));
+        thead.appendChild(trh); t.appendChild(thead);
+        const tbody = $(`<tbody></tbody>`);
+        b.righe.forEach(r=>{
+          const tr = $(`<tr></tr>`);
+          r.forEach((cell,ci)=>{
+            const cy = ci>0 && hasCyrillic(cell);   // 1ª colonna = etichetta italiana
+            const td = $(`<td class="${cy?'ru tap':''}">${cell}</td>`);
+            if(cy){ const say=onlyCyrillic(cell); td.onclick=()=>speak(say); }
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+        t.appendChild(tbody); wrap.appendChild(t); sec.appendChild(wrap);
+      }
+    });
+    stage.appendChild(sec);
+  });
+
+  const home = $(`<button class="btn" style="margin-top:4px">↑ Torna su</button>`);
+  home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
+  stage.appendChild(home);
 }
 
 function runFlash(){

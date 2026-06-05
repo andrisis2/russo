@@ -1,5 +1,5 @@
 // Service worker minimale: cache offline dell'app e dei dati
-const CACHE = "russo-v1";
+const CACHE = "russo-v2";
 const ASSETS = ["./", "./index.html", "./knowledge.json", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", e => {
