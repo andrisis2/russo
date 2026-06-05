@@ -2,9 +2,9 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 2,
+    "versione": 3,
     "aggiornato": "2026-06-05",
-    "fonti": ["Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01"],
+    "fonti": ["Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"],
     "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc."
   },
   "alfabeto": [
@@ -76,7 +76,65 @@
     { "id": "v031", "tipo": "vocabolo", "ru": "читать", "translit": "čitátʹ", "it": "leggere", "tag": ["verbi", "video-01"], "difficolta": 2, "aggiunto": "2026-06-05" },
     { "id": "v032", "tipo": "vocabolo", "ru": "где", "translit": "gdje", "it": "dove", "tag": ["domande", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
     { "id": "v033", "tipo": "vocabolo", "ru": "жаба", "translit": "žába", "it": "rospo / rana", "genere": "femminile", "tag": ["sostantivi", "animali", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
-    { "id": "v034", "tipo": "vocabolo", "ru": "ёж", "translit": "jož", "it": "riccio", "genere": "maschile", "tag": ["sostantivi", "animali", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" }
+    { "id": "v034", "tipo": "vocabolo", "ru": "ёж", "translit": "jož", "it": "riccio", "genere": "maschile", "tag": ["sostantivi", "animali", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
+
+    { "id": "v035", "tipo": "vocabolo", "ru": "здравствуй", "translit": "zdrávstvuj", "it": "salve (semi-formale)", "tag": ["saluti", "video-02"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v036", "tipo": "vocabolo", "ru": "до свидания", "translit": "da svidánija", "it": "arrivederci (formale)", "tag": ["saluti", "video-02"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v037", "tipo": "vocabolo", "ru": "вы", "translit": "vy", "it": "voi / Lei (formale)", "tag": ["pronomi", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v038", "tipo": "vocabolo", "ru": "торт", "translit": "tort", "it": "torta", "genere": "maschile", "tag": ["sostantivi", "cibo", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v039", "tipo": "vocabolo", "ru": "папа", "translit": "pápa", "it": "papà", "genere": "maschile", "tag": ["sostantivi", "famiglia", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v040", "tipo": "vocabolo", "ru": "сестра", "translit": "sistrá", "it": "sorella", "genere": "femminile", "tag": ["sostantivi", "famiglia", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v041", "tipo": "vocabolo", "ru": "брат", "translit": "brat", "it": "fratello", "genere": "maschile", "tag": ["sostantivi", "famiglia", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v042", "tipo": "vocabolo", "ru": "урок", "translit": "urók", "it": "lezione", "genere": "maschile", "tag": ["sostantivi", "scuola", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v043", "tipo": "vocabolo", "ru": "молодец", "translit": "maladéc", "it": "bravo / in gamba", "tag": ["espressioni", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+
+    { "id": "v044", "tipo": "vocabolo", "ru": "это", "translit": "éto", "it": "questo è / questa è", "tag": ["base", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v045", "tipo": "vocabolo", "ru": "мой", "translit": "moj", "it": "mio (maschile)", "tag": ["possessivi", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v046", "tipo": "vocabolo", "ru": "моя", "translit": "majá", "it": "mia (femminile)", "tag": ["possessivi", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v047", "tipo": "vocabolo", "ru": "твой", "translit": "tvoj", "it": "tuo (maschile)", "tag": ["possessivi", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v048", "tipo": "vocabolo", "ru": "твоя", "translit": "tvajá", "it": "tua (femminile)", "tag": ["possessivi", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v049", "tipo": "vocabolo", "ru": "семья", "translit": "simjá", "it": "famiglia", "genere": "femminile", "tag": ["sostantivi", "famiglia", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v050", "tipo": "vocabolo", "ru": "собака", "translit": "sabáka", "it": "cane", "genere": "femminile", "tag": ["sostantivi", "animali", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v051", "tipo": "vocabolo", "ru": "машина", "translit": "mašína", "it": "macchina / auto", "genere": "femminile", "tag": ["sostantivi", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v052", "tipo": "vocabolo", "ru": "фамилия", "translit": "família", "it": "cognome", "genere": "femminile", "tag": ["sostantivi", "video-03"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v053", "tipo": "vocabolo", "ru": "нормально", "translit": "normálʹno", "it": "normale / così così", "tag": ["stato", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+
+    { "id": "v054", "tipo": "vocabolo", "ru": "телефон", "translit": "tilifón", "it": "telefono", "genere": "maschile", "tag": ["sostantivi", "cognati", "video-1000"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v055", "tipo": "vocabolo", "ru": "компьютер", "translit": "kampjúter", "it": "computer", "genere": "maschile", "tag": ["sostantivi", "cognati", "video-1000"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v056", "tipo": "vocabolo", "ru": "гитара", "translit": "gitára", "it": "chitarra", "genere": "femminile", "tag": ["sostantivi", "cognati", "video-1000"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v057", "tipo": "vocabolo", "ru": "физика", "translit": "fízika", "it": "fisica", "genere": "femminile", "tag": ["sostantivi", "cognati", "video-1000"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v058", "tipo": "vocabolo", "ru": "дизайнер", "translit": "dizájner", "it": "designer", "genere": "maschile", "tag": ["professioni", "cognati", "video-1000"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v059", "tipo": "vocabolo", "ru": "хирург", "translit": "hirúrg", "it": "chirurgo", "genere": "maschile", "tag": ["professioni", "cognati", "video-1000"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v060", "tipo": "vocabolo", "ru": "жираф", "translit": "žiráf", "it": "giraffa", "genere": "maschile", "tag": ["sostantivi", "animali", "cognati", "video-1000"], "difficolta": 1, "aggiunto": "2026-06-05" },
+
+    { "id": "v061", "tipo": "vocabolo", "ru": "кто", "translit": "kto", "it": "chi", "tag": ["domande", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v062", "tipo": "vocabolo", "ru": "программист", "translit": "pragrammíst", "it": "programmatore", "genere": "maschile", "tag": ["professioni", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v063", "tipo": "vocabolo", "ru": "студент", "translit": "studént", "it": "studente", "genere": "maschile", "tag": ["professioni", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v064", "tipo": "vocabolo", "ru": "студентка", "translit": "studéntka", "it": "studentessa", "genere": "femminile", "tag": ["professioni", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v065", "tipo": "vocabolo", "ru": "врач", "translit": "vrač", "it": "medico", "genere": "maschile", "tag": ["professioni", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v066", "tipo": "vocabolo", "ru": "учитель", "translit": "učítelʹ", "it": "insegnante (uomo)", "genere": "maschile", "tag": ["professioni", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v067", "tipo": "vocabolo", "ru": "учительница", "translit": "učítelʹnica", "it": "insegnante (donna)", "genere": "femminile", "tag": ["professioni", "video-04"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v068", "tipo": "vocabolo", "ru": "журналист", "translit": "žurnalíst", "it": "giornalista", "genere": "maschile", "tag": ["professioni", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v069", "tipo": "vocabolo", "ru": "инженер", "translit": "inžinér", "it": "ingegnere", "genere": "maschile", "tag": ["professioni", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v070", "tipo": "vocabolo", "ru": "мы", "translit": "my", "it": "noi", "tag": ["pronomi", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v071", "tipo": "vocabolo", "ru": "они", "translit": "aní", "it": "loro", "tag": ["pronomi", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v072", "tipo": "vocabolo", "ru": "сыр", "translit": "syr", "it": "formaggio", "genere": "maschile", "tag": ["sostantivi", "cibo", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v073", "tipo": "vocabolo", "ru": "рыба", "translit": "rýba", "it": "pesce", "genere": "femminile", "tag": ["sostantivi", "cibo", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+
+    { "id": "v074", "tipo": "vocabolo", "ru": "извините", "translit": "izviníte", "it": "mi scusi (formale)", "tag": ["cortesia", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v075", "tipo": "vocabolo", "ru": "что", "translit": "što", "it": "che cosa", "tag": ["domande", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v076", "tipo": "vocabolo", "ru": "университет", "translit": "universitét", "it": "università", "genere": "maschile", "tag": ["sostantivi", "scuola", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v077", "tipo": "vocabolo", "ru": "аудитория", "translit": "auditórija", "it": "aula", "genere": "femminile", "tag": ["sostantivi", "scuola", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v078", "tipo": "vocabolo", "ru": "преподаватель", "translit": "pripadavátelʹ", "it": "docente (universitario)", "genere": "maschile", "tag": ["professioni", "scuola", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v079", "tipo": "vocabolo", "ru": "вот", "translit": "vot", "it": "ecco", "tag": ["base", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v080", "tipo": "vocabolo", "ru": "тоже", "translit": "tóže", "it": "anche", "tag": ["base", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v081", "tipo": "vocabolo", "ru": "очень", "translit": "óčenʹ", "it": "molto", "tag": ["avverbi", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v082", "tipo": "vocabolo", "ru": "стол", "translit": "stol", "it": "tavolo", "genere": "maschile", "tag": ["sostantivi", "scuola", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v083", "tipo": "vocabolo", "ru": "стул", "translit": "stul", "it": "sedia", "genere": "maschile", "tag": ["sostantivi", "scuola", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v084", "tipo": "vocabolo", "ru": "ручка", "translit": "rúčka", "it": "penna", "genere": "femminile", "tag": ["sostantivi", "scuola", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "v085", "tipo": "vocabolo", "ru": "рюкзак", "translit": "rjukzák", "it": "zaino", "genere": "maschile", "tag": ["sostantivi", "scuola", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v086", "tipo": "vocabolo", "ru": "ночь", "translit": "noč", "it": "notte", "genere": "femminile", "tag": ["sostantivi", "tempo", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "v087", "tipo": "vocabolo", "ru": "кот", "translit": "kot", "it": "gatto", "genere": "maschile", "tag": ["sostantivi", "animali", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" }
   ],
   "frasi": [
     { "id": "f001", "ru": "Меня зовут Андрей.", "translit": "Minjá zavút Andréj.", "it": "Mi chiamo Andrea.", "tag": ["presentarsi", "lezione-1"], "difficolta": 2, "aggiunto": "2026-06-05" },
@@ -87,7 +145,21 @@
     { "id": "f006", "ru": "Спасибо большое!", "translit": "Spasíbo balʹšóe!", "it": "Grazie mille!", "tag": ["cortesia", "lezione-1"], "difficolta": 1, "aggiunto": "2026-06-05" },
     { "id": "f007", "ru": "Привет! Как дела?", "translit": "Privét! Kak dilá?", "it": "Ciao! Come va?", "tag": ["saluti", "video-01"], "difficolta": 1, "aggiunto": "2026-06-05" },
     { "id": "f008", "ru": "Отлично, а у тебя?", "translit": "Atlíčno, a u tibjá?", "it": "Benissimo, e tu?", "tag": ["saluti", "video-01"], "difficolta": 2, "aggiunto": "2026-06-05" },
-    { "id": "f009", "ru": "Давай читать!", "translit": "Davái čitátʹ!", "it": "Dai, leggiamo!", "tag": ["espressioni", "video-01"], "difficolta": 2, "aggiunto": "2026-06-05" }
+    { "id": "f009", "ru": "Давай читать!", "translit": "Davái čitátʹ!", "it": "Dai, leggiamo!", "tag": ["espressioni", "video-01"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f010", "ru": "Здравствуйте! Как дела?", "translit": "Zdrávstvujte! Kak dilá?", "it": "Salve! Come sta? (formale)", "tag": ["saluti", "video-02"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f011", "ru": "А у вас?", "translit": "A u vas?", "it": "E Lei? (formale)", "tag": ["saluti", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f012", "ru": "До свидания!", "translit": "Da svidánija!", "it": "Arrivederci!", "tag": ["saluti", "video-02"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f013", "ru": "Это твоя семья?", "translit": "Éto tvajá simjá?", "it": "Questa è la tua famiglia?", "tag": ["famiglia", "video-03"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f014", "ru": "Это мой брат.", "translit": "Éto moj brat.", "it": "Questo è mio fratello.", "tag": ["famiglia", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f015", "ru": "Это моя собака.", "translit": "Éto majá sabáka.", "it": "Questo è il mio cane.", "tag": ["famiglia", "video-03"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f016", "ru": "Кто это?", "translit": "Kto éto?", "it": "Chi è questo?", "tag": ["domande", "video-04"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f017", "ru": "Это Катя. Она студентка.", "translit": "Éto Kátja. Aná studéntka.", "it": "Questa è Katia. Lei è studentessa.", "tag": ["frasi", "video-04"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f018", "ru": "Я не программист.", "translit": "Ja ni pragrammíst.", "it": "Non sono programmatore.", "tag": ["frasi", "negazione", "video-04"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f019", "ru": "Как вас зовут?", "translit": "Kak vas zavút?", "it": "Come si chiama? (formale)", "tag": ["presentarsi", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f020", "ru": "Меня зовут Андрей.", "translit": "Minjá zavút Andréj.", "it": "Mi chiamo Andrea.", "tag": ["presentarsi", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" },
+    { "id": "f021", "ru": "Очень приятно!", "translit": "Óčenʹ prijátno!", "it": "Molto piacere!", "tag": ["presentarsi", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f022", "ru": "Что это? — Это книга.", "translit": "Što éto? — Éto kníga.", "it": "Cos'è questo? — È un libro.", "tag": ["domande", "video-05"], "difficolta": 1, "aggiunto": "2026-06-05" },
+    { "id": "f023", "ru": "Где мой рюкзак? — Вот он.", "translit": "Gdje moj rjukzák? — Vot on.", "it": "Dov'è il mio zaino? — Eccolo.", "tag": ["domande", "video-05"], "difficolta": 2, "aggiunto": "2026-06-05" }
   ],
   "grammatica": [
     {
@@ -138,6 +210,94 @@
         { "domanda": "Suono della lettera Ё", "risposta": "yo" },
         { "domanda": "La Й è una...", "risposta": "consonante (i corta)" },
         { "domanda": "La И è una...", "risposta": "vocale (i)" }
+      ]
+    },
+    {
+      "id": "g005",
+      "titolo": "Saluti formali vs informali (video L02)",
+      "spiegazione": "Formale: здравствуйте (salve), congedo до свидания (arrivederci), e si dà del 'Lei' con вы → «А у вас?». Semi-formale/amichevole: здравствуй. Informale (amici, coetanei): привет, congedo пока, e si dà del 'tu' con ты → «А у тебя?».",
+      "drill": [
+        { "domanda": "salve (formale)", "risposta": "здравствуйте" },
+        { "domanda": "ciao (informale)", "risposta": "привет" },
+        { "domanda": "arrivederci (formale)", "risposta": "до свидания" },
+        { "domanda": "ciao, congedo (informale)", "risposta": "пока" }
+      ]
+    },
+    {
+      "id": "g006",
+      "titolo": "Aggettivi possessivi: мой/моя, твой/твоя (video L03)",
+      "spiegazione": "Il possessivo concorda col GENERE del sostantivo, non con il possessore: maschile → мой/твой (мой папа, твой брат); femminile → моя/твоя (моя мама, твоя сестра). Attenzione: собака (cane) è femminile → моя собака.",
+      "drill": [
+        { "domanda": "mio (con папа, m)", "risposta": "мой" },
+        { "domanda": "mia (con мама, f)", "risposta": "моя" },
+        { "domanda": "tuo (con брат, m)", "risposta": "твой" },
+        { "domanda": "tua (con сестра, f)", "risposta": "твоя" }
+      ]
+    },
+    {
+      "id": "g007",
+      "titolo": "Cognati e suffissi: parole che già conosci (video 1000 parole)",
+      "spiegazione": "Tantissime parole russe assomigliano all'italiano (tecnologia, cibo/piante, professioni/scienze, musica/sport). Inoltre i suffissi corrispondono: -zione → -ция (revolución→революция), -ale → -альный (normale→нормальный), -ivo → -ивный (sportivo→спортивный), -ico → -ический (classico→классический), -ia → -ия (magia→магия). Ricorda che la О atona si legge 'a'.",
+      "drill": [
+        { "domanda": "suffisso -zione (it) →", "risposta": "-ция" },
+        { "domanda": "suffisso -ale (it) →", "risposta": "-альный" },
+        { "domanda": "suffisso -ivo (it) →", "risposta": "-ивный" },
+        { "domanda": "suffisso -ico (it) →", "risposta": "-ический" }
+      ]
+    },
+    {
+      "id": "g008",
+      "titolo": "Struttura della frase: niente 'essere', negazione, domanda (video L04)",
+      "spiegazione": "Al presente il russo NON usa il verbo 'essere' e NON ha articoli: «Это Паоло, он программист» = 'Questo è Paolo, lui [è] programmatore'. Per la frase negativa si mette не davanti alla parola (Она не студентка). Per fare una domanda basta l'intonazione, senza cambiare le parole (Она студентка?).",
+      "drill": [
+        { "domanda": "il verbo 'essere' al presente...", "risposta": "si omette" },
+        { "domanda": "gli articoli (il/la/un)...", "risposta": "non esistono" },
+        { "domanda": "per negare una frase si usa...", "risposta": "не + parola" },
+        { "domanda": "per fare una domanda si usa...", "risposta": "solo l'intonazione" }
+      ]
+    },
+    {
+      "id": "g009",
+      "titolo": "Femminile delle professioni con -ка (video L04)",
+      "spiegazione": "Molte professioni formano il femminile aggiungendo -ка: студент→студентка, журналист→журналистка, спортсмен→спортсменка, футболист→футболистка. Eccezioni: учитель→учительница; alcune restano uguali per uomo e donna (врач, инженер, архитектор, дизайнер).",
+      "drill": [
+        { "domanda": "studentessa (da студент)", "risposta": "студентка" },
+        { "domanda": "giornalista donna (da журналист)", "risposta": "журналистка" },
+        { "domanda": "insegnante donna (da учитель)", "risposta": "учительница" },
+        { "domanda": "medico (uomo o donna)", "risposta": "врач" }
+      ]
+    },
+    {
+      "id": "g010",
+      "titolo": "Come ti chiami: Как тебя зовут? (video L05)",
+      "spiegazione": "Si usa la struttura «Как + [pronome accusativo] + зовут?» (lett. 'come ti chiamano?'). Formale: Как вас зовут? — informale: Как тебя зовут? Si risponde «Меня зовут + nome». Altre persone: его зовут (lui), её зовут (lei), нас зовут (noi), их зовут (loro).",
+      "drill": [
+        { "domanda": "come ti chiami? (informale)", "risposta": "как тебя зовут?" },
+        { "domanda": "come si chiama? (formale)", "risposta": "как вас зовут?" },
+        { "domanda": "mi chiamo...", "risposta": "меня зовут..." },
+        { "domanda": "lui si chiama...", "risposta": "его зовут..." }
+      ]
+    },
+    {
+      "id": "g011",
+      "titolo": "Что это? vs Кто это? (video L05)",
+      "spiegazione": "Кто это? = 'chi è questo?' → per persone (e animali). Что это? = 'cos'è questo?' → per oggetti, cose, piante. Nota: что si pronuncia 'što'.",
+      "drill": [
+        { "domanda": "студент (persona)", "risposta": "кто это?" },
+        { "domanda": "лампа (oggetto)", "risposta": "что это?" },
+        { "domanda": "телефон (oggetto)", "risposta": "что это?" },
+        { "domanda": "собака (animale)", "risposta": "кто это?" }
+      ]
+    },
+    {
+      "id": "g012",
+      "titolo": "Consonanti dure e molli (video L05)",
+      "spiegazione": "Quasi tutte le consonanti possono essere dure o molli (palatalizzate, lingua sollevata verso il palato). La differenza cambia il significato: нос (naso) ≠ нёс (portava), лук (cipolla) ≠ люк (botola). Sempre DURE: ж, ш, ц. Sempre MOLLI: ч, щ, й. Una consonante è molle davanti a е, ё, я, ю e al segno molle ь.",
+      "drill": [
+        { "domanda": "Sempre dure:", "risposta": "ж, ш, ц" },
+        { "domanda": "Sempre molli:", "risposta": "ч, щ, й" },
+        { "domanda": "Ammorbidisce la consonante precedente:", "risposta": "il segno molle ь" },
+        { "domanda": "Le vocali che rendono molle la consonante:", "risposta": "е, ё, я, ю" }
       ]
     }
   ]
