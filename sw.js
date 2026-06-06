@@ -1,6 +1,6 @@
 // Service worker minimale: cache offline dell'app e dei dati
-const CACHE = "russo-v6";
-const ASSETS = ["./", "./index.html", "./knowledge.json", "./manifest.json", "./icon.png"];
+const CACHE = "russo-v7";
+const ASSETS = ["./", "./index.html", "./knowledge.json", "./manifest.json", "./icon.png", "./splash.png"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
