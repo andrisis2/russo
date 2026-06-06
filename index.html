@@ -29,6 +29,33 @@
     --shadow:0 1px 3px rgba(16,24,40,.05), 0 10px 26px rgba(16,24,40,.07);
     --shadow-lg:0 6px 16px rgba(16,24,40,.08), 0 18px 40px rgba(16,24,40,.10);
   }
+  /* ---- Tema scuro automatico (segue il sistema) ---- */
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1220; --bg2:#121a2b;
+      --card:#1a2334; --card2:#243049; --line:#2c3a56;
+      --text:#e9eef9; --muted:#9aa7c4; --accent:#ff5468; --accent2:#5b8cff;
+      --good:#2dd36f; --bad:#ff5468;
+      --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+      --shadow:0 1px 3px rgba(0,0,0,.45), 0 10px 26px rgba(0,0,0,.5);
+      --shadow-lg:0 6px 16px rgba(0,0,0,.5), 0 18px 40px rgba(0,0,0,.6);
+    }
+    header{background:rgba(16,22,38,.78)!important}
+    .speak:hover{background:#2c3a56!important}
+    .opt:hover{background:rgba(91,140,255,.12)!important}
+    .tile.wide{background:linear-gradient(120deg,var(--card) 0%,#26202c 100%)!important}
+    .ref-note{background:rgba(91,140,255,.10)!important}
+    table.ref tbody tr:nth-child(even) td{background:rgba(255,255,255,.03)!important}
+    #splash{background:#0d1220}
+  }
+  /* ---- Animazioni di entrata schermate ---- */
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .stage,.stats,.grid{animation:rise .3s ease both}
+  .grid{animation-delay:.04s}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+    .flip.flipped .flash{transition:none}
+  }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;height:100%}
   body{
@@ -81,12 +108,21 @@
   .stage{display:flex;flex-direction:column;align-items:center;gap:18px}
   .progress{width:100%;height:8px;background:var(--card2);border-radius:8px;overflow:hidden}
   .progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0;transition:.3s;border-radius:8px}
+  .flip{width:100%; cursor:pointer; perspective:1400px}
   .flash{
-    width:100%; min-height:240px; background:var(--card); border:1px solid var(--line);
-    border-radius:22px; display:flex; flex-direction:column; align-items:center; justify-content:center;
-    gap:14px; padding:30px 22px; cursor:pointer; text-align:center; position:relative; box-shadow:var(--shadow);
+    position:relative; width:100%; min-height:240px;
+    transform-style:preserve-3d; transition:transform .55s cubic-bezier(.4,.18,.2,1);
   }
-  .flash .ru{font-size:44px; font-weight:800; line-height:1.12; letter-spacing:-.5px}
+  .flip.flipped .flash{transform:rotateY(180deg)}
+  .face{
+    border-radius:22px; background:var(--card); border:1px solid var(--line); box-shadow:var(--shadow);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:14px; padding:30px 22px; text-align:center; min-height:240px;
+    backface-visibility:hidden; -webkit-backface-visibility:hidden;
+  }
+  .face.front{position:relative}
+  .face.back{position:absolute; inset:0; transform:rotateY(180deg)}
+  .flash .ru{font-size:44px; font-weight:800; line-height:1.12; letter-spacing:-.5px; text-rendering:optimizeLegibility}
   .flash .small{font-size:15px;color:var(--muted)}
   .flash .translit{font-size:18px;color:var(--accent2);font-style:italic}
   .flash .it{font-size:27px; font-weight:700}
@@ -118,7 +154,6 @@
   .opt.correct{background:rgba(22,163,74,.12);border-color:var(--good);color:var(--good)}
   .opt.wrong{background:rgba(220,38,38,.10);border-color:var(--bad);color:var(--bad)}
   .opt:disabled{cursor:default}
-  .q{font-size:32px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px}
   .qsub{font-size:14px;color:var(--muted);text-align:center;margin-top:-8px}
   .done{text-align:center;padding:40px 16px}
   .done .big{font-size:60px}
@@ -167,6 +202,40 @@
   table.ref td.ru.tap{cursor:pointer}
   table.ref td.ru.tap:hover{color:var(--accent2)}
   table.ref td.ru.tap:active{color:var(--accent)}
+
+  .q{font-size:32px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px;text-rendering:optimizeLegibility}
+
+  /* ---- feedback risposte (scuoti / pulsa) ---- */
+  @keyframes shake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-5px)}40%,60%{transform:translateX(5px)}}
+  @keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.05)}100%{transform:scale(1)}}
+  .opt.correct,.btn.good.chosen{animation:pop .35s ease}
+  .opt.wrong,.btn.bad.chosen{animation:shake .4s ease}
+
+  /* ---- contatore barra di progresso ---- */
+  .prog-wrap{display:flex;align-items:center;gap:10px;width:100%}
+  .prog-wrap .progress{flex:1}
+  .prog-num{font-size:12px;font-weight:700;color:var(--muted);min-width:46px;text-align:right;font-variant-numeric:tabular-nums}
+
+  /* ---- anello punteggio nella schermata di fine ---- */
+  .done .ring{position:relative;width:124px;height:124px;border-radius:50%;margin:0 auto 4px;
+    display:flex;align-items:center;justify-content:center;animation:ring-in .55s cubic-bezier(.2,.7,.3,1) both}
+  .done .ring::before{content:"";position:absolute;width:94px;height:94px;border-radius:50%;background:var(--card)}
+  .done .ring span{position:relative;font-size:27px;font-weight:800;color:var(--col)}
+  .done .big{animation:ring-in .5s cubic-bezier(.2,.7,.3,1) both}
+  @keyframes ring-in{from{transform:scale(.6) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}
+
+  /* ---- skeleton di caricamento ---- */
+  .sk{position:relative;overflow:hidden;background:var(--card2);border:1px solid var(--line)}
+  .stat.sk{height:66px}
+  .tile.sk{min-height:128px}
+  .sk::after{content:"";position:absolute;inset:0;transform:translateX(-100%);
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);animation:shimmer 1.2s infinite}
+  @keyframes shimmer{to{transform:translateX(100%)}}
+
+  /* ---- box errore caricamento ---- */
+  .errbox{text-align:center;padding:48px 20px;display:flex;flex-direction:column;align-items:center;gap:12px}
+  .errbox .big{font-size:52px}
+  .errbox small{color:var(--muted);font-size:11px;word-break:break-word;opacity:.7}
 
   /* splash screen */
   #splash{
@@ -230,6 +299,8 @@ backBtn.onclick = () => renderHome();
 const $ = (h)=>{const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstChild;};
 const shuffle = a => a.map(x=>[Math.random(),x]).sort((m,n)=>m[0]-n[0]).map(p=>p[1]);
 const sample = (a,n)=>shuffle(a).slice(0,n);
+// vibrazione di feedback (dove supportata): tocco breve se giusto, doppio se sbagliato
+function haptic(ok){ try{ navigator.vibrate && navigator.vibrate(ok?18:[0,35,30,35]); }catch(e){} }
 
 // Text-to-speech russo
 let ruVoice = null;
@@ -314,7 +385,12 @@ function header(title){
   return app.appendChild($(`<div class="stage"></div>`));
 }
 function progressBar(stage){
-  const p = $(`<div class="progress"><i></i></div>`); stage.appendChild(p); return p.firstChild;
+  const wrap = $(`<div class="prog-wrap"><div class="progress"><i></i></div><span class="prog-num"></span></div>`);
+  stage.appendChild(wrap);
+  const fill = wrap.querySelector("i");
+  const num = wrap.querySelector(".prog-num");
+  fill.setNum = (i,n)=>{ num.textContent = `${Math.min(i+1,n)} / ${n}`; };
+  return fill;
 }
 
 // ---------- 1. FLASHCARD ----------
@@ -396,31 +472,39 @@ function runFlash(){
 
   function show(){
     if(i>=deck.length) return finish(stage, "Flashcard completate", runFlash);
-    bar.style.width = (i/deck.length*100)+"%";
+    bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const c = deck[i]; let flipped=false;
     cardWrap.innerHTML="";
-    const card = $(`
-      <div class="flash">
-        <button class="speak" title="Ascolta">🔊</button>
-        <div class="ru">${c.ru}</div>
-        <div class="translit">${c.translit}</div>
-        <div class="hint">tocca per vedere la traduzione</div>
+    const flip = $(`
+      <div class="flip">
+        <div class="flash">
+          <div class="face front">
+            <button class="speak" title="Ascolta">🔊</button>
+            <div class="ru">${c.ru}</div>
+            <div class="translit">${c.translit}</div>
+            <div class="hint">tocca per vedere la traduzione</div>
+          </div>
+          <div class="face back">
+            <div class="it">${c.it}</div>
+            <div class="small">${c.ru} · ${c.translit}</div>
+          </div>
+        </div>
       </div>`);
-    card.querySelector(".speak").onclick = (e)=>{e.stopPropagation(); speak(c.ru);};
-    card.onclick = ()=>{
+    flip.querySelector(".speak").onclick = (e)=>{e.stopPropagation(); speak(c.ru);};
+    flip.onclick = ()=>{
       if(flipped) return;
       flipped=true;
-      card.innerHTML = `<div class="it">${c.it}</div><div class="small">${c.ru} · ${c.translit}</div>`;
+      flip.classList.add("flipped");
       controls.classList.remove("hidden");
     };
-    cardWrap.appendChild(card);
+    cardWrap.appendChild(flip);
     const controls = $(`
       <div class="row hidden" style="margin-top:14px">
         <button class="btn bad">Da ripassare</button>
         <button class="btn good">La sapevo</button>
       </div>`);
-    controls.children[0].onclick=()=>{grade(c.id,false); i++; render();};
-    controls.children[1].onclick=()=>{grade(c.id,true); i++; render();};
+    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); i++; render();};
+    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); i++; render();};
     cardWrap.appendChild(controls);
     if('speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
   }
@@ -481,7 +565,7 @@ function runPhrase(){
 
   function show(){
     if(i>=deck.length) return finish(stage,"Sezione completata", runPhrase);
-    bar.style.width=(i/deck.length*100)+"%";
+    bar.style.width=(i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const f=deck[i];
     // togli una parola dalla frase russa
     const words=f.ru.replace(/[.!?]/g,'').split(" ");
@@ -503,6 +587,7 @@ function runPhrase(){
         const ok=o===answer;
         b.classList.add(ok?"correct":"wrong");
         if(!ok)[...optBox.children].find(c=>c.textContent===answer).classList.add("correct");
+        haptic(ok);
         grade(f.id, ok);
         speak(f.ru);
         const next=$(`<button class="btn primary" style="margin-top:14px">Continua →</button>`);
@@ -523,7 +608,7 @@ function runMCQ(questions, title, restart){
   const wrap = $(`<div style="width:100%"></div>`); stage.appendChild(wrap);
   function show(){
     if(i>=questions.length) return finish(stage, `${title}: ${correct}/${questions.length}`, restart);
-    bar.style.width=(i/questions.length*100)+"%";
+    bar.style.width=(i/questions.length*100)+"%"; bar.setNum(i, questions.length);
     const Q=questions[i];
     wrap.innerHTML="";
     const q=$(`<div class="q">${Q.q}</div>`); wrap.appendChild(q);
@@ -536,6 +621,7 @@ function runMCQ(questions, title, restart){
         [...box.children].forEach(c=>c.disabled=true);
         const ok=o===Q.correct;
         b.classList.add(ok?"correct":"wrong");
+        haptic(ok);
         if(ok) correct++;
         else [...box.children].find(c=>c.textContent===Q.correct).classList.add("correct");
         if(Q.id) grade(Q.id, ok);
@@ -552,23 +638,52 @@ function runMCQ(questions, title, restart){
 
 // ---------- schermata fine ----------
 function finish(stage, msg, restart){
+  // se il messaggio contiene un punteggio "x/y" mostro un anello, altrimenti il 🎉
+  const m = String(msg).match(/(\d+)\s*\/\s*(\d+)/);
+  let topHtml = `<div class="big">🎉</div>`;
+  if(m){
+    const got=+m[1], tot=+m[2], pct = tot ? Math.round(got/tot*100) : 0;
+    const col = pct>=80 ? 'var(--good)' : pct>=50 ? 'var(--accent2)' : 'var(--accent)';
+    topHtml = `<div class="ring" style="--col:${col};background:conic-gradient(${col} ${pct*3.6}deg,var(--card2) 0)"><span>${pct}%</span></div>`;
+  }
   stage.innerHTML = `
     <div class="done">
-      <div class="big">🎉</div>
+      ${topHtml}
       <h2>${msg}</h2>
       <p class="muted">Ben fatto! I progressi sono salvati sul dispositivo.</p>
     </div>`;
+  haptic(true);
   const row=$(`<div class="row"></div>`);
   const a=$(`<button class="btn">Home</button>`); a.onclick=renderHome;
   const b=$(`<button class="btn primary">Ancora</button>`); b.onclick=restart;
   row.appendChild(a); row.appendChild(b); stage.appendChild(row);
 }
 
+// ---------- theme-color dinamico (chiaro/scuro segue il sistema) ----------
+const darkMq = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null;
+function syncThemeColor(){
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if(meta) meta.setAttribute('content', darkMq && darkMq.matches ? '#0d1220' : '#ffffff');
+}
+syncThemeColor();
+if(darkMq && darkMq.addEventListener) darkMq.addEventListener('change', syncThemeColor);
+
+// ---------- skeleton mentre carica ----------
+function renderSkeleton(){
+  app.innerHTML="";
+  const sk=document.createElement("div");
+  sk.innerHTML =
+    `<div class="stats">${'<div class="stat sk"></div>'.repeat(4)}</div>`+
+    `<div class="grid">${'<div class="tile sk"></div>'.repeat(4)}</div>`;
+  app.appendChild(sk);
+}
+
 // ---------- boot ----------
+renderSkeleton();
 fetch("knowledge.json?_="+Date.now())
   .then(r=>r.json())
   .then(db=>{ DB=db; renderHome(); })
-  .catch(e=>{ app.innerHTML=`<p class="muted">Impossibile caricare knowledge.json<br><small>${e}</small></p>`; });
+  .catch(e=>{ app.innerHTML=`<div class="errbox"><div class="big">⚠️</div><p>Impossibile caricare i contenuti.</p><button class="btn" onclick="location.reload()" style="max-width:200px">Riprova</button><small>${e}</small></div>`; });
 
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('sw.js').catch(()=>{});
