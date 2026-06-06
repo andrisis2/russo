@@ -293,7 +293,10 @@ function saveSrs(){ localStorage.setItem(STORE_KEY, JSON.stringify(srs)); }
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("backBtn");
-backBtn.onclick = () => renderHome();
+// Il pulsante Indietro e il tasto/gesto Indietro del telefono fanno la stessa cosa:
+// tornano alla home dell'app. Dalla home, Indietro esce (comportamento atteso).
+backBtn.onclick = () => history.back();
+window.addEventListener("popstate", () => { if(DB) renderHome(); });
 
 // ---------- utility ----------
 const $ = (h)=>{const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstChild;};
@@ -395,6 +398,8 @@ function progressBar(stage){
 
 // ---------- 1. FLASHCARD ----------
 function start(mode){
+  // registro un passo nella cronologia: così Indietro torna alla home invece di uscire
+  history.pushState({screen:mode}, "");
   if(mode==="flash") return runFlash();
   if(mode==="cyr") return runCyr();
   if(mode==="gram") return runGram();
@@ -654,7 +659,7 @@ function finish(stage, msg, restart){
     </div>`;
   haptic(true);
   const row=$(`<div class="row"></div>`);
-  const a=$(`<button class="btn">Home</button>`); a.onclick=renderHome;
+  const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
   const b=$(`<button class="btn primary">Ancora</button>`); b.onclick=restart;
   row.appendChild(a); row.appendChild(b); stage.appendChild(row);
 }
