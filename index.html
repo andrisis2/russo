@@ -39,16 +39,18 @@
     -webkit-font-smoothing:antialiased;
   }
   header{
-    padding:14px 18px; padding-top:calc(14px + env(safe-area-inset-top));
-    display:flex; align-items:center; gap:12px; border-bottom:1px solid var(--line);
+    padding:8px 18px; padding-top:calc(8px + env(safe-area-inset-top));
+    display:flex; align-items:flex-end; gap:12px; border-bottom:1px solid var(--line);
     position:sticky; top:0; background:rgba(255,255,255,.82); backdrop-filter:saturate(180%) blur(12px); z-index:5;
   }
-  header h1{
-    font-size:20px; margin:0; letter-spacing:.3px; flex:1; font-weight:800;
-    background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text;
-    background-clip:text; -webkit-text-fill-color:transparent;
+  /* grechina stilizzata delle mura del Cremlino al posto del titolo */
+  .kremlin{ position:relative; flex:1; align-self:stretch; min-height:42px; }
+  .kremlin-wall{
+    position:absolute; left:0; right:0; bottom:0; height:20px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23bb4a3c' d='M0 15h24v9H0z'/%3E%3Cpath fill='%23bb4a3c' d='M3 15V2l9 5 9-5v13z'/%3E%3C/svg%3E");
+    background-repeat:repeat-x; background-position:center bottom; background-size:auto 20px;
   }
-  header .flag{font-size:22px}
+  .kremlin-tower{ position:absolute; left:50%; bottom:0; transform:translateX(-50%); height:42px; width:auto; display:block; }
   .back{background:none;border:none;color:var(--muted);font-size:15px;font-weight:600;cursor:pointer;padding:7px 11px;border-radius:10px;transition:.12s}
   .back:hover{background:var(--card2);color:var(--text)}
   main{flex:1; padding:18px; max-width:680px; width:100%; margin:0 auto}
@@ -184,8 +186,23 @@
 <div id="splash"><img src="splash.png" alt="Русский с Викой"></div>
 <header>
   <button class="back hidden" id="backBtn">‹ Indietro</button>
-  <span class="flag">🇷🇺</span>
-  <h1>Русский</h1>
+  <div class="kremlin" role="img" aria-label="Russo — Mura del Cremlino">
+    <span class="kremlin-wall"></span>
+    <svg class="kremlin-tower" viewBox="0 0 44 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- corpo torre in mattoni -->
+      <rect x="14" y="22" width="16" height="22" fill="#bb4a3c"/>
+      <!-- finestre ad arco -->
+      <rect x="16.5" y="27" width="3.6" height="6.5" rx="1.8" fill="#2e211e"/>
+      <rect x="23.9" y="27" width="3.6" height="6.5" rx="1.8" fill="#2e211e"/>
+      <!-- cornice sotto il tetto -->
+      <rect x="12.5" y="19.5" width="19" height="3" fill="#9c3f33"/>
+      <!-- tetto a tenda verde -->
+      <path d="M11.5 20 L22 3 L32.5 20 Z" fill="#3f8161"/>
+      <!-- guglia e stella dorata -->
+      <rect x="21.4" y="0.5" width="1.2" height="3" fill="#9c3f33"/>
+      <circle cx="22" cy="1.4" r="1.9" fill="#e7b84a"/>
+    </svg>
+  </div>
 </header>
 <main id="app"></main>
 
