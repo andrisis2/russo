@@ -8,6 +8,17 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<!-- splash screen iOS per ogni modello iPhone -->
+<link rel="apple-touch-startup-image" href="splash-ios/splash-750x1334.jpg"   media="(device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="splash-ios/splash-828x1792.jpg"   media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:2) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="splash-ios/splash-1125x2436.jpg"  media="(device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="splash-ios/splash-1170x2532.jpg"  media="(device-width:390px) and (device-height:844px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="splash-ios/splash-1179x2556.jpg"  media="(device-width:393px) and (device-height:852px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="splash-ios/splash-1242x2688.jpg"  media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="splash-ios/splash-1284x2778.jpg"  media="(device-width:428px) and (device-height:926px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<link rel="apple-touch-startup-image" href="splash-ios/splash-1290x2796.jpg"  media="(device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
 <style>
   :root{
     --bg:#eef1f8; --bg2:#f8fafd;
@@ -536,12 +547,12 @@ if('serviceWorker' in navigator){
   navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 
-// splash: rimane 1 s poi sfuma in 400 ms
+// splash: rimane 2 s poi sfuma in 400 ms
 setTimeout(()=>{
   const s=document.getElementById('splash');
   s.classList.add('fade-out');
   s.addEventListener('transitionend',()=>s.remove(),{once:true});
-},1000);
+},2000);
 </script>
 </body>
 </html>
