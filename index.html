@@ -50,7 +50,8 @@
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23bb4a3c' d='M0 15h24v9H0z'/%3E%3Cpath fill='%23bb4a3c' d='M3 15V2l9 5 9-5v13z'/%3E%3C/svg%3E");
     background-repeat:repeat-x; background-position:center bottom; background-size:auto 20px;
   }
-  .kremlin-tower{ position:absolute; left:50%; bottom:0; transform:translateX(-50%); height:42px; width:auto; display:block; }
+  .kremlin-towers{ position:absolute; left:0; right:0; bottom:0; display:flex; align-items:flex-end; justify-content:center; gap:12px; pointer-events:none; }
+  .kremlin-towers svg{ display:block; width:auto; }
   .back{background:none;border:none;color:var(--muted);font-size:15px;font-weight:600;cursor:pointer;padding:7px 11px;border-radius:10px;transition:.12s}
   .back:hover{background:var(--card2);color:var(--text)}
   main{flex:1; padding:18px; max-width:680px; width:100%; margin:0 auto}
@@ -188,7 +189,16 @@
   <button class="back hidden" id="backBtn">‹ Indietro</button>
   <div class="kremlin" role="img" aria-label="Russo — Mura del Cremlino">
     <span class="kremlin-wall"></span>
-    <svg class="kremlin-tower" viewBox="0 0 44 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <div class="kremlin-towers" aria-hidden="true">
+      <svg viewBox="0 0 44 48" style="height:26px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
+      <svg viewBox="0 0 44 48" style="height:34px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
+      <svg viewBox="0 0 44 48" style="height:44px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
+      <svg viewBox="0 0 44 48" style="height:34px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
+      <svg viewBox="0 0 44 48" style="height:26px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
+    </div>
+  </div>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+    <g id="torre">
       <!-- corpo torre in mattoni -->
       <rect x="14" y="22" width="16" height="22" fill="#bb4a3c"/>
       <!-- finestre ad arco -->
@@ -201,8 +211,8 @@
       <!-- guglia e stella dorata -->
       <rect x="21.4" y="0.5" width="1.2" height="3" fill="#9c3f33"/>
       <circle cx="22" cy="1.4" r="1.9" fill="#e7b84a"/>
-    </svg>
-  </div>
+    </g>
+  </defs></svg>
 </header>
 <main id="app"></main>
 
