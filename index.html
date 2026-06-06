@@ -153,9 +153,24 @@
   table.ref td.ru.tap{cursor:pointer}
   table.ref td.ru.tap:hover{color:var(--accent2)}
   table.ref td.ru.tap:active{color:var(--accent)}
+
+  /* splash screen */
+  #splash{
+    position:fixed; inset:0; z-index:9999;
+    background:#fff;
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+    transition:opacity .4s ease;
+  }
+  #splash img{
+    width:100%; height:100%;
+    object-fit:contain;
+  }
+  #splash.fade-out{opacity:0; pointer-events:none}
 </style>
 </head>
 <body>
+<div id="splash"><img src="splash.png" alt="Русский с Викой"></div>
 <header>
   <button class="back hidden" id="backBtn">‹ Indietro</button>
   <span class="flag">🇷🇺</span>
@@ -520,6 +535,13 @@ fetch("knowledge.json?_="+Date.now())
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
+
+// splash: rimane 1 s poi sfuma in 400 ms
+setTimeout(()=>{
+  const s=document.getElementById('splash');
+  s.classList.add('fade-out');
+  s.addEventListener('transitionend',()=>s.remove(),{once:true});
+},1000);
 </script>
 </body>
 </html>
