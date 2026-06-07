@@ -674,9 +674,9 @@ function finish(stage, msg, restart){
   row.appendChild(a); row.appendChild(b); stage.appendChild(row);
 }
 
-// ========== VIKA — Gemini Multimodal Live ==========
+// ========== VIKA — Gemini REST + Web Speech API ==========
 const VIKA_KEY = "vika_gemini_key";
-const VIKA_WS = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent";
+const VIKA_API = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
 function vikaPrompt(lang, db) {
   const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
@@ -689,131 +689,104 @@ Lo studente impara da zero (livello A1) con il corso "Russo Facile con Yula".
 ${rule}
 Vocaboli già studiati: ${vocab}.
 Frasi già studiate: ${frasi}.
-Risposte brevi (2-3 frasi max). Correggi gli errori gentilmente. Inizia tu salutando in russo.`;
+Risposte brevi (2-3 frasi max). Correggi gli errori gentilmente.`;
 }
 
 class VikaSession {
   constructor({apiKey,lang,db,onMsg,onStatus}){
     this.apiKey=apiKey; this.lang=lang; this.db=db;
     this.onMsg=onMsg; this.onStatus=onStatus;
-    this.ws=null; this.audioCtx=null; this.micStream=null;
-    this.playCtx=null; this.nextPlayTime=0;
-    this.recognition=null; this.vikaText=""; this.gotSetup=false;
+    this.history=[]; this.recognition=null; this.active=false;
   }
 
   async connect(){
-    this.onStatus("connecting");
-    this.ws=new WebSocket(`${VIKA_WS}?key=${this.apiKey}`);
-    this.ws.onopen=()=>{
-      this.ws.send(JSON.stringify({
-        setup:{
-          model:"models/gemini-2.0-flash-live-001",
-          generationConfig:{
-            responseModalities:["AUDIO"],
-            speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Aoede"}}}
-          },
-          systemInstruction:{parts:[{text:vikaPrompt(this.lang,this.db)}]}
-        }
-      }));
-    };
-    this.ws.onmessage=async e=>{
-      let d; try{ d=JSON.parse(e.data); }catch(err){ return; }
-      if(d.setupComplete){ this.gotSetup=true; this.onStatus("connected"); await this._startMic(); this._startSTT(); }
-      if(d.serverContent){
-        const sc=d.serverContent;
-        if(sc.modelTurn?.parts){
-          this.onStatus("speaking");
-          for(const p of sc.modelTurn.parts){
-            if(p.text){ this.vikaText+=p.text; this.onMsg({role:"vika",text:this.vikaText,final:false}); }
-            if(p.inlineData?.data) this._playChunk(p.inlineData.data);
-          }
-        }
-        if(sc.turnComplete){
-          if(this.vikaText){ this.onMsg({role:"vika",text:this.vikaText,final:true}); this.vikaText=""; }
-          this.onStatus("listening");
-        }
-      }
-      if(d.error){
-        const msg=d.error.message||JSON.stringify(d.error);
-        this.onMsg({role:"vika",text:`⚠️ Errore API: ${msg}`,final:true});
-        this.onStatus("error");
-      }
-    };
-    this.ws.onerror=(ev)=>{ this.ws=null; this.onStatus("error"); };
-    this.ws.onclose=(ev)=>{
-      if(this.ws){
-        this.ws=null;
-        if(!this.gotSetup){
-          this.onMsg({role:"vika",text:`⚠️ Connessione chiusa prima del setup (codice ${ev.code}${ev.reason?" — "+ev.reason:""}). Verifica che la tua API key abbia accesso a Gemini Live su aistudio.google.com.`,final:true});
-          this.onStatus("error");
-        } else {
-          this.onStatus(ev.wasClean?"disconnected":"error");
-        }
-      }
-    };
+    this.active=true;
+    this.onStatus("connected");
+    // saluto iniziale
+    await this._chat(null);
   }
 
-  async _startMic(){
-    this.audioCtx=new AudioContext({sampleRate:16000});
-    this.micStream=await navigator.mediaDevices.getUserMedia({audio:true,video:false});
-    const source=this.audioCtx.createMediaStreamSource(this.micStream);
-    const code=`class P extends AudioWorkletProcessor{process(i){if(i[0]&&i[0][0])this.port.postMessage(i[0][0].slice());return true}}registerProcessor('pcm-vika',P)`;
-    const url=URL.createObjectURL(new Blob([code],{type:"application/javascript"}));
-    await this.audioCtx.audioWorklet.addModule(url);
-    URL.revokeObjectURL(url);
-    const node=new AudioWorkletNode(this.audioCtx,"pcm-vika");
-    node.port.onmessage=({data})=>{
-      if(!this.ws||this.ws.readyState!==WebSocket.OPEN) return;
-      const i16=new Int16Array(data.length);
-      for(let i=0;i<data.length;i++) i16[i]=Math.max(-32768,Math.min(32767,data[i]*32768));
-      let b=""; const u8=new Uint8Array(i16.buffer);
-      for(let i=0;i<u8.length;i++) b+=String.fromCharCode(u8[i]);
-      this.ws.send(JSON.stringify({realtimeInput:{mediaChunks:[{mimeType:"audio/pcm;rate=16000",data:btoa(b)}]}}));
-    };
-    source.connect(node);
-    this.onStatus("listening");
+  async _chat(userText){
+    if(!this.active) return;
+    if(userText){
+      this.history.push({role:"user", parts:[{text:userText}]});
+      this.onMsg({role:"user", text:userText, final:true});
+    }
+    this.onStatus("speaking");
+    try{
+      const body={
+        system_instruction:{parts:[{text:vikaPrompt(this.lang,this.db)}]},
+        contents: this.history.length
+          ? this.history
+          : [{role:"user", parts:[{text:"Saluta lo studente in russo e chiedi come vuole esercitarsi."}]}],
+        generationConfig:{maxOutputTokens:120, temperature:0.8}
+      };
+      const resp=await fetch(`${VIKA_API}?key=${this.apiKey}`,
+        {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)});
+      if(!resp.ok){
+        const e=await resp.json().catch(()=>({}));
+        throw new Error(e.error?.message||`HTTP ${resp.status}`);
+      }
+      const data=await resp.json();
+      const text=(data.candidates?.[0]?.content?.parts?.[0]?.text||"").trim();
+      if(text){
+        if(!this.history.length) this.history.push({role:"user", parts:[{text:"Saluta lo studente in russo e chiedi come vuole esercitarsi."}]});
+        this.history.push({role:"model", parts:[{text}]});
+        this.onMsg({role:"vika", text, final:true});
+        await this._speak(text);
+      }
+    } catch(e){
+      this.onMsg({role:"vika", text:`⚠️ Errore: ${e.message}`, final:true});
+      this.onStatus("error");
+      return;
+    }
+    if(this.active){ this.onStatus("listening"); this._listen(); }
   }
 
-  _startSTT(){
+  _listen(){
+    if(!this.active) return;
     const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-    if(!SR) return;
+    if(!SR){
+      this.onMsg({role:"vika", text:"⚠️ Il browser non supporta il riconoscimento vocale. Prova Chrome.", final:true});
+      return;
+    }
     this.recognition=new SR();
-    this.recognition.lang="ru-RU"; this.recognition.continuous=true; this.recognition.interimResults=true;
+    this.recognition.lang="ru-RU";
+    this.recognition.continuous=false;
+    this.recognition.interimResults=true;
+    let interim=null;
     this.recognition.onresult=e=>{
       let t="", final=false;
       for(let i=e.resultIndex;i<e.results.length;i++){ t+=e.results[i][0].transcript; if(e.results[i].isFinal) final=true; }
-      this.onMsg({role:"user",text:t,final});
+      this.onMsg({role:"user", text:t, final:false});
+      if(final && t.trim()) interim=t.trim();
     };
     this.recognition.onerror=()=>{};
-    this.recognition.onend=()=>{ if(this.ws?.readyState===WebSocket.OPEN) try{this.recognition.start();}catch(e){} };
+    this.recognition.onend=()=>{
+      if(this.active && interim){ this._chat(interim); interim=null; }
+      else if(this.active){ this.onStatus("listening"); this._listen(); }
+    };
     this.recognition.start();
   }
 
-  _playChunk(b64){
-    if(!this.playCtx||this.playCtx.state==="closed"){
-      this.playCtx=new AudioContext({sampleRate:24000}); this.nextPlayTime=0;
-    }
-    const bin=atob(b64); const u8=new Uint8Array(bin.length);
-    for(let i=0;i<bin.length;i++) u8[i]=bin.charCodeAt(i);
-    const i16=new Int16Array(u8.buffer); const f32=new Float32Array(i16.length);
-    for(let i=0;i<i16.length;i++) f32[i]=i16[i]/32768;
-    const buf=this.playCtx.createBuffer(1,f32.length,24000);
-    buf.getChannelData(0).set(f32);
-    const src=this.playCtx.createBufferSource();
-    src.buffer=buf; src.connect(this.playCtx.destination);
-    const t=Math.max(this.nextPlayTime,this.playCtx.currentTime+0.02);
-    src.start(t); this.nextPlayTime=t+buf.duration;
+  async _speak(text){
+    return new Promise(resolve=>{
+      speechSynthesis.cancel();
+      const u=new SpeechSynthesisUtterance(text);
+      u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice; u.rate=0.88;
+      u.onend=resolve; u.onerror=resolve;
+      speechSynthesis.speak(u);
+    });
   }
 
   disconnect(){
+    this.active=false;
     try{this.recognition?.stop();}catch(e){} this.recognition=null;
-    this.micStream?.getTracks().forEach(t=>t.stop());
-    try{this.audioCtx?.close();}catch(e){}
-    try{this.playCtx?.close();}catch(e){}
-    const ws=this.ws; this.ws=null; ws?.close();
+    speechSynthesis.cancel();
     this.onStatus("disconnected");
   }
 }
+
 
 function runVika(){
   const stage=header();
