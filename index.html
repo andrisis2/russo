@@ -1049,13 +1049,7 @@ function runVika(){
   let session=null, currentLang="ru", currentPracticeMode="free";
   let vikaEl=null, userEl=null, lastVikaWrap=null;
 
-  // Intestazione con avatar
-  const vikaHeaderAvatar=$(`<img src="vika.png" class="vika-av-main" style="width:60px;height:60px;display:block;margin:0 auto 6px">`);
-  const headerWrap=$(`<div style="text-align:center;padding:4px 0 16px"></div>`);
-  headerWrap.appendChild(vikaHeaderAvatar);
-  headerWrap.appendChild($(`<div style="font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:2px">Vika</div>`));
-  headerWrap.appendChild($(`<div style="font-size:12px;color:var(--muted)">Tutor virtuale · Gemini AI</div>`));
-  stage.appendChild(headerWrap);
+  // Intestazione rimossa su richiesta
 
   // Toggle lingua modalità (solo russo vs russo+italiano)
   let currentUserLang="ru-RU";
@@ -1214,7 +1208,6 @@ function runVika(){
       :"linear-gradient(135deg,var(--accent),#f0526a)";
     micBtn.style.color=busy?"var(--muted)":"#fff";
     micBtn.classList.toggle("mic-listening", s==="listening");
-    vikaHeaderAvatar.classList.toggle("speaking", s==="speaking");
     micLabel.textContent=active?"Premi per terminare":busy?"Connessione...":"Premi per parlare con Vika";
     if(s==="error"){
       const eb=addBubble("vika");
