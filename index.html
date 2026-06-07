@@ -676,7 +676,7 @@ function finish(stage, msg, restart){
 
 // ========== VIKA — Gemini Multimodal Live ==========
 const VIKA_KEY = "vika_gemini_key";
-const VIKA_WS = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent";
+const VIKA_WS = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent";
 
 function vikaPrompt(lang, db) {
   const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
@@ -735,8 +735,8 @@ class VikaSession {
       }
       if(d.error){ this.onStatus("error"); }
     };
-    this.ws.onerror=()=>this.onStatus("error");
-    this.ws.onclose=()=>{ if(this.ws) this.onStatus("disconnected"); };
+    this.ws.onerror=()=>{ this.ws=null; this.onStatus("error"); };
+    this.ws.onclose=(ev)=>{ if(this.ws){ this.ws=null; this.onStatus(ev.wasClean?"disconnected":"error"); } };
   }
 
   async _startMic(){
@@ -870,19 +870,27 @@ function runVika(){
     connected:"✅ Connessa — inizia a parlare",
     listening:"🎤 In ascolto...",
     speaking:"💬 Vika sta parlando...",
-    error:"❌ Errore — controlla la API key",
+    error:"❌ Connessione fallita — controlla la API key",
     disconnected:""
   };
 
   function onStatus(s){
     statusEl.textContent=STATUS[s]||"";
     const active=s==="connected"||s==="listening"||s==="speaking";
-    micBtn.textContent=active?"⏹️":"🎙️";
+    const busy=s==="connecting";
+    micBtn.textContent=active?"⏹️":busy?"⏳":"🎙️";
     micBtn.style.background=active
       ?"linear-gradient(135deg,var(--accent2),#5b8cff)"
+      :busy?"var(--card2)"
       :"linear-gradient(135deg,var(--accent),#f0526a)";
-    micLabel.textContent=active?"Premi per terminare":"Premi per parlare con Vika";
-    if(s==="disconnected"||s==="error"){ session=null; vikaEl=null; userEl=null; }
+    micBtn.style.color=busy?"var(--muted)":"#fff";
+    micLabel.textContent=active?"Premi per terminare":busy?"Connessione...":"Premi per parlare con Vika";
+    if(s==="error"){
+      const eb=addBubble("vika");
+      eb.textContent="❌ Connessione a Gemini fallita. Verifica che la API key sia corretta e riprova.";
+      session=null; vikaEl=null; userEl=null;
+    }
+    if(s==="disconnected"){ session=null; vikaEl=null; userEl=null; }
   }
 
   // Pulsante microfono
