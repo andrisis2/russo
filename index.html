@@ -795,8 +795,8 @@ class VikaSession {
 
   async _startRest(){
     this.mode="rest";
-    this.onStatus("connected");
-    await this._chat(null);
+    this.onStatus("listening");
+    this._listen();
   }
 
   async _chat(userText){
