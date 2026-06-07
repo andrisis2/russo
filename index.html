@@ -56,7 +56,30 @@
   .mic-listening{animation:micpulse 1.6s ease-in-out infinite}
   .vika-av-main{border-radius:50%;object-fit:cover;border:3px solid var(--line);transition:border-color .3s,box-shadow .3s}
   .vika-av-main.speaking{border-color:var(--accent2);animation:vikabounce .7s ease-in-out infinite,vikaglow 1.4s ease-in-out infinite}
-  .vika-av-small{width:34px;height:34px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--line);align-self:flex-end}
+  /* fumetto */
+  @keyframes vikamsg{from{opacity:0;transform:translateX(-14px) scale(.96)}to{opacity:1;transform:none}}
+  .vika-msg-row{display:flex;align-items:flex-end;gap:10px;animation:vikamsg .22s ease}
+  .vika-char{width:88px;flex-shrink:0;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.13));align-self:flex-end}
+  .vika-fumetto{
+    background:var(--card);border:2px solid var(--line);
+    border-radius:16px 16px 16px 4px;
+    padding:11px 15px;position:relative;
+    max-width:calc(100% - 108px);
+    font-size:15px;line-height:1.55;
+    box-shadow:0 2px 12px rgba(0,0,0,.07);
+  }
+  .vika-fumetto::before{
+    content:"";position:absolute;left:-12px;bottom:16px;
+    width:0;height:0;
+    border-top:9px solid transparent;border-bottom:9px solid transparent;
+    border-right:12px solid var(--line);
+  }
+  .vika-fumetto::after{
+    content:"";position:absolute;left:-9px;bottom:18px;
+    width:0;height:0;
+    border-top:7px solid transparent;border-bottom:7px solid transparent;
+    border-right:9px solid var(--card);
+  }
   .stage,.stats,.grid{animation:rise .3s ease both}
   .grid{animation-delay:.04s}
   @media (prefers-reduced-motion: reduce){
@@ -1027,7 +1050,7 @@ function runVika(){
   let vikaEl=null, userEl=null, lastVikaWrap=null;
 
   // Intestazione con avatar
-  const vikaHeaderAvatar=$(`<img src="vika.png" class="vika-av-main" style="width:80px;height:80px;display:block;margin:0 auto 8px">`);
+  const vikaHeaderAvatar=$(`<img src="vika.png" class="vika-av-main" style="width:60px;height:60px;display:block;margin:0 auto 6px">`);
   const headerWrap=$(`<div style="text-align:center;padding:4px 0 16px"></div>`);
   headerWrap.appendChild(vikaHeaderAvatar);
   headerWrap.appendChild($(`<div style="font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:2px">Vika</div>`));
@@ -1092,31 +1115,22 @@ function runVika(){
   // Chat
   const chatEl=$(`<div style="
     width:100%;background:var(--card2);border:1px solid var(--line);border-radius:16px;
-    padding:14px;overflow-y:auto;min-height:260px;max-height:340px;
-    display:flex;flex-direction:column;gap:10px;margin-bottom:16px
+    padding:14px 10px;overflow-y:auto;min-height:280px;max-height:420px;
+    display:flex;flex-direction:column;gap:14px;margin-bottom:16px
   "></div>`);
   stage.appendChild(chatEl);
 
   function addBubble(role){
-    const isV=role==="vika";
-    const wrap=$(`<div style="display:flex;flex-direction:column;align-items:${isV?"flex-start":"flex-end"}"></div>`);
     let bub;
-    if(isV){
-      const row=$(`<div style="display:flex;align-items:flex-end;gap:8px"></div>`);
-      const av=$(`<img src="vika.png" class="vika-av-small">`);
-      const col=$(`<div style="display:flex;flex-direction:column;gap:3px;max-width:85%"></div>`);
-      const lbl=$(`<div style="font-size:11px;color:var(--muted);padding:0 4px">Vika</div>`);
-      bub=$(`<div style="
-        background:var(--card);color:var(--text);
-        padding:10px 14px;border-radius:4px 14px 14px 14px;
-        font-size:15px;line-height:1.5;box-shadow:var(--shadow-sm);
-        border:1px solid var(--line)
-      "></div>`);
-      col.appendChild(lbl); col.appendChild(bub);
-      row.appendChild(av); row.appendChild(col);
-      wrap.appendChild(row);
-      lastVikaWrap=col;
+    if(role==="vika"){
+      const row=$(`<div class="vika-msg-row"></div>`);
+      const char=$(`<img src="vika.png" class="vika-char">`);
+      bub=$(`<div class="vika-fumetto"></div>`);
+      row.appendChild(char); row.appendChild(bub);
+      chatEl.appendChild(row);
+      lastVikaWrap=bub;
     } else {
+      const wrap=$(`<div style="display:flex;flex-direction:column;align-items:flex-end"></div>`);
       const lbl=$(`<div style="font-size:11px;color:var(--muted);margin-bottom:3px;padding:0 4px;text-align:right">Tu</div>`);
       bub=$(`<div style="
         background:linear-gradient(135deg,var(--accent2),#5b8cff);color:#fff;
@@ -1124,8 +1138,9 @@ function runVika(){
         max-width:88%;font-size:15px;line-height:1.45;box-shadow:var(--shadow-sm)
       "></div>`);
       wrap.appendChild(lbl); wrap.appendChild(bub);
+      chatEl.appendChild(wrap);
     }
-    chatEl.appendChild(wrap); chatEl.scrollTop=chatEl.scrollHeight;
+    chatEl.scrollTop=chatEl.scrollHeight;
     return bub;
   }
 
