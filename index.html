@@ -367,6 +367,15 @@ function renderHome(){
         <div class="d">${d}</div>
       </button>`)).onclick = ()=>start(mode);
   });
+  // Vika — conversazione live
+  grid.appendChild($(`
+    <button class="tile wide">
+      <div class="ico">🎙️</div>
+      <div class="txt">
+        <div class="t">Conversa con Vika</div>
+        <div class="d">Parla in russo con la tua tutor virtuale — corregge gli errori in tempo reale</div>
+      </div>
+    </button>`)).onclick = ()=>start("vika");
   // scheda in evidenza: consultazione delle regole
   if(DB.riferimento && DB.riferimento.length){
     grid.appendChild($(`
@@ -405,6 +414,7 @@ function start(mode){
   if(mode==="gram") return runGram();
   if(mode==="phrase") return runPhrase();
   if(mode==="ref") return runReference();
+  if(mode==="vika") return runVika();
 }
 
 // ---------- 0. REGOLE GRAMMATICALI (consultazione) ----------
@@ -662,6 +672,269 @@ function finish(stage, msg, restart){
   const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
   const b=$(`<button class="btn primary">Ancora</button>`); b.onclick=restart;
   row.appendChild(a); row.appendChild(b); stage.appendChild(row);
+}
+
+// ========== VIKA — Gemini Multimodal Live ==========
+const VIKA_KEY = "vika_gemini_key";
+const VIKA_WS = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent";
+
+function vikaPrompt(lang, db) {
+  const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
+  const frasi = (db.frasi||[]).slice(0,25).map(f=>`${f.ru}=${f.it}`).join("; ");
+  const rule = lang==="ru+it"
+    ? "Parla in russo semplice. Quando correggi un errore o spieghi grammatica, aggiungi una breve nota in italiano."
+    : "Parla SOLO in russo semplice. Anche le correzioni devono essere in russo.";
+  return `Sei Vika, una tutor di russo paziente e incoraggiante.
+Lo studente impara da zero (livello A1) con il corso "Russo Facile con Yula".
+${rule}
+Vocaboli già studiati: ${vocab}.
+Frasi già studiate: ${frasi}.
+Risposte brevi (2-3 frasi max). Correggi gli errori gentilmente. Inizia tu salutando in russo.`;
+}
+
+class VikaSession {
+  constructor({apiKey,lang,db,onMsg,onStatus}){
+    this.apiKey=apiKey; this.lang=lang; this.db=db;
+    this.onMsg=onMsg; this.onStatus=onStatus;
+    this.ws=null; this.audioCtx=null; this.micStream=null;
+    this.playCtx=null; this.nextPlayTime=0;
+    this.recognition=null; this.vikaText="";
+  }
+
+  async connect(){
+    this.onStatus("connecting");
+    this.ws=new WebSocket(`${VIKA_WS}?key=${this.apiKey}`);
+    this.ws.onopen=()=>{
+      this.ws.send(JSON.stringify({
+        setup:{
+          model:"models/gemini-2.0-flash-live-001",
+          generationConfig:{
+            responseModalities:["AUDIO","TEXT"],
+            speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Aoede"}}}
+          },
+          systemInstruction:{parts:[{text:vikaPrompt(this.lang,this.db)}]}
+        }
+      }));
+    };
+    this.ws.onmessage=async e=>{
+      let d; try{ d=JSON.parse(e.data); }catch(err){ return; }
+      if(d.setupComplete){ this.onStatus("connected"); await this._startMic(); this._startSTT(); }
+      if(d.serverContent){
+        const sc=d.serverContent;
+        if(sc.modelTurn?.parts){
+          this.onStatus("speaking");
+          for(const p of sc.modelTurn.parts){
+            if(p.text){ this.vikaText+=p.text; this.onMsg({role:"vika",text:this.vikaText,final:false}); }
+            if(p.inlineData?.data) this._playChunk(p.inlineData.data);
+          }
+        }
+        if(sc.turnComplete){
+          if(this.vikaText){ this.onMsg({role:"vika",text:this.vikaText,final:true}); this.vikaText=""; }
+          this.onStatus("listening");
+        }
+      }
+      if(d.error){ this.onStatus("error"); }
+    };
+    this.ws.onerror=()=>this.onStatus("error");
+    this.ws.onclose=()=>{ if(this.ws) this.onStatus("disconnected"); };
+  }
+
+  async _startMic(){
+    this.audioCtx=new AudioContext({sampleRate:16000});
+    this.micStream=await navigator.mediaDevices.getUserMedia({audio:true,video:false});
+    const source=this.audioCtx.createMediaStreamSource(this.micStream);
+    const code=`class P extends AudioWorkletProcessor{process(i){if(i[0]&&i[0][0])this.port.postMessage(i[0][0].slice());return true}}registerProcessor('pcm-vika',P)`;
+    const url=URL.createObjectURL(new Blob([code],{type:"application/javascript"}));
+    await this.audioCtx.audioWorklet.addModule(url);
+    URL.revokeObjectURL(url);
+    const node=new AudioWorkletNode(this.audioCtx,"pcm-vika");
+    node.port.onmessage=({data})=>{
+      if(!this.ws||this.ws.readyState!==WebSocket.OPEN) return;
+      const i16=new Int16Array(data.length);
+      for(let i=0;i<data.length;i++) i16[i]=Math.max(-32768,Math.min(32767,data[i]*32768));
+      let b=""; const u8=new Uint8Array(i16.buffer);
+      for(let i=0;i<u8.length;i++) b+=String.fromCharCode(u8[i]);
+      this.ws.send(JSON.stringify({realtimeInput:{mediaChunks:[{mimeType:"audio/pcm;rate=16000",data:btoa(b)}]}}));
+    };
+    source.connect(node);
+    this.onStatus("listening");
+  }
+
+  _startSTT(){
+    const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+    if(!SR) return;
+    this.recognition=new SR();
+    this.recognition.lang="ru-RU"; this.recognition.continuous=true; this.recognition.interimResults=true;
+    this.recognition.onresult=e=>{
+      let t="", final=false;
+      for(let i=e.resultIndex;i<e.results.length;i++){ t+=e.results[i][0].transcript; if(e.results[i].isFinal) final=true; }
+      this.onMsg({role:"user",text:t,final});
+    };
+    this.recognition.onerror=()=>{};
+    this.recognition.onend=()=>{ if(this.ws?.readyState===WebSocket.OPEN) try{this.recognition.start();}catch(e){} };
+    this.recognition.start();
+  }
+
+  _playChunk(b64){
+    if(!this.playCtx||this.playCtx.state==="closed"){
+      this.playCtx=new AudioContext({sampleRate:24000}); this.nextPlayTime=0;
+    }
+    const bin=atob(b64); const u8=new Uint8Array(bin.length);
+    for(let i=0;i<bin.length;i++) u8[i]=bin.charCodeAt(i);
+    const i16=new Int16Array(u8.buffer); const f32=new Float32Array(i16.length);
+    for(let i=0;i<i16.length;i++) f32[i]=i16[i]/32768;
+    const buf=this.playCtx.createBuffer(1,f32.length,24000);
+    buf.getChannelData(0).set(f32);
+    const src=this.playCtx.createBufferSource();
+    src.buffer=buf; src.connect(this.playCtx.destination);
+    const t=Math.max(this.nextPlayTime,this.playCtx.currentTime+0.02);
+    src.start(t); this.nextPlayTime=t+buf.duration;
+  }
+
+  disconnect(){
+    try{this.recognition?.stop();}catch(e){} this.recognition=null;
+    this.micStream?.getTracks().forEach(t=>t.stop());
+    try{this.audioCtx?.close();}catch(e){}
+    try{this.playCtx?.close();}catch(e){}
+    const ws=this.ws; this.ws=null; ws?.close();
+    this.onStatus("disconnected");
+  }
+}
+
+function runVika(){
+  const stage=header();
+  let session=null, currentLang="ru";
+  let vikaEl=null, userEl=null;
+
+  // Intestazione
+  stage.appendChild($(`<div style="text-align:center;padding:4px 0 14px">
+    <div style="font-size:26px;font-weight:800;letter-spacing:-.5px">Vika 🎙️</div>
+    <div style="font-size:13px;color:var(--muted)">Tutor virtuale · Gemini Live</div>
+  </div>`));
+
+  // Toggle lingua
+  const langRow=$(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:14px"></div>`);
+  const btnRu=$(`<button class="btn" style="flex:0;padding:8px 18px;font-size:13px">🇷🇺 Solo russo</button>`);
+  const btnBi=$(`<button class="btn" style="flex:0;padding:8px 18px;font-size:13px">🇷🇺🇮🇹 Russo + italiano</button>`);
+  function setLang(l){
+    currentLang=l;
+    btnRu.style.borderColor=l==="ru"?"var(--accent2)":""; btnRu.style.color=l==="ru"?"var(--accent2)":"";
+    btnBi.style.borderColor=l==="ru+it"?"var(--accent2)":""; btnBi.style.color=l==="ru+it"?"var(--accent2)":"";
+  }
+  btnRu.onclick=()=>setLang("ru"); btnBi.onclick=()=>setLang("ru+it");
+  langRow.appendChild(btnRu); langRow.appendChild(btnBi); stage.appendChild(langRow);
+  setLang("ru");
+
+  // Status badge
+  const statusEl=$(`<div style="text-align:center;font-size:13px;color:var(--muted);min-height:18px;margin-bottom:10px"></div>`);
+  stage.appendChild(statusEl);
+
+  // Chat
+  const chatEl=$(`<div style="
+    width:100%;background:var(--card2);border:1px solid var(--line);border-radius:16px;
+    padding:14px;overflow-y:auto;min-height:260px;max-height:340px;
+    display:flex;flex-direction:column;gap:10px;margin-bottom:16px
+  "></div>`);
+  stage.appendChild(chatEl);
+
+  function addBubble(role){
+    const isV=role==="vika";
+    const wrap=$(`<div style="display:flex;flex-direction:column;align-items:${isV?"flex-start":"flex-end"}"></div>`);
+    const lbl=$(`<div style="font-size:11px;color:var(--muted);margin-bottom:3px;padding:0 4px">${isV?"Vika":"Tu"}</div>`);
+    const bub=$(`<div style="
+      background:${isV?"var(--card)":"linear-gradient(135deg,var(--accent2),#5b8cff)"};
+      color:${isV?"var(--text)":"#fff"};
+      padding:10px 14px;border-radius:${isV?"4px 14px 14px 14px":"14px 4px 14px 14px"};
+      max-width:88%;font-size:15px;line-height:1.45;box-shadow:var(--shadow-sm)
+    "></div>`);
+    wrap.appendChild(lbl); wrap.appendChild(bub);
+    chatEl.appendChild(wrap); chatEl.scrollTop=chatEl.scrollHeight;
+    return bub;
+  }
+
+  function onMsg({role,text,final}){
+    if(role==="vika"){
+      if(!vikaEl) vikaEl=addBubble("vika");
+      vikaEl.textContent=text;
+      if(final) vikaEl=null;
+    } else {
+      if(!userEl) userEl=addBubble("user");
+      userEl.textContent=text;
+      if(final) userEl=null;
+    }
+    chatEl.scrollTop=chatEl.scrollHeight;
+  }
+
+  const STATUS={
+    connecting:"⏳ Connessione in corso...",
+    connected:"✅ Connessa — inizia a parlare",
+    listening:"🎤 In ascolto...",
+    speaking:"💬 Vika sta parlando...",
+    error:"❌ Errore — controlla la API key",
+    disconnected:""
+  };
+
+  function onStatus(s){
+    statusEl.textContent=STATUS[s]||"";
+    const active=s==="connected"||s==="listening"||s==="speaking";
+    micBtn.textContent=active?"⏹️":"🎙️";
+    micBtn.style.background=active
+      ?"linear-gradient(135deg,var(--accent2),#5b8cff)"
+      :"linear-gradient(135deg,var(--accent),#f0526a)";
+    micLabel.textContent=active?"Premi per terminare":"Premi per parlare con Vika";
+    if(s==="disconnected"||s==="error"){ session=null; vikaEl=null; userEl=null; }
+  }
+
+  // Pulsante microfono
+  const micWrap=$(`<div style="text-align:center;margin-bottom:10px"></div>`);
+  const micBtn=$(`<button style="
+    width:76px;height:76px;border-radius:50%;border:none;font-size:30px;cursor:pointer;
+    background:linear-gradient(135deg,var(--accent),#f0526a);
+    box-shadow:0 6px 20px rgba(226,56,75,.35);transition:.15s;color:#fff
+  ">🎙️</button>`);
+  const micLabel=$(`<div style="margin-top:8px;font-size:12px;color:var(--muted)">Premi per parlare con Vika</div>`);
+  micWrap.appendChild(micBtn); micWrap.appendChild(micLabel); stage.appendChild(micWrap);
+
+  micBtn.onclick=async()=>{
+    if(session){ session.disconnect(); return; }
+    const key=localStorage.getItem(VIKA_KEY);
+    if(!key){ showKeyModal(); return; }
+    session=new VikaSession({apiKey:key,lang:currentLang,db:DB,onMsg,onStatus});
+    session.connect().catch(()=>onStatus("error"));
+  };
+
+  // Link impostazione chiave
+  const hasKey=!!localStorage.getItem(VIKA_KEY);
+  const keyEl=$(`<p style="text-align:center;margin:4px 0 0"><a href="#" style="font-size:12px;color:var(--accent2)">${hasKey?"✓ API key configurata · cambia":"🔑 Configura API key Gemini"}</a></p>`);
+  keyEl.querySelector("a").onclick=e=>{e.preventDefault();showKeyModal();};
+  stage.appendChild(keyEl);
+
+  function showKeyModal(){
+    const ov=$(`<div style="position:fixed;inset:0;background:rgba(0,0,0,.52);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px">
+      <div style="background:var(--card);border-radius:20px;padding:24px;width:100%;max-width:380px;box-shadow:var(--shadow-lg)">
+        <h3 style="margin:0 0 8px;font-size:18px">🔑 API Key Gemini</h3>
+        <p style="font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.55">
+          Ottieni la chiave gratuita su <b>aistudio.google.com</b> → <b>Get API key</b>.<br>
+          Salvata solo su questo dispositivo.
+        </p>
+        <input id="kIn" type="password" placeholder="Incolla la tua API key..." style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card2);color:var(--text);font-size:15px;box-sizing:border-box;margin-bottom:14px">
+        <div style="display:flex;gap:10px">
+          <button class="btn" id="kCx" style="flex:1">Annulla</button>
+          <button class="btn primary" id="kSv" style="flex:1">Salva</button>
+        </div>
+      </div>
+    </div>`);
+    document.body.appendChild(ov);
+    const inp=ov.querySelector("#kIn");
+    inp.value=localStorage.getItem(VIKA_KEY)||"";
+    ov.querySelector("#kCx").onclick=()=>ov.remove();
+    ov.querySelector("#kSv").onclick=()=>{
+      const v=inp.value.trim();
+      if(v){ localStorage.setItem(VIKA_KEY,v); keyEl.querySelector("a").textContent="✓ API key configurata · cambia"; }
+      ov.remove();
+    };
+    setTimeout(()=>inp.focus(),50);
+  }
 }
 
 // ---------- theme-color dinamico (chiaro/scuro segue il sistema) ----------
