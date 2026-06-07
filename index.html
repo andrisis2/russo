@@ -676,7 +676,7 @@ function finish(stage, msg, restart){
 
 // ========== VIKA — Gemini Multimodal Live ==========
 const VIKA_KEY = "vika_gemini_key";
-const VIKA_WS = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent";
+const VIKA_WS = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent";
 
 function vikaPrompt(lang, db) {
   const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
@@ -707,7 +707,7 @@ class VikaSession {
     this.ws.onopen=()=>{
       this.ws.send(JSON.stringify({
         setup:{
-          model:"gemini-2.0-flash-live-001",
+          model:"models/gemini-2.0-flash-live-001",
           generationConfig:{
             responseModalities:["AUDIO"],
             speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Aoede"}}}
