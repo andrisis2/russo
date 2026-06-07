@@ -51,7 +51,12 @@
   /* ---- Animazioni di entrata schermate ---- */
   @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
   @keyframes micpulse{0%,100%{box-shadow:0 6px 20px rgba(47,107,237,.35),0 0 0 0 rgba(47,107,237,.4)}70%{box-shadow:0 6px 20px rgba(47,107,237,.35),0 0 0 14px rgba(47,107,237,0)}}
+  @keyframes vikabounce{0%,100%{transform:translateY(0) scale(1)}40%{transform:translateY(-4px) scale(1.04)}}
+  @keyframes vikaglow{0%,100%{box-shadow:0 0 0 3px rgba(47,107,237,.35),0 4px 18px rgba(47,107,237,.18)}50%{box-shadow:0 0 0 6px rgba(47,107,237,.1),0 4px 18px rgba(47,107,237,.35)}}
   .mic-listening{animation:micpulse 1.6s ease-in-out infinite}
+  .vika-av-main{border-radius:50%;object-fit:cover;border:3px solid var(--line);transition:border-color .3s,box-shadow .3s}
+  .vika-av-main.speaking{border-color:var(--accent2);animation:vikabounce .7s ease-in-out infinite,vikaglow 1.4s ease-in-out infinite}
+  .vika-av-small{width:34px;height:34px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--line);align-self:flex-end}
   .stage,.stats,.grid{animation:rise .3s ease both}
   .grid{animation-delay:.04s}
   @media (prefers-reduced-motion: reduce){
@@ -781,7 +786,7 @@ class VikaSession {
           model:"models/gemini-3.1-flash-live-preview",
           generationConfig:{
             responseModalities:["AUDIO"],
-            speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Aoede"}}}
+            speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Kore"}}}
           },
           systemInstruction:{parts:[{text:vikaPrompt(this.lang,this.db,this._opts())}]}
         }
@@ -900,13 +905,13 @@ class VikaSession {
           const u=new SpeechSynthesisUtterance(t);
           if(isRu){u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice;}
           else{u.lang="it-IT"; if(itVoice) u.voice=itVoice;}
-          u.rate=0.88; u.onend=next; u.onerror=next;
+          u.rate=0.88; u.pitch=1.3; u.onend=next; u.onerror=next;
           speechSynthesis.speak(u);
         };
         next();
       } else {
         const u=new SpeechSynthesisUtterance(text);
-        u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice; u.rate=0.88;
+        u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice; u.rate=0.88; u.pitch=1.3;
         u.onend=resolve; u.onerror=resolve;
         speechSynthesis.speak(u);
       }
@@ -996,11 +1001,13 @@ function runVika(){
   let session=null, currentLang="ru", currentPracticeMode="free";
   let vikaEl=null, userEl=null, lastVikaWrap=null;
 
-  // Intestazione
-  stage.appendChild($(`<div style="text-align:center;padding:4px 0 14px">
-    <div style="font-size:26px;font-weight:800;letter-spacing:-.5px">Vika 🎙️</div>
-    <div style="font-size:13px;color:var(--muted)">Tutor virtuale · Gemini AI</div>
-  </div>`));
+  // Intestazione con avatar
+  const vikaHeaderAvatar=$(`<img src="vika.png" class="vika-av-main" style="width:80px;height:80px;display:block;margin:0 auto 8px">`);
+  const headerWrap=$(`<div style="text-align:center;padding:4px 0 16px"></div>`);
+  headerWrap.appendChild(vikaHeaderAvatar);
+  headerWrap.appendChild($(`<div style="font-size:20px;font-weight:800;letter-spacing:-.3px;margin-bottom:2px">Vika</div>`));
+  headerWrap.appendChild($(`<div style="font-size:12px;color:var(--muted)">Tutor virtuale · Gemini AI</div>`));
+  stage.appendChild(headerWrap);
 
   // Toggle lingua modalità (solo russo vs russo+italiano)
   let currentUserLang="ru-RU";
@@ -1068,15 +1075,31 @@ function runVika(){
   function addBubble(role){
     const isV=role==="vika";
     const wrap=$(`<div style="display:flex;flex-direction:column;align-items:${isV?"flex-start":"flex-end"}"></div>`);
-    const lbl=$(`<div style="font-size:11px;color:var(--muted);margin-bottom:3px;padding:0 4px">${isV?"Vika":"Tu"}</div>`);
-    const bub=$(`<div style="
-      background:${isV?"var(--card)":"linear-gradient(135deg,var(--accent2),#5b8cff)"};
-      color:${isV?"var(--text)":"#fff"};
-      padding:10px 14px;border-radius:${isV?"4px 14px 14px 14px":"14px 4px 14px 14px"};
-      max-width:88%;font-size:15px;line-height:1.45;box-shadow:var(--shadow-sm)
-    "></div>`);
-    wrap.appendChild(lbl); wrap.appendChild(bub);
-    if(isV) lastVikaWrap=wrap;
+    let bub;
+    if(isV){
+      const row=$(`<div style="display:flex;align-items:flex-end;gap:8px"></div>`);
+      const av=$(`<img src="vika.png" class="vika-av-small">`);
+      const col=$(`<div style="display:flex;flex-direction:column;gap:3px;max-width:85%"></div>`);
+      const lbl=$(`<div style="font-size:11px;color:var(--muted);padding:0 4px">Vika</div>`);
+      bub=$(`<div style="
+        background:var(--card);color:var(--text);
+        padding:10px 14px;border-radius:4px 14px 14px 14px;
+        font-size:15px;line-height:1.5;box-shadow:var(--shadow-sm);
+        border:1px solid var(--line)
+      "></div>`);
+      col.appendChild(lbl); col.appendChild(bub);
+      row.appendChild(av); row.appendChild(col);
+      wrap.appendChild(row);
+      lastVikaWrap=col;
+    } else {
+      const lbl=$(`<div style="font-size:11px;color:var(--muted);margin-bottom:3px;padding:0 4px;text-align:right">Tu</div>`);
+      bub=$(`<div style="
+        background:linear-gradient(135deg,var(--accent2),#5b8cff);color:#fff;
+        padding:10px 14px;border-radius:14px 4px 14px 14px;
+        max-width:88%;font-size:15px;line-height:1.45;box-shadow:var(--shadow-sm)
+      "></div>`);
+      wrap.appendChild(lbl); wrap.appendChild(bub);
+    }
     chatEl.appendChild(wrap); chatEl.scrollTop=chatEl.scrollHeight;
     return bub;
   }
@@ -1151,6 +1174,7 @@ function runVika(){
       :"linear-gradient(135deg,var(--accent),#f0526a)";
     micBtn.style.color=busy?"var(--muted)":"#fff";
     micBtn.classList.toggle("mic-listening", s==="listening");
+    vikaHeaderAvatar.classList.toggle("speaking", s==="speaking");
     micLabel.textContent=active?"Premi per terminare":busy?"Connessione...":"Premi per parlare con Vika";
     if(s==="error"){
       const eb=addBubble("vika");
