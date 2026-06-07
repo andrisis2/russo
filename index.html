@@ -698,7 +698,7 @@ class VikaSession {
     this.onMsg=onMsg; this.onStatus=onStatus;
     this.ws=null; this.audioCtx=null; this.micStream=null;
     this.playCtx=null; this.nextPlayTime=0;
-    this.recognition=null; this.vikaText="";
+    this.recognition=null; this.vikaText=""; this.gotSetup=false;
   }
 
   async connect(){
@@ -707,9 +707,9 @@ class VikaSession {
     this.ws.onopen=()=>{
       this.ws.send(JSON.stringify({
         setup:{
-          model:"models/gemini-2.0-flash-live-001",
+          model:"gemini-2.0-flash-live-001",
           generationConfig:{
-            responseModalities:["AUDIO","TEXT"],
+            responseModalities:["AUDIO"],
             speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Aoede"}}}
           },
           systemInstruction:{parts:[{text:vikaPrompt(this.lang,this.db)}]}
@@ -718,7 +718,7 @@ class VikaSession {
     };
     this.ws.onmessage=async e=>{
       let d; try{ d=JSON.parse(e.data); }catch(err){ return; }
-      if(d.setupComplete){ this.onStatus("connected"); await this._startMic(); this._startSTT(); }
+      if(d.setupComplete){ this.gotSetup=true; this.onStatus("connected"); await this._startMic(); this._startSTT(); }
       if(d.serverContent){
         const sc=d.serverContent;
         if(sc.modelTurn?.parts){
@@ -733,10 +733,24 @@ class VikaSession {
           this.onStatus("listening");
         }
       }
-      if(d.error){ this.onStatus("error"); }
+      if(d.error){
+        const msg=d.error.message||JSON.stringify(d.error);
+        this.onMsg({role:"vika",text:`⚠️ Errore API: ${msg}`,final:true});
+        this.onStatus("error");
+      }
     };
-    this.ws.onerror=()=>{ this.ws=null; this.onStatus("error"); };
-    this.ws.onclose=(ev)=>{ if(this.ws){ this.ws=null; this.onStatus(ev.wasClean?"disconnected":"error"); } };
+    this.ws.onerror=(ev)=>{ this.ws=null; this.onStatus("error"); };
+    this.ws.onclose=(ev)=>{
+      if(this.ws){
+        this.ws=null;
+        if(!this.gotSetup){
+          this.onMsg({role:"vika",text:`⚠️ Connessione chiusa prima del setup (codice ${ev.code}${ev.reason?" — "+ev.reason:""}). Verifica che la tua API key abbia accesso a Gemini Live su aistudio.google.com.`,final:true});
+          this.onStatus("error");
+        } else {
+          this.onStatus(ev.wasClean?"disconnected":"error");
+        }
+      }
+    };
   }
 
   async _startMic(){
