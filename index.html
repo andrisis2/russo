@@ -305,11 +305,12 @@ const sample = (a,n)=>shuffle(a).slice(0,n);
 // vibrazione di feedback (dove supportata): tocco breve se giusto, doppio se sbagliato
 function haptic(ok){ try{ navigator.vibrate && navigator.vibrate(ok?18:[0,35,30,35]); }catch(e){} }
 
-// Text-to-speech russo
-let ruVoice = null;
+// Text-to-speech russo e italiano
+let ruVoice = null, itVoice = null;
 function pickVoice(){
   const vs = speechSynthesis.getVoices();
   ruVoice = vs.find(v=>/ru[-_]?RU/i.test(v.lang)) || vs.find(v=>/^ru/i.test(v.lang)) || null;
+  itVoice = vs.find(v=>/it[-_]?IT/i.test(v.lang)) || vs.find(v=>/^it/i.test(v.lang)) || null;
 }
 if ('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
 function speak(text){
@@ -683,7 +684,7 @@ function vikaPrompt(lang, db) {
   const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
   const frasi = (db.frasi||[]).slice(0,25).map(f=>`${f.ru}=${f.it}`).join("; ");
   const rule = lang==="ru+it"
-    ? "Parla in russo semplice. Quando correggi un errore o spieghi grammatica, aggiungi una breve nota in italiano."
+    ? "Sei bilingue russo-italiano. Il russo è la lingua principale: rispondi sempre in russo. Puoi aggiungere spiegazioni brevi in italiano tra parentesi o dopo un trattino. Lo studente può parlarti sia in russo che in italiano: se ti parla in italiano, capiscilo e rispondi in russo con una breve nota in italiano. Correggi gli errori gentilmente."
     : "Parla SOLO in russo semplice. Anche le correzioni devono essere in russo.";
   return `Sei Vika, una tutor di russo paziente e incoraggiante.
 Lo studente impara da zero (livello A1) con il corso "Russo Facile con Yula".
@@ -703,6 +704,20 @@ class VikaSession {
     this.recognition=null; this.vikaText="";
     this.gotSetup=false; this.fellBack=false;
     this.history=[];
+    this.userInputLang="ru-RU";
+  }
+
+  setUserLang(l){
+    this.userInputLang=l;
+    if(this.mode==="rest"&&this.active){
+      try{this.recognition?.stop();}catch(e){}
+      this.recognition=null;
+    }
+    if(this.mode==="live"&&this.recognition){
+      try{this.recognition.stop();}catch(e){}
+      this.recognition=null;
+      this._startSTT();
+    }
   }
 
   async connect(){
@@ -822,7 +837,7 @@ class VikaSession {
     const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
     if(!SR){this.onMsg({role:"vika",text:"⚠️ Riconoscimento vocale non supportato. Prova Chrome.",final:true}); return;}
     this.recognition=new SR();
-    this.recognition.lang="ru-RU"; this.recognition.continuous=false; this.recognition.interimResults=true;
+    this.recognition.lang=this.userInputLang; this.recognition.continuous=false; this.recognition.interimResults=true;
     let interim=null;
     this.recognition.onresult=e=>{
       let t="",final=false;
@@ -841,11 +856,39 @@ class VikaSession {
   async _speak(text){
     return new Promise(resolve=>{
       speechSynthesis.cancel();
-      const u=new SpeechSynthesisUtterance(text);
-      u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice; u.rate=0.88;
-      u.onend=resolve; u.onerror=resolve;
-      speechSynthesis.speak(u);
+      if(this.lang==="ru+it"){
+        const segs=this._splitByScript(text);
+        let i=0;
+        const next=()=>{
+          if(i>=segs.length){resolve();return;}
+          const {t,isRu}=segs[i++];
+          const u=new SpeechSynthesisUtterance(t);
+          if(isRu){u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice;}
+          else{u.lang="it-IT"; if(itVoice) u.voice=itVoice;}
+          u.rate=0.88; u.onend=next; u.onerror=next;
+          speechSynthesis.speak(u);
+        };
+        next();
+      } else {
+        const u=new SpeechSynthesisUtterance(text);
+        u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice; u.rate=0.88;
+        u.onend=resolve; u.onerror=resolve;
+        speechSynthesis.speak(u);
+      }
     });
+  }
+
+  _splitByScript(text){
+    const parts=text.split(/([.!?…\n]+)/);
+    const segs=[];
+    for(let i=0;i<parts.length;i+=2){
+      const t=(parts[i]+(parts[i+1]||"")).trim();
+      if(!t) continue;
+      const cy=(t.match(/[Ѐ-ӿ]/g)||[]).length;
+      const la=(t.match(/[a-zA-Z]/g)||[]).length;
+      segs.push({t,isRu:cy>=la});
+    }
+    return segs.length?segs:[{t:text,isRu:true}];
   }
 
   async _startMic(){
@@ -873,7 +916,7 @@ class VikaSession {
     const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
     if(!SR) return;
     this.recognition=new SR();
-    this.recognition.lang="ru-RU"; this.recognition.continuous=true; this.recognition.interimResults=true;
+    this.recognition.lang=this.userInputLang; this.recognition.continuous=true; this.recognition.interimResults=true;
     this.recognition.onresult=e=>{
       let t="",final=false;
       for(let i=e.resultIndex;i<e.results.length;i++){t+=e.results[i][0].transcript; if(e.results[i].isFinal) final=true;}
@@ -924,18 +967,38 @@ function runVika(){
     <div style="font-size:13px;color:var(--muted)">Tutor virtuale · Gemini AI</div>
   </div>`));
 
-  // Toggle lingua
-  const langRow=$(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:14px"></div>`);
+  // Toggle lingua modalità (solo russo vs russo+italiano)
+  let currentUserLang="ru-RU";
+  const langRow=$(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:8px"></div>`);
   const btnRu=$(`<button class="btn" style="flex:0;padding:8px 18px;font-size:13px">🇷🇺 Solo russo</button>`);
   const btnBi=$(`<button class="btn" style="flex:0;padding:8px 18px;font-size:13px">🇷🇺🇮🇹 Russo + italiano</button>`);
+
+  // Toggle lingua input utente (visibile solo in modalità ru+it)
+  const userLangRow=$(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:14px;display:none"></div>`);
+  const btnUsr_ru=$(`<button class="btn" style="flex:0;padding:6px 14px;font-size:12px">🎤🇷🇺 Parlo russo</button>`);
+  const btnUsr_it=$(`<button class="btn" style="flex:0;padding:6px 14px;font-size:12px">🎤🇮🇹 Parlo italiano</button>`);
+  function setUserInputLang(l){
+    currentUserLang=l;
+    btnUsr_ru.style.borderColor=l==="ru-RU"?"var(--accent2)":""; btnUsr_ru.style.color=l==="ru-RU"?"var(--accent2)":"";
+    btnUsr_it.style.borderColor=l==="it-IT"?"var(--accent2)":""; btnUsr_it.style.color=l==="it-IT"?"var(--accent2)":"";
+    if(session) session.setUserLang(l);
+  }
+  btnUsr_ru.onclick=()=>setUserInputLang("ru-RU");
+  btnUsr_it.onclick=()=>setUserInputLang("it-IT");
+  userLangRow.appendChild(btnUsr_ru); userLangRow.appendChild(btnUsr_it);
+
   function setLang(l){
     currentLang=l;
     btnRu.style.borderColor=l==="ru"?"var(--accent2)":""; btnRu.style.color=l==="ru"?"var(--accent2)":"";
     btnBi.style.borderColor=l==="ru+it"?"var(--accent2)":""; btnBi.style.color=l==="ru+it"?"var(--accent2)":"";
+    userLangRow.style.display=l==="ru+it"?"flex":"none";
+    if(l==="ru") setUserInputLang("ru-RU");
   }
   btnRu.onclick=()=>setLang("ru"); btnBi.onclick=()=>setLang("ru+it");
   langRow.appendChild(btnRu); langRow.appendChild(btnBi); stage.appendChild(langRow);
+  stage.appendChild(userLangRow);
   setLang("ru");
+  setUserInputLang("ru-RU");
 
   // Status badge
   const statusEl=$(`<div style="text-align:center;font-size:13px;color:var(--muted);min-height:18px;margin-bottom:10px"></div>`);
@@ -1020,6 +1083,7 @@ function runVika(){
     const key=localStorage.getItem(VIKA_KEY);
     if(!key){ showKeyModal(); return; }
     session=new VikaSession({apiKey:key,lang:currentLang,db:DB,onMsg,onStatus});
+    session.userInputLang=currentUserLang;
     session.connect().catch(()=>onStatus("error"));
   };
 
