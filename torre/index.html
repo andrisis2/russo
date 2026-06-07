@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>La Torre 💕</title>
+<style>
+  :root{
+    --rosa:#ff5d8f; --rosa-scuro:#d63b6e; --oro:#ffcf5c;
+    --notte1:#1b1140; --notte2:#3a1d63; --notte3:#7a2d6b;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{margin:0; height:100%; overflow:hidden; font-family:-apple-system,"Segoe UI",Roboto,sans-serif;}
+  #game{position:fixed; inset:0; background:#000; touch-action:manipulation;}
+  canvas{position:absolute; inset:0; width:100%; height:100%; display:block;}
+
+  /* livello UI sopra al canvas */
+  #ui{position:absolute; inset:0; display:flex; flex-direction:column;
+      justify-content:flex-end; align-items:center; padding:18px; pointer-events:none;}
+  .panel{pointer-events:auto; width:min(560px,94vw); background:rgba(20,10,40,.78);
+      backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,.18);
+      border-radius:20px; padding:18px 18px 20px; color:#fff;
+      box-shadow:0 12px 40px rgba(0,0,0,.45); text-align:center;}
+  .floortag{display:inline-block; font-size:13px; letter-spacing:1px; text-transform:uppercase;
+      color:var(--oro); margin-bottom:6px; opacity:.9;}
+  .domanda{font-size:20px; font-weight:700; line-height:1.3; margin:4px 0 14px;}
+  .answers{display:grid; gap:10px;}
+  .ans{pointer-events:auto; appearance:none; border:none; cursor:pointer;
+      font-size:16px; font-weight:600; padding:14px 16px; border-radius:14px;
+      background:linear-gradient(180deg,#fff,#ffe9f1); color:#2a1140;
+      transition:transform .08s ease, box-shadow .2s ease; box-shadow:0 4px 0 #d9a9bd;}
+  .ans:active{transform:translateY(3px); box-shadow:0 1px 0 #d9a9bd;}
+  .ans.giusta{background:linear-gradient(180deg,#b6f5c4,#7fe6a0); box-shadow:0 4px 0 #4caf72;}
+  .ans.sbagliata{background:linear-gradient(180deg,#ffc2c2,#ff9a9a); box-shadow:0 4px 0 #d46060;}
+  .ans:disabled{cursor:default;}
+
+  .big{font-size:30px; font-weight:800; margin:6px 0 4px;
+      background:linear-gradient(90deg,#ff8ab0,#ffd36e); -webkit-background-clip:text;
+      background-clip:text; color:transparent;}
+  .sub{font-size:16px; opacity:.92; line-height:1.4; margin:6px 0 16px;}
+  .cta{pointer-events:auto; appearance:none; border:none; cursor:pointer;
+      font-size:18px; font-weight:800; padding:15px 26px; border-radius:16px;
+      background:linear-gradient(180deg,var(--rosa),var(--rosa-scuro)); color:#fff;
+      box-shadow:0 6px 0 #9c2750; transition:transform .08s ease;}
+  .cta:active{transform:translateY(3px); box-shadow:0 3px 0 #9c2750;}
+  .hint{font-size:13px; opacity:.7; margin-top:12px;}
+  .hidden{display:none !important;}
+
+  /* contatore cuori in alto */
+  #top{position:absolute; top:0; left:0; right:0; display:flex; justify-content:center;
+      gap:8px; padding:14px; pointer-events:none;}
+  .lifeheart{font-size:22px; filter:drop-shadow(0 2px 4px rgba(0,0,0,.5)); transition:opacity .3s, transform .3s;}
+  .lifeheart.lost{opacity:.25; transform:scale(.8);}
+</style>
+</head>
+<body>
+<div id="game">
+  <canvas id="cv"></canvas>
+  <div id="top"></div>
+  <div id="ui">
+    <!-- INTRO -->
+    <div id="intro" class="panel">
+      <div class="big">La Torre 💕</div>
+      <div class="sub">Sali la torre rispondendo alle domande.<br>In cima ti aspetta una sorpresa…</div>
+      <button class="cta" id="startBtn">Inizia a salire ✨</button>
+      <div class="hint">Tocca per giocare · funziona anche da telefono</div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz" class="panel hidden">
+      <span class="floortag" id="floortag">Piano 1 di 3</span>
+      <div class="domanda" id="domanda">…</div>
+      <div class="answers" id="answers"></div>
+    </div>
+
+    <!-- ROOF / fine -->
+    <div id="endcard" class="panel hidden">
+      <div class="big" id="endBig">Sei arrivata in cima 🌙</div>
+      <div class="sub" id="endSub">Sul tetto della moschea dove ci siamo conosciuti…</div>
+      <button class="cta hidden" id="restartBtn">Rigioca 🔁</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   ⚙️  PERSONALIZZA QUI — è tutto in questa sezione
+   ============================================================ */
+
+// ── 1) LE FOTO DEGLI AVATAR ──────────────────────────────
+// Metti due foto quadrate in questa stessa cartella "torre/"
+// chiamate esattamente:  lei.jpg   e   lui.jpg
+// (se mancano, compaiono due faccine disegnate al posto loro)
+const FOTO_LEI = "lei.jpg";
+const FOTO_LUI = "lui.jpg";
+const NOME_LEI = "Lei";   // <- scrivi il suo nome
+const NOME_LUI = "Io";    // <- scrivi il tuo nome
+
+// ── 2) LE DOMANDE (la vostra storia) ─────────────────────
+// 3 domande = 3 piani. Cambia testo/risposte come vuoi.
+// "ok" è l'indice (0,1,2…) della risposta GIUSTA.
+const DOMANDE = [
+  {
+    q: "Dove ci siamo conosciuti?",
+    opzioni: ["Sul tetto della moschea", "Al supermercato", "In palestra"],
+    ok: 0
+  },
+  {
+    q: "Qual è la nostra canzone?",
+    opzioni: ["…scrivila qui…", "Un'altra", "Nessuna"],
+    ok: 0
+  },
+  {
+    q: "Quanto ti amo?",
+    opzioni: ["Da qui alla luna 🌙", "Tantissimo", "All'infinito ♾️"],
+    ok: 2   // metti tu quella "giusta" 😉
+  }
+];
+
+// ── 3) MESSAGGIO FINALE (dopo il bacio) ──────────────────
+const MSG_FINE_TITOLO = "Ti amo 💖";
+const MSG_FINE_SOTTO  = "Dal tetto dove tutto è iniziato,<br>fino a per sempre.";
+
+/* ============================================================
+   Da qui in giù è il motore del gioco — non serve toccarlo
+   ============================================================ */
+
+const cv = document.getElementById('cv');
+const ctx = cv.getContext('2d');
+let W=0, H=0, DPR=1;
+function resize(){
+  DPR = Math.min(window.devicePixelRatio||1, 2);
+  W = window.innerWidth; H = window.innerHeight;
+  cv.width = W*DPR; cv.height = H*DPR;
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+}
+window.addEventListener('resize', resize); resize();
+
+// carica le foto (con fallback disegnato)
+function loadImg(src){
+  return new Promise(res=>{
+    const im = new Image();
+    im.onload = ()=>res({img:im, ok:true});
+    im.onerror = ()=>res({img:null, ok:false});
+    im.src = src;
+  });
+}
+let imgLei={ok:false}, imgLui={ok:false};
+loadImg(FOTO_LEI).then(r=>imgLei=r);
+loadImg(FOTO_LUI).then(r=>imgLui=r);
+
+// ---- stato di gioco ----
+let state = 'intro';     // intro | quiz | climb | roof | kiss | end
+let piano = 0;           // 0..DOMANDE.length
+let vite = 3;
+const TOT = DOMANDE.length;
+
+// posizioni avatar (in coordinate "schermo")
+let lei = {x:0,y:0,scale:1,flip:false};
+let lui = {x:0,y:0,scale:1,flip:true};
+
+// stelle di sfondo
+const stars = Array.from({length:90},()=>({
+  x:Math.random(), y:Math.random()*0.7, r:Math.random()*1.6+0.3, tw:Math.random()*6.28
+}));
+// cuori che salgono
+let hearts = [];
+function spawnHearts(n, cx, cy, spread){
+  for(let i=0;i<n;i++) hearts.push({
+    x:cx+(Math.random()-.5)*spread, y:cy+(Math.random()-.5)*spread,
+    vy:-(Math.random()*40+30), vx:(Math.random()-.5)*30,
+    life:1, size:Math.random()*14+10, rot:(Math.random()-.5)
+  });
+}
+
+// ---- audio dolce (facoltativo, parte dal primo tocco) ----
+let actx=null;
+function beep(freq, t0, dur, type='sine', vol=0.12){
+  if(!actx) return;
+  const o=actx.createOscillator(), g=actx.createGain();
+  o.type=type; o.frequency.value=freq;
+  o.connect(g); g.connect(actx.destination);
+  const now=actx.currentTime+t0;
+  g.gain.setValueAtTime(0, now);
+  g.gain.linearRampToValueAtTime(vol, now+0.02);
+  g.gain.exponentialRampToValueAtTime(0.0001, now+dur);
+  o.start(now); o.stop(now+dur+0.02);
+}
+function sndGiusto(){ beep(660,0,.12,'triangle'); beep(880,.10,.16,'triangle'); }
+function sndSbagliato(){ beep(200,0,.18,'sawtooth',.08); }
+function sndAmore(){ [523,659,784,1047].forEach((f,i)=>beep(f,i*0.14,.5,'sine',.10)); }
+function ensureAudio(){ if(!actx){ try{ actx=new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} } }
+
+/* ---------- DISEGNO ---------- */
+function drawSky(t){
+  const g = ctx.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'#150b34'); g.addColorStop(.55,'#3a1d63'); g.addColorStop(1,'#7a2d6b');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  // stelle
+  for(const s of stars){
+    const a = 0.5+0.5*Math.sin(t/600+s.tw);
+    ctx.globalAlpha = a; ctx.fillStyle='#fff';
+    ctx.beginPath(); ctx.arc(s.x*W, s.y*H, s.r, 0, 6.29); ctx.fill();
+  }
+  ctx.globalAlpha=1;
+  // luna
+  ctx.fillStyle='rgba(255,243,205,.95)';
+  ctx.beginPath(); ctx.arc(W*0.82, H*0.16, 34, 0, 6.29); ctx.fill();
+  ctx.fillStyle='rgba(122,45,107,.55)';
+  ctx.beginPath(); ctx.arc(W*0.80, H*0.145, 30, 0, 6.29); ctx.fill();
+}
+
+// torre a piani (vista laterale) - cx centro torre
+function drawTower(){
+  const towerW = Math.min(W*0.62, 360);
+  const cx = W/2;
+  const left = cx - towerW/2;
+  const groundY = H*0.9;
+  const floorH = (groundY - H*0.16) / TOT;
+
+  // corpo torre
+  ctx.fillStyle='#2c1a4d';
+  ctx.fillRect(left, H*0.14, towerW, groundY-H*0.14);
+  ctx.strokeStyle='rgba(255,255,255,.08)'; ctx.lineWidth=2;
+  ctx.strokeRect(left, H*0.14, towerW, groundY-H*0.14);
+
+  // mattoni / piani
+  for(let i=0;i<TOT;i++){
+    const fy = groundY - (i+1)*floorH;
+    ctx.strokeStyle='rgba(255,255,255,.12)';
+    ctx.beginPath(); ctx.moveTo(left, fy); ctx.lineTo(left+towerW, fy); ctx.stroke();
+    // finestra del piano
+    const wy = fy + floorH*0.32, ww=towerW*0.26, wh=floorH*0.4;
+    const passed = i < piano;
+    ctx.fillStyle = passed ? 'rgba(255,207,92,.9)' : 'rgba(255,255,255,.10)';
+    roundRect(cx-ww/2, wy, ww, wh, 8); ctx.fill();
+    // arco finestra
+    ctx.beginPath(); ctx.fillStyle = ctx.fillStyle;
+    ctx.arc(cx, wy, ww/2, Math.PI, 0); ctx.fill();
+  }
+  return {left, towerW, cx, groundY, floorH};
+}
+
+function drawMosqueRoof(){
+  const cx=W/2, baseY=H*0.62, w=Math.min(W*0.8,460);
+  // terrazza
+  ctx.fillStyle='#2c1a4d';
+  roundRect(cx-w/2, baseY, w, H*0.4, 14); ctx.fill();
+  ctx.fillStyle='rgba(255,255,255,.06)';
+  roundRect(cx-w/2, baseY, w, 14, 7); ctx.fill();
+  // ringhiera
+  ctx.strokeStyle='rgba(255,255,255,.25)'; ctx.lineWidth=3;
+  for(let x=cx-w/2+12;x<cx+w/2;x+=26){
+    ctx.beginPath(); ctx.moveTo(x, baseY-26); ctx.lineTo(x, baseY); ctx.stroke();
+  }
+  ctx.beginPath(); ctx.moveTo(cx-w/2, baseY-26); ctx.lineTo(cx+w/2, baseY-26); ctx.stroke();
+
+  // cupola della moschea (dietro, al centro alto)
+  const dome={cx:cx, by:baseY-26, r:Math.min(W*0.16,90)};
+  // tamburo
+  ctx.fillStyle='#3d2566';
+  roundRect(dome.cx-dome.r*0.7, dome.by-dome.r*0.7, dome.r*1.4, dome.r*0.7, 6); ctx.fill();
+  // cupola
+  const dg=ctx.createLinearGradient(0,dome.by-dome.r*1.7,0,dome.by-dome.r*0.6);
+  dg.addColorStop(0,'#6fd0c9'); dg.addColorStop(1,'#2f8f86');
+  ctx.fillStyle=dg;
+  ctx.beginPath();
+  ctx.moveTo(dome.cx-dome.r*0.7, dome.by-dome.r*0.7);
+  ctx.bezierCurveTo(dome.cx-dome.r*0.95, dome.by-dome.r*1.9, dome.cx+dome.r*0.95, dome.by-dome.r*1.9, dome.cx+dome.r*0.7, dome.by-dome.r*0.7);
+  ctx.closePath(); ctx.fill();
+  // pinnacolo + mezzaluna
+  const topY=dome.by-dome.r*1.78;
+  ctx.strokeStyle='#ffcf5c'; ctx.fillStyle='#ffcf5c'; ctx.lineWidth=3;
+  ctx.beginPath(); ctx.moveTo(dome.cx, topY); ctx.lineTo(dome.cx, topY-20); ctx.stroke();
+  ctx.beginPath(); ctx.arc(dome.cx, topY-30, 9, 0.5, 2*Math.PI-0.5); ctx.fill();
+  ctx.globalCompositeOperation='destination-out';
+  ctx.beginPath(); ctx.arc(dome.cx+4, topY-30, 8, 0, 6.29); ctx.fill();
+  ctx.globalCompositeOperation='source-over';
+
+  // due minareti ai lati
+  for(const mx of [cx-w/2+18, cx+w/2-18]){
+    ctx.fillStyle='#3d2566';
+    roundRect(mx-7, baseY-150, 14, 150, 5); ctx.fill();
+    ctx.fillStyle='#6fd0c9';
+    ctx.beginPath(); ctx.moveTo(mx-9,baseY-150); ctx.lineTo(mx,baseY-178); ctx.lineTo(mx+9,baseY-150); ctx.closePath(); ctx.fill();
+  }
+  return {baseY, terraceTop:baseY-26};
+}
+
+// disegna un avatar: foto-faccia in cerchio + corpicino
+function drawAvatar(a, photo, name, color){
+  const s=a.scale, headR=26*s;
+  ctx.save();
+  ctx.translate(a.x, a.y);
+  // corpo
+  ctx.fillStyle=color;
+  roundRect(-16*s, 0, 32*s, 44*s, 14*s); ctx.fill();
+  // testa: cornice
+  ctx.fillStyle='#fff';
+  ctx.beginPath(); ctx.arc(0, -18*s, headR+3, 0, 6.29); ctx.fill();
+  // foto o faccina
+  ctx.save();
+  ctx.beginPath(); ctx.arc(0, -18*s, headR, 0, 6.29); ctx.clip();
+  if(photo && photo.ok && photo.img){
+    const im=photo.img, d=headR*2;
+    // copertura quadrata centrata
+    const ar=im.width/im.height; let dw=d,dh=d;
+    if(ar>1){ dw=d*ar; } else { dh=d/ar; }
+    ctx.drawImage(im, -dw/2, -18*s-dh/2, dw, dh);
+  } else {
+    ctx.fillStyle='#ffd9c2'; ctx.fillRect(-headR,-18*s-headR,headR*2,headR*2);
+    ctx.fillStyle='#5a2a3a';
+    ctx.beginPath(); ctx.arc(-9*s,-20*s,3,0,6.29); ctx.arc(9*s,-20*s,3,0,6.29); ctx.fill();
+    ctx.strokeStyle='#5a2a3a'; ctx.lineWidth=2.5;
+    ctx.beginPath(); ctx.arc(0,-14*s,7*s,0.15*Math.PI,0.85*Math.PI); ctx.stroke();
+  }
+  ctx.restore();
+  // nome
+  ctx.fillStyle='rgba(255,255,255,.92)'; ctx.font=`bold ${12*s}px sans-serif`;
+  ctx.textAlign='center'; ctx.fillText(name, 0, 60*s);
+  ctx.restore();
+}
+
+function drawHearts(dt){
+  for(const h of hearts){
+    h.x+=h.vx*dt; h.y+=h.vy*dt; h.vy+=8*dt; h.life-=dt*0.5;
+  }
+  hearts = hearts.filter(h=>h.life>0);
+  for(const h of hearts){
+    ctx.save(); ctx.globalAlpha=Math.max(0,h.life);
+    ctx.translate(h.x,h.y); ctx.rotate(h.rot);
+    ctx.font=`${h.size}px serif`; ctx.textAlign='center';
+    ctx.fillText('💖',0,0); ctx.restore();
+  }
+}
+
+function roundRect(x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r); ctx.closePath();
+}
+
+/* ---------- LOOP ---------- */
+let last=performance.now();
+let climbT=0, kissT=0;
+function frame(now){
+  const dt=Math.min((now-last)/1000, 0.05); last=now;
+  drawSky(now);
+
+  if(state==='intro'){
+    const T=drawTower();
+    lei.x=T.cx; lei.y=T.groundY-10; lei.scale=1;
+    drawAvatar(lei, imgLei, NOME_LEI, '#ff7eb3');
+  }
+  else if(state==='quiz' || state==='climb'){
+    const T=drawTower();
+    // y target del piano corrente
+    const targetY = T.groundY - 10 - piano*T.floorH;
+    if(state==='climb'){
+      climbT+=dt;
+      const k=Math.min(climbT/0.9,1);
+      lei.y = T.groundY-10 - ( (piano-1)+ k )*T.floorH;
+      lei.x = T.cx + Math.sin(now/120)*3;
+      if(k>=1){ state='quiz'; showQuiz(); }
+    } else {
+      lei.y = targetY; lei.x=T.cx;
+    }
+    lei.scale=1;
+    drawAvatar(lei, imgLei, NOME_LEI, '#ff7eb3');
+  }
+  else if(state==='roof' || state==='kiss' || state==='end'){
+    const R=drawMosqueRoof();
+    const y=R.terraceTop;
+    if(state==='roof'){
+      // i due si avvicinano
+      kissT+=dt; const k=Math.min(kissT/2.2,1);
+      lei.x = W*0.5 - (1-k)* (W*0.28+40) ; lei.y=y;
+      lui.x = W*0.5 + (1-k)* (W*0.28+40) ; lui.y=y;
+      // ferma un po' staccati
+      const gap=46;
+      lei.x = W/2 - gap*(1) + k*(gap-22);
+      lui.x = W/2 + gap*(1) - k*(gap-22);
+      lei.x = (W/2-90) + k*(90-26);
+      lui.x = (W/2+90) - k*(90-26);
+      if(k>=1){ state='kiss'; kissT=0; sndAmore();
+        spawnHearts(26, W/2, y-20, 120); showEnd(); }
+    } else { // kiss + end: restano vicini, cuori
+      lei.x=W/2-26; lui.x=W/2+26; lei.y=y; lui.y=y;
+      if(Math.random()<0.35) spawnHearts(1, W/2, y-30, 80);
+      // piccolo "battito" del bacio
+      kissT+=dt;
+      const bob=Math.sin(kissT*3)*2;
+      lei.y=y+bob; lui.y=y-bob;
+    }
+    lei.scale=1.05; lui.scale=1.05;
+    drawAvatar(lei, imgLei, NOME_LEI, '#ff7eb3');
+    drawAvatar(lui, imgLui, NOME_LUI, '#5db0ff');
+  }
+
+  drawHearts(dt);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+
+/* ---------- UI / FLUSSO ---------- */
+const elIntro=document.getElementById('intro');
+const elQuiz=document.getElementById('quiz');
+const elEnd=document.getElementById('endcard');
+const elFloortag=document.getElementById('floortag');
+const elDomanda=document.getElementById('domanda');
+const elAnswers=document.getElementById('answers');
+const elTop=document.getElementById('top');
+
+function renderLives(){
+  elTop.innerHTML='';
+  for(let i=0;i<3;i++){
+    const s=document.createElement('span');
+    s.className='lifeheart'+(i>=vite?' lost':'');
+    s.textContent='❤️'; elTop.appendChild(s);
+  }
+}
+
+function showQuiz(){
+  elIntro.classList.add('hidden'); elEnd.classList.add('hidden');
+  elQuiz.classList.remove('hidden');
+  const d=DOMANDE[piano];
+  elFloortag.textContent=`Piano ${piano+1} di ${TOT}`;
+  elDomanda.textContent=d.q;
+  elAnswers.innerHTML='';
+  // mescola visivamente le risposte mantenendo l'indice giusto
+  const idx=d.opzioni.map((_,i)=>i);
+  for(const i of idx){
+    const b=document.createElement('button');
+    b.className='ans'; b.textContent=d.opzioni[i];
+    b.onclick=()=>answer(b,i===d.ok);
+    elAnswers.appendChild(b);
+  }
+}
+
+function answer(btn, giusto){
+  ensureAudio();
+  [...elAnswers.children].forEach(b=>b.disabled=true);
+  if(giusto){
+    btn.classList.add('giusta'); sndGiusto();
+    spawnHearts(8, W/2, H*0.5, 60);
+    setTimeout(()=>{
+      piano++;
+      elQuiz.classList.add('hidden');
+      if(piano>=TOT){ goRoof(); }
+      else { state='climb'; climbT=0; }
+    }, 650);
+  } else {
+    btn.classList.add('sbagliata'); sndSbagliato();
+    vite--; renderLives();
+    if(vite<=0){
+      // niente "game over" cattivo: si riprova lo stesso piano
+      setTimeout(()=>{ vite=3; renderLives(); showQuiz(); }, 900);
+    } else {
+      setTimeout(()=>{ [...elAnswers.children].forEach(b=>{b.disabled=false; b.classList.remove('sbagliata');}); }, 700);
+    }
+  }
+}
+
+function goRoof(){
+  state='roof'; kissT=0;
+  elQuiz.classList.add('hidden');
+  elEnd.classList.add('hidden');
+}
+
+function showEnd(){
+  elEnd.classList.remove('hidden');
+  document.getElementById('endBig').innerHTML=MSG_FINE_TITOLO;
+  document.getElementById('endSub').innerHTML=MSG_FINE_SOTTO;
+  document.getElementById('restartBtn').classList.remove('hidden');
+}
+
+document.getElementById('startBtn').onclick=()=>{
+  ensureAudio();
+  piano=0; vite=3; renderLives();
+  state='quiz'; showQuiz();
+};
+document.getElementById('restartBtn').onclick=()=>{
+  hearts=[]; piano=0; vite=3; renderLives();
+  elEnd.classList.add('hidden');
+  state='quiz'; showQuiz();
+};
+
+renderLives();
+</script>
+</body>
+</html>
