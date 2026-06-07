@@ -676,7 +676,7 @@ function finish(stage, msg, restart){
 
 // ========== VIKA — Gemini REST + Web Speech API ==========
 const VIKA_KEY = "vika_gemini_key";
-const VIKA_API = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+const VIKA_API = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
 function vikaPrompt(lang, db) {
   const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
@@ -796,7 +796,7 @@ function runVika(){
   // Intestazione
   stage.appendChild($(`<div style="text-align:center;padding:4px 0 14px">
     <div style="font-size:26px;font-weight:800;letter-spacing:-.5px">Vika 🎙️</div>
-    <div style="font-size:13px;color:var(--muted)">Tutor virtuale · Gemini AI</div>
+    <div style="font-size:13px;color:var(--muted)">Tutor virtuale · Gemini 2.5 Flash</div>
   </div>`));
 
   // Toggle lingua
