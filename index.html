@@ -808,7 +808,7 @@ class VikaSession {
     ws.onopen=()=>{
       ws.send(JSON.stringify({
         setup:{
-          model:"models/gemini-3.1-flash-live-preview",
+          model:"models/gemini-2.5-flash-preview-native-audio-dialog",
           generationConfig:{
             responseModalities:["AUDIO"],
             speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Kore"}}}
