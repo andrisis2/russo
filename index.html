@@ -465,6 +465,7 @@ function renderHome(){
 function header(title){
   backBtn.classList.remove("hidden");
   app.innerHTML = "";
+  window.scrollTo({top:0,behavior:"instant"});
   return app.appendChild($(`<div class="stage"></div>`));
 }
 function progressBar(stage){
