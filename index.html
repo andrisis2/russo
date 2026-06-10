@@ -396,12 +396,14 @@ const TOPIC_ICONS = {
 };
 
 const CONJ_TENSES_RU = [
-  {key:"pres", label:"Presente", modo:"Настоящее время"},
-  {key:"past", label:"Passato",  modo:"Прошедшее время"},
+  {key:"pres", label:"Presente",   modo:"Настоящее время"},
+  {key:"past", label:"Passato",    modo:"Прошедшее время"},
+  {key:"imp",  label:"Imperativo", modo:"Повелительное наклонение"},
 ];
 const CONJ_PRONOUNS_RU = {
   pres: ["я","ты","он/она","мы","вы","они"],
   past: ["он (м.)","она (ж.)","оно (с.р.)","они"],
+  imp:  ["ты","вы"],
 };
 const tenseLabelRu = k => (CONJ_TENSES_RU.find(t=>t.key===k)||{}).label || k;
 function normConj(s){ return (s||"").toLowerCase().trim().replace(/\s+/g," "); }
@@ -543,7 +545,7 @@ function renderHome(){
   const tiles = [
     ["&#127183;","Flashcard","Vocaboli per argomento con spaced repetition","flash"],
     ["&#128292;","Cirillico","Riconosci lettere e leggi parole in cirillico","cyr"],
-    ["&#9999;&#65039;","Coniugazione","Allena le forme verbali — presente e passato","conj"],
+    ["&#9999;&#65039;","Coniugazione","Allena le forme verbali — presente, passato, imperativo","conj"],
     ["&#128208;","Grammatica","Quiz su generi, pronomi e regole","gram"],
     ["&#128172;","Frasi &amp; ascolto","Completa la frase e ascolta la pronuncia","phrase"],
   ];
