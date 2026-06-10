@@ -268,6 +268,30 @@
   .errbox .big{font-size:52px}
   .errbox small{color:var(--muted);font-size:11px;word-break:break-word;opacity:.7}
 
+  /* ---------- Vocabolario (dizionario + ricerca online) ---------- */
+  .vocab-input{width:100%;padding:14px 16px 14px 46px;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--text);font-size:17px;outline:none;box-shadow:var(--shadow-sm);transition:.15s;-webkit-appearance:none;appearance:none}
+  .vocab-input:focus{border-color:var(--accent2);box-shadow:0 0 0 3px rgba(47,107,237,.12)}
+  .vocab-input::placeholder{color:var(--muted)}
+  .vocab-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;width:100%;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow-sm);animation:rise .18s ease both}
+  .vocab-ru{font-size:26px;font-weight:800;letter-spacing:-.4px;line-height:1.2}
+  .vocab-translit{font-size:15px;color:var(--accent2);font-style:italic;margin-top:2px}
+  .vocab-it{font-size:14.5px;color:var(--muted);line-height:1.55;margin-top:4px}
+  .vocab-speak{background:var(--card2);border:1px solid var(--line);border-radius:50%;width:38px;height:38px;flex-shrink:0;font-size:17px;cursor:pointer;transition:.12s;display:flex;align-items:center;justify-content:center}
+  .vocab-speak:hover{background:var(--line)}
+  .add-flash-btn{margin-top:10px;width:100%;padding:9px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:.12s}
+  .add-flash-btn:not(:disabled):hover{border-color:var(--accent2);color:var(--accent2)}
+  .add-flash-btn:disabled{cursor:default;opacity:.8}
+  .tag-picker{margin-top:10px;border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:8px}
+  .tag-picker label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase}
+  .tag-chips{display:flex;flex-wrap:wrap;gap:5px}
+  .tag-chip{padding:4px 10px;border-radius:20px;border:1px solid var(--line);background:none;font-size:12px;color:var(--muted);cursor:pointer;transition:.1s;line-height:1.4}
+  .tag-chip.sel{border-color:var(--accent2);color:var(--accent2);background:rgba(47,107,237,.1)}
+  .tag-save{margin-top:2px;width:100%;padding:8px;border-radius:10px;border:none;background:var(--accent2);color:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:.12s}
+  .tag-save:active{opacity:.85}
+  .results-hdr{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;padding:10px 2px 6px;display:flex;align-items:center;gap:6px}
+  .vocab-card.online{border-color:rgba(47,107,237,.3);background:linear-gradient(135deg,var(--card) 0%,#f0f4ff 100%)}
+  @media (prefers-color-scheme: dark){.vocab-card.online{background:linear-gradient(135deg,var(--card) 0%,rgba(47,107,237,.06) 100%)}}
+
   /* splash screen */
   #splash{
     position:fixed; inset:0; z-index:9999;
@@ -318,9 +342,24 @@
 
 <script>
 const STORE_KEY = "russo_srs_v1";
+const USER_KEY  = "russo_user_voci";
 let DB = null;
 let srs = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 function saveSrs(){ localStorage.setItem(STORE_KEY, JSON.stringify(srs)); }
+
+// ---------- Vocaboli salvati dall'utente (dal Vocabolario) ----------
+function userStore(){ try{ return JSON.parse(localStorage.getItem(USER_KEY)||'{"voci":[]}'); }catch(e){ return {voci:[]}; } }
+function saveUserStore(s){ localStorage.setItem(USER_KEY, JSON.stringify(s)); }
+function addUserVoce(ruWord, itTrans, translit, tag){
+  const s = userStore();
+  if(s.voci.some(v=>v.ru===ruWord)) return false;
+  const item = {id:"u"+Date.now(), ru:ruWord, it:itTrans, translit:translit||""};
+  if(tag) item.tag = [tag];
+  s.voci.push(item);
+  saveUserStore(s);
+  return true;
+}
+function isUserVoce(ruWord){ return userStore().voci.some(v=>v.ru===ruWord); }
 
 const TOPIC_LABELS = {
   saluti:'Saluti',cortesia:'Cortesia',stato:'Espressioni di stato',
@@ -487,6 +526,14 @@ function renderHome(){
   });
   grid.appendChild($(`
     <button class="tile wide">
+      <div class="ico" style="background:rgba(47,107,237,.10)">&#128214;</div>
+      <div class="txt">
+        <div class="t">Vocabolario</div>
+        <div class="d">Dizionario locale + ricerca online &mdash; salva le parole nelle flashcard</div>
+      </div>
+    </button>`)).onclick = ()=>start("vocab");
+  grid.appendChild($(`
+    <button class="tile wide">
       <div class="ico">&#127897;&#65039;</div>
       <div class="txt">
         <div class="t">Conversa con Vika</div>
@@ -539,8 +586,222 @@ function start(mode){
   if(mode==="cyr") return runCyr();
   if(mode==="gram") return runGram();
   if(mode==="phrase") return runPhrase();
+  if(mode==="vocab") return runVocabolario();
   if(mode==="ref") return runReference();
   if(mode==="vika") return runVika();
+}
+
+// ---------- VOCABOLARIO (dizionario locale + ricerca online) ----------
+function runVocabolario(){
+  const stage = header();
+  const words = [...(DB.voci||[])];
+  let activeTag = 'all', langpair = 'it|ru';
+
+  // Toggle direzione ricerca online
+  const toggleWrap = $(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:10px"></div>`);
+  const dirBtns = [['it|ru','IT &#8594; RU'],['ru|it','RU &#8594; IT']].map(([val,label])=>{
+    const b = $(`<button style="border:1px solid var(--line);background:var(--card);border-radius:20px;padding:6px 16px;font-size:12.5px;font-weight:700;color:var(--muted);cursor:pointer;transition:.15s">${label}</button>`);
+    b.onclick = ()=>setDir(val);
+    toggleWrap.appendChild(b);
+    return [val, b];
+  });
+  function paintDir(){
+    dirBtns.forEach(([val,b])=>{
+      const on = val===langpair;
+      b.style.background = on ? 'var(--accent2)' : 'var(--card)';
+      b.style.color = on ? '#fff' : 'var(--muted)';
+      b.style.borderColor = on ? 'var(--accent2)' : 'var(--line)';
+    });
+  }
+  stage.appendChild(toggleWrap);
+
+  // Chip filtro per argomento (agiscono sui risultati locali)
+  const chipsWrap = $(`<div class="ref-nav"></div>`);
+  const chips = [];
+  function mkChip(tag, label){
+    const ch = $(`<button class="ref-chip">${label}</button>`);
+    ch.onclick = ()=>setTag(tag);
+    chipsWrap.appendChild(ch);
+    chips.push([tag, ch]);
+  }
+  mkChip('all', `Tutti (${words.length})`);
+  for(const [tag, label] of Object.entries(TOPIC_LABELS)){
+    const n = words.filter(w=>w.tag&&w.tag.includes(tag)).length;
+    if(n) mkChip(tag, `${TOPIC_ICONS[tag]||''} ${label} (${n})`);
+  }
+  function paintChips(){
+    chips.forEach(([tag,ch])=>{
+      const on = tag===activeTag;
+      ch.style.background = on ? 'var(--accent2)' : '';
+      ch.style.color = on ? '#fff' : '';
+      ch.style.borderColor = on ? 'var(--accent2)' : '';
+    });
+  }
+  stage.appendChild(chipsWrap);
+
+  // Campo di ricerca
+  const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:8px"></div>`);
+  inputWrap.appendChild($(`<span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;pointer-events:none">&#128269;</span>`));
+  const inp = document.createElement('input');
+  inp.className = 'vocab-input';
+  inp.type = 'search';
+  inp.placeholder = 'Cerca in italiano…';
+  inp.setAttribute('autocomplete','off');
+  inp.setAttribute('autocorrect','off');
+  inp.setAttribute('spellcheck','false');
+  inputWrap.appendChild(inp);
+  stage.appendChild(inputWrap);
+
+  const localSection = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%"></div>`);
+  const onlineSection = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%;margin-top:4px"></div>`);
+  stage.appendChild(localSection);
+  stage.appendChild(onlineSection);
+
+  // ---- Card unificata ----
+  function makeVocabCard(ruWord, itTrans, {translit=null, online=false}={}){
+    const card = document.createElement('div');
+    card.className = 'vocab-card' + (online ? ' online' : '');
+
+    const top = document.createElement('div');
+    top.style.cssText = 'display:flex;align-items:flex-start;gap:10px';
+
+    const textDiv = document.createElement('div');
+    textDiv.style.flex = '1';
+    const ruEl = document.createElement('div');
+    ruEl.className = 'vocab-ru';
+    ruEl.textContent = ruWord;
+    textDiv.appendChild(ruEl);
+    if(translit){
+      const tr = document.createElement('div');
+      tr.className = 'vocab-translit';
+      tr.textContent = translit;
+      textDiv.appendChild(tr);
+    }
+    const itEl = document.createElement('div');
+    itEl.className = 'vocab-it';
+    itEl.textContent = itTrans;
+    textDiv.appendChild(itEl);
+
+    const speakBtn = document.createElement('button');
+    speakBtn.className = 'vocab-speak';
+    speakBtn.title = 'Ascolta';
+    speakBtn.innerHTML = '&#128266;';
+    speakBtn.onclick = ()=>speak(ruWord);
+
+    top.appendChild(textDiv);
+    if(online){
+      const badge = document.createElement('span');
+      badge.textContent = '🌐';
+      badge.style.cssText = 'font-size:15px;flex-shrink:0;line-height:1;margin-top:5px';
+      top.appendChild(badge);
+    }
+    top.appendChild(speakBtn);
+    card.appendChild(top);
+
+    // Salva nelle flashcard
+    const addBtn = document.createElement('button');
+    addBtn.className = 'add-flash-btn';
+    const alreadySaved = isUserVoce(ruWord) || (DB.voci||[]).some(v=>v.ru===ruWord);
+    function setAdded(){ addBtn.textContent='✓ Nelle flashcard'; addBtn.disabled=true; addBtn.style.color='var(--good)'; addBtn.style.borderColor='var(--good)'; }
+    function setAdd(){ addBtn.textContent='＋ Salva nelle flashcard'; addBtn.disabled=false; addBtn.style.color=''; addBtn.style.borderColor=''; }
+    if(alreadySaved) setAdded(); else setAdd();
+    addBtn.onclick = ()=>{
+      addBtn.style.display = 'none';
+      let selTag = null;
+      const topicChips = Object.entries(TOPIC_LABELS).map(([v,l])=>`<button class="tag-chip" data-v="${v}">${TOPIC_ICONS[v]||''} ${l}</button>`).join('');
+      const picker = $(`
+        <div class="tag-picker">
+          <label>Argomento (facoltativo)</label>
+          <div class="tag-chips topic-chips">${topicChips}</div>
+          <button class="tag-save">Salva nelle flashcard</button>
+        </div>`);
+      picker.querySelectorAll('.topic-chips .tag-chip').forEach(c=>{
+        c.onclick=()=>{ picker.querySelectorAll('.topic-chips .tag-chip').forEach(x=>x.classList.remove('sel')); c.classList.add('sel'); selTag=c.dataset.v; };
+      });
+      picker.querySelector('.tag-save').onclick=()=>{
+        if(addUserVoce(ruWord, itTrans, translit, selTag)){ picker.remove(); setAdded(); addBtn.style.display=''; }
+      };
+      card.appendChild(picker);
+    };
+    card.appendChild(addBtn);
+    return card;
+  }
+
+  // ---- Risultati locali ----
+  function renderLocal(q){
+    localSection.innerHTML = '';
+    const ql = q.toLowerCase();
+    const base = words.filter(w => activeTag==='all' || (w.tag&&w.tag.includes(activeTag)));
+    const filtered = q
+      ? base.filter(w => (w.ru||'').toLowerCase().includes(ql) || (w.it||'').toLowerCase().includes(ql) || (w.translit||'').toLowerCase().includes(ql))
+      : base;
+    if(!filtered.length){
+      if(q) localSection.appendChild($(`<div class="results-hdr">&#128218; Locale &middot; 0 risultati</div>`));
+      return;
+    }
+    localSection.appendChild($(`<div class="results-hdr">&#128218; Locale &middot; ${filtered.length} parol${filtered.length===1?'a':'e'}</div>`));
+    filtered.slice(0, 60).forEach(w=>{
+      localSection.appendChild(makeVocabCard(w.ru, w.it, {translit:w.translit}));
+    });
+    if(filtered.length > 60){
+      localSection.appendChild($(`<div style="text-align:center;padding:10px;color:var(--muted);font-size:13px">+ altri ${filtered.length-60} — affina la ricerca</div>`));
+    }
+  }
+
+  // ---- Ricerca online (MyMemory) ----
+  async function doOnline(q){
+    if(!q || q.length<2){ onlineSection.innerHTML=''; return; }
+    onlineSection.innerHTML='';
+    onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; ricerca in corso…</div>`));
+    try{
+      const r = await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(q)+"&langpair="+encodeURIComponent(langpair));
+      const d = await r.json();
+      if(inp.value.trim() !== q) return;
+      onlineSection.innerHTML = '';
+      if(d.responseStatus===200 && d.responseData?.translatedText){
+        const main = d.responseData.translatedText;
+        const ruWord = langpair==='it|ru' ? main : q;
+        const itTrans = langpair==='it|ru' ? q : main;
+        const extras = (d.matches||[])
+          .filter(m=>m.translation && m.translation!==main && parseFloat(m.quality||0)>50)
+          .slice(0,4);
+        const total = 1 + extras.length;
+        onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; ${total} risultat${total===1?'o':'i'}</div>`));
+        onlineSection.appendChild(makeVocabCard(ruWord, itTrans, {online:true}));
+        extras.forEach(m=>{
+          const ruW = langpair==='it|ru' ? m.translation : (m.segment||q);
+          const itT = langpair==='it|ru' ? (m.segment||q) : m.translation;
+          onlineSection.appendChild(makeVocabCard(ruW, itT, {online:true}));
+        });
+      } else {
+        onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; nessun risultato</div>`));
+      }
+    }catch(e){
+      if(inp.value.trim() !== q) return;
+      onlineSection.innerHTML = '';
+      onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; connessione non disponibile</div>`));
+    }
+  }
+
+  function setTag(tag){ activeTag = tag; paintChips(); renderLocal(inp.value.trim()); }
+  function setDir(dir){
+    langpair = dir; paintDir();
+    inp.placeholder = dir==='it|ru' ? 'Cerca in italiano…' : 'Cerca in russo…';
+    inp.value = ''; onlineSection.innerHTML = ''; renderLocal('');
+  }
+
+  let debounceLocal=null, debounceOnline=null;
+  inp.addEventListener('input', ()=>{
+    clearTimeout(debounceLocal); clearTimeout(debounceOnline);
+    const q = inp.value.trim();
+    debounceLocal = setTimeout(()=>renderLocal(q), 50);
+    if(q.length>=2) debounceOnline = setTimeout(()=>doOnline(q), 500);
+    else onlineSection.innerHTML='';
+  });
+
+  paintDir(); paintChips();
+  renderLocal('');
+  setTimeout(()=>inp.focus(), 80);
 }
 
 // ---------- 0. REGOLE GRAMMATICALI (consultazione) ----------
@@ -1446,7 +1707,11 @@ function renderSkeleton(){
 renderSkeleton();
 fetch("knowledge.json?_="+Date.now())
   .then(r=>r.json())
-  .then(db=>{ DB=db; renderHome(); })
+  .then(db=>{
+    const u = userStore();
+    db.voci = [...(db.voci||[]), ...(u.voci||[])];
+    DB=db; renderHome();
+  })
   .catch(e=>{ app.innerHTML=`<div class="errbox"><div class="big">⚠️</div><p>Impossibile caricare i contenuti.</p><button class="btn" onclick="location.reload()" style="max-width:200px">Riprova</button><small>${e}</small></div>`; });
 
 if('serviceWorker' in navigator){
