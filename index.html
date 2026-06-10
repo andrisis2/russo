@@ -322,6 +322,44 @@ let DB = null;
 let srs = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 function saveSrs(){ localStorage.setItem(STORE_KEY, JSON.stringify(srs)); }
 
+const TOPIC_LABELS = {
+  saluti:'Saluti',cortesia:'Cortesia',stato:'Espressioni di stato',
+  domande:'Domande',persone:'Persone',famiglia:'Famiglia',
+  pronomi:'Pronomi',possessivi:'Possessivi',professioni:'Professioni',
+  scuola:'Scuola',animali:'Animali',cibo:'Cibo',
+  numeri:'Numeri',verbi:'Verbi',avverbi:'Avverbi',
+  espressioni:'Espressioni',sostantivi:'Sostantivi',
+  cognati:'Cognati',tempo:'Tempo',base:'Vocabolario base'
+};
+const TOPIC_ICONS = {
+  saluti:'👋',cortesia:'🤝',stato:'😊',domande:'❓',persone:'👥',
+  famiglia:'👨‍👩‍👧',pronomi:'💬',possessivi:'📌',professioni:'💼',scuola:'📚',
+  animali:'🐾',cibo:'🍽️',numeri:'🔢',verbi:'✏️',avverbi:'📝',
+  espressioni:'💭',sostantivi:'📖',cognati:'🔗',tempo:'⏳',base:'⭐'
+};
+
+const DAILY_KEY = "russo_daily_v1";
+const DAILY_SIZE = 20;
+function dateStr(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function todayStr(){ return dateStr(new Date()); }
+function yesterdayStr(){ const d=new Date(); d.setDate(d.getDate()-1); return dateStr(d); }
+function dailyState(){ try{ return JSON.parse(localStorage.getItem(DAILY_KEY)||"{}"); }catch(e){ return {}; } }
+function dailyStreak(){
+  const s=dailyState();
+  if(!s.last) return 0;
+  return (s.last===todayStr()||s.last===yesterdayStr()) ? (s.streak||0) : 0;
+}
+function recordDailyDone(){
+  const s=dailyState(), t=todayStr();
+  if(s.last===t) return;
+  s.streak = (s.last===yesterdayStr()) ? (s.streak||0)+1 : 1;
+  s.last=t;
+  localStorage.setItem(DAILY_KEY, JSON.stringify(s));
+}
+function dailyPool(){
+  return [...(DB.voci||[])].filter(x=>!srs[x.id] || box(x.id)<3);
+}
+
 const app = document.getElementById("app");
 const backBtn = document.getElementById("backBtn");
 // Il pulsante Indietro e il tasto/gesto Indietro del telefono fanno la stessa cosa:
@@ -394,7 +432,7 @@ async function forceUpdate(btnEl){
       await Promise.all(keys.map(k=>caches.delete(k)));
     }
   }catch(e){}
-  location.reload(true);
+  location.replace(location.pathname + "?fresh=" + Date.now());
 }
 
 function renderHome(){
@@ -414,11 +452,30 @@ function renderHome(){
     </div>`));
 
   const grid = $(`<div class="grid"></div>`);
+
+  // Ripasso del giorno — tile in evidenza
+  const streak = dailyStreak();
+  const dueCnt = Math.min(DAILY_SIZE, due);
+  const streakHtml = streak>0 ? ` &middot; <span style="color:var(--accent)">${streak} ${streak===1?"giorno":"giorni"} di fila &#128293;</span>` : "";
+  const dailyDesc = dueCnt>0
+    ? `${dueCnt} carte da ripassare${streakHtml}`
+    : `Tutto in pari &mdash; nessuna carta oggi${streakHtml}`;
+  const dailyTile = $(`
+    <button class="tile wide" style="margin-bottom:14px;background:linear-gradient(120deg,var(--card) 0%,rgba(226,56,75,.08) 100%)">
+      <div class="ico" style="background:rgba(226,56,75,.10)">${streak>0?"&#128293;":"&#128197;"}</div>
+      <div class="txt">
+        <div class="t">Ripasso del giorno</div>
+        <div class="d">${dailyDesc}</div>
+      </div>
+    </button>`);
+  dailyTile.onclick = ()=>start("daily");
+  grid.appendChild(dailyTile);
+
   const tiles = [
-    ["🃏","Flashcard","Vocaboli e frasi RU↔IT con ripetizione dilazionata","flash"],
-    ["🔤","Cirillico","Riconosci lettere e leggi parole in cirillico","cyr"],
-    ["📐","Grammatica","Quiz su generi, pronomi e regole","gram"],
-    ["💬","Frasi & ascolto","Completa la frase e ascolta la pronuncia","phrase"],
+    ["&#127183;","Flashcard","Vocaboli per argomento con spaced repetition","flash"],
+    ["&#128292;","Cirillico","Riconosci lettere e leggi parole in cirillico","cyr"],
+    ["&#128208;","Grammatica","Quiz su generi, pronomi e regole","gram"],
+    ["&#128172;","Frasi &amp; ascolto","Completa la frase e ascolta la pronuncia","phrase"],
   ];
   tiles.forEach(([ico,t,d,mode])=>{
     grid.appendChild($(`
@@ -428,23 +485,21 @@ function renderHome(){
         <div class="d">${d}</div>
       </button>`)).onclick = ()=>start(mode);
   });
-  // Vika — conversazione live
   grid.appendChild($(`
     <button class="tile wide">
-      <div class="ico">🎙️</div>
+      <div class="ico">&#127897;&#65039;</div>
       <div class="txt">
         <div class="t">Conversa con Vika</div>
-        <div class="d">Parla in russo con la tua tutor virtuale — corregge gli errori in tempo reale</div>
+        <div class="d">Parla in russo con la tua tutor virtuale &mdash; corregge gli errori in tempo reale</div>
       </div>
     </button>`)).onclick = ()=>start("vika");
-  // scheda in evidenza: consultazione delle regole
   if(DB.riferimento && DB.riferimento.length){
     grid.appendChild($(`
       <button class="tile wide">
-        <div class="ico">📖</div>
+        <div class="ico">&#128218;</div>
         <div class="txt">
           <div class="t">Regole grammaticali</div>
-          <div class="d">Pronomi declinati, verbi coniugati e regole di base — da ripassare quando vuoi</div>
+          <div class="d">Pronomi declinati, verbi coniugati e regole di base &mdash; da ripassare quando vuoi</div>
         </div>
       </button>`)).onclick = ()=>start("ref");
   }
@@ -477,11 +532,10 @@ function progressBar(stage){
   return fill;
 }
 
-// ---------- 1. FLASHCARD ----------
 function start(mode){
-  // registro un passo nella cronologia: così Indietro torna alla home invece di uscire
   history.pushState({screen:mode}, "");
-  if(mode==="flash") return runFlash();
+  if(mode==="daily") return runDaily();
+  if(mode==="flash") return pickFlashTopic();
   if(mode==="cyr") return runCyr();
   if(mode==="gram") return runGram();
   if(mode==="phrase") return runPhrase();
@@ -549,31 +603,102 @@ function runReference(){
   stage.appendChild(home);
 }
 
-function runFlash(){
-  const pool = [...DB.voci, ...DB.frasi].sort((a,b)=>dueScore(b.id)-dueScore(a.id));
-  const deck = pool.slice(0, Math.min(12, pool.length));
-  let i=0;
+function pickFlashTopic(){
   const stage = header();
+  stage.appendChild($(`<div style="margin-bottom:14px"><b style="font-size:18px">Scegli argomento</b></div>`));
+
+  const allPool = DB.voci||[];
+  const allDue = allPool.filter(x=>!srs[x.id]||box(x.id)<3).length;
+  const allBtn = $(`<button class="tile wide" style="margin-bottom:14px">
+    <div class="ico">&#127922;</div>
+    <div class="txt">
+      <div class="t">Tutti gli argomenti</div>
+      <div class="d">${allPool.length} parole &middot; <span style="color:var(--accent2)">${allDue} da ripassare</span></div>
+    </div>
+  </button>`);
+  allBtn.onclick = ()=>runFlash(allPool, 'Tutti');
+  stage.appendChild(allBtn);
+
+  const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+  for(const [tag, label] of Object.entries(TOPIC_LABELS)){
+    const words = allPool.filter(e=>e.tag&&e.tag.includes(tag));
+    if(!words.length) continue;
+    const due = words.filter(e=>!srs[e.id]||box(e.id)<3).length;
+    const icon = TOPIC_ICONS[tag]||'&#128218;';
+    const btn = $(`<button class="tile wide">
+      <div class="ico" style="font-size:24px">${icon}</div>
+      <div class="txt">
+        <div class="t">${label}</div>
+        <div class="d">${words.length} parole &middot; <span style="color:var(--accent2)">${due} da ripassare</span></div>
+      </div>
+    </button>`);
+    btn.onclick = ()=>runFlash(words, label);
+    list.appendChild(btn);
+  }
+  stage.appendChild(list);
+}
+
+function runFlash(pool, topicLabel, opts){
+  opts = opts || {};
+  const shuffled = (pool||[]).slice().sort(()=>Math.random()-.5);
+  const deck = shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, shuffled.length));
+  let i=0;
+  let dir = localStorage.getItem('flashDirRu')==='it-ru' ? 'it-ru' : 'ru-it';
+  const stage = header();
+  if(topicLabel) stage.appendChild($(`<div style="text-align:center;margin-bottom:4px;font-size:13px;color:var(--muted)">${topicLabel}</div>`));
+
+  const dirRow = $(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:10px"></div>`);
+  const dirBtns = [['ru-it','RU &#8594; IT'],['it-ru','IT &#8594; RU']].map(([val,label])=>{
+    const b = $(`<button style="border:1px solid var(--line);background:var(--card);border-radius:20px;padding:6px 16px;font-size:12.5px;font-weight:700;color:var(--muted);cursor:pointer;transition:.15s">${label}</button>`);
+    b.onclick = ()=>{
+      if(dir===val) return;
+      dir = val;
+      localStorage.setItem('flashDirRu', dir);
+      paintDir();
+      show();
+    };
+    dirRow.appendChild(b);
+    return [val, b];
+  });
+  function paintDir(){
+    dirBtns.forEach(([val,b])=>{
+      const on = val===dir;
+      b.style.background = on ? 'var(--accent2)' : 'var(--card)';
+      b.style.color = on ? '#fff' : 'var(--muted)';
+      b.style.borderColor = on ? 'var(--accent2)' : 'var(--line)';
+    });
+  }
+  paintDir();
+  stage.appendChild(dirRow);
+
   const bar = progressBar(stage);
   const cardWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardWrap);
 
   function show(){
-    if(i>=deck.length) return finish(stage, "Flashcard completate", runFlash);
+    if(i>=deck.length){
+      if(opts.onComplete) opts.onComplete();
+      return finish(stage, "Flashcard completate!", opts.restart||pickFlashTopic);
+    }
     bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const c = deck[i]; let flipped=false;
+    const ruFront = dir==='ru-it';
+    const frontWord = ruFront ? c.ru : c.it;
+    const backTrans = ruFront ? c.it : c.ru;
     cardWrap.innerHTML="";
     const flip = $(`
       <div class="flip">
         <div class="flash">
           <div class="face front">
-            <button class="speak" title="Ascolta">🔊</button>
-            <div class="ru">${c.ru}</div>
-            <div class="translit">${c.translit}</div>
+            ${ruFront ? `<button class="speak" title="Ascolta">&#128266;</button>` : ""}
+            <div class="${ruFront?'ru':'it'}">${frontWord}</div>
+            ${ruFront && c.translit ? `<div class="translit">${c.translit}</div>` : ""}
             <div class="hint">tocca per vedere la traduzione</div>
           </div>
           <div class="face back">
-            <div class="it">${c.it}</div>
-            <div class="small">${c.ru} · ${c.translit}</div>
+            ${!ruFront ? `<button class="speak" title="Ascolta">&#128266;</button>` : ""}
+            <div class="${ruFront?'it':'ru'}">${backTrans}</div>
+            ${!ruFront && c.translit ? `<div class="translit">${c.translit}</div>` : ""}
+            <div class="small">${frontWord}</div>
           </div>
         </div>
       </div>`);
@@ -583,6 +708,7 @@ function runFlash(){
       flipped=true;
       flip.classList.add("flipped");
       controls.classList.remove("hidden");
+      if(!ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 200);
     };
     cardWrap.appendChild(flip);
     const controls = $(`
@@ -590,13 +716,31 @@ function runFlash(){
         <button class="btn bad">Da ripassare</button>
         <button class="btn good">La sapevo</button>
       </div>`);
-    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); i++; render();};
-    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); i++; render();};
+    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); i++; show();};
+    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); i++; show();};
     cardWrap.appendChild(controls);
-    if('speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
+    if(ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
   }
-  function render(){ show(); }
   show();
+}
+
+function runDaily(){
+  const pool = dailyPool();
+  if(!pool.length){
+    const stage = header();
+    stage.appendChild($(`
+      <div class="done">
+        <div class="big">&#127881;</div>
+        <h2>Tutto ripassato!</h2>
+        <p class="muted">Non hai carte in attesa oggi. Torna domani per continuare la serie.</p>
+      </div>`));
+    const row=$(`<div class="row"></div>`);
+    const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
+    row.appendChild(a); stage.appendChild(row);
+    return;
+  }
+  const session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
+  runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone });
 }
 
 // ---------- 2. CIRILLICO ----------
