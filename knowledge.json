@@ -2,8 +2,8 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 4,
-    "aggiornato": "2026-06-05",
+    "versione": 5,
+    "aggiornato": "2026-06-10",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
     ],
@@ -1385,6 +1385,1685 @@
       ],
       "difficolta": 1,
       "aggiunto": "2026-06-05"
+    },
+    {
+      "id": "v088",
+      "tipo": "vocabolo",
+      "ru": "ноль",
+      "translit": "nolʹ",
+      "it": "zero",
+      "tag": [
+        "numeri",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v089",
+      "tipo": "vocabolo",
+      "ru": "шесть",
+      "translit": "šestʹ",
+      "it": "sei",
+      "tag": [
+        "numeri",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v090",
+      "tipo": "vocabolo",
+      "ru": "семь",
+      "translit": "semʹ",
+      "it": "sette",
+      "tag": [
+        "numeri",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v091",
+      "tipo": "vocabolo",
+      "ru": "восемь",
+      "translit": "vósemʹ",
+      "it": "otto",
+      "tag": [
+        "numeri",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v092",
+      "tipo": "vocabolo",
+      "ru": "девять",
+      "translit": "dévjatʹ",
+      "it": "nove",
+      "tag": [
+        "numeri",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v093",
+      "tipo": "vocabolo",
+      "ru": "десять",
+      "translit": "désjatʹ",
+      "it": "dieci",
+      "tag": [
+        "numeri",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v094",
+      "tipo": "vocabolo",
+      "ru": "красный",
+      "translit": "krásnyj",
+      "it": "rosso",
+      "tag": [
+        "colori",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v095",
+      "tipo": "vocabolo",
+      "ru": "синий",
+      "translit": "sínij",
+      "it": "blu",
+      "tag": [
+        "colori",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v096",
+      "tipo": "vocabolo",
+      "ru": "зелёный",
+      "translit": "zeljónyj",
+      "it": "verde",
+      "tag": [
+        "colori",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v097",
+      "tipo": "vocabolo",
+      "ru": "жёлтый",
+      "translit": "žóltyj",
+      "it": "giallo",
+      "tag": [
+        "colori",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v098",
+      "tipo": "vocabolo",
+      "ru": "белый",
+      "translit": "bélyj",
+      "it": "bianco",
+      "tag": [
+        "colori",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v099",
+      "tipo": "vocabolo",
+      "ru": "чёрный",
+      "translit": "čórnyj",
+      "it": "nero",
+      "tag": [
+        "colori",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v100",
+      "tipo": "vocabolo",
+      "ru": "кошка",
+      "translit": "kóška",
+      "it": "gatta",
+      "tag": [
+        "animali",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v101",
+      "tipo": "vocabolo",
+      "ru": "молоко",
+      "translit": "malakó",
+      "it": "latte",
+      "tag": [
+        "cibo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v102",
+      "tipo": "vocabolo",
+      "ru": "чай",
+      "translit": "čaj",
+      "it": "tè",
+      "tag": [
+        "cibo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v103",
+      "tipo": "vocabolo",
+      "ru": "кофе",
+      "translit": "kófe",
+      "it": "caffè",
+      "tag": [
+        "cibo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v104",
+      "tipo": "vocabolo",
+      "ru": "сок",
+      "translit": "sok",
+      "it": "succo",
+      "tag": [
+        "cibo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v105",
+      "tipo": "vocabolo",
+      "ru": "яблоко",
+      "translit": "jábloko",
+      "it": "mela",
+      "tag": [
+        "cibo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v106",
+      "tipo": "vocabolo",
+      "ru": "мясо",
+      "translit": "mjáso",
+      "it": "carne",
+      "tag": [
+        "cibo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v107",
+      "tipo": "vocabolo",
+      "ru": "город",
+      "translit": "górod",
+      "it": "città",
+      "tag": [
+        "città",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v108",
+      "tipo": "vocabolo",
+      "ru": "улица",
+      "translit": "úlica",
+      "it": "strada / via",
+      "tag": [
+        "città",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v109",
+      "tipo": "vocabolo",
+      "ru": "работа",
+      "translit": "rabóta",
+      "it": "lavoro",
+      "tag": [
+        "base",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v110",
+      "tipo": "vocabolo",
+      "ru": "день",
+      "translit": "denʹ",
+      "it": "giorno",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v111",
+      "tipo": "vocabolo",
+      "ru": "утро",
+      "translit": "útro",
+      "it": "mattina",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v112",
+      "tipo": "vocabolo",
+      "ru": "вечер",
+      "translit": "véčer",
+      "it": "sera",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v113",
+      "tipo": "vocabolo",
+      "ru": "дочь",
+      "translit": "dočʹ",
+      "it": "figlia",
+      "tag": [
+        "famiglia",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v114",
+      "tipo": "vocabolo",
+      "ru": "сын",
+      "translit": "syn",
+      "it": "figlio",
+      "tag": [
+        "famiglia",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v115",
+      "tipo": "vocabolo",
+      "ru": "бабушка",
+      "translit": "bábuška",
+      "it": "nonna",
+      "tag": [
+        "famiglia",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v116",
+      "tipo": "vocabolo",
+      "ru": "дедушка",
+      "translit": "déduška",
+      "it": "nonno",
+      "tag": [
+        "famiglia",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v117",
+      "tipo": "vocabolo",
+      "ru": "муж",
+      "translit": "muž",
+      "it": "marito",
+      "tag": [
+        "famiglia",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v118",
+      "tipo": "vocabolo",
+      "ru": "жена",
+      "translit": "žená",
+      "it": "moglie",
+      "tag": [
+        "famiglia",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v119",
+      "tipo": "vocabolo",
+      "ru": "говорить",
+      "translit": "gavarítʹ",
+      "it": "parlare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v120",
+      "tipo": "vocabolo",
+      "ru": "знать",
+      "translit": "znatʹ",
+      "it": "sapere / conoscere",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v121",
+      "tipo": "vocabolo",
+      "ru": "хотеть",
+      "translit": "hatétʹ",
+      "it": "volere",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v122",
+      "tipo": "vocabolo",
+      "ru": "идти",
+      "translit": "ittí",
+      "it": "andare (a piedi)",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v123",
+      "tipo": "vocabolo",
+      "ru": "любить",
+      "translit": "ljubítʹ",
+      "it": "amare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v124",
+      "tipo": "vocabolo",
+      "ru": "жить",
+      "translit": "žitʹ",
+      "it": "vivere / abitare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v125",
+      "tipo": "vocabolo",
+      "ru": "работать",
+      "translit": "rabótatʹ",
+      "it": "lavorare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v126",
+      "tipo": "vocabolo",
+      "ru": "понимать",
+      "translit": "panimátʹ",
+      "it": "capire",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v127",
+      "tipo": "vocabolo",
+      "ru": "здесь",
+      "translit": "zdesʹ",
+      "it": "qui",
+      "tag": [
+        "avverbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v128",
+      "tipo": "vocabolo",
+      "ru": "там",
+      "translit": "tam",
+      "it": "là",
+      "tag": [
+        "avverbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v129",
+      "tipo": "vocabolo",
+      "ru": "сейчас",
+      "translit": "sejčás",
+      "it": "adesso",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v130",
+      "tipo": "vocabolo",
+      "ru": "завтра",
+      "translit": "závtra",
+      "it": "domani",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v131",
+      "tipo": "vocabolo",
+      "ru": "вчера",
+      "translit": "včerá",
+      "it": "ieri",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v132",
+      "tipo": "vocabolo",
+      "ru": "наш",
+      "translit": "naš",
+      "it": "nostro",
+      "tag": [
+        "possessivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v133",
+      "tipo": "vocabolo",
+      "ru": "ваш",
+      "translit": "vaš",
+      "it": "vostro / Suo (formale)",
+      "tag": [
+        "possessivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v134",
+      "tipo": "vocabolo",
+      "ru": "его",
+      "translit": "jevó",
+      "it": "suo (di lui)",
+      "tag": [
+        "possessivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v135",
+      "tipo": "vocabolo",
+      "ru": "её",
+      "translit": "jejó",
+      "it": "suo (di lei)",
+      "tag": [
+        "possessivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v136",
+      "tipo": "vocabolo",
+      "ru": "квартира",
+      "translit": "kvartíra",
+      "it": "appartamento",
+      "tag": [
+        "casa",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v137",
+      "tipo": "vocabolo",
+      "ru": "комната",
+      "translit": "kómnata",
+      "it": "stanza",
+      "tag": [
+        "casa",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v138",
+      "tipo": "vocabolo",
+      "ru": "кухня",
+      "translit": "kúhnja",
+      "it": "cucina",
+      "tag": [
+        "casa",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v139",
+      "tipo": "vocabolo",
+      "ru": "дверь",
+      "translit": "dverʹ",
+      "it": "porta",
+      "tag": [
+        "casa",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v140",
+      "tipo": "vocabolo",
+      "ru": "кровать",
+      "translit": "krovátʹ",
+      "it": "letto",
+      "tag": [
+        "casa",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v141",
+      "tipo": "vocabolo",
+      "ru": "холодильник",
+      "translit": "haladílʹnik",
+      "it": "frigorifero",
+      "tag": [
+        "casa",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v142",
+      "tipo": "vocabolo",
+      "ru": "стакан",
+      "translit": "stakán",
+      "it": "bicchiere",
+      "tag": [
+        "casa",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v143",
+      "tipo": "vocabolo",
+      "ru": "магазин",
+      "translit": "magazín",
+      "it": "negozio",
+      "tag": [
+        "città",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v144",
+      "tipo": "vocabolo",
+      "ru": "аптека",
+      "translit": "aptéka",
+      "it": "farmacia",
+      "tag": [
+        "città",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v145",
+      "tipo": "vocabolo",
+      "ru": "вокзал",
+      "translit": "vagzál",
+      "it": "stazione",
+      "tag": [
+        "città",
+        "viaggio",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v146",
+      "tipo": "vocabolo",
+      "ru": "метро",
+      "translit": "metró",
+      "it": "metropolitana",
+      "tag": [
+        "città",
+        "viaggio",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v147",
+      "tipo": "vocabolo",
+      "ru": "ресторан",
+      "translit": "restorán",
+      "it": "ristorante",
+      "tag": [
+        "città",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v148",
+      "tipo": "vocabolo",
+      "ru": "парк",
+      "translit": "park",
+      "it": "parco",
+      "tag": [
+        "città",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v149",
+      "tipo": "vocabolo",
+      "ru": "голова",
+      "translit": "galavá",
+      "it": "testa",
+      "tag": [
+        "corpo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v150",
+      "tipo": "vocabolo",
+      "ru": "рука",
+      "translit": "ruká",
+      "it": "mano / braccio",
+      "tag": [
+        "corpo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v151",
+      "tipo": "vocabolo",
+      "ru": "нога",
+      "translit": "nagá",
+      "it": "gamba / piede",
+      "tag": [
+        "corpo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v152",
+      "tipo": "vocabolo",
+      "ru": "глаз",
+      "translit": "glaz",
+      "it": "occhio",
+      "tag": [
+        "corpo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v153",
+      "tipo": "vocabolo",
+      "ru": "лицо",
+      "translit": "licó",
+      "it": "viso",
+      "tag": [
+        "corpo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v154",
+      "tipo": "vocabolo",
+      "ru": "неделя",
+      "translit": "nedélja",
+      "it": "settimana",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v155",
+      "tipo": "vocabolo",
+      "ru": "месяц",
+      "translit": "mésjac",
+      "it": "mese",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v156",
+      "tipo": "vocabolo",
+      "ru": "год",
+      "translit": "god",
+      "it": "anno",
+      "tag": [
+        "tempo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v157",
+      "tipo": "vocabolo",
+      "ru": "погода",
+      "translit": "pagóda",
+      "it": "tempo (meteo)",
+      "tag": [
+        "meteo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v158",
+      "tipo": "vocabolo",
+      "ru": "дождь",
+      "translit": "doždʹ",
+      "it": "pioggia",
+      "tag": [
+        "meteo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v159",
+      "tipo": "vocabolo",
+      "ru": "снег",
+      "translit": "sneg",
+      "it": "neve",
+      "tag": [
+        "meteo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v160",
+      "tipo": "vocabolo",
+      "ru": "солнце",
+      "translit": "sónce",
+      "it": "sole",
+      "tag": [
+        "meteo",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v161",
+      "tipo": "vocabolo",
+      "ru": "покупать",
+      "translit": "pakupátʹ",
+      "it": "comprare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v162",
+      "tipo": "vocabolo",
+      "ru": "открывать",
+      "translit": "atkryvátʹ",
+      "it": "aprire",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v163",
+      "tipo": "vocabolo",
+      "ru": "закрывать",
+      "translit": "zakryvátʹ",
+      "it": "chiudere",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v164",
+      "tipo": "vocabolo",
+      "ru": "спрашивать",
+      "translit": "spráševatʹ",
+      "it": "chiedere / domandare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v165",
+      "tipo": "vocabolo",
+      "ru": "отвечать",
+      "translit": "atvečátʹ",
+      "it": "rispondere",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v166",
+      "tipo": "vocabolo",
+      "ru": "помогать",
+      "translit": "pamagátʹ",
+      "it": "aiutare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v167",
+      "tipo": "vocabolo",
+      "ru": "думать",
+      "translit": "dúmatʹ",
+      "it": "pensare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v168",
+      "tipo": "vocabolo",
+      "ru": "спать",
+      "translit": "spatʹ",
+      "it": "dormire",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v169",
+      "tipo": "vocabolo",
+      "ru": "есть",
+      "translit": "jestʹ",
+      "it": "mangiare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v170",
+      "tipo": "vocabolo",
+      "ru": "пить",
+      "translit": "pitʹ",
+      "it": "bere",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v171",
+      "tipo": "vocabolo",
+      "ru": "большой",
+      "translit": "balʹšój",
+      "it": "grande",
+      "tag": [
+        "aggettivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v172",
+      "tipo": "vocabolo",
+      "ru": "маленький",
+      "translit": "málenʹkij",
+      "it": "piccolo",
+      "tag": [
+        "aggettivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v173",
+      "tipo": "vocabolo",
+      "ru": "новый",
+      "translit": "nóvyj",
+      "it": "nuovo",
+      "tag": [
+        "aggettivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v174",
+      "tipo": "vocabolo",
+      "ru": "старый",
+      "translit": "stáryj",
+      "it": "vecchio",
+      "tag": [
+        "aggettivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v175",
+      "tipo": "vocabolo",
+      "ru": "красивый",
+      "translit": "krasívyj",
+      "it": "bello",
+      "tag": [
+        "aggettivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v176",
+      "tipo": "vocabolo",
+      "ru": "трудный",
+      "translit": "trúdnyj",
+      "it": "difficile",
+      "tag": [
+        "aggettivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v177",
+      "tipo": "vocabolo",
+      "ru": "лёгкий",
+      "translit": "ljóhkij",
+      "it": "facile / leggero",
+      "tag": [
+        "aggettivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v178",
+      "tipo": "vocabolo",
+      "ru": "одежда",
+      "translit": "adéžda",
+      "it": "vestiti / abbigliamento",
+      "tag": [
+        "vestiti",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v179",
+      "tipo": "vocabolo",
+      "ru": "рубашка",
+      "translit": "rubáška",
+      "it": "camicia",
+      "tag": [
+        "vestiti",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v180",
+      "tipo": "vocabolo",
+      "ru": "обувь",
+      "translit": "óbuvʹ",
+      "it": "scarpe / calzature",
+      "tag": [
+        "vestiti",
+        "extra-flashcards"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v181",
+      "tipo": "vocabolo",
+      "ru": "любовь",
+      "translit": "ljubófʹ",
+      "it": "amore",
+      "tag": [
+        "espressioni",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v182",
+      "tipo": "vocabolo",
+      "ru": "счастье",
+      "translit": "ščástʹje",
+      "it": "felicità",
+      "tag": [
+        "espressioni",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v183",
+      "tipo": "vocabolo",
+      "ru": "жизнь",
+      "translit": "žiznʹ",
+      "it": "vita",
+      "tag": [
+        "sostantivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v184",
+      "tipo": "vocabolo",
+      "ru": "надежда",
+      "translit": "nadéžda",
+      "it": "speranza",
+      "tag": [
+        "espressioni",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v185",
+      "tipo": "vocabolo",
+      "ru": "мечта",
+      "translit": "mečtá",
+      "it": "sogno",
+      "tag": [
+        "espressioni",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v186",
+      "tipo": "vocabolo",
+      "ru": "правда",
+      "translit": "právda",
+      "it": "verità",
+      "tag": [
+        "espressioni",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v187",
+      "tipo": "vocabolo",
+      "ru": "вопрос",
+      "translit": "vaprós",
+      "it": "domanda",
+      "tag": [
+        "scuola",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v188",
+      "tipo": "vocabolo",
+      "ru": "ответ",
+      "translit": "atvét",
+      "it": "risposta",
+      "tag": [
+        "scuola",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v189",
+      "tipo": "vocabolo",
+      "ru": "ошибка",
+      "translit": "ašíbka",
+      "it": "errore",
+      "tag": [
+        "scuola",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v190",
+      "tipo": "vocabolo",
+      "ru": "становиться",
+      "translit": "stanavítʹsja",
+      "it": "diventare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v191",
+      "tipo": "vocabolo",
+      "ru": "происходить",
+      "translit": "praishadítʹ",
+      "it": "accadere / succedere",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v192",
+      "tipo": "vocabolo",
+      "ru": "объяснять",
+      "translit": "abʺjasnjátʹ",
+      "it": "spiegare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v193",
+      "tipo": "vocabolo",
+      "ru": "предлагать",
+      "translit": "predlagátʹ",
+      "it": "proporre / offrire",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v194",
+      "tipo": "vocabolo",
+      "ru": "получать",
+      "translit": "palučátʹ",
+      "it": "ricevere / ottenere",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v195",
+      "tipo": "vocabolo",
+      "ru": "встречать",
+      "translit": "vstrečátʹ",
+      "it": "incontrare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v196",
+      "tipo": "vocabolo",
+      "ru": "забывать",
+      "translit": "zabyvátʹ",
+      "it": "dimenticare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v197",
+      "tipo": "vocabolo",
+      "ru": "запоминать",
+      "translit": "zapaminátʹ",
+      "it": "memorizzare",
+      "tag": [
+        "verbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v198",
+      "tipo": "vocabolo",
+      "ru": "поэтому",
+      "translit": "paétamu",
+      "it": "perciò / quindi",
+      "tag": [
+        "espressioni",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v199",
+      "tipo": "vocabolo",
+      "ru": "например",
+      "translit": "naprimér",
+      "it": "per esempio",
+      "tag": [
+        "espressioni",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v200",
+      "tipo": "vocabolo",
+      "ru": "наконец",
+      "translit": "nakanéc",
+      "it": "finalmente",
+      "tag": [
+        "avverbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v201",
+      "tipo": "vocabolo",
+      "ru": "обычно",
+      "translit": "abýčno",
+      "it": "di solito",
+      "tag": [
+        "avverbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v202",
+      "tipo": "vocabolo",
+      "ru": "иногда",
+      "translit": "inagdá",
+      "it": "a volte",
+      "tag": [
+        "avverbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v203",
+      "tipo": "vocabolo",
+      "ru": "всегда",
+      "translit": "vsegdá",
+      "it": "sempre",
+      "tag": [
+        "avverbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v204",
+      "tipo": "vocabolo",
+      "ru": "никогда",
+      "translit": "nikagdá",
+      "it": "mai",
+      "tag": [
+        "avverbi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v205",
+      "tipo": "vocabolo",
+      "ru": "природа",
+      "translit": "priróda",
+      "it": "natura",
+      "tag": [
+        "natura",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v206",
+      "tipo": "vocabolo",
+      "ru": "небо",
+      "translit": "nébo",
+      "it": "cielo",
+      "tag": [
+        "natura",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v207",
+      "tipo": "vocabolo",
+      "ru": "море",
+      "translit": "móre",
+      "it": "mare",
+      "tag": [
+        "natura",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v208",
+      "tipo": "vocabolo",
+      "ru": "река",
+      "translit": "reká",
+      "it": "fiume",
+      "tag": [
+        "natura",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v209",
+      "tipo": "vocabolo",
+      "ru": "лес",
+      "translit": "les",
+      "it": "bosco / foresta",
+      "tag": [
+        "natura",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v210",
+      "tipo": "vocabolo",
+      "ru": "гора",
+      "translit": "gará",
+      "it": "montagna",
+      "tag": [
+        "natura",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v211",
+      "tipo": "vocabolo",
+      "ru": "земля",
+      "translit": "zemljá",
+      "it": "terra",
+      "tag": [
+        "natura",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v212",
+      "tipo": "vocabolo",
+      "ru": "мир",
+      "translit": "mir",
+      "it": "mondo / pace",
+      "tag": [
+        "sostantivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v213",
+      "tipo": "vocabolo",
+      "ru": "общество",
+      "translit": "óbščestvo",
+      "it": "società",
+      "tag": [
+        "sostantivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v214",
+      "tipo": "vocabolo",
+      "ru": "развитие",
+      "translit": "razvítije",
+      "it": "sviluppo",
+      "tag": [
+        "sostantivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v215",
+      "tipo": "vocabolo",
+      "ru": "возможность",
+      "translit": "vazmóžnostʹ",
+      "it": "possibilità",
+      "tag": [
+        "sostantivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v216",
+      "tipo": "vocabolo",
+      "ru": "значение",
+      "translit": "značénije",
+      "it": "significato",
+      "tag": [
+        "sostantivi",
+        "extra-flashcards"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
     }
   ],
   "frasi": [

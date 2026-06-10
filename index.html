@@ -366,15 +366,19 @@ const TOPIC_LABELS = {
   domande:'Domande',persone:'Persone',famiglia:'Famiglia',
   pronomi:'Pronomi',possessivi:'Possessivi',professioni:'Professioni',
   scuola:'Scuola',animali:'Animali',cibo:'Cibo',
-  numeri:'Numeri',verbi:'Verbi',avverbi:'Avverbi',
+  numeri:'Numeri',colori:'Colori',verbi:'Verbi',aggettivi:'Aggettivi',
+  avverbi:'Avverbi',casa:'Casa',città:'Città',corpo:'Corpo',
+  natura:'Natura',meteo:'Meteo',vestiti:'Vestiti',viaggio:'Viaggio',
   espressioni:'Espressioni',sostantivi:'Sostantivi',
   cognati:'Cognati',tempo:'Tempo',base:'Vocabolario base'
 };
 const TOPIC_ICONS = {
   saluti:'👋',cortesia:'🤝',stato:'😊',domande:'❓',persone:'👥',
   famiglia:'👨‍👩‍👧',pronomi:'💬',possessivi:'📌',professioni:'💼',scuola:'📚',
-  animali:'🐾',cibo:'🍽️',numeri:'🔢',verbi:'✏️',avverbi:'📝',
-  espressioni:'💭',sostantivi:'📖',cognati:'🔗',tempo:'⏳',base:'⭐'
+  animali:'🐾',cibo:'🍽️',numeri:'🔢',colori:'🎨',verbi:'✏️',aggettivi:'🏷️',
+  avverbi:'📝',casa:'🏠',città:'🏙️',corpo:'💪',natura:'🌿',meteo:'🌤️',
+  vestiti:'👕',viaggio:'✈️',espressioni:'💭',sostantivi:'📖',
+  cognati:'🔗',tempo:'⏳',base:'⭐'
 };
 
 const DAILY_KEY = "russo_daily_v1";
@@ -866,15 +870,39 @@ function runReference(){
 
 function pickFlashTopic(){
   const stage = header();
-  stage.appendChild($(`<div style="margin-bottom:14px"><b style="font-size:18px">Scegli argomento</b></div>`));
-
   const allPool = DB.voci||[];
-  const allDue = allPool.filter(x=>!srs[x.id]||box(x.id)<3).length;
+  const dueOf = pool => pool.filter(x=>!srs[x.id]||box(x.id)<3).length;
+
+  // ----- Per livello -----
+  stage.appendChild($(`<div style="margin-bottom:10px"><b style="font-size:18px">Per livello</b></div>`));
+  const levels = [
+    [1,'⭐ Facile','Parole di base'],
+    [2,'⭐⭐ Medio','Vocabolario quotidiano'],
+    [3,'⭐⭐⭐ Difficile','Parole avanzate'],
+    [0,'🎲 Mix','Tutti i livelli insieme'],
+  ];
+  const levelList = $(`<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px"></div>`);
+  levels.forEach(([lvl,label,desc])=>{
+    const words = lvl===0 ? allPool : allPool.filter(e=>e.difficolta===lvl);
+    if(!words.length) return;
+    const btn = $(`<button class="tile wide">
+      <div class="txt">
+        <div class="t">${label}</div>
+        <div class="d">${desc} &middot; ${words.length} parole &middot; <span style="color:var(--accent2)">${dueOf(words)} da ripassare</span></div>
+      </div>
+    </button>`);
+    btn.onclick = ()=>runFlash(words, label);
+    levelList.appendChild(btn);
+  });
+  stage.appendChild(levelList);
+
+  // ----- Per argomento -----
+  stage.appendChild($(`<div style="margin-bottom:10px"><b style="font-size:18px">Per argomento</b></div>`));
   const allBtn = $(`<button class="tile wide" style="margin-bottom:14px">
     <div class="ico">&#127922;</div>
     <div class="txt">
       <div class="t">Tutti gli argomenti</div>
-      <div class="d">${allPool.length} parole &middot; <span style="color:var(--accent2)">${allDue} da ripassare</span></div>
+      <div class="d">${allPool.length} parole &middot; <span style="color:var(--accent2)">${dueOf(allPool)} da ripassare</span></div>
     </div>
   </button>`);
   allBtn.onclick = ()=>runFlash(allPool, 'Tutti');
