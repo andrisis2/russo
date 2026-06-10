@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 5,
+    "versione": 6,
     "aggiornato": "2026-06-10",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -3343,6 +3343,492 @@
       ],
       "difficolta": 2,
       "aggiunto": "2026-06-05"
+    },
+    {
+      "id": "f024",
+      "ru": "Это мой дом.",
+      "translit": "Éto moj dom.",
+      "it": "Questa è la mia casa.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f025",
+      "ru": "Я люблю кофе.",
+      "translit": "Ja ljubljú kófe.",
+      "it": "Amo il caffè.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f026",
+      "ru": "Это очень хорошо.",
+      "translit": "Éto óčenʹ harašó.",
+      "it": "È molto buono.",
+      "tag": [
+        "conversazione",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f027",
+      "ru": "Я не знаю.",
+      "translit": "Ja ni znáju.",
+      "it": "Non lo so.",
+      "tag": [
+        "conversazione",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f028",
+      "ru": "Спасибо большое.",
+      "translit": "Spasíbo balʹšóje.",
+      "it": "Grazie mille.",
+      "tag": [
+        "cortesia",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f029",
+      "ru": "Как тебя зовут?",
+      "translit": "Kak tibjá zavút?",
+      "it": "Come ti chiami?",
+      "tag": [
+        "presentarsi",
+        "domande",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f030",
+      "ru": "Я хочу чай.",
+      "translit": "Ja hačú čaj.",
+      "it": "Voglio del tè.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f031",
+      "ru": "Он мой друг.",
+      "translit": "On moj drug.",
+      "it": "Lui è il mio amico.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f032",
+      "ru": "Я студент.",
+      "translit": "Ja studént.",
+      "it": "Sono uno studente.",
+      "tag": [
+        "presentarsi",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f033",
+      "ru": "Мама дома.",
+      "translit": "Máma dóma.",
+      "it": "La mamma è a casa.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f034",
+      "ru": "Кот спит.",
+      "translit": "Kot spit.",
+      "it": "Il gatto dorme.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f035",
+      "ru": "Я тебя люблю.",
+      "translit": "Ja tibjá ljubljú.",
+      "it": "Ti amo.",
+      "tag": [
+        "conversazione",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f036",
+      "ru": "Доброе утро!",
+      "translit": "Dóbroje útro!",
+      "it": "Buongiorno!",
+      "tag": [
+        "saluti",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f037",
+      "ru": "До завтра!",
+      "translit": "Da závtra!",
+      "it": "A domani!",
+      "tag": [
+        "saluti",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f038",
+      "ru": "Где мой телефон?",
+      "translit": "Gdje moj tilifón?",
+      "it": "Dov'è il mio telefono?",
+      "tag": [
+        "domande",
+        "extra-frasi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f039",
+      "ru": "Я живу в Москве.",
+      "translit": "Ja živú v Maskvé.",
+      "it": "Vivo a Mosca.",
+      "tag": [
+        "presentarsi",
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f040",
+      "ru": "Сегодня хорошая погода.",
+      "translit": "Sevódnja haróšaja pagóda.",
+      "it": "Oggi c'è bel tempo.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f041",
+      "ru": "Сколько это стоит?",
+      "translit": "Skólʹko éto stóit?",
+      "it": "Quanto costa?",
+      "tag": [
+        "viaggio",
+        "domande",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f042",
+      "ru": "Я работаю каждый день.",
+      "translit": "Ja rabótaju káždyj denʹ.",
+      "it": "Lavoro ogni giorno.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f043",
+      "ru": "Моя сестра — врач.",
+      "translit": "Majá sistrá — vrač.",
+      "it": "Mia sorella è medico.",
+      "tag": [
+        "famiglia",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f044",
+      "ru": "Где находится вокзал?",
+      "translit": "Gdje nahóditsja vagzál?",
+      "it": "Dove si trova la stazione?",
+      "tag": [
+        "viaggio",
+        "domande",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f045",
+      "ru": "Мы идём в магазин.",
+      "translit": "My idjóm v magazín.",
+      "it": "Andiamo al negozio.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f046",
+      "ru": "Он читает книгу.",
+      "translit": "On čitájet knígu.",
+      "it": "Lui legge un libro.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f047",
+      "ru": "Сколько тебе лет?",
+      "translit": "Skólʹko tibé let?",
+      "it": "Quanti anni hai?",
+      "tag": [
+        "conversazione",
+        "domande",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f048",
+      "ru": "У меня есть собака.",
+      "translit": "U minjá jestʹ sabáka.",
+      "it": "Ho un cane.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f049",
+      "ru": "Это очень красивый город.",
+      "translit": "Éto óčenʹ krasívyj górod.",
+      "it": "È una città molto bella.",
+      "tag": [
+        "viaggio",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f050",
+      "ru": "Я говорю по-русски.",
+      "translit": "Ja gavarjú pa-rússki.",
+      "it": "Parlo russo.",
+      "tag": [
+        "conversazione",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f051",
+      "ru": "Можно открыть окно?",
+      "translit": "Móžno atkrýtʹ aknó?",
+      "it": "Posso aprire la finestra?",
+      "tag": [
+        "conversazione",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f052",
+      "ru": "Дай мне воды, пожалуйста.",
+      "translit": "Daj mne vadý, pažálujsta.",
+      "it": "Dammi dell'acqua, per favore.",
+      "tag": [
+        "cortesia",
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f053",
+      "ru": "Я хочу пить.",
+      "translit": "Ja hačú pitʹ.",
+      "it": "Ho sete.",
+      "tag": [
+        "quotidiano",
+        "extra-frasi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f054",
+      "ru": "Я думаю, что это хорошая идея.",
+      "translit": "Ja dúmaju, što éto haróšaja idéja.",
+      "it": "Penso che sia una buona idea.",
+      "tag": [
+        "opinioni",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f055",
+      "ru": "Хотя идёт дождь, я иду гулять.",
+      "translit": "Hatjá idjót doždʹ, ja idú guljátʹ.",
+      "it": "Anche se piove, vado a passeggiare.",
+      "tag": [
+        "opinioni",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f056",
+      "ru": "Я хочу выучить русский язык.",
+      "translit": "Ja hačú výučitʹ rússkij jazýk.",
+      "it": "Voglio imparare il russo.",
+      "tag": [
+        "opinioni",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f057",
+      "ru": "Если у тебя есть время, позвони мне.",
+      "translit": "Jésli u tibjá jestʹ vrémja, pazvaní mne.",
+      "it": "Se hai tempo, chiamami.",
+      "tag": [
+        "conversazione",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f058",
+      "ru": "Я не могу вспомнить его имя.",
+      "translit": "Ja ni magú vspómnitʹ jevó ímja.",
+      "it": "Non riesco a ricordare il suo nome.",
+      "tag": [
+        "conversazione",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f059",
+      "ru": "Мне кажется, что он прав.",
+      "translit": "Mne kážetsja, što on prav.",
+      "it": "Mi sembra che abbia ragione.",
+      "tag": [
+        "opinioni",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f060",
+      "ru": "Я бы хотел заказать кофе.",
+      "translit": "Ja by hatél zakazátʹ kófe.",
+      "it": "Vorrei ordinare un caffè.",
+      "tag": [
+        "viaggio",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f061",
+      "ru": "Он сказал, что придёт завтра.",
+      "translit": "On skazál, što pridjót závtra.",
+      "it": "Ha detto che verrà domani.",
+      "tag": [
+        "opinioni",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f062",
+      "ru": "Важно понимать культуру страны.",
+      "translit": "Vážno panimátʹ kulʹtúru straný.",
+      "it": "È importante capire la cultura del paese.",
+      "tag": [
+        "opinioni",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f063",
+      "ru": "Чем больше я учу, тем лучше понимаю.",
+      "translit": "Čem bólʹše ja učú, tem lúčše panimáju.",
+      "it": "Più studio, più capisco.",
+      "tag": [
+        "opinioni",
+        "extra-frasi"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
     }
   ],
   "grammatica": [
