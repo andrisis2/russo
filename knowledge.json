@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 9,
+    "versione": 10,
     "aggiornato": "2026-06-10",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -3063,6 +3063,4986 @@
         "extra-flashcards"
       ],
       "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v217",
+      "tipo": "sostantivo (m.)",
+      "ru": "человек",
+      "translit": "čelavék",
+      "it": "persona",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v218",
+      "tipo": "sostantivo (n.)",
+      "ru": "слово",
+      "translit": "slóvo",
+      "it": "parola",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v219",
+      "tipo": "sostantivo (m.)",
+      "ru": "час",
+      "translit": "čas",
+      "it": "ora",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v220",
+      "tipo": "sostantivo (m.)",
+      "ru": "ребёнок",
+      "translit": "rebónok",
+      "it": "bambino",
+      "tag": [
+        "famiglia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v221",
+      "tipo": "sostantivo (f.)",
+      "ru": "страна",
+      "translit": "straná",
+      "it": "paese / nazione",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v222",
+      "tipo": "sostantivo (f.)",
+      "ru": "война",
+      "translit": "vajná",
+      "it": "guerra",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v223",
+      "tipo": "sostantivo (f.)",
+      "ru": "часть",
+      "translit": "častʹ",
+      "it": "parte",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v224",
+      "tipo": "sostantivo (f.)",
+      "ru": "дорога",
+      "translit": "daróga",
+      "it": "strada",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v225",
+      "tipo": "sostantivo (f.)",
+      "ru": "Россия",
+      "translit": "rassíja",
+      "it": "Russia",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v226",
+      "tipo": "sostantivo (f.)",
+      "ru": "Москва",
+      "translit": "maskvá",
+      "it": "Mosca",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v227",
+      "tipo": "sostantivo (n.)",
+      "ru": "плечо",
+      "translit": "plečó",
+      "it": "spalla",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v228",
+      "tipo": "sostantivo (m.)",
+      "ru": "пол",
+      "translit": "pol",
+      "it": "pavimento",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v229",
+      "tipo": "sostantivo (f.)",
+      "ru": "история",
+      "translit": "istórija",
+      "it": "storia",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v230",
+      "tipo": "sostantivo (m.)",
+      "ru": "палец",
+      "translit": "pálec",
+      "it": "dito",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v231",
+      "tipo": "sostantivo (m.)",
+      "ru": "путь",
+      "translit": "putʹ",
+      "it": "strada / cammino",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v232",
+      "tipo": "sostantivo (f.)",
+      "ru": "тысяча",
+      "translit": "týsača",
+      "it": "mille",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v233",
+      "tipo": "sostantivo (f.)",
+      "ru": "стена",
+      "translit": "stená",
+      "it": "muro / parete",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v234",
+      "tipo": "sostantivo (f.)",
+      "ru": "спина",
+      "translit": "spiná",
+      "it": "schiena",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v235",
+      "tipo": "sostantivo (m.)",
+      "ru": "язык",
+      "translit": "jazýk",
+      "it": "lingua",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v236",
+      "tipo": "sostantivo (m.)",
+      "ru": "мальчик",
+      "translit": "málʹčik",
+      "it": "bambino / ragazzo",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v237",
+      "tipo": "sostantivo (n.)",
+      "ru": "письмо",
+      "translit": "pisʹmó",
+      "it": "lettera",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v238",
+      "tipo": "sostantivo (n.)",
+      "ru": "сердце",
+      "translit": "sérdce",
+      "it": "cuore",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v239",
+      "tipo": "sostantivo (f.)",
+      "ru": "девушка",
+      "translit": "dévuška",
+      "it": "ragazza",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v240",
+      "tipo": "sostantivo (f.)",
+      "ru": "система",
+      "translit": "sistéma",
+      "it": "sistema",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v241",
+      "tipo": "sostantivo (f.)",
+      "ru": "кровь",
+      "translit": "krovʹ",
+      "it": "sangue",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v242",
+      "tipo": "sostantivo (m.)",
+      "ru": "парень",
+      "translit": "párenʹ",
+      "it": "ragazzo",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v243",
+      "tipo": "sostantivo (n.)",
+      "ru": "ухо",
+      "translit": "úho",
+      "it": "orecchio",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v244",
+      "tipo": "sostantivo",
+      "ru": "берег",
+      "translit": "béreg",
+      "it": "riva / costa",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v245",
+      "tipo": "sostantivo (f.)",
+      "ru": "газета",
+      "translit": "gazéta",
+      "it": "giornale",
+      "tag": [
+        "media"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v246",
+      "tipo": "sostantivo (m.)",
+      "ru": "нос",
+      "translit": "nos",
+      "it": "naso",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v247",
+      "tipo": "sostantivo (m.)",
+      "ru": "двор",
+      "translit": "dvor",
+      "it": "cortile",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v248",
+      "tipo": "sostantivo (n.)",
+      "ru": "дерево",
+      "translit": "dérevo",
+      "it": "albero",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v249",
+      "tipo": "sostantivo",
+      "ru": "дядя",
+      "translit": "dáda",
+      "it": "zio",
+      "tag": [
+        "famiglia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v250",
+      "tipo": "sostantivo (f.)",
+      "ru": "форма",
+      "translit": "fórma",
+      "it": "forma",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v251",
+      "tipo": "sostantivo (f.)",
+      "ru": "девочка",
+      "translit": "dévočka",
+      "it": "bambina / ragazza",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v252",
+      "tipo": "sostantivo (m.)",
+      "ru": "камень",
+      "translit": "kámenʹ",
+      "it": "pietra",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v253",
+      "tipo": "sostantivo",
+      "ru": "ветер",
+      "translit": "véter",
+      "it": "vento",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v254",
+      "tipo": "sostantivo (f.)",
+      "ru": "проблема",
+      "translit": "prabléma",
+      "it": "problema",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v255",
+      "tipo": "sostantivo (m.)",
+      "ru": "гость",
+      "translit": "gostʹ",
+      "it": "ospite",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v256",
+      "tipo": "sostantivo",
+      "ru": "зуб",
+      "translit": "zub",
+      "it": "dente",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v257",
+      "tipo": "sostantivo (m.)",
+      "ru": "век",
+      "translit": "vek",
+      "it": "secolo",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v258",
+      "tipo": "sostantivo (m.)",
+      "ru": "страх",
+      "translit": "strah",
+      "it": "paura",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v259",
+      "tipo": "sostantivo (m.)",
+      "ru": "зал",
+      "translit": "zal",
+      "it": "palestra",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v260",
+      "tipo": "sostantivo (f.)",
+      "ru": "вещь",
+      "translit": "veščʹ",
+      "it": "cosa / oggetto",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v261",
+      "tipo": "sostantivo (f.)",
+      "ru": "бумага",
+      "translit": "bumága",
+      "it": "carta",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v262",
+      "tipo": "sostantivo (m.)",
+      "ru": "план",
+      "translit": "plan",
+      "it": "piano",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v263",
+      "tipo": "sostantivo (n.)",
+      "ru": "решение",
+      "translit": "rešénije",
+      "it": "soluzione",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v264",
+      "tipo": "sostantivo (m.)",
+      "ru": "класс",
+      "translit": "klass",
+      "it": "classe",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v265",
+      "tipo": "sostantivo (m.)",
+      "ru": "самолёт",
+      "translit": "samalót",
+      "it": "aereo",
+      "tag": [
+        "viaggio"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v266",
+      "tipo": "sostantivo (f.)",
+      "ru": "деревня",
+      "translit": "derévna",
+      "it": "villaggio",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v267",
+      "tipo": "sostantivo (f.)",
+      "ru": "игра",
+      "translit": "igrá",
+      "it": "gioco",
+      "tag": [
+        "arte"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v268",
+      "tipo": "sostantivo (m.)",
+      "ru": "банк",
+      "translit": "bank",
+      "it": "banca",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v269",
+      "tipo": "sostantivo (f.)",
+      "ru": "идея",
+      "translit": "idéja",
+      "it": "idea",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v270",
+      "tipo": "sostantivo (m.)",
+      "ru": "профессор",
+      "translit": "praféssor",
+      "it": "professore",
+      "tag": [
+        "professioni"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v271",
+      "tipo": "sostantivo (f.)",
+      "ru": "наука",
+      "translit": "naúka",
+      "it": "scienza",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v272",
+      "tipo": "sostantivo (f.)",
+      "ru": "информация",
+      "translit": "infarmácija",
+      "it": "informazione",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v273",
+      "tipo": "sostantivo (f.)",
+      "ru": "трава",
+      "translit": "travá",
+      "it": "erba",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v274",
+      "tipo": "sostantivo (f.)",
+      "ru": "тридцать",
+      "translit": "trídcatʹ",
+      "it": "trenta",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v275",
+      "tipo": "sostantivo (f.)",
+      "ru": "шея",
+      "translit": "šéja",
+      "it": "collo",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v276",
+      "tipo": "sostantivo (f.)",
+      "ru": "секунда",
+      "translit": "sekúnda",
+      "it": "secondo",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v277",
+      "tipo": "sostantivo (f.)",
+      "ru": "программа",
+      "translit": "pragrámma",
+      "it": "programma",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v278",
+      "tipo": "sostantivo (m.)",
+      "ru": "лист",
+      "translit": "list",
+      "it": "foglia",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v279",
+      "tipo": "sostantivo (m.)",
+      "ru": "этаж",
+      "translit": "etáž",
+      "it": "piano",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v280",
+      "tipo": "sostantivo (f.)",
+      "ru": "площадь",
+      "translit": "plóščadʹ",
+      "it": "piazza",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v281",
+      "tipo": "sostantivo (f.)",
+      "ru": "лошадь",
+      "translit": "lóšadʹ",
+      "it": "cavallo",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v282",
+      "tipo": "sostantivo (f.)",
+      "ru": "кожа",
+      "translit": "kóža",
+      "it": "pelle",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v283",
+      "tipo": "sostantivo (f.)",
+      "ru": "звезда",
+      "translit": "zvezdá",
+      "it": "stella",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v284",
+      "tipo": "sostantivo (m.)",
+      "ru": "поезд",
+      "translit": "pójezd",
+      "it": "treno",
+      "tag": [
+        "viaggio"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v285",
+      "tipo": "sostantivo",
+      "ru": "цветок",
+      "translit": "cvetók",
+      "it": "fiore",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v286",
+      "tipo": "sostantivo (n.)",
+      "ru": "желание",
+      "translit": "želánije",
+      "it": "desiderio",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v287",
+      "tipo": "sostantivo (m.)",
+      "ru": "сосед",
+      "translit": "saséd",
+      "it": "vicino di casa",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v288",
+      "tipo": "sostantivo (n.)",
+      "ru": "поле",
+      "translit": "póle",
+      "it": "campo",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v289",
+      "tipo": "sostantivo (f.)",
+      "ru": "цена",
+      "translit": "cená",
+      "it": "prezzo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v290",
+      "tipo": "sostantivo (f.)",
+      "ru": "карта",
+      "translit": "kárta",
+      "it": "mappa",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v291",
+      "tipo": "sostantivo (f.)",
+      "ru": "радость",
+      "translit": "rádostʹ",
+      "it": "gioia",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v292",
+      "tipo": "sostantivo (f.)",
+      "ru": "музыка",
+      "translit": "múzyka",
+      "it": "musica",
+      "tag": [
+        "arte"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v293",
+      "tipo": "sostantivo (m.)",
+      "ru": "завод",
+      "translit": "zavód",
+      "it": "fabbrica",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v294",
+      "tipo": "sostantivo (n.)",
+      "ru": "лето",
+      "translit": "léto",
+      "it": "estate",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v295",
+      "tipo": "sostantivo (f.)",
+      "ru": "станция",
+      "translit": "stáncija",
+      "it": "stazione",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v296",
+      "tipo": "sostantivo (m.)",
+      "ru": "цвет",
+      "translit": "cvet",
+      "it": "colore",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v297",
+      "tipo": "sostantivo (n.)",
+      "ru": "вино",
+      "translit": "vinó",
+      "it": "vino",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v298",
+      "tipo": "sostantivo (f.)",
+      "ru": "лестница",
+      "translit": "léstnica",
+      "it": "scala",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v299",
+      "tipo": "sostantivo (m.)",
+      "ru": "Петербург",
+      "translit": "peterbúrg",
+      "it": "Pietroburgo",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v300",
+      "tipo": "sostantivo (m.)",
+      "ru": "сад",
+      "translit": "sad",
+      "it": "giardino",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v301",
+      "tipo": "sostantivo (f.)",
+      "ru": "зима",
+      "translit": "zimá",
+      "it": "inverno",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v302",
+      "tipo": "sostantivo (f.)",
+      "ru": "птица",
+      "translit": "ptíca",
+      "it": "uccello",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v303",
+      "tipo": "sostantivo (n.)",
+      "ru": "здание",
+      "translit": "zdánije",
+      "it": "edificio",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v304",
+      "tipo": "sostantivo (n.)",
+      "ru": "зеркало",
+      "translit": "zérkalo",
+      "it": "specchio",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v305",
+      "tipo": "sostantivo (m.)",
+      "ru": "корабль",
+      "translit": "karáblʹ",
+      "it": "nave",
+      "tag": [
+        "viaggio"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v306",
+      "tipo": "sostantivo (m.)",
+      "ru": "миллион",
+      "translit": "millión",
+      "it": "milione",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v307",
+      "tipo": "sostantivo (m.)",
+      "ru": "рот",
+      "translit": "rot",
+      "it": "bocca",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v308",
+      "tipo": "sostantivo (f.)",
+      "ru": "сутки",
+      "translit": "sútki",
+      "it": "giornata (24h)",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v309",
+      "tipo": "sostantivo (m.)",
+      "ru": "ключ",
+      "translit": "kluč",
+      "it": "chiave",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v310",
+      "tipo": "sostantivo (m.)",
+      "ru": "остров",
+      "translit": "óstrov",
+      "it": "isola",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v311",
+      "tipo": "sostantivo (m.)",
+      "ru": "театр",
+      "translit": "teátr",
+      "it": "teatro",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v312",
+      "tipo": "sostantivo (m.)",
+      "ru": "живот",
+      "translit": "živót",
+      "it": "pancia",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v313",
+      "tipo": "sostantivo (f.)",
+      "ru": "Германия",
+      "translit": "germánija",
+      "it": "Germania",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v314",
+      "tipo": "sostantivo (m.)",
+      "ru": "рынок",
+      "translit": "rýnok",
+      "it": "mercato",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v315",
+      "tipo": "sostantivo (m.)",
+      "ru": "запад",
+      "translit": "západ",
+      "it": "ovest",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v316",
+      "tipo": "sostantivo (m.)",
+      "ru": "журнал",
+      "translit": "žurnál",
+      "it": "rivista",
+      "tag": [
+        "media"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v317",
+      "tipo": "sostantivo (f.)",
+      "ru": "столица",
+      "translit": "stalíca",
+      "it": "capitale",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v318",
+      "tipo": "sostantivo (m.)",
+      "ru": "размер",
+      "translit": "razmér",
+      "it": "taglia / misura",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v319",
+      "tipo": "sostantivo (f.)",
+      "ru": "Европа",
+      "translit": "jevrópa",
+      "it": "Europa",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v320",
+      "tipo": "sostantivo (f.)",
+      "ru": "тётя",
+      "translit": "tóta",
+      "it": "zia",
+      "tag": [
+        "famiglia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v321",
+      "tipo": "sostantivo (f.)",
+      "ru": "весна",
+      "translit": "vesná",
+      "it": "primavera",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v322",
+      "tipo": "sostantivo (m.)",
+      "ru": "фильм",
+      "translit": "filʹm",
+      "it": "film",
+      "tag": [
+        "arte"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v323",
+      "tipo": "sostantivo (f.)",
+      "ru": "больница",
+      "translit": "balʹníca",
+      "it": "ospedale",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v324",
+      "tipo": "sostantivo (m.)",
+      "ru": "мост",
+      "translit": "most",
+      "it": "ponte",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v325",
+      "tipo": "sostantivo (f.)",
+      "ru": "доска",
+      "translit": "daská",
+      "it": "lavagna",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v326",
+      "tipo": "sostantivo (m.)",
+      "ru": "восток",
+      "translit": "vastók",
+      "it": "est",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v327",
+      "tipo": "sostantivo (n.)",
+      "ru": "настроение",
+      "translit": "nastrajénije",
+      "it": "umore",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v328",
+      "tipo": "sostantivo (m.)",
+      "ru": "песок",
+      "translit": "pesók",
+      "it": "sabbia",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v329",
+      "tipo": "sostantivo (n.)",
+      "ru": "масло",
+      "translit": "máslo",
+      "it": "burro / olio",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v330",
+      "tipo": "sostantivo (n.)",
+      "ru": "пиво",
+      "translit": "pívo",
+      "it": "birra",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v331",
+      "tipo": "sostantivo (m.)",
+      "ru": "потолок",
+      "translit": "patalók",
+      "it": "soffitto",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v332",
+      "tipo": "sostantivo (m.)",
+      "ru": "диван",
+      "translit": "diván",
+      "it": "divano",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v333",
+      "tipo": "sostantivo (m.)",
+      "ru": "туман",
+      "translit": "tumán",
+      "it": "nebbia",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v334",
+      "tipo": "sostantivo (f.)",
+      "ru": "церковь",
+      "translit": "cérkovʹ",
+      "it": "chiesa",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v335",
+      "tipo": "sostantivo (m.)",
+      "ru": "музей",
+      "translit": "muzéj",
+      "it": "museo",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v336",
+      "tipo": "sostantivo (f.)",
+      "ru": "осень",
+      "translit": "ósenʹ",
+      "it": "autunno",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v337",
+      "tipo": "sostantivo (m.)",
+      "ru": "водитель",
+      "translit": "vadítelʹ",
+      "it": "autista",
+      "tag": [
+        "professioni"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v338",
+      "tipo": "sostantivo (m.)",
+      "ru": "мороз",
+      "translit": "maróz",
+      "it": "gelo",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v339",
+      "tipo": "sostantivo (n.)",
+      "ru": "озеро",
+      "translit": "ózero",
+      "it": "lago",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v340",
+      "tipo": "sostantivo (f.)",
+      "ru": "сумка",
+      "translit": "súmka",
+      "it": "borsa",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v341",
+      "tipo": "sostantivo (n.)",
+      "ru": "кино",
+      "translit": "kinó",
+      "it": "cinema",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v342",
+      "tipo": "sostantivo (n.)",
+      "ru": "удивление",
+      "translit": "udivlénije",
+      "it": "sorpresa",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v343",
+      "tipo": "sostantivo (m.)",
+      "ru": "ученик",
+      "translit": "učeník",
+      "it": "alunno",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v344",
+      "tipo": "sostantivo (n.)",
+      "ru": "горе",
+      "translit": "góre",
+      "it": "dolore",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v345",
+      "tipo": "sostantivo (f.)",
+      "ru": "песня",
+      "translit": "pésna",
+      "it": "canzone",
+      "tag": [
+        "arte"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v346",
+      "tipo": "sostantivo (n.)",
+      "ru": "платье",
+      "translit": "plátʹje",
+      "it": "vestito",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v347",
+      "tipo": "sostantivo (m.)",
+      "ru": "телевизор",
+      "translit": "televízor",
+      "it": "televisore",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v348",
+      "tipo": "sostantivo (m.)",
+      "ru": "экран",
+      "translit": "ekrán",
+      "it": "schermo",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v349",
+      "tipo": "sostantivo (f.)",
+      "ru": "шапка",
+      "translit": "šápka",
+      "it": "berretto",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v350",
+      "tipo": "sostantivo (m.)",
+      "ru": "подарок",
+      "translit": "padárok",
+      "it": "regalo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v351",
+      "tipo": "sostantivo (m.)",
+      "ru": "август",
+      "translit": "ávgust",
+      "it": "agosto",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v352",
+      "tipo": "sostantivo (f.)",
+      "ru": "гостиница",
+      "translit": "gastínica",
+      "it": "albergo",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v353",
+      "tipo": "sostantivo (f.)",
+      "ru": "среда",
+      "translit": "sredá",
+      "it": "mercoledì",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v354",
+      "tipo": "sostantivo (m.)",
+      "ru": "октябрь",
+      "translit": "aktábrʹ",
+      "it": "ottobre",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v355",
+      "tipo": "sostantivo (n.)",
+      "ru": "облако",
+      "translit": "óblako",
+      "it": "nuvola",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v356",
+      "tipo": "sostantivo (m.)",
+      "ru": "шкаф",
+      "translit": "škaf",
+      "it": "armadio",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v357",
+      "tipo": "sostantivo (f.)",
+      "ru": "куртка",
+      "translit": "kúrtka",
+      "it": "giacca",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v358",
+      "tipo": "sostantivo (f.)",
+      "ru": "луна",
+      "translit": "luná",
+      "it": "luna",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v359",
+      "tipo": "sostantivo (m.)",
+      "ru": "волк",
+      "translit": "volk",
+      "it": "lupo",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v360",
+      "tipo": "sostantivo",
+      "ru": "коллега",
+      "translit": "kalléga",
+      "it": "collega",
+      "tag": [
+        "professioni"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v361",
+      "tipo": "sostantivo (f.)",
+      "ru": "температура",
+      "translit": "temperatúra",
+      "it": "temperatura",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v362",
+      "tipo": "sostantivo (m.)",
+      "ru": "сентябрь",
+      "translit": "sentábrʹ",
+      "it": "settembre",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v363",
+      "tipo": "sostantivo (f.)",
+      "ru": "подруга",
+      "translit": "padrúga",
+      "it": "amica",
+      "tag": [
+        "persone"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v364",
+      "tipo": "sostantivo",
+      "ru": "брюки",
+      "translit": "brúki",
+      "it": "pantaloni",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v365",
+      "tipo": "sostantivo (f.)",
+      "ru": "обезьяна",
+      "translit": "abezʹjána",
+      "it": "scimmia",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v366",
+      "tipo": "sostantivo (m.)",
+      "ru": "север",
+      "translit": "séver",
+      "it": "nord",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v367",
+      "tipo": "sostantivo (n.)",
+      "ru": "пальто",
+      "translit": "palʹtó",
+      "it": "cappotto",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v368",
+      "tipo": "sostantivo (f.)",
+      "ru": "дружба",
+      "translit": "drúžba",
+      "it": "amicizia",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v369",
+      "tipo": "sostantivo (m.)",
+      "ru": "памятник",
+      "translit": "pámatnik",
+      "it": "monumento",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v370",
+      "tipo": "sostantivo (m.)",
+      "ru": "юг",
+      "translit": "jug",
+      "it": "sud",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v371",
+      "tipo": "sostantivo (m.)",
+      "ru": "медведь",
+      "translit": "medvédʹ",
+      "it": "orso",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v372",
+      "tipo": "sostantivo (f.)",
+      "ru": "лампа",
+      "translit": "lámpa",
+      "it": "lampada",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v373",
+      "tipo": "sostantivo (m.)",
+      "ru": "ремень",
+      "translit": "reménʹ",
+      "it": "cintura",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v374",
+      "tipo": "sostantivo (f.)",
+      "ru": "библиотека",
+      "translit": "bibliatéka",
+      "it": "biblioteca",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v375",
+      "tipo": "sostantivo (f.)",
+      "ru": "корова",
+      "translit": "karóva",
+      "it": "mucca",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v376",
+      "tipo": "sostantivo (n.)",
+      "ru": "задание",
+      "translit": "zadánije",
+      "it": "compito",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v377",
+      "tipo": "sostantivo (f.)",
+      "ru": "Франция",
+      "translit": "fráncija",
+      "it": "Francia",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v378",
+      "tipo": "sostantivo (m.)",
+      "ru": "бег",
+      "translit": "beg",
+      "it": "corsa",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v379",
+      "tipo": "sostantivo (m.)",
+      "ru": "ноябрь",
+      "translit": "najábrʹ",
+      "it": "novembre",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v380",
+      "tipo": "sostantivo (m.)",
+      "ru": "май",
+      "translit": "maj",
+      "it": "maggio",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v381",
+      "tipo": "sostantivo (m.)",
+      "ru": "лев",
+      "translit": "lev",
+      "it": "leone",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v382",
+      "tipo": "sostantivo (m.)",
+      "ru": "декабрь",
+      "translit": "dekábrʹ",
+      "it": "dicembre",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v383",
+      "tipo": "sostantivo (m.)",
+      "ru": "порт",
+      "translit": "port",
+      "it": "porto",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v384",
+      "tipo": "sostantivo (m.)",
+      "ru": "июнь",
+      "translit": "ijúnʹ",
+      "it": "giugno",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v385",
+      "tipo": "sostantivo (m.)",
+      "ru": "лук",
+      "translit": "luk",
+      "it": "cipolla",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v386",
+      "tipo": "sostantivo (m.)",
+      "ru": "март",
+      "translit": "mart",
+      "it": "marzo",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v387",
+      "tipo": "sostantivo (n.)",
+      "ru": "яйцо",
+      "translit": "jajcó",
+      "it": "uovo",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v388",
+      "tipo": "sostantivo (m.)",
+      "ru": "заяц",
+      "translit": "zájac",
+      "it": "lepre",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v389",
+      "tipo": "sostantivo (m.)",
+      "ru": "июль",
+      "translit": "ijúlʹ",
+      "it": "luglio",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v390",
+      "tipo": "sostantivo (f.)",
+      "ru": "оценка",
+      "translit": "acénka",
+      "it": "voto",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v391",
+      "tipo": "sostantivo (m.)",
+      "ru": "кролик",
+      "translit": "królik",
+      "it": "coniglio",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v392",
+      "tipo": "sostantivo (m.)",
+      "ru": "внук",
+      "translit": "vnuk",
+      "it": "nipote (m.)",
+      "tag": [
+        "famiglia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v393",
+      "tipo": "sostantivo (m.)",
+      "ru": "январь",
+      "translit": "janvárʹ",
+      "it": "gennaio",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v394",
+      "tipo": "sostantivo (m.)",
+      "ru": "ковёр",
+      "translit": "kavór",
+      "it": "tappeto",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v395",
+      "tipo": "sostantivo (f.)",
+      "ru": "соль",
+      "translit": "solʹ",
+      "it": "sale",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v396",
+      "tipo": "sostantivo (f.)",
+      "ru": "мука",
+      "translit": "múka",
+      "it": "farina",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v397",
+      "tipo": "sostantivo (m.)",
+      "ru": "карандаш",
+      "translit": "karandáš",
+      "it": "matita",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v398",
+      "tipo": "sostantivo (f.)",
+      "ru": "каша",
+      "translit": "káša",
+      "it": "porridge",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v399",
+      "tipo": "sostantivo (n.)",
+      "ru": "кафе",
+      "translit": "kafé",
+      "it": "bar / caffè",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v400",
+      "tipo": "sostantivo (n.)",
+      "ru": "воскресенье",
+      "translit": "vaskresénʹje",
+      "it": "domenica",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v401",
+      "tipo": "sostantivo (m.)",
+      "ru": "сахар",
+      "translit": "sáhar",
+      "it": "zucchero",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v402",
+      "tipo": "sostantivo (m.)",
+      "ru": "лифт",
+      "translit": "lift",
+      "it": "ascensore",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v403",
+      "tipo": "sostantivo (n.)",
+      "ru": "такси",
+      "translit": "taksí",
+      "it": "taxi",
+      "tag": [
+        "viaggio"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v404",
+      "tipo": "sostantivo (m.)",
+      "ru": "балкон",
+      "translit": "balkón",
+      "it": "balcone",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v405",
+      "tipo": "sostantivo (m.)",
+      "ru": "суп",
+      "translit": "sup",
+      "it": "zuppa",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v406",
+      "tipo": "sostantivo (f.)",
+      "ru": "свинья",
+      "translit": "svinʹjá",
+      "it": "maiale",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v407",
+      "tipo": "sostantivo (f.)",
+      "ru": "плита",
+      "translit": "plitá",
+      "it": "piano cottura",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v408",
+      "tipo": "sostantivo (m.)",
+      "ru": "спорт",
+      "translit": "sport",
+      "it": "sport",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v409",
+      "tipo": "sostantivo (m.)",
+      "ru": "олень",
+      "translit": "alénʹ",
+      "it": "cervo",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v410",
+      "tipo": "sostantivo (f.)",
+      "ru": "суббота",
+      "translit": "subbóta",
+      "it": "sabato",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v411",
+      "tipo": "sostantivo (f.)",
+      "ru": "почта",
+      "translit": "póčta",
+      "it": "posta",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v412",
+      "tipo": "sostantivo (f.)",
+      "ru": "змея",
+      "translit": "zmejá",
+      "it": "serpente",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v413",
+      "tipo": "sostantivo (m.)",
+      "ru": "апрель",
+      "translit": "aprélʹ",
+      "it": "aprile",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v414",
+      "tipo": "sostantivo (f.)",
+      "ru": "спальня",
+      "translit": "spálʹna",
+      "it": "camera da letto",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v415",
+      "tipo": "sostantivo (f.)",
+      "ru": "Италия",
+      "translit": "itálija",
+      "it": "Italia",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v416",
+      "tipo": "sostantivo",
+      "ru": "пляж",
+      "translit": "plaž",
+      "it": "spiaggia",
+      "tag": [
+        "natura"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v417",
+      "tipo": "sostantivo (m.)",
+      "ru": "слон",
+      "translit": "slon",
+      "it": "elefante",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v418",
+      "tipo": "sostantivo (m.)",
+      "ru": "аэропорт",
+      "translit": "aerapórt",
+      "it": "aeroporto",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v419",
+      "tipo": "sostantivo (m.)",
+      "ru": "рис",
+      "translit": "ris",
+      "it": "riso",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v420",
+      "tipo": "sostantivo (m.)",
+      "ru": "трамвай",
+      "translit": "tramváj",
+      "it": "tram",
+      "tag": [
+        "viaggio"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v421",
+      "tipo": "sostantivo (m.)",
+      "ru": "февраль",
+      "translit": "fevrálʹ",
+      "it": "febbraio",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v422",
+      "tipo": "sostantivo (f.)",
+      "ru": "одиннадцать",
+      "translit": "adínnadcatʹ",
+      "it": "undici",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v423",
+      "tipo": "sostantivo (f.)",
+      "ru": "Япония",
+      "translit": "japónija",
+      "it": "Giappone",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v424",
+      "tipo": "sostantivo (m.)",
+      "ru": "орёл",
+      "translit": "aról",
+      "it": "aquila",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v425",
+      "tipo": "sostantivo (f.)",
+      "ru": "юбка",
+      "translit": "júbka",
+      "it": "gonna",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v426",
+      "tipo": "sostantivo (m.)",
+      "ru": "гараж",
+      "translit": "garáž",
+      "it": "garage",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v427",
+      "tipo": "sostantivo (f.)",
+      "ru": "злость",
+      "translit": "zlostʹ",
+      "it": "rabbia",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v428",
+      "tipo": "sostantivo (f.)",
+      "ru": "ванна",
+      "translit": "vánna",
+      "it": "vasca da bagno",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v429",
+      "tipo": "sostantivo (m.)",
+      "ru": "велосипед",
+      "translit": "velasipéd",
+      "it": "bicicletta",
+      "tag": [
+        "viaggio"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v430",
+      "tipo": "sostantivo (f.)",
+      "ru": "тетрадь",
+      "translit": "tetrádʹ",
+      "it": "quaderno",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v431",
+      "tipo": "sostantivo (m.)",
+      "ru": "петух",
+      "translit": "petúh",
+      "it": "gallo",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v432",
+      "tipo": "sostantivo (f.)",
+      "ru": "мышь",
+      "translit": "myšʹ",
+      "it": "topo",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v433",
+      "tipo": "sostantivo (f.)",
+      "ru": "шуба",
+      "translit": "šúba",
+      "it": "pelliccia",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v434",
+      "tipo": "sostantivo (f.)",
+      "ru": "медицина",
+      "translit": "medicína",
+      "it": "medicina",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v435",
+      "tipo": "sostantivo (f.)",
+      "ru": "покупка",
+      "translit": "pakúpka",
+      "it": "acquisto",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v436",
+      "tipo": "sostantivo (m.)",
+      "ru": "воробей",
+      "translit": "varabéj",
+      "it": "passero",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v437",
+      "tipo": "sostantivo (f.)",
+      "ru": "капуста",
+      "translit": "kapústa",
+      "it": "cavolo",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v438",
+      "tipo": "sostantivo (m.)",
+      "ru": "фрукт",
+      "translit": "frukt",
+      "it": "frutto",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v439",
+      "tipo": "sostantivo (m.)",
+      "ru": "продавец",
+      "translit": "pradavéc",
+      "it": "commesso",
+      "tag": [
+        "professioni"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v440",
+      "tipo": "sostantivo (f.)",
+      "ru": "коза",
+      "translit": "kazá",
+      "it": "capra",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v441",
+      "tipo": "sostantivo (m.)",
+      "ru": "понедельник",
+      "translit": "panedélʹnik",
+      "it": "lunedì",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v442",
+      "tipo": "sostantivo (m.)",
+      "ru": "бассейн",
+      "translit": "basséjn",
+      "it": "piscina",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v443",
+      "tipo": "sostantivo (m.)",
+      "ru": "офис",
+      "translit": "ófis",
+      "it": "ufficio",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v444",
+      "tipo": "sostantivo (m.)",
+      "ru": "огурец",
+      "translit": "aguréc",
+      "it": "cetriolo",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v445",
+      "tipo": "sostantivo",
+      "ru": "курица",
+      "translit": "kúrica",
+      "it": "gallina",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v446",
+      "tipo": "sostantivo (m.)",
+      "ru": "перец",
+      "translit": "pérec",
+      "it": "peperone / pepe",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v447",
+      "tipo": "sostantivo (f.)",
+      "ru": "гроза",
+      "translit": "grazá",
+      "it": "temporale",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v448",
+      "tipo": "sostantivo (f.)",
+      "ru": "бабочка",
+      "translit": "bábočka",
+      "it": "farfalla",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v449",
+      "tipo": "sostantivo (f.)",
+      "ru": "пятница",
+      "translit": "pátnica",
+      "it": "venerdì",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v450",
+      "tipo": "sostantivo (m.)",
+      "ru": "фонтан",
+      "translit": "fantán",
+      "it": "fontana",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v451",
+      "tipo": "sostantivo",
+      "ru": "тигр",
+      "translit": "tigr",
+      "it": "tigre",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v452",
+      "tipo": "sostantivo (f.)",
+      "ru": "конфета",
+      "translit": "kanféta",
+      "it": "caramella",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v453",
+      "tipo": "sostantivo (f.)",
+      "ru": "овца",
+      "translit": "avcá",
+      "it": "pecora",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v454",
+      "tipo": "sostantivo (f.)",
+      "ru": "математика",
+      "translit": "matemátika",
+      "it": "matematica",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v455",
+      "tipo": "sostantivo (m.)",
+      "ru": "перекрёсток",
+      "translit": "perekróstok",
+      "it": "incrocio",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v456",
+      "tipo": "sostantivo (f.)",
+      "ru": "грусть",
+      "translit": "grustʹ",
+      "it": "tristezza",
+      "tag": [
+        "sentimenti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v457",
+      "tipo": "sostantivo (m.)",
+      "ru": "овощ",
+      "translit": "óvošč",
+      "it": "verdura",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v458",
+      "tipo": "sostantivo (f.)",
+      "ru": "медсестра",
+      "translit": "medsestrá",
+      "it": "infermiera",
+      "tag": [
+        "professioni"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v459",
+      "tipo": "sostantivo (m.)",
+      "ru": "бутерброд",
+      "translit": "buterbród",
+      "it": "panino",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v460",
+      "tipo": "sostantivo (f.)",
+      "ru": "Испания",
+      "translit": "ispánija",
+      "it": "Spagna",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v461",
+      "tipo": "sostantivo (f.)",
+      "ru": "парта",
+      "translit": "párta",
+      "it": "banco",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v462",
+      "tipo": "sostantivo (m.)",
+      "ru": "стадион",
+      "translit": "stadión",
+      "it": "stadio",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v463",
+      "tipo": "sostantivo (f.)",
+      "ru": "груша",
+      "translit": "grúša",
+      "it": "pera",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v464",
+      "tipo": "sostantivo (m.)",
+      "ru": "футбол",
+      "translit": "futból",
+      "it": "calcio",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v465",
+      "tipo": "sostantivo (m.)",
+      "ru": "лимон",
+      "translit": "limón",
+      "it": "limone",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v466",
+      "tipo": "sostantivo",
+      "ru": "свитер",
+      "translit": "svíter",
+      "it": "maglione",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v467",
+      "tipo": "sostantivo (m.)",
+      "ru": "интернет",
+      "translit": "internét",
+      "it": "internet",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v468",
+      "tipo": "sostantivo (f.)",
+      "ru": "химия",
+      "translit": "hímija",
+      "it": "chimica",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v469",
+      "tipo": "sostantivo (f.)",
+      "ru": "жара",
+      "translit": "žará",
+      "it": "caldo / afa",
+      "tag": [
+        "meteo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v470",
+      "tipo": "sostantivo (m.)",
+      "ru": "помидор",
+      "translit": "pamidór",
+      "it": "pomodoro",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v471",
+      "tipo": "sostantivo (n.)",
+      "ru": "варенье",
+      "translit": "varénʹje",
+      "it": "marmellata",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v472",
+      "tipo": "sostantivo (m.)",
+      "ru": "голубь",
+      "translit": "gólubʹ",
+      "it": "piccione",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v473",
+      "tipo": "sostantivo (m.)",
+      "ru": "виноград",
+      "translit": "vinagrád",
+      "it": "uva",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v474",
+      "tipo": "sostantivo",
+      "ru": "муравей",
+      "translit": "muravéj",
+      "it": "formica",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v475",
+      "tipo": "sostantivo (n.)",
+      "ru": "приложение",
+      "translit": "prilažénije",
+      "it": "applicazione",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v476",
+      "tipo": "sostantivo (f.)",
+      "ru": "география",
+      "translit": "geagráfija",
+      "it": "geografia",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v477",
+      "tipo": "sostantivo (n.)",
+      "ru": "плавание",
+      "translit": "plávanije",
+      "it": "nuoto",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v478",
+      "tipo": "sostantivo (m.)",
+      "ru": "салат",
+      "translit": "salát",
+      "it": "insalata",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v479",
+      "tipo": "sostantivo (m.)",
+      "ru": "четверг",
+      "translit": "četvérg",
+      "it": "giovedì",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v480",
+      "tipo": "sostantivo",
+      "ru": "апельсин",
+      "translit": "apelʹsín",
+      "it": "arancia",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v481",
+      "tipo": "sostantivo (m.)",
+      "ru": "шоколад",
+      "translit": "šakalád",
+      "it": "ciocolato",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v482",
+      "tipo": "sostantivo (n.)",
+      "ru": "фото",
+      "translit": "fóto",
+      "it": "foto",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v483",
+      "tipo": "sostantivo",
+      "ru": "джинсы",
+      "translit": "džínsy",
+      "it": "jeans",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v484",
+      "tipo": "sostantivo (m.)",
+      "ru": "вторник",
+      "translit": "vtórnik",
+      "it": "martedì",
+      "tag": [
+        "tempo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v485",
+      "tipo": "sostantivo (f.)",
+      "ru": "пчела",
+      "translit": "pčelá",
+      "it": "ape",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v486",
+      "tipo": "sostantivo (f.)",
+      "ru": "линейка",
+      "translit": "linéjka",
+      "it": "righello",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v487",
+      "tipo": "sostantivo (m.)",
+      "ru": "шарф",
+      "translit": "šarf",
+      "it": "sciarpa",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v488",
+      "tipo": "sostantivo",
+      "ru": "крокодил",
+      "translit": "krakadíl",
+      "it": "coccodrillo",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v489",
+      "tipo": "sostantivo (m.)",
+      "ru": "светофор",
+      "translit": "svetafór",
+      "it": "semaforo",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v490",
+      "tipo": "sostantivo (m.)",
+      "ru": "арбуз",
+      "translit": "arbúz",
+      "it": "anguria",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v491",
+      "tipo": "sostantivo (m.)",
+      "ru": "картофель",
+      "translit": "kartófelʹ",
+      "it": "patata",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v492",
+      "tipo": "sostantivo (f.)",
+      "ru": "гимнастика",
+      "translit": "gimnástika",
+      "it": "ginnastica",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v493",
+      "tipo": "sostantivo (f.)",
+      "ru": "биология",
+      "translit": "bialógija",
+      "it": "biologia",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v494",
+      "tipo": "sostantivo (n.)",
+      "ru": "печенье",
+      "translit": "pečénʹje",
+      "it": "biscotto",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v495",
+      "tipo": "sostantivo (m.)",
+      "ru": "сайт",
+      "translit": "sajt",
+      "it": "sito web",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v496",
+      "tipo": "sostantivo (m.)",
+      "ru": "чеснок",
+      "translit": "česnók",
+      "it": "aglio",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v497",
+      "tipo": "sostantivo (m.)",
+      "ru": "банан",
+      "translit": "banán",
+      "it": "banana",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v498",
+      "tipo": "sostantivo",
+      "ru": "макароны",
+      "translit": "makaróny",
+      "it": "pasta",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v499",
+      "tipo": "sostantivo (f.)",
+      "ru": "лиса",
+      "translit": "lisá",
+      "it": "volpe",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v500",
+      "tipo": "sostantivo (m.)",
+      "ru": "тест",
+      "translit": "test",
+      "it": "verifica",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v501",
+      "tipo": "sostantivo (m.)",
+      "ru": "теннис",
+      "translit": "ténnis",
+      "it": "tennis",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v502",
+      "tipo": "sostantivo (f.)",
+      "ru": "морковь",
+      "translit": "markóvʹ",
+      "it": "carota",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v503",
+      "tipo": "sostantivo (m.)",
+      "ru": "супермаркет",
+      "translit": "supermárket",
+      "it": "supermercato",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v504",
+      "tipo": "sostantivo (f.)",
+      "ru": "клавиатура",
+      "translit": "klaviatúra",
+      "it": "tastiera",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v505",
+      "tipo": "sostantivo",
+      "ru": "видео",
+      "translit": "vídeo",
+      "it": "video",
+      "tag": [
+        "tecnologia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v506",
+      "tipo": "sostantivo (m.)",
+      "ru": "волейбол",
+      "translit": "valejból",
+      "it": "pallavolo",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v507",
+      "tipo": "sostantivo (m.)",
+      "ru": "баскетбол",
+      "translit": "basketból",
+      "it": "pallacanestro",
+      "tag": [
+        "sport"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v508",
+      "tipo": "sostantivo (f.)",
+      "ru": "внучка",
+      "translit": "vnúčka",
+      "it": "nipote (f.)",
+      "tag": [
+        "famiglia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v509",
+      "tipo": "sostantivo (f.)",
+      "ru": "клубника",
+      "translit": "klubníka",
+      "it": "fragola",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v510",
+      "tipo": "sostantivo (m.)",
+      "ru": "душ",
+      "translit": "duš",
+      "it": "doccia",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v511",
+      "tipo": "sostantivo (f.)",
+      "ru": "футболка",
+      "translit": "futbólka",
+      "it": "maglietta",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v512",
+      "tipo": "sostantivo (f.)",
+      "ru": "парковка",
+      "translit": "parkóvka",
+      "it": "parcheggio",
+      "tag": [
+        "città"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v513",
+      "tipo": "sostantivo (f.)",
+      "ru": "пицца",
+      "translit": "pícca",
+      "it": "pizza",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v514",
+      "tipo": "sostantivo",
+      "ru": "деньги",
+      "translit": "dénʹgi",
+      "it": "soldi",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v515",
+      "tipo": "sostantivo (f.)",
+      "ru": "полка",
+      "translit": "pólka",
+      "it": "scaffale",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v516",
+      "tipo": "sostantivo (f.)",
+      "ru": "ванная",
+      "translit": "vánnaja",
+      "it": "bagno",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v517",
+      "tipo": "sostantivo (f.)",
+      "ru": "гостиная",
+      "translit": "gastínaja",
+      "it": "soggiorno",
+      "tag": [
+        "casa"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v518",
+      "tipo": "sostantivo (n.)",
+      "ru": "мороженое",
+      "translit": "maróženoje",
+      "it": "gelato",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v519",
+      "tipo": "sostantivo (f.)",
+      "ru": "утка",
+      "translit": "útka",
+      "it": "anatra",
+      "tag": [
+        "animali"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v520",
+      "tipo": "sostantivo (m.)",
+      "ru": "ластик",
+      "translit": "lástik",
+      "it": "gomma",
+      "tag": [
+        "scuola"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v521",
+      "tipo": "sostantivo (f.)",
+      "ru": "сандалии",
+      "translit": "sandálii",
+      "it": "sandali",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v522",
+      "tipo": "sostantivo (m.)",
+      "ru": "простой",
+      "translit": "prastój",
+      "it": "semplice",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v523",
+      "tipo": "sostantivo (m.)",
+      "ru": "правый",
+      "translit": "právyj",
+      "it": "destro",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v524",
+      "tipo": "sostantivo (m.)",
+      "ru": "больной",
+      "translit": "balʹnój",
+      "it": "malato",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v525",
+      "tipo": "sostantivo (m.)",
+      "ru": "левый",
+      "translit": "lévyj",
+      "it": "sinistro",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v526",
+      "tipo": "sostantivo (m.)",
+      "ru": "полицейский",
+      "translit": "palicéjskij",
+      "it": "poliziotto",
+      "tag": [
+        "professioni"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v527",
+      "tipo": "aggettivo",
+      "ru": "первый",
+      "translit": "pérvyj",
+      "it": "primo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v528",
+      "tipo": "aggettivo",
+      "ru": "каждый",
+      "translit": "káždyj",
+      "it": "ogni",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v529",
+      "tipo": "aggettivo",
+      "ru": "хороший",
+      "translit": "haróšij",
+      "it": "buono",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v530",
+      "tipo": "aggettivo",
+      "ru": "последний",
+      "translit": "paslédnij",
+      "it": "ultimo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v531",
+      "tipo": "aggettivo",
+      "ru": "высокий",
+      "translit": "vysókij",
+      "it": "alto",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v532",
+      "tipo": "aggettivo",
+      "ru": "молодой",
+      "translit": "maladój",
+      "it": "giovane",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v533",
+      "tipo": "aggettivo",
+      "ru": "следующий",
+      "translit": "slédujuščij",
+      "it": "prossimo / successivo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v534",
+      "tipo": "aggettivo",
+      "ru": "тяжёлый",
+      "translit": "tažólyj",
+      "it": "pesante",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v535",
+      "tipo": "aggettivo",
+      "ru": "длинный",
+      "translit": "dlínnyj",
+      "it": "lungo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v536",
+      "tipo": "aggettivo",
+      "ru": "сильный",
+      "translit": "sílʹnyj",
+      "it": "forte",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v537",
+      "tipo": "aggettivo",
+      "ru": "короткий",
+      "translit": "karótkij",
+      "it": "corto",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v538",
+      "tipo": "aggettivo",
+      "ru": "добрый",
+      "translit": "dóbryj",
+      "it": "gentile",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v539",
+      "tipo": "aggettivo",
+      "ru": "серый",
+      "translit": "séryj",
+      "it": "grigio",
+      "tag": [
+        "colori"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v540",
+      "tipo": "aggettivo",
+      "ru": "широкий",
+      "translit": "širókij",
+      "it": "largo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v541",
+      "tipo": "aggettivo",
+      "ru": "чистый",
+      "translit": "čístyj",
+      "it": "pulito",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v542",
+      "tipo": "aggettivo",
+      "ru": "толстый",
+      "translit": "tólstyj",
+      "it": "grosso",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v543",
+      "tipo": "aggettivo",
+      "ru": "открытый",
+      "translit": "atkrýtyj",
+      "it": "aperto",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v544",
+      "tipo": "aggettivo",
+      "ru": "холодный",
+      "translit": "halódnyj",
+      "it": "freddo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v545",
+      "tipo": "aggettivo",
+      "ru": "золотой",
+      "translit": "zalatój",
+      "it": "dorato",
+      "tag": [
+        "colori"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v546",
+      "tipo": "aggettivo",
+      "ru": "важный",
+      "translit": "vážnyj",
+      "it": "importante",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v547",
+      "tipo": "aggettivo",
+      "ru": "тёплый",
+      "translit": "tóplyj",
+      "it": "caldo (tiepido)",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v548",
+      "tipo": "aggettivo",
+      "ru": "тонкий",
+      "translit": "tónkij",
+      "it": "sottile",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v549",
+      "tipo": "aggettivo",
+      "ru": "быстрый",
+      "translit": "býstryj",
+      "it": "veloce",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v550",
+      "tipo": "aggettivo",
+      "ru": "тихий",
+      "translit": "tíhij",
+      "it": "silenzioso",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v551",
+      "tipo": "aggettivo",
+      "ru": "горячий",
+      "translit": "garáčij",
+      "it": "caldo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v552",
+      "tipo": "aggettivo",
+      "ru": "слабый",
+      "translit": "slábyj",
+      "it": "debole",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v553",
+      "tipo": "aggettivo",
+      "ru": "свободный",
+      "translit": "svabódnyj",
+      "it": "libero",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v554",
+      "tipo": "aggettivo",
+      "ru": "здоровый",
+      "translit": "zdaróvyj",
+      "it": "sano",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v555",
+      "tipo": "aggettivo",
+      "ru": "дорогой",
+      "translit": "daragój",
+      "it": "caro",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v556",
+      "tipo": "aggettivo",
+      "ru": "интересный",
+      "translit": "interésnyj",
+      "it": "interessante",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v557",
+      "tipo": "aggettivo",
+      "ru": "узкий",
+      "translit": "úzkij",
+      "it": "stretto",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v558",
+      "tipo": "aggettivo",
+      "ru": "умный",
+      "translit": "úmnyj",
+      "it": "intelligente",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v559",
+      "tipo": "aggettivo",
+      "ru": "плохой",
+      "translit": "plahój",
+      "it": "cattivo",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v560",
+      "tipo": "aggettivo",
+      "ru": "грязный",
+      "translit": "gráznyj",
+      "it": "sporco",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v561",
+      "tipo": "aggettivo",
+      "ru": "злой",
+      "translit": "zloj",
+      "it": "arrabbiato",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v562",
+      "tipo": "aggettivo",
+      "ru": "закрытый",
+      "translit": "zakrýtyj",
+      "it": "chiuso",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v563",
+      "tipo": "aggettivo",
+      "ru": "низкий",
+      "translit": "nízkij",
+      "it": "basso",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v564",
+      "tipo": "aggettivo",
+      "ru": "глупый",
+      "translit": "glúpyj",
+      "it": "stupido",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v565",
+      "tipo": "aggettivo",
+      "ru": "розовый",
+      "translit": "rózovyj",
+      "it": "rosa",
+      "tag": [
+        "colori"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v566",
+      "tipo": "aggettivo",
+      "ru": "занятый",
+      "translit": "zánatyj",
+      "it": "occupato",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v567",
+      "tipo": "aggettivo",
+      "ru": "громкий",
+      "translit": "grómkij",
+      "it": "rumoroso",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v568",
+      "tipo": "aggettivo",
+      "ru": "серебряный",
+      "translit": "serébranyj",
+      "it": "argentato",
+      "tag": [
+        "colori"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v569",
+      "tipo": "aggettivo",
+      "ru": "коричневый",
+      "translit": "karíčnevyj",
+      "it": "marrone",
+      "tag": [
+        "colori"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v570",
+      "tipo": "aggettivo",
+      "ru": "дешёвый",
+      "translit": "dešóvyj",
+      "it": "economico",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v571",
+      "tipo": "aggettivo",
+      "ru": "голодный",
+      "translit": "galódnyj",
+      "it": "affamato",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v572",
+      "tipo": "aggettivo",
+      "ru": "медленный",
+      "translit": "médlennyj",
+      "it": "lento",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v573",
+      "tipo": "aggettivo",
+      "ru": "оранжевый",
+      "translit": "aránževyj",
+      "it": "arancione",
+      "tag": [
+        "colori"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v574",
+      "tipo": "aggettivo",
+      "ru": "скучный",
+      "translit": "skúčnyj",
+      "it": "noioso",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v575",
+      "tipo": "aggettivo",
+      "ru": "вкусный",
+      "translit": "vkúsnyj",
+      "it": "buono / saporito",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v576",
+      "tipo": "aggettivo",
+      "ru": "прохладный",
+      "translit": "prahládnyj",
+      "it": "fresco",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v577",
+      "tipo": "aggettivo",
+      "ru": "фиолетовый",
+      "translit": "fialétovyj",
+      "it": "viola",
+      "tag": [
+        "colori"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v578",
+      "tipo": "aggettivo",
+      "ru": "сытый",
+      "translit": "sýtyj",
+      "it": "sazio",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v579",
+      "tipo": "verbo",
+      "ru": "сказать",
+      "translit": "skazátʹ",
+      "it": "dire",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v580",
+      "tipo": "verbo",
+      "ru": "видеть",
+      "translit": "vídetʹ",
+      "it": "vedere",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v581",
+      "tipo": "verbo",
+      "ru": "смотреть",
+      "translit": "smatrétʹ",
+      "it": "guardare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v582",
+      "tipo": "verbo",
+      "ru": "делать",
+      "translit": "délatʹ",
+      "it": "fare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v583",
+      "tipo": "verbo",
+      "ru": "давать",
+      "translit": "davátʹ",
+      "it": "dare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v584",
+      "tipo": "verbo",
+      "ru": "ждать",
+      "translit": "ždatʹ",
+      "it": "aspettare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v585",
+      "tipo": "verbo",
+      "ru": "писать",
+      "translit": "pisátʹ",
+      "it": "scrivere",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v586",
+      "tipo": "verbo",
+      "ru": "помнить",
+      "translit": "pómnitʹ",
+      "it": "ricordare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v587",
+      "tipo": "verbo",
+      "ru": "слышать",
+      "translit": "slýšatʹ",
+      "it": "sentire (udire)",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v588",
+      "tipo": "verbo",
+      "ru": "слушать",
+      "translit": "slúšatʹ",
+      "it": "ascoltare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v589",
+      "tipo": "verbo",
+      "ru": "чувствовать",
+      "translit": "čúvstvovatʹ",
+      "it": "sentire / provare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v590",
+      "tipo": "verbo",
+      "ru": "продолжать",
+      "translit": "pradalžátʹ",
+      "it": "continuare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v591",
+      "tipo": "verbo",
+      "ru": "брать",
+      "translit": "bratʹ",
+      "it": "prendere",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v592",
+      "tipo": "verbo",
+      "ru": "начинать",
+      "translit": "načinátʹ",
+      "it": "iniziare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v593",
+      "tipo": "verbo",
+      "ru": "уходить",
+      "translit": "uhadítʹ",
+      "it": "andare via",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v594",
+      "tipo": "verbo",
+      "ru": "искать",
+      "translit": "iskátʹ",
+      "it": "cercare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v595",
+      "tipo": "verbo",
+      "ru": "играть",
+      "translit": "igrátʹ",
+      "it": "giocare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v596",
+      "tipo": "verbo",
+      "ru": "ехать",
+      "translit": "jéhatʹ",
+      "it": "andare (in veicolo)",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v597",
+      "tipo": "verbo",
+      "ru": "приходить",
+      "translit": "prihadítʹ",
+      "it": "arrivare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v598",
+      "tipo": "verbo",
+      "ru": "возвращаться",
+      "translit": "vazvraščátʹsa",
+      "it": "tornare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v599",
+      "tipo": "verbo",
+      "ru": "петь",
+      "translit": "petʹ",
+      "it": "cantare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v600",
+      "tipo": "verbo",
+      "ru": "учиться",
+      "translit": "učítʹsa",
+      "it": "studiare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v601",
+      "tipo": "verbo",
+      "ru": "носить",
+      "translit": "nasítʹ",
+      "it": "portare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v602",
+      "tipo": "verbo",
+      "ru": "звонить",
+      "translit": "zvanítʹ",
+      "it": "telefonare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v603",
+      "tipo": "verbo",
+      "ru": "вставать",
+      "translit": "vstavátʹ",
+      "it": "alzarsi",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v604",
+      "tipo": "verbo",
+      "ru": "находить",
+      "translit": "nahadítʹ",
+      "it": "trovare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v605",
+      "tipo": "verbo",
+      "ru": "терять",
+      "translit": "terátʹ",
+      "it": "perdere",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v606",
+      "tipo": "verbo",
+      "ru": "болеть",
+      "translit": "balétʹ",
+      "it": "essere malato",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v607",
+      "tipo": "verbo",
+      "ru": "готовить",
+      "translit": "gatóvitʹ",
+      "it": "cucinare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v608",
+      "tipo": "verbo",
+      "ru": "отдыхать",
+      "translit": "atdyhátʹ",
+      "it": "riposarsi",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v609",
+      "tipo": "verbo",
+      "ru": "продавать",
+      "translit": "pradavátʹ",
+      "it": "vendere",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v610",
+      "tipo": "verbo",
+      "ru": "танцевать",
+      "translit": "tancevátʹ",
+      "it": "ballare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v611",
+      "tipo": "verbo",
+      "ru": "включать",
+      "translit": "vklučátʹ",
+      "it": "accendere",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v612",
+      "tipo": "verbo",
+      "ru": "убирать",
+      "translit": "ubirátʹ",
+      "it": "riordinare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v613",
+      "tipo": "verbo",
+      "ru": "мыть",
+      "translit": "mytʹ",
+      "it": "lavare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v614",
+      "tipo": "verbo",
+      "ru": "заканчивать",
+      "translit": "zakánčivatʹ",
+      "it": "finire",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v615",
+      "tipo": "verbo",
+      "ru": "путешествовать",
+      "translit": "putešéstvovatʹ",
+      "it": "viaggiare",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v616",
+      "tipo": "verbo",
+      "ru": "выключать",
+      "translit": "vyklučátʹ",
+      "it": "spegnere",
+      "tag": [
+        "base"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v617",
+      "tipo": "sostantivo",
+      "ru": "дети",
+      "translit": "deti",
+      "it": "bambini",
+      "tag": [
+        "famiglia"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v618",
+      "tipo": "sostantivo",
+      "ru": "волосы",
+      "translit": "volosy",
+      "it": "capelli",
+      "tag": [
+        "corpo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v619",
+      "tipo": "sostantivo",
+      "ru": "грибы",
+      "translit": "griby",
+      "it": "funghi",
+      "tag": [
+        "cibo"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v620",
+      "tipo": "sostantivo",
+      "ru": "носки",
+      "translit": "noski",
+      "it": "calzini",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v621",
+      "tipo": "sostantivo",
+      "ru": "туфли",
+      "translit": "tufli",
+      "it": "scarpe",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v622",
+      "tipo": "sostantivo",
+      "ru": "ботинки",
+      "translit": "botinki",
+      "it": "stivali",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v623",
+      "tipo": "sostantivo",
+      "ru": "перчатки",
+      "translit": "perčatki",
+      "it": "guanti",
+      "tag": [
+        "vestiti"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v624",
+      "tipo": "sostantivo",
+      "ru": "новости",
+      "translit": "novosti",
+      "it": "notizie",
+      "tag": [
+        "media"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v625",
+      "tipo": "sostantivo",
+      "ru": "двенадцать",
+      "translit": "dvenadcatʹ",
+      "it": "dodici",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v626",
+      "tipo": "sostantivo",
+      "ru": "двадцать",
+      "translit": "dvadcatʹ",
+      "it": "venti",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v627",
+      "tipo": "sostantivo",
+      "ru": "сорок",
+      "translit": "sorok",
+      "it": "quaranta",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v628",
+      "tipo": "sostantivo",
+      "ru": "пятьдесят",
+      "translit": "patʹdesat",
+      "it": "cinquanta",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v629",
+      "tipo": "sostantivo",
+      "ru": "сто",
+      "translit": "sto",
+      "it": "cento",
+      "tag": [
+        "numeri"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v630",
+      "tipo": "sostantivo",
+      "ru": "Китай",
+      "translit": "kitaj",
+      "it": "Cina",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "v631",
+      "tipo": "sostantivo",
+      "ru": "Америка",
+      "translit": "amerika",
+      "it": "America",
+      "tag": [
+        "paesi"
+      ],
+      "difficolta": 2,
       "aggiunto": "2026-06-10"
     }
   ],
