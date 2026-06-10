@@ -395,6 +395,18 @@ const TOPIC_ICONS = {
   cognati:'🔗',tempo:'⏳',base:'⭐'
 };
 
+const CONJ_TENSES_RU = [
+  {key:"pres", label:"Presente", modo:"Настоящее время"},
+  {key:"past", label:"Passato",  modo:"Прошедшее время"},
+];
+const CONJ_PRONOUNS_RU = {
+  pres: ["я","ты","он/она","мы","вы","они"],
+  past: ["он (м.)","она (ж.)","оно (с.р.)","они"],
+};
+const tenseLabelRu = k => (CONJ_TENSES_RU.find(t=>t.key===k)||{}).label || k;
+function normConj(s){ return (s||"").toLowerCase().trim().replace(/\s+/g," "); }
+function normYo(s){ return s.replace(/ё/g,"е"); }
+
 const DAILY_KEY = "russo_daily_v1";
 const DAILY_SIZE = 20;
 function dateStr(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
@@ -531,6 +543,7 @@ function renderHome(){
   const tiles = [
     ["&#127183;","Flashcard","Vocaboli per argomento con spaced repetition","flash"],
     ["&#128292;","Cirillico","Riconosci lettere e leggi parole in cirillico","cyr"],
+    ["&#9999;&#65039;","Coniugazione","Allena le forme verbali — presente e passato","conj"],
     ["&#128208;","Grammatica","Quiz su generi, pronomi e regole","gram"],
     ["&#128172;","Frasi &amp; ascolto","Completa la frase e ascolta la pronuncia","phrase"],
   ];
@@ -602,6 +615,7 @@ function start(mode){
   if(mode==="daily") return runDaily();
   if(mode==="flash") return pickFlashTopic();
   if(mode==="cyr") return runCyr();
+  if(mode==="conj") return runConjugation();
   if(mode==="gram") return runGram();
   if(mode==="phrase") return runPhrase();
   if(mode==="vocab") return runVocabolario();
@@ -1046,7 +1060,125 @@ function runDaily(){
   runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone });
 }
 
-// ---------- 2. CIRILLICO ----------
+// ---------- 2. CONIUGAZIONE ----------
+function runConjugation(tenseFilter){
+  const verbi = DB.verbi || [];
+  if(!verbi.length){
+    const stage = header();
+    stage.appendChild($(`<p class="muted" style="text-align:center;padding:30px">Nessun verbo disponibile.</p>`));
+    return;
+  }
+
+  if(tenseFilter === undefined){
+    const stage = header();
+    stage.appendChild($(`<div style="margin-bottom:14px">
+      <div style="font-size:20px;font-weight:800;margin-bottom:4px">Coniugazione</div>
+      <div style="font-size:14px;color:var(--muted)">Allena le forme verbali &mdash; ${verbi.length} verbi</div>
+    </div>`));
+    const mixBtn = $(`<button class="tile wide" style="margin-bottom:12px">
+      <div class="ico">&#127922;</div>
+      <div class="txt"><div class="t">Mix</div><div class="d">Tutti i tempi insieme</div></div>
+    </button>`);
+    mixBtn.onclick = ()=>runConjugation(CONJ_TENSES_RU.map(t=>t.key));
+    stage.appendChild(mixBtn);
+    const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+    CONJ_TENSES_RU.forEach(t=>{
+      const btn = $(`<button class="tile wide">
+        <div class="txt"><div class="t">${t.label}</div><div class="d">${t.modo}</div></div>
+      </button>`);
+      btn.onclick = ()=>runConjugation([t.key]);
+      list.appendChild(btn);
+    });
+    stage.appendChild(list);
+    return;
+  }
+
+  const tenseKeys = tenseFilter;
+  const all = [];
+  verbi.forEach(v=>tenseKeys.forEach(tk=>{
+    const forms = v.coniugazioni && v.coniugazioni[tk];
+    if(!forms || !forms.length) return;
+    const pronouns = CONJ_PRONOUNS_RU[tk] || [];
+    for(let p=0;p<forms.length;p++){
+      all.push({inf:v.inf, translit_inf:v.translit_inf||"", en:v.en, tk, p, answer:forms[p], pron:pronouns[p]||"", id:`conj:${v.inf}:${tk}:${p}`});
+    }
+  }));
+  if(!all.length){ history.back(); return; }
+  const prioritized = all.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, Math.min(28, all.length));
+  const deck = shuffle(prioritized).slice(0, Math.min(12, prioritized.length));
+
+  let i=0, correct=0;
+  const stage = header();
+  const bar = progressBar(stage);
+  const wrap = $(`<div style="width:100%"></div>`); stage.appendChild(wrap);
+
+  function show(){
+    if(i>=deck.length) return finish(stage, `Completato &middot; ${correct} / ${deck.length}`, ()=>runConjugation(tenseFilter));
+    bar.style.width=(i/deck.length*100)+"%"; bar.setNum(i, deck.length);
+    const q = deck[i];
+    wrap.innerHTML = "";
+    wrap.appendChild($(`
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;text-align:center;box-shadow:var(--shadow-sm)">
+        <div style="font-size:12px;color:var(--accent2);font-weight:700;text-transform:uppercase;letter-spacing:.6px">${tenseLabelRu(q.tk)}</div>
+        <div style="font-size:32px;font-weight:800;margin:8px 0 2px">${q.inf}</div>
+        ${q.translit_inf ? `<div style="font-size:13px;color:var(--accent2);font-style:italic;margin-bottom:2px">${q.translit_inf}</div>` : ''}
+        <div style="font-size:13px;color:var(--muted);margin-bottom:12px">${q.en}</div>
+        <div style="font-size:24px;font-weight:800">
+          <span style="color:var(--muted);font-size:18px;font-weight:600">${q.pron}</span> _____
+        </div>
+      </div>`));
+    const inp = document.createElement("input");
+    inp.className = "vocab-input";
+    inp.type = "text";
+    inp.placeholder = "Scrivi la forma verbale in cirillico…";
+    inp.style.marginTop = "14px";
+    inp.setAttribute("autocomplete","off");
+    inp.setAttribute("autocorrect","off");
+    inp.setAttribute("autocapitalize","none");
+    inp.setAttribute("spellcheck","false");
+    wrap.appendChild(inp);
+    const fb = $(`<div style="min-height:24px;text-align:center;margin-top:10px;font-size:14px"></div>`);
+    wrap.appendChild(fb);
+    const btn = $(`<button class="btn primary" style="width:100%;margin-top:6px">Controlla</button>`);
+    wrap.appendChild(btn);
+
+    let answered = false;
+    function next(){ i++; show(); }
+    function check(){
+      const val = normConj(inp.value);
+      if(!val) return;
+      answered = true;
+      const target = normConj(q.answer);
+      const exact = val===target;
+      const loose = normYo(val)===normYo(target);
+      const ok = exact || loose;
+      grade(q.id, ok); if(ok) correct++;
+      haptic(ok);
+      inp.disabled = true;
+      inp.style.borderColor = ok ? "var(--good)" : "var(--accent)";
+      if(exact){
+        fb.innerHTML = `<span style="color:var(--good);font-weight:700">&#10003; Corretto!</span>`;
+      } else if(loose){
+        fb.innerHTML = `<span style="color:#b45309;font-weight:700">&#10003; Quasi! Attenzione alla ё: <b>${q.answer}</b></span>`;
+      } else {
+        fb.innerHTML = `<span style="color:var(--accent);font-weight:700">&#10007; Risposta: <b>${q.answer}</b></span>`;
+      }
+      speak(q.answer);
+      btn.textContent = "Avanti →";
+      btn.onclick = next;
+    }
+    btn.onclick = check;
+    inp.addEventListener("keydown", e=>{
+      if(e.key!=="Enter") return;
+      e.preventDefault();
+      answered ? next() : check();
+    });
+    setTimeout(()=>inp.focus(), 60);
+  }
+  show();
+}
+
+// ---------- 4. CIRILLICO ----------
 function runCyr(){
   const stage = header();
   stage.appendChild($(`<div style="margin-bottom:14px">
@@ -1069,7 +1201,7 @@ function runCyr(){
   stage.appendChild(grid);
 }
 
-// ---------- 3. GRAMMATICA ----------
+// ---------- 5. GRAMMATICA ----------
 function runGram(){
   const stage = header();
   // mostra le schede-regola, poi i drill
@@ -1095,7 +1227,7 @@ function runGram(){
   stage.appendChild(btn);
 }
 
-// ---------- 4. FRASI & ASCOLTO ----------
+// ---------- 6. FRASI & ASCOLTO ----------
 function runPhrase(level){
   // Picker livello di difficoltà (come in App Italiano)
   if(level === undefined){

@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 7,
+    "versione": 8,
     "aggiornato": "2026-06-10",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -5713,6 +5713,120 @@
           "testo": "Dopo один il sostantivo è singolare (один дом); dopo 2–4 va al genitivo singolare (два дома́); da 5 in su al genitivo plurale (пять домо́в)."
         }
       ]
+    }
+  ],
+  "verbi": [
+    {
+      "id": "verb001", "inf": "говорить", "translit_inf": "govoritʹ", "en": "parlare",
+      "gruppo": "2",
+      "coniugazioni": {
+        "pres": ["говорю","говоришь","говорит","говорим","говорите","говорят"],
+        "past": ["говорил","говорила","говорило","говорили"]
+      }
+    },
+    {
+      "id": "verb002", "inf": "читать", "translit_inf": "čitatʹ", "en": "leggere",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["читаю","читаешь","читает","читаем","читаете","читают"],
+        "past": ["читал","читала","читало","читали"]
+      }
+    },
+    {
+      "id": "verb003", "inf": "писать", "translit_inf": "pisatʹ", "en": "scrivere",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["пишу","пишешь","пишет","пишем","пишете","пишут"],
+        "past": ["писал","писала","писало","писали"]
+      }
+    },
+    {
+      "id": "verb004", "inf": "знать", "translit_inf": "znatʹ", "en": "sapere / conoscere",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["знаю","знаешь","знает","знаем","знаете","знают"],
+        "past": ["знал","знала","знало","знали"]
+      }
+    },
+    {
+      "id": "verb005", "inf": "любить", "translit_inf": "ljubitʹ", "en": "amare / piacere",
+      "gruppo": "2",
+      "coniugazioni": {
+        "pres": ["люблю","любишь","любит","любим","любите","любят"],
+        "past": ["любил","любила","любило","любили"]
+      }
+    },
+    {
+      "id": "verb006", "inf": "жить", "translit_inf": "žitʹ", "en": "vivere / abitare",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["живу","живёшь","живёт","живём","живёте","живут"],
+        "past": ["жил","жила","жило","жили"]
+      }
+    },
+    {
+      "id": "verb007", "inf": "работать", "translit_inf": "rabótatʹ", "en": "lavorare",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["работаю","работаешь","работает","работаем","работаете","работают"],
+        "past": ["работал","работала","работало","работали"]
+      }
+    },
+    {
+      "id": "verb008", "inf": "понимать", "translit_inf": "ponimatʹ", "en": "capire",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["понимаю","понимаешь","понимает","понимаем","понимаете","понимают"],
+        "past": ["понимал","понимала","понимало","понимали"]
+      }
+    },
+    {
+      "id": "verb009", "inf": "делать", "translit_inf": "délatʹ", "en": "fare",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["делаю","делаешь","делает","делаем","делаете","делают"],
+        "past": ["делал","делала","делало","делали"]
+      }
+    },
+    {
+      "id": "verb010", "inf": "хотеть", "translit_inf": "xotetʹ", "en": "volere",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "pres": ["хочу","хочешь","хочет","хотим","хотите","хотят"],
+        "past": ["хотел","хотела","хотело","хотели"]
+      }
+    },
+    {
+      "id": "verb011", "inf": "идти", "translit_inf": "idtí", "en": "andare (a piedi)",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "pres": ["иду","идёшь","идёт","идём","идёте","идут"],
+        "past": ["шёл","шла","шло","шли"]
+      }
+    },
+    {
+      "id": "verb012", "inf": "смотреть", "translit_inf": "smotretʹ", "en": "guardare",
+      "gruppo": "2",
+      "coniugazioni": {
+        "pres": ["смотрю","смотришь","смотрит","смотрим","смотрите","смотрят"],
+        "past": ["смотрел","смотрела","смотрело","смотрели"]
+      }
+    },
+    {
+      "id": "verb013", "inf": "слушать", "translit_inf": "slúšatʹ", "en": "ascoltare",
+      "gruppo": "1",
+      "coniugazioni": {
+        "pres": ["слушаю","слушаешь","слушает","слушаем","слушаете","слушают"],
+        "past": ["слушал","слушала","слушало","слушали"]
+      }
+    },
+    {
+      "id": "verb014", "inf": "учиться", "translit_inf": "učítʹsja", "en": "studiare / imparare",
+      "gruppo": "2",
+      "coniugazioni": {
+        "pres": ["учусь","учишься","учится","учимся","учитесь","учатся"],
+        "past": ["учился","училась","училось","учились"]
+      }
     }
   ]
 }
