@@ -1076,29 +1076,83 @@ function runGram(){
 }
 
 // ---------- 4. FRASI & ASCOLTO ----------
-function runPhrase(){
-  const deck = sample(DB.frasi, Math.min(8, DB.frasi.length));
+function runPhrase(level){
+  // Picker livello di difficoltà (come in App Italiano)
+  if(level === undefined){
+    const stage = header();
+    stage.appendChild($(`<h2 style="margin:0 0 6px;font-size:20px">Frasi &amp; ascolto</h2>`));
+    stage.appendChild($(`<p style="color:var(--muted);margin:0 0 20px;font-size:14px">Scegli il livello di difficoltà:</p>`));
+    const levels = [
+      [1,'⭐ Facile','Frasi semplici — vocabolario di base'],
+      [2,'⭐⭐ Medio','Frasi di complessità media'],
+      [3,'⭐⭐⭐ Difficile','Frasi avanzate'],
+      [0,'🎲 Mix','Livelli misti — selezionati a caso'],
+    ];
+    levels.forEach(([lvl,label,desc])=>{
+      const btn=$(`<button class="tile wide" style="margin-bottom:10px">
+        <div class="txt"><div class="t">${label}</div><div class="d">${desc}</div></div>
+      </button>`);
+      btn.onclick=()=>runPhrase(lvl);
+      stage.appendChild(btn);
+    });
+    return;
+  }
+
+  // Parole funzione russe: non vanno mascherate né usate come distrattori
+  const SKIP = new Set(['и','в','во','не','на','я','что','с','со','а','то','он','она','оно','они','мы','ты','вы','так','его','её','но','да','к','у','же','за','по','от','о','об','из','до','для','это','этот','эта','эти','мой','моя','моё','твой','твоя','наш','ваш','как','где','кто','чем','уже','или','ни','был','была','было','были','есть','вот','там','здесь','тоже','очень','ещё','нет','бы','ли','тем','чем']);
+
+  // Corpus di parole "piene" da frasi + voci per i distrattori
+  const corpusWords = [...new Set([
+    ...(DB.frasi||[]).flatMap(f=>(f.ru||'').replace(/[.!?,;:—]/g,'').split(' ').map(w=>w.trim())),
+    ...(DB.voci||[]).map(v=>(v.ru||'').replace(/[.,!?;:]/g,'').split(' ')[0])
+  ].filter(w=>w.length>=3 && /[а-яё]/i.test(w) && !SKIP.has(w.toLowerCase())))];
+
+  // Distrattori con la stessa desinenza (stessa forma/declinazione)
+  function byEnding(answer, exclude){
+    const lo = answer.toLowerCase();
+    const e3 = lo.slice(-3), e2 = lo.slice(-2);
+    const pool = corpusWords.filter(w=>w!==answer && !exclude.has(w));
+    const m3 = pool.filter(w=>w.toLowerCase().slice(-3)===e3);
+    if(m3.length>=3) return m3;
+    const m2 = pool.filter(w=>w.toLowerCase().slice(-2)===e2);
+    if(m2.length>=3) return m2;
+    return pool.filter(w=>Math.abs(w.length-answer.length)<=2);
+  }
+
+  const allFrasi = DB.frasi||[];
+  const filtered = level===0 ? allFrasi : allFrasi.filter(f=>f.difficolta===level);
+  const pool = filtered.length ? filtered : allFrasi;
+  const deck = sample(pool, Math.min(8, pool.length));
+  if(!deck.length) return;
   let i=0;
   const stage = header();
   const bar = progressBar(stage);
   const wrap = $(`<div style="width:100%"></div>`); stage.appendChild(wrap);
 
   function show(){
-    if(i>=deck.length) return finish(stage,"Sezione completata", runPhrase);
+    if(i>=deck.length) return finish(stage,"Sezione completata", ()=>runPhrase(level));
     bar.style.width=(i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const f=deck[i];
-    // togli una parola dalla frase russa
-    const words=f.ru.replace(/[.!?]/g,'').split(" ");
-    const hideIdx=Math.floor(Math.random()*words.length);
-    const answer=words[hideIdx].replace(/[.,!?]/g,'');
-    const masked=words.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
-    const distract=sample(DB.voci.map(v=>v.ru).concat(DB.frasi.flatMap(x=>x.ru.split(" "))).filter(w=>w.replace(/[.,!?]/g,'')!==answer),3);
-    const opts=shuffle([answer,...distract.map(d=>d.replace(/[.,!?]/g,''))]);
+    const sentence = f.ru || '';
+    const rawWords = sentence.replace(/[.!?]/g,'').split(' ');
+    const clean = rawWords.map(w=>w.replace(/[.,!?;:]/g,''));
+
+    // Preferisci parole "piene" (lunghe ≥4, non parole funzione)
+    const candidates = clean.map((w,idx)=>({w,idx}))
+      .filter(({w})=>w.length>=4 && /[а-яё]/i.test(w) && !SKIP.has(w.toLowerCase()));
+    const {w: answer, idx: hideIdx} = candidates.length
+      ? candidates[Math.floor(Math.random()*candidates.length)]
+      : {w: clean[0], idx: 0};
+
+    const masked = rawWords.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
+    const distract = sample(byEnding(answer, new Set(clean)), 3);
+    const opts = shuffle([answer, ...distract]);
+
     wrap.innerHTML="";
     wrap.appendChild($(`<div class="q">${masked}</div>`));
-    wrap.appendChild($(`<div class="qsub">${f.it} &nbsp;·&nbsp; <span style="color:var(--accent2)">${f.translit}</span></div>`));
+    wrap.appendChild($(`<div class="qsub">${f.it||''}</div>`));
     const sp=$(`<button class="btn" style="margin:14px 0">🔊 Ascolta la frase</button>`);
-    sp.onclick=()=>speak(f.ru); wrap.appendChild(sp);
+    sp.onclick=()=>speak(sentence); wrap.appendChild(sp);
     const optBox=$(`<div class="options"></div>`);
     opts.forEach(o=>{
       const b=$(`<button class="opt">${o}</button>`);
@@ -1109,7 +1163,9 @@ function runPhrase(){
         if(!ok)[...optBox.children].find(c=>c.textContent===answer).classList.add("correct");
         haptic(ok);
         grade(f.id, ok);
-        speak(f.ru);
+        speak(sentence);
+        // Rivela la traslitterazione completa solo dopo la risposta
+        if(f.translit) wrap.appendChild($(`<div class="qsub" style="margin-top:12px;color:var(--accent2)">${f.translit}</div>`));
         const next=$(`<button class="btn primary" style="margin-top:14px">Continua →</button>`);
         next.onclick=()=>{i++; show();}; wrap.appendChild(next);
       };
