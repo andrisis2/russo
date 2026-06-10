@@ -292,6 +292,20 @@
   .vocab-card.online{border-color:rgba(47,107,237,.3);background:linear-gradient(135deg,var(--card) 0%,#f0f4ff 100%)}
   @media (prefers-color-scheme: dark){.vocab-card.online{background:linear-gradient(135deg,var(--card) 0%,rgba(47,107,237,.06) 100%)}}
 
+  /* ---- Alfabeto cirillico ---- */
+  .alpha-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}
+  .alpha-card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:14px 8px;cursor:pointer;transition:transform .15s,box-shadow .15s,border-color .15s;
+    display:flex;flex-direction:column;align-items:center;gap:4px;
+    box-shadow:var(--shadow-sm);text-align:center;
+  }
+  .alpha-card:active{transform:scale(.96)}
+  .alpha-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:transparent}
+  .alpha-letter{font-size:28px;font-weight:800;line-height:1.1;letter-spacing:-.3px}
+  .alpha-translit{font-size:13px;color:var(--accent2);font-style:italic;font-weight:700}
+  .alpha-sound{font-size:11px;color:var(--muted);line-height:1.35}
+
   /* splash screen */
   #splash{
     position:fixed; inset:0; z-index:9999;
@@ -1034,19 +1048,25 @@ function runDaily(){
 
 // ---------- 2. CIRILLICO ----------
 function runCyr(){
-  // metà domande sulle lettere, metà lettura parole
-  const letterQs = sample(DB.alfabeto, 6).map(l=>({
-    q:l.ru.split(" ")[0], sub:"Che suono ha questa lettera?",
-    correct:l.translit,
-    opts: shuffle([l.translit, ...sample(DB.alfabeto.filter(x=>x.translit!==l.translit),3).map(x=>x.translit)])
-  }));
-  const wordQs = sample(DB.voci, 6).map(w=>({
-    q:w.ru, sub:"Come si legge (traslitterazione)?",
-    correct:w.translit,
-    opts: shuffle([w.translit, ...sample(DB.voci.filter(x=>x.translit!==w.translit),3).map(x=>x.translit)]),
-    id:w.id, speak:w.ru
-  }));
-  runMCQ(shuffle([...letterQs, ...wordQs]).slice(0,10), "Cirillico", runCyr);
+  const stage = header();
+  stage.appendChild($(`<div style="margin-bottom:14px">
+    <div style="font-size:20px;font-weight:800;margin-bottom:4px">Alfabeto cirillico</div>
+    <div style="font-size:14px;color:var(--muted)">Tocca una lettera per sentirne la pronuncia</div>
+  </div>`));
+
+  const grid = $(`<div class="alpha-grid"></div>`);
+  (DB.alfabeto||[]).forEach(l => {
+    const upper = l.ru.split(" ")[0];
+    const card = $(`
+      <button class="alpha-card">
+        <span class="alpha-letter">${l.ru}</span>
+        <span class="alpha-translit">${l.translit}</span>
+        <span class="alpha-sound">${l.suono}</span>
+      </button>`);
+    card.onclick = () => { speak(upper); haptic(true); };
+    grid.appendChild(card);
+  });
+  stage.appendChild(grid);
 }
 
 // ---------- 3. GRAMMATICA ----------
