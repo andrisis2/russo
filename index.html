@@ -1429,6 +1429,16 @@ const VIKA_KEY = "vika_gemini_key";
 const VIKA_WS  = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent";
 const VIKA_REST= "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent";
 
+// Modelli Live API in ordine di preferenza: Google li rinomina spesso,
+// quindi proviamo i candidati in sequenza prima di ripiegare sul REST.
+const VIKA_LIVE_MODELS = [
+  "models/gemini-2.5-flash-native-audio-preview-12-2025",
+  "models/gemini-live-2.5-flash-native-audio",
+  "models/gemini-2.5-flash-native-audio-preview-09-2025",
+  "models/gemini-2.5-flash-live-001",
+  "models/gemini-2.0-flash-live-001",
+];
+
 function vikaPrompt(lang, db, opts={}) {
   const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
   const frasi = (db.frasi||[]).slice(0,25).map(f=>`${f.ru}=${f.it}`).join("; ");
@@ -1493,9 +1503,25 @@ class VikaSession {
     this._tryLive();
   }
 
-  _tryLive(){
+  _tryLive(modelIdx=0){
+    const model=VIKA_LIVE_MODELS[modelIdx];
+    if(!model){ // nessun modello rimasto da provare
+      if(!this.fellBack){ this.fellBack=true; this._startRest(); }
+      return;
+    }
     const ws=new WebSocket(`${VIKA_WS}?key=${this.apiKey}`);
     this.ws=ws;
+    let settled=false; // questo tentativo ha già deciso (setup ok / modello successivo / fallback)
+
+    // Passa al modello successivo della lista; se è l'ultimo, ripiega sul REST.
+    const nextModel=()=>{
+      if(settled) return; settled=true;
+      clearTimeout(timer);
+      if(this.ws===ws){ this.ws=null; }
+      try{ws.close();}catch(e){}
+      if(modelIdx+1 < VIKA_LIVE_MODELS.length) this._tryLive(modelIdx+1);
+      else fallback("⚠️ Live non disponibile — avvio modalità standard...");
+    };
 
     const fallback=(note)=>{
       if(this.fellBack) return;
@@ -1505,16 +1531,18 @@ class VikaSession {
       this._startRest();
     };
 
-    const timer=setTimeout(()=>fallback("⏱️ Live timeout — avvio modalità standard..."),10000);
+    const timer=setTimeout(()=>{ if(!this.gotSetup) nextModel(); },10000);
 
     ws.onopen=()=>{
       ws.send(JSON.stringify({
         setup:{
-          model:"models/gemini-2.5-flash-live-001",
+          model,
           generationConfig:{
             responseModalities:["AUDIO"],
             speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Kore"}}}
           },
+          // I modelli native-audio restituiscono il testo solo se lo chiediamo
+          outputAudioTranscription:{},
           systemInstruction:{parts:[{text:vikaPrompt(this.lang,this.db,this._opts())}]}
         }
       }));
@@ -1523,6 +1551,7 @@ class VikaSession {
     ws.onmessage=async e=>{
       let d; try{d=JSON.parse(e.data);}catch(err){return;}
       if(d.setupComplete){
+        settled=true;
         clearTimeout(timer);
         this.gotSetup=true; this.mode="live";
         this.onStatus("connected");
@@ -1530,6 +1559,9 @@ class VikaSession {
       }
       if(d.serverContent){
         const sc=d.serverContent;
+        // Testo: sia dalle parti modelTurn sia dalla trascrizione dell'audio native
+        const tr=sc.outputTranscription?.text;
+        if(tr){ this.vikaText+=tr; this.onMsg({role:"vika",text:this.vikaText,final:false}); }
         if(sc.modelTurn?.parts){
           this.onStatus("speaking");
           for(const p of sc.modelTurn.parts){
@@ -1543,19 +1575,17 @@ class VikaSession {
         }
       }
       if(d.error){
-        clearTimeout(timer);
         const msg=d.error.message||JSON.stringify(d.error);
-        if(!this.gotSetup) fallback(`⚠️ Live (${msg}) — avvio modalità standard...`);
-        else{this.onMsg({role:"vika",text:`⚠️ ${msg}`,final:true}); this.onStatus("error");}
+        if(!this.gotSetup) nextModel();
+        else{ clearTimeout(timer); this.onMsg({role:"vika",text:`⚠️ ${msg}`,final:true}); this.onStatus("error"); }
       }
     };
 
-    ws.onerror=()=>{ clearTimeout(timer); if(!this.gotSetup) fallback(null); };
+    ws.onerror=()=>{ if(!this.gotSetup) nextModel(); };
 
     ws.onclose=(ev)=>{
-      clearTimeout(timer);
       if(this.ws===ws) this.ws=null;
-      if(!this.gotSetup) fallback(ev.reason?`⚠️ Live chiusa (${ev.code}: ${ev.reason}) — avvio modalità standard...`:null);
+      if(!this.gotSetup) nextModel();
       else if(this.mode==="live") this.onStatus(ev.wasClean?"disconnected":"error");
     };
   }
