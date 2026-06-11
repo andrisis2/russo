@@ -1426,7 +1426,7 @@ function finish(stage, msg, restart){
 
 // ========== VIKA — Gemini Live + fallback REST ==========
 const VIKA_KEY = "vika_gemini_key";
-const VIKA_WS  = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent";
+const VIKA_WS  = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContent";
 const VIKA_REST= "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent";
 
 function vikaPrompt(lang, db, opts={}) {
@@ -1510,7 +1510,7 @@ class VikaSession {
     ws.onopen=()=>{
       ws.send(JSON.stringify({
         setup:{
-          model:"models/gemini-2.0-flash-live-001",
+          model:"models/gemini-2.0-flash-exp",
           generationConfig:{
             responseModalities:["AUDIO"],
             speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:"Kore"}}}
