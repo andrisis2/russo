@@ -1439,6 +1439,27 @@ const VIKA_LIVE_MODELS = [
   "models/gemini-2.5-flash-native-audio-preview-12-2025",
 ];
 
+// --- Helper: PCM float32 → file WAV 16-bit mono, e ArrayBuffer → base64 ---
+function pcmToWav(chunks, rate){
+  let len=0; for(const c of chunks) len+=c.length;
+  const buf=new ArrayBuffer(44+len*2); const v=new DataView(buf);
+  const ws=(o,s)=>{for(let i=0;i<s.length;i++)v.setUint8(o+i,s.charCodeAt(i));};
+  ws(0,"RIFF"); v.setUint32(4,36+len*2,true); ws(8,"WAVE"); ws(12,"fmt ");
+  v.setUint32(16,16,true); v.setUint16(20,1,true); v.setUint16(22,1,true);
+  v.setUint32(24,rate,true); v.setUint32(28,rate*2,true); v.setUint16(32,2,true); v.setUint16(34,16,true);
+  ws(36,"data"); v.setUint32(40,len*2,true);
+  let o=44;
+  for(const c of chunks) for(let i=0;i<c.length;i++){
+    const s=Math.max(-1,Math.min(1,c[i])); v.setInt16(o,s*32767,true); o+=2;
+  }
+  return buf;
+}
+function bufToB64(buf){
+  const u8=new Uint8Array(buf); let s="";
+  for(let i=0;i<u8.length;i+=32768) s+=String.fromCharCode.apply(null,u8.subarray(i,i+32768));
+  return btoa(s);
+}
+
 function vikaPrompt(lang, db, opts={}) {
   const vocab = (db.voci||[]).slice(0,60).map(v=>`${v.ru}=${v.it}`).join(", ");
   const frasi = (db.frasi||[]).slice(0,25).map(f=>`${f.ru}=${f.it}`).join("; ");
@@ -1462,7 +1483,11 @@ function vikaPrompt(lang, db, opts={}) {
     rule, modeRule, srsLine, memLine,
     `Vocaboli già studiati: ${vocab}.`,
     `Frasi già studiate: ${frasi}.`,
-    "Risposte brevi (2-3 frasi max)."
+    "Risposte brevi (2-3 frasi max).",
+    "Rispondi SEMPRE e SOLO con un oggetto JSON con questi campi:",
+    '- "trascrizione": le parole esatte dette dallo studente nel messaggio vocale (in cirillico se parla russo, in italiano se parla italiano); stringa vuota se il messaggio non è vocale.',
+    '- "pronuncia": SOLO se nell\'audio senti errori di pronuncia evidenti (accento sulla sillaba sbagliata, suono storpiato), una nota brevissima in italiano (max 1 frase); altrimenti stringa vuota.',
+    '- "risposta": quello che dici tu come Vika, seguendo le regole sopra.'
   ].filter(Boolean).join("\n");
 }
 
@@ -1480,6 +1505,9 @@ class VikaSession {
     this.gotSetup=false; this.fellBack=false;
     this.history=[];
     this.userInputLang="ru-RU";
+    // Modalità audio diretto: il parlato va a Gemini come WAV (capisce molto
+    // meglio il russo con accento italiano e valuta la pronuncia)
+    this.audioMode=false; this.capturing=false; this._rec=null;
   }
 
   _opts(){ return {practiceMode:this.practiceMode, srsStats:this.srsStats, lastSession:this.lastSession}; }
@@ -1502,8 +1530,10 @@ class VikaSession {
     this.onStatus("connecting");
     // Modalità live disattivata (giugno 2026): i modelli Live API di Google
     // sono instabili, quindi si parte direttamente in modalità standard.
-    // Per riattivare il tentativo live: sostituire la riga sotto con this._tryLive();
+    // Per riattivare il tentativo live: sostituire le righe sotto con this._tryLive();
     this.fellBack=true;
+    try{ await this._startMicVad(); this.audioMode=true; }
+    catch(e){ this.audioMode=false; } // niente mic/worklet → riserva: SpeechRecognition
     this._startRest();
   }
 
@@ -1597,42 +1627,88 @@ class VikaSession {
   async _startRest(){
     this.mode="rest";
     // Se la conversazione è nuova, Vika saluta subito invece di aspettare in silenzio
-    if(!this.history.length){ this._chat(""); return; }
-    this.onStatus("listening");
-    this._listen();
+    if(!this.history.length){ this._chat({}); return; }
+    this._resumeInput();
   }
 
-  async _chat(userText){
+  // Rimette la sessione in ascolto: cattura audio diretta se disponibile,
+  // altrimenti riconoscimento vocale del browser.
+  _resumeInput(){
     if(!this.active) return;
-    if(userText){
-      this.history.push({role:"user",parts:[{text:userText}]});
-      this.onMsg({role:"user",text:userText,final:true});
+    this.onStatus("listening");
+    if(this.audioMode){
+      this._rec={pre:[],preLen:0,buf:[],bufLen:0,speaking:false,silence:0,voiced:0,floor:0.004};
+      this.capturing=true;
+    } else {
+      this._listen();
     }
-    this.onStatus("speaking");
+  }
+
+  // input: stringa (testo dal fallback SpeechRecognition) oppure {audio: base64 WAV}
+  async _chat(input){
+    if(!this.active) return;
+    const o=typeof input==="string"?{text:input}:(input||{});
+    this.capturing=false;
+    const GREET={role:"user",parts:[{text:"Saluta lo studente in russo e chiedi come vuole esercitarsi."}]};
+    if(o.text){
+      this.history.push({role:"user",parts:[{text:o.text}]});
+      this.onMsg({role:"user",text:o.text,final:true});
+    }
+    this.onStatus(o.audio?"thinking":"speaking");
     try{
+      const contents=this.history.slice();
+      if(o.audio){
+        contents.push({role:"user",parts:[
+          {inlineData:{mimeType:"audio/wav",data:o.audio}},
+          {text:"Messaggio vocale dello studente: trascrivilo, valuta la pronuncia e rispondi."}
+        ]});
+      } else if(!o.text && !contents.length){
+        contents.push(GREET);
+      }
       const body={
         system_instruction:{parts:[{text:vikaPrompt(this.lang,this.db,this._opts())}]},
-        contents:this.history.length
-          ?this.history
-          :[{role:"user",parts:[{text:"Saluta lo studente in russo e chiedi come vuole esercitarsi."}]}],
-        generationConfig:{maxOutputTokens:120,temperature:0.8}
+        contents,
+        generationConfig:{
+          maxOutputTokens:400,temperature:0.8,
+          responseMimeType:"application/json",
+          responseSchema:{type:"OBJECT",properties:{
+            trascrizione:{type:"STRING"},pronuncia:{type:"STRING"},risposta:{type:"STRING"}
+          },required:["risposta"]}
+        }
       };
       const resp=await fetch(`${VIKA_REST}?key=${this.apiKey}`,
         {method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
       if(!resp.ok){const e=await resp.json().catch(()=>({})); throw new Error(e.error?.message||`HTTP ${resp.status}`);}
       const data=await resp.json();
-      const text=(data.candidates?.[0]?.content?.parts?.[0]?.text||"").trim();
-      if(text){
-        if(!this.history.length) this.history.push({role:"user",parts:[{text:"Saluta lo studente in russo e chiedi come vuole esercitarsi."}]});
-        this.history.push({role:"model",parts:[{text}]});
-        this.onMsg({role:"vika",text,final:true});
-        await this._speak(text);
+      const raw=(data.candidates?.[0]?.content?.parts?.[0]?.text||"").trim();
+      let out; try{out=JSON.parse(raw);}catch(e){out={risposta:raw};}
+      const reply=(out.risposta||"").trim();
+      const heard=(out.trascrizione||"").trim();
+      const pron=(out.pronuncia||"").trim();
+      if(o.audio){
+        // Nella cronologia l'audio diventa testo: contesto leggero per i turni successivi
+        this.onMsg({role:"user",text:heard||"(audio non chiaro)",final:true});
+        this.history.push({role:"user",parts:[{text:heard||"(audio non comprensibile)"}]});
+      } else if(!o.text && !this.history.length){
+        this.history.push(GREET);
+      }
+      if(reply){
+        this.history.push({role:"model",parts:[{text:reply}]});
+        this.onMsg({role:"vika",text:pron?`🗣️ ${pron}\n\n${reply}`:reply,final:true});
+        // La nota di pronuncia è in italiano: la legge solo in modalità bilingue
+        await this._speak(pron&&this.lang==="ru+it"?`${pron}. ${reply}`:reply);
       }
     }catch(e){
-      this.onMsg({role:"vika",text:`⚠️ Errore: ${e.message}`,final:true});
-      this.onStatus("error"); return;
+      if(o.audio&&this.audioMode){
+        // L'invio audio è fallito: si prosegue col riconoscimento vocale del browser
+        this.audioMode=false;
+        this.onMsg({role:"vika",text:"⚠️ Audio diretto non disponibile — continuo col riconoscimento vocale del browser.",final:true});
+      } else {
+        this.onMsg({role:"vika",text:`⚠️ Errore: ${e.message}`,final:true});
+        this.onStatus("error"); return;
+      }
     }
-    if(this.active){this.onStatus("listening"); this._listen();}
+    if(this.active) this._resumeInput();
   }
 
   _listen(){
@@ -1694,6 +1770,60 @@ class VikaSession {
     return segs.length?segs:[{t:text,isRu:true}];
   }
 
+  // Cattura microfono per la modalità audio diretto: PCM 16 kHz dal worklet,
+  // con rilevamento voce a soglia (parte quando parli, chiude dopo ~1.3 s di silenzio).
+  async _startMicVad(){
+    this.audioCtx=new AudioContext({sampleRate:16000});
+    if(this.audioCtx.state==="suspended") await this.audioCtx.resume();
+    this.micStream=await navigator.mediaDevices.getUserMedia({audio:true,video:false});
+    const source=this.audioCtx.createMediaStreamSource(this.micStream);
+    const code=`class P extends AudioWorkletProcessor{process(i){if(i[0]&&i[0][0])this.port.postMessage(i[0][0].slice());return true}}registerProcessor('pcm-vika-rec',P)`;
+    const url=URL.createObjectURL(new Blob([code],{type:"application/javascript"}));
+    await this.audioCtx.audioWorklet.addModule(url);
+    URL.revokeObjectURL(url);
+    const node=new AudioWorkletNode(this.audioCtx,"pcm-vika-rec");
+    node.port.onmessage=({data})=>this._onAudioChunk(data);
+    source.connect(node);
+  }
+
+  _onAudioChunk(f32){
+    if(!this.capturing||!this.active) return;
+    const rec=this._rec; if(!rec) return;
+    const rate=this.audioCtx?this.audioCtx.sampleRate:16000;
+    let sum=0; for(let i=0;i<f32.length;i++) sum+=f32[i]*f32[i];
+    const rms=Math.sqrt(sum/f32.length);
+    if(!rec.speaking){
+      // Stima del rumore di fondo → soglie adattive
+      rec.floor=Math.min(0.02,rec.floor*0.95+rms*0.05);
+      rec.pre.push(f32); rec.preLen+=f32.length;
+      while(rec.preLen>rate*0.4&&rec.pre.length>1){ rec.preLen-=rec.pre[0].length; rec.pre.shift(); }
+      if(rms>Math.max(0.012,rec.floor*3)){
+        rec.voiced+=f32.length;
+        if(rec.voiced>rate*0.06){
+          rec.speaking=true; rec.buf=rec.pre.slice(); rec.bufLen=rec.preLen; rec.silence=0;
+          this.onStatus("recording");
+        }
+      } else rec.voiced=0;
+    } else {
+      rec.buf.push(f32); rec.bufLen+=f32.length;
+      if(rms<Math.max(0.007,rec.floor*2)){
+        rec.silence+=f32.length;
+        if(rec.silence>rate*1.3) return this._endUtterance();
+      } else rec.silence=0;
+      if(rec.bufLen>rate*20) this._endUtterance(); // tetto: 20 secondi a turno
+    }
+  }
+
+  _endUtterance(){
+    const rec=this._rec; if(!rec||!rec.speaking) return;
+    this.capturing=false;
+    const rate=this.audioCtx?this.audioCtx.sampleRate:16000;
+    if(rec.bufLen<rate*0.45){ this._resumeInput(); return; } // troppo corto: rumore
+    const b64=bufToB64(pcmToWav(rec.buf,rate));
+    this._rec=null;
+    this._chat({audio:b64});
+  }
+
   async _startMic(){
     this.audioCtx=new AudioContext({sampleRate:16000});
     this.micStream=await navigator.mediaDevices.getUserMedia({audio:true,video:false});
@@ -1747,7 +1877,7 @@ class VikaSession {
   }
 
   disconnect(){
-    this.active=false;
+    this.active=false; this.capturing=false; this._rec=null;
     try{this.recognition?.stop();}catch(e){} this.recognition=null;
     this.micStream?.getTracks().forEach(t=>t.stop());
     try{this.audioCtx?.close();}catch(e){}
@@ -1907,6 +2037,8 @@ function runVika(){
     connecting:"⏳ Connessione in corso...",
     connected:"✅ Connessa — inizia a parlare",
     listening:"🎤 In ascolto...",
+    recording:"🎙️ Ti sento — parla pure",
+    thinking:"🤔 Vika sta pensando...",
     speaking:"💬 Vika sta parlando...",
     error:"❌ Connessione fallita — controlla la API key",
     dropped:"⚠️ Connessione interrotta",
@@ -1915,7 +2047,7 @@ function runVika(){
 
   function onStatus(s){
     statusEl.textContent=STATUS[s]||"";
-    const active=s==="connected"||s==="listening"||s==="speaking";
+    const active=s==="connected"||s==="listening"||s==="speaking"||s==="recording"||s==="thinking";
     const busy=s==="connecting";
     micBtn.textContent=active?"⏹️":busy?"⏳":"🎙️";
     micBtn.style.background=active
@@ -1923,7 +2055,7 @@ function runVika(){
       :busy?"var(--card2)"
       :"linear-gradient(135deg,var(--accent),#f0526a)";
     micBtn.style.color=busy?"var(--muted)":"#fff";
-    micBtn.classList.toggle("mic-listening", s==="listening");
+    micBtn.classList.toggle("mic-listening", s==="listening"||s==="recording");
     micLabel.textContent=active?"Premi per terminare":busy?"Connessione...":"Premi per parlare con Vika";
     if(s==="error"){
       const eb=addBubble("vika");
