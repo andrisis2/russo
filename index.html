@@ -398,11 +398,13 @@ const TOPIC_ICONS = {
 const CONJ_TENSES_RU = [
   {key:"pres", label:"Presente",   modo:"Настоящее время"},
   {key:"past", label:"Passato",    modo:"Прошедшее время"},
+  {key:"fut",  label:"Futuro",     modo:"Будущее время"},
   {key:"imp",  label:"Imperativo", modo:"Повелительное наклонение"},
 ];
 const CONJ_PRONOUNS_RU = {
   pres: ["я","ты","он/она","мы","вы","они"],
   past: ["он (м.)","она (ж.)","оно (с.р.)","они"],
+  fut:  ["я","ты","он/она","мы","вы","они"],
   imp:  ["ты","вы"],
 };
 const tenseLabelRu = k => (CONJ_TENSES_RU.find(t=>t.key===k)||{}).label || k;
