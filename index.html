@@ -1261,16 +1261,45 @@ function runPhrase(level){
     ...(DB.voci||[]).map(v=>(v.ru||'').replace(/[.,!?;:]/g,'').split(' ')[0])
   ].filter(w=>w.length>=3 && /[а-яё]/i.test(w) && !SKIP.has(w.toLowerCase())))];
 
-  // Distrattori con la stessa desinenza (stessa forma/declinazione)
-  function byEnding(answer, exclude){
+  // Distrattori plausibili: stessa radice > parole del deck > stessa desinenza > lunghezza simile
+  function pickDistractors(answer, exclude, deckWords){
     const lo = answer.toLowerCase();
-    const e3 = lo.slice(-3), e2 = lo.slice(-2);
-    const pool = corpusWords.filter(w=>w!==answer && !exclude.has(w));
-    const m3 = pool.filter(w=>w.toLowerCase().slice(-3)===e3);
-    if(m3.length>=3) return m3;
-    const m2 = pool.filter(w=>w.toLowerCase().slice(-2)===e2);
-    if(m2.length>=3) return m2;
-    return pool.filter(w=>Math.abs(w.length-answer.length)<=2);
+    const excl = new Set([...exclude].map(w=>w.toLowerCase()));
+    excl.add(lo);
+    const ok = w => !excl.has(w.toLowerCase());
+
+    // Tier 1: stessa radice (es. говорю → говоришь, говорит) — forma diversa della stessa parola
+    const rootLen = Math.min(4, lo.length - 1);
+    const root = lo.slice(0, rootLen);
+    const t1 = corpusWords.filter(w => ok(w) && w.toLowerCase().startsWith(root));
+
+    // Tier 2: parole dalle ALTRE frasi del deck corrente — contestualmente plausibili
+    const t2 = (deckWords||[]).filter(ok);
+
+    // Tier 3: stessa desinenza 3 char (stessa forma grammaticale)
+    const e3 = lo.slice(-3);
+    const t3 = corpusWords.filter(w => ok(w) && w.toLowerCase().slice(-3)===e3);
+
+    // Tier 4: stessa desinenza 2 char
+    const e2 = lo.slice(-2);
+    const t4 = corpusWords.filter(w => ok(w) && w.toLowerCase().slice(-2)===e2);
+
+    // Tier 5: lunghezza simile (±1)
+    const t5 = corpusWords.filter(w => ok(w) && Math.abs(w.length-answer.length)<=1);
+
+    const result = [];
+    const picked = new Set();
+    for(const tier of [t1, t2, t3, t4, t5, corpusWords]){
+      for(const w of shuffle([...new Set(tier)])){
+        if(result.length>=3) break;
+        if(!picked.has(w.toLowerCase()) && ok(w)){
+          result.push(w);
+          picked.add(w.toLowerCase());
+        }
+      }
+      if(result.length>=3) break;
+    }
+    return result;
   }
 
   const allFrasi = DB.frasi||[];
@@ -1299,7 +1328,11 @@ function runPhrase(level){
       : {w: clean[0], idx: 0};
 
     const masked = rawWords.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
-    const distract = sample(byEnding(answer, new Set(clean)), 3);
+    const deckWords = deck
+      .filter(d=>d.id!==f.id)
+      .flatMap(d=>(d.ru||'').replace(/[.!?,;:—]/g,'').split(' ').map(w=>w.replace(/[.,!?;:]/g,'')))
+      .filter(w=>w.length>=4 && /[а-яё]/i.test(w) && !SKIP.has(w.toLowerCase()));
+    const distract = pickDistractors(answer, new Set(clean), deckWords);
     const opts = shuffle([answer, ...distract]);
 
     wrap.innerHTML="";
