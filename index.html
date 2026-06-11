@@ -1500,7 +1500,11 @@ class VikaSession {
   async connect(){
     this.active=true;
     this.onStatus("connecting");
-    this._tryLive();
+    // Modalità live disattivata (giugno 2026): i modelli Live API di Google
+    // sono instabili, quindi si parte direttamente in modalità standard.
+    // Per riattivare il tentativo live: sostituire la riga sotto con this._tryLive();
+    this.fellBack=true;
+    this._startRest();
   }
 
   _tryLive(modelIdx=0){
@@ -1592,6 +1596,8 @@ class VikaSession {
 
   async _startRest(){
     this.mode="rest";
+    // Se la conversazione è nuova, Vika saluta subito invece di aspettare in silenzio
+    if(!this.history.length){ this._chat(""); return; }
     this.onStatus("listening");
     this._listen();
   }
