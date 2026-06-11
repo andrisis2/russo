@@ -453,6 +453,16 @@ function recordDailyDone(){
 function dailyPool(){
   return [...(DB.voci||[])].filter(x=>!srs[x.id] || box(x.id)<3);
 }
+// Progresso del ripasso del giorno, persistito per data: la selezione delle carte
+// e quante volte ho fatto "La sapevo" su ciascuna restano fino a fine giornata solare.
+const DAILY_PROG_KEY = "russo_daily_prog_v1";
+function dailyProg(){
+  try{ const p=JSON.parse(localStorage.getItem(DAILY_PROG_KEY)||"{}"); return (p.date===todayStr()) ? p : {}; }
+  catch(e){ return {}; }
+}
+function saveDailyProg(ids, score){
+  localStorage.setItem(DAILY_PROG_KEY, JSON.stringify({date:todayStr(), ids, score}));
+}
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("backBtn");
@@ -988,7 +998,10 @@ function runFlash(pool, topicLabel, opts){
   const shuffled = (pool||[]).slice().sort(()=>Math.random()-.5);
   let deck = need>1 ? shuffled : shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, shuffled.length));
   const total = deck.length;       // carte uniche da padroneggiare
-  const score = {};                // id -> "La sapevo" accumulati (azzerato da "Da ripassare")
+  const score = Object.assign({}, opts.initialScore||{}); // id -> "La sapevo" accumulati (azzerato da "Da ripassare")
+  // ripresa: salta le carte già padroneggiate in una sessione precedente di oggi
+  if(need>1) deck = deck.filter(c=>(score[c.id]||0) < need);
+  const saveProg = ()=>{ if(opts.onProgress) opts.onProgress(score); };
   let i=0;
   let dir = localStorage.getItem('flashDirRu')==='it-ru' ? 'it-ru' : 'ru-it';
   const stage = header();
@@ -1071,8 +1084,8 @@ function runFlash(pool, topicLabel, opts){
         <button class="btn bad">Da ripassare</button>
         <button class="btn good">La sapevo</button>
       </div>`);
-    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); if(need>1) score[c.id]=0; i++; show();};
-    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); if(need>1) score[c.id]=(score[c.id]||0)+1; i++; show();};
+    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); if(need>1){ score[c.id]=0; saveProg(); } i++; show();};
+    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); if(need>1){ score[c.id]=(score[c.id]||0)+1; saveProg(); } i++; show();};
     cardWrap.appendChild(controls);
     if(ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
   }
@@ -1080,22 +1093,36 @@ function runFlash(pool, topicLabel, opts){
 }
 
 function runDaily(){
-  const pool = dailyPool();
-  if(!pool.length){
-    const stage = header();
-    stage.appendChild($(`
-      <div class="done">
-        <div class="big">&#127881;</div>
-        <h2>Tutto ripassato!</h2>
-        <p class="muted">Non hai carte in attesa oggi. Torna domani per continuare la serie.</p>
-      </div>`));
-    const row=$(`<div class="row"></div>`);
-    const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
-    row.appendChild(a); stage.appendChild(row);
-    return;
+  const prog = dailyProg();
+  let session;
+  if(prog.ids && prog.ids.length){
+    // riprendi la selezione di oggi (stesse carte per tutta la giornata)
+    const byId = {}; (DB.voci||[]).forEach(v=>byId[v.id]=v);
+    session = prog.ids.map(id=>byId[id]).filter(Boolean);
+  } else {
+    const pool = dailyPool();
+    if(!pool.length){
+      const stage = header();
+      stage.appendChild($(`
+        <div class="done">
+          <div class="big">&#127881;</div>
+          <h2>Tutto ripassato!</h2>
+          <p class="muted">Non hai carte in attesa oggi. Torna domani per continuare la serie.</p>
+        </div>`));
+      const row=$(`<div class="row"></div>`);
+      const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
+      row.appendChild(a); stage.appendChild(row);
+      return;
+    }
+    session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
+    saveDailyProg(session.map(c=>c.id), {});
   }
-  const session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
-  runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone, repeat: 2 });
+  const ids = session.map(c=>c.id);
+  runFlash(session, "Ripasso del giorno", {
+    restart: runDaily, onComplete: recordDailyDone, repeat: 2,
+    initialScore: prog.score || {},
+    onProgress: (score)=>saveDailyProg(ids, score)
+  });
 }
 
 // ---------- 2. CONIUGAZIONE ----------
