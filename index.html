@@ -1431,12 +1431,12 @@ const VIKA_REST= "https://generativelanguage.googleapis.com/v1beta/models/gemini
 
 // Modelli Live API in ordine di preferenza: Google li rinomina spesso,
 // quindi proviamo i candidati in sequenza prima di ripiegare sul REST.
+// Aggiornato giugno 2026: il preview 12-2025 fallisce a metà turno (errore 1011)
+// e i modelli 2.0-live / 09-2025 sono stati spenti da Google.
 const VIKA_LIVE_MODELS = [
-  "models/gemini-2.5-flash-native-audio-preview-12-2025",
+  "models/gemini-3.1-flash-live-preview",
   "models/gemini-live-2.5-flash-native-audio",
-  "models/gemini-2.5-flash-native-audio-preview-09-2025",
-  "models/gemini-2.5-flash-live-001",
-  "models/gemini-2.0-flash-live-001",
+  "models/gemini-2.5-flash-native-audio-preview-12-2025",
 ];
 
 function vikaPrompt(lang, db, opts={}) {
@@ -1586,7 +1586,7 @@ class VikaSession {
     ws.onclose=(ev)=>{
       if(this.ws===ws) this.ws=null;
       if(!this.gotSetup) nextModel();
-      else if(this.mode==="live") this.onStatus(ev.wasClean?"disconnected":"error");
+      else if(this.mode==="live") this.onStatus(ev.wasClean?"disconnected":"dropped");
     };
   }
 
@@ -1903,6 +1903,7 @@ function runVika(){
     listening:"🎤 In ascolto...",
     speaking:"💬 Vika sta parlando...",
     error:"❌ Connessione fallita — controlla la API key",
+    dropped:"⚠️ Connessione interrotta",
     disconnected:""
   };
 
@@ -1922,6 +1923,11 @@ function runVika(){
       const eb=addBubble("vika");
       eb.textContent="❌ Connessione a Gemini fallita. Verifica che la API key sia corretta e riprova.";
       session=null; vikaEl=null; userEl=null;
+    }
+    if(s==="dropped"){
+      const eb=addBubble("vika");
+      eb.textContent="⚠️ La connessione si è interrotta. Premi di nuovo il microfono per riprendere: Vika ricorda la conversazione.";
+      session?.disconnect(); // chiude mic/audio e salva la memoria via stato disconnected
     }
     if(s==="disconnected"){
       if(session) vikaSaveMem(session.history);
