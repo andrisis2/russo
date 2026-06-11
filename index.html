@@ -982,8 +982,13 @@ function pickFlashTopic(){
 
 function runFlash(pool, topicLabel, opts){
   opts = opts || {};
+  // Modalità ripasso a cicli (opts.repeat): le carte restano in rotazione finché
+  // su ognuna non si è premuto "La sapevo" `need` volte. Un giro normale = need 1.
+  const need = opts.repeat ? (typeof opts.repeat==='number' ? opts.repeat : 2) : 1;
   const shuffled = (pool||[]).slice().sort(()=>Math.random()-.5);
-  const deck = shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, shuffled.length));
+  let deck = need>1 ? shuffled : shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, shuffled.length));
+  const total = deck.length;       // carte uniche da padroneggiare
+  const score = {};                // id -> "La sapevo" accumulati (azzerato da "Da ripassare")
   let i=0;
   let dir = localStorage.getItem('flashDirRu')==='it-ru' ? 'it-ru' : 'ru-it';
   const stage = header();
@@ -1018,10 +1023,18 @@ function runFlash(pool, topicLabel, opts){
 
   function show(){
     if(i>=deck.length){
-      if(opts.onComplete) opts.onComplete();
-      return finish(stage, "Flashcard completate!", opts.restart||pickFlashTopic);
+      if(need>1){
+        // fine del giro: tieni solo le carte non ancora padroneggiate e rimescola
+        deck = deck.filter(c=>(score[c.id]||0) < need);
+        if(deck.length){ deck = deck.sort(()=>Math.random()-.5); i=0; }
+      }
+      if(i>=deck.length){
+        if(opts.onComplete) opts.onComplete();
+        return finish(stage, "Flashcard completate!", opts.restart||pickFlashTopic);
+      }
     }
-    bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
+    const done = need>1 ? Object.values(score).filter(n=>n>=need).length : i;
+    bar.style.width = (done/total*100)+"%"; bar.setNum(done, total);
     const c = deck[i]; let flipped=false;
     const ruFront = dir==='ru-it';
     const frontWord = ruFront ? c.ru : c.it;
@@ -1058,8 +1071,8 @@ function runFlash(pool, topicLabel, opts){
         <button class="btn bad">Da ripassare</button>
         <button class="btn good">La sapevo</button>
       </div>`);
-    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); i++; show();};
-    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); i++; show();};
+    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); if(need>1) score[c.id]=0; i++; show();};
+    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); if(need>1) score[c.id]=(score[c.id]||0)+1; i++; show();};
     cardWrap.appendChild(controls);
     if(ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
   }
@@ -1082,7 +1095,7 @@ function runDaily(){
     return;
   }
   const session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
-  runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone });
+  runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone, repeat: 2 });
 }
 
 // ---------- 2. CONIUGAZIONE ----------
