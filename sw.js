@@ -1,5 +1,5 @@
 // Service worker minimale: cache offline dell'app e dei dati
-const CACHE = "russo-v21";
+const CACHE = "russo-v22";
 const ASSETS = [
   "./", "./index.html", "./knowledge.json", "./manifest.json", "./icon.png", "./splash.png", "./vika.png",
   "./splash-ios/splash-750x1334.jpg","./splash-ios/splash-828x1792.jpg",
