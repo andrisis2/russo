@@ -82,6 +82,27 @@
   }
   .stage,.stats,.grid{animation:rise .3s ease both}
   .grid{animation-delay:.04s}
+  /* parole russe tappabili nei fumetti di Vika */
+  .vika-word{cursor:pointer;border-bottom:1px dotted var(--accent2);transition:background .15s}
+  .vika-word:hover,.vika-word:active{background:rgba(47,107,237,.12);border-radius:3px}
+  .vika-word.saved{border-bottom-color:#37b24d}
+  .vika-pop{
+    position:absolute;z-index:240;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;box-shadow:0 6px 22px rgba(0,0,0,.18);padding:9px 11px;
+    min-width:150px;max-width:230px;animation:rise .14s ease both;
+  }
+  .vika-pop b{font-size:16px}
+  .vika-pop .pop-row{display:flex;gap:7px;margin-top:8px}
+  .vika-pop .pop-row button{
+    flex:1;border:1px solid var(--line);background:var(--card2);color:var(--text);
+    border-radius:9px;padding:7px 6px;font-size:13px;cursor:pointer;
+  }
+  .vika-pop .pop-row button:disabled{opacity:.6;cursor:default}
+  .vika-tool{
+    margin-top:5px;border:none;background:none;cursor:pointer;
+    font-size:12px;color:var(--muted);padding:0 6px 0 4px;
+  }
+  .vika-tool:active{color:var(--accent2)}
   @media (prefers-reduced-motion: reduce){
     *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
     .flip.flipped .flash{transition:none}
@@ -1508,6 +1529,8 @@ class VikaSession {
     // Modalità audio diretto: il parlato va a Gemini come WAV (capisce molto
     // meglio il russo con accento italiano e valuta la pronuncia)
     this.audioMode=false; this.capturing=false; this._rec=null;
+    // Sessione avviata da tastiera: niente microfono, si aspetta il testo scritto
+    this.textOnly=false; this._busy=false;
   }
 
   _opts(){ return {practiceMode:this.practiceMode, srsStats:this.srsStats, lastSession:this.lastSession}; }
@@ -1532,9 +1555,21 @@ class VikaSession {
     // sono instabili, quindi si parte direttamente in modalità standard.
     // Per riattivare il tentativo live: sostituire le righe sotto con this._tryLive();
     this.fellBack=true;
-    try{ await this._startMicVad(); this.audioMode=true; }
-    catch(e){ this.audioMode=false; } // niente mic/worklet → riserva: SpeechRecognition
+    if(!this.textOnly){
+      try{ await this._startMicVad(); this.audioMode=true; }
+      catch(e){ this.audioMode=false; } // niente mic/worklet → riserva: SpeechRecognition
+    }
     this._startRest();
+  }
+
+  // Invio di un messaggio scritto da tastiera (interrompe la cattura audio in corso)
+  sendText(t){
+    if(!this.active||this._busy) return;
+    t=(t||"").trim(); if(!t) return;
+    this.capturing=false;
+    try{this.recognition?.stop();}catch(e){} this.recognition=null;
+    speechSynthesis.cancel();
+    this._chat({text:t});
   }
 
   _tryLive(modelIdx=0){
@@ -1626,16 +1661,18 @@ class VikaSession {
 
   async _startRest(){
     this.mode="rest";
-    // Se la conversazione è nuova, Vika saluta subito invece di aspettare in silenzio
-    if(!this.history.length){ this._chat({}); return; }
+    // Conversazione nuova: Vika saluta subito (tranne se l'avvio è da tastiera:
+    // lì lo studente ha già scritto il primo messaggio).
+    if(!this.history.length && !this.textOnly){ this._chat({}); return; }
     this._resumeInput();
   }
 
   // Rimette la sessione in ascolto: cattura audio diretta se disponibile,
-  // altrimenti riconoscimento vocale del browser.
+  // riconoscimento vocale del browser, oppure (modalità tastiera) attende il testo.
   _resumeInput(){
     if(!this.active) return;
     this.onStatus("listening");
+    if(this.textOnly) return;              // aspetta input scritto
     if(this.audioMode){
       this._rec={pre:[],preLen:0,buf:[],bufLen:0,speaking:false,silence:0,voiced:0,floor:0.004};
       this.capturing=true;
@@ -1646,7 +1683,8 @@ class VikaSession {
 
   // input: stringa (testo dal fallback SpeechRecognition) oppure {audio: base64 WAV}
   async _chat(input){
-    if(!this.active) return;
+    if(!this.active||this._busy) return;
+    this._busy=true;
     const o=typeof input==="string"?{text:input}:(input||{});
     this.capturing=false;
     const GREET={role:"user",parts:[{text:"Saluta lo studente in russo e chiedi come vuole esercitarsi."}]};
@@ -1705,9 +1743,10 @@ class VikaSession {
         this.onMsg({role:"vika",text:"⚠️ Audio diretto non disponibile — continuo col riconoscimento vocale del browser.",final:true});
       } else {
         this.onMsg({role:"vika",text:`⚠️ Errore: ${e.message}`,final:true});
-        this.onStatus("error"); return;
+        this.onStatus("error"); this._busy=false; return;
       }
     }
+    this._busy=false;
     if(this.active) this._resumeInput();
   }
 
@@ -1983,19 +2022,124 @@ function runVika(){
     return bub;
   }
 
-  function addTranslateBtn(wrap, text){
+  // Pronuncia di una frase a velocità variabile (per i pulsanti 🔁 e 🐢)
+  function speakBubble(text, rate){
+    const clean=text.replace(/^🗣️[^\n]*\n+/,"").trim();
+    if(!clean||!('speechSynthesis' in window)) return;
+    speechSynthesis.cancel();
+    if(currentLang==="ru+it"){
+      const parts=clean.split(/([.!?…\n]+)/), segs=[];
+      for(let i=0;i<parts.length;i+=2){
+        const t=(parts[i]+(parts[i+1]||"")).trim(); if(!t) continue;
+        const cy=(t.match(/[Ѐ-ӿ]/g)||[]).length, la=(t.match(/[a-zA-Z]/g)||[]).length;
+        segs.push({t,isRu:cy>=la});
+      }
+      let i=0; const next=()=>{
+        if(i>=segs.length) return;
+        const {t,isRu}=segs[i++];
+        const u=new SpeechSynthesisUtterance(t);
+        if(isRu){u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice;} else {u.lang="it-IT"; if(itVoice) u.voice=itVoice;}
+        u.rate=rate; u.pitch=1.3; u.onend=next; u.onerror=next; speechSynthesis.speak(u);
+      };
+      next();
+    } else {
+      const u=new SpeechSynthesisUtterance(clean);
+      u.lang="ru-RU"; if(ruVoice) u.voice=ruVoice; u.rate=rate; u.pitch=1.3;
+      speechSynthesis.speak(u);
+    }
+  }
+
+  // Popover su una parola russa: ascolta + salva nelle flashcard SRS
+  function openWordPopover(anchor, word){
+    document.querySelectorAll(".vika-pop").forEach(p=>p.remove());
+    if(!word) return;
     const key=localStorage.getItem(VIKA_KEY);
+    const pop=$(`<div class="vika-pop"></div>`);
+    pop.appendChild($(`<b>${word}</b>`));
+    const row=$(`<div class="pop-row"></div>`);
+    const sp=$(`<button>🔊 Ascolta</button>`);
+    sp.onclick=()=>speak(word);
+    row.appendChild(sp);
+    if(key){
+      const sv=$(`<button></button>`);
+      const refresh=()=>{ const has=isUserVoce(word); sv.textContent=has?"✓ Salvata":"➕ Flashcard"; sv.disabled=has; };
+      refresh();
+      sv.onclick=async()=>{
+        if(isUserVoce(word)) return;
+        sv.disabled=true; sv.textContent="⏳";
+        let it="";
+        try{
+          const rr=await fetch(`${VIKA_REST}?key=${key}`,{method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify({contents:[{role:"user",parts:[{text:`Traduci in italiano questa parola russa (solo la traduzione, una parola o brevissima espressione, niente note): "${word}"`}]}],generationConfig:{maxOutputTokens:30,temperature:0.1}})});
+          const dd=await rr.json();
+          it=(dd.candidates?.[0]?.content?.parts?.[0]?.text||"").trim().replace(/^["']|["']$/g,"");
+        }catch(e){}
+        if(!it) it="(da tradurre)";
+        addUserVoce(word, it, "", "vika");
+        if(DB && DB.voci) DB.voci.push({id:"u"+Date.now(), ru:word, it, tag:["vika"]});
+        anchor.classList.add("saved");
+        sv.textContent="✓ Salvata"; haptic(true);
+      };
+      row.appendChild(sv);
+    }
+    pop.appendChild(row);
+    document.body.appendChild(pop);
+    const r=anchor.getBoundingClientRect(), pw=pop.offsetWidth, ph=pop.offsetHeight;
+    let left=Math.max(8,Math.min(r.left+window.scrollX+r.width/2-pw/2, window.innerWidth-pw-8));
+    let top=(r.bottom+ph+12>window.innerHeight) ? r.top+window.scrollY-ph-6 : r.bottom+window.scrollY+6;
+    pop.style.left=left+"px"; pop.style.top=top+"px";
+    setTimeout(()=>{
+      const close=ev=>{ if(!pop.contains(ev.target)){ pop.remove(); document.removeEventListener("pointerdown",close); } };
+      document.addEventListener("pointerdown",close);
+    },0);
+  }
+
+  // Scrive il testo nel fumetto rendendo tappabile ogni parola russa
+  function appendClickableRu(el, text){
+    for(const tok of text.split(/(\s+)/)){
+      if(/[Ѐ-ӿ]/.test(tok)){
+        const clean=tok.replace(/[^Ѐ-ӿ-]/g,"");
+        const span=$(`<span class="vika-word"></span>`);
+        span.textContent=tok;
+        if(clean && isUserVoce(clean)) span.classList.add("saved");
+        span.onclick=ev=>{ ev.stopPropagation(); openWordPopover(span, clean); };
+        el.appendChild(span);
+      } else if(tok){
+        el.appendChild(document.createTextNode(tok));
+      }
+    }
+  }
+
+  function renderVikaBubble(bub, text){
+    bub.textContent="";
+    let body=text;
+    const m=text.match(/^🗣️\s*([^\n]*)\n+([\s\S]*)$/);
+    if(m){
+      bub.appendChild($(`<div style="font-size:13px;color:var(--accent);background:rgba(226,56,75,.08);border-radius:8px;padding:5px 9px;margin-bottom:7px;line-height:1.4">🗣️ ${m[1]}</div>`));
+      body=m[2];
+    }
+    appendClickableRu(bub, body);
+  }
+
+  function addBubbleTools(bub, text){
+    const key=localStorage.getItem(VIKA_KEY);
+    const tools=$(`<div style="display:flex;flex-wrap:wrap;align-items:center;gap:2px;margin-top:6px;border-top:1px solid var(--line);padding-top:5px"></div>`);
+    const rep=$(`<button class="vika-tool">🔁 ripeti</button>`);
+    rep.onclick=()=>speakBubble(text,0.88);
+    const slow=$(`<button class="vika-tool">🐢 più lento</button>`);
+    slow.onclick=()=>speakBubble(text,0.55);
+    tools.appendChild(rep); tools.appendChild(slow);
+    bub.appendChild(tools);
     if(!key) return;
     const itDiv=$(`<div style="font-size:13px;color:var(--muted);margin-top:4px;padding:0 4px;display:none;line-height:1.4"></div>`);
-    const btn=$(`<button style="
-      margin-top:5px;border:none;background:none;cursor:pointer;
-      font-size:12px;color:var(--muted);padding:0 4px;
-    ">🇮🇹 mostra traduzione</button>`);
+    const btn=$(`<button class="vika-tool">🇮🇹 traduci</button>`);
+    const src=text.replace(/^🗣️[^\n]*\n+/,"").trim();
     let cached=null;
     btn.onclick=async()=>{
       if(cached!==null){
         itDiv.style.display=itDiv.style.display==="none"?"block":"none";
-        btn.textContent=itDiv.style.display==="none"?"🇮🇹 mostra traduzione":"🇮🇹 nascondi";
+        btn.textContent=itDiv.style.display==="none"?"🇮🇹 traduci":"🇮🇹 nascondi";
         return;
       }
       btn.textContent="⏳"; btn.disabled=true;
@@ -2003,17 +2147,17 @@ function runVika(){
         const r=await fetch(`${VIKA_REST}?key=${key}`,{method:"POST",
           headers:{"Content-Type":"application/json"},
           body:JSON.stringify({
-            contents:[{role:"user",parts:[{text:`Traduci solo in italiano (solo la traduzione, senza note o spiegazioni): "${text}"`}]}],
+            contents:[{role:"user",parts:[{text:`Traduci solo in italiano (solo la traduzione, senza note o spiegazioni): "${src}"`}]}],
             generationConfig:{maxOutputTokens:80,temperature:0.2}
           })});
         const d=await r.json();
         cached=(d.candidates?.[0]?.content?.parts?.[0]?.text||"").trim();
       }catch(e){cached="";}
       if(cached){itDiv.textContent=cached; itDiv.style.display="block"; btn.textContent="🇮🇹 nascondi";}
-      else{btn.textContent="🇮🇹 errore"; setTimeout(()=>{btn.textContent="🇮🇹 mostra traduzione"; btn.disabled=false;},2000); return;}
+      else{btn.textContent="🇮🇹 errore"; setTimeout(()=>{btn.textContent="🇮🇹 traduci"; btn.disabled=false;},2000); return;}
       btn.disabled=false;
     };
-    wrap.appendChild(itDiv); wrap.appendChild(btn);
+    tools.appendChild(btn); bub.appendChild(itDiv);
   }
 
   function onMsg({role,text,final}){
@@ -2021,9 +2165,10 @@ function runVika(){
       if(!vikaEl) vikaEl=addBubble("vika");
       vikaEl.textContent=text;
       if(final){
-        const t=text;
+        const bub=vikaEl, t=text;
         vikaEl=null;
-        if(lastVikaWrap) addTranslateBtn(lastVikaWrap, t);
+        renderVikaBubble(bub, t);
+        addBubbleTools(bub, t);
       }
     } else {
       if(!userEl) userEl=addBubble("user");
@@ -2082,6 +2227,32 @@ function runVika(){
   ">🎙️</button>`);
   const micLabel=$(`<div style="margin-top:8px;font-size:12px;color:var(--muted)">Premi per parlare con Vika</div>`);
   micWrap.appendChild(micBtn); micWrap.appendChild(micLabel); stage.appendChild(micWrap);
+
+  // Input da tastiera: alternativa al microfono (utile in pubblico).
+  // Avvia una sessione "solo testo" se non ce n'è una attiva, altrimenti
+  // inserisce il messaggio nella conversazione in corso.
+  const typeRow=$(`<div style="display:flex;gap:8px;max-width:430px;margin:0 auto 10px"></div>`);
+  const typeInp=$(`<input type="text" placeholder="…oppure scrivi qui" style="flex:1;min-width:0;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:var(--card2);color:var(--text);font-size:15px;box-sizing:border-box">`);
+  const sendBtn=$(`<button class="btn" style="flex:0 0 auto;padding:0 18px">Invia</button>`);
+  function sendTyped(){
+    const t=typeInp.value.trim(); if(!t) return;
+    const key=localStorage.getItem(VIKA_KEY);
+    if(!key){ showKeyModal(); return; }
+    typeInp.value="";
+    if(session){ session.sendText(t); return; }
+    session=new VikaSession({
+      apiKey:key, lang:currentLang, db:DB, onMsg, onStatus,
+      practiceMode:currentPracticeMode,
+      srsStats:vikaSrsStats(),
+      lastSession:vikaLoadMem()
+    });
+    session.userInputLang=currentUserLang;
+    session.textOnly=true;
+    session.connect().then(()=>session.sendText(t)).catch(()=>onStatus("error"));
+  }
+  sendBtn.onclick=sendTyped;
+  typeInp.addEventListener("keydown",e=>{ if(e.key==="Enter"){ e.preventDefault(); sendTyped(); } });
+  typeRow.appendChild(typeInp); typeRow.appendChild(sendBtn); stage.appendChild(typeRow);
 
   micBtn.onclick=async()=>{
     if(session){ session.disconnect(); return; }
