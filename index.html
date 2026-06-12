@@ -179,6 +179,13 @@
   .flash .translit{font-size:18px;color:var(--accent2);font-style:italic}
   .flash .it{font-size:27px; font-weight:700}
   .flash .hint{position:absolute;bottom:16px;font-size:12px;color:var(--muted)}
+  /* scritta M/F/N (genere del sostantivo) in alto a sinistra della carta */
+  .flash .gtag{position:absolute;top:14px;left:14px;width:34px;height:34px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;line-height:1;
+    border:1.5px solid;letter-spacing:0}
+  .flash .gtag.gm{color:var(--accent2);border-color:var(--accent2);background:rgba(47,107,237,.10)}
+  .flash .gtag.gf{color:var(--accent);border-color:var(--accent);background:rgba(226,56,75,.10)}
+  .flash .gtag.gn{color:var(--good);border-color:var(--good);background:rgba(22,163,74,.10)}
   .speak{
     position:absolute; top:14px; right:14px; background:var(--card2); border:1px solid var(--line);
     color:var(--text); width:44px;height:44px;border-radius:50%; font-size:18px; cursor:pointer; transition:.12s;
@@ -714,6 +721,33 @@ const CASE_ROWS = [
   ['Prepositivo','о ком? о чём?','pre'],
 ];
 const GENDER_INFO = { m:['m.','maschile'], f:['f.','femminile'], n:['n.','neutro'] };
+
+// Restituisce 'm' | 'f' | 'n' per un sostantivo, oppure null se non è un nome
+// (o se il genere è ambiguo). Usato per la scritta M/F/N sulle flashcard.
+function genderOf(word, tipo, tags){
+  if(!word) return null;
+  const lw = word.trim().toLowerCase();
+  const ex = NOUN_EXC_NORM[lw.replace(/ё/g,'е')];   // nomi irregolari noti (anche se taggati 'vocabolo')
+  if(ex) return ex.g;
+  const tip = (tipo||'').toLowerCase();
+  if(!/sostantiv/.test(tip)) return null;
+  if(/\(m/.test(tip)) return 'm';
+  if(/\(f/.test(tip)) return 'f';
+  if(/\(n/.test(tip)) return 'n';
+  // tipo 'sostantivo' senza genere → indovina dalla desinenza
+  const e1=lw.slice(-1), e2=lw.slice(-2);
+  if(e2==='мя'||e1==='о'||e1==='е'||e1==='ё') return 'n';
+  if(e1==='а'||e1==='я') return 'f';
+  if(e1==='ь') return null;                          // ambiguo: meglio non indovinare
+  return 'm';
+}
+// HTML del badge M/F/N (vuoto se non è un nome).
+function genderBadgeHTML(word, tipo, tags){
+  const g = genderOf(word, tipo, tags);
+  if(!g) return '';
+  const L = {m:'M', f:'F', n:'N'}[g];
+  return `<span class="gtag g${g}" title="${GENDER_INFO[g][1]}">${L}</span>`;
+}
 
 function _isVowelRu(c){ return 'аеёиоуыэюя'.includes(c); }
 function _ap(stem, end){
@@ -1351,16 +1385,19 @@ function runFlash(pool, topicLabel, opts){
     const frontWord = ruFront ? c.ru : c.it;
     const backTrans = ruFront ? c.it : c.ru;
     cardWrap.innerHTML="";
+    const gtag = genderBadgeHTML(c.ru, c.tipo, c.tag);   // scritta M/F/N per i sostantivi
     const flip = $(`
       <div class="flip">
         <div class="flash">
           <div class="face front">
+            ${gtag}
             ${ruFront ? `<button class="speak" title="Ascolta">&#128266;</button>` : ""}
             <div class="${ruFront?'ru':'it'}">${frontWord}</div>
             ${ruFront && c.translit ? `<div class="translit">${c.translit}</div>` : ""}
             <div class="hint">tocca per vedere la traduzione</div>
           </div>
           <div class="face back">
+            ${gtag}
             ${!ruFront ? `<button class="speak" title="Ascolta">&#128266;</button>` : ""}
             <div class="${ruFront?'it':'ru'}">${backTrans}</div>
             ${!ruFront && c.translit ? `<div class="translit">${c.translit}</div>` : ""}
