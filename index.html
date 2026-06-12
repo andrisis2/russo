@@ -301,7 +301,13 @@
   .vocab-input:focus{border-color:var(--accent2);box-shadow:0 0 0 3px rgba(47,107,237,.12)}
   .vocab-input::placeholder{color:var(--muted)}
   .vocab-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;width:100%;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow-sm);animation:rise .18s ease both}
-  .vocab-ru{font-size:26px;font-weight:800;letter-spacing:-.4px;line-height:1.2}
+  .vocab-ru{font-size:26px;font-weight:800;letter-spacing:-.4px;line-height:1.2;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  /* pillola M/F/N (genere) accanto alla parola nel vocabolario */
+  .gpill{font-size:12px;font-weight:800;line-height:1;width:22px;height:22px;border-radius:50%;
+    display:inline-flex;align-items:center;justify-content:center;border:1.5px solid;flex-shrink:0}
+  .gpill.gm{color:var(--accent2);border-color:var(--accent2);background:rgba(47,107,237,.10)}
+  .gpill.gf{color:var(--accent);border-color:var(--accent);background:rgba(226,56,75,.10)}
+  .gpill.gn{color:var(--good);border-color:var(--good);background:rgba(22,163,74,.10)}
   .vocab-translit{font-size:15px;color:var(--accent2);font-style:italic;margin-top:2px}
   .vocab-it{font-size:14.5px;color:var(--muted);line-height:1.55;margin-top:4px}
   .vocab-speak{background:var(--card2);border:1px solid var(--line);border-radius:50%;width:38px;height:38px;flex-shrink:0;font-size:17px;cursor:pointer;transition:.12s;display:flex;align-items:center;justify-content:center}
@@ -823,10 +829,27 @@ const NOUN_EXCEPTIONS = {
   'ключ':{g:'m',sg:['ключ','ключа','ключу','ключ','ключом','ключе'],pl:['ключи','ключей','ключам','ключи','ключами','ключах']},
   'плащ':{g:'m',sg:['плащ','плаща','плащу','плащ','плащом','плаще'],pl:['плащи','плащей','плащам','плащи','плащами','плащах']},
   'врач':{g:'m',an:1,sg:['врач','врача','врачу','врача','врачом','враче'],pl:['врачи','врачей','врачам','врачей','врачами','врачах']},
+  // altri maschili con plurale in -а/-я accentato
+  'директор':{g:'m',an:1,sg:['директор','директора','директору','директора','директором','директоре'],pl:['директора','директоров','директорам','директоров','директорами','директорах']},
+  'мастер':{g:'m',an:1,sg:['мастер','мастера','мастеру','мастера','мастером','мастере'],pl:['мастера','мастеров','мастерам','мастеров','мастерами','мастерах']},
+  'паспорт':{g:'m',sg:['паспорт','паспорта','паспорту','паспорт','паспортом','паспорте'],pl:['паспорта','паспортов','паспортам','паспорта','паспортами','паспортах']},
+  'берег':{g:'m',sg:['берег','берега','берегу','берег','берегом','береге'],pl:['берега','берегов','берегам','берега','берегами','берегах']},
+  'остров':{g:'m',sg:['остров','острова','острову','остров','островом','острове'],pl:['острова','островов','островам','острова','островами','островах']},
+  'голос':{g:'m',sg:['голос','голоса','голосу','голос','голосом','голосе'],pl:['голоса','голосов','голосам','голоса','голосами','голосах']},
+  'край':{g:'m',sg:['край','края','краю','край','краем','крае'],pl:['края','краёв','краям','края','краями','краях']},
+  'счёт':{g:'m',sg:['счёт','счёта','счёту','счёт','счётом','счёте'],pl:['счета','счетов','счетам','счета','счетами','счетах']},
+  'год':{g:'m',sg:['год','года','году','год','годом','годе'],pl:['годы','лет','годам','годы','годами','годах']},
+  // maschili animati in -а/-я con genitivo plurale irregolare
+  'дядя':{g:'m',an:1,sg:['дядя','дяди','дяде','дядю','дядей','дяде'],pl:['дяди','дядей','дядям','дядей','дядями','дядях']},
+  // altri maschili con vocale mobile nella radice
+  'лоб':{g:'m',sg:['лоб','лба','лбу','лоб','лбом','лбу'],pl:['лбы','лбов','лбам','лбы','лбами','лбах']},
+  'лев':{g:'m',an:1,sg:['лев','льва','льву','льва','львом','льве'],pl:['львы','львов','львам','львов','львами','львах']},
+  'орёл':{g:'m',an:1,sg:['орёл','орла','орлу','орла','орлом','орле'],pl:['орлы','орлов','орлам','орлов','орлами','орлах']},
   // neutri in -мя e altri neutri irregolari
   'имя':{g:'n',sg:['имя','имени','имени','имя','именем','имени'],pl:['имена','имён','именам','имена','именами','именах']},
   'время':{g:'n',sg:['время','времени','времени','время','временем','времени'],pl:['времена','времён','временам','времена','временами','временах']},
   'семя':{g:'n',sg:['семя','семени','семени','семя','семенем','семени'],pl:['семена','семян','семенам','семена','семенами','семенах']},
+  'колено':{g:'n',sg:['колено','колена','колену','колено','коленом','колене'],pl:['колени','коленей','коленям','колени','коленями','коленях']},
   'племя':{g:'n',sg:['племя','племени','племени','племя','племенем','племени'],pl:['племена','племён','племенам','племена','племенами','племенах']},
   'небо':{g:'n',sg:['небо','неба','небу','небо','небом','небе'],pl:['небеса','небес','небесам','небеса','небесами','небесах']},
   'чудо':{g:'n',sg:['чудо','чуда','чуду','чудо','чудом','чуде'],pl:['чудеса','чудес','чудесам','чудеса','чудесами','чудесах']},
@@ -1065,6 +1088,14 @@ function runVocabolario(){
     const ruEl = document.createElement('div');
     ruEl.className = 'vocab-ru';
     ruEl.textContent = ruWord;
+    const gv = genderOf(ruWord, tipo, tags);   // scritta M/F/N per i sostantivi
+    if(gv){
+      const pill = document.createElement('span');
+      pill.className = 'gpill g'+gv;
+      pill.textContent = {m:'M',f:'F',n:'N'}[gv];
+      pill.title = GENDER_INFO[gv][1];
+      ruEl.appendChild(pill);
+    }
     textDiv.appendChild(ruEl);
     if(translit){
       const tr = document.createElement('div');
