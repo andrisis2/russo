@@ -313,6 +313,27 @@
   .vocab-card.online{border-color:rgba(47,107,237,.3);background:linear-gradient(135deg,var(--card) 0%,#f0f4ff 100%)}
   @media (prefers-color-scheme: dark){.vocab-card.online{background:linear-gradient(135deg,var(--card) 0%,rgba(47,107,237,.06) 100%)}}
 
+  /* ---------- Declinazioni dei sostantivi ---------- */
+  .decl-block{margin-top:8px;width:100%;text-align:left}
+  .decl-toggle{width:100%;padding:9px;border-radius:10px;border:1px dashed var(--line);background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:.12s;display:flex;align-items:center;justify-content:center;gap:6px}
+  .decl-toggle:hover{border-color:var(--accent2);color:var(--accent2)}
+  .decl-toggle.open{border-style:solid;color:var(--accent2);border-color:var(--accent2)}
+  .decl-panel{margin-top:8px;animation:rise .18s ease both}
+  .decl-head{display:flex;align-items:center;gap:8px;margin:0 2px 8px;font-size:13px;color:var(--muted)}
+  .decl-gender{display:inline-flex;align-items:center;gap:5px;font-weight:700;color:var(--accent2);background:rgba(47,107,237,.1);border:1px solid rgba(47,107,237,.25);border-radius:20px;padding:3px 11px}
+  .decl-gender b{font-size:14px}
+  table.decl{border-collapse:collapse;width:100%;font-size:13.5px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  table.decl th,table.decl td{padding:7px 9px;text-align:left;border-bottom:1px solid var(--line)}
+  table.decl thead th{background:var(--card2);color:var(--muted);font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+  table.decl thead th:first-child{width:34%}
+  table.decl tbody tr:last-child td{border-bottom:none}
+  table.decl td.cs{color:var(--muted);font-weight:600;font-size:12px;white-space:nowrap}
+  table.decl td.cs small{display:block;color:var(--muted);font-weight:500;font-size:10px;opacity:.75}
+  table.decl td.ru{font-weight:700;cursor:pointer;color:var(--text)}
+  table.decl td.ru:hover{color:var(--accent2)}
+  table.decl td.ru:active{color:var(--accent)}
+  .decl-note{font-size:11px;color:var(--muted);line-height:1.45;margin-top:7px;padding:0 2px}
+
   /* ---- Alfabeto cirillico ---- */
   .alpha-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}
   .alpha-card{
@@ -677,6 +698,165 @@ function start(mode){
   if(mode==="vika") return runVika();
 }
 
+// ---------- DECLINAZIONE AUTOMATICA DEI SOSTANTIVI (regolare) ----------
+// Genera i 6 casi (singolare + plurale) per i nomi regolari, in base a
+// genere e desinenza. È un'approssimazione: i nomi irregolari e alcune forme
+// (soprattutto il genitivo plurale e l'accento mobile) possono differire.
+const CASE_ROWS = [
+  ['Nominativo','кто? что?','nom'],
+  ['Genitivo','кого? чего?','gen'],
+  ['Dativo','кому? чему?','dat'],
+  ['Accusativo','кого? что?','acc'],
+  ['Strumentale','кем? чем?','ins'],
+  ['Prepositivo','о ком? о чём?','pre'],
+];
+const GENDER_INFO = { m:['m.','maschile'], f:['f.','femminile'], n:['n.','neutro'] };
+
+function _isVowelRu(c){ return 'аеёиоуыэюя'.includes(c); }
+function _ap(stem, end){
+  if(end===undefined||end===null||end==='') return stem;
+  let e=end; const last=stem.slice(-1);
+  if(e[0]==='ы' && 'гкхжчшщ'.includes(last)) e='и'+e.slice(1);        // никогда -ы dopo г,к,х,sibilanti
+  if(e[0]==='о' && 'жчшщц'.includes(last)) e='е'+e.slice(1);          // -о atono → -е dopo sibilanti/ц
+  return stem+e;
+}
+function _fleetingGenPl(stem){
+  const a=stem.slice(-1), b=stem.slice(-2,-1);
+  if(!a||!b||_isVowelRu(a)||_isVowelRu(b)) return stem;               // niente cluster finale
+  if(b==='й') return stem;                                            // войн- (la й è una semivocale): войн, non воен
+  if(b==='ь') return stem.slice(0,-2)+'е'+a;                          // письм- → писем
+  const v=('жчшщ'.includes(b)||'жчшщ'.includes(a))?'е':'о';          // vocale mobile е/о
+  return stem.slice(0,-1)+v+a;
+}
+function _genPlFemSoft(stem){
+  const a=stem.slice(-1);
+  if('жчшщ'.includes(a)) return stem+'ей';
+  const fl=_fleetingGenPl(stem);
+  if(fl!==stem) return fl;                                            // песн- → песен
+  return stem+'ь';                                                    // недел- → недель
+}
+
+function declineNoun(word, tipo, tags){
+  if(!word) return null;
+  word=word.trim();
+  if(/[\s\-]/.test(word)) return null;                  // niente parole composte / locuzioni
+  if(!/^[а-яё]+$/i.test(word)) return null;             // solo una parola cirillica
+  const lw=word.toLowerCase();
+  const tip=(tipo||'').toLowerCase();
+  if(!/sostantiv/.test(tip)) return null;               // declina solo i nomi
+  if(/pl\.\)/.test(tip)) return null;                   // i nomi già plurali non si declinano qui
+  const animate=(tags||[]).some(t=>['animali','persone','famiglia','professioni'].includes(t));
+
+  let g;
+  if(/\(m/.test(tip)) g='m';
+  else if(/\(f/.test(tip)) g='f';
+  else if(/\(n/.test(tip)) g='n';
+  else { const e=lw.slice(-1);                          // tipo 'sostantivo' senza genere → indovina
+    if(e==='а'||e==='я') g='f';
+    else if(e==='о'||e==='е'||e==='ё') g='n';
+    else if(e==='ь') g='f'; else g='m'; }
+
+  const e1=lw.slice(-1), e2=lw.slice(-2);
+  let stem, cls;
+  if(g==='m'){
+    if(e1==='й'){ stem=lw.slice(0,-1); cls='m-j'; }
+    else if(e1==='ь'){ stem=lw.slice(0,-1); cls='m-soft'; }
+    else if(e1==='а'){ stem=lw.slice(0,-1); cls='f-hard'; }   // папа: si declina come femminile
+    else if(e1==='я'){ stem=lw.slice(0,-1); cls='f-soft'; }   // дядя
+    else { stem=lw; cls='m-hard'; }
+  } else if(g==='n'){
+    if(e2==='ие'||e2==='ье'){ stem=lw.slice(0,-1); cls='n-ije'; }
+    else if(e1==='е'||e1==='ё'){ stem=lw.slice(0,-1); cls='n-soft'; }
+    else if(e1==='о'){ stem=lw.slice(0,-1); cls='n-hard'; }
+    else return null;
+  } else {
+    if(e2==='ия'){ stem=lw.slice(0,-1); cls='f-ija'; }
+    else if(e1==='я'){ stem=lw.slice(0,-1); cls='f-soft'; }
+    else if(e1==='а'){ stem=lw.slice(0,-1); cls='f-hard'; }
+    else if(e1==='ь'){ stem=lw.slice(0,-1); cls='f-sign'; }
+    else return null;
+  }
+
+  const sg={}, pl={};
+  function build(nSg,gSg,dSg,iSg,pSg, nPl,gPl,dPl,iPl,pPl, accSgMode){
+    sg.nom=nSg; sg.gen=gSg; sg.dat=dSg; sg.ins=iSg; sg.pre=pSg;
+    pl.nom=nPl; pl.gen=gPl; pl.dat=dPl; pl.ins=iPl; pl.pre=pPl;
+    sg.acc = accSgMode==='nom' ? nSg : accSgMode==='gen' ? (animate?gSg:nSg) : accSgMode;
+    pl.acc = animate ? gPl : nPl;                       // acc. plurale = gen. se animato, nom. altrimenti
+  }
+  if(cls==='m-hard'){
+    const last=stem.slice(-1);
+    const gpl='жчшщ'.includes(last)?stem+'ей':(last==='ц'?stem+'ев':stem+'ов');
+    build(lw,_ap(stem,'а'),_ap(stem,'у'),_ap(stem,'ом'),_ap(stem,'е'),
+          _ap(stem,'ы'),gpl,_ap(stem,'ам'),_ap(stem,'ами'),_ap(stem,'ах'),'gen');
+  } else if(cls==='m-soft'){
+    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'е',
+          stem+'и',stem+'ей',stem+'ям',stem+'ями',stem+'ях','gen');
+  } else if(cls==='m-j'){
+    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'е',
+          stem+'и',stem+'ев',stem+'ям',stem+'ями',stem+'ях','gen');
+  } else if(cls==='n-hard'){
+    build(lw,_ap(stem,'а'),_ap(stem,'у'),_ap(stem,'ом'),_ap(stem,'е'),
+          _ap(stem,'а'),_fleetingGenPl(stem),_ap(stem,'ам'),_ap(stem,'ами'),_ap(stem,'ах'),'nom');
+  } else if(cls==='n-soft'){
+    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'е',
+          stem+'я',stem+'ей',stem+'ям',stem+'ями',stem+'ях','nom');
+  } else if(cls==='n-ije'){
+    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'и',
+          stem+'я',stem+'й',stem+'ям',stem+'ями',stem+'ях','nom');
+  } else if(cls==='f-hard'){
+    build(lw,_ap(stem,'ы'),_ap(stem,'е'),_ap(stem,'ой'),_ap(stem,'е'),
+          _ap(stem,'ы'),_fleetingGenPl(stem),_ap(stem,'ам'),_ap(stem,'ами'),_ap(stem,'ах'),_ap(stem,'у'));
+  } else if(cls==='f-soft'){
+    build(lw,stem+'и',stem+'е',stem+'ей',stem+'е',
+          stem+'и',_genPlFemSoft(stem),stem+'ям',stem+'ями',stem+'ях',stem+'ю');
+  } else if(cls==='f-ija'){
+    build(lw,stem+'и',stem+'и',stem+'ей',stem+'и',
+          stem+'и',stem+'й',stem+'ям',stem+'ями',stem+'ях',stem+'ю');
+  } else if(cls==='f-sign'){
+    build(lw,stem+'и',stem+'и',stem+'ью',stem+'и',
+          stem+'и',stem+'ей',stem+'ям',stem+'ями',stem+'ях','nom');
+  } else return null;
+  return { gender:g, cls, sg, pl };
+}
+
+// Costruisce il blocco UI (pulsante + tabella) per le declinazioni, oppure null.
+function makeDeclensionBlock(word, tipo, tags){
+  const d = declineNoun(word, tipo, tags);
+  if(!d) return null;
+  const [abbr, full] = GENDER_INFO[d.gender];
+  const wrap = document.createElement('div');
+  wrap.className = 'decl-block';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'decl-toggle';
+  btn.innerHTML = '&#128220; Declinazioni';
+  const panel = document.createElement('div');
+  panel.className = 'decl-panel';
+  panel.style.display = 'none';
+  const rows = CASE_ROWS.map(([it, ru, k]) =>
+    `<tr><td class="cs">${it}<small>${ru}</small></td>`+
+    `<td class="ru" data-w="${d.sg[k]}">${d.sg[k]}</td>`+
+    `<td class="ru" data-w="${d.pl[k]}">${d.pl[k]}</td></tr>`).join('');
+  panel.innerHTML =
+    `<div class="decl-head"><span class="decl-gender"><b>${abbr.toUpperCase()}</b> ${full}</span></div>`+
+    `<table class="decl"><thead><tr><th>Caso</th><th>Singolare</th><th>Plurale</th></tr></thead>`+
+    `<tbody>${rows}</tbody></table>`+
+    `<div class="decl-note">Forme generate automaticamente (declinazione regolare). I nomi irregolari e alcune forme — soprattutto il genitivo plurale — possono differire. Tocca una forma per ascoltarla.</div>`;
+  panel.querySelectorAll('td.ru').forEach(td=>{
+    td.onclick = (e)=>{ e.stopPropagation(); speak(td.dataset.w); };
+  });
+  btn.onclick = (e)=>{
+    e.stopPropagation();
+    const open = panel.style.display!=='none';
+    panel.style.display = open ? 'none' : 'block';
+    btn.classList.toggle('open', !open);
+  };
+  wrap.appendChild(btn);
+  wrap.appendChild(panel);
+  return wrap;
+}
+
 // ---------- VOCABOLARIO (dizionario locale + ricerca online) ----------
 function runVocabolario(){
   const stage = header();
@@ -744,7 +924,7 @@ function runVocabolario(){
   stage.appendChild(onlineSection);
 
   // ---- Card unificata ----
-  function makeVocabCard(ruWord, itTrans, {translit=null, online=false}={}){
+  function makeVocabCard(ruWord, itTrans, {translit=null, online=false, tipo=null, tags=null}={}){
     const card = document.createElement('div');
     card.className = 'vocab-card' + (online ? ' online' : '');
 
@@ -810,6 +990,10 @@ function runVocabolario(){
       card.appendChild(picker);
     };
     card.appendChild(addBtn);
+
+    // Declinazioni (solo per i sostantivi locali con genere noto)
+    const decl = makeDeclensionBlock(ruWord, tipo, tags);
+    if(decl) card.appendChild(decl);
     return card;
   }
 
@@ -827,7 +1011,7 @@ function runVocabolario(){
     }
     localSection.appendChild($(`<div class="results-hdr">&#128218; Locale &middot; ${filtered.length} parol${filtered.length===1?'a':'e'}</div>`));
     filtered.slice(0, 60).forEach(w=>{
-      localSection.appendChild(makeVocabCard(w.ru, w.it, {translit:w.translit}));
+      localSection.appendChild(makeVocabCard(w.ru, w.it, {translit:w.translit, tipo:w.tipo, tags:w.tag}));
     });
     if(filtered.length > 60){
       localSection.appendChild($(`<div style="text-align:center;padding:10px;color:var(--muted);font-size:13px">+ altri ${filtered.length-60} — affina la ricerca</div>`));
@@ -1090,11 +1274,14 @@ function runFlash(pool, topicLabel, opts){
         </div>
       </div>`);
     flip.querySelector(".speak").onclick = (e)=>{e.stopPropagation(); speak(c.ru);};
+    // Declinazioni del nome (visibili dopo aver girato la carta, per non svelare la risposta)
+    const decl = makeDeclensionBlock(c.ru, c.tipo, c.tag);
     flip.onclick = ()=>{
       if(flipped) return;
       flipped=true;
       flip.classList.add("flipped");
       controls.classList.remove("hidden");
+      if(decl) decl.style.display='';
       if(!ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 200);
     };
     cardWrap.appendChild(flip);
@@ -1106,6 +1293,7 @@ function runFlash(pool, topicLabel, opts){
     controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); if(need>1){ score[c.id]=0; saveProg(); } i++; show();};
     controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); if(need>1){ score[c.id]=(score[c.id]||0)+1; saveProg(); } i++; show();};
     cardWrap.appendChild(controls);
+    if(decl){ decl.style.display = ruFront ? '' : 'none'; cardWrap.appendChild(decl); }
     if(ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
   }
   show();
