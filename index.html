@@ -976,7 +976,8 @@ function makeDeclensionBlock(word, tipo, tags){
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.className = 'decl-toggle';
-  btn.innerHTML = '&#128220; Declinazioni';
+  // mostra il genere M/F/N già sul pulsante (visibile senza aprire le declinazioni)
+  btn.innerHTML = `&#128220; Declinazioni <span class="gpill g${d.gender}" title="${full}">${abbr.charAt(0).toUpperCase()}</span>`;
   const panel = document.createElement('div');
   panel.className = 'decl-panel';
   panel.style.display = 'none';
