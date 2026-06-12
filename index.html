@@ -728,6 +728,9 @@ const CASE_ROWS = [
 ];
 const GENDER_INFO = { m:['m.','maschile'], f:['f.','femminile'], n:['n.','neutro'] };
 
+// Nomi indeclinabili (prestiti stranieri): hanno un genere ma non si declinano.
+const INDECL_NOUNS = new Set(['кофе','метро','видео','кафе','пальто','такси','радио','кино','меню','шоссе','пианино','какао']);
+
 // Restituisce 'm' | 'f' | 'n' per un sostantivo, oppure null se non è un nome
 // (o se il genere è ambiguo). Usato per la scritta M/F/N sulle flashcard.
 function genderOf(word, tipo, tags){
@@ -737,6 +740,7 @@ function genderOf(word, tipo, tags){
   if(ex) return ex.g;
   const tip = (tipo||'').toLowerCase();
   if(!/sostantiv/.test(tip)) return null;
+  if(/pl\.\)/.test(tip)) return null;               // plurale tantum: niente genere singolare
   if(/\(m/.test(tip)) return 'm';
   if(/\(f/.test(tip)) return 'f';
   if(/\(n/.test(tip)) return 'n';
@@ -762,6 +766,14 @@ function _ap(stem, end){
   if(e[0]==='ы' && 'гкхжчшщ'.includes(last)) e='и'+e.slice(1);        // никогда -ы dopo г,к,х,sibilanti
   if(e[0]==='о' && 'жчшщц'.includes(last)) e='е'+e.slice(1);          // -о atono → -е dopo sibilanti/ц
   return stem+e;
+}
+// desinenze morbide: dopo ж,ч,ш,щ la я→а e la ю→у (es. ночь → ноча́м, non ночям)
+function _soft(stem, end){
+  if('жчшщ'.includes(stem.slice(-1))){
+    if(end[0]==='я') end='а'+end.slice(1);
+    else if(end[0]==='ю') end='у'+end.slice(1);
+  }
+  return stem+end;
 }
 function _fleetingGenPl(stem){
   const a=stem.slice(-1), b=stem.slice(-2,-1);
@@ -867,9 +879,21 @@ const NOUN_EXCEPTIONS = {
   'семья':{g:'f',sg:['семья','семьи','семье','семью','семьёй','семье'],pl:['семьи','семей','семьям','семьи','семьями','семьях']},
   'любовь':{g:'f',sg:['любовь','любви','любви','любовь','любовью','любви'],pl:null},
   'церковь':{g:'f',sg:['церковь','церкви','церкви','церковь','церковью','церкви'],pl:['церкви','церквей','церквям','церкви','церквями','церквях']},
+  // altri irregolari frequenti (vocale mobile, plurale o accusativo irregolare)
+  'цветок':{g:'m',sg:['цветок','цветка','цветку','цветок','цветком','цветке'],pl:['цветы','цветов','цветам','цветы','цветами','цветах']},
+  'снег':{g:'m',sg:['снег','снега','снегу','снег','снегом','снеге'],pl:['снега','снегов','снегам','снега','снегами','снегах']},
+  'ёж':{g:'m',an:1,sg:['ёж','ежа','ежу','ежа','ежом','еже'],pl:['ежи','ежей','ежам','ежей','ежами','ежах']},
+  'муравей':{g:'m',an:1,sg:['муравей','муравья','муравью','муравья','муравьём','муравье'],pl:['муравьи','муравьёв','муравьям','муравьёв','муравьями','муравьях']},
+  'курица':{g:'f',an:1,sg:['курица','курицы','курице','курицу','курицей','курице'],pl:['куры','кур','курам','кур','курами','курах']},
+  'яблоко':{g:'n',sg:['яблоко','яблока','яблоку','яблоко','яблоком','яблоке'],pl:['яблоки','яблок','яблокам','яблоки','яблоками','яблоках']},
+  'лицо':{g:'n',sg:['лицо','лица','лицу','лицо','лицом','лице'],pl:['лица','лиц','лицам','лица','лицами','лицах']},
+  'земля':{g:'f',sg:['земля','земли','земле','землю','землёй','земле'],pl:['земли','земель','землям','земли','землями','землях']},
+  'кухня':{g:'f',sg:['кухня','кухни','кухне','кухню','кухней','кухне'],pl:['кухни','кухонь','кухням','кухни','кухнями','кухнях']},
   // plurale tantum (solo plurale)
   'деньги':{g:'m',sg:null,pl:['деньги','денег','деньгам','деньги','деньгами','деньгах']},
   'часы':{g:'m',sg:null,pl:['часы','часов','часам','часы','часами','часах']},
+  'дети':{g:'m',an:1,sg:null,pl:['дети','детей','детям','детей','детьми','детях']},
+  'волосы':{g:'m',sg:null,pl:['волосы','волос','волосам','волосы','волосами','волосах']},
 };
 // indice normalizzato (ё→е) per tollerare le due grafie
 const NOUN_EXC_NORM = {};
@@ -888,6 +912,7 @@ function declineNoun(word, tipo, tags){
   // eccezioni irregolari (anche per voci taggate 'vocabolo', purché siano nomi noti)
   const ex = NOUN_EXC_NORM[lw.replace(/ё/g,'е')];
   if(ex) return { gender:ex.g, cls:'irregolare', irr:true, sg:_rowObj(ex.sg), pl:_rowObj(ex.pl) };
+  if(INDECL_NOUNS.has(lw)) return null;                 // nomi indeclinabili (кофе, метро…): nessuna declinazione
   const tip=(tipo||'').toLowerCase();
   if(!/sostantiv/.test(tip)) return null;               // declina solo i nomi
   if(/pl\.\)/.test(tip)) return null;                   // i nomi già plurali non si declinano qui
@@ -936,33 +961,37 @@ function declineNoun(word, tipo, tags){
     build(lw,_ap(stem,'а'),_ap(stem,'у'),_ap(stem,'ом'),_ap(stem,'е'),
           _ap(stem,'ы'),gpl,_ap(stem,'ам'),_ap(stem,'ами'),_ap(stem,'ах'),'gen');
   } else if(cls==='m-soft'){
-    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'е',
-          stem+'и',stem+'ей',stem+'ям',stem+'ями',stem+'ях','gen');
+    build(lw,_soft(stem,'я'),_soft(stem,'ю'),stem+'ем',stem+'е',
+          stem+'и',stem+'ей',_soft(stem,'ям'),_soft(stem,'ями'),_soft(stem,'ях'),'gen');
   } else if(cls==='m-j'){
-    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'е',
-          stem+'и',stem+'ев',stem+'ям',stem+'ями',stem+'ях','gen');
+    build(lw,_soft(stem,'я'),_soft(stem,'ю'),stem+'ем',stem+'е',
+          stem+'и',stem+'ев',_soft(stem,'ям'),_soft(stem,'ями'),_soft(stem,'ях'),'gen');
   } else if(cls==='n-hard'){
     build(lw,_ap(stem,'а'),_ap(stem,'у'),_ap(stem,'ом'),_ap(stem,'е'),
           _ap(stem,'а'),_fleetingGenPl(stem),_ap(stem,'ам'),_ap(stem,'ами'),_ap(stem,'ах'),'nom');
   } else if(cls==='n-soft'){
-    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'е',
-          stem+'я',stem+'ей',stem+'ям',stem+'ями',stem+'ях','nom');
+    build(lw,_soft(stem,'я'),_soft(stem,'ю'),stem+'ем',stem+'е',
+          _soft(stem,'я'),stem+'ей',_soft(stem,'ям'),_soft(stem,'ями'),_soft(stem,'ях'),'nom');
   } else if(cls==='n-ije'){
-    build(lw,stem+'я',stem+'ю',stem+'ем',stem+'и',
-          stem+'я',stem+'й',stem+'ям',stem+'ями',stem+'ях','nom');
+    build(lw,_soft(stem,'я'),_soft(stem,'ю'),stem+'ем',stem+'и',
+          _soft(stem,'я'),stem+'й',_soft(stem,'ям'),_soft(stem,'ями'),_soft(stem,'ях'),'nom');
   } else if(cls==='f-hard'){
     build(lw,_ap(stem,'ы'),_ap(stem,'е'),_ap(stem,'ой'),_ap(stem,'е'),
           _ap(stem,'ы'),_fleetingGenPl(stem),_ap(stem,'ам'),_ap(stem,'ами'),_ap(stem,'ах'),_ap(stem,'у'));
   } else if(cls==='f-soft'){
     build(lw,stem+'и',stem+'е',stem+'ей',stem+'е',
-          stem+'и',_genPlFemSoft(stem),stem+'ям',stem+'ями',stem+'ях',stem+'ю');
+          stem+'и',_genPlFemSoft(stem),_soft(stem,'ям'),_soft(stem,'ями'),_soft(stem,'ях'),_soft(stem,'ю'));
   } else if(cls==='f-ija'){
     build(lw,stem+'и',stem+'и',stem+'ей',stem+'и',
-          stem+'и',stem+'й',stem+'ям',stem+'ями',stem+'ях',stem+'ю');
+          stem+'и',stem+'й',_soft(stem,'ям'),_soft(stem,'ями'),_soft(stem,'ях'),_soft(stem,'ю'));
   } else if(cls==='f-sign'){
     build(lw,stem+'и',stem+'и',stem+'ью',stem+'и',
-          stem+'и',stem+'ей',stem+'ям',stem+'ями',stem+'ях','nom');
+          stem+'и',stem+'ей',_soft(stem,'ям'),_soft(stem,'ями'),_soft(stem,'ях'),'nom');
   } else return null;
+  // nomi propri (Китай, Америка…): ripristina la maiuscola iniziale nelle forme
+  if(/^[А-ЯЁ]/.test(word)){
+    for(const o of [sg,pl]) for(const k in o) o[k]=o[k].charAt(0).toUpperCase()+o[k].slice(1);
+  }
   return { gender:g, cls, sg, pl };
 }
 
