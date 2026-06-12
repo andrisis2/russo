@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 13,
+    "versione": 14,
     "aggiornato": "2026-06-11",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -4159,7 +4159,7 @@
     },
     {
       "id": "v308",
-      "tipo": "sostantivo (f.)",
+      "tipo": "sostantivo (pl.)",
       "ru": "сутки",
       "translit": "sútki",
       "it": "giornata (24h)",
@@ -6715,7 +6715,7 @@
     },
     {
       "id": "v521",
-      "tipo": "sostantivo (f.)",
+      "tipo": "sostantivo (pl.)",
       "ru": "сандалии",
       "translit": "sandálii",
       "it": "sandali",
@@ -9631,7 +9631,7 @@
     },
     {
       "id": "v764",
-      "tipo": "sostantivo (f.)",
+      "tipo": "sostantivo (m.)",
       "ru": "изюм",
       "translit": "izyúm",
       "it": "uvetta",
@@ -10003,7 +10003,7 @@
     },
     {
       "id": "v795",
-      "tipo": "sostantivo (f.)",
+      "tipo": "sostantivo (pl.)",
       "ru": "варежки",
       "translit": "váreški",
       "it": "muffole",
@@ -10015,7 +10015,7 @@
     },
     {
       "id": "v796",
-      "tipo": "sostantivo (f.)",
+      "tipo": "sostantivo (pl.)",
       "ru": "колготки",
       "translit": "kalgótki",
       "it": "collant",
@@ -10195,7 +10195,7 @@
     },
     {
       "id": "v811",
-      "tipo": "sostantivo (f.)",
+      "tipo": "sostantivo (pl.)",
       "ru": "тапочки",
       "translit": "tápački",
       "it": "pantofole",
@@ -11899,7 +11899,7 @@
     },
     {
       "id": "v953",
-      "tipo": "sostantivo (f.)",
+      "tipo": "sostantivo (pl.)",
       "ru": "ножницы",
       "translit": "nóžnicy",
       "it": "forbici",
@@ -12211,7 +12211,7 @@
     },
     {
       "id": "v979",
-      "tipo": "sostantivo (m.)",
+      "tipo": "sostantivo (f.)",
       "ru": "бухта",
       "translit": "búkhta",
       "it": "baia",
@@ -12259,7 +12259,7 @@
     },
     {
       "id": "v983",
-      "tipo": "sostantivo (n.)",
+      "tipo": "sostantivo (f.)",
       "ru": "поляна",
       "translit": "palána",
       "it": "radura",
