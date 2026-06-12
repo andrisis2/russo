@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 12,
+    "versione": 13,
     "aggiornato": "2026-06-11",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -309,7 +309,7 @@
     },
     {
       "id": "v011",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "вода",
       "translit": "vadá",
       "it": "acqua",
@@ -324,7 +324,7 @@
     },
     {
       "id": "v012",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "хлеб",
       "translit": "hljeb",
       "it": "pane",
@@ -339,7 +339,7 @@
     },
     {
       "id": "v013",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "дом",
       "translit": "dom",
       "it": "casa",
@@ -353,7 +353,7 @@
     },
     {
       "id": "v014",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "книга",
       "translit": "kníga",
       "it": "libro",
@@ -367,7 +367,7 @@
     },
     {
       "id": "v015",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "друг",
       "translit": "drug",
       "it": "amico",
@@ -382,7 +382,7 @@
     },
     {
       "id": "v016",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "мама",
       "translit": "máma",
       "it": "mamma",
@@ -397,7 +397,7 @@
     },
     {
       "id": "v017",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "окно",
       "translit": "aknó",
       "it": "finestra",
@@ -411,7 +411,7 @@
     },
     {
       "id": "v018",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "имя",
       "translit": "ímja",
       "it": "nome",
@@ -608,7 +608,7 @@
     },
     {
       "id": "v033",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "жаба",
       "translit": "žába",
       "it": "rospo / rana",
@@ -623,7 +623,7 @@
     },
     {
       "id": "v034",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "ёж",
       "translit": "jož",
       "it": "riccio",
@@ -677,7 +677,7 @@
     },
     {
       "id": "v038",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "торт",
       "translit": "tort",
       "it": "torta",
@@ -692,7 +692,7 @@
     },
     {
       "id": "v039",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "папа",
       "translit": "pápa",
       "it": "papà",
@@ -707,7 +707,7 @@
     },
     {
       "id": "v040",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "сестра",
       "translit": "sistrá",
       "it": "sorella",
@@ -722,7 +722,7 @@
     },
     {
       "id": "v041",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "брат",
       "translit": "brat",
       "it": "fratello",
@@ -737,7 +737,7 @@
     },
     {
       "id": "v042",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "урок",
       "translit": "urók",
       "it": "lezione",
@@ -830,7 +830,7 @@
     },
     {
       "id": "v049",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "семья",
       "translit": "simjá",
       "it": "famiglia",
@@ -845,7 +845,7 @@
     },
     {
       "id": "v050",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "собака",
       "translit": "sabáka",
       "it": "cane",
@@ -860,7 +860,7 @@
     },
     {
       "id": "v051",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "машина",
       "translit": "mašína",
       "it": "macchina / auto",
@@ -874,7 +874,7 @@
     },
     {
       "id": "v052",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "фамилия",
       "translit": "família",
       "it": "cognome",
@@ -901,7 +901,7 @@
     },
     {
       "id": "v054",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "телефон",
       "translit": "tilifón",
       "it": "telefono",
@@ -916,7 +916,7 @@
     },
     {
       "id": "v055",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "компьютер",
       "translit": "kampjúter",
       "it": "computer",
@@ -931,7 +931,7 @@
     },
     {
       "id": "v056",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "гитара",
       "translit": "gitára",
       "it": "chitarra",
@@ -946,7 +946,7 @@
     },
     {
       "id": "v057",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "физика",
       "translit": "fízika",
       "it": "fisica",
@@ -961,7 +961,7 @@
     },
     {
       "id": "v058",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "дизайнер",
       "translit": "dizájner",
       "it": "designer",
@@ -976,7 +976,7 @@
     },
     {
       "id": "v059",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "хирург",
       "translit": "hirúrg",
       "it": "chirurgo",
@@ -991,7 +991,7 @@
     },
     {
       "id": "v060",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "жираф",
       "translit": "žiráf",
       "it": "giraffa",
@@ -1020,7 +1020,7 @@
     },
     {
       "id": "v062",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "программист",
       "translit": "pragrammíst",
       "it": "programmatore",
@@ -1034,7 +1034,7 @@
     },
     {
       "id": "v063",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "студент",
       "translit": "studént",
       "it": "studente",
@@ -1048,7 +1048,7 @@
     },
     {
       "id": "v064",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "студентка",
       "translit": "studéntka",
       "it": "studentessa",
@@ -1062,7 +1062,7 @@
     },
     {
       "id": "v065",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "врач",
       "translit": "vrač",
       "it": "medico",
@@ -1076,7 +1076,7 @@
     },
     {
       "id": "v066",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "учитель",
       "translit": "učítelʹ",
       "it": "insegnante (uomo)",
@@ -1090,7 +1090,7 @@
     },
     {
       "id": "v067",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "учительница",
       "translit": "učítelʹnica",
       "it": "insegnante (donna)",
@@ -1104,7 +1104,7 @@
     },
     {
       "id": "v068",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "журналист",
       "translit": "žurnalíst",
       "it": "giornalista",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": "v069",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "инженер",
       "translit": "inžinér",
       "it": "ingegnere",
@@ -1158,7 +1158,7 @@
     },
     {
       "id": "v072",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "сыр",
       "translit": "syr",
       "it": "formaggio",
@@ -1173,7 +1173,7 @@
     },
     {
       "id": "v073",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "рыба",
       "translit": "rýba",
       "it": "pesce",
@@ -1214,7 +1214,7 @@
     },
     {
       "id": "v076",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "университет",
       "translit": "universitét",
       "it": "università",
@@ -1229,7 +1229,7 @@
     },
     {
       "id": "v077",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "аудитория",
       "translit": "auditórija",
       "it": "aula",
@@ -1244,7 +1244,7 @@
     },
     {
       "id": "v078",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "преподаватель",
       "translit": "pripadavátelʹ",
       "it": "docente (universitario)",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": "v082",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "стол",
       "translit": "stol",
       "it": "tavolo",
@@ -1313,7 +1313,7 @@
     },
     {
       "id": "v083",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "стул",
       "translit": "stul",
       "it": "sedia",
@@ -1328,7 +1328,7 @@
     },
     {
       "id": "v084",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "ручка",
       "translit": "rúčka",
       "it": "penna",
@@ -1343,7 +1343,7 @@
     },
     {
       "id": "v085",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "рюкзак",
       "translit": "rjukzák",
       "it": "zaino",
@@ -1358,7 +1358,7 @@
     },
     {
       "id": "v086",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "ночь",
       "translit": "noč",
       "it": "notte",
@@ -1373,7 +1373,7 @@
     },
     {
       "id": "v087",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "кот",
       "translit": "kot",
       "it": "gatto",
@@ -1544,7 +1544,7 @@
     },
     {
       "id": "v100",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "кошка",
       "translit": "kóška",
       "it": "gatta",
@@ -1557,7 +1557,7 @@
     },
     {
       "id": "v101",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "молоко",
       "translit": "malakó",
       "it": "latte",
@@ -1583,7 +1583,7 @@
     },
     {
       "id": "v103",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "кофе",
       "translit": "kófe",
       "it": "caffè",
@@ -1596,7 +1596,7 @@
     },
     {
       "id": "v104",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "сок",
       "translit": "sok",
       "it": "succo",
@@ -1609,7 +1609,7 @@
     },
     {
       "id": "v105",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "яблоко",
       "translit": "jábloko",
       "it": "mela",
@@ -1622,7 +1622,7 @@
     },
     {
       "id": "v106",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "мясо",
       "translit": "mjáso",
       "it": "carne",
@@ -1635,7 +1635,7 @@
     },
     {
       "id": "v107",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "город",
       "translit": "górod",
       "it": "città",
@@ -1648,7 +1648,7 @@
     },
     {
       "id": "v108",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "улица",
       "translit": "úlica",
       "it": "strada / via",
@@ -1661,7 +1661,7 @@
     },
     {
       "id": "v109",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "работа",
       "translit": "rabóta",
       "it": "lavoro",
@@ -1674,7 +1674,7 @@
     },
     {
       "id": "v110",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "день",
       "translit": "denʹ",
       "it": "giorno",
@@ -1687,7 +1687,7 @@
     },
     {
       "id": "v111",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "утро",
       "translit": "útro",
       "it": "mattina",
@@ -1700,7 +1700,7 @@
     },
     {
       "id": "v112",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "вечер",
       "translit": "véčer",
       "it": "sera",
@@ -1713,7 +1713,7 @@
     },
     {
       "id": "v113",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "дочь",
       "translit": "dočʹ",
       "it": "figlia",
@@ -1726,7 +1726,7 @@
     },
     {
       "id": "v114",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "сын",
       "translit": "syn",
       "it": "figlio",
@@ -1739,7 +1739,7 @@
     },
     {
       "id": "v115",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "бабушка",
       "translit": "bábuška",
       "it": "nonna",
@@ -1752,7 +1752,7 @@
     },
     {
       "id": "v116",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "дедушка",
       "translit": "déduška",
       "it": "nonno",
@@ -1765,7 +1765,7 @@
     },
     {
       "id": "v117",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "муж",
       "translit": "muž",
       "it": "marito",
@@ -1778,7 +1778,7 @@
     },
     {
       "id": "v118",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "жена",
       "translit": "žená",
       "it": "moglie",
@@ -2012,7 +2012,7 @@
     },
     {
       "id": "v136",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "квартира",
       "translit": "kvartíra",
       "it": "appartamento",
@@ -2025,7 +2025,7 @@
     },
     {
       "id": "v137",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "комната",
       "translit": "kómnata",
       "it": "stanza",
@@ -2038,7 +2038,7 @@
     },
     {
       "id": "v138",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "кухня",
       "translit": "kúhnja",
       "it": "cucina",
@@ -2051,7 +2051,7 @@
     },
     {
       "id": "v139",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "дверь",
       "translit": "dverʹ",
       "it": "porta",
@@ -2064,7 +2064,7 @@
     },
     {
       "id": "v140",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "кровать",
       "translit": "krovátʹ",
       "it": "letto",
@@ -2077,7 +2077,7 @@
     },
     {
       "id": "v141",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "холодильник",
       "translit": "haladílʹnik",
       "it": "frigorifero",
@@ -2090,7 +2090,7 @@
     },
     {
       "id": "v142",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "стакан",
       "translit": "stakán",
       "it": "bicchiere",
@@ -2103,7 +2103,7 @@
     },
     {
       "id": "v143",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "магазин",
       "translit": "magazín",
       "it": "negozio",
@@ -2116,7 +2116,7 @@
     },
     {
       "id": "v144",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "аптека",
       "translit": "aptéka",
       "it": "farmacia",
@@ -2129,7 +2129,7 @@
     },
     {
       "id": "v145",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "вокзал",
       "translit": "vagzál",
       "it": "stazione",
@@ -2143,7 +2143,7 @@
     },
     {
       "id": "v146",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "метро",
       "translit": "metró",
       "it": "metropolitana",
@@ -2157,7 +2157,7 @@
     },
     {
       "id": "v147",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "ресторан",
       "translit": "restorán",
       "it": "ristorante",
@@ -2170,7 +2170,7 @@
     },
     {
       "id": "v148",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "парк",
       "translit": "park",
       "it": "parco",
@@ -2183,7 +2183,7 @@
     },
     {
       "id": "v149",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "голова",
       "translit": "galavá",
       "it": "testa",
@@ -2196,7 +2196,7 @@
     },
     {
       "id": "v150",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "рука",
       "translit": "ruká",
       "it": "mano / braccio",
@@ -2209,7 +2209,7 @@
     },
     {
       "id": "v151",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "нога",
       "translit": "nagá",
       "it": "gamba / piede",
@@ -2222,7 +2222,7 @@
     },
     {
       "id": "v152",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "глаз",
       "translit": "glaz",
       "it": "occhio",
@@ -2235,7 +2235,7 @@
     },
     {
       "id": "v153",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "лицо",
       "translit": "licó",
       "it": "viso",
@@ -2248,7 +2248,7 @@
     },
     {
       "id": "v154",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "неделя",
       "translit": "nedélja",
       "it": "settimana",
@@ -2261,7 +2261,7 @@
     },
     {
       "id": "v155",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "месяц",
       "translit": "mésjac",
       "it": "mese",
@@ -2274,7 +2274,7 @@
     },
     {
       "id": "v156",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "год",
       "translit": "god",
       "it": "anno",
@@ -2287,7 +2287,7 @@
     },
     {
       "id": "v157",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "погода",
       "translit": "pagóda",
       "it": "tempo (meteo)",
@@ -2300,7 +2300,7 @@
     },
     {
       "id": "v158",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "дождь",
       "translit": "doždʹ",
       "it": "pioggia",
@@ -2313,7 +2313,7 @@
     },
     {
       "id": "v159",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "снег",
       "translit": "sneg",
       "it": "neve",
@@ -2326,7 +2326,7 @@
     },
     {
       "id": "v160",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "солнце",
       "translit": "sónce",
       "it": "sole",
@@ -2560,7 +2560,7 @@
     },
     {
       "id": "v178",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "одежда",
       "translit": "adéžda",
       "it": "vestiti / abbigliamento",
@@ -2573,7 +2573,7 @@
     },
     {
       "id": "v179",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "рубашка",
       "translit": "rubáška",
       "it": "camicia",
@@ -2586,7 +2586,7 @@
     },
     {
       "id": "v180",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "обувь",
       "translit": "óbuvʹ",
       "it": "scarpe / calzature",
@@ -2599,7 +2599,7 @@
     },
     {
       "id": "v181",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "любовь",
       "translit": "ljubófʹ",
       "it": "amore",
@@ -2612,7 +2612,7 @@
     },
     {
       "id": "v182",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "счастье",
       "translit": "ščástʹje",
       "it": "felicità",
@@ -2625,7 +2625,7 @@
     },
     {
       "id": "v183",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "жизнь",
       "translit": "žiznʹ",
       "it": "vita",
@@ -2638,7 +2638,7 @@
     },
     {
       "id": "v184",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "надежда",
       "translit": "nadéžda",
       "it": "speranza",
@@ -2651,7 +2651,7 @@
     },
     {
       "id": "v185",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "мечта",
       "translit": "mečtá",
       "it": "sogno",
@@ -2664,7 +2664,7 @@
     },
     {
       "id": "v186",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "правда",
       "translit": "právda",
       "it": "verità",
@@ -2677,7 +2677,7 @@
     },
     {
       "id": "v187",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "вопрос",
       "translit": "vaprós",
       "it": "domanda",
@@ -2690,7 +2690,7 @@
     },
     {
       "id": "v188",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "ответ",
       "translit": "atvét",
       "it": "risposta",
@@ -2703,7 +2703,7 @@
     },
     {
       "id": "v189",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "ошибка",
       "translit": "ašíbka",
       "it": "errore",
@@ -2911,7 +2911,7 @@
     },
     {
       "id": "v205",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "природа",
       "translit": "priróda",
       "it": "natura",
@@ -2924,7 +2924,7 @@
     },
     {
       "id": "v206",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "небо",
       "translit": "nébo",
       "it": "cielo",
@@ -2937,7 +2937,7 @@
     },
     {
       "id": "v207",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "море",
       "translit": "móre",
       "it": "mare",
@@ -2950,7 +2950,7 @@
     },
     {
       "id": "v208",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "река",
       "translit": "reká",
       "it": "fiume",
@@ -2963,7 +2963,7 @@
     },
     {
       "id": "v209",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "лес",
       "translit": "les",
       "it": "bosco / foresta",
@@ -2976,7 +2976,7 @@
     },
     {
       "id": "v210",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "гора",
       "translit": "gará",
       "it": "montagna",
@@ -2989,7 +2989,7 @@
     },
     {
       "id": "v211",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "земля",
       "translit": "zemljá",
       "it": "terra",
@@ -3002,7 +3002,7 @@
     },
     {
       "id": "v212",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (m.)",
       "ru": "мир",
       "translit": "mir",
       "it": "mondo / pace",
@@ -3015,7 +3015,7 @@
     },
     {
       "id": "v213",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "общество",
       "translit": "óbščestvo",
       "it": "società",
@@ -3028,7 +3028,7 @@
     },
     {
       "id": "v214",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "развитие",
       "translit": "razvítije",
       "it": "sviluppo",
@@ -3041,7 +3041,7 @@
     },
     {
       "id": "v215",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (f.)",
       "ru": "возможность",
       "translit": "vazmóžnostʹ",
       "it": "possibilità",
@@ -3054,7 +3054,7 @@
     },
     {
       "id": "v216",
-      "tipo": "vocabolo",
+      "tipo": "sostantivo (n.)",
       "ru": "значение",
       "translit": "značénije",
       "it": "significato",
@@ -3391,7 +3391,7 @@
     },
     {
       "id": "v244",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "берег",
       "translit": "béreg",
       "it": "riva / costa",
@@ -3451,7 +3451,7 @@
     },
     {
       "id": "v249",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "дядя",
       "translit": "dáda",
       "it": "zio",
@@ -3499,7 +3499,7 @@
     },
     {
       "id": "v253",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "ветер",
       "translit": "véter",
       "it": "vento",
@@ -3535,7 +3535,7 @@
     },
     {
       "id": "v256",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "зуб",
       "translit": "zub",
       "it": "dente",
@@ -3883,7 +3883,7 @@
     },
     {
       "id": "v285",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "цветок",
       "translit": "cvetók",
       "it": "fiore",
@@ -4783,7 +4783,7 @@
     },
     {
       "id": "v360",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "коллега",
       "translit": "kalléga",
       "it": "collega",
@@ -4831,7 +4831,7 @@
     },
     {
       "id": "v364",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "брюки",
       "translit": "brúki",
       "it": "pantaloni",
@@ -5455,7 +5455,7 @@
     },
     {
       "id": "v416",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "пляж",
       "translit": "plaž",
       "it": "spiaggia",
@@ -5803,7 +5803,7 @@
     },
     {
       "id": "v445",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (f.)",
       "ru": "курица",
       "translit": "kúrica",
       "it": "gallina",
@@ -5875,7 +5875,7 @@
     },
     {
       "id": "v451",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "тигр",
       "translit": "tigr",
       "it": "tigre",
@@ -6055,7 +6055,7 @@
     },
     {
       "id": "v466",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "свитер",
       "translit": "svíter",
       "it": "maglione",
@@ -6151,7 +6151,7 @@
     },
     {
       "id": "v474",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "муравей",
       "translit": "muravéj",
       "it": "formica",
@@ -6223,7 +6223,7 @@
     },
     {
       "id": "v480",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "апельсин",
       "translit": "apelʹsín",
       "it": "arancia",
@@ -6259,7 +6259,7 @@
     },
     {
       "id": "v483",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "джинсы",
       "translit": "džínsy",
       "it": "jeans",
@@ -6319,7 +6319,7 @@
     },
     {
       "id": "v488",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "крокодил",
       "translit": "krakadíl",
       "it": "coccodrillo",
@@ -6439,7 +6439,7 @@
     },
     {
       "id": "v498",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "макароны",
       "translit": "makaróny",
       "it": "pasta",
@@ -6523,7 +6523,7 @@
     },
     {
       "id": "v505",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (n.)",
       "ru": "видео",
       "translit": "vídeo",
       "it": "video",
@@ -6631,7 +6631,7 @@
     },
     {
       "id": "v514",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "деньги",
       "translit": "dénʹgi",
       "it": "soldi",
@@ -7867,7 +7867,7 @@
     },
     {
       "id": "v617",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "дети",
       "translit": "deti",
       "it": "bambini",
@@ -7879,7 +7879,7 @@
     },
     {
       "id": "v618",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "волосы",
       "translit": "volosy",
       "it": "capelli",
@@ -7891,7 +7891,7 @@
     },
     {
       "id": "v619",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "грибы",
       "translit": "griby",
       "it": "funghi",
@@ -7903,7 +7903,7 @@
     },
     {
       "id": "v620",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "носки",
       "translit": "noski",
       "it": "calzini",
@@ -7915,7 +7915,7 @@
     },
     {
       "id": "v621",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "туфли",
       "translit": "tufli",
       "it": "scarpe",
@@ -7927,7 +7927,7 @@
     },
     {
       "id": "v622",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "ботинки",
       "translit": "botinki",
       "it": "stivali",
@@ -7939,7 +7939,7 @@
     },
     {
       "id": "v623",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "перчатки",
       "translit": "perčatki",
       "it": "guanti",
@@ -7951,7 +7951,7 @@
     },
     {
       "id": "v624",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (pl.)",
       "ru": "новости",
       "translit": "novosti",
       "it": "notizie",
@@ -7963,7 +7963,7 @@
     },
     {
       "id": "v625",
-      "tipo": "sostantivo",
+      "tipo": "numero",
       "ru": "двенадцать",
       "translit": "dvenadcatʹ",
       "it": "dodici",
@@ -7975,7 +7975,7 @@
     },
     {
       "id": "v626",
-      "tipo": "sostantivo",
+      "tipo": "numero",
       "ru": "двадцать",
       "translit": "dvadcatʹ",
       "it": "venti",
@@ -7987,7 +7987,7 @@
     },
     {
       "id": "v627",
-      "tipo": "sostantivo",
+      "tipo": "numero",
       "ru": "сорок",
       "translit": "sorok",
       "it": "quaranta",
@@ -7999,7 +7999,7 @@
     },
     {
       "id": "v628",
-      "tipo": "sostantivo",
+      "tipo": "numero",
       "ru": "пятьдесят",
       "translit": "patʹdesat",
       "it": "cinquanta",
@@ -8011,7 +8011,7 @@
     },
     {
       "id": "v629",
-      "tipo": "sostantivo",
+      "tipo": "numero",
       "ru": "сто",
       "translit": "sto",
       "it": "cento",
@@ -8023,7 +8023,7 @@
     },
     {
       "id": "v630",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (m.)",
       "ru": "Китай",
       "translit": "kitaj",
       "it": "Cina",
@@ -8035,7 +8035,7 @@
     },
     {
       "id": "v631",
-      "tipo": "sostantivo",
+      "tipo": "sostantivo (f.)",
       "ru": "Америка",
       "translit": "amerika",
       "it": "America",
