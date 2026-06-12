@@ -2,6 +2,13 @@
 
 App PWA per imparare il russo, alimentata dai video di "Russo Facile con Yula".
 
+## 🌳 Git: parti SEMPRE da origin/main quando crei un branch
+**Il `main` locale può essere disallineato da `origin/main`** (è già successo: storie del tutto scollegate, senza antenato comune, perché l'ambiente remoto a volte clona un `main` vecchio/orfano). `origin/main` è l'UNICA fonte di verità (da lì pubblica GitHub Pages). Quindi:
+- **Prima di creare un branch** fai sempre: `git fetch origin` e poi `git checkout -B <nuovo-branch> origin/main` (NON `git checkout -b <branch>` dal main locale).
+- **Non fidarti del `main` locale** senza prima un `git fetch`. Per controllare l'allineamento: `git merge-base main origin/main` (se è vuoto, le storie sono scollegate → ricrea il branch da `origin/main`).
+- Se devi lavorare su `main`: `git fetch origin && git checkout main && git reset --hard origin/main`.
+- Imposta `git config pull.ff only` per evitare il prompt "Need to specify how to reconcile divergent branches".
+
 ## ⚙️ Workflow merge (preferenza dell'utente)
 Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura PR) **fai tu il merge della PR senza chiedere conferma**: porta la PR da draft a "ready" e fai squash-merge su `main`. **Non chiedere "vuoi che faccia il merge?"** — è già autorizzato in modo permanente. Comunica solo l'esito (PR mergiata + link). Se invece qualcosa è ambiguo o rischioso nel *contenuto* della modifica, chiedi pure prima di procedere; l'auto-merge riguarda solo il passaggio finale di integrazione.
 
