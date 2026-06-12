@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 14,
+    "versione": 15,
     "aggiornato": "2026-06-11",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -20054,7 +20054,8 @@
       "it": "Mi chiamo Andrea.",
       "tag": [
         "presentarsi",
-        "lezione-1"
+        "lezione-1",
+        "video-05"
       ],
       "difficolta": 2,
       "aggiunto": "2026-06-05"
@@ -20269,18 +20270,6 @@
       "ru": "Как вас зовут?",
       "translit": "Kak vas zavút?",
       "it": "Come si chiama? (formale)",
-      "tag": [
-        "presentarsi",
-        "video-05"
-      ],
-      "difficolta": 2,
-      "aggiunto": "2026-06-05"
-    },
-    {
-      "id": "f020",
-      "ru": "Меня зовут Андрей.",
-      "translit": "Minjá zavút Andréj.",
-      "it": "Mi chiamo Andrea.",
       "tag": [
         "presentarsi",
         "video-05"
@@ -20525,7 +20514,9 @@
       "it": "Oggi c'è bel tempo.",
       "tag": [
         "quotidiano",
-        "extra-frasi"
+        "extra-frasi",
+        "meteo",
+        "conversazione"
       ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
@@ -20538,7 +20529,8 @@
       "tag": [
         "viaggio",
         "domande",
-        "extra-frasi"
+        "extra-frasi",
+        "shopping"
       ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
@@ -21279,7 +21271,8 @@
       "it": "Abbiamo una famiglia grande.",
       "tag": [
         "famiglia",
-        "extra-frasi"
+        "extra-frasi",
+        "presentarsi"
       ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
@@ -21415,7 +21408,9 @@
       "tag": [
         "viaggio",
         "quotidiano",
-        "extra-frasi"
+        "extra-frasi",
+        "ristorante",
+        "cibo"
       ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
@@ -21884,18 +21879,6 @@
       "aggiunto": "2026-06-11"
     },
     {
-      "id": "f152",
-      "ru": "Я хочу заказать пиццу.",
-      "translit": "Ja hačú zakazátʹ píccu.",
-      "it": "Voglio ordinare una pizza.",
-      "tag": [
-        "ristorante",
-        "cibo"
-      ],
-      "difficolta": 1,
-      "aggiunto": "2026-06-11"
-    },
-    {
       "id": "f153",
       "ru": "Принесите мне, пожалуйста, меню.",
       "translit": "Prinesíte mne, požálujsta, menjú.",
@@ -22004,18 +21987,6 @@
       "aggiunto": "2026-06-11"
     },
     {
-      "id": "f162",
-      "ru": "У нас большая семья.",
-      "translit": "U nas balʹšája semʹjá.",
-      "it": "Abbiamo una famiglia grande.",
-      "tag": [
-        "famiglia",
-        "presentarsi"
-      ],
-      "difficolta": 1,
-      "aggiunto": "2026-06-11"
-    },
-    {
       "id": "f163",
       "ru": "Мои бабушка и дедушка живут в деревне.",
       "translit": "Maji bábušk i déduška živút v derévne.",
@@ -22025,18 +21996,6 @@
         "luogo"
       ],
       "difficolta": 2,
-      "aggiunto": "2026-06-11"
-    },
-    {
-      "id": "f164",
-      "ru": "Сегодня хорошая погода.",
-      "translit": "Sevodnja harošaja pagóda.",
-      "it": "Oggi c'è bel tempo.",
-      "tag": [
-        "meteo",
-        "conversazione"
-      ],
-      "difficolta": 1,
       "aggiunto": "2026-06-11"
     },
     {
@@ -22149,18 +22108,6 @@
         "trasporti"
       ],
       "difficolta": 2,
-      "aggiunto": "2026-06-11"
-    },
-    {
-      "id": "f174",
-      "ru": "Сколько это стоит?",
-      "translit": "Skólʹko èto stóit?",
-      "it": "Quanto costa?",
-      "tag": [
-        "shopping",
-        "domande"
-      ],
-      "difficolta": 1,
       "aggiunto": "2026-06-11"
     },
     {
