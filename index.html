@@ -8,6 +8,9 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <!-- splash screen iOS per ogni modello iPhone -->
@@ -24,8 +27,8 @@
     --bg:#eef1f8; --bg2:#f8fafd;
     --card:#ffffff; --card2:#eef2f9; --line:#e3e8f1;
     --text:#16203a; --muted:#6c7891; --accent:#e2384b; --accent2:#2f6bed;
-    --good:#16a34a; --bad:#dc2626; --radius:18px;
-    --shadow-sm:0 1px 2px rgba(16,24,40,.06);
+    --good:#16a34a; --bad:#dc2626; --radius:20px;
+    --shadow-sm:0 2px 4px rgba(16,24,40,.08);
     --shadow:0 1px 3px rgba(16,24,40,.05), 0 10px 26px rgba(16,24,40,.07);
     --shadow-lg:0 6px 16px rgba(16,24,40,.08), 0 18px 40px rgba(16,24,40,.10);
   }
@@ -112,7 +115,7 @@
   html,body{margin:0;height:100%}
   body{
     background:linear-gradient(180deg,var(--bg2) 0%,var(--bg) 240px) fixed; color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
     display:flex; flex-direction:column; min-height:100dvh;
     padding-bottom:env(safe-area-inset-bottom);
     -webkit-font-smoothing:antialiased;
@@ -144,22 +147,24 @@
   .tile:hover{transform:translateY(-3px); box-shadow:var(--shadow); border-color:transparent}
   .tile .ico{
     font-size:26px; width:50px; height:50px; display:flex; align-items:center; justify-content:center;
-    background:var(--card2); border-radius:14px; line-height:1;
+    background:var(--card2); border-radius:16px; line-height:1;
+    transition: transform .2s ease, box-shadow .2s ease;
   }
+  .tile:hover .ico{ transform: scale(1.08); }
   .tile .t{font-weight:700; font-size:16px; letter-spacing:.2px}
   .tile .d{font-size:12.5px; color:var(--muted); line-height:1.45}
   .tile .badge{font-size:11px;color:var(--accent);font-weight:600}
   .stats{display:flex;gap:10px;margin:2px 0 18px;flex-wrap:wrap}
   .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;flex:1;min-width:84px;text-align:center;box-shadow:var(--shadow-sm)}
-  .stat b{display:block;font-size:24px;font-weight:800;letter-spacing:-.5px}
-  .stat:nth-child(3) b{color:var(--good)}
-  .stat:nth-child(4) b{color:var(--accent)}
+  .stat b{display:block;font-size:24px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,var(--text),var(--muted));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .stat:nth-child(3) b{background:linear-gradient(135deg,var(--good),#4ade80);-webkit-background-clip:text;background-clip:text}
+  .stat:nth-child(4) b{background:linear-gradient(135deg,var(--accent),#f97316);-webkit-background-clip:text;background-clip:text}
   .stat span{font-size:11px;color:var(--muted)}
 
   /* card / esercizio */
   .stage{display:flex;flex-direction:column;align-items:center;gap:18px}
   .progress{width:100%;height:8px;background:var(--card2);border-radius:8px;overflow:hidden}
-  .progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:0;transition:.3s;border-radius:8px}
+  .progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2),#a855f7);width:0;transition:.4s cubic-bezier(.4,0,.2,1);border-radius:8px}
   .flip{width:100%; cursor:pointer; perspective:1400px}
   .flash{
     position:relative; width:100%; min-height:240px;
@@ -202,7 +207,7 @@
   .btn.good:hover{background:rgba(22,163,74,.16)}
   .btn.bad{background:rgba(220,38,38,.08);border-color:var(--bad);color:var(--bad)}
   .btn.bad:hover{background:rgba(220,38,38,.14)}
-  .btn.primary{background:linear-gradient(90deg,var(--accent),#f0526a);border-color:transparent;color:#fff;box-shadow:0 6px 16px rgba(226,56,75,.28)}
+  .btn.primary{background:linear-gradient(135deg,var(--accent),#f0526a,#ff7a8a);border-color:transparent;color:#fff;box-shadow:0 6px 20px rgba(226,56,75,.35)}
   .btn.primary:hover{filter:brightness(1.04)}
   .options{display:flex;flex-direction:column;gap:10px;width:100%}
   .opt{
@@ -228,9 +233,22 @@
   .tile.wide{
     grid-column:1/-1;flex-direction:row;align-items:center;min-height:auto;gap:16px;
     background:linear-gradient(120deg,#fff 0%,#fbf3f4 100%);
+    border-left: 3px solid var(--accent);
   }
   .tile.wide .ico{font-size:30px;width:58px;height:58px;background:rgba(226,56,75,.10)}
   .tile.wide .txt{display:flex;flex-direction:column;gap:6px}
+
+  /* Colori specifici per i tile della home */
+  .tile[data-mode="daily"] .ico { background: linear-gradient(135deg,#ff6b35,#f7c59f); color:#fff; }
+  .tile[data-mode="flash"] .ico { background: linear-gradient(135deg,#4158D0,#C850C0); color:#fff; }
+  .tile[data-mode="cyr"] .ico  { background: linear-gradient(135deg,#0093E9,#80D0C7); color:#fff; }
+  .tile[data-mode="conj"] .ico { background: linear-gradient(135deg,#f7971e,#ffd200); color:#fff; }
+  .tile[data-mode="gram"] .ico { background: linear-gradient(135deg,#e2384b,#ff8e9e); color:#fff; }
+  .tile[data-mode="phrase"] .ico{ background: linear-gradient(135deg,#56CCF2,#2F80ED); color:#fff; }
+  .tile[data-mode="memory"] .ico{ background: linear-gradient(135deg,#a18cd1,#fbc2eb); color:#fff; }
+  .tile[data-mode="vocab"] .ico { background: linear-gradient(135deg,#11998e,#38ef7d); color:#fff; }
+  .tile[data-mode="vika"] .ico  { background: linear-gradient(135deg,#2193b0,#6dd5ed); color:#fff; }
+  .tile[data-mode="ref"] .ico   { background: linear-gradient(135deg,#834d9b,#d04ed6); color:#fff; }
 
   /* ---------- Regole grammaticali (riferimento) ---------- */
   .ref-nav{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;width:100%;-webkit-overflow-scrolling:touch}
@@ -448,6 +466,10 @@
     .tile:hover{transform:translateY(-4px)}
     .alpha-card:hover{transform:translateY(-3px)}
   }
+
+  /* animazione float sottile sulla carta flashcard (fronte) */
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+  .flip:not(.flipped) .face.front{ animation: float 3s ease-in-out infinite; }
 </style>
 </head>
 <body>
@@ -723,7 +745,7 @@ function renderHome(){
   ];
   tiles.forEach(([ico,t,d,mode])=>{
     grid.appendChild($(`
-      <button class="tile">
+      <button class="tile" data-mode="${mode}">
         <div class="ico">${ico}</div>
         <div class="t">${t}</div>
         <div class="d">${d}</div>
