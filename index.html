@@ -725,8 +725,8 @@ function renderHome(){
     ? `${dueCnt} carte da ripassare${streakHtml}`
     : `Tutto in pari &mdash; nessuna carta oggi${streakHtml}`;
   const dailyTile = $(`
-    <button class="tile wide" style="margin-bottom:14px;background:linear-gradient(120deg,var(--card) 0%,rgba(226,56,75,.08) 100%)">
-      <div class="ico" style="background:rgba(226,56,75,.10)">${streak>0?"&#128293;":"&#128197;"}</div>
+    <button class="tile wide" data-mode="daily" style="margin-bottom:14px;background:linear-gradient(120deg,var(--card) 0%,rgba(226,56,75,.08) 100%)">
+      <div class="ico">${streak>0?"&#128293;":"&#128197;"}</div>
       <div class="txt">
         <div class="t">Ripasso del giorno</div>
         <div class="d">${dailyDesc}</div>
@@ -752,15 +752,15 @@ function renderHome(){
       </button>`)).onclick = ()=>start(mode);
   });
   grid.appendChild($(`
-    <button class="tile wide">
-      <div class="ico" style="background:rgba(47,107,237,.10)">&#128214;</div>
+    <button class="tile wide" data-mode="vocab">
+      <div class="ico">&#128214;</div>
       <div class="txt">
         <div class="t">Vocabolario</div>
         <div class="d">Dizionario locale + ricerca online &mdash; salva le parole nelle flashcard</div>
       </div>
     </button>`)).onclick = ()=>start("vocab");
   grid.appendChild($(`
-    <button class="tile wide">
+    <button class="tile wide" data-mode="vika">
       <div class="ico">&#127897;&#65039;</div>
       <div class="txt">
         <div class="t">Conversa con Vika</div>
@@ -769,7 +769,7 @@ function renderHome(){
     </button>`)).onclick = ()=>start("vika");
   if(DB.riferimento && DB.riferimento.length){
     grid.appendChild($(`
-      <button class="tile wide">
+      <button class="tile wide" data-mode="ref">
         <div class="ico">&#128218;</div>
         <div class="txt">
           <div class="t">Regole grammaticali</div>
