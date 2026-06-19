@@ -869,7 +869,7 @@ function renderHome(){
     if(_swX===null) return;
     const dx = e.changedTouches[0].clientX - _swX;
     _swX = null;
-    if(Math.abs(dx)<50) return;
+    if(Math.abs(dx)<20) return;
     const cur = TABS.indexOf(activeTab);
     if(dx < 0 && cur < TABS.length-1) renderTab(TABS[cur+1], 'left');  // swipe sinistra → teoria
     if(dx > 0 && cur > 0)             renderTab(TABS[cur-1], 'right'); // swipe destra  → pratica
