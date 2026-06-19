@@ -470,6 +470,11 @@
   .home-tab{flex:1;padding:10px 6px;border-radius:10px;border:none;background:none;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;transition:.15s;line-height:1.3}
   .home-tab.active{background:var(--card);color:var(--text);box-shadow:var(--shadow-sm)}
   .home-tab:hover:not(.active){color:var(--text)}
+  .grid-wrap{overflow:hidden;width:100%}
+  @keyframes slideInLeft{from{transform:translateX(38px);opacity:0}to{transform:translateX(0);opacity:1}}
+  @keyframes slideInRight{from{transform:translateX(-38px);opacity:0}to{transform:translateX(0);opacity:1}}
+  .slide-left{animation:slideInLeft .22s cubic-bezier(.22,.68,0,1.2) both}
+  .slide-right{animation:slideInRight .22s cubic-bezier(.22,.68,0,1.2) both}
 
   /* ---- Sezione Verbi ---- */
   .verb-cat-ico{font-size:24px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--card2);border-radius:14px;flex-shrink:0;transition:transform .2s}
@@ -775,8 +780,9 @@ function renderHome(){
   </div>`);
   app.appendChild(tabsDiv);
 
-  const grid = $(`<div class="grid"></div>`);
-  app.appendChild(grid);
+  const gridWrap = $(`<div class="grid-wrap"></div>`);
+  app.appendChild(gridWrap);
+  let grid = null;
 
   function mkTile(ico, t, d, mode, wide=false, style=''){
     const el = $(`<button class="tile${wide?' wide':''}" data-mode="${mode}"${style?' style="'+style+'"':''}>
@@ -788,11 +794,16 @@ function renderHome(){
     return el;
   }
 
-  function renderTab(tab){
+  const TABS = ['pratica','teoria'];
+  function renderTab(tab, dir){
+    const prevTab = activeTab;
     activeTab = tab;
     localStorage.setItem('russo_home_tab', tab);
     tabsDiv.querySelectorAll('.home-tab').forEach(b=>b.classList.toggle('active', b.dataset.tab===tab));
-    grid.innerHTML = '';
+    grid = $(`<div class="grid"></div>`);
+    if(dir){ grid.classList.add(dir==='left' ? 'slide-left' : 'slide-right'); }
+    gridWrap.innerHTML = '';
+    gridWrap.appendChild(grid);
 
     if(tab === 'pratica'){
       // Ripasso del giorno — tile in evidenza
@@ -843,10 +854,15 @@ function renderHome(){
     }
   }
 
-  tabsDiv.querySelectorAll('.home-tab').forEach(b=>b.onclick=()=>renderTab(b.dataset.tab));
+  tabsDiv.querySelectorAll('.home-tab').forEach(b=>{
+    b.onclick=()=>{
+      const dir = TABS.indexOf(b.dataset.tab) > TABS.indexOf(activeTab) ? 'left' : 'right';
+      renderTab(b.dataset.tab, dir);
+    };
+  });
   renderTab(activeTab);
 
-  // Swipe sinistra/destra per cambiare tab
+  // Swipe sinistra/destra per cambiare tab con animazione
   let _swX=null;
   app.addEventListener('touchstart', e=>{ _swX = e.touches[0].clientX; }, {passive:true});
   app.addEventListener('touchend', e=>{
@@ -854,10 +870,9 @@ function renderHome(){
     const dx = e.changedTouches[0].clientX - _swX;
     _swX = null;
     if(Math.abs(dx)<50) return;
-    const tabs = ['pratica','teoria'];
-    const cur = tabs.indexOf(activeTab);
-    if(dx < 0 && cur < tabs.length-1) renderTab(tabs[cur+1]);   // swipe sinistra → teoria
-    if(dx > 0 && cur > 0)             renderTab(tabs[cur-1]);   // swipe destra  → pratica
+    const cur = TABS.indexOf(activeTab);
+    if(dx < 0 && cur < TABS.length-1) renderTab(TABS[cur+1], 'left');  // swipe sinistra → teoria
+    if(dx > 0 && cur > 0)             renderTab(TABS[cur-1], 'right'); // swipe destra  → pratica
   }, {passive:true});
 
   app.appendChild($(`<p class="muted" style="margin-top:22px">Livello A1 · ${DB.meta.aggiornato}<br>Apri il menu del browser e scegli <b>"Aggiungi a schermata Home"</b> per usarla come app.</p>`));
@@ -1616,9 +1631,9 @@ function runVerboDetail(v){
 function runEsercizi(){
   const stage = header();
 
-  const titleRow = $(`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"></div>`);
-  titleRow.appendChild($(`<b style="font-size:18px">Esercizi</b>`));
-  const resetBtn = $(`<button style="border:1px solid var(--bad);background:none;color:var(--bad);border-radius:10px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer">🗑 Reset</button>`);
+  const titleRow = $(`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px"></div>`);
+  titleRow.appendChild($(`<b style="font-size:20px">📋 Esercizi</b>`));
+  const resetBtn = $(`<button style="border:1px solid var(--bad);background:none;color:var(--bad);border-radius:10px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer;opacity:.75">🗑 Reset</button>`);
   resetBtn.onclick = ()=>{
     if(!confirm('Eliminare tutti gli esercizi salvati?')) return;
     saveEses({voci:[],verbi:[]});
@@ -1627,72 +1642,95 @@ function runEsercizi(){
   titleRow.appendChild(resetBtn);
   stage.appendChild(titleRow);
 
-  const container = $(`<div></div>`);
+  const container = $(`<div style="display:flex;flex-direction:column;gap:16px"></div>`);
   stage.appendChild(container);
+
+  function mkSection(ico, title, count){
+    const sec = $(`<div style="background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm)"></div>`);
+    const hdr = $(`<div style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--card2)">
+      <span style="font-size:20px">${ico}</span>
+      <span style="font-size:15px;font-weight:700;flex:1">${title}</span>
+      <span style="font-size:12px;color:var(--muted);background:var(--line);border-radius:20px;padding:2px 10px;font-weight:600">${count}</span>
+    </div>`);
+    sec.appendChild(hdr);
+    return sec;
+  }
 
   function renderEsercizi(){
     container.innerHTML = '';
     const s = esesStore();
 
     // ---- Sezione flashcard ----
-    const vHdr = $(`<div class="ese-section-hdr">&#128218; Flashcard salvate <span class="ese-count">${s.voci.length}</span></div>`);
-    container.appendChild(vHdr);
+    const vSec = mkSection('📚', 'Flashcard salvate', s.voci.length);
+    container.appendChild(vSec);
+    const vBody = $(`<div style="padding:12px 14px"></div>`);
+    vSec.appendChild(vBody);
 
     if(!s.voci.length){
-      container.appendChild($(`<p style="color:var(--muted);font-size:14px;margin:6px 0 14px">Nessuna parola salvata. Vai su <b>Vocabolario</b> e premi "Aggiungi agli esercizi".</p>`));
+      vBody.appendChild($(`<p style="color:var(--muted);font-size:14px;margin:4px 0 2px;text-align:center;padding:8px 0">Nessuna parola salvata.<br><span style="font-size:12px">Vai su <b>Vocabolario</b> → Aggiungi agli esercizi</span></p>`));
     } else {
-      // Pulsante per studiare le flashcard salvate
-      const studyBtn = $(`<button class="btn" style="margin-bottom:12px;width:100%">▶ Studia (${s.voci.length} carte)</button>`);
+      const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:12px;font-size:15px">▶ Studia flashcard (${s.voci.length})</button>`);
       studyBtn.onclick = ()=>navigateTo(()=>runFlash(s.voci, 'Esercizi'));
-      container.appendChild(studyBtn);
+      vBody.appendChild(studyBtn);
 
-      const vList = $(`<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:16px"></div>`);
+      const vList = $(`<div style="display:flex;flex-direction:column;gap:6px"></div>`);
       s.voci.forEach(w=>{
-        const row = $(`<div style="display:flex;align-items:center;gap:10px;background:var(--card);border-radius:12px;padding:10px 14px;border:1px solid var(--line)"></div>`);
-        const txt = $(`<div style="flex:1"><div style="font-size:16px;font-weight:600">${w.ru}</div><div style="font-size:13px;color:var(--muted)">${w.it}</div></div>`);
-        const del = $(`<button style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--muted);padding:4px" title="Rimuovi">✕</button>`);
+        const row = $(`<div style="display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:10px;padding:9px 12px"></div>`);
+        const spk = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;padding:0;flex-shrink:0" title="Ascolta">🔊</button>`);
+        spk.onclick = ()=>speak(w.ru);
+        const txt = $(`<div style="flex:1;min-width:0"><div style="font-size:15px;font-weight:700;color:var(--text)">${w.ru}</div><div style="font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${w.it}</div></div>`);
+        const del = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted);padding:4px;flex-shrink:0" title="Rimuovi">✕</button>`);
         del.onclick = ()=>{ removeEsesVoce(w.id); renderEsercizi(); };
-        row.appendChild(txt); row.appendChild(del);
+        row.appendChild(spk); row.appendChild(txt); row.appendChild(del);
         vList.appendChild(row);
       });
-      container.appendChild(vList);
+      vBody.appendChild(vList);
     }
 
     // ---- Sezione verbi ----
     const allVerbi = DB.verbi || [];
     const savedVerbi = s.verbi.map(id=>allVerbi.find(v=>v.id===id)).filter(Boolean);
-    const bHdr = $(`<div class="ese-section-hdr">&#9999;&#65039; Verbi salvati <span class="ese-count">${savedVerbi.length}</span></div>`);
-    container.appendChild(bHdr);
+    const bSec = mkSection('✏️', 'Verbi salvati', savedVerbi.length);
+    container.appendChild(bSec);
+    const bBody = $(`<div style="padding:12px 14px"></div>`);
+    bSec.appendChild(bBody);
 
     if(!savedVerbi.length){
-      container.appendChild($(`<p style="color:var(--muted);font-size:14px;margin:6px 0 14px">Nessun verbo salvato. Vai su <b>Verbi</b> e premi "Aggiungi agli esercizi".</p>`));
+      bBody.appendChild($(`<p style="color:var(--muted);font-size:14px;margin:4px 0 2px;text-align:center;padding:8px 0">Nessun verbo salvato.<br><span style="font-size:12px">Vai su <b>Verbi</b> → Aggiungi agli esercizi</span></p>`));
     } else {
-      const bList = $(`<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:16px"></div>`);
+      // Pulsante allenamento coniugazione
+      const trainBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:12px;font-size:15px">⚡ Allenati: coniugazione (${savedVerbi.length} verb${savedVerbi.length===1?'o':'i'})</button>`);
+      trainBtn.onclick = ()=>navigateTo(()=>runConjugation(CONJ_TENSES_RU.map(t=>t.key), savedVerbi));
+      bBody.appendChild(trainBtn);
+
+      const bList = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
       savedVerbi.forEach(v=>{
         const coniugazioni = v.coniugazioni || {};
         const tenses = CONJ_TENSES_RU.filter(t=>coniugazioni[t.key]&&coniugazioni[t.key].length);
-        const row = $(`<div style="background:var(--card);border-radius:12px;padding:12px 14px;border:1px solid var(--line)"></div>`);
-        const top = $(`<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"></div>`);
-        top.appendChild($(`<div style="flex:1"><div style="font-size:17px;font-weight:700">${v.inf}</div><div style="font-size:13px;color:var(--muted)">${v.en||''}</div></div>`));
-        const del = $(`<button style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--muted);padding:4px" title="Rimuovi">✕</button>`);
+        const row = $(`<div style="background:var(--card2);border-radius:12px;overflow:hidden"></div>`);
+        const top = $(`<div style="display:flex;align-items:center;gap:10px;padding:10px 12px"></div>`);
+        const spk = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;padding:0;flex-shrink:0">🔊</button>`);
+        spk.onclick = ()=>speak(v.inf);
+        top.appendChild(spk);
+        top.appendChild($(`<div style="flex:1"><div style="font-size:16px;font-weight:700">${v.inf}</div><div style="font-size:12px;color:var(--muted)">${v.en||''}</div></div>`));
+        const del = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted);padding:4px;flex-shrink:0" title="Rimuovi">✕</button>`);
         del.onclick = ()=>{ removeEsesVerbo(v.id); renderEsercizi(); };
         top.appendChild(del);
         row.appendChild(top);
 
-        // Mini coniugazione interattiva
         if(tenses.length){
           let activeTense = tenses[0].key;
-          const tRow = $(`<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px"></div>`);
+          const tRow = $(`<div style="display:flex;flex-wrap:wrap;gap:5px;padding:0 12px 8px"></div>`);
           const tBtns = {};
           for(const t of tenses){
-            const b = $(`<button class="tense-btn" style="font-size:11px;padding:4px 10px">${t.label}</button>`);
+            const b = $(`<button class="tense-btn" style="font-size:11px;padding:3px 9px">${t.label}</button>`);
             b.onclick = ()=>{ activeTense=t.key; Object.entries(tBtns).forEach(([k,x])=>x.classList.toggle('active',k===activeTense)); renderMiniConj(); };
             tRow.appendChild(b); tBtns[t.key]=b;
           }
           tBtns[activeTense].classList.add('active');
           row.appendChild(tRow);
 
-          const conjDiv = $(`<div></div>`);
+          const conjDiv = $(`<div style="padding:0 12px 10px"></div>`);
           row.appendChild(conjDiv);
           function renderMiniConj(){
             conjDiv.innerHTML='';
@@ -1702,10 +1740,10 @@ function runEsercizi(){
             forms.forEach((form,i)=>{
               const tr=document.createElement('tr');
               const tdP=document.createElement('td');
-              tdP.style.cssText='padding:4px 8px;color:var(--muted);font-size:12px;width:40%';
+              tdP.style.cssText='padding:3px 6px;color:var(--muted);font-size:12px;width:38%';
               tdP.textContent=pronouns[i]||'';
               const tdF=document.createElement('td');
-              tdF.style.cssText='padding:4px 8px;font-size:15px;font-weight:700;cursor:pointer';
+              tdF.style.cssText='padding:3px 6px;font-size:14px;font-weight:700;cursor:pointer;color:var(--text)';
               tdF.textContent=form;
               tdF.onclick=()=>speak(form);
               tr.appendChild(tdP); tr.appendChild(tdF); tbl.appendChild(tr);
@@ -1716,7 +1754,7 @@ function runEsercizi(){
         }
         bList.appendChild(row);
       });
-      container.appendChild(bList);
+      bBody.appendChild(bList);
     }
   }
 
@@ -2125,8 +2163,8 @@ function playMemory(pairs){
 }
 
 // ---------- 2. CONIUGAZIONE ----------
-function runConjugation(tenseFilter){
-  const verbi = DB.verbi || [];
+function runConjugation(tenseFilter, verbiPool){
+  const verbi = verbiPool || DB.verbi || [];
   if(!verbi.length){
     const stage = header();
     stage.appendChild($(`<p class="muted" style="text-align:center;padding:30px">Nessun verbo disponibile.</p>`));
