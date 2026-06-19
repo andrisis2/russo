@@ -826,12 +826,12 @@ function renderHome(){
       [
         ["&#127183;","Flashcard","SRS per argomento","flash"],
         ["&#9999;&#65039;","Coniugazione","Allena le forme verbali","conj"],
-        ["&#128208;","Grammatica","Quiz su generi e pronomi","gram"],
         ["&#128172;","Frasi &amp; ascolto","Completa la frase con TTS","phrase"],
         ["&#129504;","Memory","Abbina parole a tempo","memory"],
       ].forEach(([ico,t,d,mode])=>{
         grid.appendChild(mkTile(ico,t,d,mode,false));
       });
+      grid.appendChild(mkTile('&#127897;&#65039;','Conversa con Vika','Parla in russo con la tutor IA','vika',true));
 
     } else {
       // Teoria
@@ -839,12 +839,26 @@ function renderHome(){
       grid.appendChild(mkTile('&#128250;','Verbi','Coniugazioni complete per tutti i tempi','verbi',true));
       grid.appendChild(mkTile('&#128292;','Cirillico','Alfabeto e pronuncia','cyr',false));
       grid.appendChild(mkTile('&#128218;','Regole grammaticali','Tabelle e regole di base','ref',false));
-      grid.appendChild(mkTile('&#127897;&#65039;','Conversa con Vika','Parla in russo con la tutor IA','vika',true));
+      grid.appendChild(mkTile('&#128208;','Grammatica','Quiz su generi e pronomi','gram',false));
     }
   }
 
   tabsDiv.querySelectorAll('.home-tab').forEach(b=>b.onclick=()=>renderTab(b.dataset.tab));
   renderTab(activeTab);
+
+  // Swipe sinistra/destra per cambiare tab
+  let _swX=null;
+  app.addEventListener('touchstart', e=>{ _swX = e.touches[0].clientX; }, {passive:true});
+  app.addEventListener('touchend', e=>{
+    if(_swX===null) return;
+    const dx = e.changedTouches[0].clientX - _swX;
+    _swX = null;
+    if(Math.abs(dx)<50) return;
+    const tabs = ['pratica','teoria'];
+    const cur = tabs.indexOf(activeTab);
+    if(dx < 0 && cur < tabs.length-1) renderTab(tabs[cur+1]);   // swipe sinistra → teoria
+    if(dx > 0 && cur > 0)             renderTab(tabs[cur-1]);   // swipe destra  → pratica
+  }, {passive:true});
 
   app.appendChild($(`<p class="muted" style="margin-top:22px">Livello A1 · ${DB.meta.aggiornato}<br>Apri il menu del browser e scegli <b>"Aggiungi a schermata Home"</b> per usarla come app.</p>`));
   const updBtn=$(`<button style="display:block;margin:10px auto 0;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 18px;font-size:12px;color:var(--muted);cursor:pointer;transition:.15s">🔄 Aggiorna app</button>`);
@@ -1509,8 +1523,8 @@ function runVerbiCategoria(cat, verbi, catLabel){
     const saved = isEsesVerbo(v.id);
     const btn = $(`<button class="tile wide">
       <div class="txt">
-        <div class="t" style="font-size:17px">${v.infinito}</div>
-        <div class="d">${v.traduzione||''}</div>
+        <div class="t" style="font-size:17px">${v.inf}</div>
+        <div class="d">${v.en||''}</div>
       </div>
       ${saved ? '<div style="color:var(--good);font-size:18px;flex-shrink:0">✓</div>' : ''}
     </button>`);
@@ -1526,8 +1540,8 @@ function runVerboDetail(v){
 
   // Header verbo
   const hdr = $(`<div style="text-align:center;margin-bottom:16px">
-    <div style="font-size:28px;font-weight:700;color:var(--text)">${v.infinito}</div>
-    <div style="font-size:15px;color:var(--muted);margin-top:4px">${v.traduzione||''}</div>
+    <div style="font-size:28px;font-weight:700;color:var(--text)">${v.inf}</div>
+    <div style="font-size:15px;color:var(--muted);margin-top:4px">${v.en||''}</div>
     ${v.gruppo ? `<div style="font-size:12px;color:var(--accent);margin-top:4px">Gruppo ${v.gruppo}</div>` : ''}
   </div>`);
   stage.appendChild(hdr);
@@ -1659,7 +1673,7 @@ function runEsercizi(){
         const tenses = CONJ_TENSES_RU.filter(t=>coniugazioni[t.key]&&coniugazioni[t.key].length);
         const row = $(`<div style="background:var(--card);border-radius:12px;padding:12px 14px;border:1px solid var(--line)"></div>`);
         const top = $(`<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px"></div>`);
-        top.appendChild($(`<div style="flex:1"><div style="font-size:17px;font-weight:700">${v.infinito}</div><div style="font-size:13px;color:var(--muted)">${v.traduzione||''}</div></div>`));
+        top.appendChild($(`<div style="flex:1"><div style="font-size:17px;font-weight:700">${v.inf}</div><div style="font-size:13px;color:var(--muted)">${v.en||''}</div></div>`));
         const del = $(`<button style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--muted);padding:4px" title="Rimuovi">✕</button>`);
         del.onclick = ()=>{ removeEsesVerbo(v.id); renderEsercizi(); };
         top.appendChild(del);
