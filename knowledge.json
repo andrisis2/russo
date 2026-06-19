@@ -23277,6 +23277,7 @@
       "translit_inf": "govoritʹ",
       "en": "parlare",
       "gruppo": "2",
+      "categoria": "comunicazione",
       "coniugazioni": {
         "pres": [
           "говорю",
@@ -23312,6 +23313,7 @@
       "translit_inf": "čitatʹ",
       "en": "leggere",
       "gruppo": "1",
+      "categoria": "svago",
       "coniugazioni": {
         "pres": [
           "читаю",
@@ -23347,6 +23349,7 @@
       "translit_inf": "pisatʹ",
       "en": "scrivere",
       "gruppo": "1",
+      "categoria": "svago",
       "coniugazioni": {
         "pres": [
           "пишу",
@@ -23382,6 +23385,7 @@
       "translit_inf": "znatʹ",
       "en": "sapere / conoscere",
       "gruppo": "1",
+      "categoria": "mente",
       "coniugazioni": {
         "pres": [
           "знаю",
@@ -23417,6 +23421,7 @@
       "translit_inf": "ljubitʹ",
       "en": "amare / piacere",
       "gruppo": "2",
+      "categoria": "sentimenti",
       "coniugazioni": {
         "pres": [
           "люблю",
@@ -23452,6 +23457,7 @@
       "translit_inf": "žitʹ",
       "en": "vivere / abitare",
       "gruppo": "1",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "живу",
@@ -23487,6 +23493,7 @@
       "translit_inf": "rabótatʹ",
       "en": "lavorare",
       "gruppo": "1",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "работаю",
@@ -23522,6 +23529,7 @@
       "translit_inf": "ponimatʹ",
       "en": "capire",
       "gruppo": "1",
+      "categoria": "mente",
       "coniugazioni": {
         "pres": [
           "понимаю",
@@ -23557,6 +23565,7 @@
       "translit_inf": "délatʹ",
       "en": "fare",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "делаю",
@@ -23592,6 +23601,7 @@
       "translit_inf": "xotetʹ",
       "en": "volere",
       "gruppo": "irr",
+      "categoria": "fondamentali",
       "coniugazioni": {
         "pres": [
           "хочу",
@@ -23623,6 +23633,7 @@
       "translit_inf": "idtí",
       "en": "andare (a piedi)",
       "gruppo": "irr",
+      "categoria": "movimento",
       "coniugazioni": {
         "pres": [
           "иду",
@@ -23658,6 +23669,7 @@
       "translit_inf": "smotretʹ",
       "en": "guardare",
       "gruppo": "2",
+      "categoria": "svago",
       "coniugazioni": {
         "pres": [
           "смотрю",
@@ -23693,6 +23705,7 @@
       "translit_inf": "slúšatʹ",
       "en": "ascoltare",
       "gruppo": "1",
+      "categoria": "sensi",
       "coniugazioni": {
         "pres": [
           "слушаю",
@@ -23728,6 +23741,7 @@
       "translit_inf": "učítʹsja",
       "en": "studiare / imparare",
       "gruppo": "2",
+      "categoria": "svago",
       "coniugazioni": {
         "pres": [
           "учусь",
@@ -23763,6 +23777,7 @@
       "translit_inf": "vídetʹ",
       "en": "vedere",
       "gruppo": "2",
+      "categoria": "sensi",
       "coniugazioni": {
         "pres": [
           "вижу",
@@ -23794,6 +23809,7 @@
       "translit_inf": "slýšatʹ",
       "en": "sentire / udire",
       "gruppo": "2",
+      "categoria": "sensi",
       "coniugazioni": {
         "pres": [
           "слышу",
@@ -23825,6 +23841,7 @@
       "translit_inf": "pitʹ",
       "en": "bere",
       "gruppo": "1",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "пью",
@@ -23860,6 +23877,7 @@
       "translit_inf": "jestʹ",
       "en": "mangiare",
       "gruppo": "irr",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "ем",
@@ -23895,6 +23913,7 @@
       "translit_inf": "pokupatʹ",
       "en": "comprare",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "покупаю",
@@ -23930,6 +23949,7 @@
       "translit_inf": "igratʹ",
       "en": "giocare / suonare",
       "gruppo": "1",
+      "categoria": "svago",
       "coniugazioni": {
         "pres": [
           "играю",
@@ -23965,6 +23985,7 @@
       "translit_inf": "petʹ",
       "en": "cantare",
       "gruppo": "1",
+      "categoria": "svago",
       "coniugazioni": {
         "pres": [
           "пою",
@@ -24000,6 +24021,7 @@
       "translit_inf": "tancevátʹ",
       "en": "ballare",
       "gruppo": "1",
+      "categoria": "svago",
       "coniugazioni": {
         "pres": [
           "танцую",
@@ -24035,6 +24057,7 @@
       "translit_inf": "dúmatʹ",
       "en": "pensare",
       "gruppo": "1",
+      "categoria": "mente",
       "coniugazioni": {
         "pres": [
           "думаю",
@@ -24070,6 +24093,7 @@
       "translit_inf": "pomatʹ",
       "en": "aiutare",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "помогаю",
@@ -24105,6 +24129,7 @@
       "translit_inf": "spatʹ",
       "en": "dormire",
       "gruppo": "2",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "сплю",
@@ -24140,6 +24165,7 @@
       "translit_inf": "gótvitʹ",
       "en": "cucinare",
       "gruppo": "2",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "готовлю",
@@ -24175,6 +24201,7 @@
       "translit_inf": "otkryvatʹ",
       "en": "aprire",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "открываю",
@@ -24210,6 +24237,7 @@
       "translit_inf": "otvečatʹ",
       "en": "rispondere",
       "gruppo": "1",
+      "categoria": "comunicazione",
       "coniugazioni": {
         "pres": [
           "отвечаю",
@@ -24245,6 +24273,7 @@
       "translit_inf": "sprášivatʹ",
       "en": "chiedere / domandare",
       "gruppo": "1",
+      "categoria": "comunicazione",
       "coniugazioni": {
         "pres": [
           "спрашиваю",
@@ -24280,6 +24309,7 @@
       "translit_inf": "jéchatʹ",
       "en": "andare (in veicolo)",
       "gruppo": "irr",
+      "categoria": "movimento",
       "coniugazioni": {
         "pres": [
           "еду",
@@ -24315,6 +24345,7 @@
       "translit_inf": "proxoditʹ",
       "en": "arrivare / venire",
       "gruppo": "2",
+      "categoria": "movimento",
       "coniugazioni": {
         "pres": [
           "прихожу",
@@ -24350,6 +24381,7 @@
       "translit_inf": "stavatʹ",
       "en": "alzarsi",
       "gruppo": "1",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "встаю",
@@ -24385,6 +24417,7 @@
       "translit_inf": "bytʹ",
       "en": "essere",
       "gruppo": "irr",
+      "categoria": "fondamentali",
       "coniugazioni": {
         "pres": [
           "есть",
@@ -24420,6 +24453,7 @@
       "translit_inf": "močʹ",
       "en": "potere",
       "gruppo": "1",
+      "categoria": "fondamentali",
       "coniugazioni": {
         "pres": [
           "могу",
@@ -24451,6 +24485,7 @@
       "translit_inf": "davátʹ",
       "en": "dare",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "даю",
@@ -24486,6 +24521,7 @@
       "translit_inf": "bratʹ",
       "en": "prendere",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "беру",
@@ -24521,6 +24557,7 @@
       "translit_inf": "zvanítʹ",
       "en": "telefonare",
       "gruppo": "2",
+      "categoria": "comunicazione",
       "coniugazioni": {
         "pres": [
           "звоню",
@@ -24556,6 +24593,7 @@
       "translit_inf": "balétʹ",
       "en": "essere malato",
       "gruppo": "1",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "болею",
@@ -24591,6 +24629,7 @@
       "translit_inf": "atdyhátʹ",
       "en": "riposarsi",
       "gruppo": "1",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "отдыхаю",
@@ -24626,6 +24665,7 @@
       "translit_inf": "mytʹ",
       "en": "lavare",
       "gruppo": "1",
+      "categoria": "quotidiano",
       "coniugazioni": {
         "pres": [
           "мою",
@@ -24661,6 +24701,7 @@
       "translit_inf": "načinátʹ",
       "en": "iniziare",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "начинаю",
@@ -24696,6 +24737,7 @@
       "translit_inf": "zakánčivatʹ",
       "en": "finire",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "заканчиваю",
@@ -24731,6 +24773,7 @@
       "translit_inf": "iskátʹ",
       "en": "cercare",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "ищу",
@@ -24766,6 +24809,7 @@
       "translit_inf": "nahadítʹ",
       "en": "trovare",
       "gruppo": "2",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "нахожу",
@@ -24801,6 +24845,7 @@
       "translit_inf": "terátʹ",
       "en": "perdere",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "теряю",
@@ -24836,6 +24881,7 @@
       "translit_inf": "nasítʹ",
       "en": "portare",
       "gruppo": "2",
+      "categoria": "movimento",
       "coniugazioni": {
         "pres": [
           "ношу",
@@ -24871,6 +24917,7 @@
       "translit_inf": "vazvraščátʹsa",
       "en": "tornare",
       "gruppo": "1",
+      "categoria": "movimento",
       "coniugazioni": {
         "pres": [
           "возвращаюсь",
@@ -24906,6 +24953,7 @@
       "translit_inf": "uhadítʹ",
       "en": "andare via",
       "gruppo": "2",
+      "categoria": "movimento",
       "coniugazioni": {
         "pres": [
           "ухожу",
@@ -24941,6 +24989,7 @@
       "translit_inf": "pómnitʹ",
       "en": "ricordare",
       "gruppo": "2",
+      "categoria": "mente",
       "coniugazioni": {
         "pres": [
           "помню",
@@ -24976,6 +25025,7 @@
       "translit_inf": "čúvstvovatʹ",
       "en": "sentire / provare",
       "gruppo": "1",
+      "categoria": "sentimenti",
       "coniugazioni": {
         "pres": [
           "чувствую",
@@ -25011,6 +25061,7 @@
       "translit_inf": "ždatʹ",
       "en": "aspettare",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "жду",
@@ -25046,6 +25097,7 @@
       "translit_inf": "pradavátʹ",
       "en": "vendere",
       "gruppo": "1",
+      "categoria": "azioni",
       "coniugazioni": {
         "pres": [
           "продаю",
