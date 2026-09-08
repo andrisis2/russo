@@ -1,5 +1,5 @@
 // Service worker minimale: cache offline dell'app e dei dati
-const CACHE = "russo-v41";
+const CACHE = "russo-v42";
 const ASSETS = [
   "./", "./index.html", "./knowledge.json", "./manifest.json", "./icon.png", "./splash.png", "./vika.png",
   "./splash-ios/splash-750x1334.jpg","./splash-ios/splash-828x1792.jpg",
@@ -28,9 +28,16 @@ self.addEventListener("fetch", e => {
     e.respondWith(
       fetch(e.request).then(r => {
         const copy = r.clone();
-        caches.open(CACHE).then(c => c.put(e.request, copy));
+        // si scrive sotto la chiave senza query string, altrimenti ogni load
+        // (knowledge.json?_=timestamp diverso ogni volta) crea una nuova voce
+        // in cache invece di sovrascrivere sempre la stessa.
+        const key = new URL(e.request.url); key.search = '';
+        caches.open(CACHE).then(c => c.put(key.toString(), copy));
         return r;
-      }).catch(() => caches.match(e.request))
+      }).catch(() => caches.match(e.request, { ignoreSearch: true }))
+      // ignoreSearch: true perché knowledge.json viene richiesto con un query-buster
+      // che cambia a ogni load ("?_="+Date.now()), quindi offline il match esatto
+      // (query inclusa) non troverebbe mai la voce già in cache.
     );
   } else {
     e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
