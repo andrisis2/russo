@@ -399,6 +399,18 @@
   table.decl td.ru:not(.none):hover{color:var(--accent2)}
   table.decl td.ru:not(.none):active{color:var(--accent)}
   table.decl td.ru.none{color:var(--muted);font-weight:600;opacity:.6;cursor:default}
+  table.decl.adj{font-size:12.5px;min-width:420px}
+  table.decl.adj th,table.decl.adj td{padding:6px 8px}
+  table.decl.adj thead th:first-child{width:26%}
+  table.decl td.ru.multi{font-weight:700;color:var(--text);white-space:nowrap}
+  table.decl td.ru.multi small{display:block;font-weight:500;font-size:10px;color:var(--muted);cursor:pointer;margin-top:1px}
+  table.decl td.ru.multi small:hover{color:var(--accent2)}
+  table.decl td.ru.multi>span{cursor:pointer}
+  table.decl td.ru.multi>span:hover{color:var(--accent2)}
+  .prep-info{margin-top:8px;background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:16px}
+  .prep-caso{font-size:14px;font-weight:700;color:var(--accent2);margin-bottom:8px}
+  .prep-nota{font-size:13px;color:var(--text);line-height:1.6}
+  .prep-nota i{color:var(--muted)}
   .decl-badge{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--accent);background:rgba(226,56,75,.1);border:1px solid rgba(226,56,75,.25);border-radius:20px;padding:3px 10px}
   .decl-note{font-size:11px;color:var(--muted);line-height:1.45;margin-top:7px;padding:0 2px}
 
@@ -1232,6 +1244,175 @@ function declineNoun(word, tipo, tags){
   return { gender:g, cls, sg, pl };
 }
 
+// ---------- DECLINAZIONE DEGLI AGGETTIVI QUALIFICATIVI (e simili: который) ----------
+// Un aggettivo russo ha 4 colonne (maschile/femminile/neutro/plurale, non genere separato
+// dal numero come i nomi) per ciascuno dei 6 casi. Qui generiamo le forme regolari a
+// partire dal nominativo maschile (-ый/-ой/-ий), applicando le due regole ortografiche
+// classiche: quella delle "7 lettere" (mai ы dopo г,к,х,ж,ч,ш,щ → и) e quella delle
+// "5 lettere" (о atono dopo ж,ч,ш,щ → е). La classe "morbida" (-ний: синий, древний…) usa
+// invece я/ю/е ovunque, come i nomi in -ь.
+function declineAdj(lemma){
+  if(!lemma) return null;
+  lemma = lemma.trim();
+  if(!/^[а-яё]+$/i.test(lemma)) return null;
+  const lw = lemma.toLowerCase();
+  let stem, endingType;
+  if(lw.endsWith('ой')){ stem = lw.slice(0,-2); endingType='oj'; }
+  else if(lw.endsWith('ый')){ stem = lw.slice(0,-2); endingType='yj'; }
+  else if(lw.endsWith('ий')){ stem = lw.slice(0,-2); endingType='ij'; }
+  else return null;
+
+  const last = stem.slice(-1);
+  const VELAR = 'гкх', HUSH = 'жчшщ';
+  const isSoft  = /ний$/.test(lw);              // синий, древний, крайний…
+  const isVelar = VELAR.includes(last);
+  const isHush  = HUSH.includes(last);
+  const useI = isVelar || isHush;               // regola delle 7 lettere: mai ы dopo questi → и
+  const oE   = isHush && endingType!=='oj';     // sibilante atona: о → е (regola delle 5 lettere)
+
+  const oSuf = (suf)=> oE ? 'е'+suf.slice(1) : suf;         // 'ого'→'его', 'ой'→'ей', 'ом'→'ем', 'ому'→'ему'
+  const ySuf = (suf)=> useI ? suf.replace(/ы/g,'и') : suf;
+  const oEnd = (sufHard, sufSoft)=> stem + (isSoft ? sufSoft : oSuf(sufHard));
+  const yEnd = (sufHard, sufSoft)=> stem + (isSoft ? sufSoft : ySuf(sufHard));
+
+  const m={}, f={}, n={}, pl={};
+  m.nom = lemma;
+  f.nom  = isSoft ? stem+'яя' : stem+'ая';
+  n.nom  = oEnd('ое','ее');
+  pl.nom = yEnd('ые','ие');
+
+  m.gen = n.gen = oEnd('ого','его');
+  f.gen  = oEnd('ой','ей');
+  pl.gen = yEnd('ых','их');
+
+  m.dat = n.dat = oEnd('ому','ему');
+  f.dat  = oEnd('ой','ей');
+  pl.dat = yEnd('ым','им');
+
+  f.acc = isSoft ? stem+'юю' : stem+'ую';
+  n.acc = n.nom;
+  m.acc_inan = m.nom; m.acc_anim = m.gen;
+  pl.acc_inan = pl.nom; pl.acc_anim = pl.gen;
+
+  m.ins = n.ins = yEnd('ым','им');
+  f.ins  = oEnd('ой','ей');
+  pl.ins = yEnd('ыми','ими');
+
+  m.pre = n.pre = oEnd('ом','ем');
+  f.pre  = oEnd('ой','ей');
+  pl.pre = yEnd('ых','их');
+
+  return {m,f,n,pl};
+}
+
+// Pronomi che si declinano come un aggettivo (4 colonne) ma con forme irregolari:
+// dimostrativi, possessivi, interrogativo/possessivo чей. Stessa forma restituita da
+// declineAdj, così un solo renderer serve per entrambi.
+const ADJLIKE_PRON = {
+  'этот': {
+    m:{nom:'этот',gen:'этого',dat:'этому',acc_inan:'этот',acc_anim:'этого',ins:'этим',pre:'этом'},
+    f:{nom:'эта',gen:'этой',dat:'этой',acc:'эту',ins:'этой',pre:'этой'},
+    n:{nom:'это',gen:'этого',dat:'этому',acc:'это',ins:'этим',pre:'этом'},
+    pl:{nom:'эти',gen:'этих',dat:'этим',acc_inan:'эти',acc_anim:'этих',ins:'этими',pre:'этих'},
+  },
+  'тот': {
+    m:{nom:'тот',gen:'того',dat:'тому',acc_inan:'тот',acc_anim:'того',ins:'тем',pre:'том'},
+    f:{nom:'та',gen:'той',dat:'той',acc:'ту',ins:'той',pre:'той'},
+    n:{nom:'то',gen:'того',dat:'тому',acc:'то',ins:'тем',pre:'том'},
+    pl:{nom:'те',gen:'тех',dat:'тем',acc_inan:'те',acc_anim:'тех',ins:'теми',pre:'тех'},
+  },
+  'мой': {
+    m:{nom:'мой',gen:'моего',dat:'моему',acc_inan:'мой',acc_anim:'моего',ins:'моим',pre:'моём'},
+    f:{nom:'моя',gen:'моей',dat:'моей',acc:'мою',ins:'моей',pre:'моей'},
+    n:{nom:'моё',gen:'моего',dat:'моему',acc:'моё',ins:'моим',pre:'моём'},
+    pl:{nom:'мои',gen:'моих',dat:'моим',acc_inan:'мои',acc_anim:'моих',ins:'моими',pre:'моих'},
+  },
+  'твой': {
+    m:{nom:'твой',gen:'твоего',dat:'твоему',acc_inan:'твой',acc_anim:'твоего',ins:'твоим',pre:'твоём'},
+    f:{nom:'твоя',gen:'твоей',dat:'твоей',acc:'твою',ins:'твоей',pre:'твоей'},
+    n:{nom:'твоё',gen:'твоего',dat:'твоему',acc:'твоё',ins:'твоим',pre:'твоём'},
+    pl:{nom:'твои',gen:'твоих',dat:'твоим',acc_inan:'твои',acc_anim:'твоих',ins:'твоими',pre:'твоих'},
+  },
+  'наш': {
+    m:{nom:'наш',gen:'нашего',dat:'нашему',acc_inan:'наш',acc_anim:'нашего',ins:'нашим',pre:'нашем'},
+    f:{nom:'наша',gen:'нашей',dat:'нашей',acc:'нашу',ins:'нашей',pre:'нашей'},
+    n:{nom:'наше',gen:'нашего',dat:'нашему',acc:'наше',ins:'нашим',pre:'нашем'},
+    pl:{nom:'наши',gen:'наших',dat:'нашим',acc_inan:'наши',acc_anim:'наших',ins:'нашими',pre:'наших'},
+  },
+  'ваш': {
+    m:{nom:'ваш',gen:'вашего',dat:'вашему',acc_inan:'ваш',acc_anim:'вашего',ins:'вашим',pre:'вашем'},
+    f:{nom:'ваша',gen:'вашей',dat:'вашей',acc:'вашу',ins:'вашей',pre:'вашей'},
+    n:{nom:'ваше',gen:'вашего',dat:'вашему',acc:'ваше',ins:'вашим',pre:'вашем'},
+    pl:{nom:'ваши',gen:'ваших',dat:'вашим',acc_inan:'ваши',acc_anim:'ваших',ins:'вашими',pre:'ваших'},
+  },
+  'свой': {
+    m:{nom:'свой',gen:'своего',dat:'своему',acc_inan:'свой',acc_anim:'своего',ins:'своим',pre:'своём'},
+    f:{nom:'своя',gen:'своей',dat:'своей',acc:'свою',ins:'своей',pre:'своей'},
+    n:{nom:'своё',gen:'своего',dat:'своему',acc:'своё',ins:'своим',pre:'своём'},
+    pl:{nom:'свои',gen:'своих',dat:'своим',acc_inan:'свои',acc_anim:'своих',ins:'своими',pre:'своих'},
+  },
+  'чей': {
+    m:{nom:'чей',gen:'чьего',dat:'чьему',acc_inan:'чей',acc_anim:'чьего',ins:'чьим',pre:'чьём'},
+    f:{nom:'чья',gen:'чьей',dat:'чьей',acc:'чью',ins:'чьей',pre:'чьей'},
+    n:{nom:'чьё',gen:'чьего',dat:'чьему',acc:'чьё',ins:'чьим',pre:'чьём'},
+    pl:{nom:'чьи',gen:'чьих',dat:'чьим',acc_inan:'чьи',acc_anim:'чьих',ins:'чьими',pre:'чьих'},
+  },
+};
+// который si declina come un normale aggettivo hard: nessuna voce in ADJLIKE_PRON,
+// passa direttamente da declineAdj.
+function resolveAdjForms(lemma){
+  if(!lemma) return null;
+  const key = lemma.trim().toLowerCase();
+  return ADJLIKE_PRON[key] || declineAdj(lemma);
+}
+
+// Pronomi personali, interrogativi e negativi: un'unica forma per caso (non hanno
+// genere/numero come gli aggettivi). Forme irregolari, tabella fissa.
+const PRONOUN_DECL = {
+  'я':      {nom:'я',    gen:'меня', dat:'мне',  acc:'меня', ins:'мной',  pre:'мне'},
+  'ты':     {nom:'ты',   gen:'тебя', dat:'тебе', acc:'тебя', ins:'тобой', pre:'тебе'},
+  'он':     {nom:'он',   gen:'его',  dat:'ему',  acc:'его',  ins:'им',    pre:'нём'},
+  'она':    {nom:'она',  gen:'её',   dat:'ей',   acc:'её',   ins:'ней',   pre:'ней'},
+  'оно':    {nom:'оно',  gen:'его',  dat:'ему',  acc:'его',  ins:'им',    pre:'нём'},
+  'мы':     {nom:'мы',   gen:'нас',  dat:'нам',  acc:'нас',  ins:'нами',  pre:'нас'},
+  'вы':     {nom:'вы',   gen:'вас',  dat:'вам',  acc:'вас',  ins:'вами',  pre:'вас'},
+  'они':    {nom:'они',  gen:'их',   dat:'им',   acc:'их',   ins:'ними',  pre:'них'},
+  'себя':   {nom:'—',    gen:'себя', dat:'себе', acc:'себя', ins:'собой', pre:'себе'},
+  'кто':    {nom:'кто',  gen:'кого', dat:'кому', acc:'кого', ins:'кем',   pre:'ком'},
+  'что':    {nom:'что',  gen:'чего', dat:'чему', acc:'что',  ins:'чем',   pre:'чём'},
+  'никто':  {nom:'никто',gen:'никого',dat:'никому',acc:'никого',ins:'никем', pre:'ником'},
+  'ничто':  {nom:'ничто',gen:'ничего',dat:'ничему',acc:'ничего',ins:'ничем', pre:'ничём'},
+};
+
+// Preposizioni: non si declinano (sono invariabili), ma ognuna regge un caso preciso.
+// "Link individuale" qui = una piccola scheda con caso retto + spiegazione, non una tabella.
+const PREP_INFO = {
+  'в':      {caso:'accusativo / prepositivo', nota:'moto a luogo (+ accusativo): <i>идти в школу</i> — oppure stato in luogo (+ prepositivo): <i>жить в Москве</i>. Anche per giorni della settimana (+ accusativo: <i>в понедельник</i>) e mesi (+ prepositivo: <i>в январе</i>).'},
+  'во':     {caso:'accusativo / prepositivo', nota:"variante di в usata davanti a parole che iniziano con certi gruppi di consonanti (<i>во дворе</i>), per facilitare la pronuncia."},
+  'на':     {caso:'accusativo / prepositivo', nota:'moto a luogo su una superficie o per lavoro/eventi (+ accusativo): <i>идти на работу</i> — oppure stato in luogo su una superficie (+ prepositivo): <i>книга на столе</i>. Anche per i mezzi di trasporto: <i>на поезде</i>.'},
+  'у':      {caso:'genitivo', nota:"base della costruzione di possesso 'avere': <i>у меня есть кот</i> (letteralmente 'presso di me c'è un gatto')."},
+  'о':      {caso:'prepositivo', nota:"l'argomento di cui si parla: <i>говорить о России</i>. Diventa <b>об</b> davanti a una vocale."},
+  'об':     {caso:'prepositivo', nota:'variante di о usata davanti a una vocale.'},
+  'от':     {caso:'genitivo', nota:'provenienza da una persona o un luogo: <i>письмо от мамы</i>.'},
+  'до':     {caso:'genitivo', nota:"il limite finale, 'fino a' (tempo o luogo): <i>с девяти до шести</i>."},
+  'для':    {caso:'genitivo', nota:"scopo o destinatario, 'per': <i>подарок для тебя</i>."},
+  'без':    {caso:'genitivo', nota:"assenza, 'senza': <i>жить без тебя</i>."},
+  'через':  {caso:'accusativo', nota:"moto 'attraverso' un luogo (<i>через лес</i>) oppure 'tra/fra' un intervallo di tempo (<i>через неделю</i>)."},
+  'после':  {caso:'genitivo', nota:"'dopo' nel tempo: <i>после урока</i>."},
+  'перед':  {caso:'strumentale', nota:"'davanti a', posizione: <i>перед домом</i>."},
+  'между':  {caso:'strumentale', nota:"'tra, fra' due elementi: <i>между окном и дверью</i>."},
+  'под':    {caso:'strumentale / accusativo', nota:"posizione 'sotto' (stato, + strumentale): <i>под столом</i> — con verbi di moto regge invece l'accusativo (moto a luogo)."},
+  'с':      {caso:'strumentale / genitivo', nota:"'con' (compagnia/mezzo, + strumentale): <i>идти с другом</i> — oppure 'da' (provenienza, + genitivo): <i>с девяти</i> (a partire dalle nove)."},
+  'со':     {caso:'strumentale / genitivo', nota:'variante di с usata davanti a certi gruppi di consonanti.'},
+  'к':      {caso:'dativo', nota:"moto verso una persona o un luogo, 'da/verso': <i>идти к врачу</i>."},
+  'из':     {caso:'genitivo', nota:"provenienza 'da dentro' un luogo: <i>из Италии</i>."},
+  'за':     {caso:'accusativo / strumentale', nota:"moto 'dietro/oltre' (+ accusativo) oppure posizione 'dietro' (+ strumentale)."},
+  'над':    {caso:'strumentale', nota:"posizione 'sopra' (senza contatto): <i>над столом</i>."},
+  'при':    {caso:'prepositivo', nota:"'presso, ai tempi di': <i>при университете</i>."},
+  'по':     {caso:'dativo', nota:"'per, lungo, secondo': <i>гулять по городу</i>."},
+  'несмотря на': {caso:'accusativo', nota:"'nonostante' — locuzione prepositiva invariabile, introduce una concessione: <i>несмотря на дождь</i>."},
+};
+
 // Costruisce il blocco UI (pulsante + tabella) per le declinazioni, oppure null.
 function makeDeclensionBlock(word, tipo, tags){
   const d = declineNoun(word, tipo, tags);
@@ -1273,6 +1454,99 @@ function makeDeclensionBlock(word, tipo, tags){
   };
   wrap.appendChild(btn);
   wrap.appendChild(panel);
+  return wrap;
+}
+
+// Blocco UI per la declinazione di un aggettivo (o di чей/этот/тот/мой/твой/наш/ваш/свой,
+// che si declinano allo stesso modo): 4 colonne (M/F/N/Plurale) × 6 casi.
+function makeAdjDeclensionBlock(lemma){
+  const d = resolveAdjForms(lemma);
+  if(!d) return null;
+  const wrap = document.createElement('div');
+  wrap.className = 'decl-block';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'decl-toggle';
+  btn.innerHTML = `&#128220; Declinazioni`;
+  const panel = document.createElement('div');
+  panel.className = 'decl-panel';
+  panel.style.display = 'none';
+  const cell = (v)=> (!v || v==='—')
+    ? `<td class="ru none">—</td>`
+    : `<td class="ru" data-w="${v}">${v}</td>`;
+  const accCell = (obj)=> obj.acc_inan===obj.acc_anim
+    ? cell(obj.acc_inan)
+    : `<td class="ru multi"><span data-w="${obj.acc_inan}">${obj.acc_inan}</span><small>animato: <span data-w="${obj.acc_anim}">${obj.acc_anim}</span></small></td>`;
+  const rows = CASE_ROWS.map(([it, ru, k])=>{
+    const accRow = k==='acc';
+    return `<tr><td class="cs">${it}<small>${ru}</small></td>`+
+      (accRow ? accCell(d.m) : cell(d.m[k])) + cell(d.f[k]) + cell(d.n[k]) +
+      (accRow ? accCell(d.pl) : cell(d.pl[k])) + `</tr>`;
+  }).join('');
+  panel.innerHTML =
+    `<div class="tbl-wrap"><table class="decl adj"><thead><tr><th>Caso</th><th>M.</th><th>F.</th><th>N.</th><th>Pl.</th></tr></thead>`+
+    `<tbody>${rows}</tbody></table></div>`+
+    `<div class="decl-note">L'aggettivo concorda in genere, numero e caso col nome che descrive. Per gli animati l'accusativo (maschile e plurale) è uguale al genitivo. Tocca una forma per ascoltarla.</div>`;
+  panel.querySelectorAll('[data-w]').forEach(el=>{
+    el.onclick = (e)=>{ e.stopPropagation(); speak(el.dataset.w); };
+  });
+  btn.onclick = (e)=>{
+    e.stopPropagation();
+    const open = panel.style.display!=='none';
+    panel.style.display = open ? 'none' : 'block';
+    btn.classList.toggle('open', !open);
+  };
+  wrap.appendChild(btn);
+  wrap.appendChild(panel);
+  return wrap;
+}
+
+// Blocco UI per la declinazione di un pronome personale/interrogativo/negativo:
+// un'unica forma per caso (nessun genere/numero separato).
+function makePronounDeclensionBlock(lemma){
+  const d = PRONOUN_DECL[(lemma||'').trim().toLowerCase()];
+  if(!d) return null;
+  const wrap = document.createElement('div');
+  wrap.className = 'decl-block';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'decl-toggle';
+  btn.innerHTML = `&#128220; Declinazione`;
+  const panel = document.createElement('div');
+  panel.className = 'decl-panel';
+  panel.style.display = 'none';
+  const cell = (v)=> (!v || v==='—')
+    ? `<td class="ru none">—</td>`
+    : `<td class="ru" data-w="${v}">${v}</td>`;
+  const rows = CASE_ROWS.map(([it, ru, k])=>
+    `<tr><td class="cs">${it}<small>${ru}</small></td>${cell(d[k])}</tr>`).join('');
+  panel.innerHTML =
+    `<table class="decl"><thead><tr><th>Caso</th><th>Forma</th></tr></thead>`+
+    `<tbody>${rows}</tbody></table>`+
+    `<div class="decl-note">Pronome dalla declinazione irregolare: forme fisse, da imparare a memoria. Tocca una forma per ascoltarla.</div>`;
+  panel.querySelectorAll('td.ru:not(.none)').forEach(td=>{
+    td.onclick = (e)=>{ e.stopPropagation(); speak(td.dataset.w); };
+  });
+  btn.onclick = (e)=>{
+    e.stopPropagation();
+    const open = panel.style.display!=='none';
+    panel.style.display = open ? 'none' : 'block';
+    btn.classList.toggle('open', !open);
+  };
+  wrap.appendChild(btn);
+  wrap.appendChild(panel);
+  return wrap;
+}
+
+// Blocco UI (senza tabella) per una preposizione: quale caso regge + spiegazione.
+function makePrepInfoBlock(lemma){
+  const info = PREP_INFO[(lemma||'').trim().toLowerCase()];
+  if(!info) return null;
+  const wrap = document.createElement('div');
+  wrap.className = 'prep-info';
+  wrap.innerHTML =
+    `<div class="prep-caso">Regge il <b>${info.caso}</b></div>`+
+    `<div class="prep-nota">${info.nota}</div>`;
   return wrap;
 }
 
@@ -1983,6 +2257,24 @@ function runFrasiGrammar(){
           const btn = $(`<button class="sg-word-link" type="button">&#128203; Declinazione di «${link.parola}»</button>`);
           btn.onclick = ()=> navigateTo(()=>runParolaDeclinazione(link.parola, link.gramm, link.tags));
           row.querySelector(".sg-word-txt").appendChild(btn);
+        } else if(link.tipo==="aggettivo"){
+          if(resolveAdjForms(link.parola)){
+            const btn = $(`<button class="sg-word-link" type="button">&#127912; Declinazione di «${link.parola}»</button>`);
+            btn.onclick = ()=> navigateTo(()=>runAggettivoDeclinazione(link.parola));
+            row.querySelector(".sg-word-txt").appendChild(btn);
+          }
+        } else if(link.tipo==="pronome"){
+          if(PRONOUN_DECL[link.parola]){
+            const btn = $(`<button class="sg-word-link" type="button">&#128203; Declinazione di «${link.parola}»</button>`);
+            btn.onclick = ()=> navigateTo(()=>runPronomeDeclinazione(link.parola));
+            row.querySelector(".sg-word-txt").appendChild(btn);
+          }
+        } else if(link.tipo==="preposizione"){
+          if(PREP_INFO[link.parola]){
+            const btn = $(`<button class="sg-word-link" type="button">&#129517; Che caso regge «${link.parola}»?</button>`);
+            btn.onclick = ()=> navigateTo(()=>runPrepInfo(link.parola));
+            row.querySelector(".sg-word-txt").appendChild(btn);
+          }
         }
       }
       words.appendChild(row);
@@ -2017,6 +2309,59 @@ function runParolaDeclinazione(word, tipoGramm, tags){
   const panel = block.querySelector(".decl-panel");
   panel.style.display = "block";
   btn.classList.add("open");
+  stage.appendChild(block);
+}
+
+// Declinazione di un aggettivo qualificativo (o di чей/этот/тот/мой/твой/наш/ваш/свой).
+function runAggettivoDeclinazione(word){
+  const stage = header();
+  stage.appendChild($(`<div style="text-align:center;margin-bottom:16px">
+    <div style="font-size:32px;font-weight:800;color:var(--text)">${word}</div>
+    <div style="font-size:13px;color:var(--muted);margin-top:4px">Declinazione completa</div>
+  </div>`));
+  const block = makeAdjDeclensionBlock(word);
+  if(!block){
+    stage.appendChild($(`<p style="text-align:center;color:var(--muted);padding:20px 0">Declinazione non disponibile per questa parola.</p>`));
+    return;
+  }
+  const btn = block.querySelector(".decl-toggle");
+  const panel = block.querySelector(".decl-panel");
+  panel.style.display = "block";
+  btn.classList.add("open");
+  stage.appendChild(block);
+}
+
+// Declinazione di un pronome personale/interrogativo/negativo.
+function runPronomeDeclinazione(word){
+  const stage = header();
+  stage.appendChild($(`<div style="text-align:center;margin-bottom:16px">
+    <div style="font-size:32px;font-weight:800;color:var(--text)">${word}</div>
+    <div style="font-size:13px;color:var(--muted);margin-top:4px">Declinazione completa</div>
+  </div>`));
+  const block = makePronounDeclensionBlock(word);
+  if(!block){
+    stage.appendChild($(`<p style="text-align:center;color:var(--muted);padding:20px 0">Declinazione non disponibile per questa parola.</p>`));
+    return;
+  }
+  const btn = block.querySelector(".decl-toggle");
+  const panel = block.querySelector(".decl-panel");
+  panel.style.display = "block";
+  btn.classList.add("open");
+  stage.appendChild(block);
+}
+
+// Scheda di una preposizione: quale caso regge + spiegazione (le preposizioni non si declinano).
+function runPrepInfo(word){
+  const stage = header();
+  stage.appendChild($(`<div style="text-align:center;margin-bottom:16px">
+    <div style="font-size:32px;font-weight:800;color:var(--text)">${word}</div>
+    <div style="font-size:13px;color:var(--muted);margin-top:4px">Preposizione</div>
+  </div>`));
+  const block = makePrepInfoBlock(word);
+  if(!block){
+    stage.appendChild($(`<p style="text-align:center;color:var(--muted);padding:20px 0">Informazioni non disponibili per questa parola.</p>`));
+    return;
+  }
   stage.appendChild(block);
 }
 
