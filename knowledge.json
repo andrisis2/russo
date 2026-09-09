@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 18,
+    "versione": 19,
     "aggiornato": "2026-09-09",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -22914,7 +22914,11 @@
         {
           "ru": "читаю",
           "it": "leggo",
-          "nota": "presente, 1ª persona singolare del verbo читать (leggere), 1ª coniugazione: desinenza -ю."
+          "nota": "presente, 1ª persona singolare del verbo читать (leggere), 1ª coniugazione: desinenza -ю.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "читать"
+          }
         },
         {
           "ru": "книгу",
@@ -22947,7 +22951,11 @@
         {
           "ru": "смотрит",
           "it": "guarda",
-          "nota": "presente, 3ª persona singolare del verbo смотреть (guardare), 2ª coniugazione: desinenza -ит."
+          "nota": "presente, 3ª persona singolare del verbo смотреть (guardare), 2ª coniugazione: desinenza -ит.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "смотреть"
+          }
         },
         {
           "ru": "фильм",
@@ -23154,7 +23162,13 @@
         {
           "ru": "цветы",
           "it": "fiori (pl.)",
-          "nota": "accusativo plurale, uguale al nominativo plurale per gli inanimati: è l'oggetto diretto, 'cosa' si regala."
+          "nota": "accusativo plurale, uguale al nominativo plurale per gli inanimati: è l'oggetto diretto, 'cosa' si regala.",
+          "link": {
+            "tipo": "nome",
+            "parola": "цветок",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "подруге",
@@ -23198,7 +23212,13 @@
         {
           "ru": "письмо",
           "it": "lettera (n.)",
-          "nota": "accusativo singolare neutro, identico al nominativo: è l'oggetto diretto."
+          "nota": "accusativo singolare neutro, identico al nominativo: è l'oggetto diretto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "письмо",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         },
         {
           "ru": "ручкой",
@@ -23273,7 +23293,13 @@
         {
           "ru": "письмо",
           "it": "lettera (n.)",
-          "nota": "nominativo singolare neutro, soggetto della frase."
+          "nota": "nominativo singolare neutro, soggetto della frase.",
+          "link": {
+            "tipo": "nome",
+            "parola": "письмо",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         },
         {
           "ru": "от",
@@ -23308,7 +23334,13 @@
         {
           "ru": "Книга",
           "it": "il libro (f.)",
-          "nota": "nominativo singolare, soggetto della frase."
+          "nota": "nominativo singolare, soggetto della frase.",
+          "link": {
+            "tipo": "nome",
+            "parola": "книга",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         },
         {
           "ru": "лежит",
@@ -23350,7 +23382,15 @@
         {
           "ru": "Кот",
           "it": "il gatto (m.)",
-          "nota": "nominativo singolare, soggetto."
+          "nota": "nominativo singolare, soggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "кот",
+            "gramm": "sostantivo (m.)",
+            "tags": [
+              "animali"
+            ]
+          }
         },
         {
           "ru": "сидит",
@@ -23479,7 +23519,15 @@
         {
           "ru": "Анна",
           "it": "Anna",
-          "nota": "nome proprio al nominativo, complemento predicativo del soggetto имя."
+          "nota": "nome proprio al nominativo, complemento predicativo del soggetto имя.",
+          "link": {
+            "tipo": "nome",
+            "parola": "Анна",
+            "gramm": "sostantivo (f.)",
+            "tags": [
+              "persone"
+            ]
+          }
         }
       ],
       "regola": {
@@ -23724,7 +23772,13 @@
         {
           "ru": "книгу",
           "it": "libro",
-          "nota": "accusativo singolare di книга, oggetto diretto."
+          "nota": "accusativo singolare di книга, oggetto diretto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "книга",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -23760,7 +23814,13 @@
         {
           "ru": "книгу",
           "it": "libro",
-          "nota": "accusativo singolare, oggetto diretto."
+          "nota": "accusativo singolare, oggetto diretto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "книга",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24020,7 +24080,11 @@
         {
           "ru": "буду",
           "it": "sarò",
-          "nota": "futuro del verbo essere (быть), 1ª persona singolare; con un infinito imperfettivo forma il futuro composto."
+          "nota": "futuro del verbo essere (быть), 1ª persona singolare; con un infinito imperfettivo forma il futuro composto.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "быть"
+          }
         },
         {
           "ru": "читать",
@@ -24034,7 +24098,13 @@
         {
           "ru": "книгу",
           "it": "libro",
-          "nota": "accusativo singolare, complemento oggetto."
+          "nota": "accusativo singolare, complemento oggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "книга",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24109,7 +24179,13 @@
         {
           "ru": "утром",
           "it": "al mattino",
-          "nota": "strumentale singolare di утро, usato senza preposizione per esprimere 'quando' (tempo): lo stesso meccanismo di вечером, днём, ночью."
+          "nota": "strumentale singolare di утро, usato senza preposizione per esprimere 'quando' (tempo): lo stesso meccanismo di вечером, днём, ночью.",
+          "link": {
+            "tipo": "nome",
+            "parola": "утро",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24275,12 +24351,24 @@
         {
           "ru": "в Москву",
           "it": "a Mosca",
-          "nota": "в + accusativo di Москва (moto a luogo, da -а a -у)."
+          "nota": "в + accusativo di Москва (moto a luogo, da -а a -у).",
+          "link": {
+            "tipo": "nome",
+            "parola": "Москва",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         },
         {
           "ru": "на поезде",
           "it": "in treno",
-          "nota": "на + prepositivo di поезд: preposizione idiomatica per indicare il mezzo di trasporto usato."
+          "nota": "на + prepositivo di поезд: preposizione idiomatica per indicare il mezzo di trasporto usato.",
+          "link": {
+            "tipo": "nome",
+            "parola": "поезд",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24311,7 +24399,13 @@
         {
           "ru": "в Москву",
           "it": "a Mosca",
-          "nota": "в + accusativo, moto a luogo."
+          "nota": "в + accusativo, moto a luogo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "Москва",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         },
         {
           "ru": "каждый месяц",
@@ -24383,7 +24477,13 @@
         {
           "ru": "в парке",
           "it": "nel parco",
-          "nota": "в + prepositivo di парк: stato in luogo."
+          "nota": "в + prepositivo di парк: stato in luogo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "парк",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24461,7 +24561,13 @@
         {
           "ru": "правду",
           "it": "la verità",
-          "nota": "accusativo singolare di правда, complemento oggetto."
+          "nota": "accusativo singolare di правда, complemento oggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "правда",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24519,7 +24625,13 @@
         {
           "ru": "дом",
           "it": "casa (m.)",
-          "nota": "nominativo singolare maschile, soggetto della domanda."
+          "nota": "nominativo singolare maschile, soggetto della domanda.",
+          "link": {
+            "tipo": "nome",
+            "parola": "дом",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24546,7 +24658,13 @@
         {
           "ru": "книга",
           "it": "libro (f.)",
-          "nota": "nominativo singolare femminile, soggetto."
+          "nota": "nominativo singolare femminile, soggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "книга",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24573,7 +24691,13 @@
         {
           "ru": "окно",
           "it": "finestra (n.)",
-          "nota": "nominativo singolare neutro, soggetto."
+          "nota": "nominativo singolare neutro, soggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "окно",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24609,12 +24733,24 @@
         {
           "ru": "чай",
           "it": "il tè (m.)",
-          "nota": "accusativo singolare (maschile inanimato = nominativo), oggetto diretto."
+          "nota": "accusativo singolare (maschile inanimato = nominativo), oggetto diretto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "чай",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "утром",
           "it": "al mattino",
-          "nota": "strumentale avverbiale di tempo, senza preposizione."
+          "nota": "strumentale avverbiale di tempo, senza preposizione.",
+          "link": {
+            "tipo": "nome",
+            "parola": "утро",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24734,7 +24870,13 @@
         {
           "ru": "на работу",
           "it": "al lavoro",
-          "nota": "на + accusativo di работа: moto a luogo con на (non в) per 'lavoro'."
+          "nota": "на + accusativo di работа: moto a luogo con на (non в) per 'lavoro'.",
+          "link": {
+            "tipo": "nome",
+            "parola": "работа",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         },
         {
           "ru": "в понедельник",
@@ -24767,7 +24909,13 @@
         {
           "ru": "день рождения",
           "it": "compleanno",
-          "nota": "letteralmente 'giorno di nascita': рождения è il genitivo singolare di рождение, complemento di specificazione che modifica день."
+          "nota": "letteralmente 'giorno di nascita': рождения è il genitivo singolare di рождение, complemento di specificazione che modifica день.",
+          "link": {
+            "tipo": "nome",
+            "parola": "день",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "в январе",
@@ -24805,7 +24953,13 @@
         {
           "ru": "часа",
           "it": "ore",
-          "nota": "genitivo singolare di час (ora): non 'часы' (plurale), perché il numerale три richiede il genitivo singolare."
+          "nota": "genitivo singolare di час (ora): non 'часы' (plurale), perché il numerale три richiede il genitivo singolare.",
+          "link": {
+            "tipo": "nome",
+            "parola": "час",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24822,7 +24976,13 @@
         {
           "ru": "Магазин",
           "it": "il negozio (m.)",
-          "nota": "nominativo singolare, soggetto."
+          "nota": "nominativo singolare, soggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "магазин",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "открыт",
@@ -24859,7 +25019,13 @@
         {
           "ru": "подарок",
           "it": "regalo (m.)",
-          "nota": "nominativo singolare, soggetto."
+          "nota": "nominativo singolare, soggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "подарок",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "для",
@@ -24900,7 +25066,11 @@
         {
           "ru": "жить",
           "it": "vivere",
-          "nota": "infinito, dopo il verbo modale мочь."
+          "nota": "infinito, dopo il verbo modale мочь.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "жить"
+          }
         },
         {
           "ru": "без",
@@ -24927,7 +25097,13 @@
         {
           "ru": "Поезд",
           "it": "il treno (m.)",
-          "nota": "nominativo singolare, soggetto."
+          "nota": "nominativo singolare, soggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "поезд",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "едет",
@@ -25016,7 +25192,11 @@
         {
           "ru": "мы идём",
           "it": "noi andiamo",
-          "nota": "идём = presente, 1ª persona plurale di идти."
+          "nota": "идём = presente, 1ª persona plurale di идти.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "идти"
+          }
         },
         {
           "ru": "домой",
@@ -25063,7 +25243,13 @@
         {
           "ru": "дерево",
           "it": "albero (n.)",
-          "nota": "nominativo singolare neutro, soggetto della frase."
+          "nota": "nominativo singolare neutro, soggetto della frase.",
+          "link": {
+            "tipo": "nome",
+            "parola": "дерево",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -25085,12 +25271,24 @@
         {
           "ru": "окном",
           "it": "la finestra",
-          "nota": "strumentale singolare di окно."
+          "nota": "strumentale singolare di окно.",
+          "link": {
+            "tipo": "nome",
+            "parola": "окно",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         },
         {
           "ru": "и дверью",
           "it": "e la porta",
-          "nota": "дверью = strumentale singolare di дверь (femminile in -ь, aggiunge -ью)."
+          "nota": "дверью = strumentale singolare di дверь (femminile in -ь, aggiunge -ью).",
+          "link": {
+            "tipo": "nome",
+            "parola": "дверь",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         },
         {
           "ru": "стоит",
@@ -25212,7 +25410,11 @@
         {
           "ru": "курить",
           "it": "fumare",
-          "nota": "infinito, l'azione permessa."
+          "nota": "infinito, l'azione permessa.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "курить"
+          }
         }
       ],
       "regola": {
@@ -25239,7 +25441,11 @@
         {
           "ru": "курить",
           "it": "fumare",
-          "nota": "infinito, l'azione vietata."
+          "nota": "infinito, l'azione vietata.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "курить"
+          }
         }
       ],
       "regola": {
@@ -25256,7 +25462,13 @@
         {
           "ru": "Эта книга",
           "it": "questo libro",
-          "nota": "этот alla forma femminile (эта) + книга, nominativo, soggetto."
+          "nota": "этот alla forma femminile (эта) + книга, nominativo, soggetto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "книга",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         },
         {
           "ru": "интереснее",
@@ -25303,7 +25515,15 @@
         {
           "ru": "студент",
           "it": "studente (m.)",
-          "nota": "nominativo, complemento predicativo del soggetto он."
+          "nota": "nominativo, complemento predicativo del soggetto он.",
+          "link": {
+            "tipo": "nome",
+            "parola": "студент",
+            "gramm": "sostantivo (m.)",
+            "tags": [
+              "professioni"
+            ]
+          }
         },
         {
           "ru": "в классе",
@@ -25361,7 +25581,13 @@
         {
           "ru": "Дома",
           "it": "a casa (stato)",
-          "nota": "avverbio di stato in luogo (diverso da домой, moto a luogo): forma irregolare, non un vero genitivo."
+          "nota": "avverbio di stato in luogo (diverso da домой, moto a luogo): forma irregolare, non un vero genitivo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "дом",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "никого",
@@ -25403,7 +25629,11 @@
         {
           "ru": "понимаю",
           "it": "capisco",
-          "nota": "presente, 1ª persona singolare di понимать."
+          "nota": "presente, 1ª persona singolare di понимать.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "понимать"
+          }
         }
       ],
       "regola": {
@@ -25420,12 +25650,22 @@
         {
           "ru": "Я учу",
           "it": "io studio",
-          "nota": "учу = presente, 1ª persona singolare di учить (imparare/studiare qualcosa)."
+          "nota": "учу = presente, 1ª persona singolare di учить (imparare/studiare qualcosa).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "учить"
+          }
         },
         {
           "ru": "русский язык",
           "it": "la lingua russa",
-          "nota": "accusativo (maschile inanimato = nominativo), oggetto diretto."
+          "nota": "accusativo (maschile inanimato = nominativo), oggetto diretto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "язык",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "чтобы",
@@ -25572,7 +25812,11 @@
         {
           "ru": "Я вижу",
           "it": "io vedo",
-          "nota": "вижу = presente irregolare di видеть."
+          "nota": "вижу = presente irregolare di видеть.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "видеть"
+          }
         },
         {
           "ru": "брата",
@@ -25602,7 +25846,11 @@
         {
           "ru": "Я вижу",
           "it": "io vedo",
-          "nota": "вижу = presente irregolare di видеть."
+          "nota": "вижу = presente irregolare di видеть.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "видеть"
+          }
         },
         {
           "ru": "братьев",
@@ -25734,7 +25982,11 @@
         {
           "ru": "был",
           "it": "era",
-          "nota": "passato del verbo essere (быть) alla forma maschile singolare: a differenza del presente, il passato di essere non si omette mai."
+          "nota": "passato del verbo essere (быть) alla forma maschile singolare: a differenza del presente, il passato di essere non si omette mai.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "быть"
+          }
         },
         {
           "ru": "трудный",
@@ -25803,7 +26055,13 @@
         {
           "ru": "в Москве",
           "it": "a Mosca",
-          "nota": "в + prepositivo di Москва, stato in luogo."
+          "nota": "в + prepositivo di Москва, stato in luogo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "Москва",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -25834,7 +26092,13 @@
         {
           "ru": "в Италии",
           "it": "in Italia",
-          "nota": "в + prepositivo di Италия (da -я a -и), stato in luogo."
+          "nota": "в + prepositivo di Италия (da -я a -и), stato in luogo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "Италия",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -25873,7 +26137,13 @@
         {
           "ru": "во дворе",
           "it": "nel cortile",
-          "nota": "во (variante di в) + prepositivo di двор: si usa 'во' invece di 'в' davanti a parole che iniziano con certi gruppi di consonanti, per facilitare la pronuncia."
+          "nota": "во (variante di в) + prepositivo di двор: si usa 'во' invece di 'в' davanti a parole che iniziano con certi gruppi di consonanti, per facilitare la pronuncia.",
+          "link": {
+            "tipo": "nome",
+            "parola": "двор",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -26041,7 +26311,13 @@
         {
           "ru": "вчера вечером",
           "it": "ieri sera",
-          "nota": "вчера (ieri) + вечером (strumentale avverbiale di tempo di вечер, sera)."
+          "nota": "вчера (ieri) + вечером (strumentale avverbiale di tempo di вечер, sera).",
+          "link": {
+            "tipo": "nome",
+            "parola": "вечер",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -26058,7 +26334,13 @@
         {
           "ru": "Завтра утром",
           "it": "domani mattina",
-          "nota": "завтра (domani) + утром (strumentale avverbiale di tempo)."
+          "nota": "завтра (domani) + утром (strumentale avverbiale di tempo).",
+          "link": {
+            "tipo": "nome",
+            "parola": "утро",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         },
         {
           "ru": "я уеду",
@@ -26072,7 +26354,13 @@
         {
           "ru": "в Питер",
           "it": "per Pietroburgo",
-          "nota": "в + accusativo di Питер (nome colloquiale di San Pietroburgo): moto a luogo."
+          "nota": "в + accusativo di Питер (nome colloquiale di San Pietroburgo): moto a luogo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "Питер",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -26089,7 +26377,13 @@
         {
           "ru": "Зимой",
           "it": "d'inverno",
-          "nota": "strumentale avverbiale di зима (inverno), senza preposizione: lo stesso meccanismo visto con утром/вечером per dire 'quando'."
+          "nota": "strumentale avverbiale di зима (inverno), senza preposizione: lo stesso meccanismo visto con утром/вечером per dire 'quando'.",
+          "link": {
+            "tipo": "nome",
+            "parola": "зима",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         },
         {
           "ru": "холодно",
@@ -26104,7 +26398,13 @@
         {
           "ru": "летом",
           "it": "d'estate",
-          "nota": "strumentale avverbiale di лето (estate), stesso schema di зимой."
+          "nota": "strumentale avverbiale di лето (estate), stesso schema di зимой.",
+          "link": {
+            "tipo": "nome",
+            "parola": "лето",
+            "gramm": "sostantivo (n.)",
+            "tags": []
+          }
         },
         {
           "ru": "жарко",
@@ -26115,6 +26415,766 @@
       "regola": {
         "sez": "riferimento",
         "id": "r013"
+      }
+    },
+    {
+      "id": 200,
+      "ru": "Несмотря на дождь, мы пошли гулять.",
+      "it": "Nonostante la pioggia, siamo andati a fare una passeggiata.",
+      "tema": "Несмотря на + accusativo: la concessione 'nonostante'",
+      "parole": [
+        {
+          "ru": "Несмотря на",
+          "it": "nonostante",
+          "nota": "locuzione prepositiva invariabile (letteralmente 'non guardando a'): regge l'accusativo e introduce una concessione."
+        },
+        {
+          "ru": "дождь",
+          "it": "la pioggia (m.)",
+          "nota": "accusativo (maschile inanimato = nominativo), retto da несмотря на.",
+          "link": {
+            "tipo": "nome",
+            "parola": "дождь",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
+        },
+        {
+          "ru": "мы пошли",
+          "it": "noi siamo andati",
+          "nota": "passato perfettivo plurale di пойти (mettersi in moto, iniziare ad andare): a differenza di идти, indica l'inizio del movimento, un fatto concluso.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "пойти"
+          }
+        },
+        {
+          "ru": "гулять",
+          "it": "passeggiare",
+          "nota": "infinito imperfettivo: dopo un verbo di moto esprime lo scopo dello spostamento."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 201,
+      "ru": "Хотя я устал, я работал.",
+      "it": "Anche se ero stanco, ho lavorato.",
+      "tema": "Хотя + forma breve dell'aggettivo: la concessione 'sebbene'",
+      "parole": [
+        {
+          "ru": "Хотя",
+          "it": "sebbene, anche se",
+          "nota": "congiunzione concessiva: introduce un fatto che contrasta con quanto segue, senza escluderlo."
+        },
+        {
+          "ru": "я устал",
+          "it": "io ero stanco",
+          "nota": "устал = forma breve maschile del participio/aggettivo усталый (stanco), usata come predicato: indica uno stato risultante da un'azione precedente."
+        },
+        {
+          "ru": "я работал",
+          "it": "io ho lavorato / lavoravo",
+          "nota": "работал = passato maschile singolare di работать.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "работать"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 202,
+      "ru": "Он не любит рыбу, но ест её каждый день.",
+      "it": "Lui non ama il pesce, ma lo mangia ogni giorno.",
+      "tema": "Но: il contrasto forte, diverso da а",
+      "parole": [
+        {
+          "ru": "Он не любит рыбу",
+          "it": "lui non ama il pesce",
+          "nota": "любит = presente di любить (3ª sing.), negato da не; рыбу = accusativo singolare di рыба, oggetto diretto.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "любить"
+          }
+        },
+        {
+          "ru": "но",
+          "it": "ma",
+          "nota": "congiunzione avversativa forte: contraddice un'aspettativa creata dalla prima parte della frase (diversamente da а, che collega due fatti semplicemente paralleli)."
+        },
+        {
+          "ru": "ест",
+          "it": "mangia",
+          "nota": "presente, 3ª persona singolare del verbo irregolare есть (mangiare — diverso dall'есть esistenziale legato a быть).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "есть"
+          }
+        },
+        {
+          "ru": "её",
+          "it": "lo",
+          "nota": "accusativo del pronome она: qui riferito a рыба (il pesce), che in russo è femminile."
+        },
+        {
+          "ru": "каждый день",
+          "it": "ogni giorno",
+          "nota": "accusativo usato senza preposizione per esprimere la frequenza/ripetizione di un'azione."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 203,
+      "ru": "Он устал, зато счастлив.",
+      "it": "Lui è stanco, però (in compenso) è felice.",
+      "tema": "Зато: il contrasto compensativo 'però, in compenso'",
+      "parole": [
+        {
+          "ru": "Он устал",
+          "it": "lui è stanco",
+          "nota": "устал = forma breve maschile di усталый, usata come predicato."
+        },
+        {
+          "ru": "зато",
+          "it": "però, in compenso",
+          "nota": "congiunzione che introduce un aspetto positivo (o negativo) che compensa quanto detto prima: non contraddice, bilancia."
+        },
+        {
+          "ru": "счастлив",
+          "it": "felice",
+          "nota": "forma breve maschile dell'aggettivo счастливый, usata come predicato: non si declina per caso, solo per genere/numero."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 204,
+      "ru": "И всё же я его люблю.",
+      "it": "E tuttavia lo amo. / Eppure lo amo.",
+      "tema": "И всё же: l'avversativa 'eppure, tuttavia'",
+      "parole": [
+        {
+          "ru": "И всё же",
+          "it": "e tuttavia, eppure",
+          "nota": "locuzione avversativa che introduce una conclusione inattesa rispetto a quanto detto (o pensato) prima."
+        },
+        {
+          "ru": "я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "его",
+          "it": "lo",
+          "nota": "accusativo del pronome он."
+        },
+        {
+          "ru": "люблю",
+          "it": "amo",
+          "nota": "presente, 1ª persona singolare di любить: irregolare, inserisce una л epentetica solo alla 1ª persona (любл-ю).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "любить"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 205,
+      "ru": "Я бы хотел поехать в Россию.",
+      "it": "Vorrei andare in Russia.",
+      "tema": "Il condizionale: бы + passato",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "бы",
+          "it": "(particella del condizionale)",
+          "nota": "particella invariabile che, insieme al passato del verbo, forma il condizionale russo: non esiste una desinenza apposita, si usa sempre 'verbo al passato + бы' (può stare anche dopo il verbo)."
+        },
+        {
+          "ru": "хотел",
+          "it": "vorrei / volevo",
+          "nota": "passato maschile di хотеть; con бы diventa condizionale ('vorrei') invece di semplice passato ('volevo').",
+          "link": {
+            "tipo": "verbo",
+            "inf": "хотеть"
+          }
+        },
+        {
+          "ru": "поехать",
+          "it": "andare (una volta, con un mezzo)",
+          "nota": "infinito perfettivo di поехать, retto da хотел.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "поехать"
+          }
+        },
+        {
+          "ru": "в Россию",
+          "it": "in Russia",
+          "nota": "в + accusativo di Россия: moto a luogo."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r017"
+      }
+    },
+    {
+      "id": 206,
+      "ru": "Если бы у меня было время, я поехал бы в Италию.",
+      "it": "Se avessi tempo, andrei in Italia.",
+      "tema": "Periodo ipotetico irreale: если бы + passato, passato + бы",
+      "parole": [
+        {
+          "ru": "Если бы",
+          "it": "se (ipotetico)",
+          "nota": "если bы introduce una condizione irreale o poco probabile — a differenza di если semplice, usato per condizioni reali o future."
+        },
+        {
+          "ru": "у меня было время",
+          "it": "avessi tempo",
+          "nota": "было = passato neutro di быть, concorda con время (neutro): costruzione di possesso al passato.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "быть"
+          }
+        },
+        {
+          "ru": "я поехал бы",
+          "it": "io andrei",
+          "nota": "поехал (passato di поехать) + бы = condizionale: qui бы sta dopo il verbo invece che dopo если.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "поехать"
+          }
+        },
+        {
+          "ru": "в Италию",
+          "it": "in Italia",
+          "nota": "в + accusativo di Италия."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r017"
+      }
+    },
+    {
+      "id": 207,
+      "ru": "Я сделал бы это, если бы мог.",
+      "it": "Lo farei, se potessi.",
+      "tema": "Condizionale nella frase principale e nella subordinata",
+      "parole": [
+        {
+          "ru": "Я сделал бы",
+          "it": "io farei",
+          "nota": "сделал = passato perfettivo di сделать + бы = condizionale.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "сделать"
+          }
+        },
+        {
+          "ru": "это",
+          "it": "questo, lo",
+          "nota": "pronome dimostrativo, qui complemento oggetto."
+        },
+        {
+          "ru": "если бы",
+          "it": "se",
+          "nota": "introduce la condizione ipotetica."
+        },
+        {
+          "ru": "мог",
+          "it": "potessi / potevo",
+          "nota": "passato maschile di мочь; qui, retto dallo stesso если бы della frase, ha valore condizionale.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "мочь"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r017"
+      }
+    },
+    {
+      "id": 208,
+      "ru": "Она сказала бы правду, но боялась.",
+      "it": "Lei avrebbe detto la verità, ma aveva paura.",
+      "tema": "Condizionale contrastato da но",
+      "parole": [
+        {
+          "ru": "Она сказала бы",
+          "it": "lei avrebbe detto",
+          "nota": "сказала = passato femminile di сказать + бы = condizionale.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "сказать"
+          }
+        },
+        {
+          "ru": "правду",
+          "it": "la verità",
+          "nota": "accusativo singolare di правда, oggetto diretto.",
+          "link": {
+            "tipo": "nome",
+            "parola": "правда",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
+        },
+        {
+          "ru": "но",
+          "it": "ma",
+          "nota": "congiunzione avversativa forte."
+        },
+        {
+          "ru": "боялась",
+          "it": "aveva paura",
+          "nota": "passato femminile del verbo riflessivo бояться: qui è un fatto reale (senza бы), non un'ipotesi.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "бояться"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r017"
+      }
+    },
+    {
+      "id": 209,
+      "ru": "Я хочу, чтобы ты пришёл вовремя.",
+      "it": "Voglio che tu arrivi in orario.",
+      "tema": "Чтобы + passato per un desiderio riferito a un'altra persona",
+      "parole": [
+        {
+          "ru": "Я хочу",
+          "it": "io voglio",
+          "nota": "хочу = presente irregolare di хотеть.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "хотеть"
+          }
+        },
+        {
+          "ru": "чтобы",
+          "it": "che",
+          "nota": "quando i soggetti di хотеть e del verbo dipendente sono diversi, чтобы è seguito dal passato — anche se il significato riguarda il presente o il futuro."
+        },
+        {
+          "ru": "ты пришёл",
+          "it": "tu arrivi / sia arrivato",
+          "nota": "пришёл = passato maschile di прийти: qui non descrive un fatto passato reale, ma un desiderio.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "прийти"
+          }
+        },
+        {
+          "ru": "вовремя",
+          "it": "in orario, puntuale",
+          "nota": "avverbio invariabile."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r018"
+      }
+    },
+    {
+      "id": 210,
+      "ru": "Он попросил, чтобы я закрыл дверь.",
+      "it": "Lui ha chiesto che io chiudessi la porta.",
+      "tema": "Чтобы + passato dopo un verbo di richiesta",
+      "parole": [
+        {
+          "ru": "Он попросил",
+          "it": "lui ha chiesto",
+          "nota": "попросил = passato maschile di попросить (perfettivo di просить).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "попросить"
+          }
+        },
+        {
+          "ru": "чтобы",
+          "it": "che",
+          "nota": "stesso meccanismo di чтобы+passato, qui dopo un verbo di richiesta invece che di volontà."
+        },
+        {
+          "ru": "я закрыл",
+          "it": "io chiudessi",
+          "nota": "закрыл = passato maschile di закрыть (perfettivo di закрывать).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "закрыть"
+          }
+        },
+        {
+          "ru": "дверь",
+          "it": "la porta (f.)",
+          "nota": "accusativo: femminile in -ь, identico al nominativo per gli inanimati.",
+          "link": {
+            "tipo": "nome",
+            "parola": "дверь",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r018"
+      }
+    },
+    {
+      "id": 211,
+      "ru": "Несмотря на трудности, она не сдалась.",
+      "it": "Nonostante le difficoltà, lei non si è arresa.",
+      "tema": "Несмотря на + accusativo plurale",
+      "parole": [
+        {
+          "ru": "Несмотря на",
+          "it": "nonostante",
+          "nota": "locuzione prepositiva invariabile, regge l'accusativo."
+        },
+        {
+          "ru": "трудности",
+          "it": "le difficoltà",
+          "nota": "accusativo plurale di трудность (femminile in -ь): per gli inanimati è identico al nominativo plurale.",
+          "link": {
+            "tipo": "nome",
+            "parola": "трудность",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
+        },
+        {
+          "ru": "она",
+          "it": "lei",
+          "nota": "pronome soggetto femminile."
+        },
+        {
+          "ru": "не сдалась",
+          "it": "non si è arresa",
+          "nota": "сдалась = passato femminile del verbo riflessivo perfettivo сдаться (arrendersi), negato da не.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "сдаться"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 212,
+      "ru": "Хотя было холодно, дети играли на улице.",
+      "it": "Anche se faceva freddo, i bambini giocavano in strada.",
+      "tema": "Хотя + было + avverbio predicativo impersonale al passato",
+      "parole": [
+        {
+          "ru": "Хотя",
+          "it": "sebbene, anche se",
+          "nota": "congiunzione concessiva."
+        },
+        {
+          "ru": "было холодно",
+          "it": "faceva freddo",
+          "nota": "было = passato neutro di быть, usato insieme all'avverbio impersonale холодно: le costruzioni impersonali al passato richiedono sempre было (neutro), qualunque sia il soggetto logico.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "быть"
+          }
+        },
+        {
+          "ru": "дети играли",
+          "it": "i bambini giocavano",
+          "nota": "играли = passato plurale di играть; дети = plurale irregolare (suppletivo) di ребёнок.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "играть"
+          }
+        },
+        {
+          "ru": "на улице",
+          "it": "in strada, fuori",
+          "nota": "на + prepositivo di улица.",
+          "link": {
+            "tipo": "nome",
+            "parola": "улица",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 213,
+      "ru": "Он много работает, поэтому устал.",
+      "it": "Lui lavora molto, perciò è stanco.",
+      "tema": "Поэтому: la conseguenza 'perciò, quindi'",
+      "parole": [
+        {
+          "ru": "Он много работает",
+          "it": "lui lavora molto",
+          "nota": "работает = presente di работать; много = avverbio di quantità.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "работать"
+          }
+        },
+        {
+          "ru": "поэтому",
+          "it": "perciò, quindi",
+          "nota": "avverbio/congiunzione che introduce la conseguenza logica di quanto detto prima."
+        },
+        {
+          "ru": "устал",
+          "it": "è stanco",
+          "nota": "forma breve maschile di усталый, usata come predicato."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r015"
+      }
+    },
+    {
+      "id": 214,
+      "ru": "Я опоздал, потому что попал в пробку.",
+      "it": "Sono arrivato in ritardo, perché sono rimasto bloccato nel traffico.",
+      "tema": "Потому что: la causa 'perché'",
+      "parole": [
+        {
+          "ru": "Я опоздал",
+          "it": "sono arrivato in ritardo",
+          "nota": "опоздал = passato maschile di опоздать (perfettivo di опаздывать).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "опоздать"
+          }
+        },
+        {
+          "ru": "потому что",
+          "it": "perché",
+          "nota": "congiunzione causale: introduce la causa di un fatto (diversa da почему, che è la domanda 'perché?')."
+        },
+        {
+          "ru": "попал в пробку",
+          "it": "sono rimasto bloccato nel traffico",
+          "nota": "попал = passato maschile di попасть (finire/capitare in); пробку = accusativo di пробка (ingorgo).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "попасть"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r015"
+      }
+    },
+    {
+      "id": 215,
+      "ru": "Если я буду свободен, я приду.",
+      "it": "Se sarò libero, verrò.",
+      "tema": "Periodo ipotetico reale: если + futuro, futuro (senza бы)",
+      "parole": [
+        {
+          "ru": "Если",
+          "it": "se",
+          "nota": "qui introduce una condizione reale/possibile nel futuro, senza бы: si usa il futuro in entrambe le frasi, come in italiano."
+        },
+        {
+          "ru": "я буду свободен",
+          "it": "io sarò libero",
+          "nota": "буду = futuro di быть; свободен = forma breve maschile di свободный (libero).",
+          "link": {
+            "tipo": "verbo",
+            "inf": "быть"
+          }
+        },
+        {
+          "ru": "я приду",
+          "it": "io verrò",
+          "nota": "приду = futuro perfettivo di прийти.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "прийти"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r017"
+      }
+    },
+    {
+      "id": 216,
+      "ru": "Даже если будет дождь, мы пойдём.",
+      "it": "Anche se dovesse piovere, andremo.",
+      "tema": "Даже если: la concessione ipotetica 'anche se'",
+      "parole": [
+        {
+          "ru": "Даже если",
+          "it": "anche se, persino se",
+          "nota": "rafforza если con даже (anche, persino): introduce una concessione ipotetica più forte, riferita a un'eventualità futura."
+        },
+        {
+          "ru": "будет дождь",
+          "it": "pioverà",
+          "nota": "будет = futuro di быть; дождь = nominativo, soggetto: letteralmente 'ci sarà pioggia'.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "быть"
+          }
+        },
+        {
+          "ru": "мы пойдём",
+          "it": "noi andremo",
+          "nota": "пойдём = futuro perfettivo di пойти.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "пойти"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
+      }
+    },
+    {
+      "id": 217,
+      "ru": "Чем больше я учу, тем лучше я говорю.",
+      "it": "Quanto più studio, tanto meglio parlo.",
+      "tema": "Чем... тем...: il comparativo correlativo 'quanto più... tanto più...'",
+      "parole": [
+        {
+          "ru": "Чем больше",
+          "it": "quanto più",
+          "nota": "чем + il comparativo больше (di много): introduce il primo termine della correlazione."
+        },
+        {
+          "ru": "я учу",
+          "it": "io studio",
+          "nota": "учу = presente di учить.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "учить"
+          }
+        },
+        {
+          "ru": "тем лучше",
+          "it": "tanto meglio",
+          "nota": "тем + il comparativo лучше (di хорошо/хороший): introduce la conseguenza proporzionale al primo termine."
+        },
+        {
+          "ru": "я говорю",
+          "it": "io parlo",
+          "nota": "говорю = presente di говорить.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "говорить"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r018"
+      }
+    },
+    {
+      "id": 218,
+      "ru": "Не только я, но и она любит музыку.",
+      "it": "Non solo io, ma anche lei ama la musica.",
+      "tema": "Не только... но и...: 'non solo... ma anche...'",
+      "parole": [
+        {
+          "ru": "Не только",
+          "it": "non solo",
+          "nota": "avverbio + particella: introduce il primo elemento, presentato come insufficiente da solo."
+        },
+        {
+          "ru": "я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "но и",
+          "it": "ma anche",
+          "nota": "congiunzione che introduce il secondo elemento, aggiunto (non contrapposto) al primo."
+        },
+        {
+          "ru": "она любит музыку",
+          "it": "lei ama la musica",
+          "nota": "любит = presente di любить; музыку = accusativo di музыка, oggetto diretto.",
+          "link": {
+            "tipo": "verbo",
+            "inf": "любить"
+          }
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r018"
+      }
+    },
+    {
+      "id": 219,
+      "ru": "Всё-таки она права.",
+      "it": "Alla fin fine, lei ha ragione.",
+      "tema": "Всё-таки: 'alla fine, comunque, dopotutto'",
+      "parole": [
+        {
+          "ru": "Всё-таки",
+          "it": "alla fine, comunque, dopotutto",
+          "nota": "avverbio che introduce una conclusione che si impone nonostante dubbi o obiezioni precedenti."
+        },
+        {
+          "ru": "она права",
+          "it": "lei ha ragione",
+          "nota": "права = forma breve femminile dell'aggettivo правый (aver ragione), usata come predicato."
+        }
+      ],
+      "regola": {
+        "sez": "riferimento",
+        "id": "r016"
       }
     }
   ],
@@ -27146,6 +28206,132 @@
         {
           "tipo": "nota",
           "testo": "Altre congiunzioni comuni: потому что (perché, causale), но (ma, contrasto forte), а (mentre/invece, contrasto neutro tra due fatti paralleli)."
+        },
+        {
+          "tipo": "testo",
+          "testo": "Per la <b>causa</b> si usa <b>потому что</b> (perché): <i>Я опоздал, потому что попал в пробку.</i> Per la <b>conseguenza</b> si usa <b>поэтому</b> (perciò, quindi): <i>Он много работает, поэтому устал.</i> Не confondere потому что (causale) con почему (la domanda 'perché?')."
+        }
+      ]
+    },
+    {
+      "id": "r016",
+      "categoria": "Concessive e avversative",
+      "icona": "⚖️",
+      "sottotitolo": "Хотя, несмотря на, но, а, зато, всё же: i mille modi di 'contrastare'",
+      "blocchi": [
+        {
+          "tipo": "testo",
+          "testo": "Il russo distingue diversi tipi di contrasto: la <b>concessione</b> ('anche se, nonostante') e diversi gradi di <b>opposizione</b> tra due fatti."
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Parola",
+            "Significato",
+            "Esempio"
+          ],
+          "righe": [
+            [
+              "хотя",
+              "sebbene, anche se (+ frase)",
+              "Хотя я устал, я работал."
+            ],
+            [
+              "несмотря на",
+              "nonostante (+ accusativo)",
+              "Несмотря на дождь, мы пошли гулять."
+            ],
+            [
+              "даже если",
+              "anche se (ipotetico, riferito al futuro)",
+              "Даже если будет дождь, мы пойдём."
+            ],
+            [
+              "но",
+              "ma (contrasto forte, contraddice)",
+              "Он не любит рыбу, но ест её."
+            ],
+            [
+              "а",
+              "mentre, invece (contrasto neutro, parallelo)",
+              "Зимой холодно, а летом жарко."
+            ],
+            [
+              "зато",
+              "però, in compenso (bilancia)",
+              "Он устал, зато счастлив."
+            ],
+            [
+              "и всё же / всё-таки",
+              "eppure, tuttavia, alla fine",
+              "И всё же я его люблю."
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Хотя</b> e <b>несмотря на</b> si assomigliano ma reggono strutture diverse: хотя introduce una <b>frase</b> intera (con un verbo), несмотря на regge solo un <b>sostantivo</b> all'accusativo."
+        }
+      ]
+    },
+    {
+      "id": "r017",
+      "categoria": "Condizionale e periodo ipotetico",
+      "icona": "🔮",
+      "sottotitolo": "La particella бы: niente desinenze, solo passato + бы",
+      "blocchi": [
+        {
+          "tipo": "testo",
+          "testo": "Il russo non ha una desinenza apposita per il condizionale: si forma sempre con il <b>passato del verbo + бы</b>. La particella бы è invariabile e può stare subito dopo если, oppure direttamente dopo il verbo."
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Costruzione",
+            "Uso",
+            "Esempio"
+          ],
+          "righe": [
+            [
+              "verbo al passato + бы",
+              "condizionale semplice ('vorrei, farei...')",
+              "Я бы хотел поехать в Россию."
+            ],
+            [
+              "если бы + passato ... passato + бы",
+              "ipotesi irreale o poco probabile",
+              "Если бы у меня было время, я поехал бы в Италию."
+            ],
+            [
+              "если + futuro ... futuro",
+              "ipotesi reale/possibile (senza бы)",
+              "Если я буду свободен, я приду."
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "Attenzione alla differenza: <b>если</b> da solo introduce una condizione realizzabile (nel presente/futuro); <b>если бы</b> introduce un'ipotesi irreale o contraria ai fatti, un po' come l'italiano 'se avessi... farei'."
+        }
+      ]
+    },
+    {
+      "id": "r018",
+      "categoria": "Costruzioni correlative e discorso indiretto",
+      "icona": "🔁",
+      "sottotitolo": "Чтобы + passato, чем...тем, не только...но и",
+      "blocchi": [
+        {
+          "tipo": "testo",
+          "testo": "Quando <b>чтобы</b> introduce un desiderio, un ordine o una richiesta riferiti a <b>un'altra persona</b> (soggetto diverso da quello della prima frase), il verbo dopo чтобы va sempre al <b>passato</b> — anche se il significato riguarda il presente o il futuro: <i>Я хочу, чтобы ты пришёл вовремя.</i> (Voglio che tu arrivi in orario.)"
+        },
+        {
+          "tipo": "testo",
+          "testo": "<b>Чем... тем...</b> collega due comparativi in proporzione ('quanto più... tanto più...'): <i>Чем больше я учу, тем лучше я говорю.</i>"
+        },
+        {
+          "tipo": "testo",
+          "testo": "<b>Не только... но и...</b> aggiunge un secondo elemento al primo, senza contrapporli ('non solo... ma anche...'): <i>Не только я, но и она любит музыку.</i>"
         }
       ]
     }
@@ -29552,6 +30738,394 @@
           "будем звать",
           "будете звать",
           "будут звать"
+        ]
+      }
+    },
+    {
+      "id": "verb070",
+      "inf": "курить",
+      "translit_inf": "kurítʹ",
+      "en": "fumare",
+      "gruppo": "2",
+      "categoria": "azioni",
+      "coniugazioni": {
+        "pres": [
+          "курю",
+          "куришь",
+          "курит",
+          "курим",
+          "курите",
+          "курят"
+        ],
+        "past": [
+          "курил",
+          "курила",
+          "курило",
+          "курили"
+        ],
+        "imp": [
+          "кури",
+          "курите"
+        ],
+        "fut": [
+          "буду курить",
+          "будешь курить",
+          "будет курить",
+          "будем курить",
+          "будете курить",
+          "будут курить"
+        ]
+      }
+    },
+    {
+      "id": "verb071",
+      "inf": "учить",
+      "translit_inf": "učítʹ",
+      "en": "studiare, imparare (qualcosa)",
+      "gruppo": "2",
+      "categoria": "svago",
+      "coniugazioni": {
+        "pres": [
+          "учу",
+          "учишь",
+          "учит",
+          "учим",
+          "учите",
+          "учат"
+        ],
+        "past": [
+          "учил",
+          "учила",
+          "учило",
+          "учили"
+        ],
+        "imp": [
+          "учи",
+          "учите"
+        ],
+        "fut": [
+          "буду учить",
+          "будешь учить",
+          "будет учить",
+          "будем учить",
+          "будете учить",
+          "будут учить"
+        ]
+      }
+    },
+    {
+      "id": "verb072",
+      "inf": "пойти",
+      "translit_inf": "pojtí",
+      "en": "andare, mettersi in cammino (una volta)",
+      "gruppo": "irr",
+      "categoria": "movimento",
+      "coniugazioni": {
+        "past": [
+          "пошёл",
+          "пошла",
+          "пошло",
+          "пошли"
+        ],
+        "imp": [
+          "пойди",
+          "пойдите"
+        ],
+        "fut": [
+          "пойду",
+          "пойдёшь",
+          "пойдёт",
+          "пойдём",
+          "пойдёте",
+          "пойдут"
+        ]
+      }
+    },
+    {
+      "id": "verb073",
+      "inf": "поехать",
+      "translit_inf": "pojéhatʹ",
+      "en": "partire, andare (una volta, con un mezzo)",
+      "gruppo": "irr",
+      "categoria": "movimento",
+      "coniugazioni": {
+        "past": [
+          "поехал",
+          "поехала",
+          "поехало",
+          "поехали"
+        ],
+        "imp": [
+          "поезжай",
+          "поезжайте"
+        ],
+        "fut": [
+          "поеду",
+          "поедешь",
+          "поедет",
+          "поедем",
+          "поедете",
+          "поедут"
+        ]
+      }
+    },
+    {
+      "id": "verb074",
+      "inf": "прийти",
+      "translit_inf": "prijtí",
+      "en": "arrivare (a piedi, una volta)",
+      "gruppo": "irr",
+      "categoria": "movimento",
+      "coniugazioni": {
+        "past": [
+          "пришёл",
+          "пришла",
+          "пришло",
+          "пришли"
+        ],
+        "imp": [
+          "приди",
+          "придите"
+        ],
+        "fut": [
+          "приду",
+          "придёшь",
+          "придёт",
+          "придём",
+          "придёте",
+          "придут"
+        ]
+      }
+    },
+    {
+      "id": "verb075",
+      "inf": "сделать",
+      "translit_inf": "sdélatʹ",
+      "en": "fare (una volta)",
+      "gruppo": "1",
+      "categoria": "azioni",
+      "coniugazioni": {
+        "past": [
+          "сделал",
+          "сделала",
+          "сделало",
+          "сделали"
+        ],
+        "imp": [
+          "сделай",
+          "сделайте"
+        ],
+        "fut": [
+          "сделаю",
+          "сделаешь",
+          "сделает",
+          "сделаем",
+          "сделаете",
+          "сделают"
+        ]
+      }
+    },
+    {
+      "id": "verb076",
+      "inf": "сказать",
+      "translit_inf": "skazátʹ",
+      "en": "dire (una volta)",
+      "gruppo": "1",
+      "categoria": "comunicazione",
+      "coniugazioni": {
+        "past": [
+          "сказал",
+          "сказала",
+          "сказало",
+          "сказали"
+        ],
+        "imp": [
+          "скажи",
+          "скажите"
+        ],
+        "fut": [
+          "скажу",
+          "скажешь",
+          "скажет",
+          "скажем",
+          "скажете",
+          "скажут"
+        ]
+      }
+    },
+    {
+      "id": "verb077",
+      "inf": "бояться",
+      "translit_inf": "bojátʹsja",
+      "en": "temere, avere paura",
+      "gruppo": "2",
+      "categoria": "sentimenti",
+      "coniugazioni": {
+        "pres": [
+          "боюсь",
+          "боишься",
+          "боится",
+          "боимся",
+          "боитесь",
+          "боятся"
+        ],
+        "past": [
+          "боялся",
+          "боялась",
+          "боялось",
+          "боялись"
+        ],
+        "imp": [
+          "бойся",
+          "бойтесь"
+        ],
+        "fut": [
+          "буду бояться",
+          "будешь бояться",
+          "будет бояться",
+          "будем бояться",
+          "будете бояться",
+          "будут бояться"
+        ]
+      }
+    },
+    {
+      "id": "verb078",
+      "inf": "попросить",
+      "translit_inf": "paprasítʹ",
+      "en": "chiedere (una volta)",
+      "gruppo": "2",
+      "categoria": "comunicazione",
+      "coniugazioni": {
+        "past": [
+          "попросил",
+          "попросила",
+          "попросило",
+          "попросили"
+        ],
+        "imp": [
+          "попроси",
+          "попросите"
+        ],
+        "fut": [
+          "попрошу",
+          "попросишь",
+          "попросит",
+          "попросим",
+          "попросите",
+          "попросят"
+        ]
+      }
+    },
+    {
+      "id": "verb079",
+      "inf": "закрыть",
+      "translit_inf": "zakrýtʹ",
+      "en": "chiudere (una volta)",
+      "gruppo": "1",
+      "categoria": "azioni",
+      "coniugazioni": {
+        "past": [
+          "закрыл",
+          "закрыла",
+          "закрыло",
+          "закрыли"
+        ],
+        "imp": [
+          "закрой",
+          "закройте"
+        ],
+        "fut": [
+          "закрою",
+          "закроешь",
+          "закроет",
+          "закроем",
+          "закроете",
+          "закроют"
+        ]
+      }
+    },
+    {
+      "id": "verb080",
+      "inf": "сдаться",
+      "translit_inf": "sdátʹsja",
+      "en": "arrendersi",
+      "gruppo": "irr",
+      "categoria": "azioni",
+      "coniugazioni": {
+        "past": [
+          "сдался",
+          "сдалась",
+          "сдалось",
+          "сдались"
+        ],
+        "imp": [
+          "сдайся",
+          "сдайтесь"
+        ],
+        "fut": [
+          "сдамся",
+          "сдашься",
+          "сдастся",
+          "сдадимся",
+          "сдадитесь",
+          "сдадутся"
+        ]
+      }
+    },
+    {
+      "id": "verb081",
+      "inf": "опоздать",
+      "translit_inf": "apazdátʹ",
+      "en": "essere/arrivare in ritardo (una volta)",
+      "gruppo": "1",
+      "categoria": "azioni",
+      "coniugazioni": {
+        "past": [
+          "опоздал",
+          "опоздала",
+          "опоздало",
+          "опоздали"
+        ],
+        "imp": [
+          "опоздай",
+          "опоздайте"
+        ],
+        "fut": [
+          "опоздаю",
+          "опоздаешь",
+          "опоздает",
+          "опоздаем",
+          "опоздаете",
+          "опоздают"
+        ]
+      }
+    },
+    {
+      "id": "verb082",
+      "inf": "попасть",
+      "translit_inf": "papástʹ",
+      "en": "finire, capitare (in un luogo/una situazione)",
+      "gruppo": "irr",
+      "categoria": "azioni",
+      "coniugazioni": {
+        "past": [
+          "попал",
+          "попала",
+          "попало",
+          "попали"
+        ],
+        "imp": [
+          "попади",
+          "попадите"
+        ],
+        "fut": [
+          "попаду",
+          "попадёшь",
+          "попадёт",
+          "попадём",
+          "попадёте",
+          "попадут"
         ]
       }
     }
