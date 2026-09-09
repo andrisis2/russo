@@ -2,12 +2,12 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 15,
-    "aggiornato": "2026-06-11",
+    "versione": 16,
+    "aggiornato": "2026-09-09",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
     ],
-    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc. Sezione 'riferimento' = schede di consultazione (Regole grammaticali)."
+    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc. Sezione 'riferimento' = schede di consultazione (Regole grammaticali). Sezione 'frasiGrammar' (id 100+) = frasi semplici spiegate parola per parola con la grammatica dietro, in Teoria."
   },
   "alfabeto": [
     {
@@ -22661,6 +22661,768 @@
         {
           "domanda": "Le vocali che rendono molle la consonante:",
           "risposta": "е, ё, я, ю"
+        }
+      ]
+    }
+  ],
+  "frasiGrammar": [
+    {
+      "id": 100,
+      "ru": "Это дом.",
+      "it": "Questo è una casa.",
+      "tema": "Pronome dimostrativo это + assenza del verbo essere",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "questo, ciò, ecco",
+          "nota": "pronome dimostrativo invariabile: non concorda in genere/numero col nome che segue, si usa per identificare o presentare qualcosa ('questo è...')."
+        },
+        {
+          "ru": "дом",
+          "it": "casa, palazzo (m.)",
+          "nota": "nominativo singolare maschile, soggetto logico della frase. Il russo non ha l'articolo (un/una/il/la) e al presente non usa il verbo 'essere'."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "ru": "Я студент.",
+      "it": "Io sono studente.",
+      "tema": "Il verbo essere non si usa al presente",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome personale soggetto, 1ª persona singolare; in russo non si può omettere come spesso avviene in italiano."
+        },
+        {
+          "ru": "студент",
+          "it": "studente (m.)",
+          "nota": "nominativo singolare, complemento predicativo: al presente il verbo 'essere' (быть) si omette, quindi 'Я студент' significa letteralmente 'Io studente'."
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "ru": "Ты студентка.",
+      "it": "Tu sei studentessa.",
+      "tema": "Genere dei sostantivi: maschile vs femminile",
+      "parole": [
+        {
+          "ru": "Ты",
+          "it": "tu",
+          "nota": "pronome personale confidenziale/informale, si usa con amici, familiari, bambini."
+        },
+        {
+          "ru": "студентка",
+          "it": "studentessa (f.)",
+          "nota": "forma femminile di студент, con il suffisso -ка; il nominativo in -а/-я è tipico dei sostantivi femminili."
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "ru": "Это моя книга.",
+      "it": "Questo è il mio libro.",
+      "tema": "Il possessivo мой concorda col genere della cosa posseduta",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "questo/ciò",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "моя",
+          "it": "mia",
+          "nota": "aggettivo possessivo 'mio' alla forma femminile singolare (мой → моя), perché concorda con книга (femminile), non con chi possiede."
+        },
+        {
+          "ru": "книга",
+          "it": "libro (f.)",
+          "nota": "nominativo singolare femminile (finisce in -а)."
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "ru": "Это твой дом.",
+      "it": "Questa è la tua casa.",
+      "tema": "Il possessivo твой alla forma maschile",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "questo/ciò",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "твой",
+          "it": "tuo",
+          "nota": "possessivo 'tuo' alla forma maschile, perché concorda con дом (maschile)."
+        },
+        {
+          "ru": "дом",
+          "it": "casa (m.)",
+          "nota": "nominativo singolare maschile."
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "ru": "У меня есть брат.",
+      "it": "Ho un fratello.",
+      "tema": "Costruzione russa di 'avere': у + genitivo + есть",
+      "parole": [
+        {
+          "ru": "У",
+          "it": "presso, da",
+          "nota": "preposizione che regge il genitivo; insieme a меня forma 'presso di me', base della costruzione di possesso."
+        },
+        {
+          "ru": "меня",
+          "it": "me",
+          "nota": "genitivo del pronome я (io); il russo non ha un verbo diretto per 'avere' nel senso di possesso."
+        },
+        {
+          "ru": "есть",
+          "it": "c'è / esiste",
+          "nota": "forma del verbo essere usata per affermare l'esistenza/il possesso; in altri contesti può essere omessa."
+        },
+        {
+          "ru": "брат",
+          "it": "fratello (m.)",
+          "nota": "nominativo singolare: è lui il soggetto grammaticale reale della frase, non 'io'."
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "ru": "У меня нет сестры.",
+      "it": "Non ho una sorella.",
+      "tema": "Negazione di 'avere': нет + genitivo",
+      "parole": [
+        {
+          "ru": "У",
+          "it": "presso, da",
+          "nota": "stessa costruzione di possesso vista con есть, regge il genitivo."
+        },
+        {
+          "ru": "меня",
+          "it": "me",
+          "nota": "genitivo del pronome я."
+        },
+        {
+          "ru": "нет",
+          "it": "non c'è / non ho",
+          "nota": "negazione di esistenza; a differenza di есть, richiede sempre che la parola successiva sia al genitivo."
+        },
+        {
+          "ru": "сестры",
+          "it": "sorella",
+          "nota": "genitivo singolare di сестра: dopo нет il complemento va obbligatoriamente al genitivo, non al nominativo."
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "ru": "Я читаю книгу.",
+      "it": "Io leggo un libro.",
+      "tema": "Presente (1ª coniugazione) + accusativo del complemento oggetto",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "читаю",
+          "it": "leggo",
+          "nota": "presente, 1ª persona singolare del verbo читать (leggere), 1ª coniugazione: desinenza -ю."
+        },
+        {
+          "ru": "книгу",
+          "it": "libro",
+          "nota": "accusativo singolare di книга: il complemento oggetto diretto prende la desinenza -у al posto di -а."
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "ru": "Он смотрит фильм.",
+      "it": "Lui guarda un film.",
+      "tema": "Presente (2ª coniugazione) + accusativo di un inanimato maschile",
+      "parole": [
+        {
+          "ru": "Он",
+          "it": "lui",
+          "nota": "pronome soggetto maschile."
+        },
+        {
+          "ru": "смотрит",
+          "it": "guarda",
+          "nota": "presente, 3ª persona singolare del verbo смотреть (guardare), 2ª coniugazione: desinenza -ит."
+        },
+        {
+          "ru": "фильм",
+          "it": "film (m.)",
+          "nota": "accusativo singolare: per i sostantivi maschili inanimati l'accusativo è identico al nominativo, nessun cambiamento."
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "ru": "Мы идём в школу.",
+      "it": "Noi andiamo a scuola.",
+      "tema": "Verbo di moto + в con accusativo (moto a luogo)",
+      "parole": [
+        {
+          "ru": "Мы",
+          "it": "noi",
+          "nota": "pronome soggetto plurale."
+        },
+        {
+          "ru": "идём",
+          "it": "andiamo (a piedi)",
+          "nota": "presente, 1ª persona plurale di идти (andare a piedi, movimento concreto in una direzione)."
+        },
+        {
+          "ru": "в",
+          "it": "in, a",
+          "nota": "preposizione di moto a luogo: con l'accusativo indica la direzione verso cui ci si muove."
+        },
+        {
+          "ru": "школу",
+          "it": "scuola",
+          "nota": "accusativo singolare di школа (da -а a -у): risponde alla domanda 'dove?' nel senso di 'verso dove'."
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "ru": "Я живу в Москве.",
+      "it": "Io vivo a Mosca.",
+      "tema": "в + prepositivo per lo stato in luogo",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "живу",
+          "it": "vivo",
+          "nota": "presente, 1ª persona singolare del verbo жить (vivere/abitare)."
+        },
+        {
+          "ru": "в",
+          "it": "in, a",
+          "nota": "preposizione di stato in luogo: con il prepositivo indica dove ci si trova, non un movimento."
+        },
+        {
+          "ru": "Москве",
+          "it": "Mosca",
+          "nota": "prepositivo singolare di Москва (da -а a -е): risponde alla domanda 'dove?' nel senso di 'in quale luogo'."
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "ru": "Он работает в банке.",
+      "it": "Lui lavora in banca.",
+      "tema": "Stato in luogo con в + prepositivo",
+      "parole": [
+        {
+          "ru": "Он",
+          "it": "lui",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "работает",
+          "it": "lavora",
+          "nota": "presente, 3ª persona singolare del verbo работать (lavorare), 1ª coniugazione."
+        },
+        {
+          "ru": "в",
+          "it": "in",
+          "nota": "preposizione di luogo che regge il prepositivo per indicare dove avviene l'azione."
+        },
+        {
+          "ru": "банке",
+          "it": "banca",
+          "nota": "prepositivo singolare di банк (aggiunge -е)."
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "ru": "Я звоню маме.",
+      "it": "Io telefono alla mamma.",
+      "tema": "Dativo del destinatario, senza preposizione",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "звоню",
+          "it": "telefono, chiamo",
+          "nota": "presente, 1ª persona singolare di звонить (telefonare); in russo regge sempre il dativo, mai l'accusativo."
+        },
+        {
+          "ru": "маме",
+          "it": "alla mamma",
+          "nota": "dativo singolare di мама (da -а a -е): indica il destinatario dell'azione, come l'italiano 'a chi'."
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "ru": "Я дарю цветы подруге.",
+      "it": "Io regalo dei fiori all'amica.",
+      "tema": "Dativo (destinatario) + accusativo (oggetto) nella stessa frase",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "дарю",
+          "it": "regalo",
+          "nota": "presente, 1ª persona singolare del verbo дарить (regalare)."
+        },
+        {
+          "ru": "цветы",
+          "it": "fiori (pl.)",
+          "nota": "accusativo plurale, uguale al nominativo plurale per gli inanimati: è l'oggetto diretto, 'cosa' si regala."
+        },
+        {
+          "ru": "подруге",
+          "it": "all'amica",
+          "nota": "dativo singolare di подруга (da -а a -е): è il destinatario, 'a chi' si regala."
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "ru": "Я пишу письмо ручкой.",
+      "it": "Io scrivo una lettera con la penna.",
+      "tema": "Strumentale: il mezzo con cui si compie un'azione, senza preposizione",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "пишу",
+          "it": "scrivo",
+          "nota": "presente, 1ª persona singolare del verbo писать (scrivere)."
+        },
+        {
+          "ru": "письмо",
+          "it": "lettera (n.)",
+          "nota": "accusativo singolare neutro, identico al nominativo: è l'oggetto diretto."
+        },
+        {
+          "ru": "ручкой",
+          "it": "con la penna",
+          "nota": "strumentale singolare di ручка (da -а a -ой): indica lo strumento, corrisponde a 'con' in italiano ma senza preposizione in russo."
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "ru": "Мы говорим о России.",
+      "it": "Noi parliamo della Russia.",
+      "tema": "о + prepositivo per l'argomento di cui si parla",
+      "parole": [
+        {
+          "ru": "Мы",
+          "it": "noi",
+          "nota": "pronome soggetto plurale."
+        },
+        {
+          "ru": "говорим",
+          "it": "parliamo",
+          "nota": "presente, 1ª persona plurale del verbo говорить (parlare)."
+        },
+        {
+          "ru": "о",
+          "it": "di, riguardo a",
+          "nota": "preposizione che regge il prepositivo quando si parla dell'argomento di un discorso (diventa об davanti a vocale)."
+        },
+        {
+          "ru": "России",
+          "it": "la Russia",
+          "nota": "prepositivo singolare di Россия (da -я a -и): indica l'argomento del discorso."
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "ru": "Это письмо от мамы.",
+      "it": "Questa lettera è della mamma.",
+      "tema": "от + genitivo per indicare la provenienza",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "questo/ciò",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "письмо",
+          "it": "lettera (n.)",
+          "nota": "nominativo singolare neutro, soggetto della frase."
+        },
+        {
+          "ru": "от",
+          "it": "da (parte di)",
+          "nota": "preposizione di provenienza che regge sempre il genitivo."
+        },
+        {
+          "ru": "мамы",
+          "it": "della mamma",
+          "nota": "genitivo singolare di мама (da -а a -ы): indica da chi proviene la lettera."
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "ru": "Книга лежит на столе.",
+      "it": "Il libro è sul tavolo.",
+      "tema": "на + prepositivo per lo stato su una superficie",
+      "parole": [
+        {
+          "ru": "Книга",
+          "it": "il libro (f.)",
+          "nota": "nominativo singolare, soggetto della frase."
+        },
+        {
+          "ru": "лежит",
+          "it": "giace, sta (in posizione orizzontale)",
+          "nota": "presente, 3ª persona singolare del verbo лежать; il russo usa spesso verbi di posizione (лежать/стоять) al posto del semplice 'essere'."
+        },
+        {
+          "ru": "на",
+          "it": "su",
+          "nota": "preposizione di stato in luogo su una superficie: regge il prepositivo, a differenza di 'in' che usa в."
+        },
+        {
+          "ru": "столе",
+          "it": "tavolo",
+          "nota": "prepositivo singolare di стол (aggiunge -е): risponde a 'dove?'."
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "ru": "Кот сидит под столом.",
+      "it": "Il gatto è seduto sotto il tavolo.",
+      "tema": "под + strumentale per la posizione 'sotto'",
+      "parole": [
+        {
+          "ru": "Кот",
+          "it": "il gatto (m.)",
+          "nota": "nominativo singolare, soggetto."
+        },
+        {
+          "ru": "сидит",
+          "it": "è seduto, sta",
+          "nota": "presente, 3ª persona singolare del verbo сидеть (stare seduto)."
+        },
+        {
+          "ru": "под",
+          "it": "sotto",
+          "nota": "preposizione di luogo che, per indicare uno stato fermo, regge lo strumentale (non il genitivo né l'accusativo)."
+        },
+        {
+          "ru": "столом",
+          "it": "tavolo",
+          "nota": "strumentale singolare di стол (aggiunge -ом): completa 'sotto il tavolo'."
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "ru": "Этот дом большой.",
+      "it": "Questa casa è grande.",
+      "tema": "L'aggettivo concorda al maschile con этот",
+      "parole": [
+        {
+          "ru": "Этот",
+          "it": "questo",
+          "nota": "pronome dimostrativo che concorda in genere e numero con il nome, a differenza dell'invariabile это; qui è maschile perché дом è maschile."
+        },
+        {
+          "ru": "дом",
+          "it": "casa (m.)",
+          "nota": "nominativo singolare maschile, soggetto."
+        },
+        {
+          "ru": "большой",
+          "it": "grande",
+          "nota": "aggettivo alla forma maschile singolare (desinenza -ой): concorda in genere, numero e caso col nome che descrive."
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "ru": "Эта комната маленькая.",
+      "it": "Questa stanza è piccola.",
+      "tema": "L'aggettivo concorda al femminile",
+      "parole": [
+        {
+          "ru": "Эта",
+          "it": "questa",
+          "nota": "forma femminile di этот, concorda con комната."
+        },
+        {
+          "ru": "комната",
+          "it": "stanza (f.)",
+          "nota": "nominativo singolare femminile, soggetto."
+        },
+        {
+          "ru": "маленькая",
+          "it": "piccola",
+          "nota": "aggettivo alla forma femminile singolare (desinenza -ая)."
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "ru": "Моё имя — Анна.",
+      "it": "Il mio nome è Anna.",
+      "tema": "Possessivo neutro моё + l'eccezione имя (nome neutro in -я)",
+      "parole": [
+        {
+          "ru": "Моё",
+          "it": "mio",
+          "nota": "possessivo alla forma neutra (мой → моё), perché concorda con имя, che è neutro nonostante finisca in -я."
+        },
+        {
+          "ru": "имя",
+          "it": "nome (n.)",
+          "nota": "sostantivo neutro irregolare: pur finendo in -я come i femminili, appartiene al gruppo neutro 'su -мя' (insieme a время, племя ecc.)."
+        },
+        {
+          "ru": "—",
+          "it": "è (trattino)",
+          "nota": "in russo il verbo 'essere' al presente si omette tra due nomi al nominativo; per iscritto il trattino ne prende il posto."
+        },
+        {
+          "ru": "Анна",
+          "it": "Anna",
+          "nota": "nome proprio al nominativo, complemento predicativo del soggetto имя."
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "ru": "Я не говорю по-английски.",
+      "it": "Io non parlo inglese.",
+      "tema": "Negazione не + avverbio по-... per le lingue",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "не",
+          "it": "non",
+          "nota": "particella di negazione: si mette sempre subito prima della parola che nega, qui il verbo."
+        },
+        {
+          "ru": "говорю",
+          "it": "parlo",
+          "nota": "presente, 1ª persona singolare di говорить (parlare)."
+        },
+        {
+          "ru": "по-английски",
+          "it": "in inglese",
+          "nota": "avverbio invariabile con il prefisso по- e il suffisso -ски, usato con verbi come говорить per dire 'in che lingua'; non è un caso grammaticale."
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "ru": "Ты говоришь по-русски?",
+      "it": "Tu parli russo?",
+      "tema": "Domanda senza inversione + coniugazione in -ишь",
+      "parole": [
+        {
+          "ru": "Ты",
+          "it": "tu",
+          "nota": "pronome soggetto informale."
+        },
+        {
+          "ru": "говоришь",
+          "it": "parli",
+          "nota": "presente, 2ª persona singolare di говорить, 2ª coniugazione: desinenza -ишь."
+        },
+        {
+          "ru": "по-русски",
+          "it": "in russo",
+          "nota": "avverbio di lingua invariabile."
+        },
+        {
+          "ru": "?",
+          "it": "(punto interrogativo)",
+          "nota": "in russo le domande sì/no non cambiano l'ordine delle parole: si distinguono solo dall'intonazione o, per iscritto, dal punto interrogativo."
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "ru": "Сколько тебе лет?",
+      "it": "Quanti anni hai?",
+      "tema": "L'età: dativo della persona + genitivo plurale del numero",
+      "parole": [
+        {
+          "ru": "Сколько",
+          "it": "quanto/quanti",
+          "nota": "avverbio interrogativo di quantità."
+        },
+        {
+          "ru": "тебе",
+          "it": "a te",
+          "nota": "dativo del pronome ты: in russo l'età si esprime con 'a te sono... anni', non con il verbo 'avere'."
+        },
+        {
+          "ru": "лет",
+          "it": "anni",
+          "nota": "genitivo plurale irregolare di год (anno), usato dopo numeri che finiscono in 5-20 o quando il numero è sottinteso come qui."
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "ru": "Мне двадцать лет.",
+      "it": "Ho vent'anni.",
+      "tema": "La costruzione dell'età al dativo",
+      "parole": [
+        {
+          "ru": "Мне",
+          "it": "a me",
+          "nota": "dativo del pronome я: soggetto logico della costruzione dell'età."
+        },
+        {
+          "ru": "двадцать",
+          "it": "venti",
+          "nota": "numerale cardinale invariabile qui, indica la quantità di anni."
+        },
+        {
+          "ru": "лет",
+          "it": "anni",
+          "nota": "genitivo plurale di год, richiesto dopo numeri che finiscono in 0, 5-9, oppure da 11 a 14 (qui: venti)."
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "ru": "Я хочу пить.",
+      "it": "Ho sete. / Voglio bere.",
+      "tema": "Verbo modale хотеть (irregolare) + infinito",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "хочу",
+          "it": "voglio",
+          "nota": "presente, 1ª persona singolare del verbo хотеть (volere): irregolare, cambia radice tra singolare (хоч-) e plurale (хот-)."
+        },
+        {
+          "ru": "пить",
+          "it": "bere",
+          "nota": "infinito: dopo un verbo modale come хотеть, il secondo verbo resta all'infinito, come in italiano."
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "ru": "Мы должны идти домой.",
+      "it": "Dobbiamo andare a casa.",
+      "tema": "должны (dovere) + infinito; домой è un avverbio di moto senza preposizione",
+      "parole": [
+        {
+          "ru": "Мы",
+          "it": "noi",
+          "nota": "pronome soggetto plurale."
+        },
+        {
+          "ru": "должны",
+          "it": "dobbiamo",
+          "nota": "forma breve dell'aggettivo должен al plurale, usata come predicato di dovere/obbligo: concorda in numero (e genere al singolare) col soggetto."
+        },
+        {
+          "ru": "идти",
+          "it": "andare (a piedi)",
+          "nota": "infinito del verbo di moto, richiesto dopo должны."
+        },
+        {
+          "ru": "домой",
+          "it": "a casa (moto)",
+          "nota": "avverbio di moto a luogo, usato senza preposizione; è diverso da дома, che significa 'a casa' come stato in luogo, senza movimento."
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "ru": "Вчера я читал книгу.",
+      "it": "Ieri ho letto un libro.",
+      "tema": "Il passato: desinenza -л per il soggetto maschile",
+      "parole": [
+        {
+          "ru": "Вчера",
+          "it": "ieri",
+          "nota": "avverbio di tempo, colloca l'azione nel passato."
+        },
+        {
+          "ru": "я",
+          "it": "io",
+          "nota": "pronome soggetto: qui il genere è indicato dalla desinenza del verbo, non dal pronome."
+        },
+        {
+          "ru": "читал",
+          "it": "leggevo/ho letto",
+          "nota": "passato del verbo читать: si forma togliendo -ть e aggiungendo -л per il maschile singolare; il passato russo concorda in genere col soggetto, non in persona."
+        },
+        {
+          "ru": "книгу",
+          "it": "libro",
+          "nota": "accusativo singolare di книга, oggetto diretto."
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "ru": "Она вчера читала книгу.",
+      "it": "Lei ieri leggeva un libro.",
+      "tema": "Il passato: desinenza -ла per il soggetto femminile",
+      "parole": [
+        {
+          "ru": "Она",
+          "it": "lei",
+          "nota": "pronome soggetto femminile."
+        },
+        {
+          "ru": "вчера",
+          "it": "ieri",
+          "nota": "avverbio di tempo."
+        },
+        {
+          "ru": "читала",
+          "it": "leggeva",
+          "nota": "passato di читать alla forma femminile: si aggiunge -ла invece di -л, perché il passato concorda col genere del soggetto (она → femminile)."
+        },
+        {
+          "ru": "книгу",
+          "it": "libro",
+          "nota": "accusativo singolare, oggetto diretto."
         }
       ]
     }
