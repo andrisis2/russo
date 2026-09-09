@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 16,
+    "versione": 17,
     "aggiornato": "2026-09-09",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -23423,6 +23423,1741 @@
           "ru": "книгу",
           "it": "libro",
           "nota": "accusativo singolare, oggetto diretto."
+        }
+      ]
+    },
+    {
+      "id": 130,
+      "ru": "Это книги.",
+      "it": "Questi sono libri.",
+      "tema": "Plurale dei sostantivi femminili",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "questo/ciò/questi",
+          "nota": "pronome dimostrativo invariabile: resta 'это' anche davanti a un plurale."
+        },
+        {
+          "ru": "книги",
+          "it": "libri",
+          "nota": "nominativo plurale di книга: i femminili in -а fanno il plurale in -и."
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "ru": "Это столы.",
+      "it": "Questi sono tavoli.",
+      "tema": "Plurale dei sostantivi maschili",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "questi",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "столы",
+          "it": "tavoli",
+          "nota": "nominativo plurale di стол: i maschili che finiscono in consonante aggiungono -ы."
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "ru": "Это окна.",
+      "it": "Queste sono finestre.",
+      "tema": "Plurale dei sostantivi neutri",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "queste",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "окна",
+          "it": "finestre",
+          "nota": "nominativo plurale di окно: i neutri in -о fanno il plurale in -а."
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "ru": "У меня два брата.",
+      "it": "Ho due fratelli.",
+      "tema": "Dopo 2, 3, 4 il sostantivo va al genitivo singolare",
+      "parole": [
+        {
+          "ru": "У меня",
+          "it": "presso di me",
+          "nota": "costruzione di possesso già vista (у + genitivo di я)."
+        },
+        {
+          "ru": "два",
+          "it": "due",
+          "nota": "numerale; con 2, 3 e 4 il sostantivo che segue va al genitivo singolare, non al plurale."
+        },
+        {
+          "ru": "брата",
+          "it": "fratelli",
+          "nota": "genitivo singolare di брат (non 'братья', che sarebbe il nominativo plurale): 'due di fratello'."
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "ru": "У меня пять братьев.",
+      "it": "Ho cinque fratelli.",
+      "tema": "Da 5 in su il sostantivo va al genitivo plurale",
+      "parole": [
+        {
+          "ru": "У меня",
+          "it": "presso di me",
+          "nota": "costruzione di possesso."
+        },
+        {
+          "ru": "пять",
+          "it": "cinque",
+          "nota": "numerale; da 5 in su (e con 0) il sostantivo va al genitivo plurale."
+        },
+        {
+          "ru": "братьев",
+          "it": "fratelli",
+          "nota": "genitivo plurale irregolare di брат (plurale братья + genitivo in -ьев)."
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "ru": "Я хочу купить эту книгу.",
+      "it": "Voglio comprare questo libro.",
+      "tema": "Verbo perfettivo dopo хотеть; dimostrativo declinato all'accusativo",
+      "parole": [
+        {
+          "ru": "Я хочу",
+          "it": "io voglio",
+          "nota": "хочу = presente irregolare di хотеть (volere), 1ª persona singolare."
+        },
+        {
+          "ru": "купить",
+          "it": "comprare",
+          "nota": "infinito perfettivo: indica un'azione che porta a un risultato concreto e completo (comprare = azione singola conclusa), a differenza dell'imperfettivo покупать."
+        },
+        {
+          "ru": "эту",
+          "it": "questo/questa",
+          "nota": "этот declinato all'accusativo femminile singolare (эта → эту), concorda con книгу."
+        },
+        {
+          "ru": "книгу",
+          "it": "libro",
+          "nota": "accusativo singolare di книга, complemento oggetto di купить."
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "ru": "Завтра я куплю новую машину.",
+      "it": "Domani comprerò una macchina nuova.",
+      "tema": "Futuro semplice dei verbi perfettivi",
+      "parole": [
+        {
+          "ru": "Завтра",
+          "it": "domani",
+          "nota": "avverbio di tempo."
+        },
+        {
+          "ru": "я куплю",
+          "it": "io comprerò",
+          "nota": "куплю = futuro semplice, 1ª persona singolare del verbo perfettivo купить: i verbi perfettivi non hanno un vero presente, la loro forma 'presente' esprime già il futuro."
+        },
+        {
+          "ru": "новую",
+          "it": "nuova",
+          "nota": "aggettivo новый all'accusativo femminile singolare (новая → новую), concorda con машину."
+        },
+        {
+          "ru": "машину",
+          "it": "macchina",
+          "nota": "accusativo singolare di машина, complemento oggetto."
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "ru": "Я буду читать книгу.",
+      "it": "Leggerò un libro / Starò leggendo un libro.",
+      "tema": "Futuro composto dei verbi imperfettivi: буду + infinito",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "буду",
+          "it": "sarò",
+          "nota": "futuro del verbo essere (быть), 1ª persona singolare; con un infinito imperfettivo forma il futuro composto."
+        },
+        {
+          "ru": "читать",
+          "it": "leggere",
+          "nota": "infinito imperfettivo: dopo буду il verbo resta all'infinito e indica un'azione che dura o si ripete, non un risultato puntuale."
+        },
+        {
+          "ru": "книгу",
+          "it": "libro",
+          "nota": "accusativo singolare, complemento oggetto."
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "ru": "Читай!",
+      "it": "Leggi!",
+      "tema": "Imperativo informale (2ª persona singolare)",
+      "parole": [
+        {
+          "ru": "Читай",
+          "it": "leggi!",
+          "nota": "imperativo del verbo читать per 'tu': si forma sostituendo la desinenza del presente (чита-ю) con -й, dato che la radice finisce in vocale."
+        },
+        {
+          "ru": "!",
+          "it": "(punto esclamativo)",
+          "nota": "l'imperativo esprime un ordine, un invito o una richiesta diretta."
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "ru": "Читайте, пожалуйста!",
+      "it": "Legga/Leggete, per favore!",
+      "tema": "Imperativo formale/plurale + пожалуйста",
+      "parole": [
+        {
+          "ru": "Читайте",
+          "it": "leggete / legga",
+          "nota": "imperativo del verbo читать per 'voi' (plurale) o per la forma di cortesia 'Lei': si aggiunge -те all'imperativo singolare (читай → читайте)."
+        },
+        {
+          "ru": "пожалуйста",
+          "it": "per favore",
+          "nota": "avverbio di cortesia invariabile, addolcisce la richiesta."
+        }
+      ]
+    },
+    {
+      "id": 140,
+      "ru": "Я умываюсь утром.",
+      "it": "Mi lavo il viso al mattino.",
+      "tema": "Verbo riflessivo in -ся + strumentale avverbiale di tempo",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "умываюсь",
+          "it": "mi lavo (il viso)",
+          "nota": "presente, 1ª persona singolare del verbo riflessivo умываться: la particella -ся (da себя, 'se stesso') indica che l'azione ricade sul soggetto."
+        },
+        {
+          "ru": "утром",
+          "it": "al mattino",
+          "nota": "strumentale singolare di утро, usato senza preposizione per esprimere 'quando' (tempo): lo stesso meccanismo di вечером, днём, ночью."
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "ru": "Я учусь в университете.",
+      "it": "Studio all'università.",
+      "tema": "Verbo riflessivo учиться + prepositivo di luogo",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "учусь",
+          "it": "studio",
+          "nota": "presente, 1ª persona singolare del verbo riflessivo учиться (studiare, essere studente): diverso da учить (imparare/insegnare qualcosa di specifico)."
+        },
+        {
+          "ru": "в университете",
+          "it": "all'università",
+          "nota": "в + prepositivo di университет (aggiunge -е): indica dove si svolge l'azione."
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "ru": "Он одевается быстро.",
+      "it": "Lui si veste velocemente.",
+      "tema": "Verbo riflessivo + avverbio di modo",
+      "parole": [
+        {
+          "ru": "Он",
+          "it": "lui",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "одевается",
+          "it": "si veste",
+          "nota": "presente, 3ª persona singolare del verbo riflessivo одеваться (vestirsi); senza -ся, одевать significherebbe 'vestire qualcun altro'."
+        },
+        {
+          "ru": "быстро",
+          "it": "velocemente",
+          "nota": "avverbio di modo, invariabile, formato dall'aggettivo быстрый."
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "ru": "Я иду в магазин.",
+      "it": "Sto andando al negozio.",
+      "tema": "Идти: verbo di moto a piedi, concreto e in una direzione",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "иду",
+          "it": "vado (a piedi, ora, in una direzione)",
+          "nota": "presente, 1ª persona singolare di идти: descrive un movimento concreto verso una meta precisa, in corso in questo momento."
+        },
+        {
+          "ru": "в магазин",
+          "it": "al negozio",
+          "nota": "в + accusativo di магазин (moto a luogo, maschile inanimato: accusativo = nominativo)."
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "ru": "Я хожу в магазин каждый день.",
+      "it": "Vado al negozio ogni giorno.",
+      "tema": "Ходить: verbo di moto abituale/ripetuto (contrapposto a идти)",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "хожу",
+          "it": "vado (abitualmente, a piedi)",
+          "nota": "presente, 1ª persona singolare di ходить: descrive un'azione ripetuta o abituale, non un tragitto unico in corso, a differenza di идти."
+        },
+        {
+          "ru": "в магазин",
+          "it": "al negozio",
+          "nota": "в + accusativo, moto a luogo."
+        },
+        {
+          "ru": "каждый день",
+          "it": "ogni giorno",
+          "nota": "accusativo di каждый день, usato senza preposizione per esprimere la frequenza/ripetizione di un'azione."
+        }
+      ]
+    },
+    {
+      "id": 145,
+      "ru": "Он едет в Москву на поезде.",
+      "it": "Lui va a Mosca in treno.",
+      "tema": "Ехать: verbo di moto con un mezzo, concreto e in una direzione",
+      "parole": [
+        {
+          "ru": "Он",
+          "it": "lui",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "едет",
+          "it": "va (con un mezzo, ora, in una direzione)",
+          "nota": "presente, 3ª persona singolare di ехать: come идти ma per uno spostamento con un mezzo di trasporto."
+        },
+        {
+          "ru": "в Москву",
+          "it": "a Mosca",
+          "nota": "в + accusativo di Москва (moto a luogo, da -а a -у)."
+        },
+        {
+          "ru": "на поезде",
+          "it": "in treno",
+          "nota": "на + prepositivo di поезд: preposizione idiomatica per indicare il mezzo di trasporto usato."
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "ru": "Он ездит в Москву каждый месяц.",
+      "it": "Lui va a Mosca ogni mese.",
+      "tema": "Ездить: verbo di moto con un mezzo, abituale/ripetuto",
+      "parole": [
+        {
+          "ru": "Он",
+          "it": "lui",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "ездит",
+          "it": "va (abitualmente, con un mezzo)",
+          "nota": "presente, 3ª persona singolare di ездить: come ходить ma per spostamenti ripetuti con un mezzo di trasporto."
+        },
+        {
+          "ru": "в Москву",
+          "it": "a Mosca",
+          "nota": "в + accusativo, moto a luogo."
+        },
+        {
+          "ru": "каждый месяц",
+          "it": "ogni mese",
+          "nota": "accusativo usato senza preposizione per la frequenza."
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "ru": "Его зовут Иван.",
+      "it": "Lui si chiama Ivan.",
+      "tema": "Costruzione impersonale del nome: pronome all'accusativo + зовут",
+      "parole": [
+        {
+          "ru": "Его",
+          "it": "lui/lo",
+          "nota": "accusativo del pronome он: letteralmente è l'oggetto di un 'chiamare' senza soggetto espresso."
+        },
+        {
+          "ru": "зовут",
+          "it": "chiamano",
+          "nota": "3ª persona plurale del verbo звать usata in modo impersonale (senza soggetto 'loro'): 'lo chiamano Ivan' → 'si chiama Ivan'."
+        },
+        {
+          "ru": "Иван",
+          "it": "Ivan",
+          "nota": "nominativo: è il nome con cui viene chiamato, complemento del verbo зовут."
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "ru": "Я вижу её в парке.",
+      "it": "La vedo nel parco.",
+      "tema": "Pronome obliquo её (accusativo) + verbo видеть irregolare",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "вижу",
+          "it": "vedo",
+          "nota": "presente, 1ª persona singolare di видеть (vedere): irregolare, la д della radice diventa ж davanti a -у (вижу, ma видишь, видит...)."
+        },
+        {
+          "ru": "её",
+          "it": "la, lei",
+          "nota": "accusativo del pronome она: la stessa forma серве anche come genitivo, va imparata a memoria."
+        },
+        {
+          "ru": "в парке",
+          "it": "nel parco",
+          "nota": "в + prepositivo di парк: stato in luogo."
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "ru": "Я дам тебе подарок.",
+      "it": "Ti darò un regalo.",
+      "tema": "Verbo irregolare дать + dativo del destinatario",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "дам",
+          "it": "darò",
+          "nota": "1ª persona singolare di дать (dare): verbo perfettivo dalla coniugazione irregolare (дам, дашь, даст, дадим, дадите, дадут), la sua forma 'presente' esprime il futuro."
+        },
+        {
+          "ru": "тебе",
+          "it": "a te",
+          "nota": "dativo del pronome ты: indica il destinatario, 'a chi' si dà il regalo."
+        },
+        {
+          "ru": "подарок",
+          "it": "regalo",
+          "nota": "accusativo singolare (maschile inanimato = nominativo), oggetto diretto."
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "ru": "Мы говорим им правду.",
+      "it": "Diciamo loro la verità.",
+      "tema": "Dativo plurale del pronome они",
+      "parole": [
+        {
+          "ru": "Мы",
+          "it": "noi",
+          "nota": "pronome soggetto plurale."
+        },
+        {
+          "ru": "говорим",
+          "it": "diciamo",
+          "nota": "presente, 1ª persona plurale di говорить."
+        },
+        {
+          "ru": "им",
+          "it": "a loro",
+          "nota": "dativo del pronome они: indica il destinatario dell'azione."
+        },
+        {
+          "ru": "правду",
+          "it": "la verità",
+          "nota": "accusativo singolare di правда, complemento oggetto."
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "ru": "Я живу с ними.",
+      "it": "Vivo con loro.",
+      "tema": "Strumentale del pronome они dopo preposizione (ними con н-)",
+      "parole": [
+        {
+          "ru": "Я живу",
+          "it": "io vivo",
+          "nota": "живу = presente, 1ª persona singolare di жить."
+        },
+        {
+          "ru": "с",
+          "it": "con",
+          "nota": "preposizione che regge lo strumentale per indicare compagnia."
+        },
+        {
+          "ru": "ними",
+          "it": "loro",
+          "nota": "strumentale del pronome они (им → ними): dopo una preposizione, i pronomi di 3ª persona (его/её/их/им ecc.) prendono una н- iniziale."
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "ru": "Чей это дом?",
+      "it": "Di chi è questa casa?",
+      "tema": "Pronome interrogativo possessivo чей (forma maschile)",
+      "parole": [
+        {
+          "ru": "Чей",
+          "it": "di chi (m.)",
+          "nota": "pronome interrogativo possessivo: concorda in genere col nome posseduto, qui maschile perché дом è maschile."
+        },
+        {
+          "ru": "это",
+          "it": "questo/ciò",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "дом",
+          "it": "casa (m.)",
+          "nota": "nominativo singolare maschile, soggetto della domanda."
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "ru": "Чья это книга?",
+      "it": "Di chi è questo libro?",
+      "tema": "Pronome interrogativo possessivo чей (forma femminile)",
+      "parole": [
+        {
+          "ru": "Чья",
+          "it": "di chi (f.)",
+          "nota": "forma femminile di чей, concorda con книга."
+        },
+        {
+          "ru": "это",
+          "it": "questo/ciò",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "книга",
+          "it": "libro (f.)",
+          "nota": "nominativo singolare femminile, soggetto."
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "ru": "Чьё это окно?",
+      "it": "Di chi è questa finestra?",
+      "tema": "Pronome interrogativo possessivo чей (forma neutra)",
+      "parole": [
+        {
+          "ru": "Чьё",
+          "it": "di chi (n.)",
+          "nota": "forma neutra di чей, concorda con окно."
+        },
+        {
+          "ru": "это",
+          "it": "questo/ciò",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "окно",
+          "it": "finestra (n.)",
+          "nota": "nominativo singolare neutro, soggetto."
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "ru": "Я всегда пью чай утром.",
+      "it": "Bevo sempre il tè al mattino.",
+      "tema": "Avverbio di frequenza всегда + verbo пить irregolare",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "всегда",
+          "it": "sempre",
+          "nota": "avverbio di frequenza, si colloca prima del verbo."
+        },
+        {
+          "ru": "пью",
+          "it": "bevo",
+          "nota": "presente, 1ª persona singolare del verbo irregolare пить (bere): radice пь- + desinenza -ю."
+        },
+        {
+          "ru": "чай",
+          "it": "il tè (m.)",
+          "nota": "accusativo singolare (maschile inanimato = nominativo), oggetto diretto."
+        },
+        {
+          "ru": "утром",
+          "it": "al mattino",
+          "nota": "strumentale avverbiale di tempo, senza preposizione."
+        }
+      ]
+    },
+    {
+      "id": 156,
+      "ru": "Он никогда не пьёт кофе.",
+      "it": "Lui non beve mai caffè.",
+      "tema": "Doppia negazione: никогда richiede comunque не davanti al verbo",
+      "parole": [
+        {
+          "ru": "Он",
+          "it": "lui",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "никогда",
+          "it": "mai",
+          "nota": "avverbio negativo di tempo."
+        },
+        {
+          "ru": "не",
+          "it": "non",
+          "nota": "particella di negazione: in russo va sempre aggiunta prima del verbo anche quando è già presente un avverbio negativo come никогда (doppia negazione obbligatoria, diversamente dall'italiano standard)."
+        },
+        {
+          "ru": "пьёт",
+          "it": "beve",
+          "nota": "presente, 3ª persona singolare di пить."
+        },
+        {
+          "ru": "кофе",
+          "it": "caffè (m.)",
+          "nota": "sostantivo indeclinabile, accusativo identico al nominativo."
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "ru": "Иногда я хожу в кино.",
+      "it": "A volte vado al cinema.",
+      "tema": "Avverbio di frequenza иногда + moto abituale",
+      "parole": [
+        {
+          "ru": "Иногда",
+          "it": "a volte",
+          "nota": "avverbio di frequenza, spesso posto a inizio frase."
+        },
+        {
+          "ru": "я хожу",
+          "it": "io vado",
+          "nota": "хожу = presente di ходить, moto a piedi abituale/ripetuto."
+        },
+        {
+          "ru": "в кино",
+          "it": "al cinema",
+          "nota": "в + accusativo di кино (indeclinabile): moto a luogo."
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "ru": "Сегодня понедельник.",
+      "it": "Oggi è lunedì.",
+      "tema": "Giorni della settimana al nominativo, senza verbo essere",
+      "parole": [
+        {
+          "ru": "Сегодня",
+          "it": "oggi",
+          "nota": "avverbio di tempo."
+        },
+        {
+          "ru": "понедельник",
+          "it": "lunedì (m.)",
+          "nota": "nominativo: come per le altre frasi identificative, il verbo 'essere' al presente si omette."
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "ru": "Я иду на работу в понедельник.",
+      "it": "Vado al lavoro lunedì.",
+      "tema": "I giorni della settimana usano в + accusativo (non il prepositivo)",
+      "parole": [
+        {
+          "ru": "Я иду",
+          "it": "io vado",
+          "nota": "иду = presente di идти, moto concreto."
+        },
+        {
+          "ru": "на работу",
+          "it": "al lavoro",
+          "nota": "на + accusativo di работа: moto a luogo con на (non в) per 'lavoro'."
+        },
+        {
+          "ru": "в понедельник",
+          "it": "lunedì",
+          "nota": "в + accusativo di понедельник: per esprimere 'in quale giorno' i giorni della settimana vogliono l'accusativo, non il prepositivo come i mesi."
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "ru": "Мой день рождения в январе.",
+      "it": "Il mio compleanno è a gennaio.",
+      "tema": "I mesi usano в + prepositivo; genitivo come complemento di specificazione",
+      "parole": [
+        {
+          "ru": "Мой",
+          "it": "il mio",
+          "nota": "possessivo maschile, concorda con день."
+        },
+        {
+          "ru": "день рождения",
+          "it": "compleanno",
+          "nota": "letteralmente 'giorno di nascita': рождения è il genitivo singolare di рождение, complemento di specificazione che modifica день."
+        },
+        {
+          "ru": "в январе",
+          "it": "a gennaio",
+          "nota": "в + prepositivo di январь: a differenza dei giorni della settimana, i mesi vogliono в + prepositivo, non l'accusativo."
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "ru": "Сейчас три часа.",
+      "it": "Ora sono le tre.",
+      "tema": "L'ora: numerale + genitivo singolare dopo 2, 3, 4",
+      "parole": [
+        {
+          "ru": "Сейчас",
+          "it": "ora, adesso",
+          "nota": "avverbio di tempo."
+        },
+        {
+          "ru": "три",
+          "it": "tre",
+          "nota": "numerale; con 2, 3, 4 il sostantivo che segue va al genitivo singolare."
+        },
+        {
+          "ru": "часа",
+          "it": "ore",
+          "nota": "genitivo singolare di час (ora): non 'часы' (plurale), perché il numerale три richiede il genitivo singolare."
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "ru": "Магазин открыт с девяти до шести.",
+      "it": "Il negozio è aperto dalle nove alle sei.",
+      "tema": "Aggettivo breve predicativo + с...до + genitivo dei numerali",
+      "parole": [
+        {
+          "ru": "Магазин",
+          "it": "il negozio (m.)",
+          "nota": "nominativo singolare, soggetto."
+        },
+        {
+          "ru": "открыт",
+          "it": "è aperto",
+          "nota": "forma breve dell'aggettivo открытый, usata come predicato (non prima del nome): concorda in genere/numero col soggetto ma non si declina per caso."
+        },
+        {
+          "ru": "с девяти",
+          "it": "dalle nove",
+          "nota": "с + genitivo del numerale девять (nove): indica l'inizio dell'intervallo."
+        },
+        {
+          "ru": "до шести",
+          "it": "alle sei",
+          "nota": "до + genitivo del numerale шесть (sei): indica la fine dell'intervallo."
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "ru": "Это подарок для тебя.",
+      "it": "Questo è un regalo per te.",
+      "tema": "Для + genitivo per indicare lo scopo/il destinatario",
+      "parole": [
+        {
+          "ru": "Это",
+          "it": "questo/ciò",
+          "nota": "pronome dimostrativo invariabile."
+        },
+        {
+          "ru": "подарок",
+          "it": "regalo (m.)",
+          "nota": "nominativo singolare, soggetto."
+        },
+        {
+          "ru": "для",
+          "it": "per",
+          "nota": "preposizione che regge sempre il genitivo, indica destinazione o scopo."
+        },
+        {
+          "ru": "тебя",
+          "it": "te",
+          "nota": "genitivo del pronome ты, retto da для."
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "ru": "Я не могу жить без тебя.",
+      "it": "Non posso vivere senza di te.",
+      "tema": "Без + genitivo; verbo modale мочь irregolare",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "не могу",
+          "it": "non posso",
+          "nota": "могу = presente, 1ª persona singolare del verbo irregolare мочь (potere); не lo nega."
+        },
+        {
+          "ru": "жить",
+          "it": "vivere",
+          "nota": "infinito, dopo il verbo modale мочь."
+        },
+        {
+          "ru": "без",
+          "it": "senza",
+          "nota": "preposizione che regge sempre il genitivo."
+        },
+        {
+          "ru": "тебя",
+          "it": "te",
+          "nota": "genitivo del pronome ты, retto da без."
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "ru": "Поезд едет через лес.",
+      "it": "Il treno attraversa il bosco.",
+      "tema": "Через + accusativo per il moto 'attraverso'",
+      "parole": [
+        {
+          "ru": "Поезд",
+          "it": "il treno (m.)",
+          "nota": "nominativo singolare, soggetto."
+        },
+        {
+          "ru": "едет",
+          "it": "va, viaggia",
+          "nota": "presente, 3ª persona singolare di ехать, moto con un mezzo."
+        },
+        {
+          "ru": "через",
+          "it": "attraverso",
+          "nota": "preposizione di moto che regge l'accusativo."
+        },
+        {
+          "ru": "лес",
+          "it": "il bosco (m.)",
+          "nota": "accusativo (maschile inanimato = nominativo), retto da через."
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "ru": "Увидимся через неделю.",
+      "it": "Ci vedremo tra una settimana.",
+      "tema": "Через + accusativo per il tempo futuro ('tra...')",
+      "parole": [
+        {
+          "ru": "Увидимся",
+          "it": "ci vedremo",
+          "nota": "futuro, 1ª persona plurale del verbo riflessivo perfettivo увидеться (vedersi): -ся indica reciprocità tra i due soggetti."
+        },
+        {
+          "ru": "через",
+          "it": "tra, fra",
+          "nota": "con espressioni di tempo, через + accusativo indica 'tra quanto tempo' accadrà qualcosa."
+        },
+        {
+          "ru": "неделю",
+          "it": "una settimana",
+          "nota": "accusativo singolare di неделя (da -я a -ю)."
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "ru": "После урока мы идём домой.",
+      "it": "Dopo la lezione andiamo a casa.",
+      "tema": "После + genitivo",
+      "parole": [
+        {
+          "ru": "После",
+          "it": "dopo",
+          "nota": "preposizione che regge sempre il genitivo."
+        },
+        {
+          "ru": "урока",
+          "it": "la lezione",
+          "nota": "genitivo singolare di урок, retto da после."
+        },
+        {
+          "ru": "мы идём",
+          "it": "noi andiamo",
+          "nota": "идём = presente, 1ª persona plurale di идти."
+        },
+        {
+          "ru": "домой",
+          "it": "a casa (moto)",
+          "nota": "avverbio di moto a luogo, senza preposizione."
+        }
+      ]
+    },
+    {
+      "id": 168,
+      "ru": "Перед домом растёт дерево.",
+      "it": "Davanti alla casa cresce un albero.",
+      "tema": "Перед + strumentale",
+      "parole": [
+        {
+          "ru": "Перед",
+          "it": "davanti a",
+          "nota": "preposizione di luogo che regge lo strumentale."
+        },
+        {
+          "ru": "домом",
+          "it": "la casa",
+          "nota": "strumentale singolare di дом (aggiunge -ом), retto da перед."
+        },
+        {
+          "ru": "растёт",
+          "it": "cresce",
+          "nota": "presente, 3ª persona singolare del verbo расти (crescere)."
+        },
+        {
+          "ru": "дерево",
+          "it": "albero (n.)",
+          "nota": "nominativo singolare neutro, soggetto della frase."
+        }
+      ]
+    },
+    {
+      "id": 169,
+      "ru": "Между окном и дверью стоит стол.",
+      "it": "Tra la finestra e la porta c'è un tavolo.",
+      "tema": "Между + strumentale (con due complementi)",
+      "parole": [
+        {
+          "ru": "Между",
+          "it": "tra, fra",
+          "nota": "preposizione che regge lo strumentale, spesso con due elementi collegati da и."
+        },
+        {
+          "ru": "окном",
+          "it": "la finestra",
+          "nota": "strumentale singolare di окно."
+        },
+        {
+          "ru": "и дверью",
+          "it": "e la porta",
+          "nota": "дверью = strumentale singolare di дверь (femminile in -ь, aggiunge -ью)."
+        },
+        {
+          "ru": "стоит",
+          "it": "sta, si trova",
+          "nota": "presente, 3ª persona singolare di стоять, usato per oggetti in posizione verticale."
+        },
+        {
+          "ru": "стол",
+          "it": "tavolo (m.)",
+          "nota": "nominativo singolare, soggetto reale della frase (posto dopo il verbo per enfasi sul luogo)."
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "ru": "Мне нужно идти.",
+      "it": "Devo andare.",
+      "tema": "Costruzione impersonale: dativo + нужно + infinito",
+      "parole": [
+        {
+          "ru": "Мне",
+          "it": "a me",
+          "nota": "dativo del pronome я: soggetto logico della costruzione impersonale di necessità."
+        },
+        {
+          "ru": "нужно",
+          "it": "è necessario",
+          "nota": "parola predicativa invariabile ('bisogna', 'serve'), non concorda con nulla."
+        },
+        {
+          "ru": "идти",
+          "it": "andare",
+          "nota": "infinito, l'azione che è necessaria."
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "ru": "Мне холодно.",
+      "it": "Ho freddo.",
+      "tema": "Costruzione impersonale: dativo + avverbio di stato",
+      "parole": [
+        {
+          "ru": "Мне",
+          "it": "a me",
+          "nota": "dativo del pronome я: chi prova la sensazione, non un vero soggetto grammaticale."
+        },
+        {
+          "ru": "холодно",
+          "it": "freddo",
+          "nota": "avverbio predicativo invariabile: descrive uno stato/sensazione senza soggetto, letteralmente 'a me (è) freddamente'."
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "ru": "Мне весело.",
+      "it": "Mi diverto / Sono allegro.",
+      "tema": "Costruzione impersonale: dativo + avverbio di stato d'animo",
+      "parole": [
+        {
+          "ru": "Мне",
+          "it": "a me",
+          "nota": "dativo del pronome я, chi prova lo stato d'animo."
+        },
+        {
+          "ru": "весело",
+          "it": "allegro, divertente",
+          "nota": "avverbio predicativo invariabile: stesso schema di холодно, usato per stati d'animo."
+        }
+      ]
+    },
+    {
+      "id": 173,
+      "ru": "Здесь можно курить?",
+      "it": "Qui si può fumare?",
+      "tema": "Можно + infinito per il permesso",
+      "parole": [
+        {
+          "ru": "Здесь",
+          "it": "qui",
+          "nota": "avverbio di luogo."
+        },
+        {
+          "ru": "можно",
+          "it": "si può",
+          "nota": "parola predicativa invariabile che esprime permesso o possibilità; non concorda con nulla."
+        },
+        {
+          "ru": "курить",
+          "it": "fumare",
+          "nota": "infinito, l'azione permessa."
+        }
+      ]
+    },
+    {
+      "id": 174,
+      "ru": "Здесь нельзя курить.",
+      "it": "Qui non si può fumare.",
+      "tema": "Нельзя + infinito per il divieto",
+      "parole": [
+        {
+          "ru": "Здесь",
+          "it": "qui",
+          "nota": "avverbio di luogo."
+        },
+        {
+          "ru": "нельзя",
+          "it": "non si può, è vietato",
+          "nota": "parola predicativa invariabile, opposto di можно."
+        },
+        {
+          "ru": "курить",
+          "it": "fumare",
+          "nota": "infinito, l'azione vietata."
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "ru": "Эта книга интереснее, чем та.",
+      "it": "Questo libro è più interessante di quello.",
+      "tema": "Comparativo di maggioranza: aggettivo + -ее / чем",
+      "parole": [
+        {
+          "ru": "Эта книга",
+          "it": "questo libro",
+          "nota": "этот alla forma femminile (эта) + книга, nominativo, soggetto."
+        },
+        {
+          "ru": "интереснее",
+          "it": "più interessante",
+          "nota": "comparativo di интересный: si forma aggiungendo il suffisso -ее alla radice, invariabile per genere/numero."
+        },
+        {
+          "ru": "чем",
+          "it": "di, che",
+          "nota": "congiunzione usata nei paragoni per introdurre il secondo termine."
+        },
+        {
+          "ru": "та",
+          "it": "quello/quella",
+          "nota": "forma femminile del pronome тот, sostituisce 'книга' già menzionata."
+        }
+      ]
+    },
+    {
+      "id": 176,
+      "ru": "Он самый умный студент в классе.",
+      "it": "Lui è lo studente più intelligente della classe.",
+      "tema": "Superlativo con самый + aggettivo",
+      "parole": [
+        {
+          "ru": "Он",
+          "it": "lui",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "самый",
+          "it": "il più",
+          "nota": "aggettivo самый, si declina come un aggettivo normale e concorda col nome (qui maschile) per formare il superlativo."
+        },
+        {
+          "ru": "умный",
+          "it": "intelligente",
+          "nota": "aggettivo alla forma maschile nominativa, insieme a самый forma 'il più intelligente'."
+        },
+        {
+          "ru": "студент",
+          "it": "studente (m.)",
+          "nota": "nominativo, complemento predicativo del soggetto он."
+        },
+        {
+          "ru": "в классе",
+          "it": "della classe",
+          "nota": "в + prepositivo di класс: qui indica l'ambito, 'nella classe'."
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "ru": "Я рад тебя видеть.",
+      "it": "Sono felice di vederti.",
+      "tema": "Aggettivo breve рад + accusativo + infinito",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "рад",
+          "it": "felice, contento",
+          "nota": "forma breve dell'aggettivo радый, usata solo come predicato (mai prima del nome); qui concorda al maschile con я."
+        },
+        {
+          "ru": "тебя",
+          "it": "ti",
+          "nota": "accusativo del pronome ты, oggetto diretto di видеть."
+        },
+        {
+          "ru": "видеть",
+          "it": "vedere",
+          "nota": "infinito, l'azione di cui ci si rallegra."
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "ru": "Дома никого нет.",
+      "it": "A casa non c'è nessuno.",
+      "tema": "Pronome negativo никого (genitivo) dopo нет",
+      "parole": [
+        {
+          "ru": "Дома",
+          "it": "a casa (stato)",
+          "nota": "avverbio di stato in luogo (diverso da домой, moto a luogo): forma irregolare, non un vero genitivo."
+        },
+        {
+          "ru": "никого",
+          "it": "nessuno",
+          "nota": "genitivo del pronome negativo никто: dopo нет il complemento va sempre al genitivo, anche quando è un pronome negativo."
+        },
+        {
+          "ru": "нет",
+          "it": "non c'è",
+          "nota": "negazione di esistenza, richiede il genitivo (stessa regola vista con 'У меня нет сестры')."
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "ru": "Я ничего не понимаю.",
+      "it": "Non capisco niente.",
+      "tema": "Pronome negativo ничего + doppia negazione",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "ничего",
+          "it": "niente, nulla",
+          "nota": "forma obliqua del pronome negativo ничто, qui usata come oggetto diretto sotto negazione."
+        },
+        {
+          "ru": "не",
+          "it": "non",
+          "nota": "particella di negazione, obbligatoria davanti al verbo anche in presenza di ничего."
+        },
+        {
+          "ru": "понимаю",
+          "it": "capisco",
+          "nota": "presente, 1ª persona singolare di понимать."
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "ru": "Я учу русский язык, чтобы говорить с друзьями.",
+      "it": "Studio il russo per parlare con gli amici.",
+      "tema": "Чтобы + infinito per esprimere lo scopo",
+      "parole": [
+        {
+          "ru": "Я учу",
+          "it": "io studio",
+          "nota": "учу = presente, 1ª persona singolare di учить (imparare/studiare qualcosa)."
+        },
+        {
+          "ru": "русский язык",
+          "it": "la lingua russa",
+          "nota": "accusativo (maschile inanimato = nominativo), oggetto diretto."
+        },
+        {
+          "ru": "чтобы",
+          "it": "per, affinché",
+          "nota": "congiunzione che introduce lo scopo, seguita dall'infinito quando il soggetto non cambia."
+        },
+        {
+          "ru": "говорить",
+          "it": "parlare",
+          "nota": "infinito, l'azione-scopo."
+        },
+        {
+          "ru": "с друзьями",
+          "it": "con gli amici",
+          "nota": "с + strumentale plurale di друг (plurale irregolare друзья, strumentale друзьями)."
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "ru": "Если у меня будет время, я позвоню тебе.",
+      "it": "Se avrò tempo, ti telefonerò.",
+      "tema": "Periodo ipotetico: если + futuro, futuro",
+      "parole": [
+        {
+          "ru": "Если",
+          "it": "se",
+          "nota": "congiunzione condizionale, introduce la frase ipotetica."
+        },
+        {
+          "ru": "у меня будет время",
+          "it": "avrò tempo",
+          "nota": "будет = futuro di быть, usato nella costruzione di possesso al futuro (a differenza del presente, dove есть spesso si omette)."
+        },
+        {
+          "ru": "я позвоню",
+          "it": "io telefonerò",
+          "nota": "позвоню = futuro semplice, 1ª persona singolare del verbo perfettivo позвонить."
+        },
+        {
+          "ru": "тебе",
+          "it": "a te",
+          "nota": "dativo del pronome ты, destinatario della chiamata."
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "ru": "Девушка, которая читает книгу, — моя сестра.",
+      "it": "La ragazza che legge un libro è mia sorella.",
+      "tema": "Pronome relativo который declinato al nominativo femminile",
+      "parole": [
+        {
+          "ru": "Девушка",
+          "it": "la ragazza (f.)",
+          "nota": "nominativo singolare, soggetto della frase principale."
+        },
+        {
+          "ru": "которая",
+          "it": "che, la quale",
+          "nota": "pronome relativo который alla forma femminile nominativa: concorda in genere/numero con девушка (il suo antecedente), ma il caso dipende dal ruolo che ha nella frase secondaria (qui è soggetto di читает)."
+        },
+        {
+          "ru": "читает книгу",
+          "it": "legge un libro",
+          "nota": "читает = presente di читать; книгу = accusativo, oggetto."
+        },
+        {
+          "ru": "— моя сестра",
+          "it": "è mia sorella",
+          "nota": "il trattino sostituisce il verbo essere omesso al presente; моя сестра è il predicato nominale."
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "ru": "Я вижу человека, которого ты любишь.",
+      "it": "Vedo l'uomo che tu ami.",
+      "tema": "Который all'accusativo animato (= genitivo)",
+      "parole": [
+        {
+          "ru": "Я вижу человека",
+          "it": "io vedo l'uomo",
+          "nota": "человека = accusativo animato maschile di человек: per gli animati l'accusativo è uguale al genitivo (человек → человека), non al nominativo."
+        },
+        {
+          "ru": "которого",
+          "it": "che, il quale",
+          "nota": "который all'accusativo animato maschile (stessa desinenza -ого del genitivo): qui è l'oggetto diretto di любишь nella frase secondaria."
+        },
+        {
+          "ru": "ты любишь",
+          "it": "tu ami",
+          "nota": "любишь = presente, 2ª persona singolare di любить."
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "ru": "Я вижу брата.",
+      "it": "Vedo mio fratello.",
+      "tema": "Accusativo animato maschile = genitivo",
+      "parole": [
+        {
+          "ru": "Я вижу",
+          "it": "io vedo",
+          "nota": "вижу = presente irregolare di видеть."
+        },
+        {
+          "ru": "брата",
+          "it": "fratello",
+          "nota": "accusativo singolare animato di брат: per i sostantivi maschili animati l'accusativo prende la stessa forma del genitivo (брата), non resta uguale al nominativo come per gli inanimati (es. 'фильм')."
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "ru": "Я вижу братьев.",
+      "it": "Vedo i miei fratelli.",
+      "tema": "Accusativo plurale animato = genitivo plurale",
+      "parole": [
+        {
+          "ru": "Я вижу",
+          "it": "io vedo",
+          "nota": "вижу = presente irregolare di видеть."
+        },
+        {
+          "ru": "братьев",
+          "it": "fratelli",
+          "nota": "accusativo plurale animato di брат: al plurale la regola 'animato = genitivo' vale per tutti i generi, quindi братьев è identico al genitivo plurale."
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "ru": "Красивые цветы стоят на столе.",
+      "it": "Dei bei fiori sono sul tavolo.",
+      "tema": "Aggettivo plurale che concorda col sostantivo",
+      "parole": [
+        {
+          "ru": "Красивые",
+          "it": "belli",
+          "nota": "aggettivo красивый al nominativo plurale (desinenza -ые): al plurale l'aggettivo ha un'unica forma per tutti i generi."
+        },
+        {
+          "ru": "цветы",
+          "it": "fiori (pl.)",
+          "nota": "nominativo plurale di цветок (plurale irregolare), soggetto."
+        },
+        {
+          "ru": "стоят",
+          "it": "stanno, sono",
+          "nota": "presente, 3ª persona plurale di стоять, concorda col soggetto plurale."
+        },
+        {
+          "ru": "на столе",
+          "it": "sul tavolo",
+          "nota": "на + prepositivo di стол, stato su una superficie."
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "ru": "Русские книги очень интересные.",
+      "it": "I libri russi sono molto interessanti.",
+      "tema": "Aggettivo plurale sia attributivo che predicativo",
+      "parole": [
+        {
+          "ru": "Русские",
+          "it": "russi",
+          "nota": "русский al nominativo plurale (-ие), aggettivo attributivo che precede книги."
+        },
+        {
+          "ru": "книги",
+          "it": "libri",
+          "nota": "nominativo plurale di книга, soggetto."
+        },
+        {
+          "ru": "очень",
+          "it": "molto",
+          "nota": "avverbio di intensità, invariabile."
+        },
+        {
+          "ru": "интересные",
+          "it": "interessanti",
+          "nota": "интересный al nominativo plurale (-ые), qui usato come predicato dopo il soggetto (verbo essere sottinteso)."
+        }
+      ]
+    },
+    {
+      "id": 188,
+      "ru": "Первый урок был трудный.",
+      "it": "La prima lezione era difficile.",
+      "tema": "Numerale ordinale первый + passato del verbo essere",
+      "parole": [
+        {
+          "ru": "Первый",
+          "it": "primo",
+          "nota": "numerale ordinale, si comporta come un aggettivo e concorda in genere/caso col nome (qui maschile nominativo, come урок)."
+        },
+        {
+          "ru": "урок",
+          "it": "la lezione (m.)",
+          "nota": "nominativo singolare, soggetto."
+        },
+        {
+          "ru": "был",
+          "it": "era",
+          "nota": "passato del verbo essere (быть) alla forma maschile singolare: a differenza del presente, il passato di essere non si omette mai."
+        },
+        {
+          "ru": "трудный",
+          "it": "difficile",
+          "nota": "aggettivo alla forma maschile nominativa, predicato."
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "ru": "Второй этаж выше первого.",
+      "it": "Il secondo piano è più alto del primo.",
+      "tema": "Comparativo irregolare + genitivo di paragone (al posto di чем)",
+      "parole": [
+        {
+          "ru": "Второй этаж",
+          "it": "il secondo piano",
+          "nota": "второй = ordinale maschile, concorda con этаж (piano)."
+        },
+        {
+          "ru": "выше",
+          "it": "più alto",
+          "nota": "comparativo irregolare di высокий (alto): non segue la regola normale -ее, va imparato a memoria."
+        },
+        {
+          "ru": "первого",
+          "it": "del primo",
+          "nota": "genitivo maschile singolare di первый: dopo un comparativo si può usare il genitivo al posto di 'чем + nominativo' per esprimere il secondo termine di paragone."
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "ru": "Я родился в Москве.",
+      "it": "Sono nato a Mosca.",
+      "tema": "Passato riflessivo (forma maschile) + prepositivo di luogo",
+      "parole": [
+        {
+          "ru": "Я",
+          "it": "io",
+          "nota": "pronome soggetto."
+        },
+        {
+          "ru": "родился",
+          "it": "sono nato",
+          "nota": "passato del verbo riflessivo perfettivo родиться (nascere), forma maschile singolare: -ся diventa -ся anche dopo consonante (родил + ся)."
+        },
+        {
+          "ru": "в Москве",
+          "it": "a Mosca",
+          "nota": "в + prepositivo di Москва, stato in luogo."
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "ru": "Она родилась в Италии.",
+      "it": "Lei è nata in Italia.",
+      "tema": "Passato riflessivo (forma femminile)",
+      "parole": [
+        {
+          "ru": "Она",
+          "it": "lei",
+          "nota": "pronome soggetto femminile."
+        },
+        {
+          "ru": "родилась",
+          "it": "è nata",
+          "nota": "passato di родиться alla forma femminile: si aggiunge -лась invece di -лся, seguendo l'accordo di genere tipico del passato russo."
+        },
+        {
+          "ru": "в Италии",
+          "it": "in Italia",
+          "nota": "в + prepositivo di Италия (da -я a -и), stato in luogo."
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "ru": "Дети играют во дворе.",
+      "it": "I bambini giocano nel cortile.",
+      "tema": "Plurale irregolare 'дети' + alternanza в/во",
+      "parole": [
+        {
+          "ru": "Дети",
+          "it": "i bambini",
+          "nota": "nominativo plurale irregolare di ребёнок (bambino): una radice completamente diversa, come 'child/children' in inglese."
+        },
+        {
+          "ru": "играют",
+          "it": "giocano",
+          "nota": "presente, 3ª persona plurale di играть."
+        },
+        {
+          "ru": "во дворе",
+          "it": "nel cortile",
+          "nota": "во (variante di в) + prepositivo di двор: si usa 'во' invece di 'в' davanti a parole che iniziano con certi gruppi di consonanti, per facilitare la pronuncia."
+        }
+      ]
+    },
+    {
+      "id": 193,
+      "ru": "Я знаю этого человека.",
+      "it": "Conosco quest'uomo.",
+      "tema": "Dimostrativo all'accusativo animato",
+      "parole": [
+        {
+          "ru": "Я знаю",
+          "it": "io conosco",
+          "nota": "знаю = presente, 1ª persona singolare di знать."
+        },
+        {
+          "ru": "этого",
+          "it": "questo",
+          "nota": "этот all'accusativo animato maschile (-ого, come il genitivo): concorda con человека, che essendo animato richiede la stessa desinenza."
+        },
+        {
+          "ru": "человека",
+          "it": "l'uomo",
+          "nota": "accusativo animato di человек, uguale al genitivo."
+        }
+      ]
+    },
+    {
+      "id": 194,
+      "ru": "Я не знаю этот адрес.",
+      "it": "Non conosco questo indirizzo.",
+      "tema": "Dimostrativo all'accusativo inanimato (= nominativo)",
+      "parole": [
+        {
+          "ru": "Я не знаю",
+          "it": "io non conosco",
+          "nota": "знаю + не, negazione del verbo."
+        },
+        {
+          "ru": "этот",
+          "it": "questo",
+          "nota": "этот all'accusativo inanimato maschile: identico al nominativo, a differenza della forma animata этого vista sopra."
+        },
+        {
+          "ru": "адрес",
+          "it": "l'indirizzo (m.)",
+          "nota": "accusativo inanimato, uguale al nominativo."
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "ru": "Это платье красное.",
+      "it": "Questo vestito è rosso.",
+      "tema": "Aggettivo di colore alla forma neutra",
+      "parole": [
+        {
+          "ru": "Это платье",
+          "it": "questo vestito",
+          "nota": "платье = sostantivo neutro (finisce in -ье), soggetto."
+        },
+        {
+          "ru": "красное",
+          "it": "rosso",
+          "nota": "красный alla forma neutra nominativa (-ое), predicato che concorda con платье."
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "ru": "Эти туфли чёрные.",
+      "it": "Queste scarpe sono nere.",
+      "tema": "Эти (plurale invariabile per genere) + aggettivo plurale",
+      "parole": [
+        {
+          "ru": "Эти",
+          "it": "questi/queste",
+          "nota": "forma plurale di этот/эта/это: al plurale il dimostrativo è unico per tutti i generi."
+        },
+        {
+          "ru": "туфли",
+          "it": "scarpe (pl.)",
+          "nota": "nominativo plurale, soggetto (spesso usato quasi solo al plurale)."
+        },
+        {
+          "ru": "чёрные",
+          "it": "nere",
+          "nota": "чёрный al nominativo plurale (-ые), predicato."
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "ru": "Мы приехали вчера вечером.",
+      "it": "Siamo arrivati ieri sera.",
+      "tema": "Verbo di moto perfettivo con prefisso при- (arrivo)",
+      "parole": [
+        {
+          "ru": "Мы",
+          "it": "noi",
+          "nota": "pronome soggetto plurale."
+        },
+        {
+          "ru": "приехали",
+          "it": "siamo arrivati",
+          "nota": "passato plurale del verbo perfettivo приехать: il prefisso при- aggiunto a ехать indica l'arrivo a destinazione con un mezzo."
+        },
+        {
+          "ru": "вчера вечером",
+          "it": "ieri sera",
+          "nota": "вчера (ieri) + вечером (strumentale avverbiale di tempo di вечер, sera)."
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "ru": "Завтра утром я уеду в Питер.",
+      "it": "Domani mattina partirò per Pietroburgo.",
+      "tema": "Verbo di moto perfettivo con prefisso у- (partenza)",
+      "parole": [
+        {
+          "ru": "Завтра утром",
+          "it": "domani mattina",
+          "nota": "завтра (domani) + утром (strumentale avverbiale di tempo)."
+        },
+        {
+          "ru": "я уеду",
+          "it": "io partirò",
+          "nota": "уеду = futuro semplice, 1ª persona singolare del verbo perfettivo уехать: il prefisso у- aggiunto a ехать indica l'allontanamento, la partenza con un mezzo."
+        },
+        {
+          "ru": "в Питер",
+          "it": "per Pietroburgo",
+          "nota": "в + accusativo di Питер (nome colloquiale di San Pietroburgo): moto a luogo."
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "ru": "Зимой холодно, а летом жарко.",
+      "it": "D'inverno fa freddo, mentre d'estate fa caldo.",
+      "tema": "Strumentale avverbiale delle stagioni + congiunzione а di contrasto",
+      "parole": [
+        {
+          "ru": "Зимой",
+          "it": "d'inverno",
+          "nota": "strumentale avverbiale di зима (inverno), senza preposizione: lo stesso meccanismo visto con утром/вечером per dire 'quando'."
+        },
+        {
+          "ru": "холодно",
+          "it": "fa freddo",
+          "nota": "avverbio predicativo impersonale, invariabile: qui descrive il clima in generale, non una sensazione personale (che richiederebbe un dativo, es. мне холодно)."
+        },
+        {
+          "ru": "а",
+          "it": "mentre, invece",
+          "nota": "congiunzione che contrappone due fatti paralleli messi a confronto; diversa da но, che contraddice un'aspettativa."
+        },
+        {
+          "ru": "летом",
+          "it": "d'estate",
+          "nota": "strumentale avverbiale di лето (estate), stesso schema di зимой."
+        },
+        {
+          "ru": "жарко",
+          "it": "fa caldo",
+          "nota": "avverbio predicativo impersonale, opposto di холодно."
         }
       ]
     }
