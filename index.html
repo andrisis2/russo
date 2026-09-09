@@ -249,6 +249,7 @@
   .tile[data-mode="vocab"] .ico { background: linear-gradient(135deg,#11998e,#38ef7d); color:#fff; }
   .tile[data-mode="vika"] .ico  { background: linear-gradient(135deg,#2193b0,#6dd5ed); color:#fff; }
   .tile[data-mode="ref"] .ico   { background: linear-gradient(135deg,#834d9b,#d04ed6); color:#fff; }
+  .tile[data-mode="frasigram"] .ico { background: linear-gradient(135deg,#f857a6,#ff5858); color:#fff; }
 
   /* ---------- Regole grammaticali (riferimento) ---------- */
   .ref-nav{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;width:100%;-webkit-overflow-scrolling:touch}
@@ -279,6 +280,31 @@
   table.ref td.ru.tap{cursor:pointer}
   table.ref td.ru.tap:hover{color:var(--accent2)}
   table.ref td.ru.tap:active{color:var(--accent)}
+
+  /* ---------- Frasi & grammatica (frasi spiegate parola per parola) ---------- */
+  .sg-intro{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 18px}
+  .sg-card{background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:12px;box-shadow:var(--shadow-sm);overflow:hidden;transition:box-shadow .15s,border-color .15s}
+  .sg-card.open{border-color:var(--accent2);box-shadow:var(--shadow)}
+  .sg-head{display:flex;align-items:center;gap:12px;padding:15px 16px;cursor:pointer}
+  .sg-num{flex:0 0 auto;width:28px;height:28px;border-radius:9px;background:var(--card2);color:var(--muted);font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center}
+  .sg-main{flex:1;min-width:0}
+  .sg-ru{font-size:18px;font-weight:800;letter-spacing:-.2px;color:var(--text);line-height:1.3}
+  .sg-it{font-size:13px;color:var(--muted);margin-top:3px}
+  .sg-tema{display:inline-block;margin-top:7px;font-size:10.5px;font-weight:700;color:var(--accent2);background:rgba(47,107,237,.10);border-radius:8px;padding:3px 9px;line-height:1.4}
+  .sg-speak{flex:0 0 auto;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer;transition:.12s}
+  .sg-speak:hover{border-color:var(--accent2);color:var(--accent2);background:rgba(47,107,237,.08)}
+  .sg-chev{flex:0 0 auto;font-size:12px;color:var(--muted);transition:transform .25s}
+  .sg-card.open .sg-chev{transform:rotate(180deg);color:var(--accent2)}
+  .sg-body{max-height:0;overflow:hidden;transition:max-height .32s ease}
+  .sg-card.open .sg-body{max-height:1600px}
+  .sg-words{padding:4px 16px 16px;border-top:1px solid var(--line);margin-top:4px}
+  .sg-word{display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
+  .sg-word:last-child{border-bottom:none}
+  .sg-word-ru{flex:0 0 auto;min-width:70px;font-size:16px;font-weight:800;color:var(--accent2);cursor:pointer;line-height:1.3}
+  .sg-word-ru:hover{color:var(--accent)}
+  .sg-word-txt{flex:1;min-width:0}
+  .sg-word-it{font-size:13.5px;font-weight:700;color:var(--text)}
+  .sg-word-nota{font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:3px}
 
   .q{font-size:32px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px;text-rendering:optimizeLegibility}
 
@@ -851,6 +877,7 @@ function renderHome(){
       grid.appendChild(mkTile('&#128292;','Cirillico','Alfabeto e pronuncia','cyr',false));
       grid.appendChild(mkTile('&#128218;','Regole grammaticali','Tabelle e regole di base','ref',false));
       grid.appendChild(mkTile('&#128208;','Grammatica','Quiz su generi e pronomi','gram',false));
+      grid.appendChild(mkTile('&#129513;','Frasi & grammatica','Frasi spiegate parola per parola','frasigram',false));
     }
   }
 
@@ -909,6 +936,7 @@ function start(mode){
     if(mode==="phrase") return runPhrase();
     if(mode==="vocab") return runVocabolario();
     if(mode==="ref") return runReference();
+    if(mode==="frasigram") return runFrasiGrammar();
     if(mode==="vika") return runVika();
     if(mode==="verbi") return runVerbi();
     if(mode==="esercizi") return runEsercizi();
@@ -1872,6 +1900,60 @@ function runReference(){
   const home = $(`<button class="btn" style="margin-top:4px">↑ Torna su</button>`);
   home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
   stage.appendChild(home);
+}
+
+// ---------- Frasi & grammatica: frasi semplici spiegate parola per parola ----------
+function runFrasiGrammar(){
+  const stage = header();
+  const items = DB.frasiGrammar || [];
+
+  stage.appendChild($(`<div style="margin-bottom:4px"><b style="font-size:20px">🧩 Frasi &amp; grammatica</b></div>`));
+  stage.appendChild($(`<p class="sg-intro">Frasi semplici che nascondono una regola di grammatica russa. Tocca una frase per scoprire il significato di ogni parola e perché è fatta così.</p>`));
+
+  if(!items.length){
+    stage.appendChild($(`<p style="text-align:center;color:var(--muted);padding:30px 0">Nessuna frase disponibile.</p>`));
+    return;
+  }
+
+  const list = $(`<div></div>`);
+  stage.appendChild(list);
+
+  items.forEach((f,i)=>{
+    const card = $(`<div class="sg-card"></div>`);
+    const head = $(`<div class="sg-head">
+      <div class="sg-num">${i+1}</div>
+      <div class="sg-main">
+        <div class="sg-ru">${f.ru}</div>
+        <div class="sg-it">${f.it}</div>
+        ${f.tema ? `<span class="sg-tema">${f.tema}</span>` : ""}
+      </div>
+      <button class="sg-speak" title="Ascolta la frase">&#128266;</button>
+      <div class="sg-chev">&#9660;</div>
+    </div>`);
+    head.querySelector(".sg-speak").onclick = (e)=>{ e.stopPropagation(); speak(onlyCyrillic(f.ru)); };
+
+    const body = $(`<div class="sg-body"></div>`);
+    const words = $(`<div class="sg-words"></div>`);
+    (f.parole||[]).forEach(p=>{
+      const row = $(`<div class="sg-word">
+        <div class="sg-word-ru">${p.ru}</div>
+        <div class="sg-word-txt">
+          <div class="sg-word-it">${p.it}</div>
+          <div class="sg-word-nota">${p.nota}</div>
+        </div>
+      </div>`);
+      const ruEl = row.querySelector(".sg-word-ru");
+      if(hasCyrillic(p.ru)) ruEl.onclick = ()=>speak(onlyCyrillic(p.ru));
+      words.appendChild(row);
+    });
+    body.appendChild(words);
+
+    head.onclick = ()=>card.classList.toggle("open");
+
+    card.appendChild(head);
+    card.appendChild(body);
+    list.appendChild(card);
+  });
 }
 
 function pickFlashTopic(){
