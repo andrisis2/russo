@@ -2,7 +2,7 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 19,
+    "versione": 20,
     "aggiornato": "2026-09-09",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
@@ -22703,7 +22703,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome personale soggetto, 1ª persona singolare; in russo non si può omettere come spesso avviene in italiano."
+          "nota": "pronome personale soggetto, 1ª persona singolare; in russo non si può omettere come spesso avviene in italiano.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "студент",
@@ -22733,7 +22737,11 @@
         {
           "ru": "Ты",
           "it": "tu",
-          "nota": "pronome personale confidenziale/informale, si usa con amici, familiari, bambini."
+          "nota": "pronome personale confidenziale/informale, si usa con amici, familiari, bambini.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         },
         {
           "ru": "студентка",
@@ -22768,7 +22776,11 @@
         {
           "ru": "моя",
           "it": "mia",
-          "nota": "aggettivo possessivo 'mio' alla forma femminile singolare (мой → моя), perché concorda con книга (femminile), non con chi possiede."
+          "nota": "aggettivo possessivo 'mio' alla forma femminile singolare (мой → моя), perché concorda con книга (femminile), non con chi possiede.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "мой"
+          }
         },
         {
           "ru": "книга",
@@ -22801,7 +22813,11 @@
         {
           "ru": "твой",
           "it": "tuo",
-          "nota": "possessivo 'tuo' alla forma maschile, perché concorda con дом (maschile)."
+          "nota": "possessivo 'tuo' alla forma maschile, perché concorda con дом (maschile).",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "твой"
+          }
         },
         {
           "ru": "дом",
@@ -22829,12 +22845,20 @@
         {
           "ru": "У",
           "it": "presso, da",
-          "nota": "preposizione che regge il genitivo; insieme a меня forma 'presso di me', base della costruzione di possesso."
+          "nota": "preposizione che regge il genitivo; insieme a меня forma 'presso di me', base della costruzione di possesso.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "у"
+          }
         },
         {
           "ru": "меня",
           "it": "me",
-          "nota": "genitivo del pronome я (io); il russo non ha un verbo diretto per 'avere' nel senso di possesso."
+          "nota": "genitivo del pronome я (io); il russo non ha un verbo diretto per 'avere' nel senso di possesso.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "есть",
@@ -22869,12 +22893,20 @@
         {
           "ru": "У",
           "it": "presso, da",
-          "nota": "stessa costruzione di possesso vista con есть, regge il genitivo."
+          "nota": "stessa costruzione di possesso vista con есть, regge il genitivo.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "у"
+          }
         },
         {
           "ru": "меня",
           "it": "me",
-          "nota": "genitivo del pronome я."
+          "nota": "genitivo del pronome я.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "нет",
@@ -22909,7 +22941,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "читаю",
@@ -22946,7 +22982,11 @@
         {
           "ru": "Он",
           "it": "lui",
-          "nota": "pronome soggetto maschile."
+          "nota": "pronome soggetto maschile.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "смотрит",
@@ -22983,7 +23023,11 @@
         {
           "ru": "Мы",
           "it": "noi",
-          "nota": "pronome soggetto plurale."
+          "nota": "pronome soggetto plurale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "мы"
+          }
         },
         {
           "ru": "идём",
@@ -22997,7 +23041,11 @@
         {
           "ru": "в",
           "it": "in, a",
-          "nota": "preposizione di moto a luogo: con l'accusativo indica la direzione verso cui ci si muove."
+          "nota": "preposizione di moto a luogo: con l'accusativo indica la direzione verso cui ci si muove.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "в"
+          }
         },
         {
           "ru": "школу",
@@ -23025,7 +23073,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "живу",
@@ -23039,7 +23091,11 @@
         {
           "ru": "в",
           "it": "in, a",
-          "nota": "preposizione di stato in luogo: con il prepositivo indica dove ci si trova, non un movimento."
+          "nota": "preposizione di stato in luogo: con il prepositivo indica dove ci si trova, non un movimento.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "в"
+          }
         },
         {
           "ru": "Москве",
@@ -23067,7 +23123,11 @@
         {
           "ru": "Он",
           "it": "lui",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "работает",
@@ -23081,7 +23141,11 @@
         {
           "ru": "в",
           "it": "in",
-          "nota": "preposizione di luogo che regge il prepositivo per indicare dove avviene l'azione."
+          "nota": "preposizione di luogo che regge il prepositivo per indicare dove avviene l'azione.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "в"
+          }
         },
         {
           "ru": "банке",
@@ -23109,7 +23173,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "звоню",
@@ -23148,7 +23216,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "дарю",
@@ -23198,7 +23270,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "пишу",
@@ -23246,7 +23322,11 @@
         {
           "ru": "Мы",
           "it": "noi",
-          "nota": "pronome soggetto plurale."
+          "nota": "pronome soggetto plurale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "мы"
+          }
         },
         {
           "ru": "говорим",
@@ -23260,7 +23340,11 @@
         {
           "ru": "о",
           "it": "di, riguardo a",
-          "nota": "preposizione che regge il prepositivo quando si parla dell'argomento di un discorso (diventa об davanti a vocale)."
+          "nota": "preposizione che regge il prepositivo quando si parla dell'argomento di un discorso (diventa об davanti a vocale).",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "о"
+          }
         },
         {
           "ru": "России",
@@ -23304,7 +23388,11 @@
         {
           "ru": "от",
           "it": "da (parte di)",
-          "nota": "preposizione di provenienza che regge sempre il genitivo."
+          "nota": "preposizione di provenienza che regge sempre il genitivo.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "от"
+          }
         },
         {
           "ru": "мамы",
@@ -23354,7 +23442,11 @@
         {
           "ru": "на",
           "it": "su",
-          "nota": "preposizione di stato in luogo su una superficie: regge il prepositivo, a differenza di 'in' che usa в."
+          "nota": "preposizione di stato in luogo su una superficie: regge il prepositivo, a differenza di 'in' che usa в.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "на"
+          }
         },
         {
           "ru": "столе",
@@ -23404,7 +23496,11 @@
         {
           "ru": "под",
           "it": "sotto",
-          "nota": "preposizione di luogo che, per indicare uno stato fermo, regge lo strumentale (non il genitivo né l'accusativo)."
+          "nota": "preposizione di luogo che, per indicare uno stato fermo, regge lo strumentale (non il genitivo né l'accusativo).",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "под"
+          }
         },
         {
           "ru": "столом",
@@ -23432,7 +23528,11 @@
         {
           "ru": "Этот",
           "it": "questo",
-          "nota": "pronome dimostrativo che concorda in genere e numero con il nome, a differenza dell'invariabile это; qui è maschile perché дом è maschile."
+          "nota": "pronome dimostrativo che concorda in genere e numero con il nome, a differenza dell'invariabile это; qui è maschile perché дом è maschile.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "этот"
+          }
         },
         {
           "ru": "дом",
@@ -23448,7 +23548,11 @@
         {
           "ru": "большой",
           "it": "grande",
-          "nota": "aggettivo alla forma maschile singolare (desinenza -ой): concorda in genere, numero e caso col nome che descrive."
+          "nota": "aggettivo alla forma maschile singolare (desinenza -ой): concorda in genere, numero e caso col nome che descrive.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "большой"
+          }
         }
       ],
       "regola": {
@@ -23465,7 +23569,11 @@
         {
           "ru": "Эта",
           "it": "questa",
-          "nota": "forma femminile di этот, concorda con комната."
+          "nota": "forma femminile di этот, concorda con комната.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "этот"
+          }
         },
         {
           "ru": "комната",
@@ -23481,7 +23589,11 @@
         {
           "ru": "маленькая",
           "it": "piccola",
-          "nota": "aggettivo alla forma femminile singolare (desinenza -ая)."
+          "nota": "aggettivo alla forma femminile singolare (desinenza -ая).",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "маленький"
+          }
         }
       ],
       "regola": {
@@ -23498,7 +23610,11 @@
         {
           "ru": "Моё",
           "it": "mio",
-          "nota": "possessivo alla forma neutra (мой → моё), perché concorda con имя, che è neutro nonostante finisca in -я."
+          "nota": "possessivo alla forma neutra (мой → моё), perché concorda con имя, che è neutro nonostante finisca in -я.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "мой"
+          }
         },
         {
           "ru": "имя",
@@ -23544,7 +23660,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "не",
@@ -23580,7 +23700,11 @@
         {
           "ru": "Ты",
           "it": "tu",
-          "nota": "pronome soggetto informale."
+          "nota": "pronome soggetto informale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         },
         {
           "ru": "говоришь",
@@ -23621,7 +23745,11 @@
         {
           "ru": "тебе",
           "it": "a te",
-          "nota": "dativo del pronome ты: in russo l'età si esprime con 'a te sono... anni', non con il verbo 'avere'."
+          "nota": "dativo del pronome ты: in russo l'età si esprime con 'a te sono... anni', non con il verbo 'avere'.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         },
         {
           "ru": "лет",
@@ -23649,7 +23777,11 @@
         {
           "ru": "Мне",
           "it": "a me",
-          "nota": "dativo del pronome я: soggetto logico della costruzione dell'età."
+          "nota": "dativo del pronome я: soggetto logico della costruzione dell'età.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "двадцать",
@@ -23682,7 +23814,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "хочу",
@@ -23717,7 +23853,11 @@
         {
           "ru": "Мы",
           "it": "noi",
-          "nota": "pronome soggetto plurale."
+          "nota": "pronome soggetto plurale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "мы"
+          }
         },
         {
           "ru": "должны",
@@ -23758,7 +23898,11 @@
         {
           "ru": "я",
           "it": "io",
-          "nota": "pronome soggetto: qui il genere è indicato dalla desinenza del verbo, non dal pronome."
+          "nota": "pronome soggetto: qui il genere è indicato dalla desinenza del verbo, non dal pronome.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "читал",
@@ -23795,7 +23939,11 @@
         {
           "ru": "Она",
           "it": "lei",
-          "nota": "pronome soggetto femminile."
+          "nota": "pronome soggetto femminile.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "она"
+          }
         },
         {
           "ru": "вчера",
@@ -24005,7 +24153,11 @@
         {
           "ru": "эту",
           "it": "questo/questa",
-          "nota": "этот declinato all'accusativo femminile singolare (эта → эту), concorda con книгу."
+          "nota": "этот declinato all'accusativo femminile singolare (эта → эту), concorda con книгу.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "этот"
+          }
         },
         {
           "ru": "книгу",
@@ -24047,7 +24199,11 @@
         {
           "ru": "новую",
           "it": "nuova",
-          "nota": "aggettivo новый all'accusativo femminile singolare (новая → новую), concorda con машину."
+          "nota": "aggettivo новый all'accusativo femminile singolare (новая → новую), concorda con машину.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "новый"
+          }
         },
         {
           "ru": "машину",
@@ -24075,7 +24231,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "буду",
@@ -24165,7 +24325,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "умываюсь",
@@ -24202,7 +24366,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "учусь",
@@ -24216,7 +24384,13 @@
         {
           "ru": "в университете",
           "it": "all'università",
-          "nota": "в + prepositivo di университет (aggiunge -е): indica dove si svolge l'azione."
+          "nota": "в + prepositivo di университет (aggiunge -е): indica dove si svolge l'azione.",
+          "link": {
+            "tipo": "nome",
+            "parola": "университет",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -24233,7 +24407,11 @@
         {
           "ru": "Он",
           "it": "lui",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "одевается",
@@ -24264,7 +24442,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "иду",
@@ -24301,7 +24483,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "хожу",
@@ -24315,7 +24501,13 @@
         {
           "ru": "в магазин",
           "it": "al negozio",
-          "nota": "в + accusativo, moto a luogo."
+          "nota": "в + accusativo, moto a luogo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "магазин",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         },
         {
           "ru": "каждый день",
@@ -24337,7 +24529,11 @@
         {
           "ru": "Он",
           "it": "lui",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "едет",
@@ -24385,7 +24581,11 @@
         {
           "ru": "Он",
           "it": "lui",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "ездит",
@@ -24427,7 +24627,11 @@
         {
           "ru": "Его",
           "it": "lui/lo",
-          "nota": "accusativo del pronome он: letteralmente è l'oggetto di un 'chiamare' senza soggetto espresso."
+          "nota": "accusativo del pronome он: letteralmente è l'oggetto di un 'chiamare' senza soggetto espresso.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "зовут",
@@ -24458,7 +24662,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "вижу",
@@ -24472,7 +24680,11 @@
         {
           "ru": "её",
           "it": "la, lei",
-          "nota": "accusativo del pronome она: la stessa forma серве anche come genitivo, va imparata a memoria."
+          "nota": "accusativo del pronome она: la stessa forma серве anche come genitivo, va imparata a memoria.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "она"
+          }
         },
         {
           "ru": "в парке",
@@ -24500,7 +24712,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "дам",
@@ -24514,7 +24730,11 @@
         {
           "ru": "тебе",
           "it": "a te",
-          "nota": "dativo del pronome ты: indica il destinatario, 'a chi' si dà il regalo."
+          "nota": "dativo del pronome ты: indica il destinatario, 'a chi' si dà il regalo.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         },
         {
           "ru": "подарок",
@@ -24542,7 +24762,11 @@
         {
           "ru": "Мы",
           "it": "noi",
-          "nota": "pronome soggetto plurale."
+          "nota": "pronome soggetto plurale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "мы"
+          }
         },
         {
           "ru": "говорим",
@@ -24556,7 +24780,11 @@
         {
           "ru": "им",
           "it": "a loro",
-          "nota": "dativo del pronome они: indica il destinatario dell'azione."
+          "nota": "dativo del pronome они: indica il destinatario dell'azione.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "они"
+          }
         },
         {
           "ru": "правду",
@@ -24593,12 +24821,20 @@
         {
           "ru": "с",
           "it": "con",
-          "nota": "preposizione che regge lo strumentale per indicare compagnia."
+          "nota": "preposizione che regge lo strumentale per indicare compagnia.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "с"
+          }
         },
         {
           "ru": "ними",
           "it": "loro",
-          "nota": "strumentale del pronome они (им → ними): dopo una preposizione, i pronomi di 3ª persona (его/её/их/им ecc.) prendono una н- iniziale."
+          "nota": "strumentale del pronome они (им → ними): dopo una preposizione, i pronomi di 3ª persona (его/её/их/им ecc.) prendono una н- iniziale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "они"
+          }
         }
       ],
       "regola": {
@@ -24615,7 +24851,11 @@
         {
           "ru": "Чей",
           "it": "di chi (m.)",
-          "nota": "pronome interrogativo possessivo: concorda in genere col nome posseduto, qui maschile perché дом è maschile."
+          "nota": "pronome interrogativo possessivo: concorda in genere col nome posseduto, qui maschile perché дом è maschile.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "чей"
+          }
         },
         {
           "ru": "это",
@@ -24648,7 +24888,11 @@
         {
           "ru": "Чья",
           "it": "di chi (f.)",
-          "nota": "forma femminile di чей, concorda con книга."
+          "nota": "forma femminile di чей, concorda con книга.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "чей"
+          }
         },
         {
           "ru": "это",
@@ -24681,7 +24925,11 @@
         {
           "ru": "Чьё",
           "it": "di chi (n.)",
-          "nota": "forma neutra di чей, concorda con окно."
+          "nota": "forma neutra di чей, concorda con окно.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "чей"
+          }
         },
         {
           "ru": "это",
@@ -24714,7 +24962,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "всегда",
@@ -24767,7 +25019,11 @@
         {
           "ru": "Он",
           "it": "lui",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "никогда",
@@ -24904,7 +25160,11 @@
         {
           "ru": "Мой",
           "it": "il mio",
-          "nota": "possessivo maschile, concorda con день."
+          "nota": "possessivo maschile, concorda con день.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "мой"
+          }
         },
         {
           "ru": "день рождения",
@@ -25030,12 +25290,20 @@
         {
           "ru": "для",
           "it": "per",
-          "nota": "preposizione che regge sempre il genitivo, indica destinazione o scopo."
+          "nota": "preposizione che regge sempre il genitivo, indica destinazione o scopo.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "для"
+          }
         },
         {
           "ru": "тебя",
           "it": "te",
-          "nota": "genitivo del pronome ты, retto da для."
+          "nota": "genitivo del pronome ты, retto da для.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         }
       ],
       "regola": {
@@ -25052,7 +25320,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "не могу",
@@ -25075,12 +25347,20 @@
         {
           "ru": "без",
           "it": "senza",
-          "nota": "preposizione che regge sempre il genitivo."
+          "nota": "preposizione che regge sempre il genitivo.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "без"
+          }
         },
         {
           "ru": "тебя",
           "it": "te",
-          "nota": "genitivo del pronome ты, retto da без."
+          "nota": "genitivo del pronome ты, retto da без.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         }
       ],
       "regola": {
@@ -25117,7 +25397,11 @@
         {
           "ru": "через",
           "it": "attraverso",
-          "nota": "preposizione di moto che regge l'accusativo."
+          "nota": "preposizione di moto che regge l'accusativo.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "через"
+          }
         },
         {
           "ru": "лес",
@@ -25154,7 +25438,11 @@
         {
           "ru": "через",
           "it": "tra, fra",
-          "nota": "con espressioni di tempo, через + accusativo indica 'tra quanto tempo' accadrà qualcosa."
+          "nota": "con espressioni di tempo, через + accusativo indica 'tra quanto tempo' accadrà qualcosa.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "через"
+          }
         },
         {
           "ru": "неделю",
@@ -25176,7 +25464,11 @@
         {
           "ru": "После",
           "it": "dopo",
-          "nota": "preposizione che regge sempre il genitivo."
+          "nota": "preposizione che regge sempre il genitivo.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "после"
+          }
         },
         {
           "ru": "урока",
@@ -25218,7 +25510,11 @@
         {
           "ru": "Перед",
           "it": "davanti a",
-          "nota": "preposizione di luogo che regge lo strumentale."
+          "nota": "preposizione di luogo che regge lo strumentale.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "перед"
+          }
         },
         {
           "ru": "домом",
@@ -25266,7 +25562,11 @@
         {
           "ru": "Между",
           "it": "tra, fra",
-          "nota": "preposizione che regge lo strumentale, spesso con due elementi collegati da и."
+          "nota": "preposizione che regge lo strumentale, spesso con due elementi collegati da и.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "между"
+          }
         },
         {
           "ru": "окном",
@@ -25325,7 +25625,11 @@
         {
           "ru": "Мне",
           "it": "a me",
-          "nota": "dativo del pronome я: soggetto logico della costruzione impersonale di necessità."
+          "nota": "dativo del pronome я: soggetto logico della costruzione impersonale di necessità.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "нужно",
@@ -25356,7 +25660,11 @@
         {
           "ru": "Мне",
           "it": "a me",
-          "nota": "dativo del pronome я: chi prova la sensazione, non un vero soggetto grammaticale."
+          "nota": "dativo del pronome я: chi prova la sensazione, non un vero soggetto grammaticale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "холодно",
@@ -25378,7 +25686,11 @@
         {
           "ru": "Мне",
           "it": "a me",
-          "nota": "dativo del pronome я, chi prova lo stato d'animo."
+          "nota": "dativo del pronome я, chi prova lo stato d'animo.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "весело",
@@ -25483,7 +25795,11 @@
         {
           "ru": "та",
           "it": "quello/quella",
-          "nota": "forma femminile del pronome тот, sostituisce 'книга' già menzionata."
+          "nota": "forma femminile del pronome тот, sostituisce 'книга' già menzionata.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "тот"
+          }
         }
       ],
       "regola": {
@@ -25500,17 +25816,29 @@
         {
           "ru": "Он",
           "it": "lui",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "самый",
           "it": "il più",
-          "nota": "aggettivo самый, si declina come un aggettivo normale e concorda col nome (qui maschile) per formare il superlativo."
+          "nota": "aggettivo самый, si declina come un aggettivo normale e concorda col nome (qui maschile) per formare il superlativo.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "самый"
+          }
         },
         {
           "ru": "умный",
           "it": "intelligente",
-          "nota": "aggettivo alla forma maschile nominativa, insieme a самый forma 'il più intelligente'."
+          "nota": "aggettivo alla forma maschile nominativa, insieme a самый forma 'il più intelligente'.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "умный"
+          }
         },
         {
           "ru": "студент",
@@ -25528,7 +25856,13 @@
         {
           "ru": "в классе",
           "it": "della classe",
-          "nota": "в + prepositivo di класс: qui indica l'ambito, 'nella classe'."
+          "nota": "в + prepositivo di класс: qui indica l'ambito, 'nella classe'.",
+          "link": {
+            "tipo": "nome",
+            "parola": "класс",
+            "gramm": "sostantivo (m.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -25545,7 +25879,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "рад",
@@ -25555,7 +25893,11 @@
         {
           "ru": "тебя",
           "it": "ti",
-          "nota": "accusativo del pronome ты, oggetto diretto di видеть."
+          "nota": "accusativo del pronome ты, oggetto diretto di видеть.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         },
         {
           "ru": "видеть",
@@ -25592,7 +25934,11 @@
         {
           "ru": "никого",
           "it": "nessuno",
-          "nota": "genitivo del pronome negativo никто: dopo нет il complemento va sempre al genitivo, anche quando è un pronome negativo."
+          "nota": "genitivo del pronome negativo никто: dopo нет il complemento va sempre al genitivo, anche quando è un pronome negativo.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "никто"
+          }
         },
         {
           "ru": "нет",
@@ -25614,12 +25960,20 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "ничего",
           "it": "niente, nulla",
-          "nota": "forma obliqua del pronome negativo ничто, qui usata come oggetto diretto sotto negazione."
+          "nota": "forma obliqua del pronome negativo ничто, qui usata come oggetto diretto sotto negazione.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ничто"
+          }
         },
         {
           "ru": "не",
@@ -25720,7 +26074,11 @@
         {
           "ru": "тебе",
           "it": "a te",
-          "nota": "dativo del pronome ты, destinatario della chiamata."
+          "nota": "dativo del pronome ты, destinatario della chiamata.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "ты"
+          }
         }
       ],
       "regola": {
@@ -25750,7 +26108,11 @@
         {
           "ru": "которая",
           "it": "che, la quale",
-          "nota": "pronome relativo который alla forma femminile nominativa: concorda in genere/numero con девушка (il suo antecedente), ma il caso dipende dal ruolo che ha nella frase secondaria (qui è soggetto di читает)."
+          "nota": "pronome relativo который alla forma femminile nominativa: concorda in genere/numero con девушка (il suo antecedente), ma il caso dipende dal ruolo che ha nella frase secondaria (qui è soggetto di читает).",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "который"
+          }
         },
         {
           "ru": "читает книгу",
@@ -25786,7 +26148,11 @@
         {
           "ru": "которого",
           "it": "che, il quale",
-          "nota": "который all'accusativo animato maschile (stessa desinenza -ого del genitivo): qui è l'oggetto diretto di любишь nella frase secondaria."
+          "nota": "который all'accusativo animato maschile (stessa desinenza -ого del genitivo): qui è l'oggetto diretto di любишь nella frase secondaria.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "который"
+          }
         },
         {
           "ru": "ты любишь",
@@ -25880,7 +26246,11 @@
         {
           "ru": "Красивые",
           "it": "belli",
-          "nota": "aggettivo красивый al nominativo plurale (desinenza -ые): al plurale l'aggettivo ha un'unica forma per tutti i generi."
+          "nota": "aggettivo красивый al nominativo plurale (desinenza -ые): al plurale l'aggettivo ha un'unica forma per tutti i generi.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "красивый"
+          }
         },
         {
           "ru": "цветы",
@@ -25928,7 +26298,11 @@
         {
           "ru": "Русские",
           "it": "russi",
-          "nota": "русский al nominativo plurale (-ие), aggettivo attributivo che precede книги."
+          "nota": "русский al nominativo plurale (-ие), aggettivo attributivo che precede книги.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "русский"
+          }
         },
         {
           "ru": "книги",
@@ -25949,7 +26323,11 @@
         {
           "ru": "интересные",
           "it": "interessanti",
-          "nota": "интересный al nominativo plurale (-ые), qui usato come predicato dopo il soggetto (verbo essere sottinteso)."
+          "nota": "интересный al nominativo plurale (-ые), qui usato come predicato dopo il soggetto (verbo essere sottinteso).",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "интересный"
+          }
         }
       ],
       "regola": {
@@ -25966,7 +26344,11 @@
         {
           "ru": "Первый",
           "it": "primo",
-          "nota": "numerale ordinale, si comporta come un aggettivo e concorda in genere/caso col nome (qui maschile nominativo, come урок)."
+          "nota": "numerale ordinale, si comporta come un aggettivo e concorda in genere/caso col nome (qui maschile nominativo, come урок).",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "первый"
+          }
         },
         {
           "ru": "урок",
@@ -25991,7 +26373,11 @@
         {
           "ru": "трудный",
           "it": "difficile",
-          "nota": "aggettivo alla forma maschile nominativa, predicato."
+          "nota": "aggettivo alla forma maschile nominativa, predicato.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "трудный"
+          }
         }
       ],
       "regola": {
@@ -26024,7 +26410,11 @@
         {
           "ru": "первого",
           "it": "del primo",
-          "nota": "genitivo maschile singolare di первый: dopo un comparativo si può usare il genitivo al posto di 'чем + nominativo' per esprimere il secondo termine di paragone."
+          "nota": "genitivo maschile singolare di первый: dopo un comparativo si può usare il genitivo al posto di 'чем + nominativo' per esprimere il secondo termine di paragone.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "первый"
+          }
         }
       ],
       "regola": {
@@ -26041,7 +26431,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "родился",
@@ -26078,7 +26472,11 @@
         {
           "ru": "Она",
           "it": "lei",
-          "nota": "pronome soggetto femminile."
+          "nota": "pronome soggetto femminile.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "она"
+          }
         },
         {
           "ru": "родилась",
@@ -26169,7 +26567,11 @@
         {
           "ru": "этого",
           "it": "questo",
-          "nota": "этот all'accusativo animato maschile (-ого, come il genitivo): concorda con человека, che essendo animato richiede la stessa desinenza."
+          "nota": "этот all'accusativo animato maschile (-ого, come il genitivo): concorda con человека, che essendo animato richiede la stessa desinenza.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "этот"
+          }
         },
         {
           "ru": "человека",
@@ -26208,7 +26610,11 @@
         {
           "ru": "этот",
           "it": "questo",
-          "nota": "этот all'accusativo inanimato maschile: identico al nominativo, a differenza della forma animata этого vista sopra."
+          "nota": "этот all'accusativo inanimato maschile: identico al nominativo, a differenza della forma animata этого vista sopra.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "этот"
+          }
         },
         {
           "ru": "адрес",
@@ -26247,7 +26653,11 @@
         {
           "ru": "красное",
           "it": "rosso",
-          "nota": "красный alla forma neutra nominativa (-ое), predicato che concorda con платье."
+          "nota": "красный alla forma neutra nominativa (-ое), predicato che concorda con платье.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "красный"
+          }
         }
       ],
       "regola": {
@@ -26264,7 +26674,11 @@
         {
           "ru": "Эти",
           "it": "questi/queste",
-          "nota": "forma plurale di этот/эта/это: al plurale il dimostrativo è unico per tutti i generi."
+          "nota": "forma plurale di этот/эта/это: al plurale il dimostrativo è unico per tutti i generi.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "этот"
+          }
         },
         {
           "ru": "туфли",
@@ -26280,7 +26694,11 @@
         {
           "ru": "чёрные",
           "it": "nere",
-          "nota": "чёрный al nominativo plurale (-ые), predicato."
+          "nota": "чёрный al nominativo plurale (-ые), predicato.",
+          "link": {
+            "tipo": "aggettivo",
+            "parola": "чёрный"
+          }
         }
       ],
       "regola": {
@@ -26297,7 +26715,11 @@
         {
           "ru": "Мы",
           "it": "noi",
-          "nota": "pronome soggetto plurale."
+          "nota": "pronome soggetto plurale.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "мы"
+          }
         },
         {
           "ru": "приехали",
@@ -26426,7 +26848,11 @@
         {
           "ru": "Несмотря на",
           "it": "nonostante",
-          "nota": "locuzione prepositiva invariabile (letteralmente 'non guardando a'): regge l'accusativo e introduce una concessione."
+          "nota": "locuzione prepositiva invariabile (letteralmente 'non guardando a'): regge l'accusativo e introduce una concessione.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "несмотря на"
+          }
         },
         {
           "ru": "дождь",
@@ -26522,7 +26948,11 @@
         {
           "ru": "её",
           "it": "lo",
-          "nota": "accusativo del pronome она: qui riferito a рыба (il pesce), che in russo è femminile."
+          "nota": "accusativo del pronome она: qui riferito a рыба (il pesce), che in russo è femminile.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "она"
+          }
         },
         {
           "ru": "каждый день",
@@ -26576,12 +27006,20 @@
         {
           "ru": "я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "его",
           "it": "lo",
-          "nota": "accusativo del pronome он."
+          "nota": "accusativo del pronome он.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "он"
+          }
         },
         {
           "ru": "люблю",
@@ -26607,7 +27045,11 @@
         {
           "ru": "Я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "бы",
@@ -26635,7 +27077,13 @@
         {
           "ru": "в Россию",
           "it": "in Russia",
-          "nota": "в + accusativo di Россия: moto a luogo."
+          "nota": "в + accusativo di Россия: moto a luogo.",
+          "link": {
+            "tipo": "nome",
+            "parola": "Россия",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -26675,7 +27123,13 @@
         {
           "ru": "в Италию",
           "it": "in Italia",
-          "nota": "в + accusativo di Италия."
+          "nota": "в + accusativo di Италия.",
+          "link": {
+            "tipo": "nome",
+            "parola": "Италия",
+            "gramm": "sostantivo (f.)",
+            "tags": []
+          }
         }
       ],
       "regola": {
@@ -26864,7 +27318,11 @@
         {
           "ru": "Несмотря на",
           "it": "nonostante",
-          "nota": "locuzione prepositiva invariabile, regge l'accusativo."
+          "nota": "locuzione prepositiva invariabile, regge l'accusativo.",
+          "link": {
+            "tipo": "preposizione",
+            "parola": "несмотря на"
+          }
         },
         {
           "ru": "трудности",
@@ -26880,7 +27338,11 @@
         {
           "ru": "она",
           "it": "lei",
-          "nota": "pronome soggetto femminile."
+          "nota": "pronome soggetto femminile.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "она"
+          }
         },
         {
           "ru": "не сдалась",
@@ -27133,7 +27595,11 @@
         {
           "ru": "я",
           "it": "io",
-          "nota": "pronome soggetto."
+          "nota": "pronome soggetto.",
+          "link": {
+            "tipo": "pronome",
+            "parola": "я"
+          }
         },
         {
           "ru": "но и",
