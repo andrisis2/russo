@@ -291,6 +291,10 @@
   .sg-ru{font-size:18px;font-weight:800;letter-spacing:-.2px;color:var(--text);line-height:1.3}
   .sg-it{font-size:13px;color:var(--muted);margin-top:3px}
   .sg-tema{display:inline-block;margin-top:7px;font-size:10.5px;font-weight:700;color:var(--accent2);background:rgba(47,107,237,.10);border-radius:8px;padding:3px 9px;line-height:1.4}
+  button.sg-tema{border:none;cursor:pointer;font-family:inherit;transition:.12s}
+  button.sg-tema:hover{background:rgba(47,107,237,.18)}
+  button.sg-tema:active{background:rgba(47,107,237,.26)}
+  button.sg-tema::after{content:" →";opacity:.7}
   .sg-speak{flex:0 0 auto;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--card2);display:flex;align-items:center;justify-content:center;font-size:13px;cursor:pointer;transition:.12s}
   .sg-speak:hover{border-color:var(--accent2);color:var(--accent2);background:rgba(47,107,237,.08)}
   .sg-chev{flex:0 0 auto;font-size:12px;color:var(--muted);transition:transform .25s}
@@ -305,6 +309,10 @@
   .sg-word-txt{flex:1;min-width:0}
   .sg-word-it{font-size:13.5px;font-weight:700;color:var(--text)}
   .sg-word-nota{font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:3px}
+  .sg-word-link{display:inline-flex;align-items:center;gap:4px;margin-top:8px;border:1px solid var(--line);background:var(--card2);color:var(--accent2);
+    border-radius:20px;padding:5px 11px;font-size:11.5px;font-weight:700;cursor:pointer;transition:.12s;font-family:inherit}
+  .sg-word-link:hover{border-color:var(--accent2);background:rgba(47,107,237,.10)}
+  .sg-word-link:active{background:rgba(47,107,237,.18)}
 
   .q{font-size:32px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px;text-rendering:optimizeLegibility}
 
@@ -1846,7 +1854,7 @@ function enrichVoci(voci){
 const onlyCyrillic = s => (s.match(/[а-яёА-ЯЁ\s]+/g)||[]).join(" ").replace(/\s+/g," ").trim();
 const hasCyrillic = s => /[а-яё]/i.test(s);
 
-function runReference(){
+function runReference(scrollToId){
   const stage = header();
   const secs = DB.riferimento;
 
@@ -1900,6 +1908,13 @@ function runReference(){
   const home = $(`<button class="btn" style="margin-top:4px">↑ Torna su</button>`);
   home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
   stage.appendChild(home);
+
+  if(scrollToId){
+    requestAnimationFrame(()=>{
+      const el = document.getElementById("sec-"+scrollToId);
+      if(el) el.scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  }
 }
 
 // ---------- Frasi & grammatica: frasi semplici spiegate parola per parola ----------
@@ -1920,16 +1935,27 @@ function runFrasiGrammar(){
 
   items.forEach((f,i)=>{
     const card = $(`<div class="sg-card"></div>`);
+    const temaEl = f.regola
+      ? $(`<button class="sg-tema" type="button">${f.tema||""}</button>`)
+      : (f.tema ? $(`<span class="sg-tema">${f.tema}</span>`) : null);
     const head = $(`<div class="sg-head">
       <div class="sg-num">${i+1}</div>
       <div class="sg-main">
         <div class="sg-ru">${f.ru}</div>
         <div class="sg-it">${f.it}</div>
-        ${f.tema ? `<span class="sg-tema">${f.tema}</span>` : ""}
       </div>
       <button class="sg-speak" title="Ascolta la frase">&#128266;</button>
       <div class="sg-chev">&#9660;</div>
     </div>`);
+    if(temaEl) head.querySelector(".sg-main").appendChild(temaEl);
+    if(f.regola){
+      temaEl.title = "Vai alla regola grammaticale";
+      temaEl.onclick = (e)=>{
+        e.stopPropagation();
+        const {sez, id} = f.regola;
+        navigateTo(()=> sez==="grammatica" ? runGram(id) : runReference(id));
+      };
+    }
     head.querySelector(".sg-speak").onclick = (e)=>{ e.stopPropagation(); speak(onlyCyrillic(f.ru)); };
 
     const body = $(`<div class="sg-body"></div>`);
@@ -1944,6 +1970,21 @@ function runFrasiGrammar(){
       </div>`);
       const ruEl = row.querySelector(".sg-word-ru");
       if(hasCyrillic(p.ru)) ruEl.onclick = ()=>speak(onlyCyrillic(p.ru));
+      if(p.link){
+        const link = p.link;
+        if(link.tipo==="verbo"){
+          const v = (DB.verbi||[]).find(x=>x.inf===link.inf);
+          if(v){
+            const btn = $(`<button class="sg-word-link" type="button">&#128214; Coniugazione di «${link.inf}»</button>`);
+            btn.onclick = ()=> navigateTo(()=>runVerboDetail(v));
+            row.querySelector(".sg-word-txt").appendChild(btn);
+          }
+        } else if(link.tipo==="nome"){
+          const btn = $(`<button class="sg-word-link" type="button">&#128203; Declinazione di «${link.parola}»</button>`);
+          btn.onclick = ()=> navigateTo(()=>runParolaDeclinazione(link.parola, link.gramm, link.tags));
+          row.querySelector(".sg-word-txt").appendChild(btn);
+        }
+      }
       words.appendChild(row);
     });
     body.appendChild(words);
@@ -1954,6 +1995,29 @@ function runFrasiGrammar(){
     card.appendChild(body);
     list.appendChild(card);
   });
+}
+
+// Schermata dedicata: declinazione completa di una parola (raggiunta toccando
+// una parola dentro "Frasi & grammatica"). Riusa il motore di declinazione
+// automatica e il blocco UI già usati in Vocabolario/Flashcard.
+function runParolaDeclinazione(word, tipoGramm, tags){
+  const stage = header();
+  stage.appendChild($(`<div style="text-align:center;margin-bottom:16px">
+    <div style="font-size:32px;font-weight:800;color:var(--text)">${word}</div>
+    <div style="font-size:13px;color:var(--muted);margin-top:4px">Declinazione completa</div>
+  </div>`));
+
+  const block = makeDeclensionBlock(word, tipoGramm, tags||[]);
+  if(!block){
+    stage.appendChild($(`<p style="text-align:center;color:var(--muted);padding:20px 0">Declinazione non disponibile per questa parola.</p>`));
+    return;
+  }
+  // apre subito il pannello: qui non c'è bisogno di "svelare" nulla
+  const btn = block.querySelector(".decl-toggle");
+  const panel = block.querySelector(".decl-panel");
+  panel.style.display = "block";
+  btn.classList.add("open");
+  stage.appendChild(block);
 }
 
 function pickFlashTopic(){
@@ -2456,11 +2520,11 @@ function runCyr(){
 }
 
 // ---------- 5. GRAMMATICA ----------
-function runGram(){
+function runGram(scrollToId){
   const stage = header();
   // mostra le schede-regola, poi i drill
   DB.grammatica.forEach(g=>{
-    stage.appendChild($(`<div class="gram-card"><h3>${g.titolo}</h3><p>${g.spiegazione}</p></div>`));
+    stage.appendChild($(`<div class="gram-card" id="gc-${g.id}"><h3>${g.titolo}</h3><p>${g.spiegazione}</p></div>`));
   });
   const btn = $(`<button class="btn primary" style="margin-top:6px">Inizia gli esercizi →</button>`);
   btn.onclick = ()=>{
@@ -2479,6 +2543,13 @@ function runGram(){
     runMCQ(shuffle(qs).slice(0,10), "Grammatica", runGram);
   };
   stage.appendChild(btn);
+
+  if(scrollToId){
+    requestAnimationFrame(()=>{
+      const el = document.getElementById("gc-"+scrollToId);
+      if(el) el.scrollIntoView({behavior:"smooth",block:"start"});
+    });
+  }
 }
 
 // ---------- 6. FRASI & ASCOLTO ----------
