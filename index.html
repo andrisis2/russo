@@ -309,10 +309,13 @@
   .sg-word-txt{flex:1;min-width:0}
   .sg-word-it{font-size:13.5px;font-weight:700;color:var(--text)}
   .sg-word-nota{font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:3px}
-  .sg-word-link{display:inline-flex;align-items:center;gap:4px;margin-top:8px;border:1px solid var(--line);background:var(--card2);color:var(--accent2);
+  .sg-word-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .sg-word-link{display:inline-flex;align-items:center;gap:4px;margin-top:0;border:1px solid var(--line);background:var(--card2);color:var(--accent2);
     border-radius:20px;padding:5px 11px;font-size:11.5px;font-weight:700;cursor:pointer;transition:.12s;font-family:inherit}
   .sg-word-link:hover{border-color:var(--accent2);background:rgba(47,107,237,.10)}
   .sg-word-link:active{background:rgba(47,107,237,.18)}
+  .sg-word-link.added{color:var(--good);border-color:var(--good);cursor:default}
+  .sg-word-link.added:hover{background:var(--card2)}
 
   .q{font-size:32px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px;text-rendering:optimizeLegibility}
 
@@ -2191,6 +2194,20 @@ function runReference(scrollToId){
   }
 }
 
+// Cerca nel dizionario locale una voce che corrisponda a una parola di "Frasi & grammatica"
+// (confronto case-insensitive, perché nelle frasi la parola può iniziare per maiuscola).
+function findDictVoce(ru){
+  const key = (ru||'').trim().toLowerCase();
+  if(!key) return null;
+  return (DB.voci||[]).find(v=>(v.ru||'').trim().toLowerCase()===key) || null;
+}
+// Id stabile per parole/espressioni senza voce nel dizionario (per salvarle negli esercizi
+// senza duplicati se la stessa parola compare in più frasi).
+function slugRu(s){
+  return 'fg_' + (s||'').trim().toLowerCase().replace(/[^\wа-яё]+/gi,'-').replace(/^-+|-+$/g,'');
+}
+const LINK_TIPO_GRAMM = {verbo:'verbo', nome:'sostantivo', aggettivo:'aggettivo', pronome:'pronome', preposizione:'preposizione'};
+
 // ---------- Frasi & grammatica: frasi semplici spiegate parola per parola ----------
 function runFrasiGrammar(){
   const stage = header();
@@ -2244,39 +2261,69 @@ function runFrasiGrammar(){
       </div>`);
       const ruEl = row.querySelector(".sg-word-ru");
       if(hasCyrillic(p.ru)) ruEl.onclick = ()=>speak(onlyCyrillic(p.ru));
-      if(p.link){
-        const link = p.link;
+
+      const actions = $(`<div class="sg-word-actions"></div>`);
+      const link = p.link;
+      if(link){
         if(link.tipo==="verbo"){
           const v = (DB.verbi||[]).find(x=>x.inf===link.inf);
           if(v){
             const btn = $(`<button class="sg-word-link" type="button">&#128214; Coniugazione di «${link.inf}»</button>`);
             btn.onclick = ()=> navigateTo(()=>runVerboDetail(v));
-            row.querySelector(".sg-word-txt").appendChild(btn);
+            actions.appendChild(btn);
           }
         } else if(link.tipo==="nome"){
           const btn = $(`<button class="sg-word-link" type="button">&#128203; Declinazione di «${link.parola}»</button>`);
           btn.onclick = ()=> navigateTo(()=>runParolaDeclinazione(link.parola, link.gramm, link.tags));
-          row.querySelector(".sg-word-txt").appendChild(btn);
+          actions.appendChild(btn);
         } else if(link.tipo==="aggettivo"){
           if(resolveAdjForms(link.parola)){
             const btn = $(`<button class="sg-word-link" type="button">&#127912; Declinazione di «${link.parola}»</button>`);
             btn.onclick = ()=> navigateTo(()=>runAggettivoDeclinazione(link.parola));
-            row.querySelector(".sg-word-txt").appendChild(btn);
+            actions.appendChild(btn);
           }
         } else if(link.tipo==="pronome"){
           if(PRONOUN_DECL[link.parola]){
             const btn = $(`<button class="sg-word-link" type="button">&#128203; Declinazione di «${link.parola}»</button>`);
             btn.onclick = ()=> navigateTo(()=>runPronomeDeclinazione(link.parola));
-            row.querySelector(".sg-word-txt").appendChild(btn);
+            actions.appendChild(btn);
           }
         } else if(link.tipo==="preposizione"){
           if(PREP_INFO[link.parola]){
             const btn = $(`<button class="sg-word-link" type="button">&#129517; Che caso regge «${link.parola}»?</button>`);
             btn.onclick = ()=> navigateTo(()=>runPrepInfo(link.parola));
-            row.querySelector(".sg-word-txt").appendChild(btn);
+            actions.appendChild(btn);
           }
         }
       }
+
+      // Ogni parola/espressione della frase (non solo nomi e verbi) si può
+      // salvare come flashcard negli Esercizi, riusando l'id del dizionario
+      // quando c'è una voce corrispondente per evitare doppioni.
+      if(hasCyrillic(p.ru)){
+        const dict = findDictVoce(p.ru);
+        const wordId = dict ? dict.id : slugRu(p.ru);
+        const wordRu = dict ? dict.ru : p.ru.trim();
+        const wordIt = dict ? dict.it : (p.it||'');
+        const wordTipo = dict ? (dict.tipo||'') : (link ? (LINK_TIPO_GRAMM[link.tipo]||'') : '');
+        const wordTag = dict ? (dict.tag||[]) : [];
+        const addBtn = $(`<button class="sg-word-link" type="button"></button>`);
+        function paintAdd(){
+          const saved = isEsesVoce(wordId);
+          addBtn.textContent = saved ? '✓ Negli esercizi' : '＋ Aggiungi agli esercizi';
+          addBtn.classList.toggle('added', saved);
+          addBtn.disabled = saved;
+        }
+        paintAdd();
+        addBtn.onclick = (e)=>{
+          e.stopPropagation();
+          addEsesVoce(wordId, wordRu, wordIt, dict?(dict.translit||''):'', wordTipo, wordTag);
+          paintAdd();
+        };
+        actions.appendChild(addBtn);
+      }
+
+      if(actions.children.length) row.querySelector(".sg-word-txt").appendChild(actions);
       words.appendChild(row);
     });
     body.appendChild(words);
