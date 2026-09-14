@@ -27,12 +27,15 @@ Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura 
 - `lezioni/` — un riassunto `lezione-XX.md` per lezione + trascrizioni `*_transcript.txt` + il VTT del corso
 - `scripts/extract_lesson.py` — taglia/pulisce una porzione del VTT per timestamp
 
-### Ospite: `articoli/`
-La sottocartella `articoli/` **non c'entra col russo**: è l'app *Articoli*
-(https://andrisis2.github.io/russo/articoli/), che fa da interfaccia al repo privato
-`andrisis2/prep`. Sta qui solo perché serviva un sito pubblico su HTTPS per installarla
-sul telefono. Non contiene contenuti, solo interfaccia: toccala solo se si lavora su
-quell'app, e vedi `articoli/README.md`.
+### Traslocata: l'app *Articoli*
+La sottocartella `articoli/` non c'è più: l'app *Articoli* (interfaccia al repo
+privato `andrisis2/prep`) ha un repo tutto suo e non c'entra col russo.
+
+- Live: https://andrisis2.github.io/articoli/
+- Codice: repo `andrisis2/articoli` — se va modificata, si lavora lì.
+
+Il vecchio indirizzo `https://andrisis2.github.io/russo/articoli/` non funziona
+più: chi ha la PWA installata sul telefono deve reinstallarla dal nuovo.
 
 ## Pipeline "video → app" (per trascrivere il prossimo pezzo)
 1. `python scripts/extract_lesson.py "lezioni/corso-completo.it-orig.vtt" <START hh:mm:ss> <END hh:mm:ss> "lezioni/LXX_transcript.txt"`
