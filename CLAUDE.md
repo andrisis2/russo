@@ -31,8 +31,12 @@ Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura 
 La sottocartella `articoli/` non c'è più: l'app *Articoli* (interfaccia al repo
 privato `andrisis2/prep`) ha un repo tutto suo e non c'entra col russo.
 
-- Live: https://andrisis2.github.io/articoli/
-- Codice: repo `andrisis2/articoli` — se va modificata, si lavora lì.
+- Live: https://andrisis2.github.io/articoli-/
+- Codice: repo `andrisis2/articoli-` — se va modificata, si lavora lì.
+
+Il trattino finale in `articoli-` **è voluto, non è un refuso**: il repo è nato
+così e rinominarlo cambierebbe l'indirizzo dell'app, che andrebbe reinstallata
+sul telefono. Non «correggerlo».
 
 Il vecchio indirizzo `https://andrisis2.github.io/russo/articoli/` non funziona
 più: chi ha la PWA installata sul telefono deve reinstallarla dal nuovo.
