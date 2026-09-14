@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Articoli</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta name="theme-color" content="#11223a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Articoli">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+:root{
+  --bg:#f4f6f8; --panel:#ffffff; --text:#182231; --muted:#6a7688;
+  --line:#e1e6ec; --accent:#e8962c; --deep:#11223a; --danger:#c0392b; --ok:#2e7d52;
+  --tap:44px;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#11151c; --panel:#191f28; --text:#e7ecf3; --muted:#93a0b2;
+         --line:#29313d; --deep:#0c1523; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;height:100%}
+body{
+  background:var(--bg); color:var(--text);
+  font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%; overscroll-behavior-y:none;
+}
+button,input,textarea,select{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+.hide{display:none!important}
+
+/* ---------- barra in alto ---------- */
+header{
+  position:sticky; top:0; z-index:20; background:var(--deep); color:#fff;
+  padding:calc(env(safe-area-inset-top) + 10px) 12px 10px;
+  display:flex; align-items:center; gap:6px;
+}
+header h1{font-size:17px;margin:0;flex:1;font-weight:600;letter-spacing:.2px}
+header h1 .dot{color:var(--accent)}
+.iconbtn{
+  min-width:var(--tap); height:var(--tap); border-radius:10px; color:#fff;
+  display:flex; align-items:center; justify-content:center; font-size:19px;
+}
+.iconbtn:active{background:rgba(255,255,255,.16)}
+
+/* ---------- ricerca ---------- */
+.searchbar{padding:10px 12px 4px}
+.searchbar input{
+  width:100%; padding:11px 12px; border:1px solid var(--line); border-radius:10px;
+  background:var(--panel);
+}
+
+/* ---------- albero a tendine ---------- */
+#tree{padding:6px 8px calc(env(safe-area-inset-bottom) + 90px)}
+.row{
+  display:flex; align-items:center; gap:8px; width:100%; text-align:left;
+  min-height:var(--tap); padding:6px 8px; border-radius:9px; color:var(--text);
+}
+.row:active{background:rgba(125,140,160,.18)}
+.row .chev{width:16px;flex:none;color:var(--muted);transition:transform .15s}
+.row.open>.chev{transform:rotate(90deg)}
+.row .nm{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .tag{font-size:11px;color:var(--muted);flex:none}
+.row.dir>.nm{font-weight:600}
+.row.file>.nm{font-weight:400}
+.row.file .ic{color:var(--muted);font-size:13px;width:16px;flex:none;text-align:center}
+/* le cartelle-articolo di primo livello spiccano */
+.art{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:8px 0;overflow:hidden}
+.art>.row{min-height:52px;font-size:17px;border-left:4px solid var(--accent)}
+.art.gen>.row{border-left-color:var(--muted)}
+.kids{display:none;padding-left:6px}
+.kids.open{display:block}
+.empty{color:var(--muted);padding:24px 14px;text-align:center;line-height:1.6}
+
+/* ---------- pulsanti in basso ---------- */
+.fabs{
+  position:fixed; right:14px; bottom:calc(env(safe-area-inset-bottom) + 14px);
+  display:flex; flex-direction:column; gap:10px; z-index:15;
+}
+.fab{
+  background:var(--deep); color:#fff; border-radius:26px; height:52px; padding:0 18px;
+  box-shadow:0 4px 14px rgba(0,0,0,.28); font-size:15px; font-weight:600;
+  display:flex; align-items:center; gap:8px;
+}
+
+/* ---------- visualizzatore / editor ---------- */
+#viewer{
+  position:fixed; inset:0; z-index:30; background:var(--bg);
+  display:flex; flex-direction:column;
+}
+.vbar{
+  background:var(--deep); color:#fff; display:flex; align-items:center; gap:4px;
+  padding:calc(env(safe-area-inset-top) + 8px) 8px 8px;
+}
+.vpath{flex:1;min-width:0;font-size:13px;opacity:.92;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.seg{display:flex;background:rgba(255,255,255,.14);border-radius:9px;padding:2px;margin-right:2px}
+.seg button{color:#fff;font-size:13px;padding:7px 11px;border-radius:7px;opacity:.75}
+.seg button.on{background:#fff;color:var(--deep);opacity:1;font-weight:600}
+.savebtn{background:var(--accent);color:#1a1206;font-weight:700;border-radius:9px;padding:9px 14px;font-size:14px}
+.savebtn[disabled]{background:transparent;color:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+.banner{padding:9px 14px;font-size:13px;line-height:1.45;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.banner.warn{background:#fdf1d8;color:#6b4b12}
+.banner.err{background:#fbe3e0;color:#7d2a20}
+@media (prefers-color-scheme:dark){
+  .banner.warn{background:#3a2f16;color:#f3d9a4}
+  .banner.err{background:#3c1f1b;color:#f5c2ba}
+}
+.banner button{text-decoration:underline;font-size:13px;font-weight:600;padding:4px 0}
+#vbody{flex:1;overflow:auto;-webkit-overflow-scrolling:touch}
+#editor{
+  width:100%;height:100%;border:0;outline:none;resize:none;background:var(--panel);
+  padding:16px 16px calc(env(safe-area-inset-bottom) + 40px);
+  font:16px/1.65 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+#preview{padding:18px 18px calc(env(safe-area-inset-bottom) + 60px);max-width:44rem;margin:0 auto}
+#preview img{max-width:100%;border-radius:8px}
+#preview h1,#preview h2,#preview h3{line-height:1.28;margin:1.4em 0 .5em}
+#preview h1{font-size:1.55em} #preview h2{font-size:1.3em} #preview h3{font-size:1.1em}
+#preview p,#preview li{line-height:1.68}
+#preview code{background:rgba(125,140,160,.18);padding:.12em .35em;border-radius:4px;font-size:.9em}
+#preview pre{background:var(--panel);border:1px solid var(--line);padding:12px;border-radius:8px;overflow:auto}
+#preview pre code{background:none;padding:0}
+#preview blockquote{margin:1em 0;padding:.3em 0 .3em 14px;border-left:3px solid var(--accent);color:var(--muted)}
+#preview table{border-collapse:collapse;width:100%;font-size:.92em;display:block;overflow-x:auto}
+#preview th,#preview td{border:1px solid var(--line);padding:7px 9px;text-align:left}
+#preview hr{border:0;border-top:1px solid var(--line);margin:1.6em 0}
+.vfoot{
+  border-top:1px solid var(--line); background:var(--panel); color:var(--muted);
+  font-size:12px; padding:8px 14px calc(env(safe-area-inset-bottom) + 8px);
+  display:flex; gap:14px; align-items:center;
+}
+.vfoot .grow{flex:1}
+.vfoot button{color:var(--danger);font-size:12px;font-weight:600}
+
+/* ---------- pannelli (impostazioni, menu) ---------- */
+.sheet{position:fixed;inset:0;z-index:40;background:rgba(10,14,20,.5);display:flex;align-items:flex-end}
+.sheetbox{
+  background:var(--bg); width:100%; max-height:92%; overflow:auto; border-radius:16px 16px 0 0;
+  padding:18px 18px calc(env(safe-area-inset-bottom) + 18px);
+}
+@media(min-width:640px){ .sheet{align-items:center;justify-content:center} .sheetbox{max-width:34rem;border-radius:16px} }
+.sheetbox h2{margin:0 0 4px;font-size:18px}
+.sheetbox label{display:block;margin:14px 0 5px;font-size:13px;color:var(--muted);font-weight:600}
+.sheetbox input{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.sheetbox .help{font-size:13px;color:var(--muted);line-height:1.6}
+.sheetbox .help a{color:inherit}
+.sheetbox ol{padding-left:20px;font-size:13px;color:var(--muted);line-height:1.7}
+.btnrow{display:flex;gap:10px;margin-top:20px}
+.btn{flex:1;padding:13px;border-radius:11px;text-align:center;font-weight:600;border:1px solid var(--line);background:var(--panel)}
+.btn.primary{background:var(--deep);color:#fff;border-color:var(--deep)}
+.menu button{display:block;width:100%;text-align:left;padding:15px 6px;border-bottom:1px solid var(--line);font-size:16px}
+.menu button:last-child{border-bottom:0}
+.menu .danger{color:var(--danger)}
+
+#toast{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom) + 80px);
+  background:#0d1622;color:#fff;padding:11px 16px;border-radius:10px;font-size:14px;z-index:60;
+  max-width:88%;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.3);
+}
+.spin{display:inline-block;width:15px;height:15px;border:2px solid rgba(255,255,255,.35);
+  border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Articoli<span class="dot">.</span></h1>
+  <button class="iconbtn" id="btnRefresh" title="Aggiorna" aria-label="Aggiorna">&#8635;</button>
+  <button class="iconbtn" id="btnSettings" title="Impostazioni" aria-label="Impostazioni">&#9881;</button>
+</header>
+
+<div class="searchbar"><input id="filter" type="search" placeholder="Cerca file..." autocomplete="off"></div>
+<main id="tree"></main>
+
+<div class="fabs">
+  <button class="fab" id="btnNewArticle">+ Articolo</button>
+</div>
+
+<section id="viewer" class="hide">
+  <div class="vbar">
+    <button class="iconbtn" id="btnBack" aria-label="Indietro">&#8592;</button>
+    <div class="vpath" id="vpath"></div>
+    <div class="seg">
+      <button id="tabRead" class="on">Leggi</button>
+      <button id="tabEdit">Modifica</button>
+    </div>
+    <button class="savebtn" id="btnSave" disabled>Salva</button>
+  </div>
+  <div id="vbanner"></div>
+  <div id="vbody">
+    <div id="preview"></div>
+    <textarea id="editor" class="hide" spellcheck="true"></textarea>
+  </div>
+  <div class="vfoot">
+    <span id="vstat"></span><span class="grow"></span>
+    <button id="btnDelete">Elimina</button>
+  </div>
+</section>
+
+<div id="sheets"></div>
+
+<script>
+(function(){
+'use strict';
+
+/* ============================================================
+   Articoli — sfoglia e modifica i file di un repo GitHub.
+   Tutto quello che salvi qui diventa un commit vero sul repo,
+   così Claude lo ritrova alla sessione dopo.
+   ============================================================ */
+
+var DEFAULTS = { owner:'andrisis2', repo:'prep', branch:'main', root:'articoli', token:'' };
+var K = {
+  cfg:'articoli.cfg', open:'articoli.open', tree:'articoli.tree',
+  draft:function(p){return 'articoli.draft:'+p;},
+  cache:function(p){return 'articoli.cache:'+p;}
+};
+
+function lsGet(k, fb){ try{ var v=localStorage.getItem(k); return v==null?fb:JSON.parse(v); }catch(e){ return fb; } }
+function lsSet(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function lsDel(k){ try{ localStorage.removeItem(k); }catch(e){} }
+
+var cfg = Object.assign({}, DEFAULTS, lsGet(K.cfg, {}));
+var openSet = lsGet(K.open, []);       // cartelle lasciate aperte
+var nodes = null;                       // albero annidato
+var cur = null;                         // file aperto nel visualizzatore
+var saveTimer = null;
+
+var $ = function(id){ return document.getElementById(id); };
+
+/* ---------- utilità ---------- */
+
+function encPath(p){ return p.split('/').map(encodeURIComponent).join('/'); }
+
+function b64encode(str){
+  var bytes = new TextEncoder().encode(str), bin = '', CH = 0x8000;
+  for(var i=0;i<bytes.length;i+=CH) bin += String.fromCharCode.apply(null, bytes.subarray(i, i+CH));
+  return btoa(bin);
+}
+function b64bytes(b64){
+  var bin = atob(String(b64).replace(/\s/g,'')), a = new Uint8Array(bin.length);
+  for(var i=0;i<bin.length;i++) a[i] = bin.charCodeAt(i);
+  return a;
+}
+function b64decodeText(b64){ return new TextDecoder('utf-8').decode(b64bytes(b64)); }
+
+function ext(p){ var m = /\.([a-z0-9]+)$/i.exec(p); return m ? m[1].toLowerCase() : ''; }
+var TEXT_EXT = ['md','markdown','txt','json','csv','tsv','yml','yaml','html','css','js','py','sh','tex','bib','srt','vtt','xml','ini','toml','log'];
+var IMG_EXT  = ['png','jpg','jpeg','gif','webp','svg','avif'];
+function isText(p){ return TEXT_EXT.indexOf(ext(p)) >= 0 || p.indexOf('.') < 0; }
+function isImg(p){ return IMG_EXT.indexOf(ext(p)) >= 0; }
+
+function toast(msg, ms){
+  var old = $('toast'); if(old) old.remove();
+  var t = document.createElement('div'); t.id = 'toast'; t.innerHTML = msg;
+  document.body.appendChild(t);
+  if(ms !== 0) setTimeout(function(){ if(t.parentNode) t.remove(); }, ms || 2600);
+  return t;
+}
+
+function slugify(s){
+  return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,60) || 'articolo';
+}
+
+/* ---------- pannelli a scomparsa (al posto di prompt/confirm) ---------- */
+
+function sheet(html){
+  var wrap = document.createElement('div'); wrap.className = 'sheet';
+  wrap.innerHTML = '<div class="sheetbox">' + html + '</div>';
+  wrap.addEventListener('click', function(e){ if(e.target === wrap) close(); });
+  function close(){ if(wrap.parentNode) wrap.remove(); }
+  $('sheets').appendChild(wrap);
+  return { el: wrap, close: close };
+}
+
+function askText(titolo, etichetta, iniziale, okLabel){
+  return new Promise(function(resolve){
+    var s = sheet(
+      '<h2>' + titolo + '</h2>' +
+      '<label>' + etichetta + '</label>' +
+      '<input id="_ask" type="text" autocomplete="off">' +
+      '<div class="btnrow"><button class="btn" id="_no">Annulla</button>' +
+      '<button class="btn primary" id="_si">' + (okLabel || 'Crea') + '</button></div>');
+    var inp = s.el.querySelector('#_ask');
+    inp.value = iniziale || '';
+    setTimeout(function(){ inp.focus(); }, 60);
+    function done(v){ s.close(); resolve(v); }
+    s.el.querySelector('#_no').onclick = function(){ done(null); };
+    s.el.querySelector('#_si').onclick = function(){ done(inp.value.trim() || null); };
+    inp.addEventListener('keydown', function(e){ if(e.key === 'Enter') done(inp.value.trim() || null); });
+  });
+}
+
+function askConfirm(titolo, testo, okLabel){
+  return new Promise(function(resolve){
+    var s = sheet('<h2>' + titolo + '</h2><p class="help">' + testo + '</p>' +
+      '<div class="btnrow"><button class="btn" id="_no">Annulla</button>' +
+      '<button class="btn primary" id="_si">' + (okLabel || 'Conferma') + '</button></div>');
+    s.el.querySelector('#_no').onclick = function(){ s.close(); resolve(false); };
+    s.el.querySelector('#_si').onclick = function(){ s.close(); resolve(true); };
+  });
+}
+
+/* ---------- chiamate a GitHub ---------- */
+
+function api(path, opts){
+  opts = opts || {};
+  var url = 'https://api.github.com/repos/' + cfg.owner + '/' + cfg.repo + path;
+  var h = { 'Accept':'application/vnd.github+json', 'X-GitHub-Api-Version':'2022-11-28' };
+  if(cfg.token) h['Authorization'] = 'Bearer ' + cfg.token;
+  if(opts.body) h['Content-Type'] = 'application/json';
+  Object.keys(opts.headers || {}).forEach(function(k){ h[k] = opts.headers[k]; });
+  return fetch(url, { method: opts.method || 'GET', headers: h, body: opts.body, cache: 'no-store' })
+    .then(function(r){
+      if(r.ok) return r.status === 204 ? null : r.json();
+      return r.json().catch(function(){ return {}; }).then(function(j){
+        var m = j.message || '';
+        var e = new Error(
+          r.status === 401 ? 'Token non valido o scaduto. Aprilo in Impostazioni e rigeneralo.' :
+          r.status === 403 ? 'Accesso negato (403): permessi del token insufficienti, oppure troppe richieste. ' + m :
+          r.status === 404 ? 'Non trovato (404): controlla repo e ramo in Impostazioni. Se il repo è privato serve un token con permesso Contents.' :
+          r.status === 409 || r.status === 422 ? 'Conflitto: il file è cambiato su GitHub dopo che l\'hai aperto.' :
+          'Errore ' + r.status + ': ' + m);
+        e.status = r.status;
+        throw e;
+      });
+    });
+}
+
+/* Il contenuto arriva vuoto per i file oltre 1 MB: in quel caso si passa dai blob. */
+function getContent(path){
+  return api('/contents/' + encPath(path) + '?ref=' + encodeURIComponent(cfg.branch)).then(function(d){
+    if(d && d.content === '' && d.size > 0 && d.sha){
+      return api('/git/blobs/' + d.sha).then(function(b){ d.content = b.content; return d; });
+    }
+    return d;
+  });
+}
+
+function putFile(path, contentB64, sha, msg){
+  var body = { message: msg || ('modifica da app: ' + path), content: contentB64, branch: cfg.branch };
+  if(sha) body.sha = sha;
+  return api('/contents/' + encPath(path), { method:'PUT', body: JSON.stringify(body) });
+}
+
+/* ---------- albero ---------- */
+
+function fetchTree(force){
+  var cached = lsGet(K.tree, null);
+  if(!force && cached && (Date.now() - cached.at) < 60000) return Promise.resolve(cached.items);
+  return api('/git/trees/' + encodeURIComponent(cfg.branch) + '?recursive=1').then(function(d){
+    var items = (d.tree || []).map(function(i){ return { path:i.path, type:i.type, sha:i.sha, size:i.size||0 }; });
+    lsSet(K.tree, { at: Date.now(), items: items });
+    return items;
+  }).catch(function(err){
+    if(cached){ toast('Offline: mostro l\'ultima copia scaricata.'); return cached.items; }
+    throw err;
+  });
+}
+
+function buildNodes(items){
+  var root = { name:'', path:'', type:'tree', kids:[] }, idx = { '': root };
+  items.slice().sort(function(a,b){ return a.path.localeCompare(b.path, 'it'); }).forEach(function(it){
+    var parts = it.path.split('/'), acc = '', cur = root;
+    parts.forEach(function(p, i){
+      acc = acc ? acc + '/' + p : p;
+      var last = (i === parts.length - 1);
+      if(!idx[acc]){
+        idx[acc] = { name:p, path:acc, type: last ? it.type : 'tree', kids:[],
+                     sha: last ? it.sha : null, size: last ? it.size : 0 };
+        cur.kids.push(idx[acc]);
+      }
+      cur = idx[acc];
+    });
+  });
+  (function sortRec(n){
+    n.kids.sort(function(a,b){
+      if(a.type !== b.type) return a.type === 'tree' ? -1 : 1;
+      return a.name.localeCompare(b.name, 'it');
+    });
+    n.kids.forEach(sortRec);
+  })(root);
+  return { root: root, idx: idx };
+}
+
+function matchesFilter(node, q){
+  if(!q) return true;
+  if(node.name.toLowerCase().indexOf(q) >= 0) return true;
+  return node.kids.some(function(k){ return matchesFilter(k, q); });
+}
+
+function countFiles(node){
+  return node.kids.reduce(function(n, k){ return n + (k.type === 'tree' ? countFiles(k) : 1); }, 0);
+}
+
+function renderTree(){
+  var host = $('tree'); host.innerHTML = '';
+  if(!nodes){ return; }
+  var q = $('filter').value.trim().toLowerCase();
+  var base = nodes.idx[cfg.root] || nodes.root;
+  var kids = base.kids.filter(function(k){ return matchesFilter(k, q); });
+
+  if(!kids.length){
+    host.innerHTML = '<div class="empty">' +
+      (q ? 'Nessun file con «' + q + '».' : 'Ancora nessun articolo.<br>Premi «+ Articolo» per crearne uno.') + '</div>';
+    return;
+  }
+  kids.forEach(function(n){
+    if(n.type === 'tree'){
+      var card = document.createElement('div');
+      card.className = 'art' + (n.name.charAt(0) === '_' ? ' gen' : '');
+      card.appendChild(nodeEl(n, 0, q));
+      host.appendChild(card);
+    } else {
+      host.appendChild(nodeEl(n, 0, q));
+    }
+  });
+}
+
+function nodeEl(node, depth, q){
+  var frag = document.createDocumentFragment();
+  var row = document.createElement('div');
+  row.className = 'row ' + (node.type === 'tree' ? 'dir' : 'file');
+  row.style.paddingLeft = (8 + depth * 14) + 'px';
+
+  if(node.type === 'tree'){
+    var open = q ? true : openSet.indexOf(node.path) >= 0;
+    row.innerHTML = '<span class="chev">&#9656;</span><span class="nm"></span>' +
+                    '<span class="tag">' + countFiles(node) + '</span>' +
+                    '<button class="iconbtn" style="color:var(--muted);min-width:36px;height:36px;font-size:17px">&#8943;</button>';
+    row.querySelector('.nm').textContent = node.name;
+    if(open) row.classList.add('open');
+
+    var kidsBox = document.createElement('div');
+    kidsBox.className = 'kids' + (open ? ' open' : '');
+    node.kids.filter(function(k){ return matchesFilter(k, q); })
+             .forEach(function(k){ kidsBox.appendChild(nodeEl(k, depth + 1, q)); });
+
+    row.querySelector('button').addEventListener('click', function(e){
+      e.stopPropagation(); folderMenu(node);
+    });
+    row.addEventListener('click', function(){
+      var isOpen = kidsBox.classList.toggle('open');
+      row.classList.toggle('open', isOpen);
+      var i = openSet.indexOf(node.path);
+      if(isOpen && i < 0) openSet.push(node.path);
+      if(!isOpen && i >= 0) openSet.splice(i, 1);
+      lsSet(K.open, openSet);
+    });
+    frag.appendChild(row); frag.appendChild(kidsBox);
+  } else {
+    var dirty = lsGet(K.draft(node.path), null) ? ' •' : '';
+    row.innerHTML = '<span class="ic">' + (isImg(node.path) ? '&#9635;' : '&#9776;') + '</span><span class="nm"></span>' +
+                    '<span class="tag">' + (dirty ? 'non salvato' : '') + '</span>';
+    row.querySelector('.nm').textContent = node.name;
+    row.addEventListener('click', function(){ openFile(node.path); });
+    frag.appendChild(row);
+  }
+  return frag;
+}
+
+function reload(force){
+  var t = toast('<span class="spin"></span> carico...', 0);
+  return fetchTree(force).then(function(items){
+    nodes = buildNodes(items);
+    renderTree(); t.remove();
+  }).catch(function(err){
+    t.remove();
+    $('tree').innerHTML = '<div class="empty">' + escapeHtml(err.message) +
+      '<br><br><button class="btn primary" style="display:inline-block;padding:12px 18px" onclick="document.getElementById(\'btnSettings\').click()">Apri impostazioni</button></div>';
+  });
+}
+
+/* ---------- markdown minimale (basta per gli appunti) ---------- */
+
+function escapeHtml(s){
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function mdInline(s){
+  s = escapeHtml(s);
+  s = s.replace(/`([^`]+)`/g, function(m, c){ return '<code>' + c + '</code>'; });
+  s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img alt="$1" src="$2">');
+  s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  s = s.replace(/(^|[^*\w])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+  s = s.replace(/(^|\s)_([^_\n]+)_(?=\s|$|[.,;:!?])/g, '$1<em>$2</em>');
+  return s;
+}
+
+function mdToHtml(src){
+  var lines = String(src).replace(/\r\n?/g, '\n').split('\n');
+  var out = [], i = 0;
+
+  function closeLists(stack){ while(stack.length){ out.push('</' + stack.pop() + '>'); } }
+
+  while(i < lines.length){
+    var l = lines[i];
+
+    if(/^```/.test(l)){                                   // blocco di codice
+      var buf = [], lang = l.slice(3).trim(); i++;
+      while(i < lines.length && !/^```/.test(lines[i])){ buf.push(lines[i]); i++; }
+      i++;
+      out.push('<pre><code data-lang="' + escapeHtml(lang) + '">' + escapeHtml(buf.join('\n')) + '</code></pre>');
+      continue;
+    }
+    if(/^#{1,6}\s/.test(l)){                              // titoli
+      var n = l.match(/^#+/)[0].length;
+      out.push('<h' + n + '>' + mdInline(l.replace(/^#+\s*/, '')) + '</h' + n + '>'); i++; continue;
+    }
+    if(/^\s*(-{3,}|\*{3,}|_{3,})\s*$/.test(l)){ out.push('<hr>'); i++; continue; }
+
+    if(/^>\s?/.test(l)){                                  // citazione
+      var q = [];
+      while(i < lines.length && /^>\s?/.test(lines[i])){ q.push(lines[i].replace(/^>\s?/, '')); i++; }
+      out.push('<blockquote>' + mdToHtml(q.join('\n')) + '</blockquote>'); continue;
+    }
+
+    // tabella: riga di intestazione seguita da una riga di trattini
+    if(/^\s*\|.*\|\s*$/.test(l) && i + 1 < lines.length && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1])){
+      var cells = function(r){ return r.trim().replace(/^\||\|$/g, '').split('|').map(function(c){ return mdInline(c.trim()); }); };
+      var head = cells(l); i += 2;
+      var rows = [];
+      while(i < lines.length && /^\s*\|.*\|\s*$/.test(lines[i])){ rows.push(cells(lines[i])); i++; }
+      out.push('<table><thead><tr>' + head.map(function(c){ return '<th>' + c + '</th>'; }).join('') + '</tr></thead><tbody>' +
+        rows.map(function(r){ return '<tr>' + r.map(function(c){ return '<td>' + c + '</td>'; }).join('') + '</tr>'; }).join('') +
+        '</tbody></table>');
+      continue;
+    }
+
+    if(/^\s*([-*+]|\d+[.)])\s+/.test(l)){                 // elenchi, con un livello di rientro
+      var stack = [], depths = [];
+      while(i < lines.length && /^\s*([-*+]|\d+[.)])\s+/.test(lines[i])){
+        var m = /^(\s*)([-*+]|\d+[.)])\s+(.*)$/.exec(lines[i]);
+        var d = Math.floor(m[1].length / 2), tag = /\d/.test(m[2]) ? 'ol' : 'ul';
+        while(depths.length && depths[depths.length - 1] > d){ out.push('</' + stack.pop() + '>'); depths.pop(); }
+        if(!depths.length || depths[depths.length - 1] < d){ out.push('<' + tag + '>'); stack.push(tag); depths.push(d); }
+        out.push('<li>' + mdInline(m[3]) + '</li>');
+        i++;
+      }
+      closeLists(stack);
+      continue;
+    }
+
+    if(l.trim() === ''){ i++; continue; }
+
+    var p = [];                                            // paragrafo
+    while(i < lines.length && lines[i].trim() !== '' &&
+          !/^(#{1,6}\s|```|>|\s*([-*+]|\d+[.)])\s)/.test(lines[i])){ p.push(lines[i]); i++; }
+    out.push('<p>' + mdInline(p.join('\n')).replace(/\n/g, '<br>') + '</p>');
+  }
+  return out.join('\n');
+}
+
+/* ---------- visualizzatore / editor ---------- */
+
+function shortPath(p){
+  var parts = p.split('/');
+  return parts.length <= 2 ? p : '…/' + parts.slice(-2).join('/');
+}
+
+function setBanner(html, kind){
+  var b = $('vbanner');
+  if(!html){ b.innerHTML = ''; return null; }
+  b.innerHTML = '<div class="banner ' + (kind || 'warn') + '">' + html + '</div>';
+  return b.firstChild;
+}
+
+function setMode(mode){
+  var read = (mode === 'read');
+  $('tabRead').classList.toggle('on', read);
+  $('tabEdit').classList.toggle('on', !read);
+  $('preview').classList.toggle('hide', !read);
+  $('editor').classList.toggle('hide', read);
+  if(read && cur && cur.kind === 'text'){
+    $('preview').innerHTML = ext(cur.path) === 'md' || ext(cur.path) === 'markdown'
+      ? mdToHtml($('editor').value)
+      : '<pre>' + escapeHtml($('editor').value) + '</pre>';
+  }
+  if(!read) setTimeout(function(){ $('editor').focus(); }, 50);
+}
+
+function updateDirty(){
+  if(!cur || cur.kind !== 'text') return;
+  var dirty = $('editor').value !== cur.remote;
+  $('btnSave').disabled = !dirty;
+  var txt = $('editor').value;
+  var parole = txt.trim() ? txt.trim().split(/\s+/).length : 0;
+  $('vstat').textContent = parole + ' parole · ' + txt.length + ' caratteri' + (dirty ? ' · non salvato' : '');
+}
+
+function openFile(path){
+  cur = { path: path, sha: null, remote: '', kind: 'text' };
+  // si impila uno stato solo aprendo il visualizzatore da chiuso: così il tasto
+  // indietro del telefono chiude il file invece di uscire dall'app
+  if($('viewer').classList.contains('hide')) history.pushState({ file: path }, '', '');
+  $('viewer').classList.remove('hide');
+  $('vpath').textContent = shortPath(path);
+  $('preview').innerHTML = '<p style="color:var(--muted)">carico…</p>';
+  $('editor').value = ''; $('btnSave').disabled = true; $('vstat').textContent = '';
+  setBanner('');
+  setMode('read');
+
+  getContent(path).then(function(d){
+    cur.sha = d.sha;
+    applyContent(d.content, false);
+  }).catch(function(err){
+    var c = lsGet(K.cache(path), null);
+    if(c){
+      cur.sha = c.sha;
+      applyContent(c.content, true);
+      setBanner('Offline: stai vedendo l\'ultima copia scaricata. Le modifiche restano sul telefono finché non torna la rete.', 'warn');
+    } else {
+      $('preview').innerHTML = '<p style="color:var(--danger)">' + escapeHtml(err.message) + '</p>';
+    }
+  });
+}
+
+function applyContent(contentB64, fromCache){
+  var path = cur.path;
+  if(!fromCache) lsSet(K.cache(path), { sha: cur.sha, content: contentB64, at: Date.now() });
+
+  if(isImg(path)){
+    cur.kind = 'img';
+    var mime = ext(path) === 'svg' ? 'image/svg+xml' : 'image/' + ext(path).replace('jpg', 'jpeg');
+    $('preview').innerHTML = '<img src="data:' + mime + ';base64,' + String(contentB64).replace(/\s/g, '') + '">';
+    $('tabEdit').classList.add('hide'); $('vstat').textContent = 'immagine';
+    return;
+  }
+  if(!isText(path)){
+    cur.kind = 'bin';
+    $('preview').innerHTML = '<p style="color:var(--muted)">File non testuale. Si può consultare su GitHub.</p>' +
+      '<p><a href="https://github.com/' + cfg.owner + '/' + cfg.repo + '/blob/' + cfg.branch + '/' + encPath(path) + '" target="_blank" rel="noopener">Apri su GitHub</a></p>';
+    $('tabEdit').classList.add('hide'); $('vstat').textContent = 'file binario';
+    return;
+  }
+
+  cur.kind = 'text';
+  $('tabEdit').classList.remove('hide');
+  cur.remote = b64decodeText(contentB64);
+
+  var draft = lsGet(K.draft(path), null);
+  if(draft && draft.text !== cur.remote){
+    $('editor').value = draft.text;
+    var b = setBanner('Hai modifiche non salvate su questo file. <button id="_scarta">Scarta e torna alla versione su GitHub</button>', 'warn');
+    b.querySelector('#_scarta').onclick = function(){
+      lsDel(K.draft(path)); $('editor').value = cur.remote; setBanner(''); updateDirty(); setMode('read'); renderTree();
+    };
+  } else {
+    $('editor').value = cur.remote;
+  }
+  updateDirty(); setMode('read');
+}
+
+function scheduleDraft(){
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(function(){
+    if(!cur || cur.kind !== 'text') return;
+    if($('editor').value === cur.remote) lsDel(K.draft(cur.path));
+    else lsSet(K.draft(cur.path), { text: $('editor').value, at: Date.now() });
+  }, 500);
+}
+
+function doSave(force){
+  if(!cur || cur.kind !== 'text') return;
+  var testo = $('editor').value;
+  var t = toast('<span class="spin"></span> salvo su GitHub...', 0);
+  $('btnSave').disabled = true;
+
+  var step = force
+    ? getContent(cur.path).then(function(d){ return d.sha; })
+    : Promise.resolve(cur.sha);
+
+  step.then(function(sha){ return putFile(cur.path, b64encode(testo), sha); })
+    .then(function(r){
+      cur.sha = r.content.sha; cur.remote = testo;
+      lsDel(K.draft(cur.path));
+      lsSet(K.cache(cur.path), { sha: cur.sha, content: b64encode(testo), at: Date.now() });
+      lsDel(K.tree);
+      t.remove(); toast('Salvato su GitHub'); setBanner(''); updateDirty();
+      fetchTree(true).then(function(items){ nodes = buildNodes(items); renderTree(); });
+    })
+    .catch(function(err){
+      t.remove(); updateDirty();
+      if(err.status === 409 || err.status === 422){
+        var b = setBanner('Il file è cambiato su GitHub dopo che l\'hai aperto. ' +
+          '<button id="_over">Sovrascrivi con la mia versione</button> ' +
+          '<button id="_rel">Ricarica quella su GitHub</button>', 'err');
+        b.querySelector('#_over').onclick = function(){ setBanner(''); doSave(true); };
+        b.querySelector('#_rel').onclick = function(){ setBanner(''); lsDel(K.draft(cur.path)); openFile(cur.path); };
+      } else {
+        setBanner(escapeHtml(err.message), 'err');
+      }
+    });
+}
+
+function doDelete(){
+  if(!cur) return;
+  askConfirm('Eliminare il file?', escapeHtml(cur.path) + '<br><br>Resta comunque nella cronologia del repo, quindi si può recuperare da GitHub.', 'Elimina')
+  .then(function(ok){
+    if(!ok) return;
+    var t = toast('<span class="spin"></span> elimino...', 0);
+    api('/contents/' + encPath(cur.path), { method:'DELETE', body: JSON.stringify(
+      { message: 'elimina da app: ' + cur.path, sha: cur.sha, branch: cfg.branch }) })
+      .then(function(){
+        lsDel(K.draft(cur.path)); lsDel(K.cache(cur.path)); lsDel(K.tree);
+        t.remove(); toast('Eliminato'); closeViewer(); reload(true);
+      })
+      .catch(function(err){ t.remove(); setBanner(escapeHtml(err.message), 'err'); });
+  });
+}
+
+function closeViewer(){
+  $('viewer').classList.add('hide');
+  cur = null;
+  renderTree();
+}
+
+/* ---------- creare cose ---------- */
+
+function tplArticolo(titolo){
+  return {
+    'README.md':
+      '# ' + titolo + '\n\n**Stato:** appena creato.\n\n' +
+      '## Dove sta cosa\n\n' +
+      '- `materiali/` — fonti, dati, paper, estratti, link raccolti\n' +
+      '- `istruzioni/` — come voglio che sia scritto questo pezzo\n' +
+      '- `ideas/` — conclusioni, grafici, cose interessanti trovate\n' +
+      '- `bozze/` — l\'articolo in lavorazione\n\n' +
+      '## Domanda di partenza\n\n*(da mettere a fuoco)*\n',
+    'materiali/README.md':
+      '# Materiali\n\nFonti e dati grezzi.\n\nConvenzione: un file per fonte, nome parlante,\n' +
+      'in cima titolo/autore/data/link, sotto gli estratti utili.\n\n*(vuoto)*\n',
+    'istruzioni/come-scrivere.md':
+      '# Come scrivere questo articolo\n\n' +
+      '> File vivo: lo aggiorna Claude man mano che capisce cosa voglio.\n' +
+      '> Se lo correggo dall\'app, la mia versione ha la precedenza.\n\n' +
+      '## Argomento\n\n*(da scrivere)*\n\n' +
+      '## Cosa so finora\n\n*(da scrivere)*\n\n' +
+      '## Appunti di lavorazione\n\n' +
+      '*(qui Claude annota le correzioni ricorrenti, così non si ripetono)*\n',
+    'ideas/README.md':
+      '# Ideas\n\nConclusioni, grafici, cose sorprendenti trovate nei materiali.\n' +
+      'Non deve essere ordinato, deve essere ricco.\n\n*(vuoto)*\n',
+    'bozze/README.md':
+      '# Bozze\n\nL\'articolo in lavorazione: `bozza-01.md`, `bozza-02.md`, ...\n' +
+      'Le versioni vecchie non si cancellano.\n\n*(nessuna bozza)*\n'
+  };
+}
+
+/* I file si creano uno per uno: ogni PUT è un commit, ma così basta l'API contents. */
+function creaFile(elenco, titoloToast){
+  var t = toast('<span class="spin"></span> ' + titoloToast + ' (0/' + elenco.length + ')', 0);
+  var fatti = 0;
+  return elenco.reduce(function(catena, f){
+    return catena.then(function(){
+      return putFile(f.path, b64encode(f.text), null, 'crea da app: ' + f.path).then(function(){
+        fatti++; t.innerHTML = '<span class="spin"></span> ' + titoloToast + ' (' + fatti + '/' + elenco.length + ')';
+      });
+    });
+  }, Promise.resolve()).then(function(){
+    t.remove(); lsDel(K.tree); toast('Fatto'); return reload(true);
+  }).catch(function(err){
+    t.remove(); toast('Errore: ' + escapeHtml(err.message), 5000);
+  });
+}
+
+function nuovoArticolo(){
+  askText('Nuovo articolo', 'Titolo (es. «L\'economia delle self-driving cars»)', '').then(function(titolo){
+    if(!titolo) return;
+    var slug = slugify(titolo), base = cfg.root + '/' + slug;
+    if(nodes && nodes.idx[base]){ toast('Esiste già una cartella «' + slug + '»'); return; }
+    var tpl = tplArticolo(titolo);
+    creaFile(Object.keys(tpl).map(function(k){ return { path: base + '/' + k, text: tpl[k] }; }),
+             'creo l\'articolo').then(function(){
+      if(openSet.indexOf(base) < 0){ openSet.push(base); lsSet(K.open, openSet); renderTree(); }
+    });
+  });
+}
+
+function nuovoFile(dir){
+  askText('Nuovo file', 'Nome del file in ' + dir, '').then(function(nome){
+    if(!nome) return;
+    if(nome.indexOf('.') < 0) nome += '.md';
+    var path = dir + '/' + nome;
+    if(nodes && nodes.idx[path]){ toast('Esiste già'); return; }
+    creaFile([{ path: path, text: '# ' + nome.replace(/\.[^.]+$/, '') + '\n\n' }], 'creo il file')
+      .then(function(){ openFile(path); });
+  });
+}
+
+function nuovaCartella(dir){
+  askText('Nuova cartella', 'Nome della cartella in ' + dir, '').then(function(nome){
+    if(!nome) return;
+    var sub = dir + '/' + slugify(nome);
+    creaFile([{ path: sub + '/README.md', text: '# ' + nome + '\n\n*(vuoto)*\n' }], 'creo la cartella');
+  });
+}
+
+function caricaFile(dir){
+  var inp = document.createElement('input');
+  inp.type = 'file';
+  inp.onchange = function(){
+    var f = inp.files && inp.files[0];
+    if(!f) return;
+    if(f.size > 20 * 1024 * 1024){ toast('File troppo grande (oltre 20 MB)'); return; }
+    var fr = new FileReader();
+    fr.onload = function(){
+      var b64 = String(fr.result).split(',')[1];
+      var path = dir + '/' + f.name.replace(/[^\w.\- ]+/g, '_');
+      var t = toast('<span class="spin"></span> carico ' + escapeHtml(f.name) + '...', 0);
+      putFile(path, b64, null, 'carica da app: ' + path)
+        .then(function(){ t.remove(); lsDel(K.tree); toast('Caricato'); reload(true); })
+        .catch(function(err){ t.remove(); toast('Errore: ' + escapeHtml(err.message), 5000); });
+    };
+    fr.readAsDataURL(f);
+  };
+  inp.click();
+}
+
+function folderMenu(node){
+  var s = sheet('<h2>' + escapeHtml(node.name) + '</h2><div class="menu">' +
+    '<button id="_nf">Nuovo file</button>' +
+    '<button id="_up">Carica un file (pdf, immagine, ...)</button>' +
+    '<button id="_nc">Nuova cartella</button>' +
+    '<button id="_gh">Apri su GitHub</button>' +
+    '</div>');
+  s.el.querySelector('#_nf').onclick = function(){ s.close(); nuovoFile(node.path); };
+  s.el.querySelector('#_up').onclick = function(){ s.close(); caricaFile(node.path); };
+  s.el.querySelector('#_nc').onclick = function(){ s.close(); nuovaCartella(node.path); };
+  s.el.querySelector('#_gh').onclick = function(){
+    s.close();
+    window.open('https://github.com/' + cfg.owner + '/' + cfg.repo + '/tree/' + cfg.branch + '/' + encPath(node.path), '_blank');
+  };
+}
+
+/* ---------- impostazioni ---------- */
+
+function apriImpostazioni(){
+  var s = sheet(
+    '<h2>Impostazioni</h2>' +
+    '<p class="help">L\'app legge e scrive direttamente il repo su GitHub. Il token resta solo su questo telefono.</p>' +
+    '<label>Proprietario</label><input id="_own" autocapitalize="off" autocorrect="off">' +
+    '<label>Repo</label><input id="_repo" autocapitalize="off" autocorrect="off">' +
+    '<label>Ramo</label><input id="_br" autocapitalize="off" autocorrect="off">' +
+    '<label>Cartella radice</label><input id="_root" autocapitalize="off" autocorrect="off">' +
+    '<label>Token personale GitHub</label><input id="_tok" type="password" autocapitalize="off" autocorrect="off" placeholder="github_pat_...">' +
+    '<p class="help" style="margin-top:14px"><b>Come si crea il token</b> (serve una volta sola):</p>' +
+    '<ol>' +
+      '<li>Apri <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>' +
+      '<li>Durata: scegli la scadenza che preferisci (quando scade, l\'app chiede di rifarlo)</li>' +
+      '<li>Repository access → <i>Only select repositories</i> → scegli <b>prep</b></li>' +
+      '<li>Permissions → Repository permissions → <b>Contents: Read and write</b></li>' +
+      '<li>Genera, copia e incolla qui sopra</li>' +
+    '</ol>' +
+    '<div class="btnrow"><button class="btn" id="_annulla">Annulla</button>' +
+    '<button class="btn primary" id="_salva">Salva</button></div>' +
+    '<div class="btnrow"><button class="btn" id="_pulisci" style="color:var(--danger)">Svuota i dati locali</button></div>');
+
+  s.el.querySelector('#_own').value = cfg.owner;
+  s.el.querySelector('#_repo').value = cfg.repo;
+  s.el.querySelector('#_br').value = cfg.branch;
+  s.el.querySelector('#_root').value = cfg.root;
+  s.el.querySelector('#_tok').value = cfg.token;
+
+  s.el.querySelector('#_annulla').onclick = s.close;
+  s.el.querySelector('#_salva').onclick = function(){
+    cfg.owner = s.el.querySelector('#_own').value.trim() || DEFAULTS.owner;
+    cfg.repo = s.el.querySelector('#_repo').value.trim() || DEFAULTS.repo;
+    cfg.branch = s.el.querySelector('#_br').value.trim() || DEFAULTS.branch;
+    cfg.root = s.el.querySelector('#_root').value.trim();
+    cfg.token = s.el.querySelector('#_tok').value.trim();
+    lsSet(K.cfg, cfg); lsDel(K.tree);
+    s.close(); reload(true);
+  };
+  s.el.querySelector('#_pulisci').onclick = function(){
+    askConfirm('Svuotare i dati locali?', 'Cancella token, cartelle aperte, copie offline e le modifiche non ancora salvate su GitHub.', 'Svuota')
+      .then(function(ok){
+        if(!ok) return;
+        Object.keys(localStorage).filter(function(k){ return k.indexOf('articoli.') === 0; }).forEach(lsDel);
+        location.reload();
+      });
+  };
+}
+
+/* ---------- avvio ---------- */
+
+$('btnSettings').onclick = apriImpostazioni;
+$('btnRefresh').onclick = function(){ lsDel(K.tree); reload(true); };
+$('btnNewArticle').onclick = nuovoArticolo;
+$('btnBack').onclick = function(){ history.back(); };
+$('tabRead').onclick = function(){ setMode('read'); };
+$('tabEdit').onclick = function(){ setMode('edit'); };
+$('btnSave').onclick = function(){ doSave(false); };
+$('btnDelete').onclick = doDelete;
+$('editor').addEventListener('input', function(){ updateDirty(); scheduleDraft(); });
+$('filter').addEventListener('input', renderTree);
+
+// il tasto indietro del telefono chiude il file invece di uscire dall'app
+window.addEventListener('popstate', function(){ if(cur) closeViewer(); });
+
+if(!cfg.token){
+  $('tree').innerHTML = '<div class="empty">Prima volta: serve il token GitHub per leggere il repo privato.' +
+    '<br><br><button class="btn primary" style="display:inline-block;padding:12px 20px" id="_setup">Apri impostazioni</button></div>';
+  $('_setup').onclick = apriImpostazioni;
+} else {
+  reload(false);
+}
+
+if('serviceWorker' in navigator){
+  window.addEventListener('load', function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); });
+}
+
+})();
+</script>
+</body>
+</html>
