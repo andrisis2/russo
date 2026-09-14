@@ -27,6 +27,13 @@ Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura 
 - `lezioni/` — un riassunto `lezione-XX.md` per lezione + trascrizioni `*_transcript.txt` + il VTT del corso
 - `scripts/extract_lesson.py` — taglia/pulisce una porzione del VTT per timestamp
 
+### Ospite: `articoli/`
+La sottocartella `articoli/` **non c'entra col russo**: è l'app *Articoli*
+(https://andrisis2.github.io/russo/articoli/), che fa da interfaccia al repo privato
+`andrisis2/prep`. Sta qui solo perché serviva un sito pubblico su HTTPS per installarla
+sul telefono. Non contiene contenuti, solo interfaccia: toccala solo se si lavora su
+quell'app, e vedi `articoli/README.md`.
+
 ## Pipeline "video → app" (per trascrivere il prossimo pezzo)
 1. `python scripts/extract_lesson.py "lezioni/corso-completo.it-orig.vtt" <START hh:mm:ss> <END hh:mm:ss> "lezioni/LXX_transcript.txt"`
 2. Leggi la trascrizione col tool Read (UTF-8 ok; la console PowerShell la mostra come mojibake, è normale).
