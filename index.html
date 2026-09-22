@@ -22,6 +22,14 @@
 <link rel="apple-touch-startup-image" href="splash-ios/splash-1242x2688.jpg"  media="(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
 <link rel="apple-touch-startup-image" href="splash-ios/splash-1284x2778.jpg"  media="(device-width:428px) and (device-height:926px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
 <link rel="apple-touch-startup-image" href="splash-ios/splash-1290x2796.jpg"  media="(device-width:430px) and (device-height:932px) and (-webkit-device-pixel-ratio:3) and (orientation:portrait)">
+<script>
+  // Tema forzato applicato subito, prima che la pagina si disegni
+  try{
+    var _t = (JSON.parse(localStorage.getItem("russo_settings_v1")||"{}")||{}).tema;
+    if(_t==="chiaro") document.documentElement.setAttribute("data-theme","light");
+    else if(_t==="scuro") document.documentElement.setAttribute("data-theme","dark");
+  }catch(e){}
+</script>
 <style>
   :root{
     --bg:#eef1f8; --bg2:#f8fafd;
@@ -31,26 +39,30 @@
     --shadow-sm:0 2px 4px rgba(16,24,40,.08);
     --shadow:0 1px 3px rgba(16,24,40,.05), 0 10px 26px rgba(16,24,40,.07);
     --shadow-lg:0 6px 16px rgba(16,24,40,.08), 0 18px 40px rgba(16,24,40,.10);
+    color-scheme:light;
   }
   /* ---- Tema scuro automatico (segue il sistema) ---- */
+  /* ---- Tema scuro: automatico (segue il sistema) oppure forzato da Impostazioni ---- */
+  /* Le stesse regole valgono due volte: quando il sistema e in scuro e l'utente non
+     ha forzato il chiaro, e quando l'utente sceglie "Scuro" nelle Impostazioni. */
   @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#0d1220; --bg2:#121a2b;
-      --card:#1a2334; --card2:#243049; --line:#2c3a56;
-      --text:#e9eef9; --muted:#9aa7c4; --accent:#ff5468; --accent2:#5b8cff;
-      --good:#2dd36f; --bad:#ff5468;
-      --shadow-sm:0 1px 2px rgba(0,0,0,.4);
-      --shadow:0 1px 3px rgba(0,0,0,.45), 0 10px 26px rgba(0,0,0,.5);
-      --shadow-lg:0 6px 16px rgba(0,0,0,.5), 0 18px 40px rgba(0,0,0,.6);
-    }
-    header{background:rgba(16,22,38,.78)!important}
-    .speak:hover{background:#2c3a56!important}
-    .opt:hover{background:rgba(91,140,255,.12)!important}
-    .tile.wide{background:linear-gradient(120deg,var(--card) 0%,#26202c 100%)!important}
-    .ref-note{background:rgba(91,140,255,.10)!important}
-    table.ref tbody tr:nth-child(even) td{background:rgba(255,255,255,.03)!important}
-    #splash{background:#0d1220}
+    :root:not([data-theme="light"]){color-scheme:dark;--bg:#0d1220; --bg2:#121a2b; --card:#1a2334; --card2:#243049; --line:#2c3a56; --text:#e9eef9; --muted:#9aa7c4; --accent:#ff5468; --accent2:#5b8cff; --good:#2dd36f; --bad:#ff5468; --shadow-sm:0 1px 2px rgba(0,0,0,.4); --shadow:0 1px 3px rgba(0,0,0,.45), 0 10px 26px rgba(0,0,0,.5); --shadow-lg:0 6px 16px rgba(0,0,0,.5), 0 18px 40px rgba(0,0,0,.6);}
+    :root:not([data-theme="light"]) header{background:rgba(16,22,38,.78)!important}
+    :root:not([data-theme="light"]) .speak:hover{background:#2c3a56!important}
+    :root:not([data-theme="light"]) .opt:hover{background:rgba(91,140,255,.12)!important}
+    :root:not([data-theme="light"]) .tile.wide{background:linear-gradient(120deg,var(--card) 0%,#26202c 100%)!important}
+    :root:not([data-theme="light"]) .ref-note{background:rgba(91,140,255,.10)!important}
+    :root:not([data-theme="light"]) table.ref tbody tr:nth-child(even) td{background:rgba(255,255,255,.03)!important}
+    :root:not([data-theme="light"]) #splash{background:#0d1220}
   }
+  :root[data-theme="dark"]{color-scheme:dark;--bg:#0d1220; --bg2:#121a2b; --card:#1a2334; --card2:#243049; --line:#2c3a56; --text:#e9eef9; --muted:#9aa7c4; --accent:#ff5468; --accent2:#5b8cff; --good:#2dd36f; --bad:#ff5468; --shadow-sm:0 1px 2px rgba(0,0,0,.4); --shadow:0 1px 3px rgba(0,0,0,.45), 0 10px 26px rgba(0,0,0,.5); --shadow-lg:0 6px 16px rgba(0,0,0,.5), 0 18px 40px rgba(0,0,0,.6);}
+  :root[data-theme="dark"] header{background:rgba(16,22,38,.78)!important}
+  :root[data-theme="dark"] .speak:hover{background:#2c3a56!important}
+  :root[data-theme="dark"] .opt:hover{background:rgba(91,140,255,.12)!important}
+  :root[data-theme="dark"] .tile.wide{background:linear-gradient(120deg,var(--card) 0%,#26202c 100%)!important}
+  :root[data-theme="dark"] .ref-note{background:rgba(91,140,255,.10)!important}
+  :root[data-theme="dark"] table.ref tbody tr:nth-child(even) td{background:rgba(255,255,255,.03)!important}
+  :root[data-theme="dark"] #splash{background:#0d1220}
   /* ---- Animazioni di entrata schermate ---- */
   @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
   @keyframes micpulse{0%,100%{box-shadow:0 6px 20px rgba(47,107,237,.35),0 0 0 0 rgba(47,107,237,.4)}70%{box-shadow:0 6px 20px rgba(47,107,237,.35),0 0 0 14px rgba(47,107,237,0)}}
@@ -139,6 +151,7 @@
   main{flex:1; padding:18px; max-width:680px; width:100%; margin:0 auto}
   .grid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
   .tile{
+    color:var(--text); font-family:inherit;
     background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
     padding:18px 16px; cursor:pointer; transition:transform .15s, box-shadow .15s, border-color .15s; text-align:left;
     display:flex; flex-direction:column; gap:10px; min-height:128px; box-shadow:var(--shadow-sm);
@@ -567,6 +580,91 @@
   .ese-section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;width:100%;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:12px}
   .ese-section-hdr{font-size:16px;font-weight:700;display:flex;align-items:center;gap:10px}
   .ese-count{font-size:12px;color:var(--muted);font-weight:400;margin-left:auto}
+
+  /* ================= Scrittura: tastiera cirillica ================= */
+  .wbox{
+    width:100%;background:var(--card);border:2px solid var(--line);border-radius:16px;
+    padding:16px 14px;text-align:center;box-shadow:var(--shadow-sm);
+  }
+  .wbox .prompt{font-size:26px;font-weight:800;letter-spacing:-.3px;line-height:1.25}
+  .wbox .sub{font-size:13px;color:var(--muted);margin-top:6px}
+  input.winput{
+    display:block;width:100%;margin-top:14px;height:60px;
+    border:2px dashed var(--line);border-radius:14px;
+    background:var(--card2);color:var(--text);font-family:inherit;
+    font-size:25px;font-weight:700;text-align:center;letter-spacing:.5px;
+    padding:0 10px;outline:none;transition:border-color .15s,background .15s;
+  }
+  input.winput::placeholder{font-size:15px;font-weight:500;letter-spacing:0;color:var(--muted)}
+  input.winput:focus{border-color:var(--accent2)}
+  input.winput.ok{border-style:solid;border-color:var(--good);background:rgba(22,163,74,.10);color:var(--good)}
+  input.winput.ko{border-style:solid;border-color:var(--bad);background:rgba(220,38,38,.08)}
+  .wsol{margin-top:12px;font-size:14px;color:var(--muted);text-align:center;line-height:1.5}
+  .wsol .sol{font-size:24px;font-weight:800;color:var(--text);letter-spacing:.5px;display:block;margin-top:3px}
+  .wsol .ch.bad{color:var(--bad)}
+  .wsol .ch.good{color:var(--good)}
+  .wsol .typed{font-size:17px;font-weight:700;letter-spacing:.5px}
+  .kbd{width:100%;display:flex;flex-direction:column;gap:6px;margin-top:14px;user-select:none}
+  .kbd .krow{display:flex;gap:4px;justify-content:center}
+  .kbd button{
+    flex:1 1 0;min-width:0;padding:11px 0;font-size:17px;font-weight:600;
+    border:1px solid var(--line);background:var(--card);color:var(--text);
+    border-radius:8px;cursor:pointer;box-shadow:var(--shadow-sm);transition:transform .06s,background .12s;
+  }
+  .kbd button:active{transform:scale(.93);background:var(--card2)}
+  .kbd button.wide{flex:2 1 0;font-size:14px}
+  .kbd button.act{background:var(--accent2);border-color:var(--accent2);color:#fff;font-size:14px;font-weight:700}
+  @media (min-width:520px){ .kbd button{padding:13px 0;font-size:19px} }
+
+  /* ================= Progressi ================= */
+  .pcard{
+    width:100%;background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:15px 16px;box-shadow:var(--shadow-sm);
+  }
+  .pcard h3{margin:0 0 12px;font-size:15px;font-weight:800;letter-spacing:.2px}
+  .pbar{height:12px;border-radius:99px;background:var(--card2);overflow:hidden;display:flex}
+  .pbar i{display:block;height:100%}
+  .plegend{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:12px;font-size:12.5px;color:var(--muted)}
+  .plegend span{display:flex;align-items:center;gap:6px}
+  .plegend em{width:10px;height:10px;border-radius:3px;font-style:normal}
+  .heat{display:flex;gap:3px;overflow-x:auto;padding-bottom:4px}
+  .heat .hcol{display:flex;flex-direction:column;gap:3px}
+  .heat .hc{width:12px;height:12px;border-radius:3px;background:var(--card2);flex-shrink:0}
+  .heat .hc.l1{background:rgba(47,107,237,.28)}
+  .heat .hc.l2{background:rgba(47,107,237,.5)}
+  .heat .hc.l3{background:rgba(47,107,237,.75)}
+  .heat .hc.l4{background:var(--accent2)}
+  .heat .hc.future{background:transparent}
+  .fcast{display:flex;align-items:flex-end;gap:6px;height:84px;margin-top:4px}
+  .fcast .fb{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;color:var(--muted)}
+  .fcast .fb i{
+    display:block;width:100%;border-radius:5px 5px 2px 2px;
+    background:linear-gradient(180deg,var(--accent2),rgba(47,107,237,.45));min-height:3px;
+  }
+  .fcast .fb b{font-size:11px;font-weight:700;color:var(--text)}
+
+  /* ================= Controllo segmentato / impostazioni ================= */
+  .seg{display:flex;gap:6px;background:var(--card2);border-radius:12px;padding:4px}
+  .seg button{
+    flex:1;border:none;background:none;color:var(--muted);font-size:13.5px;font-weight:700;
+    padding:9px 6px;border-radius:9px;cursor:pointer;transition:.15s;font-family:inherit;
+  }
+  .seg button.on{background:var(--card);color:var(--text);box-shadow:var(--shadow-sm)}
+  .srow{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .srow:last-child{border-bottom:none}
+  .srow .lbl{font-size:14.5px;font-weight:600}
+  .srow .lbl small{display:block;font-weight:400;font-size:12px;color:var(--muted);margin-top:2px}
+  .srow .ctl{flex-shrink:0;min-width:150px}
+  .srow.stack{flex-direction:column;align-items:stretch;gap:10px}
+  .srow.stack .ctl{min-width:0;width:100%}
+  input[type=range]{width:100%;accent-color:var(--accent2)}
+  .linkbtn{
+    background:none;border:1px solid var(--line);border-radius:10px;padding:8px 18px;
+    font-size:12px;color:var(--muted);cursor:pointer;transition:.15s;font-family:inherit;
+  }
+  .linkbtn:hover{border-color:var(--accent2);color:var(--accent2)}
+  .tile[data-mode="write"] .ico   { background: linear-gradient(135deg,#ee9ca7,#c94b4b); color:#fff; }
+  .tile[data-mode="stats"] .ico   { background: linear-gradient(135deg,#43cea2,#185a9d); color:#fff; }
 </style>
 </head>
 <body>
@@ -764,7 +862,8 @@ function normConj(s){ return (s||"").toLowerCase().trim().replace(/\s+/g," "); }
 function normYo(s){ return s.replace(/ё/g,"е"); }
 
 const DAILY_KEY = "russo_daily_v1";
-const DAILY_SIZE = 20;
+// Quante carte propone il ripasso del giorno: si cambia dalle Impostazioni.
+function dailySize(){ const n = settings().dailySize; return [10,20,30,50].includes(n) ? n : 20; }
 function dateStr(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function todayStr(){ return dateStr(new Date()); }
 function yesterdayStr(){ const d=new Date(); d.setDate(d.getDate()-1); return dateStr(d); }
@@ -795,7 +894,7 @@ function getDailyCards(){
   // Nuovo giorno oppure mazzo completato → seleziona nuove 20 carte
   const due = allVoci.filter(v=>isDue(v.id)).sort((a,b)=>dueScore(b.id)-dueScore(a.id));
   const notDue = shuffle(allVoci.filter(v=>!isDue(v.id)));
-  const pool = [...due, ...notDue].slice(0, DAILY_SIZE);
+  const pool = [...due, ...notDue].slice(0, dailySize());
   const saved = dailyState();
   saved.date=t; saved.cards=pool.map(v=>v.id); saved.completed=false;
   localStorage.setItem(DAILY_KEY, JSON.stringify(saved));
@@ -845,7 +944,7 @@ function speak(text){
   if(!('speechSynthesis' in window)) return;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = "ru-RU"; if(ruVoice) u.voice = ruVoice; u.rate = .9;
+  u.lang = "ru-RU"; if(ruVoice) u.voice = ruVoice; u.rate = settings().ttsRate;
   speechSynthesis.speak(u);
 }
 
@@ -865,11 +964,13 @@ function vikaSaveMem(history){
 
 // ---------- SRS — ripetizione dilazionata a intervalli crescenti (tempo reale) ----------
 // Quando dici di sapere una carta ("La sapevo"), sparisce per un giorno. Se il
-// giorno dopo torna e la sai ancora, sparisce per una settimana, poi due, e così
-// via (ogni livello raddoppia). Se sbagli ("Da ripassare") riparte da zero.
+// giorno dopo torna e la sai ancora, sparisce per tre giorni, poi una settimana,
+// poi sempre più a lungo. Se sbagli ("Da ripassare") riparte da zero.
 // Stesso meccanismo in TUTTE le sezioni.
+// Il secondo intervallo è 3 giorni e non 7: saltare dritti a una settimana dopo
+// una sola risposta giusta è il modo più rapido per dimenticare una parola nuova.
 const DAY_MS = 86400000;
-const SRS_INTERVALS = [1, 7, 14, 28, 56, 112, 224]; // giorni di attesa per box 1,2,3,…
+const SRS_INTERVALS = [1, 3, 7, 16, 35, 75, 160]; // giorni di attesa per box 1,2,3,…
 function box(id){ return (srs[id] && srs[id].box) || 0; }
 // Una carta è "in scadenza" (da ripassare ora) se mai vista o se l'intervallo è scaduto.
 function isDue(id){ const s = srs[id]; return !s || !s.due || Date.now() >= s.due; }
@@ -892,6 +993,7 @@ function grade(id, ok){
   s.seen++; if(ok) s.correct++;
   s.last = Date.now();
   srs[id]=s; saveSrs();
+  recordActivity(ok);        // alimenta la mappa dei progressi
 }
 
 // Studio per argomento: mostra solo le carte in scadenza.
@@ -992,11 +1094,15 @@ function renderHome(){
       grid.appendChild(mkTile('&#127381;','Esercizi', eseDesc,'esercizi',true,'background:linear-gradient(120deg,var(--card) 0%,rgba(47,107,237,.08) 100%)'));
 
       // Griglia 2 colonne
+      // Scrittura: unico esercizio in cui la parola va prodotta, non riconosciuta
+      const stW = studyStats();
       [
         ["&#127183;","Flashcard","SRS per argomento","flash"],
+        ["&#9997;&#65039;","Scrittura","Scrivila tu in cirillico","write"],
         ["&#9999;&#65039;","Coniugazione","Allena le forme verbali","conj"],
         ["&#128172;","Frasi &amp; ascolto","Completa la frase con TTS","phrase"],
         ["&#129504;","Memory","Abbina parole a tempo","memory"],
+        ["&#128200;","Progressi", stW.seen ? `${stW.note} imparate &middot; ${stW.precisione}%` : "Mappa dello studio e statistiche","stats"],
       ].forEach(([ico,t,d,mode])=>{
         grid.appendChild(mkTile(ico,t,d,mode,false));
       });
@@ -1035,11 +1141,13 @@ function renderHome(){
   }, {passive:true});
 
   app.appendChild($(`<p class="muted" style="margin-top:22px">Livello A1 · ${DB.meta.aggiornato}<br>Apri il menu del browser e scegli <b>"Aggiungi a schermata Home"</b> per usarla come app.</p>`));
-  const updBtn=$(`<button style="display:block;margin:10px auto 0;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 18px;font-size:12px;color:var(--muted);cursor:pointer;transition:.15s">🔄 Aggiorna app</button>`);
-  updBtn.onmouseenter=()=>{updBtn.style.borderColor="var(--accent2)";updBtn.style.color="var(--accent2)";}
-  updBtn.onmouseleave=()=>{updBtn.style.borderColor="";updBtn.style.color="";}
+  const footRow=$(`<div style="display:flex;gap:10px;justify-content:center;margin-top:10px;flex-wrap:wrap"></div>`);
+  const setBtn=$(`<button class="linkbtn">&#9881;&#65039; Impostazioni</button>`);
+  setBtn.onclick=()=>start("settings");
+  const updBtn=$(`<button class="linkbtn">&#128260; Aggiorna app</button>`);
   updBtn.onclick=()=>forceUpdate(updBtn);
-  app.appendChild(updBtn);
+  footRow.appendChild(setBtn); footRow.appendChild(updBtn);
+  app.appendChild(footRow);
 }
 
 function header(title){
@@ -1072,6 +1180,9 @@ function start(mode){
     if(mode==="vika") return runVika();
     if(mode==="verbi") return runVerbi();
     if(mode==="esercizi") return runEsercizi();
+    if(mode==="write") return pickScritturaTopic();
+    if(mode==="stats") return runProgressi();
+    if(mode==="settings") return runImpostazioni();
   });
 }
 
@@ -2705,7 +2816,9 @@ function runFlash(pool, topicLabel, opts){
   // le più urgenti per prime. "La sapevo" pianifica la carta più avanti nel tempo
   // (1 giorno → 1 settimana → 2 → … ) e quindi sparisce dalla sessione; "Da
   // ripassare" la riazzera e la rimette in fondo alla coda, così torna entro la sessione.
-  let deck = (pool||[]).filter(c=>isDue(c.id)).sort((a,b)=>dueScore(b.id)-dueScore(a.id));
+  // opts.ignoreDue: ripasso volontario (es. "parole ostiche"), anche se non scadute
+  let deck = opts.ignoreDue ? (pool||[]).slice() : (pool||[]).filter(c=>isDue(c.id));
+  deck = deck.sort((a,b)=>dueScore(b.id)-dueScore(a.id));
   if(opts.limit) deck = deck.slice(0, opts.limit);
   const total = deck.length;       // carte da padroneggiare in questa sessione
   let queue = deck.slice();        // coda di lavoro
@@ -2837,7 +2950,7 @@ function runDaily(){
   }
   // Stesso meccanismo delle altre sezioni: le più urgenti per prime, max DAILY_SIZE.
   runFlash(pool, "Ripasso del giorno", {
-    limit: DAILY_SIZE,
+    limit: dailySize(),
     restart: runDaily,
     onComplete: recordDailyDone
   });
@@ -4226,13 +4339,566 @@ function runVika(){
   }
 }
 
+// ================= IMPOSTAZIONI UTENTE =================
+// Un'unica chiave in localStorage per tema, voce, dimensione del ripasso e
+// tastiera cirillica. I valori mancanti ricadono sui predefiniti, così i dati
+// salvati prima che un'opzione esistesse restano validi.
+const SETTINGS_KEY = "russo_settings_v1";
+const SETTINGS_DEFAULTS = { tema:"auto", ttsRate:0.9, dailySize:20, kbd:true };
+function settings(){
+  try{ return Object.assign({}, SETTINGS_DEFAULTS, JSON.parse(localStorage.getItem(SETTINGS_KEY)||"{}")); }
+  catch(e){ return Object.assign({}, SETTINGS_DEFAULTS); }
+}
+function saveSettings(s){ localStorage.setItem(SETTINGS_KEY, JSON.stringify(s)); }
+function setSetting(k, v){ const s = settings(); s[k] = v; saveSettings(s); }
+// "auto" segue il sistema; "chiaro"/"scuro" forzano il tema via data-theme,
+// su cui sono agganciate le regole CSS del blocco scuro.
+function applyTheme(){
+  const t = settings().tema, r = document.documentElement;
+  if(t === "chiaro")     r.setAttribute("data-theme","light");
+  else if(t === "scuro") r.setAttribute("data-theme","dark");
+  else                   r.removeAttribute("data-theme");
+  syncThemeColor();
+}
+
+// ================= DIARIO DELL'ATTIVITÀ =================
+// Una riga per giorno: quante risposte e quante giuste. Serve alla mappa dei
+// progressi. Si conserva poco più di un anno, poi le righe vecchie si buttano.
+const ACTIVITY_KEY = "russo_activity_v1";
+function activityLog(){ try{ return JSON.parse(localStorage.getItem(ACTIVITY_KEY)||"{}"); }catch(e){ return {}; } }
+function recordActivity(ok){
+  const log = activityLog(), t = todayStr();
+  const d = log[t] || {r:0, ok:0};
+  d.r++; if(ok) d.ok++;
+  log[t] = d;
+  const cut = dateStr(new Date(Date.now() - 370*DAY_MS));
+  Object.keys(log).forEach(k=>{ if(k < cut) delete log[k]; });
+  try{ localStorage.setItem(ACTIVITY_KEY, JSON.stringify(log)); }catch(e){}
+}
+
+// ================= PROGRESSI =================
+// Fotografia dello stato di studio: quante parole sono nuove, in apprendimento
+// (box 1) o imparate (box 2+, cioè sopravvissute ad almeno una settimana).
+function studyStats(){
+  const voci = (DB && DB.voci) || [];
+  let nuove = 0, corso = 0, note = 0;
+  voci.forEach(v=>{
+    const st = srs[v.id];
+    if(!st || !st.seen) nuove++;
+    else if((st.box||0) >= 2) note++;
+    else corso++;
+  });
+  let seen = 0, correct = 0;
+  Object.values(srs).forEach(st=>{ seen += st.seen||0; correct += st.correct||0; });
+  const log = activityLog();
+  let giorniAttivi = 0, risposteTot = 0;
+  Object.values(log).forEach(d=>{ giorniAttivi++; risposteTot += d.r||0; });
+  return {
+    totale: voci.length, nuove, corso, note,
+    seen, correct,
+    precisione: seen ? Math.round(correct/seen*100) : 0,
+    giorniAttivi, risposteTot,
+    oggi: (log[todayStr()]||{r:0}).r
+  };
+}
+// Le parole che tornano a farsi sbagliare: viste almeno 4 volte con meno del
+// 60% di risposte giuste. Sono quelle su cui conviene tornare a mano.
+function paroleDifficili(){
+  const voci = (DB && DB.voci) || [];
+  return voci
+    .map(v=>{ const st = srs[v.id]; return st && st.seen >= 4 ? {v, r: st.correct/st.seen, st} : null; })
+    .filter(x=>x && x.r < 0.6)
+    .sort((a,b)=>a.r - b.r || b.st.seen - a.st.seen)
+    .map(x=>x.v);
+}
+// Quante carte scadono in ognuno dei prossimi 7 giorni (oggi include gli arretrati).
+function previsioneRipassi(){
+  const voci = (DB && DB.voci) || [];
+  const out = [];
+  for(let i=0; i<7; i++){
+    const d = new Date(); d.setHours(0,0,0,0); d.setDate(d.getDate()+i);
+    const from = d.getTime(), to = from + DAY_MS;
+    let n = 0;
+    voci.forEach(v=>{
+      const st = srs[v.id];
+      if(!st || !st.due) return;                                  // mai viste: contate a parte
+      if(i===0 ? st.due < to : (st.due >= from && st.due < to)) n++;
+    });
+    out.push({data:d, n});
+  }
+  return out;
+}
+// Serie più lunga di giorni consecutivi con almeno una risposta.
+function serieRecord(){
+  const giorni = Object.keys(activityLog()).filter(k=>(activityLog()[k].r||0) > 0).sort();
+  let best = 0, cur = 0, prev = null;
+  giorni.forEach(g=>{
+    if(prev){
+      const dp = new Date(prev+"T00:00:00"), dg = new Date(g+"T00:00:00");
+      cur = (dg - dp === DAY_MS) ? cur+1 : 1;
+    } else cur = 1;
+    prev = g; if(cur > best) best = cur;
+  });
+  return best;
+}
+
+const GIORNI_INIZ = ["L","M","M","G","V","S","D"];
+function runProgressi(){
+  const stage = header();
+  const st = studyStats();
+  stage.appendChild($(`<div style="width:100%;margin-bottom:-4px"><b style="font-size:20px">I tuoi progressi</b>
+    <div style="font-size:13px;color:var(--muted);margin-top:2px">Tutto resta sul telefono: fai un backup dalle Impostazioni.</div></div>`));
+
+  // --- Numeri in evidenza ---
+  const streak = dailyStreak(), record = serieRecord();
+  // griglia invece di flex: su schermo stretto restano 2+2 invece di 3+1 sbilenco
+  stage.appendChild($(`<div class="stats" style="width:100%;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr))">
+    <div class="stat"><b>${st.note}</b><span>imparate</span></div>
+    <div class="stat"><b>${st.corso}</b><span>in corso</span></div>
+    <div class="stat"><b>${streak}</b><span>giorni di fila</span></div>
+    <div class="stat"><b>${st.precisione}%</b><span>precisione</span></div>
+  </div>`));
+
+  // --- Barra di avanzamento sul dizionario ---
+  const pct = st.totale ? Math.round((st.note + st.corso)/st.totale*100) : 0;
+  const w = n => st.totale ? (n/st.totale*100) : 0;
+  stage.appendChild($(`<div class="pcard">
+    <h3>Dizionario &mdash; ${st.note + st.corso} parole su ${st.totale} (${pct}%)</h3>
+    <div class="pbar">
+      <i style="width:${w(st.note)}%;background:var(--good)"></i>
+      <i style="width:${w(st.corso)}%;background:var(--accent2)"></i>
+    </div>
+    <div class="plegend">
+      <span><em style="background:var(--good)"></em>${st.note} imparate</span>
+      <span><em style="background:var(--accent2)"></em>${st.corso} in apprendimento</span>
+      <span><em style="background:var(--card2)"></em>${st.nuove} da scoprire</span>
+    </div>
+  </div>`));
+
+  // --- Mappa dell'attività (18 settimane) ---
+  const log = activityLog();
+  const heat = $(`<div class="pcard"><h3>Ultime 18 settimane</h3><div class="heat"></div>
+    <div class="plegend" style="justify-content:space-between">
+      <span>${st.giorniAttivi} giorni di studio &middot; ${st.risposteTot} risposte in totale</span>
+      <span>record: ${record} giorn${record===1?"o":"i"} di fila</span>
+    </div></div>`);
+  const hwrap = heat.querySelector(".heat");
+  const oggi = new Date(); oggi.setHours(0,0,0,0);
+  const lunediCorrente = new Date(oggi);
+  lunediCorrente.setDate(oggi.getDate() - ((oggi.getDay()+6)%7));   // domenica = 0 → lunedì
+  for(let wk = 17; wk >= 0; wk--){
+    const col = $(`<div class="hcol"></div>`);
+    for(let gg = 0; gg < 7; gg++){
+      const d = new Date(lunediCorrente);
+      d.setDate(lunediCorrente.getDate() - wk*7 + gg);
+      const key = dateStr(d), n = (log[key]||{}).r || 0;
+      const lvl = d > oggi ? "future" : n===0 ? "" : n<5 ? "l1" : n<15 ? "l2" : n<30 ? "l3" : "l4";
+      col.appendChild($(`<div class="hc ${lvl}" title="${key}: ${n} rispost${n===1?"a":"e"}"></div>`));
+    }
+    hwrap.appendChild(col);
+  }
+  stage.appendChild(heat);
+
+  // --- Previsione dei ripassi ---
+  const prev = previsioneRipassi();
+  const maxN = Math.max(1, ...prev.map(p=>p.n));
+  const fc = $(`<div class="pcard"><h3>Ripassi in arrivo</h3><div class="fcast"></div>
+    <p class="muted" style="margin:12px 0 0;font-size:12.5px;line-height:1.5">Solo le carte già iniziate,
+      giorno per giorno. Oltre a queste restano <b>${st.nuove}</b> parole mai viste, sempre disponibili.</p></div>`);
+  const fcw = fc.querySelector(".fcast");
+  prev.forEach((p,i)=>{
+    const h = Math.round(p.n/maxN*58) + 3;
+    fcw.appendChild($(`<div class="fb"><b>${p.n}</b><i style="height:${h}px"></i>${i===0?"oggi":GIORNI_INIZ[(p.data.getDay()+6)%7]}</div>`));
+  });
+  stage.appendChild(fc);
+
+  // --- Parole difficili ---
+  const hard = paroleDifficili();
+  const hc = $(`<div class="pcard"><h3>Parole ostiche ${hard.length?`(${hard.length})`:""}</h3></div>`);
+  if(!hard.length){
+    hc.appendChild($(`<p class="muted" style="margin:0;font-size:13.5px">Nessuna parola problematica: le sbagli poche volte. Qui finiscono quelle viste almeno 4 volte e indovinate meno di una volta su due.</p>`));
+  } else {
+    const list = $(`<div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:13px"></div>`);
+    hard.slice(0,24).forEach(v=>{
+      const chip = $(`<button style="border:1px solid var(--line);background:var(--card2);color:var(--text);border-radius:99px;padding:6px 12px;font-size:13.5px;cursor:pointer;font-family:inherit">${v.ru} <span style="color:var(--muted)">${v.it}</span></button>`);
+      chip.onclick = ()=>speak(v.ru);
+      list.appendChild(chip);
+    });
+    hc.appendChild(list);
+    const go = $(`<button class="btn primary" style="width:100%">Allena le parole ostiche</button>`);
+    go.onclick = ()=>navigateTo(()=>runFlash(hard, "Parole ostiche", {ignoreDue:true, restart:()=>runFlash(hard,"Parole ostiche",{ignoreDue:true})}));
+    hc.appendChild(go);
+  }
+  stage.appendChild(hc);
+
+  const imp = $(`<button class="linkbtn" style="align-self:center">&#9881;&#65039; Impostazioni e backup</button>`);
+  imp.onclick = ()=>navigateTo(runImpostazioni);
+  stage.appendChild(imp);
+}
+
+// ================= SCRITTURA (produzione attiva) =================
+// L'unico esercizio in cui la parola russa va PRODOTTA, non riconosciuta.
+// Due modi: dall'italiano o dall'ascolto (dettato). La tastiera cirillica a
+// schermo evita di dover installare il layout russo sul telefono.
+const KBD_ROWS = [
+  ["й","ц","у","к","е","н","г","ш","щ","з","х","ъ"],
+  ["ф","ы","в","а","п","р","о","л","д","ж","э"],
+  ["я","ч","с","м","и","т","ь","б","ю","ё"],
+];
+// Confronto indulgente: niente maiuscole, accenti tonici, punteggiatura;
+// ё ed е valgono uguale (le tastiere russe spesso non distinguono).
+function normWrite(s){
+  return (s||"").toLowerCase()
+    .replace(/́/g,"")
+    .replace(/ё/g,"е")
+    .replace(/[^Ѐ-ӿ\s-]/g,"")
+    .replace(/\s+/g," ")
+    .trim();
+}
+// Diff carattere per carattere fra quello che hai scritto e la soluzione.
+function diffHtml(typed, sol){
+  const a = normWrite(typed), b = normWrite(sol);
+  let out = "";
+  for(let i=0; i<a.length; i++){
+    const ok = a[i] === b[i];
+    out += `<span class="ch ${ok?"good":"bad"}">${a[i]===" "?"&nbsp;":a[i]}</span>`;
+  }
+  return out || "&mdash;";
+}
+
+function pickScritturaTopic(){
+  const stage = header();
+  const allPool = (DB.voci||[]).filter(v=>v.ru && v.it);
+  const dueOf = pool => pool.filter(x=>isDue(x.id)).length;
+  stage.appendChild($(`<div style="width:100%"><b style="font-size:20px">Scrittura</b>
+    <div style="font-size:13px;color:var(--muted);margin-top:3px">Scrivi tu la parola russa, dall'italiano o sotto dettatura. C'è la tastiera cirillica: non serve installare nulla.</div></div>`));
+
+  const list = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%"></div>`);
+  function mk(ico, titolo, desc, pool, label, opts){
+    if(!pool.length) return;
+    const b = $(`<button class="tile wide"><div class="ico" style="font-size:24px">${ico}</div>
+      <div class="txt"><div class="t">${titolo}</div><div class="d">${desc}</div></div></button>`);
+    b.onclick = ()=>navigateTo(()=>runScrittura(pool, label, opts||{}));
+    list.appendChild(b);
+  }
+  const due = allPool.filter(v=>isDue(v.id));
+  mk("&#9889;","In scadenza oggi",`${due.length} parole da ripassare &middot; 12 per sessione`, due, "In scadenza", {limit:12});
+
+  const ese = esesStore();
+  const eseIds = new Set(ese.voci.map(v=>v.id));
+  const esePool = allPool.filter(v=>eseIds.has(v.id));
+  mk("&#127381;","Dai miei esercizi",`${esePool.length} parole salvate da te`, esePool, "I miei esercizi", {ignoreDue:true, limit:15});
+
+  const hard = paroleDifficili();
+  mk("&#128293;","Parole ostiche",`${hard.length} parole che sbagli spesso`, hard, "Parole ostiche", {ignoreDue:true, limit:15});
+
+  mk("&#127922;","Mix di tutto",`${allPool.length} parole &middot; ${dueOf(allPool)} da ripassare`, allPool, "Mix", {limit:15});
+  stage.appendChild(list);
+
+  stage.appendChild($(`<div style="width:100%;margin:10px 0 -6px"><b style="font-size:18px">Per argomento</b></div>`));
+  const list2 = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%"></div>`);
+  for(const [tag, label] of Object.entries(TOPIC_LABELS)){
+    const words = allPool.filter(e=>e.tag && e.tag.includes(tag));
+    if(words.length < 4) continue;
+    const b = $(`<button class="tile wide"><div class="ico" style="font-size:24px">${TOPIC_ICONS[tag]||"&#128218;"}</div>
+      <div class="txt"><div class="t">${label}</div><div class="d">${words.length} parole &middot; <span style="color:var(--accent2)">${dueOf(words)} da ripassare</span></div></div></button>`);
+    b.onclick = ()=>navigateTo(()=>runScrittura(words, label, {ignoreDue:true, limit:15}));
+    list2.appendChild(b);
+  }
+  stage.appendChild(list2);
+}
+
+function runScrittura(pool, label, opts){
+  opts = opts || {};
+  let deck = (pool||[]).filter(c=>c.ru && c.it);
+  if(!opts.ignoreDue) deck = deck.filter(c=>isDue(c.id));
+  deck = deck.sort((a,b)=>dueScore(b.id)-dueScore(a.id));
+  if(opts.ignoreDue) deck = shuffle(deck);
+  if(opts.limit) deck = deck.slice(0, opts.limit);
+
+  const stage = header();
+  if(!deck.length){
+    stage.appendChild($(`<div class="done"><div class="big">&#9989;</div><h2>Tutto ripassato!</h2>
+      <p class="muted">Nessuna parola in scadenza qui. Torna quando l'intervallo sarà scaduto, oppure scegli un argomento.</p></div>`));
+    const row = $(`<div class="row"></div>`);
+    const a = $(`<button class="btn">Indietro</button>`); a.onclick = ()=>history.back();
+    row.appendChild(a); stage.appendChild(row);
+    return;
+  }
+
+  const total = deck.length;
+  let queue = deck.slice(), mastered = 0, c = null, answered = false, usedHint = false;
+  let avanzato = false;   // impedisce che il tocco su Avanti e l'auto-avanzamento saltino una carta
+  let modo = localStorage.getItem("scritturaModo") === "audio" ? "audio" : "it";
+
+  if(label) stage.appendChild($(`<div style="text-align:center;font-size:13px;color:var(--muted)">${label}</div>`));
+
+  // Modo: dall'italiano oppure dettato
+  const seg = $(`<div class="seg" style="width:100%;max-width:330px">
+    <button data-m="it">&#127470;&#127481; Dall'italiano</button>
+    <button data-m="audio">&#128266; Dettato</button></div>`);
+  function paintSeg(){ seg.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.m===modo)); }
+  seg.querySelectorAll("button").forEach(b=>{
+    b.onclick = ()=>{ if(modo===b.dataset.m) return; modo=b.dataset.m; localStorage.setItem("scritturaModo",modo); paintSeg(); show(); };
+  });
+  paintSeg();
+  stage.appendChild(seg);
+
+  const bar = progressBar(stage);
+  const wrap = $(`<div style="width:100%"></div>`);
+  stage.appendChild(wrap);
+
+  function advance(){
+    if(!queue.length) return finish(stage, `Scrittura completata! ${mastered} / ${total}`, opts.restart || (()=>runScrittura(pool, label, opts)));
+    c = queue.shift(); answered = false; usedHint = false; avanzato = false; show();
+  }
+
+  function show(){
+    bar.style.width = (mastered/total*100)+"%"; bar.setNum(mastered, total);
+    wrap.innerHTML = "";
+    const useKbd = settings().kbd;
+
+    const wbox = $(`<div class="wbox">
+      ${modo==="audio"
+        ? `<button class="speak" style="position:static;margin:0 auto 4px;display:block;width:54px;height:54px;font-size:25px">&#128266;</button>
+           <div class="sub">Ascolta e scrivi quello che senti</div>`
+        : `<div class="prompt">${c.it}</div><div class="sub">Scrivi la parola in russo</div>`}
+    </div>`);
+    const inp = $(`<input class="winput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+        inputmode="${useKbd?"none":"text"}" placeholder="${useKbd?"usa la tastiera qui sotto":"scrivi in cirillico…"}">`);
+    wbox.appendChild(inp);
+    const sol = $(`<div class="wsol" style="display:none"></div>`);
+    wbox.appendChild(sol);
+    wrap.appendChild(wbox);
+
+    if(modo==="audio"){
+      wbox.querySelector(".speak").onclick = ()=>speak(c.ru);
+      setTimeout(()=>speak(c.ru), 250);
+    }
+
+    // --- Tastiera cirillica a schermo ---
+    let kbd = null;
+    if(useKbd){
+      kbd = $(`<div class="kbd"></div>`);
+      KBD_ROWS.forEach(row=>{
+        const r = $(`<div class="krow"></div>`);
+        row.forEach(ch=>{
+          const b = $(`<button type="button">${ch}</button>`);
+          b.onclick = ()=>{ if(answered) return; inp.value += ch; paintInput(); };
+          r.appendChild(b);
+        });
+        kbd.appendChild(r);
+      });
+      const last = $(`<div class="krow"></div>`);
+      const sp = $(`<button type="button" class="wide">spazio</button>`);
+      sp.onclick = ()=>{ if(answered) return; inp.value += " "; paintInput(); };
+      const del = $(`<button type="button" class="wide">&#9003;</button>`);
+      del.onclick = ()=>{ if(answered) return; inp.value = inp.value.slice(0,-1); paintInput(); };
+      del.oncontextmenu = e=>{ e.preventDefault(); inp.value=""; paintInput(); };
+      last.appendChild(sp); last.appendChild(del);
+      kbd.appendChild(last);
+      wrap.appendChild(kbd);
+    }
+
+    const row = $(`<div class="row" style="margin-top:14px"></div>`);
+    const hint = $(`<button class="btn" style="flex:0 0 auto;padding:0 16px" title="Scopre la prossima lettera: la carta conta come sbagliata">&#128161;</button>`);
+    const check = $(`<button class="btn primary" style="flex:1">Verifica</button>`);
+    row.appendChild(hint); row.appendChild(check);
+    wrap.appendChild(row);
+
+    function paintInput(){
+      inp.classList.remove("ok","ko");
+      check.textContent = "Verifica";
+    }
+    hint.onclick = ()=>{
+      if(answered) return;
+      usedHint = true;
+      const target = c.ru.replace(/́/g,"");
+      // Tiene il prefisso già corretto e svela la lettera successiva
+      let keep = 0;
+      while(keep < inp.value.length && keep < target.length &&
+            normWrite(inp.value[keep]) === normWrite(target[keep])) keep++;
+      inp.value = target.slice(0, keep+1);
+      paintInput();
+      if(!settings().kbd) inp.focus();
+    };
+    check.onclick = ()=>{
+      if(answered){ if(!avanzato){ avanzato = true; advance(); } return; }
+      const ok = normWrite(inp.value) === normWrite(c.ru) && !usedHint;
+      const esatto = normWrite(inp.value) === normWrite(c.ru);
+      if(!esatto && !inp.value.trim()) return;   // niente risposta: non si valuta
+      answered = true;
+      inp.readOnly = true;
+      hint.style.display = "none";
+      inp.classList.add(ok ? "ok" : "ko");
+      grade(c.id, ok);
+      haptic(ok);
+      if(ok){
+        mastered++;
+        sol.style.display = "";
+        sol.innerHTML = `<span style="color:var(--good);font-weight:700">&#10003; Giusto!</span>
+          ${c.translit?` &middot; <i>${c.translit}</i>`:""}${modo==="audio"?` &middot; ${c.it}`:""}`;
+        speak(c.ru);
+        if(kbd) kbd.style.display = "none";
+        check.textContent = "Avanti";
+        setTimeout(()=>{ if(answered && !avanzato){ avanzato = true; advance(); } }, 1100);
+      } else {
+        queue.push(c);   // torna in coda: la rivedrai in questa sessione
+        sol.style.display = "";
+        sol.innerHTML = `${esatto?"Giusto, ma col suggerimento &mdash; la rivedrai:":"Hai scritto"} <span class="typed">${diffHtml(inp.value, c.ru)}</span>
+          <span class="sol">${c.ru}</span>
+          <span style="font-size:13px">${c.translit ? c.translit+" &middot; " : ""}${c.it}</span>`;
+        speak(c.ru);
+        if(kbd) kbd.style.display = "none";
+        check.textContent = "Avanti";
+      }
+    };
+
+    // Tastiera fisica (desktop): Invio verifica / prosegue
+    inp.onkeydown = e=>{ if(e.key === "Enter"){ e.preventDefault(); check.onclick(); } };
+    inp.oninput = paintInput;
+    if(!useKbd) setTimeout(()=>inp.focus(), 60);
+  }
+  advance();
+}
+
+// ================= IMPOSTAZIONI E BACKUP =================
+// Il backup è la funzione più importante della schermata: tutti i progressi
+// vivono in localStorage e sparirebbero svuotando i dati del browser o
+// reinstallando la PWA.
+const BACKUP_PREFIXES = ["russo_", "vika_"];
+const BACKUP_ESCLUSI  = ["vika_gemini_key"];   // la chiave API non finisce in un file scaricato
+function raccogliBackup(){
+  const dati = {};
+  for(let i=0; i<localStorage.length; i++){
+    const k = localStorage.key(i);
+    if(!BACKUP_PREFIXES.some(p=>k.startsWith(p))) continue;
+    if(BACKUP_ESCLUSI.includes(k)) continue;
+    dati[k] = localStorage.getItem(k);
+  }
+  return {app:"russo", formato:1, esportato:new Date().toISOString(), dati};
+}
+
+function runImpostazioni(){
+  const stage = header();
+  stage.appendChild($(`<div style="width:100%"><b style="font-size:20px">Impostazioni</b></div>`));
+
+  const card = $(`<div class="pcard"></div>`);
+  // --- Tema ---
+  const rTema = $(`<div class="srow"><div class="lbl">Tema<small>Auto segue il tema del telefono</small></div><div class="ctl"></div></div>`);
+  const segT = $(`<div class="seg"><button data-v="auto">Auto</button><button data-v="chiaro">Chiaro</button><button data-v="scuro">Scuro</button></div>`);
+  function paintT(){ const v = settings().tema; segT.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===v)); }
+  segT.querySelectorAll("button").forEach(b=>{ b.onclick = ()=>{ setSetting("tema", b.dataset.v); applyTheme(); paintT(); }; });
+  paintT(); rTema.querySelector(".ctl").appendChild(segT); card.appendChild(rTema);
+
+  // --- Velocità della voce ---
+  const rate = settings().ttsRate;
+  const rVoce = $(`<div class="srow stack"><div class="lbl">Velocità della voce<small>Quanto lentamente legge il russo</small></div><div class="ctl"></div></div>`);
+  const slider = $(`<input type="range" min="0.5" max="1.2" step="0.05" value="${rate}">`);
+  const prova = $(`<button class="linkbtn" style="margin-top:6px;width:100%">&#128266; Prova: <b>${rate.toFixed(2)}&times;</b></button>`);
+  slider.oninput = ()=>{
+    const v = parseFloat(slider.value);
+    setSetting("ttsRate", v);
+    prova.innerHTML = `&#128266; Prova: <b>${v.toFixed(2)}&times;</b>`;
+  };
+  slider.onchange = ()=>speak("Здравствуйте, меня зовут Вика");
+  prova.onclick = ()=>speak("Здравствуйте, меня зовут Вика");
+  rVoce.querySelector(".ctl").appendChild(slider);
+  rVoce.querySelector(".ctl").appendChild(prova);
+  card.appendChild(rVoce);
+
+  // --- Carte del ripasso del giorno ---
+  const rDaily = $(`<div class="srow"><div class="lbl">Carte del ripasso<small>Quante ne propone «Ripasso del giorno»</small></div><div class="ctl"></div></div>`);
+  const segD = $(`<div class="seg">${[10,20,30,50].map(n=>`<button data-v="${n}">${n}</button>`).join("")}</div>`);
+  function paintD(){ const v = String(settings().dailySize); segD.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===v)); }
+  segD.querySelectorAll("button").forEach(b=>{
+    b.onclick = ()=>{
+      setSetting("dailySize", +b.dataset.v);
+      // il mazzo di oggi si ricompone con la nuova dimensione
+      try{ const s = dailyState(); delete s.cards; localStorage.setItem(DAILY_KEY, JSON.stringify(s)); }catch(e){}
+      paintD();
+    };
+  });
+  paintD(); rDaily.querySelector(".ctl").appendChild(segD); card.appendChild(rDaily);
+
+  // --- Tastiera cirillica ---
+  const rKbd = $(`<div class="srow"><div class="lbl">Tastiera cirillica<small>Nella Scrittura: se la spegni usi quella di sistema</small></div><div class="ctl"></div></div>`);
+  const segK = $(`<div class="seg"><button data-v="1">Accesa</button><button data-v="0">Spenta</button></div>`);
+  function paintK(){ const v = settings().kbd ? "1" : "0"; segK.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===v)); }
+  segK.querySelectorAll("button").forEach(b=>{ b.onclick = ()=>{ setSetting("kbd", b.dataset.v==="1"); paintK(); }; });
+  paintK(); rKbd.querySelector(".ctl").appendChild(segK); card.appendChild(rKbd);
+  stage.appendChild(card);
+
+  // --- Backup ---
+  const bk = $(`<div class="pcard"><h3>&#128190; Backup dei progressi</h3>
+    <p class="muted" style="margin:0 0 13px;font-size:13.5px;line-height:1.55">
+      Progressi, parole salvate e serie vivono <b>solo su questo dispositivo</b>: svuotare i dati del
+      browser o reinstallare l'app li cancella. Esporta ogni tanto un file di backup e tienilo al sicuro.
+    </p></div>`);
+  const brow = $(`<div class="row" style="flex-wrap:wrap"></div>`);
+  const exp = $(`<button class="btn primary" style="flex:1 1 140px">&#11015;&#65039; Esporta</button>`);
+  exp.onclick = ()=>{
+    const blob = new Blob([JSON.stringify(raccogliBackup(), null, 1)], {type:"application/json"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `russo-backup-${todayStr()}.json`;
+    document.body.appendChild(a); a.click();
+    setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  };
+  const impBtn = $(`<button class="btn" style="flex:1 1 140px">&#11014;&#65039; Importa</button>`);
+  const file = $(`<input type="file" accept="application/json,.json" style="display:none">`);
+  impBtn.onclick = ()=>file.click();
+  file.onchange = ()=>{
+    const f = file.files && file.files[0];
+    if(!f) return;
+    const rd = new FileReader();
+    rd.onload = ()=>{
+      let obj = null;
+      try{ obj = JSON.parse(rd.result); }catch(e){}
+      if(!obj || obj.app !== "russo" || !obj.dati){ alert("Questo file non è un backup dell'app Russo."); file.value=""; return; }
+      const n = Object.keys(obj.dati).length;
+      if(!confirm(`Ripristino il backup del ${String(obj.esportato).slice(0,10)} (${n} voci)?\n\nI progressi attuali su questo dispositivo vengono sostituiti.`)){ file.value=""; return; }
+      Object.entries(obj.dati).forEach(([k,v])=>{ try{ localStorage.setItem(k, v); }catch(e){} });
+      alert("Backup ripristinato. L'app si ricarica.");
+      location.reload();
+    };
+    rd.readAsText(f);
+  };
+  brow.appendChild(exp); brow.appendChild(impBtn); brow.appendChild(file);
+  bk.appendChild(brow);
+  stage.appendChild(bk);
+
+  // --- Azzera ---
+  const rz = $(`<div class="pcard"><h3 style="color:var(--bad)">Azzera i progressi</h3>
+    <p class="muted" style="margin:0 0 13px;font-size:13.5px">Cancella ripetizioni, serie e parole salvate negli esercizi. I contenuti dell'app restano.</p></div>`);
+  const rzBtn = $(`<button class="btn bad" style="width:100%">Azzera tutto</button>`);
+  rzBtn.onclick = ()=>{
+    if(!confirm("Sicuro? Si perdono tutti i progressi.\n\nConsiglio: esporta prima un backup.")) return;
+    if(!confirm("Ultima conferma: azzero davvero tutto?")) return;
+    [STORE_KEY, DAILY_KEY, ESERCIZI_KEY, ACTIVITY_KEY, USER_KEY, MEM_BEST_KEY].forEach(k=>localStorage.removeItem(k));
+    srs = {};
+    location.reload();
+  };
+  rz.appendChild(rzBtn);
+  stage.appendChild(rz);
+
+  stage.appendChild($(`<p class="muted" style="font-size:12px;text-align:center">Il backup non contiene la chiave di Vika, che resta solo su questo dispositivo.</p>`));
+}
+
 // ---------- theme-color dinamico (chiaro/scuro segue il sistema) ----------
 const darkMq = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null;
+// Vero se l'app sta mostrando il tema scuro (scelta esplicita o, in "auto", il sistema).
+function temaScuro(){
+  const t = settings().tema;
+  if(t === 'scuro')  return true;
+  if(t === 'chiaro') return false;
+  return !!(darkMq && darkMq.matches);
+}
 function syncThemeColor(){
   const meta = document.querySelector('meta[name="theme-color"]');
-  if(meta) meta.setAttribute('content', darkMq && darkMq.matches ? '#0d1220' : '#ffffff');
+  if(meta) meta.setAttribute('content', temaScuro() ? '#0d1220' : '#ffffff');
 }
-syncThemeColor();
+applyTheme();
 if(darkMq && darkMq.addEventListener) darkMq.addEventListener('change', syncThemeColor);
 
 // ---------- skeleton mentre carica ----------

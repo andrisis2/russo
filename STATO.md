@@ -10,7 +10,11 @@
 - **Livello utente:** A1. **Ritmo concordato:** a blocchi (~5 lezioni). **Formato confermato:** riassunto + trascrizione + vocaboli/frasi/grammatica nell'app.
 
 ## Com'è fatta l'app
-- `index.html` — PWA, legge `knowledge.json`. 4 modi: Flashcard, Cirillico, Grammatica, Frasi&ascolto (TTS ru-RU). SRS (Leitner) salvato in `localStorage`.
+- `index.html` — PWA, legge `knowledge.json`. Home a due schede: **Pratica** (Ripasso del giorno, Flashcard, Scrittura, Coniugazione, Frasi&ascolto, Memory, Progressi, Vika) e **Teoria** (Vocabolario, Verbi, Cirillico, Regole, Grammatica, Frasi&grammatica). SRS (Leitner) salvato in `localStorage`.
+- **Scrittura** (`runScrittura`): dall'italiano o sotto dettato, tastiera cirillica a schermo (`KBD_ROWS`), confronto indulgente (`normWrite`: niente maiuscole/accenti, ё=е).
+- **Progressi** (`runProgressi`): stato del dizionario, mappa attività 18 settimane (chiave `russo_activity_v1`, alimentata da `grade()`), previsione ripassi a 7 giorni, parole ostiche.
+- **Impostazioni** (`runImpostazioni`, chiave `russo_settings_v1`): tema auto/chiaro/scuro (`data-theme` sull'`<html>`), velocità TTS, carte al giorno, tastiera cirillica, **export/import JSON dei progressi** e azzeramento.
+- Chiavi in `localStorage`: `russo_srs_v1`, `russo_daily_v1`, `russo_esercizi_v1`, `russo_user_voci`, `russo_activity_v1`, `russo_settings_v1`, `russo_memory_best_v1`, `vika_*`.
 - `knowledge.json` — fonte unica: `meta`, `alfabeto[33]`, `voci[]`, `frasi[]`, `grammatica[]` (ogni regola ha `drill[]` di coppie domanda/risposta). Le voci dai video sono taggate `video-NN`.
 - `note.md` — spiegazioni discorsive. `lezioni/` — un `.md` di riassunto per lezione + trascrizioni `*_transcript.txt`. `scripts/extract_lesson.py` — estrae/pulisce una porzione del VTT.
 
@@ -69,7 +73,7 @@ Legenda: ✅ fatto · ⬜ da fare · ⏪ **PROSSIMO**
 
 ## CONTENUTI GIÀ NELL'APP (per non duplicare id)
 - `knowledge.json` **versione 4** — **87 voci** (ultimo id `v087`), **23 frasi** (ultimo `f023`), **12 regole** quiz (ultimo `g012`).
-- **Sezione `riferimento`** (chiave a parte): 8 schede di consultazione "Regole grammaticali" (`r001`–`r008`: sei casi, pronomi declinati, possessivi, verbi al presente, passato, aspetto, plurale, numeri). Generata da `scripts/add_riferimento.py` (idempotente). NON sono drill: solo display + tap-per-ascoltare. Resa in `index.html` da `runReference()`. **Service worker a `russo-v3`** (se modifichi `index.html` ricordati di bumpare la cache in `sw.js`, altrimenti i client di ritorno non vedono il nuovo file).
+- **Sezione `riferimento`** (chiave a parte): 8 schede di consultazione "Regole grammaticali" (`r001`–`r008`: sei casi, pronomi declinati, possessivi, verbi al presente, passato, aspetto, plurale, numeri). Generata da `scripts/add_riferimento.py` (idempotente). NON sono drill: solo display + tap-per-ascoltare. Resa in `index.html` da `runReference()`. **Service worker: cache attuale `russo-v49`** (se modifichi `index.html` ricordati di bumpare la cache in `sw.js`, altrimenti i client di ritorno non vedono il nuovo file).
 - **Tema grafico: chiaro** (light theme, palette in `:root` di `index.html`, `theme_color` bianco in `manifest.json`). Card bianche con ombre, icone in badge, titolo a gradiente rosso→blu.
 - Lezioni elaborate: **L01, L02, L03, 1000-parole, L04, L05**.
 - Prossimi id da usare: voci `v088…`, frasi `f024…`, grammatica `g013…`.
