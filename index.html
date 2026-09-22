@@ -299,8 +299,14 @@
   .sg-speak:hover{border-color:var(--accent2);color:var(--accent2);background:rgba(47,107,237,.08)}
   .sg-chev{flex:0 0 auto;font-size:12px;color:var(--muted);transition:transform .25s}
   .sg-card.open .sg-chev{transform:rotate(180deg);color:var(--accent2)}
+  .sg-add{font-size:15px;font-weight:700;color:var(--accent2);margin-left:-4px}
+  .sg-add.added{color:var(--good);border-color:var(--good);background:rgba(22,163,74,.08);cursor:default}
+  .sg-frase-add{display:block;width:100%;margin-top:14px;padding:11px;border-radius:12px;border:1px solid var(--line);background:var(--card2);
+                color:var(--accent2);font-size:13px;font-weight:700;font-family:inherit;cursor:pointer;transition:.12s}
+  .sg-frase-add:not(:disabled):hover{border-color:var(--accent2);background:rgba(47,107,237,.10)}
+  .sg-frase-add.added{color:var(--good);border-color:var(--good);background:rgba(22,163,74,.07);cursor:default}
   .sg-body{max-height:0;overflow:hidden;transition:max-height .32s ease}
-  .sg-card.open .sg-body{max-height:1600px}
+  .sg-card.open .sg-body{max-height:2200px}
   .sg-words{padding:4px 16px 16px;border-top:1px solid var(--line);margin-top:4px}
   .sg-word{display:flex;gap:12px;padding:12px 0;border-bottom:1px dashed var(--line)}
   .sg-word:last-child{border-bottom:none}
@@ -524,6 +530,8 @@
   /* ---- Home tabs Pratica / Teoria ---- */
   .home-tabs{display:flex;background:var(--card2);border-radius:14px;padding:4px;margin-bottom:18px;gap:0;border:1px solid var(--line)}
   .home-tab{flex:1;padding:10px 6px;border-radius:10px;border:none;background:none;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;transition:.15s;line-height:1.3}
+  /* con tre schede (Esercizi) le etichette stanno su una riga sola */
+  .home-tabs.tre .home-tab{font-size:12.5px;padding:10px 3px;white-space:nowrap}
   .home-tab.active{background:var(--card);color:var(--text);box-shadow:var(--shadow-sm)}
   .home-tab:hover:not(.active){color:var(--text)}
   .grid-wrap{overflow:hidden;width:100%}
@@ -606,7 +614,15 @@ function userStore(){ try{ return JSON.parse(localStorage.getItem(USER_KEY)||'{"
 
 // ---------- Esercizi: flashcard e verbi salvati manualmente ----------
 const ESERCIZI_KEY = "russo_esercizi_v1";
-function esesStore(){ try{ return JSON.parse(localStorage.getItem(ESERCIZI_KEY)||'{"voci":[],"verbi":[]}'); }catch(e){ return {voci:[],verbi:[]}; } }
+// Lo store tiene tre liste: parole (flashcard), frasi intere e verbi.
+// I campi mancanti si riempiono a vuoto: i dati salvati prima che esistessero
+// le frasi restano validi.
+function esesStore(){
+  try{
+    const s = JSON.parse(localStorage.getItem(ESERCIZI_KEY)||'{}') || {};
+    return {voci:s.voci||[], frasi:s.frasi||[], verbi:s.verbi||[]};
+  }catch(e){ return {voci:[],frasi:[],verbi:[]}; }
+}
 function saveEses(s){ localStorage.setItem(ESERCIZI_KEY, JSON.stringify(s)); }
 function addEsesVoce(id, ru, it, translit, tipo, tag){
   const s = esesStore();
@@ -621,6 +637,21 @@ function addEsesVoce(id, ru, it, translit, tipo, tag){
   return nuova;
 }
 function removeEsesVoce(id){ const s=esesStore(); s.voci=s.voci.filter(v=>v.id!==id); saveEses(s); }
+
+// ---------- Frasi intere salvate negli esercizi ----------
+// Una frase di "Frasi & grammatica" si porta dietro traduzione, tema e il
+// rimando alla regola, così negli Esercizi resta consultabile per intero.
+function fraseEseId(f){ return 'fg' + f.id; }
+function addEsesFrase(f){
+  const s = esesStore();
+  const id = fraseEseId(f);
+  if(s.frasi.some(x=>x.id===id)) return false;
+  s.frasi.push({id, ru:f.ru||'', it:f.it||'', translit:f.translit||'', tema:f.tema||'', regola:f.regola||null});
+  saveEses(s);
+  return true;
+}
+function removeEsesFrase(id){ const s=esesStore(); s.frasi=s.frasi.filter(f=>f.id!==id); saveEses(s); }
+function isEsesFrase(id){ return esesStore().frasi.some(f=>f.id===id); }
 function addEsesVerbo(verbId){ const s=esesStore(); if(s.verbi.includes(verbId)) return false; s.verbi.push(verbId); saveEses(s); return true; }
 function removeEsesVerbo(verbId){ const s=esesStore(); s.verbi=s.verbi.filter(v=>v!==verbId); saveEses(s); }
 function isEsesVoce(id){ return esesStore().voci.some(v=>v.id===id); }
@@ -951,10 +982,13 @@ function renderHome(){
 
       // Esercizi
       const ese = esesStore();
-      const eseCount = ese.voci.length + ese.verbi.length;
-      const eseDesc = eseCount>0
-        ? `${ese.voci.length} flashcard &middot; ${ese.verbi.length} verb${ese.verbi.length===1?'o':'i'} salvat${eseCount===1?'o':'i'}`
-        : 'Salva parole e verbi dalla sezione Teoria';
+      const eseParts = [];
+      if(ese.voci.length)  eseParts.push(`${ese.voci.length} flashcard`);
+      if(ese.frasi.length) eseParts.push(`${ese.frasi.length} fras${ese.frasi.length===1?'e':'i'}`);
+      if(ese.verbi.length) eseParts.push(`${ese.verbi.length} verb${ese.verbi.length===1?'o':'i'}`);
+      const eseDesc = eseParts.length
+        ? eseParts.join(' &middot; ')
+        : 'Salva parole, frasi e verbi dalla sezione Teoria';
       grid.appendChild(mkTile('&#127381;','Esercizi', eseDesc,'esercizi',true,'background:linear-gradient(120deg,var(--card) 0%,rgba(47,107,237,.08) 100%)'));
 
       // Griglia 2 colonne
@@ -2100,27 +2134,29 @@ function runEsercizi(){
   const resetBtn = $(`<button style="border:1px solid var(--bad);background:none;color:var(--bad);border-radius:10px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer;opacity:.75">🗑 Reset</button>`);
   resetBtn.onclick = ()=>{
     if(!confirm('Eliminare tutti gli esercizi salvati?')) return;
-    saveEses({voci:[],verbi:[]});
+    saveEses({voci:[],frasi:[],verbi:[]});
     renderTab(activeTab);
   };
   titleRow.appendChild(resetBtn);
   stage.appendChild(titleRow);
 
-  // Due schede: Flashcard | Verbi. Swipe come nella home (soglia 20px).
-  let activeTab = localStorage.getItem('russo_ese_tab')==='verbi' ? 'verbi' : 'flash';
+  // Tre schede: Flashcard | Frasi | Verbi. Swipe come nella home (soglia 20px).
+  const TABS = ['flash','frasi','verbi'];
+  const tabSalvata = localStorage.getItem('russo_ese_tab');
+  let activeTab = TABS.includes(tabSalvata) ? tabSalvata : 'flash';
   const s0 = esesStore();
   const nV = s0.voci.length;
+  const nF = s0.frasi.length;
   const nB = (s0.verbi||[]).map(id=>(DB.verbi||[]).find(v=>v.id===id)).filter(Boolean).length;
-  const tabsDiv = $(`<div class="home-tabs">
+  const tabsDiv = $(`<div class="home-tabs tre">
     <button class="home-tab" data-tab="flash">📚 Flashcard${nV?` · ${nV}`:''}</button>
+    <button class="home-tab" data-tab="frasi">💬 Frasi${nF?` · ${nF}`:''}</button>
     <button class="home-tab" data-tab="verbi">✏️ Verbi${nB?` · ${nB}`:''}</button>
   </div>`);
   stage.appendChild(tabsDiv);
 
   const wrapOuter = $(`<div class="grid-wrap"></div>`);
   stage.appendChild(wrapOuter);
-
-  const TABS = ['flash','verbi'];
 
   // ---- Contenuto scheda Flashcard ----
   function buildFlash(body){
@@ -2145,6 +2181,41 @@ function runEsercizi(){
       vList.appendChild(row);
     });
     body.appendChild(vList);
+  }
+
+  // ---- Contenuto scheda Frasi ----
+  function buildFrasi(body){
+    const s = esesStore();
+    if(!s.frasi.length){
+      body.appendChild($(`<p style="color:var(--muted);font-size:14px;text-align:center;padding:26px 8px">Nessuna frase salvata.<br><span style="font-size:12px">Vai su <b>Frasi &amp; grammatica</b> → <b>＋</b> accanto alla frase<br>per allenare la frase intera, non solo le singole parole.</span></p>`));
+      return;
+    }
+    const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:14px;font-size:15px">▶ Allena le frasi (${s.frasi.length})</button>`);
+    studyBtn.onclick = ()=>navigateTo(()=>runPhrase(0, {pool:s.frasi, titolo:'📋 Esercizi · le tue frasi'}));
+    body.appendChild(studyBtn);
+
+    const fList = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+    s.frasi.forEach(f=>{
+      const row = $(`<div style="display:flex;align-items:flex-start;gap:10px;background:var(--card2);border-radius:12px;padding:10px 12px"></div>`);
+      const spk = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;padding:0;flex-shrink:0" title="Ascolta">🔊</button>`);
+      spk.onclick = ()=>speak(onlyCyrillic(f.ru));
+      const txt = $(`<div style="flex:1;min-width:0"></div>`);
+      txt.appendChild($(`<div style="font-size:15px;font-weight:700;color:var(--text);line-height:1.35">${f.ru}</div>`));
+      txt.appendChild($(`<div style="font-size:12.5px;color:var(--muted);margin-top:2px">${f.it||''}</div>`));
+      if(f.tema){
+        const temaStyle = 'max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;vertical-align:bottom';
+        const tema = f.regola
+          ? $(`<button class="sg-tema" type="button" style="${temaStyle}" title="${f.tema} — vai alla regola grammaticale">${f.tema}</button>`)
+          : $(`<span class="sg-tema" style="${temaStyle}">${f.tema}</span>`);
+        if(f.regola) tema.onclick = ()=>navigateTo(()=> f.regola.sez==="grammatica" ? runGram(f.regola.id) : runReference(f.regola.id));
+        txt.appendChild(tema);
+      }
+      const del = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted);padding:4px;flex-shrink:0" title="Rimuovi">✕</button>`);
+      del.onclick = ()=>{ removeEsesFrase(f.id); renderTab(activeTab); };
+      row.appendChild(spk); row.appendChild(txt); row.appendChild(del);
+      fList.appendChild(row);
+    });
+    body.appendChild(fList);
   }
 
   // ---- Contenuto scheda Verbi ----
@@ -2191,7 +2262,9 @@ function runEsercizi(){
     tabsDiv.querySelectorAll('.home-tab').forEach(b=>b.classList.toggle('active', b.dataset.tab===tab));
     const panel = $(`<div></div>`);
     if(dir) panel.classList.add(dir==='left' ? 'slide-left' : 'slide-right');
-    if(tab==='flash') buildFlash(panel); else buildVerbi(panel);
+    if(tab==='flash') buildFlash(panel);
+    else if(tab==='frasi') buildFrasi(panel);
+    else buildVerbi(panel);
     wrapOuter.innerHTML='';
     wrapOuter.appendChild(panel);
   }
@@ -2339,6 +2412,7 @@ function runFrasiGrammar(){
         <div class="sg-it">${f.it}</div>
       </div>
       <button class="sg-speak" title="Ascolta la frase">&#128266;</button>
+      <button class="sg-speak sg-add" type="button" title="Aggiungi la frase agli esercizi">&#65291;</button>
       <div class="sg-chev">&#9660;</div>
     </div>`);
     if(temaEl) head.querySelector(".sg-main").appendChild(temaEl);
@@ -2351,6 +2425,29 @@ function runFrasiGrammar(){
       };
     }
     head.querySelector(".sg-speak").onclick = (e)=>{ e.stopPropagation(); speak(onlyCyrillic(f.ru)); };
+
+    // La frase INTERA si salva negli Esercizi (scheda "Frasi"): la si allena
+    // col riempimento del buco, come in "Frasi & ascolto".
+    const addHead = head.querySelector(".sg-add");
+    const addFull = $(`<button class="sg-frase-add" type="button"></button>`);
+    function paintFrase(){
+      const saved = isEsesFrase(fraseEseId(f));
+      addHead.innerHTML = saved ? '&#10003;' : '&#65291;';
+      addHead.classList.toggle('added', saved);
+      addHead.title = saved ? 'Frase già negli esercizi' : 'Aggiungi la frase agli esercizi';
+      addFull.textContent = saved ? '\u2713 Frase negli esercizi' : '\uFF0B Aggiungi tutta la frase agli esercizi';
+      addFull.classList.toggle('added', saved);
+      addFull.disabled = saved;
+      addHead.disabled = saved;
+    }
+    function salvaFrase(e){
+      e.stopPropagation();
+      addEsesFrase(f);
+      paintFrase();
+    }
+    addHead.onclick = salvaFrase;
+    addFull.onclick = salvaFrase;
+    paintFrase();
 
     const body = $(`<div class="sg-body"></div>`);
     const words = $(`<div class="sg-words"></div>`);
@@ -2438,6 +2535,7 @@ function runFrasiGrammar(){
       if(actions.children.length) row.querySelector(".sg-word-txt").appendChild(actions);
       words.appendChild(row);
     });
+    words.appendChild(addFull);
     body.appendChild(words);
 
     head.onclick = ()=>card.classList.toggle("open");
@@ -3066,9 +3164,13 @@ function runGram(scrollToId){
 }
 
 // ---------- 6. FRASI & ASCOLTO ----------
-function runPhrase(level){
+// opts.pool  → mazzo di frasi già scelto (es. le frasi salvate negli Esercizi):
+//              si saltano picker e filtro per difficoltà.
+// opts.titolo → etichetta mostrata sopra l'esercizio.
+function runPhrase(level, opts){
+  const custom = opts && opts.pool && opts.pool.length ? opts.pool : null;
   // Picker livello di difficoltà (come in App Italiano)
-  if(level === undefined){
+  if(level === undefined && !custom){
     const stage = header();
     stage.appendChild($(`<h2 style="margin:0 0 6px;font-size:20px">Frasi &amp; ascolto</h2>`));
     stage.appendChild($(`<p style="color:var(--muted);margin:0 0 20px;font-size:14px">Scegli il livello di difficoltà:</p>`));
@@ -3094,6 +3196,7 @@ function runPhrase(level){
   // Corpus di parole "piene" da frasi + voci per i distrattori
   const corpusWords = [...new Set([
     ...(DB.frasi||[]).flatMap(f=>(f.ru||'').replace(/[.!?,;:—]/g,'').split(' ').map(w=>w.trim())),
+    ...(custom||[]).flatMap(f=>(f.ru||'').replace(/[.!?,;:—]/g,'').split(' ').map(w=>w.trim())),
     ...(DB.voci||[]).map(v=>(v.ru||'').replace(/[.,!?;:]/g,'').split(' ')[0])
   ].filter(w=>w.length>=3 && /[а-яё]/i.test(w) && !SKIP.has(w.toLowerCase())))];
 
@@ -3138,18 +3241,20 @@ function runPhrase(level){
     return result;
   }
 
-  const allFrasi = DB.frasi||[];
-  const filtered = level===0 ? allFrasi : allFrasi.filter(f=>f.difficolta===level);
+  const allFrasi = custom || DB.frasi || [];
+  const filtered = custom || (level===0 ? allFrasi : allFrasi.filter(f=>f.difficolta===level));
   const pool = filtered.length ? filtered : allFrasi;
-  const deck = sample(pool, Math.min(8, pool.length));
+  // Il mazzo personalizzato si allena per intero; altrimenti 8 frasi a caso.
+  const deck = custom ? shuffle([...pool]) : sample(pool, Math.min(8, pool.length));
   if(!deck.length) return;
   let i=0;
   const stage = header();
+  if(opts && opts.titolo) stage.appendChild($(`<div style="text-align:center;font-size:12px;color:var(--muted);margin-bottom:10px">${opts.titolo}</div>`));
   const bar = progressBar(stage);
   const wrap = $(`<div style="width:100%"></div>`); stage.appendChild(wrap);
 
   function show(){
-    if(i>=deck.length) return finish(stage,"Sezione completata", ()=>runPhrase(level));
+    if(i>=deck.length) return finish(stage,"Sezione completata", ()=>runPhrase(level, opts));
     bar.style.width=(i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const f=deck[i];
     const sentence = f.ru || '';
@@ -3159,9 +3264,15 @@ function runPhrase(level){
     // Preferisci parole "piene" (lunghe ≥4, non parole funzione)
     const candidates = clean.map((w,idx)=>({w,idx}))
       .filter(({w})=>w.length>=4 && /[а-яё]/i.test(w) && !SKIP.has(w.toLowerCase()));
+    // Se non c'è nessuna parola "piena" (frasi cortissime come «Это дом.»)
+    // si nasconde comunque la parola russa più lunga, non la prima a caso.
+    const fallback = clean.map((w,idx)=>({w,idx}))
+      .filter(({w})=>/[а-яё]/i.test(w))
+      .sort((a,b)=>(SKIP.has(a.w.toLowerCase())-SKIP.has(b.w.toLowerCase())) || (b.w.length-a.w.length))[0]
+      || {w: clean[0], idx: 0};
     const {w: answer, idx: hideIdx} = candidates.length
       ? candidates[Math.floor(Math.random()*candidates.length)]
-      : {w: clean[0], idx: 0};
+      : fallback;
 
     const masked = rawWords.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
     const deckWords = deck
