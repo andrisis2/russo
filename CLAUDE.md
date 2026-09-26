@@ -14,6 +14,7 @@ Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura 
 
 ## ⚠️ PRIMA DI TUTTO
 **Leggi `STATO.md`**: dice a che punto siamo col video e come proseguire la trascrizione. È la fonte di verità sull'avanzamento.
+**Le lezioni di Yula sono in pausa per scelta dell'utente (26/09/2026)**: non riprendere la pipeline video se l'utente non la richiede; si lavora su contenuti e funzioni dell'app.
 
 ## Dove vive tutto (è TUTTO su GitHub)
 - **Repo:** https://github.com/andrisis2/russo (account `andrisis2`)
