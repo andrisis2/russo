@@ -5,7 +5,9 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
 ## Come funziona
 - **`knowledge.json`** — la base di conoscenza: vocaboli, frasi, alfabeto e regole. È la fonte unica di verità che alimenta tutti gli esercizi. Quando studio nuovo materiale, le voci vengono aggiunte qui.
 - **`note.md`** — spiegazioni grammaticali discorsive (lettura, non esercizi).
-- **`index.html`** — l'app, divisa in **Pratica** e **Teoria**.
+- **`index.html`** — l'app. In cima alla home il saluto in russo (tocca per ascoltarlo), la card del
+  **Ripasso del giorno** con l'anello di avanzamento e la serie di giorni di fila, e **I miei esercizi**;
+  sotto, due schede: **Pratica** e **Teoria** (si passa dall'una all'altra anche con uno swipe).
 
   **Pratica**
   - 📅 **Ripasso del giorno** — il mazzo quotidiano scelto dalla ripetizione dilazionata, con la serie di giorni di fila.
@@ -13,7 +15,7 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
   - ✍️ **Scrittura** — l'unico esercizio in cui la parola russa va **prodotta**, non riconosciuta: dall'italiano o
     sotto **dettato**, con **tastiera cirillica a schermo** (niente layout russo da installare) e correzione
     lettera per lettera.
-  - ✏️ **Coniugazione** — allenamento sulle forme verbali.
+  - ✏️ **Coniugazione** — allenamento sulle forme verbali, con la stessa tastiera cirillica a schermo.
   - 💬 **Frasi & ascolto** — completa la frase + pronuncia (text-to-speech russo del dispositivo).
   - 🧠 **Memory** — abbinamento RU↔IT a tempo.
   - 📈 **Progressi** — quante parole sono imparate/in corso/da scoprire, precisione, mappa dello studio delle
@@ -22,9 +24,12 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
   - 🎙️ **Conversa con Vika** — chiacchierata in russo con la tutor IA.
 
   **Teoria**
-  - 📖 **Vocabolario** — dizionario con ricerca. 📺 **Verbi** — coniugazioni complete.
-  - 🔤 **Cirillico** — alfabeto e pronuncia. 📚 **Regole grammaticali** — tabelle di consultazione.
-  - 📐 **Grammatica** — quiz su generi e pronomi. 🧩 **Frasi & grammatica** — frasi spiegate parola per parola.
+  - 📖 **Vocabolario** — dizionario con ricerca (prima le corrispondenze esatte) e argomenti; se una parola
+    manca, la cerca online. ⚡ **Verbi** — coniugazioni complete, con ricerca e allenamento sul singolo verbo.
+  - 🔤 **Cirillico** — alfabeto, pronuncia e quiz sulle lettere. 📚 **Regole grammaticali** — tabelle di
+    consultazione con indice che segue la lettura.
+  - 📐 **Grammatica** — regole in breve e quiz, anche su una regola sola. 🧩 **Frasi & grammatica** — frasi
+    spiegate parola per parola, filtrabili per parola o regola.
 
 - ⚙️ **Impostazioni** (in fondo alla home) — tema chiaro/scuro/auto, velocità della voce, quante carte al giorno,
   tastiera cirillica, e soprattutto **backup**: i progressi vivono solo sul dispositivo, quindi si possono

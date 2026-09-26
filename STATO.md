@@ -10,7 +10,10 @@
 - **Livello utente:** A1. **Ritmo concordato:** a blocchi (~5 lezioni). **Formato confermato:** riassunto + trascrizione + vocaboli/frasi/grammatica nell'app.
 
 ## Com'è fatta l'app
-- `index.html` — PWA, legge `knowledge.json`. Home a due schede: **Pratica** (Ripasso del giorno, Flashcard, Scrittura, Coniugazione, Frasi&ascolto, Memory, Progressi, Vika) e **Teoria** (Vocabolario, Verbi, Cirillico, Regole, Grammatica, Frasi&grammatica). SRS (Leitner) salvato in `localStorage`.
+- `index.html` — PWA, legge `knowledge.json`. Home: saluto in russo (tocca per ascoltarlo), card **Ripasso del giorno** con anello di avanzamento e serie (`makeDailyHero`/`dailyProgress`), **I miei esercizi**, poi due schede: **Pratica** (Flashcard, Scrittura, Coniugazione, Frasi&ascolto, Memory, Progressi, Vika) e **Teoria** (Vocabolario, Verbi, Cirillico, Regole, Grammatica, Frasi&grammatica). SRS (Leitner) salvato in `localStorage`.
+- **Navigazione**: `navigateTo(fn)` spinge ogni schermata nella storia (anche i sotto-menu: livelli, tempi, quiz), il tasto Indietro torna al livello precedente e ritrova il punto a cui si era scorso (`_scrollAt`). `header(titolo, {narrow})` apre una schermata interna col titolo nella barra; ciò che va chiuso uscendo (microfono di Vika, timer, tasti) si registra con `onLeave(fn)`.
+- **Grafica**: tutti i colori sono token CSS in `:root` (tema scuro = stessi token ridefiniti, niente eccezioni per componente); icone SVG in uno sprite in cima al `<body>`, usate con `ic('nome')`. Mura del Cremlino nella barra: alte con le torri in home (`body.is-home`), striscia sottile nelle altre pagine.
+- **Tastiera cirillica a schermo** (`makeCyrKeyboard`): in Scrittura e Coniugazione (si spegne dalle Impostazioni).
 - **Scrittura** (`runScrittura`): dall'italiano o sotto dettato, tastiera cirillica a schermo (`KBD_ROWS`), confronto indulgente (`normWrite`: niente maiuscole/accenti, ё=е).
 - **Progressi** (`runProgressi`): stato del dizionario, mappa attività 18 settimane (chiave `russo_activity_v1`, alimentata da `grade()`), previsione ripassi a 7 giorni, parole ostiche.
 - **Impostazioni** (`runImpostazioni`, chiave `russo_settings_v1`): tema auto/chiaro/scuro (`data-theme` sull'`<html>`), velocità TTS, carte al giorno, tastiera cirillica, **export/import JSON dei progressi** e azzeramento.
@@ -73,8 +76,8 @@ Legenda: ✅ fatto · ⬜ da fare · ⏪ **PROSSIMO**
 
 ## CONTENUTI GIÀ NELL'APP (per non duplicare id)
 - `knowledge.json` **versione 4** — **87 voci** (ultimo id `v087`), **23 frasi** (ultimo `f023`), **12 regole** quiz (ultimo `g012`).
-- **Sezione `riferimento`** (chiave a parte): 8 schede di consultazione "Regole grammaticali" (`r001`–`r008`: sei casi, pronomi declinati, possessivi, verbi al presente, passato, aspetto, plurale, numeri). Generata da `scripts/add_riferimento.py` (idempotente). NON sono drill: solo display + tap-per-ascoltare. Resa in `index.html` da `runReference()`. **Service worker: cache attuale `russo-v49`** (se modifichi `index.html` ricordati di bumpare la cache in `sw.js`, altrimenti i client di ritorno non vedono il nuovo file).
-- **Tema grafico: chiaro** (light theme, palette in `:root` di `index.html`, `theme_color` bianco in `manifest.json`). Card bianche con ombre, icone in badge, titolo a gradiente rosso→blu.
+- **Sezione `riferimento`** (chiave a parte): 8 schede di consultazione "Regole grammaticali" (`r001`–`r008`: sei casi, pronomi declinati, possessivi, verbi al presente, passato, aspetto, plurale, numeri). Generata da `scripts/add_riferimento.py` (idempotente). NON sono drill: solo display + tap-per-ascoltare. Resa in `index.html` da `runReference()`. **Service worker: cache attuale `russo-v50`** (se modifichi `index.html` ricordati di bumpare la cache in `sw.js`, altrimenti i client di ritorno non vedono il nuovo file).
+- **Tema grafico**: chiaro di default, scuro automatico o forzato (token in `:root` di `index.html`, `theme_color` bianco in `manifest.json`). Card bianche con ombre morbide, icone SVG su quadrati a gradiente, rosso Cremlino + blu come accenti, oro per serie e record.
 - Lezioni elaborate: **L01, L02, L03, 1000-parole, L04, L05**.
 - Prossimi id da usare: voci `v088…`, frasi `f024…`, grammatica `g013…`.
 
