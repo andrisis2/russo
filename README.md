@@ -17,7 +17,11 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
   **＋ Salva** mette la parola o la frase negli esercizi, e 🎤 **Pronuncia** ti ascolta.
 
   **Pratica**
-  - 📅 **Ripasso del giorno** — il mazzo quotidiano scelto dalla ripetizione dilazionata, con la serie di giorni di fila.
+  - 📅 **Ripasso del giorno** — 10 attività miste ogni giorno (15 o 20 dalle Impostazioni), non solo flashcard:
+    parole (da girare o con la traduzione da scegliere), un **verbo del giorno** da studiare in tutte le sue forme e
+    poi da riconoscere, frasi da comporre o completare, casi, verbi di moto, regole, numeri, battute dei dialoghi,
+    proverbi. Le parole le sceglie la ripetizione dilazionata; il tipo di grammatica e di «varie» cambia ogni giorno.
+    Con la serie di giorni di fila.
   - 🃏 **Flashcard** — vocaboli RU↔IT per livello o argomento (sistema Leitner: ciò che sbagli torna più spesso).
   - ✍️ **Scrittura** — l'unico esercizio in cui la parola russa va **prodotta**, non riconosciuta: dall'italiano o
     sotto **dettato**, con **tastiera cirillica a schermo** (niente layout russo da installare) e correzione
