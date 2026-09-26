@@ -458,6 +458,9 @@
   .qsub{font-size:14.5px;color:var(--muted);text-align:center;line-height:1.45}
   .qcard{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 18px;box-shadow:var(--shadow);display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;animation:cardIn .3s cubic-bezier(.2,.8,.3,1) both}
   .qcard .kick{font-size:11.5px;color:var(--accent2);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+  /* ripasso del giorno misto: etichetta del tipo di attività */
+  .rp-kick{align-self:center;display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:99px;background:var(--accent2-soft);color:var(--accent2-ink);font-size:12px;font-weight:800;letter-spacing:.02em}
+  .qcard .rp-tr{color:var(--accent2);font-style:italic;margin-top:-4px}
   .qcard .big-it{font-size:28px;font-weight:800;letter-spacing:-.4px;line-height:1.2}
   .qcard .blank{font-size:23px;font-weight:800;margin-top:8px;display:flex;align-items:baseline;gap:10px;justify-content:center;flex-wrap:wrap}
   .qcard .blank .pron{color:var(--muted);font-size:19px;font-weight:700}
@@ -1630,8 +1633,8 @@ function normConj(s){ return (s||"").toLowerCase().trim().replace(/\s+/g," "); }
 function normYo(s){ return s.replace(/ё/g,"е"); }
 
 const DAILY_KEY = "russo_daily_v1";
-// Quante carte propone il ripasso del giorno: si cambia dalle Impostazioni.
-function dailySize(){ const n = settings().dailySize; return [10,20,30,50].includes(n) ? n : 20; }
+// Quante attività propone il ripasso del giorno: si cambia dalle Impostazioni.
+function dailySize(){ const n = settings().dailySize; return [10,15,20].includes(n) ? n : 10; }
 function dateStr(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
 function todayStr(){ return dateStr(new Date()); }
 function yesterdayStr(){ const d=new Date(); d.setDate(d.getDate()-1); return dateStr(d); }
@@ -1649,28 +1652,137 @@ function recordDailyDone(){
   localStorage.setItem(DAILY_KEY, JSON.stringify(s));
   if(primaOggi) addXP(50);
 }
-// Restituisce le stesse 20 carte per tutto il giorno.
-// Si rinnova solo a mezzanotte o dopo aver completato il mazzo.
-function getDailyCards(){
-  const allVoci = DB ? (DB.voci||[]) : [];
-  if(!allVoci.length) return [];
+// ================= RIPASSO DEL GIORNO: attività miste =================
+// Non solo flashcard: ogni giorno un mazzo di attività prese da tutta l'app —
+// parole (carta o scelta della traduzione), un verbo da studiare con tutte le
+// sue forme, frasi da comporre o completare, casi, verbi di moto, regole,
+// numeri, battute dei dialoghi, proverbi. Il mazzo resta lo stesso per tutta
+// la giornata (russo_daily_v1.items) e si riprende da dove si era arrivati
+// (pos); si rinnova a mezzanotte o dopo averlo completato.
+const RIPASSO_TIPI = {
+  parola:   ['🃏', 'Parola',            'parola'],
+  verbo:    ['✏️', 'Verbo del giorno',  'verbo'],
+  componi:  ['🧩', 'Componi la frase',  'frase'],
+  completa: ['🎧', 'Completa la frase', 'frase'],
+  caso:     ['📐', 'Casi',              'gram'],
+  moto:     ['🚶', 'Verbi di moto',     'gram'],
+  regola:   ['📏', 'Regola in breve',   'gram'],
+  numero:   ['🔢', 'Numeri',            'varie'],
+  dialogo:  ['🎭', 'Cosa rispondi?',    'varie'],
+  proverbio:['📜', 'Proverbio',         'varie'],
+};
+function updDaily(fn){ const s = dailyState(); fn(s); localStorage.setItem(DAILY_KEY, JSON.stringify(s)); return s; }
+function getDailyItems(){
+  if(!DB) return [];
   const s = dailyState(), t = todayStr();
-  const validIds = new Set(allVoci.map(v=>v.id));
-  // Stesso giorno e non ancora completato → riusa le carte salvate
-  if(s.date===t && !s.completed && s.cards && s.cards.length){
-    const still = s.cards.filter(id=>validIds.has(id));
-    if(still.length) return allVoci.filter(v=>still.includes(v.id));
-  }
-  // Nuovo giorno oppure mazzo completato → seleziona nuove 20 carte
-  const due = allVoci.filter(v=>isDue(v.id)).sort((a,b)=>dueScore(b.id)-dueScore(a.id));
-  const notDue = shuffle(allVoci.filter(v=>!isDue(v.id)));
-  const pool = [...due, ...notDue].slice(0, dailySize());
-  const saved = dailyState();
-  saved.date=t; saved.cards=pool.map(v=>v.id); saved.completed=false;
-  localStorage.setItem(DAILY_KEY, JSON.stringify(saved));
-  return pool;
+  if(s.date===t && !s.completed && Array.isArray(s.items) && s.items.length) return s.items;
+  const items = componiRipasso(dailySize());
+  updDaily(x=>{ x.date=t; x.items=items; x.pos=0; x.ok=0; x.tot=0; x.completed=false; delete x.cards; });
+  return items;
 }
-function dailyPool(){ return getDailyCards(); }
+// I verbi del ripasso: il tempo principale (presente, o futuro semplice per i perfettivi)
+const verboRipassabile = v => v && v.coniugazioni && ['pres','fut'].some(k=>(v.coniugazioni[k]||[]).length===6);
+const verboTempo = v => (v.coniugazioni.pres||[]).length===6 ? 'pres' : 'fut';
+// Battute dei dialoghi a cui rispondere: la tua battuta subito dopo quella dell'altro
+function battuteRisposta(d){
+  const mio = dlgMio(d);
+  return d.battute.map((b,k)=>k).filter(k=>k>0 && d.battute[k].s===mio && d.battute[k-1].s!==mio);
+}
+function componiRipasso(n){
+  const nVerbi = Math.max(1, Math.round(n/10));
+  const nFrasi = Math.max(1, Math.round(n*0.2));
+  const nGram  = Math.max(1, Math.round(n*0.2));
+  const nVarie = Math.max(1, Math.round(n/10));
+  const out = [];
+  const giorno = giornoN();
+  // gira l'elenco in base al giorno: oggi si parte dai casi, domani dai verbi di moto…
+  const ruota = a => a.map((x,k)=>a[(k+giorno)%a.length]);
+
+  // Verbo: quelli con più forme da ripassare (le mai viste contano come da ripassare)
+  const verbi = shuffle((DB.verbi||[]).filter(verboRipassabile));
+  const daRipassare = v => { const tk = verboTempo(v); return v.coniugazioni[tk].filter((f,p)=>isDue(`conj:${v.inf}:${tk}:${p}`)).length; };
+  verbi.sort((a,b)=>daRipassare(b)-daRipassare(a)).slice(0, nVerbi).forEach(v=>out.push({t:'verbo', id:v.id}));
+
+  // Frasi: prima quelle da ripassare, a turno da comporre e da completare
+  const nW = f => paroleFrase(f.ru).length;
+  const frasi = shuffle((DB.frasi||[]).filter(f=>f.ru && f.it && nW(f)>=3 && nW(f)<=8))
+    .sort((a,b)=>(isDue(b.id)?1:0)-(isDue(a.id)?1:0)).slice(0, nFrasi);
+  const primo = giorno % 2;
+  frasi.forEach((f,k)=>out.push({t:(k+primo)%2 ? 'completa' : 'componi', id:f.id}));
+
+  // Grammatica e varie: un tipo dopo l'altro, senza ripetere lo stesso esercizio
+  const usati = new Set();
+  const pesca = (tipo)=>{
+    for(let tent=0; tent<12; tent++){
+      let it = null;
+      if(tipo==='caso'){ const c = DB.casi||[]; if(c.length) it = {t:'caso', k:rnd(0, c.length-1)}; }
+      else if(tipo==='moto'){ const f = (DB.verbiMoto||{}).frasi||[]; if(f.length) it = {t:'moto', k:rnd(0, f.length-1)}; }
+      else if(tipo==='regola'){
+        const g = (DB.grammatica||[]).filter(x=>(x.drill||[]).length>=2);
+        if(g.length){ const r = g[rnd(0, g.length-1)]; it = {t:'regola', g:r.id, k:rnd(0, r.drill.length-1)}; }
+      }
+      else if(tipo==='numero'){ const [, , lo, hi] = numRange(); it = {t:'numero', n:rnd(lo, hi)}; }
+      else if(tipo==='dialogo'){
+        const d = (DB.dialoghi||[]).filter(x=>battuteRisposta(x).length);
+        if(d.length){ const x = d[rnd(0, d.length-1)], ks = battuteRisposta(x); it = {t:'dialogo', d:x.id, k:ks[rnd(0, ks.length-1)]}; }
+      }
+      else if(tipo==='proverbio'){
+        const p = DB.proverbi||[], ok = p.map((x,k)=>k).filter(k=>p[k].it);
+        if(ok.length >= 4) it = {t:'proverbio', k:ok[rnd(0, ok.length-1)]};
+      }
+      if(!it) return null;
+      const key = JSON.stringify(it);
+      if(!usati.has(key)){ usati.add(key); return it; }
+    }
+    return null;
+  };
+  const riempi = (tipi, quanti)=>{
+    let messi = 0;
+    for(let k=0; messi<quanti && k<quanti*3; k++){ const it = pesca(tipi[k % tipi.length]); if(it){ out.push(it); messi++; } }
+  };
+  riempi(ruota(['caso','moto','regola']), nGram);
+  riempi(ruota(['numero','dialogo','proverbio']), nVarie);
+
+  // Parole: tutto il resto, le più urgenti per prime; a turno carta e scelta
+  const voci = (DB.voci||[]).filter(v=>v.ru && v.it);
+  const due = voci.filter(v=>isDue(v.id)).sort((a,b)=>dueScore(b.id)-dueScore(a.id));
+  const notDue = shuffle(voci.filter(v=>!isDue(v.id)));
+  // le urgenti a pari merito (mai viste) si mescolano, così non escono sempre le stesse
+  const mai = shuffle(due.filter(v=>dueScore(v.id)===Number.MAX_SAFE_INTEGER));
+  const scadute = due.filter(v=>dueScore(v.id)!==Number.MAX_SAFE_INTEGER);
+  [...scadute, ...mai, ...notDue].slice(0, Math.max(0, n - out.length))
+    .forEach((v,k)=>out.push({t:'parola', id:v.id, m:k%2 ? 'scelta' : 'carta'}));
+  return mescolaRipasso(out);
+}
+// Si parte con una parola per scaldarsi, poi mai due attività dello stesso genere di fila
+function mescolaRipasso(items){
+  const gruppi = {};
+  items.forEach(x=>{ const g = (RIPASSO_TIPI[x.t]||[])[2] || x.t; (gruppi[g] = gruppi[g] || []).push(x); });
+  const out = []; let prev = null;
+  while(out.length < items.length){
+    let keys = Object.keys(gruppi).filter(g=>gruppi[g].length);
+    if(!out.length && keys.includes('parola')) keys = ['parola'];
+    const altri = keys.filter(g=>g!==prev);
+    const scelta = altri.length ? altri : keys;
+    // peso = quante ne restano al quadrato: i gruppi grossi si smaltiscono prima e non restano in coda
+    const peso = g => gruppi[g].length * gruppi[g].length;
+    let r = Math.random() * scelta.reduce((a,g)=>a+peso(g), 0), g = scelta[0];
+    for(const k of scelta){ r -= peso(k); if(r < 0){ g = k; break; } }
+    out.push(gruppi[g].shift()); prev = g;
+  }
+  return out;
+}
+// "4 parole, un verbo, frasi, casi e un proverbio" per la card in home
+function riassuntoRipasso(items){
+  const nomi = {parola:null, verbo:'un verbo', componi:'frasi', completa:'frasi', caso:'casi', moto:'verbi di moto',
+                regola:'regole', numero:'numeri', dialogo:'dialoghi', proverbio:'un proverbio'};
+  const np = items.filter(x=>x.t==='parola').length, nv = items.filter(x=>x.t==='verbo').length;
+  if(nv > 1) nomi.verbo = `${nv} verbi`;
+  const parti = np ? [plur(np, 'parola', 'parole')] : [];
+  // ordine fisso, non quello del mazzo: la card in home si legge sempre allo stesso modo
+  Object.keys(nomi).forEach(t=>{ const s = nomi[t]; if(s && items.some(x=>x.t===t) && !parti.includes(s)) parti.push(s); });
+  return parti.length > 1 ? parti.slice(0,-1).join(', ') + ' e ' + parti[parti.length-1] : (parti[0] || '');
+}
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("backBtn");
@@ -1862,18 +1974,10 @@ function salutoRusso(){
 // "2026-09-21" → "21/09/2026"
 function fmtData(iso){ const m = String(iso||'').match(/^(\d{4})-(\d{2})-(\d{2})/); return m ? `${m[3]}/${m[2]}/${m[1]}` : (iso||''); }
 
-// Avanzamento del ripasso di oggi. "Fatte" = carte del mazzo già sapute oggi,
-// "restano" = carte del mazzo ancora in scadenza. Le carte del mazzo che non
-// erano da ripassare (e che oggi non sono state toccate) non contano.
+// Avanzamento del ripasso di oggi: quante attività del mazzo sono già fatte.
 function dailyProgress(){
-  const deck = getDailyCards();
-  const t0 = new Date(); t0.setHours(0,0,0,0);
-  let fatte = 0, restano = 0;
-  deck.forEach(v=>{
-    if(isDue(v.id)) restano++;
-    else if(((srs[v.id]||{}).last||0) >= t0.getTime()) fatte++;
-  });
-  return {fatte, restano, totale: fatte+restano, completatoOggi: dailyState().last === todayStr()};
+  const items = getDailyItems(), pos = Math.min(dailyState().pos||0, items.length);
+  return {fatte: pos, restano: items.length-pos, totale: items.length, items, completatoOggi: dailyState().last === todayStr()};
 }
 
 // Anello di avanzamento SVG (usato dalla card del ripasso)
@@ -1891,19 +1995,14 @@ function makeDailyHero(){
     // mazzo di oggi finito: ne è già pronto un altro, se si vuole continuare
     frac = 1; lab = ic('check');
     title = "Fatto per oggi!";
-    sub = p.restano ? "Ottimo lavoro. Se vuoi, allenati con altre carte." : "Ottimo lavoro, torna domani.";
-    cta = p.restano ? `${ic('plus')} Altre ${p.restano} carte` : `${ic('check')} Completato`;
-  } else if(!p.restano){
-    frac = 1; lab = ic('check');
-    title = "Tutto in pari";
-    sub = "Nessuna carta da ripassare adesso: torna più tardi.";
-    cta = `${ic('check')} In pari`;
+    sub = "Ottimo lavoro. Se vuoi, fai un altro giro con attività nuove.";
+    cta = `${ic('plus')} Un altro giro`;
   } else {
     frac = p.totale ? p.fatte/p.totale : 0;
     lab = `<b>${p.fatte}</b><small>di ${p.totale}</small>`;
     // mazzo di oggi già finito: questo è un giro in più
     title = p.completatoOggi ? "Ripasso extra" : p.fatte ? "Continua il ripasso" : "Ripasso del giorno";
-    sub = p.fatte ? `Ne mancano ${p.restano}: ci vogliono pochi minuti.` : `${p.restano} carte scelte per te dalla ripetizione dilazionata.`;
+    sub = p.fatte ? `Ne mancano ${p.restano}: ci vogliono pochi minuti.` : `${p.totale} attività miste: ${riassuntoRipasso(p.items)}.`;
     cta = `${ic('play')} ${p.fatte ? "Continua" : "Inizia"}`;
   }
   const chip = streak>0 ? `<span class="chip-streak">${ic('flame')} ${plur(streak,'giorno','giorni')} di fila</span>` : "";
@@ -3831,20 +3930,469 @@ function runFlash(pool, topicLabel, opts){
   advance();
 }
 
+// Il ripasso misto: un'attività alla volta, ognuna col suo esercizio. Ogni
+// attività finita si salva subito (pos, giuste, risposte): uscendo e rientrando
+// si riparte dalla successiva.
 function runDaily(){
-  const pool = dailyPool();
-  if(!pool.length){
-    const stage = header('Ripasso del giorno', {narrow:true});
-    emptyDone(stage, '🎉', 'Tutto ripassato!', 'Non hai carte in attesa oggi. Torna domani per continuare la serie.');
-    return;
+  const items = getDailyItems();
+  const stage = header('Ripasso del giorno', {narrow:true});
+  if(!items.length) return emptyDone(stage, '📭', 'Niente da ripassare', 'Non trovo contenuti per il ripasso di oggi.');
+  const bar = progressBar(stage);
+  const wrap = $(`<div class="list" style="gap:12px"></div>`); stage.appendChild(wrap);
+  // tasti dell'attività in corso (1-4 scelgono, spazio gira, invio prosegue)
+  let onKey = null;
+  const keyh = e=>{ if(e.target && /INPUT|TEXTAREA/.test(e.target.tagName)) return; if(onKey) onKey(e); };
+  document.addEventListener('keydown', keyh);
+  onLeave(()=>{ document.removeEventListener('keydown', keyh); stopSpeech(); });
+
+  function show(){
+    const s = dailyState(), pos = s.pos || 0;
+    onKey = null;
+    if(pos >= items.length){
+      document.removeEventListener('keydown', keyh);
+      const ok = s.ok || 0, tot = s.tot || 0;
+      recordDailyDone();
+      return finish(stage, `${ok} / ${tot}`, runDaily, {
+        titolo: 'Ripasso completato!',
+        testo: `${plur(items.length, 'attività', 'attività')}: ${riassuntoRipasso(items)}. ${ok} risposte giuste su ${tot}.`
+      });
+    }
+    bar.style.width = (pos/items.length*100)+'%'; bar.setNum(pos, items.length);
+    wrap.innerHTML = '';
+    const it = items[pos], tipo = RIPASSO_TIPI[it.t] || ['•', ''];
+    const kick = $(`<div class="rp-kick"><span></span></div>`);
+    kick.querySelector('span').textContent = `${tipo[0]} ${tipo[1]}`;
+    wrap.appendChild(kick);
+    let chiuso = false;
+    const ctx = {
+      wrap, kick,
+      keys(fn){ onKey = fn; },
+      // attività finita: si salva e compare «Avanti» (subito avanti con auto)
+      fatto(giuste, totali, auto){
+        if(chiuso) return; chiuso = true;
+        updDaily(x=>{ x.pos = pos+1; x.ok = (x.ok||0) + giuste; x.tot = (x.tot||0) + totali; });
+        if(auto) return show();
+        const next = $(`<button class="btn primary block" type="button">${pos+1<items.length ? 'Avanti' : 'Risultato'} →</button>`);
+        next.onclick = show;
+        wrap.appendChild(next);
+        onKey = e=>{ if(e.key==='Enter'){ e.preventDefault(); show(); } };
+      }
+    };
+    const fn = RIPASSO_RENDER[it.t];
+    let ok = false;
+    try{ ok = fn ? fn(it, ctx) !== false : false; }catch(e){ console.error(e); ok = false; }
+    // contenuto sparito da knowledge.json (o esercizio non valido): si salta
+    if(!ok){ updDaily(x=>{ x.pos = pos+1; }); show(); }
   }
-  // Stesso meccanismo delle altre sezioni: le più urgenti per prime, max dailySize().
-  runFlash(pool, "Ripasso del giorno", {
-    limit: dailySize(),
-    restart: runDaily,
-    onComplete: recordDailyDone
-  });
+  show();
 }
+
+// Scelta multipla dentro il ripasso: disegna le opzioni sotto la card e,
+// alla risposta, colora giusta/sbagliata e chiama dopo(ok).
+function rpOpzioni(ctx, opts, giusta, dopo){
+  const box = $(`<div class="options"></div>`);
+  let answered = false;
+  opts.forEach((o,k)=>{
+    const b = $(`<button class="opt${String(o).length>24?' long':''}" type="button"><span class="kn">${k+1}</span></button>`);
+    b.dataset.v = o;
+    b.appendChild(document.createTextNode(o));
+    b.onclick = ()=>{
+      if(answered) return;
+      answered = true;
+      [...box.children].forEach(c=>c.disabled=true);
+      const ok = o===giusta;
+      b.classList.add(ok ? 'correct' : 'wrong');
+      if(!ok){ const g = [...box.children].find(c=>c.dataset.v===giusta); if(g) g.classList.add('correct'); }
+      haptic(ok);
+      dopo(ok);
+    };
+    box.appendChild(b);
+  });
+  ctx.wrap.appendChild(box);
+  ctx.keys(e=>{ const k = parseInt(e.key,10); if(!answered && k>=1 && k<=opts.length) box.children[k-1].click(); });
+  return box;
+}
+// Card domanda standard: testo grande (russo o italiano), sottotitolo, «Ascolta»
+function rpCard(ctx, q, sub, ascolta){
+  const card = $(`<div class="qcard"><div class="q"></div><div class="qsub"></div></div>`);
+  const qEl = card.querySelector('.q');
+  qEl.textContent = q;
+  qEl.style.fontSize = Math.max(20, 30 - Math.max(0, String(q).length-12)*0.8) + 'px';
+  card.querySelector('.qsub').textContent = sub || '';
+  if(ascolta){
+    const sp = $(`<button class="btn soft sm listen-btn" type="button">${ic('vol')} Ascolta</button>`);
+    sp.onclick = ()=>speak(ascolta); card.appendChild(sp);
+  }
+  ctx.wrap.appendChild(card);
+  return card;
+}
+const rpNota = (card, testo)=>{ if(!testo) return; const a = $(`<div class="qsub q-after"></div>`); a.textContent = testo; card.appendChild(a); };
+// distrattori unici e diversi dalla risposta
+const rpDistr = (giusta, altre, n) => sample([...new Set(altre.filter(x=>x && x!==giusta))], n || 3);
+
+const RIPASSO_RENDER = {
+  // --- Parola: flashcard da girare, oppure scegli la traduzione ---
+  parola(it, ctx){
+    const v = (DB.voci||[]).find(x=>x.id===it.id);
+    if(!v) return false;
+    if(it.m==='scelta'){
+      const altre = (DB.voci||[]).filter(x=>x.it && x.it.length<=32 && x.it!==v.it).map(x=>x.it);
+      const opts = shuffle([v.it, ...rpDistr(v.it, sample(altre, 30))]);
+      ctx.kick.querySelector('span').textContent = '🃏 Parola · cosa vuol dire?';
+      const card = rpCard(ctx, v.ru, v.translit || '', v.ru);
+      card.querySelector('.q').setAttribute('lang', 'ru');
+      rpOpzioni(ctx, opts, v.it, ok=>{
+        grade(v.id, ok);
+        speak(v.ru);
+        card.appendChild(azioniTesto(v.ru, v.it, {translit:v.translit, tipo:v.tipo, tag:v.tag}));
+        const decl = makeDeclensionBlock(v.ru, v.tipo, v.tag);
+        if(decl) ctx.wrap.appendChild(decl);
+        ctx.fatto(ok?1:0, 1);
+      });
+      return;
+    }
+    const ruFront = localStorage.getItem('flashDirRu')!=='it-ru';
+    const front = ruFront ? v.ru : v.it, back = ruFront ? v.it : v.ru;
+    const gtag = genderBadgeHTML(v.ru, v.tipo, v.tag);
+    const spk = `<button class="speak" type="button" title="Ascolta" aria-label="Ascolta">${ic('vol')}</button>`;
+    const sz = (t, max, min)=>`style="font-size:${fitSize(t, max, min)}px"`;
+    const flip = $(`
+      <div class="flip" role="button" tabindex="0" aria-label="Gira la carta">
+        <div class="flash">
+          <div class="face front">
+            ${gtag}${ruFront ? spk : ''}
+            <div class="${ruFront?'ru':'it'}" ${ruFront?sz(front,44,26):sz(front,30,20)}>${esc(front)}</div>
+            ${ruFront && v.translit ? `<div class="translit">${esc(v.translit)}</div>` : ''}
+            <div class="hint">${ic('rotate')} tocca per girare</div>
+          </div>
+          <div class="face back">
+            ${gtag}${!ruFront ? spk : ''}
+            <div class="${ruFront?'it':'ru'}" ${ruFront?sz(back,30,20):sz(back,44,26)}>${esc(back)}</div>
+            ${!ruFront && v.translit ? `<div class="translit">${esc(v.translit)}</div>` : ''}
+            <div class="small">${esc(front)}</div>
+          </div>
+        </div>
+      </div>`);
+    flip.querySelector('.speak').onclick = e=>{ e.stopPropagation(); speak(v.ru); };
+    const reveal = $(`<button class="btn block" type="button">${ic('rotate')} Mostra la risposta <span class="kbd-hint">spazio</span></button>`);
+    const controls = $(`<div class="grade-row hidden">
+        <button class="btn bad" type="button">${ic('x')} Da ripassare <span class="kbd-hint">1</span></button>
+        <button class="btn good" type="button">${ic('check')} La sapevo <span class="kbd-hint">2</span></button>
+      </div>`);
+    const acts = azioniTesto(v.ru, v.it, {translit:v.translit, tipo:v.tipo, tag:v.tag});
+    acts.classList.add('hidden');
+    const decl = makeDeclensionBlock(v.ru, v.tipo, v.tag);
+    let girata = false, votata = false;
+    const gira = ()=>{
+      if(girata) return; girata = true;
+      flip.classList.add('flipped'); reveal.classList.add('hidden');
+      controls.classList.remove('hidden'); acts.classList.remove('hidden');
+      if(decl) decl.style.display = '';
+      if(!ruFront) setTimeout(()=>speak(v.ru), 200);
+    };
+    const vota = ok=>{
+      if(!girata || votata) return; votata = true;
+      haptic(ok); grade(v.id, ok);
+      ctx.fatto(ok?1:0, 1, true);
+    };
+    flip.onclick = gira; reveal.onclick = gira;
+    controls.children[0].onclick = ()=>vota(false);
+    controls.children[1].onclick = ()=>vota(true);
+    ctx.wrap.append(flip, reveal, controls, acts);
+    if(decl){ decl.style.display = ruFront ? '' : 'none'; ctx.wrap.appendChild(decl); }
+    ctx.keys(e=>{
+      if(e.key===' ' || e.key==='Enter'){ if(!girata){ e.preventDefault(); gira(); } return; }
+      if(e.key==='1' || e.key==='ArrowLeft') vota(false);
+      else if(e.key==='2' || e.key==='ArrowRight') vota(true);
+    });
+    if(ruFront) setTimeout(()=>speak(v.ru), 150);
+  },
+
+  // --- Verbo del giorno: prima si studia la tabella, poi tre forme da riconoscere ---
+  verbo(it, ctx){
+    const v = (DB.verbi||[]).find(x=>x.id===it.id);
+    if(!verboRipassabile(v)) return false;
+    const tk = verboTempo(v);
+    const card = $(`<div class="qcard"><div class="q" lang="ru"></div><div class="qsub rp-tr"></div><div class="big-it" style="font-size:21px"></div>
+      <button class="btn soft sm listen-btn" type="button">${ic('vol')} Ascolta</button></div>`);
+    card.querySelector('.q').textContent = v.inf;
+    card.querySelector('.rp-tr').textContent = v.translit_inf || '';
+    card.querySelector('.big-it').textContent = v.en || '';
+    card.querySelector('.listen-btn').onclick = ()=>speak(v.inf);
+    ctx.wrap.appendChild(card);
+    const tab = $(`<div class="pcard"><h3>${ic('rules')} Studia le sue forme</h3></div>`);
+    tab.appendChild(makeVerbConjBlock(v, false, tk));
+    ctx.wrap.appendChild(tab);
+    ctx.wrap.appendChild(azioniTesto(v.inf, v.en, {verbo:v}));
+    const via = $(`<button class="btn primary block" type="button">${ic('play')} Pronto: mettimi alla prova</button>`);
+    ctx.wrap.appendChild(via);
+    setTimeout(()=>speak(v.inf), 150);
+
+    // 2 forme del tempo principale + 1 del passato (se c'è), persone diverse
+    const domande = sample([0,1,2,3,4,5], 2).map(p=>({tk, p}));
+    const past = v.coniugazioni.past || [];
+    if(past.length >= 2) domande.push({tk:'past', p:rnd(0, past.length-1)});
+    else domande.push({tk, p:[0,1,2,3,4,5].find(p=>!domande.some(d=>d.p===p))});
+    let i = 0, giuste = 0;
+    function domanda(){
+      const d = domande[i], forme = v.coniugazioni[d.tk], giusta = forme[d.p];
+      const pron = (CONJ_PRONOUNS_RU[d.tk]||[])[d.p] || '';
+      ctx.wrap.innerHTML = '';
+      ctx.kick.querySelector('span').textContent = `✏️ Verbo del giorno · ${i+1} di ${domande.length}`;
+      ctx.wrap.appendChild(ctx.kick);
+      const c = $(`<div class="qcard"><div class="kick"></div><div class="blank"><span class="pron"></span><span class="line"></span></div><div class="qsub"></div></div>`);
+      c.querySelector('.kick').textContent = tenseLabelRu(d.tk);
+      c.querySelector('.pron').textContent = pron;
+      c.querySelector('.qsub').textContent = `${v.inf} — ${v.en}`;
+      ctx.wrap.appendChild(c);
+      const opts = shuffle([giusta, ...rpDistr(giusta, forme)]);
+      rpOpzioni(ctx, opts, giusta, ok=>{
+        grade(`conj:${v.inf}:${d.tk}:${d.p}`, ok);
+        if(ok) giuste++;
+        speak(giusta);
+        c.querySelector('.line').replaceWith(Object.assign(document.createElement('span'), {textContent:giusta, style:'color:var(--good)'}));
+        i++;
+        if(i < domande.length){
+          const nx = $(`<button class="btn primary block" type="button">Prossima forma →</button>`);
+          nx.onclick = domanda;
+          ctx.wrap.appendChild(nx);
+          ctx.keys(e=>{ if(e.key==='Enter'){ e.preventDefault(); domanda(); } });
+        } else {
+          const rv = $(`<div class="pcard"></div>`);
+          rv.appendChild(makeVerbConjBlock(v, true, d.tk));
+          ctx.wrap.appendChild(rv);
+          ctx.fatto(giuste, domande.length);
+        }
+      });
+    }
+    via.onclick = domanda;
+    ctx.keys(e=>{ if(e.key==='Enter'){ e.preventDefault(); domanda(); } });
+  },
+
+  // --- Componi la frase: parole russe da mettere in ordine ---
+  componi(it, ctx){
+    const f = (DB.frasi||[]).find(x=>x.id===it.id);
+    if(!f) return false;
+    const giuste = paroleFrase(f.ru);
+    if(giuste.length < 2) return false;
+    let chips = giuste.map((w,k)=>({w,k}));
+    for(let g=0; g<8; g++){ chips = shuffle(chips); if(chips.some((c,j)=>c.w!==giuste[j])) break; }
+    const scelte = [];
+    const card = $(`<div class="qcard"><div class="kick">Traduci in russo</div><div class="big-it"></div>
+      <button class="btn soft sm listen-btn" type="button">${ic('vol')} Aiutino: ascolta</button></div>`);
+    card.querySelector('.big-it').textContent = f.it;
+    card.querySelector('.big-it').style.fontSize = Math.max(19, 27 - Math.max(0, f.it.length-24)*0.3) + 'px';
+    card.querySelector('.listen-btn').onclick = ()=>speak(onlyCyrillic(f.ru));
+    const line = $(`<div class="cmp-line"><span class="ph">Tocca le parole qui sotto</span></div>`);
+    const bank = $(`<div class="cmp-bank"></div>`);
+    const chk = $(`<button class="btn primary block" type="button" disabled>${ic('check')} Verifica</button>`);
+    ctx.wrap.append(card, line, bank, chk);
+    let answered = false;
+    const bankBtns = chips.map((c, j)=>{
+      const b = $(`<button class="chipw" type="button"></button>`);
+      b.textContent = c.w;
+      b.onclick = ()=>{ if(answered || b.classList.contains('used')) return; b.classList.add('used'); scelte.push(j); paint(); };
+      bank.appendChild(b);
+      return b;
+    });
+    function paint(){
+      line.innerHTML = '';
+      if(!scelte.length) line.appendChild($(`<span class="ph">Tocca le parole qui sotto</span>`));
+      scelte.forEach((j, p)=>{
+        const b = $(`<button class="chipw" type="button"></button>`);
+        b.textContent = chips[j].w;
+        b.onclick = ()=>{ if(answered) return; scelte.splice(p, 1); bankBtns[j].classList.remove('used'); paint(); };
+        line.appendChild(b);
+      });
+      chk.disabled = scelte.length !== chips.length;
+    }
+    chk.onclick = ()=>{
+      if(answered || scelte.length !== chips.length) return;
+      answered = true;
+      const ok = scelte.every((j, p)=>chips[j].w === giuste[p]);
+      haptic(ok); contaExtra('cmp', ok);
+      if(!ok) logErrore(f.ru, f.it, 'Componi');
+      grade(f.id, ok);
+      line.classList.add(ok ? 'ok' : 'ko');
+      bank.style.display = 'none'; chk.remove();
+      const sol = $(`<div class="cmp-sol"><div class="lab"></div><div class="ru"></div>${f.translit?'<div class="tr"></div>':''}</div>`);
+      sol.querySelector('.lab').textContent = ok ? '✓ Perfetto!' : 'La frase giusta:';
+      sol.querySelector('.lab').style.color = ok ? 'var(--good)' : 'var(--bad)';
+      sol.querySelector('.ru').textContent = f.ru;
+      if(f.translit) sol.querySelector('.tr').textContent = f.translit;
+      sol.onclick = ()=>speak(onlyCyrillic(f.ru));
+      ctx.wrap.append(sol, azioniTesto(f.ru, f.it, {translit:f.translit}));
+      speak(onlyCyrillic(f.ru));
+      ctx.fatto(ok?1:0, 1);
+    };
+    ctx.keys(e=>{
+      if(answered) return;
+      if(e.key==='Enter'){ if(!chk.disabled){ e.preventDefault(); chk.click(); } return; }
+      if(e.key==='Backspace' && scelte.length){ e.preventDefault(); bankBtns[scelte.pop()].classList.remove('used'); paint(); return; }
+      const k = parseInt(e.key, 10);
+      if(k>=1 && k<=9){ const free = bankBtns.filter(b=>!b.classList.contains('used')); if(free[k-1]) free[k-1].click(); }
+    });
+  },
+
+  // --- Completa la frase: una parola nascosta, si sceglie quella giusta ---
+  completa(it, ctx){
+    const f = (DB.frasi||[]).find(x=>x.id===it.id);
+    if(!f) return false;
+    const FUNZ = new Set(['очень','тоже','здесь','этот','этого','есть','была','было','были','меня','тебя','него','неё','нас','вас','них','свой','своя','такой','когда','потому','почему','сейчас','только','может']);
+    const piena = w => w.length>=4 && /[а-яё]/i.test(w) && !FUNZ.has(w.toLowerCase());
+    const raw = f.ru.split(' ');
+    const clean = raw.map(w=>w.replace(/^[«"(]+|[.,!?;:»")…—]+$/g,''));
+    let cand = clean.map((w,idx)=>({w,idx})).filter(x=>piena(x.w));
+    if(!cand.length) cand = clean.map((w,idx)=>({w,idx})).filter(x=>/[а-яё]/i.test(x.w)).sort((a,b)=>b.w.length-a.w.length).slice(0,1);
+    if(!cand.length) return false;
+    const {w:giusta, idx} = cand[rnd(0, cand.length-1)];
+    // distrattori: stessa radice, poi stessa desinenza, poi lunghezza simile
+    const corpus = [...new Set((DB.frasi||[]).flatMap(x=>paroleFrase(x.ru)).filter(piena))].filter(w=>!clean.includes(w));
+    const lo = giusta.toLowerCase(), rad = lo.slice(0, Math.min(4, lo.length-1));
+    const distr = [];
+    for(const tier of [corpus.filter(w=>w.toLowerCase().startsWith(rad)), corpus.filter(w=>w.toLowerCase().slice(-2)===lo.slice(-2)), corpus.filter(w=>Math.abs(w.length-giusta.length)<=1), corpus]){
+      for(const w of shuffle(tier)){ if(distr.length>=3) break; if(w.toLowerCase()!==lo && !distr.includes(w)) distr.push(w); }
+      if(distr.length>=3) break;
+    }
+    const card = $(`<div class="qcard"><div class="q" lang="ru"></div><div class="qsub"></div>
+      <button class="btn soft sm listen-btn" type="button" style="margin-top:6px">${ic('vol')} Ascolta la frase</button></div>`);
+    const qEl = card.querySelector('.q');
+    qEl.innerHTML = raw.map((w,k)=>esc(k===idx ? w.replace(clean[k], '_____') : w)).join(' ');
+    qEl.style.fontSize = Math.max(21, 30 - Math.max(0, f.ru.length-16)*0.45) + 'px';
+    card.querySelector('.qsub').textContent = f.it;
+    card.querySelector('.listen-btn').onclick = ()=>speak(f.ru);
+    ctx.wrap.appendChild(card);
+    rpOpzioni(ctx, shuffle([giusta, ...distr]), giusta, ok=>{
+      grade(f.id, ok);
+      speak(f.ru);
+      qEl.innerHTML = raw.map((w,k)=>k===idx ? `<span style="color:var(--good)">${esc(w)}</span>` : esc(w)).join(' ');
+      if(f.translit) card.appendChild($(`<div class="qsub" style="color:var(--accent2);font-style:italic">${esc(f.translit)}</div>`));
+      card.appendChild(azioniTesto(f.ru, f.it, {translit:f.translit}));
+      ctx.fatto(ok?1:0, 1);
+    });
+  },
+
+  // --- Casi al volo ---
+  caso(it, ctx){
+    const c = (DB.casi||[])[it.k];
+    if(!c || !CASI_INFO[c.caso]) return false;
+    const forme = (DB.casiNomi||{})[c.base] || [];
+    const intera = c.frase.replace('___', c.ok);
+    ctx.kick.querySelector('span').textContent = `📐 Casi · ${CASI_INFO[c.caso][0]}`;
+    const card = rpCard(ctx, c.frase.replace('___', '____'), `(${c.base}) · ${c.it}`);
+    rpOpzioni(ctx, shuffle([c.ok, ...rpDistr(c.ok, forme)]), c.ok, ok=>{
+      recordActivity(ok);
+      if(!ok) logErrore(intera, c.it, 'Casi');
+      card.querySelector('.q').textContent = intera;   // la frase si completa
+      speak(intera);
+      rpNota(card, `${CASI_INFO[c.caso][0]}: ${c.perche}`);
+      card.appendChild(azioniTesto(intera, c.it));
+      ctx.fatto(ok?1:0, 1);
+    });
+  },
+
+  // --- Verbi di moto ---
+  moto(it, ctx){
+    const f = ((DB.verbiMoto||{}).frasi||[])[it.k];
+    if(!f) return false;
+    const intera = f.frase.replace('___', f.ok);
+    const card = rpCard(ctx, f.frase.replace('___', '____'), f.it);
+    rpOpzioni(ctx, shuffle([f.ok, ...f.opts]), f.ok, ok=>{
+      recordActivity(ok);
+      if(!ok) logErrore(intera, f.it, 'Verbi di moto');
+      card.querySelector('.q').textContent = intera;   // la frase si completa
+      speak(intera);
+      rpNota(card, f.perche);
+      card.appendChild(azioniTesto(intera, f.it));
+      ctx.fatto(ok?1:0, 1);
+    });
+  },
+
+  // --- Una domanda sulle regole in breve, col rimando alla regola ---
+  regola(it, ctx){
+    const g = (DB.grammatica||[]).find(x=>x.id===it.g);
+    const d = g && (g.drill||[])[it.k];
+    if(!d) return false;
+    let altre = g.drill.map(x=>x.risposta);
+    if(new Set(altre.filter(x=>x!==d.risposta)).size < 3) altre = altre.concat((DB.grammatica||[]).flatMap(x=>(x.drill||[]).map(y=>y.risposta)));
+    const card = rpCard(ctx, d.domanda, g.titolo);
+    rpOpzioni(ctx, shuffle([d.risposta, ...rpDistr(d.risposta, altre)]), d.risposta, ok=>{
+      recordActivity(ok);
+      if(/[а-яё]/i.test(d.risposta)) speak(d.risposta);
+      const l = $(`<button class="textbtn" type="button">${ic('rules')} Rivedi la regola</button>`);
+      l.onclick = ()=>navigateTo(()=>runGram(g.id));
+      card.appendChild(l);
+      ctx.fatto(ok?1:0, 1);
+    });
+  },
+
+  // --- Numeri: ascolta e riconosci ---
+  numero(it, ctx){
+    const n = +it.n;
+    if(!(n >= 0)) return false;
+    const [, , lo, hi] = numRange();
+    const parole = numRu(n);
+    const card = $(`<div class="qcard"><div class="kick">Che numero senti?</div>
+      <button class="big-play" type="button" aria-label="Ascolta di nuovo">${ic('vol')}</button>
+      <div class="qsub">Tocca per riascoltare</div></div>`);
+    card.querySelector('.big-play').onclick = ()=>speak(parole);
+    ctx.wrap.appendChild(card);
+    const fmt = x => x.toLocaleString('it-IT');
+    const opts = shuffle([n, ...numeriVicini(n, Math.min(lo, n), Math.max(hi, n)).slice(0,3)]).map(fmt);
+    rpOpzioni(ctx, opts, fmt(n), ok=>{
+      recordActivity(ok); contaExtra('num', ok);
+      if(!ok) logErrore(parole, fmt(n), 'Numeri');
+      speak(parole);
+      const res = $(`<div class="qsub num-res"></div>`);
+      res.innerHTML = `<b>${fmt(n)}</b> — ${esc(parole)}`;
+      card.appendChild(res);
+      card.appendChild(azioniTesto(parole, fmt(n), {mic:true}));
+      ctx.fatto(ok?1:0, 1);
+    });
+    setTimeout(()=>speak(parole), 250);
+  },
+
+  // --- Dialoghi: l'altro dice una battuta, tu scegli la risposta ---
+  dialogo(it, ctx){
+    const d = (DB.dialoghi||[]).find(x=>x.id===it.d);
+    const b = d && d.battute[it.k], prima = d && d.battute[it.k-1];
+    if(!b || !prima) return false;
+    const mio = dlgMio(d);
+    const stesse = d.battute.filter(x=>x.s===mio && x.ru!==b.ru).map(x=>x.ru);
+    const altrove = (DB.dialoghi||[]).filter(x=>x.id!==d.id).flatMap(x=>x.battute.filter(y=>y.s===dlgMio(x)).map(y=>y.ru));
+    const distr = [...new Set([...shuffle(stesse), ...shuffle(altrove)])].filter(x=>x!==b.ru).slice(0,3);
+    ctx.kick.querySelector('span').textContent = `🎭 ${d.titolo} · cosa rispondi?`;
+    const card = rpCard(ctx, prima.ru, `«${prima.it}» — cosa rispondi?`, prima.ru);
+    setTimeout(()=>speak(prima.ru), 200);
+    rpOpzioni(ctx, shuffle([b.ru, ...distr]), b.ru, ok=>{
+      recordActivity(ok);
+      if(!ok) logErrore(b.ru, b.it, 'Dialoghi');
+      speak(b.ru);
+      rpNota(card, b.it);
+      card.appendChild(azioniTesto(b.ru, b.it));
+      const l = $(`<button class="textbtn" type="button">${ic('play')} Apri il dialogo</button>`);
+      l.onclick = ()=>navigateTo(()=>runDialogo(d));
+      card.appendChild(l);
+      ctx.fatto(ok?1:0, 1);
+    });
+  },
+
+  // --- Proverbio: qual è il suo equivalente italiano? ---
+  proverbio(it, ctx){
+    const P = DB.proverbi || [], p = P[it.k];
+    if(!p || !p.it) return false;
+    const altre = P.filter(x=>x.it && x.it!==p.it).map(x=>x.it);
+    if(altre.length < 3) return false;
+    const card = rpCard(ctx, p.ru, 'Qual è il proverbio italiano che gli somiglia?', p.ru);
+    card.querySelector('.q').setAttribute('lang', 'ru');
+    rpOpzioni(ctx, shuffle([p.it, ...rpDistr(p.it, altre)]), p.it, ok=>{
+      recordActivity(ok);
+      rpNota(card, p.lett ? `Alla lettera: «${p.lett}»` : '');
+      card.appendChild(azioniTesto(p.ru, p.it));
+      ctx.fatto(ok?1:0, 1);
+    });
+  },
+};
 
 // ---------- MEMORY (abbinamento RU <-> IT a tempo) ----------
 const MEM_BEST_KEY = "russo_memory_best_v1";
@@ -7881,7 +8429,7 @@ function runVika(){
 // tastiera cirillica. I valori mancanti ricadono sui predefiniti, così i dati
 // salvati prima che un'opzione esistesse restano validi.
 const SETTINGS_KEY = "russo_settings_v1";
-const SETTINGS_DEFAULTS = { tema:"auto", ttsRate:0.9, dailySize:20, kbd:true };
+const SETTINGS_DEFAULTS = { tema:"auto", ttsRate:0.9, dailySize:10, kbd:true };
 function settings(){
   try{ return Object.assign({}, SETTINGS_DEFAULTS, JSON.parse(localStorage.getItem(SETTINGS_KEY)||"{}")); }
   catch(e){ return Object.assign({}, SETTINGS_DEFAULTS); }
@@ -8355,15 +8903,15 @@ function runImpostazioni(){
   }
   card.appendChild(rVoce);
 
-  // --- Carte del ripasso del giorno ---
-  const rDaily = $(`<div class="srow"><div class="lbl">Carte del ripasso<small>Quante ne propone «Ripasso del giorno»</small></div><div class="ctl"></div></div>`);
-  const segD = $(`<div class="seg sm">${[10,20,30,50].map(n=>`<button type="button" data-v="${n}">${n}</button>`).join("")}</div>`);
-  function paintD(){ const v = String(settings().dailySize); segD.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===v)); }
+  // --- Attività del ripasso del giorno ---
+  const rDaily = $(`<div class="srow"><div class="lbl">Attività del ripasso<small>Quante ne propone «Ripasso del giorno»: parole, un verbo, frasi, grammatica…</small></div><div class="ctl"></div></div>`);
+  const segD = $(`<div class="seg sm">${[10,15,20].map(n=>`<button type="button" data-v="${n}">${n}</button>`).join("")}</div>`);
+  function paintD(){ const v = String(dailySize()); segD.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===v)); }
   segD.querySelectorAll("button").forEach(b=>{
     b.onclick = ()=>{
       setSetting("dailySize", +b.dataset.v);
       // il mazzo di oggi si ricompone con la nuova dimensione
-      try{ const s = dailyState(); delete s.cards; localStorage.setItem(DAILY_KEY, JSON.stringify(s)); }catch(e){}
+      try{ updDaily(s=>{ delete s.cards; delete s.items; }); }catch(e){}
       paintD();
     };
   });
