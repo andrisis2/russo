@@ -888,6 +888,149 @@
   .modal input{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card2);color:var(--text);font-size:15px;margin-bottom:14px;outline:none}
   .modal input:focus{border-color:var(--accent2);box-shadow:var(--ring)}
 
+  /* ============================ SEZIONI NUOVE ============================ */
+  .tile[data-mode="compose"]{--tc:#3fae5a}  .tile[data-mode="compose"] .ico{background:linear-gradient(135deg,#9ad94a,#35a95c)}
+  .tile[data-mode="numeri"]{--tc:#4b56e6}   .tile[data-mode="numeri"] .ico{background:linear-gradient(135deg,#6f95ff,#4a4fe3)}
+  .tile[data-mode="dialoghi"]{--tc:#1c93b8} .tile[data-mode="dialoghi"] .ico{background:linear-gradient(135deg,#3fd3d6,#1f8fbd)}
+  .tile[data-mode="frasario"]{--tc:#e59a17} .tile[data-mode="frasario"] .ico{background:linear-gradient(135deg,#ffcb52,#ee931c)}
+  .tile .nuovo{position:absolute;top:12px;right:12px;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:#fff;border-radius:99px;padding:3px 8px;line-height:1.3}
+  .tile .t .tru{font-weight:600;color:var(--muted);font-size:13px}
+  .opt.long{font-size:15.5px;font-weight:600;line-height:1.35;padding:13px 16px}
+  @media (hover:hover) and (pointer:fine){ .opt.long{padding-left:42px;padding-right:42px} }
+  .q.q-html{font-size:inherit;margin:2px 0 4px}
+  .q-after{font-size:13.5px;color:var(--accent2);font-weight:600}
+
+  /* parola del giorno (home) */
+  .wotd{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:13px 12px 13px 17px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;cursor:pointer;transition:transform .16s,box-shadow .16s}
+  .wotd::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--grad-prog)}
+  .wotd:active{transform:scale(.985)}
+  .wotd .wtxt{flex:1;min-width:0}
+  .wotd .k{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--violet);display:flex;align-items:center;gap:5px}
+  .wotd .k .i{width:14px;height:14px}
+  .wotd .w{margin-top:3px;line-height:1.2;overflow-wrap:anywhere}
+  .wotd .wr{font-size:21px;font-weight:800;letter-spacing:-.3px}
+  .wotd .wt{font-size:13px;color:var(--muted);font-style:italic}
+  .wotd .it{font-size:13.5px;color:var(--text2);margin-top:2px}
+
+  /* dialoghi */
+  .dlg-prog{display:flex;flex-direction:column;gap:9px;padding:13px 16px}
+  .dlg-prog b{font-size:17px;font-weight:800} .dlg-prog span{font-size:13px;color:var(--muted);font-weight:600}
+  .dlg-hero{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:15px;box-shadow:var(--shadow-sm)}
+  .dlg-hero .e{font-size:34px;width:62px;height:62px;border-radius:18px;background:var(--card2);display:grid;place-items:center;flex:0 0 auto}
+  .dlg-hero .tx{min-width:0}
+  .dlg-hero .ru{border:0;background:none;padding:0;font-size:21px;font-weight:800;letter-spacing:-.3px;display:inline-flex;align-items:center;gap:7px;color:var(--text);text-align:left}
+  .dlg-hero .ru .i{width:17px;height:17px;color:var(--muted)}
+  .dlg-hero p{margin:4px 0 0;font-size:13.5px;color:var(--muted);line-height:1.5}
+  .dlg-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .chat{display:flex;flex-direction:column;gap:9px}
+  .bub{
+    display:block;max-width:88%;align-self:flex-start;text-align:left;color:var(--text);font:inherit;
+    background:var(--card);border:1px solid var(--line);border-radius:18px 18px 18px 6px;padding:9px 14px 10px;
+    box-shadow:var(--shadow-sm);transition:border-color .15s,box-shadow .15s,transform .12s;animation:rise .24s ease both;
+  }
+  button.bub{cursor:pointer}
+  button.bub:active{transform:scale(.985)}
+  .bub.me{align-self:flex-end;background:var(--accent2-soft);border-color:transparent;border-radius:18px 18px 6px 18px}
+  .bub .who{font-size:10.5px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
+  .bub.me .who{color:var(--accent2)}
+  .bub .ru{font-size:16.5px;font-weight:600;line-height:1.4}
+  .bub .it{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.4}
+  .chat.no-it .bub .it{display:none}
+  .bub.playing{border-color:var(--accent2);box-shadow:var(--ring)}
+  .bub.me.playing{border-color:var(--accent2)}
+  .bub.turn{background:var(--card);border:1.5px dashed var(--accent2);min-width:60%}
+  .bub .hint{font-size:15.5px;font-weight:600;color:var(--text2);line-height:1.4}
+  .bub .heard{font-size:13px;color:var(--muted);margin-top:4px;font-style:italic}
+  .bub .heard:empty{display:none}
+  .bub.good{background:var(--good-soft)} .bub.good .who{color:var(--good)}
+  .bub.meh{background:var(--gold-soft)} .bub.meh .who{color:var(--warn)}
+  .bub .ru .ok{color:var(--good)} .bub .ru .no{color:var(--bad);text-decoration:underline wavy;text-decoration-thickness:1px;text-underline-offset:3px}
+  .sr-res{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.4}
+  .rp-ctrl{display:flex;flex-direction:column;gap:8px;position:sticky;bottom:calc(10px + env(safe-area-inset-bottom));z-index:5}
+  .rp-ctrl .btn{box-shadow:var(--shadow)}
+  .btn.rec{animation:pulse 1.2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(47,102,232,.45)}50%{box-shadow:0 0 0 9px rgba(47,102,232,0)}}
+  .kw-list{display:flex;flex-direction:column}
+  .kw{display:flex;align-items:baseline;gap:12px;padding:9px 2px;border:0;border-bottom:1px solid var(--line);background:none;color:var(--text);text-align:left;font:inherit;width:100%}
+  .kw:last-child{border-bottom:0;padding-bottom:0}
+  .kw b{font-size:15px;font-weight:700;flex:1 1 55%;min-width:0}
+  .kw span{font-size:13px;color:var(--muted);flex:1 1 45%;text-align:right;line-height:1.4}
+  .kw:active b{color:var(--accent2)}
+  @media (hover:hover){ .kw:hover b{color:var(--accent2)} }
+  .nota-box{display:flex;gap:11px;align-items:flex-start;background:var(--gold-soft);border-radius:16px;padding:13px 15px;font-size:13.5px;line-height:1.55;color:var(--text2)}
+  .nota-box .i{color:var(--gold);flex:0 0 auto;margin-top:1px}
+  .regola-p{font-size:13.5px;color:var(--muted);line-height:1.55;margin:-4px 0 8px!important}
+
+  /* numeri */
+  .num-conv .nc-row{display:flex;gap:8px;align-items:stretch}
+  .num-conv .nc-in{font-size:20px;font-weight:700;letter-spacing:.5px;font-variant-numeric:tabular-nums}
+  .num-conv .nc-row .btn{min-height:0;width:54px;padding:0}
+  .nc-out{margin-top:12px;font-size:19px;font-weight:700;line-height:1.35;color:var(--accent2);overflow-wrap:anywhere;min-height:26px}
+  .nc-out.muted-out{font-size:13.5px;font-weight:500;color:var(--muted)}
+  .num-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .num-row{display:flex;flex-direction:column;align-items:flex-start;gap:1px;padding:8px 12px 9px;border-radius:12px;background:var(--card2);border:1px solid transparent;text-align:left;color:var(--text);font:inherit;min-width:0;transition:border-color .15s}
+  .num-row b{font-size:13px;font-weight:800;color:var(--accent2);font-variant-numeric:tabular-nums}
+  .num-row span{font-size:15px;font-weight:600;line-height:1.3}
+  .num-row:active{border-color:var(--accent2)}
+  @media (hover:hover){ .num-row:hover{border-color:var(--accent2)} }
+  .big-play{width:84px;height:84px;border-radius:50%;border:0;background:var(--grad-blue);color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -10px rgba(43,95,219,.7);margin:6px 0 2px;transition:transform .12s}
+  .big-play .i{width:36px;height:36px}
+  .big-play:active{transform:scale(.93)}
+  .num-input{text-align:center;font-size:30px;font-weight:800;letter-spacing:2px;padding:14px 16px;font-variant-numeric:tabular-nums}
+  .num-input.ok{border-color:var(--good);background:var(--good-soft);color:var(--good)}
+  .num-input.ko{border-color:var(--bad);background:var(--bad-soft);color:var(--bad);text-decoration:line-through}
+  .num-res{font-size:15.5px;color:var(--text2)}
+  .clock{width:170px;height:170px;display:block}
+  .clock .cf{fill:var(--card2);stroke:var(--line2);stroke-width:2}
+  .clock .tk{stroke:var(--text2);stroke-width:2.4;stroke-linecap:round}
+  .clock .tk2{stroke:var(--line2);stroke-width:1.2}
+  .clock text{fill:var(--muted);font-size:11px;font-weight:800;text-anchor:middle;dominant-baseline:central;font-family:inherit}
+  .clock .hh{stroke:var(--text);stroke-width:5.5;stroke-linecap:round}
+  .clock .mh{stroke:var(--accent);stroke-width:3.2;stroke-linecap:round}
+  .clock .cc{fill:var(--accent)}
+  .price-q{display:flex;align-items:center;justify-content:center;gap:12px}
+  .price-q .e{font-size:44px;line-height:1}
+  .price-q b{font-size:36px;font-weight:800;letter-spacing:-.5px;background:var(--gold-soft);color:var(--text);border-radius:14px;padding:6px 14px;font-variant-numeric:tabular-nums}
+
+  /* frasario */
+  .fr-item{display:flex;align-items:flex-start;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:11px 8px 11px 13px;box-shadow:var(--shadow-sm);cursor:pointer;animation:rise .2s ease both}
+  .fr-item .txt{flex:1;min-width:0}
+  .fr-item .ru{font-size:16px;font-weight:700;line-height:1.35;color:var(--text)}
+  .fr-item .tr{font-size:12.5px;color:var(--accent2);font-style:italic;margin-top:2px}
+  .fr-item .it{font-size:13.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+  .fr-src{margin-top:7px;border:1px solid var(--line);background:var(--card2);color:var(--text2);border-radius:99px;padding:3px 10px;font-size:11.5px;font-weight:700}
+  .mini-btn.add{color:var(--accent2);background:var(--accent2-soft)}
+  .mini-btn.add.added{color:var(--good);background:var(--good-soft);cursor:default}
+
+  /* componi la frase */
+  .cmp-line{min-height:66px;width:100%;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;padding:11px;border-radius:17px;border:1.5px dashed var(--line2);background:var(--card);transition:background .2s,border-color .2s}
+  .cmp-line .ph{color:var(--muted);font-size:13.5px;margin:auto;align-self:center}
+  .cmp-line.ok{border-style:solid;border-color:var(--good);background:var(--good-soft)}
+  .cmp-line.ko{border-style:solid;border-color:var(--bad);background:var(--bad-soft);animation:shake .4s ease}
+  .cmp-bank{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:50px}
+  .chipw{border:1px solid var(--line2);background:var(--card);color:var(--text);border-radius:13px;padding:10px 14px;font-size:17px;font-weight:600;box-shadow:0 2px 0 var(--line2);transition:transform .08s,box-shadow .08s;touch-action:manipulation;animation:pop .22s ease}
+  .chipw:active{transform:translateY(2px);box-shadow:none}
+  .cmp-bank .chipw.used{visibility:hidden}
+  .cmp-line .chipw{background:var(--accent2-soft);border-color:transparent;box-shadow:none;color:var(--accent2-ink)}
+  .cmp-line.ok .chipw{background:var(--card);color:var(--good)}
+  .cmp-line.ko .chipw{background:var(--card);color:var(--bad)}
+  .cmp-sol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 15px;box-shadow:var(--shadow-sm);cursor:pointer;animation:rise .2s ease both}
+  .cmp-sol .lab{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+  .cmp-sol .ru{font-size:18px;font-weight:700;margin-top:3px;line-height:1.35}
+  .cmp-sol .tr{font-size:13px;color:var(--accent2);font-style:italic;margin-top:2px}
+
+  /* traguardi */
+  .badges{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .badge-it{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px;padding:12px 6px 10px;border-radius:15px;background:var(--card2);border:1px solid var(--line);min-width:0}
+  .badge-it .e{font-size:28px;line-height:1.1;margin-bottom:2px}
+  .badge-it b{font-size:12.5px;font-weight:800;line-height:1.25}
+  .badge-it small{font-size:10.5px;color:var(--muted);line-height:1.3}
+  .badge-it.on{background:var(--gold-soft);border-color:transparent}
+  .badge-it.off .e{filter:grayscale(1);opacity:.38}
+  .badge-it.off b{color:var(--muted)}
+  .badge-it .bp{width:78%;height:4px;border-radius:9px;background:var(--card3);overflow:hidden;margin-top:5px}
+  .badge-it .bp i{display:block;height:100%;background:var(--accent2);border-radius:9px}
+
   /* ============================ DESKTOP ============================ */
   @media (min-width:760px){
     .appbar{padding:0 24px}
@@ -910,6 +1053,11 @@
     .home-top{display:grid;grid-template-columns:1.25fr 1fr;gap:16px!important;align-items:stretch}
     .home-top .tile.feat{height:100%;grid-column:auto}
     .ref-nav{margin:-8px -32px 0;padding:8px 32px}
+    .grid.g4{grid-template-columns:repeat(4,1fr)}
+    .home-top .wotd{grid-column:1/-1}
+    .badges{grid-template-columns:repeat(5,1fr)}
+    .num-grid{grid-template-columns:repeat(3,1fr)}
+    .clock{width:190px;height:190px}
   }
   @media (min-width:1100px){
     main{max-width:980px;padding:30px 40px 44px}
@@ -972,6 +1120,14 @@
   <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
   <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
   <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></symbol>
+  <symbol id="i-hash" viewBox="0 0 24 24"><path d="M4 9h16"/><path d="M4 15h16"/><path d="M10 3 8 21"/><path d="M16 3l-2 18"/></symbol>
+  <symbol id="i-blocks" viewBox="0 0 24 24"><rect x="2" y="4" width="9" height="6.5" rx="2"/><rect x="13" y="4" width="9" height="6.5" rx="2"/><rect x="6.5" y="13.5" width="11" height="6.5" rx="2"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2H4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .01-1 1.03V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.76-2.02-2-2h-4c-1.25 0-2 .75-2 1.97V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.48 12.89 1.51 8.53a.5.5 0 0 1-.81.47l-3.58-2.69a1 1 0 0 0-1.2 0l-3.59 2.69a.5.5 0 0 1-.81-.47l1.51-8.53"/><circle cx="12" cy="8" r="6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-2.1a2 2 0 0 0 1.3-1.3z"/></symbol>
 </defs></svg>
 <header id="hdr">
   <div class="appbar">
@@ -1307,14 +1463,17 @@ function fitSize(text, max, min){
 function haptic(ok){ try{ navigator.vibrate && navigator.vibrate(ok?18:[0,35,30,35]); }catch(e){} }
 
 // Text-to-speech russo e italiano
-let ruVoice = null, itVoice = null;
+let ruVoice = null, itVoice = null, ruVoices = [];
+let _ttsGen = 0;       // ogni nuova lettura annulla le callback di quella prima (dialoghi)
 function pickVoice(){
   const vs = speechSynthesis.getVoices();
+  ruVoices = vs.filter(v=>/^ru/i.test(v.lang));
   ruVoice = vs.find(v=>/ru[-_]?RU/i.test(v.lang)) || vs.find(v=>/^ru/i.test(v.lang)) || null;
   itVoice = vs.find(v=>/it[-_]?IT/i.test(v.lang)) || vs.find(v=>/^it/i.test(v.lang)) || null;
 }
 if ('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
 function speak(text){
+  _ttsGen++;
   if(!('speechSynthesis' in window)) return;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
@@ -1501,6 +1660,8 @@ function renderHome(){
     </button>`);
   eseTile.onclick = ()=>start("esercizi");
   top.appendChild(eseTile);
+  const wotd = makeWotd();
+  if(wotd) top.appendChild(wotd);
   home.appendChild(top);
 
   // --- Schede Pratica / Teoria ---
@@ -1513,9 +1674,11 @@ function renderHome(){
   const gridWrap = $(`<div class="grid-wrap"></div>`);
   home.appendChild(gridWrap);
 
+  const viste = sezioniViste();
   function mkTile(ico, t, d, mode, cls){
+    const nuovo = NUOVE_SEZIONI.includes(mode) && !viste.includes(mode) ? `<span class="nuovo">Nuovo</span>` : '';
     const el = $(`<button class="tile${cls?' '+cls:''}" data-mode="${mode}" type="button">
-      <div class="ico">${ico}</div><div class="t">${t}</div><div class="d">${d}</div></button>`);
+      <div class="ico">${ico}</div><div class="t">${t}</div><div class="d">${d}</div>${nuovo}</button>`);
     el.onclick = ()=>start(mode);
     return el;
   }
@@ -1528,7 +1691,7 @@ function renderHome(){
       const on = b.dataset.tab===tab;
       b.classList.toggle('active', on); b.setAttribute('aria-selected', on);
     });
-    const grid = $(`<div class="grid"></div>`);
+    const grid = $(`<div class="grid g4"></div>`);
     if(dir) grid.classList.add(dir==='left' ? 'slide-left' : 'slide-right');
     gridWrap.innerHTML = '';
     gridWrap.appendChild(grid);
@@ -1537,11 +1700,14 @@ function renderHome(){
       const st = studyStats();
       const dueAll = (DB.voci||[]).filter(v=>isDue(v.id)).length;
       const best = memBest(), rec = best[6] || best[8] || best[10];
+      const cmpTot = extraStore().cmp || 0;
       [
         [ic('cards'),"Flashcard", `${dueAll} parole da ripassare`, "flash"],
         [ic('pen'),"Scrittura","Scrivila tu, in cirillico","write"],
         [ic('list'),"Coniugazione","Allena le forme dei verbi","conj"],
         [ic('headphones'),"Frasi &amp; ascolto","Completa la frase e ascoltala","phrase"],
+        [ic('blocks'),"Componi la frase", cmpTot ? `${cmpTot} frasi composte &middot; metti in ordine` : "Metti in ordine le parole","compose"],
+        [ic('hash'),"Numeri e ore","Contare, l'ora, i prezzi","numeri"],
         [ic('grid'),"Memory", rec ? `Record ${fmtTime(rec)} &middot; abbina a tempo` : "Abbina le coppie a tempo","memory"],
         [ic('chart'),"Progressi", st.seen ? `${st.note} imparate &middot; ${st.precisione}% giuste` : "Mappa dello studio e statistiche","stats"],
       ].forEach(([ico,t,d,mode])=>grid.appendChild(mkTile(ico,t,d,mode)));
@@ -1556,6 +1722,8 @@ function renderHome(){
       [
         [ic('book'),"Vocabolario", `${(DB.voci||[]).length} parole &middot; ricerca online`, "vocab"],
         [ic('zap'),"Verbi", `${(DB.verbi||[]).length} verbi coniugati in tutti i tempi`, "verbi"],
+        [ic('chat'),"Dialoghi", `${(DB.dialoghi||[]).length} scene da ascoltare e recitare`, "dialoghi"],
+        [ic('quote'),"Frasario", "Frasi pronte per ogni situazione", "frasario"],
         [`<span class="glyph">Жж</span>`,"Cirillico","Alfabeto, pronuncia e quiz","cyr"],
         [ic('rules'),"Regole grammaticali", `${(DB.riferimento||[]).length} schede da consultare`, "ref"],
         [ic('quiz'),"Grammatica","Regole in breve + quiz","gram"],
@@ -1622,6 +1790,7 @@ function emptyDone(stage, big, titolo, testo){
 }
 
 function start(mode){
+  segnaSezioneVista(mode);
   navigateTo(()=>{
     if(mode==="daily") return runDaily();
     if(mode==="memory") return runMemory();
@@ -1639,6 +1808,10 @@ function start(mode){
     if(mode==="write") return pickScritturaTopic();
     if(mode==="stats") return runProgressi();
     if(mode==="settings") return runImpostazioni();
+    if(mode==="dialoghi") return runDialoghi();
+    if(mode==="frasario") return runFrasario();
+    if(mode==="compose") return runComponi();
+    if(mode==="numeri") return runNumeri();
   });
 }
 
@@ -2656,12 +2829,16 @@ function runEsercizi(){
   function buildFrasi(body){
     const s = esesStore();
     if(!s.frasi.length){
-      body.appendChild($(`<div class="empty"><div class="big">💬</div>Nessuna frase salvata.<small>In <b>Frasi &amp; grammatica</b> tocca <b>＋</b> accanto a una frase:<br>la allenerai intera, non solo parola per parola.</small></div>`));
+      body.appendChild($(`<div class="empty"><div class="big">💬</div>Nessuna frase salvata.<small>Nel <b>Frasario</b>, nei <b>Dialoghi</b> o in <b>Frasi &amp; grammatica</b> tocca <b>＋</b>:<br>la frase la allenerai intera, non solo parola per parola.</small></div>`));
       return;
     }
-    const study = $(`<button class="btn primary block" type="button">${ic('headphones')} Allena le frasi (${s.frasi.length})</button>`);
+    const btns = $(`<div class="row"></div>`);
+    const study = $(`<button class="btn primary" type="button">${ic('headphones')} Ascolto (${s.frasi.length})</button>`);
     study.onclick = ()=>navigateTo(()=>runPhrase(0, {pool:s.frasi, titolo:'Le mie frasi'}));
-    body.appendChild(study);
+    const comp = $(`<button class="btn" type="button">${ic('blocks')} Componi</button>`);
+    comp.onclick = ()=>navigateTo(()=>runComponi(null, {pool:s.frasi, titolo:'Le mie frasi'}));
+    btns.append(study, comp);
+    body.appendChild(btns);
     const list = $(`<div class="list" style="gap:6px;margin-top:12px"></div>`);
     s.frasi.slice().reverse().forEach(f=>{
       const row = $(`<div class="ese-item" style="align-items:flex-start"><div class="txt"><div class="ru"></div><div class="it wrap"></div></div></div>`);
@@ -3857,34 +4034,47 @@ function runPhrase(level, opts){
 }
 
 // ---------- motore quiz a scelta multipla ----------
-// Domanda: {q, sub, correct, opts, speak?, speakAfter?, id?}
-function runMCQ(questions, title, restart){
+// Domanda: {q | qHtml, sub, correct, opts, speak?, speakAfter?, listen?, after?, id?}
+// listen = testo del pulsante «Ascolta» (se diverso da quello letto dopo la
+// risposta); after = nota che compare dopo aver risposto.
+// hooks.onAnswer(Q, ok) a ogni risposta, hooks.onEnd(giuste, totale) alla fine.
+function runMCQ(questions, title, restart, hooks){
+  hooks = hooks || {};
   let i=0, correct=0;
   const stage = header(title, {narrow:true});
+  if(!questions.length) return emptyDone(stage, '🤷', 'Niente da chiedere', 'Qui non ci sono domande, per ora.');
   const bar = progressBar(stage);
   const wrap = $(`<div class="list" style="gap:12px"></div>`); stage.appendChild(wrap);
   let onKey = null;
   const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
   function show(){
-    if(i>=questions.length){ stopKeys(); return finish(stage, `${correct} / ${questions.length}`, restart); }
+    if(i>=questions.length){
+      stopKeys();
+      if(hooks.onEnd) hooks.onEnd(correct, questions.length);
+      return finish(stage, `${correct} / ${questions.length}`, restart);
+    }
     bar.style.width=(i/questions.length*100)+"%"; bar.setNum(i, questions.length);
     const Q=questions[i];
     wrap.innerHTML="";
     const card = $(`<div class="qcard"><div class="q"></div><div class="qsub"></div></div>`);
     const qEl = card.querySelector('.q');
-    qEl.textContent = Q.q;
-    // le domande lunghe (frasi intere) si rimpiccioliscono un po'
-    qEl.style.fontSize = Math.max(20, 30 - Math.max(0, String(Q.q).length-12)*0.8) + 'px';
+    if(Q.qHtml){ qEl.innerHTML = Q.qHtml; qEl.classList.add('q-html'); }
+    else {
+      qEl.textContent = Q.q;
+      // le domande lunghe (frasi intere) si rimpiccioliscono un po'
+      qEl.style.fontSize = Math.max(20, 30 - Math.max(0, String(Q.q).length-12)*0.8) + 'px';
+    }
     card.querySelector('.qsub').textContent = Q.sub || '';
-    if(Q.speak && !Q.speakAfter){
+    const ascolta = Q.listen || (Q.speak && !Q.speakAfter ? Q.speak : null);
+    if(ascolta){
       const sp=$(`<button class="btn soft sm listen-btn" type="button">${ic('vol')} Ascolta</button>`);
-      sp.onclick=()=>speak(Q.speak); card.appendChild(sp);
+      sp.onclick=()=>speak(ascolta); card.appendChild(sp);
     }
     wrap.appendChild(card);
     const box=$(`<div class="options"></div>`);
     let answered = false;
     Q.opts.forEach((o,k)=>{
-      const b=$(`<button class="opt" type="button"><span class="kn">${k+1}</span></button>`);
+      const b=$(`<button class="opt${String(o).length>24?' long':''}" type="button"><span class="kn">${k+1}</span></button>`);
       b.dataset.v = o;
       b.appendChild(document.createTextNode(o));
       b.onclick=()=>{
@@ -3897,7 +4087,9 @@ function runMCQ(questions, title, restart){
         if(ok) correct++;
         else [...box.children].find(c=>c.dataset.v===Q.correct).classList.add("correct");
         if(Q.id) grade(Q.id, ok);
+        if(hooks.onAnswer) hooks.onAnswer(Q, ok);
         if(Q.speak) speak(Q.speak);
+        if(Q.after){ const a = $(`<div class="qsub q-after"></div>`); a.textContent = Q.after; card.appendChild(a); }
         const next=$(`<button class="btn primary block" type="button">${i+1<questions.length?"Avanti":"Risultato"} →</button>`);
         next.onclick=()=>{i++; show();}; wrap.appendChild(next);
       };
@@ -3944,6 +4136,1024 @@ function finish(stage, score, restart, info){
   const b=$(`<button class="btn primary" type="button">${ic('refresh')} Ancora</button>`); b.onclick=restart;
   row.appendChild(a); row.appendChild(b); stage.appendChild(row);
   window.scrollTo({top:0, behavior:'smooth'});
+}
+
+// ================= DATI DEI NUOVI ESERCIZI =================
+// Dialoghi ascoltati/recitati, numeri e frasi composte, parola del giorno.
+// Un solo oggetto in localStorage (entra nel backup: prefisso "russo_").
+const EXTRA_KEY = "russo_extra_v1";
+function extraStore(){
+  try{ const s = JSON.parse(localStorage.getItem(EXTRA_KEY)||"{}"); return s && typeof s==="object" ? s : {}; }
+  catch(e){ return {}; }
+}
+function updExtra(fn){
+  const s = extraStore(); fn(s);
+  try{ localStorage.setItem(EXTRA_KEY, JSON.stringify(s)); }catch(e){}
+  return s;
+}
+const contaExtra = (campo, ok) => { if(ok) updExtra(s=>{ s[campo] = (s[campo]||0) + 1; }); };
+
+// Le sezioni nuove hanno l'etichetta «Nuovo» in home finché non si aprono.
+const NUOVE_SEZIONI = ["dialoghi","frasario","compose","numeri"];
+function sezioniViste(){ try{ return JSON.parse(localStorage.getItem("russo_sezioni_viste")||"[]"); }catch(e){ return []; } }
+function segnaSezioneVista(mode){
+  if(!NUOVE_SEZIONI.includes(mode)) return;
+  const v = sezioniViste();
+  if(!v.includes(mode)){ v.push(mode); try{ localStorage.setItem("russo_sezioni_viste", JSON.stringify(v)); }catch(e){} }
+}
+
+// ---------- Voci per i dialoghi ----------
+// Ogni personaggio parla con una voce sua: se il telefono ha due voci russe
+// le usa entrambe, altrimenti alza il tono della seconda.
+function utterRu(text, who){
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "ru-RU"; u.rate = settings().ttsRate;
+  const altra = who === "B" && ruVoices.length > 1 ? ruVoices.find(v=>v !== ruVoice) : null;
+  if(altra) u.voice = altra;
+  else { if(ruVoice) u.voice = ruVoice; if(who === "B") u.pitch = 1.3; }
+  return u;
+}
+// Legge una battuta e poi chiama onDone. Una nuova lettura (anche da speak())
+// annulla la callback di quella precedente; se il browser non avvisa della
+// fine, un tempo massimo stimato fa andare avanti comunque.
+function speakAs(text, who, onDone){
+  const gen = ++_ttsGen;
+  if(!("speechSynthesis" in window)){ if(onDone) setTimeout(()=>{ if(gen===_ttsGen) onDone(); }, 600); return; }
+  speechSynthesis.cancel();
+  const u = utterRu(text, who);
+  let fatto = false, timer = null;
+  const fine = ()=>{ if(fatto) return; fatto = true; clearTimeout(timer); if(gen===_ttsGen && onDone) onDone(); };
+  timer = setTimeout(fine, 1800 + text.length * 120 / (u.rate || 1));
+  u.onend = fine; u.onerror = fine;
+  speechSynthesis.speak(u);
+}
+function stopSpeech(){ _ttsGen++; try{ speechSynthesis.cancel(); }catch(e){} }
+
+// ---------- Riconoscimento vocale (dove c'è: Chrome, Safari) ----------
+const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition || null;
+function ascoltaRusso(onFine, onParziale){
+  const rec = new SpeechRec();
+  rec.lang = "ru-RU"; rec.interimResults = true; rec.continuous = false; rec.maxAlternatives = 1;
+  let testo = "", errore = null;
+  rec.onresult = e=>{
+    testo = "";
+    for(let i=0; i<e.results.length; i++) testo += e.results[i][0].transcript;
+    if(onParziale) onParziale(testo);
+  };
+  rec.onerror = e=>{ errore = e.error || "errore"; };
+  rec.onend = ()=>onFine(testo.trim(), errore);
+  try{ rec.start(); }catch(e){ setTimeout(()=>onFine("", "start"), 0); }
+  return rec;
+}
+// Confronta ciò che si è detto con la battuta: parola per parola, ignorando
+// maiuscole, punteggiatura e ё/е. Le cifre del riconoscitore ("320")
+// diventano parole ("триста двадцать").
+function confrontaDetto(detto, atteso){
+  const norm = s => normYo(String(s).toLowerCase())
+    .replace(/\d+/g, n=>" "+numRu(+n)+" ")
+    .replace(/[^а-я0-9\s-]/g," ").split(/\s+/).filter(Boolean);
+  const detti = new Set(norm(detto));
+  let ok = 0, tot = 0;
+  const html = String(atteso).split(/\s+/).map(w=>{
+    const n = norm(w);
+    if(!n.length) return esc(w);
+    tot++;
+    const hit = n.every(x=>detti.has(x));
+    if(hit) ok++;
+    return `<span class="${hit?'ok':'no'}">${esc(w)}</span>`;
+  }).join(" ");
+  return {html, pct: tot ? Math.round(ok/tot*100) : 0};
+}
+
+// ================= DIALOGHI =================
+// Scene di tutti i giorni (bar, albergo, stazione…): si ascoltano con due
+// voci, si leggono con la traduzione e si recitano facendo una delle parti.
+function dlgStato(id){ return ((extraStore().dlg)||{})[id] || {}; }
+function segnaDialogo(id, campo){
+  updExtra(s=>{ s.dlg = s.dlg || {}; const d = s.dlg[id] || {}; d[campo] = (d[campo]||0) + 1; s.dlg[id] = d; });
+}
+// La parte "mia": quella di «Вы»; se entrambi hanno un nome, la B (l'italiano).
+function dlgMio(d){ const r = d.ruoli || {}; return r.A === "Вы" ? "A" : "B"; }
+function nomeRuolo(d, r){ const n = (d.ruoli||{})[r] || r; return n === "Вы" ? "Tu" : n; }
+
+function runDialoghi(){
+  const stage = header('Dialoghi');
+  const all = DB.dialoghi || [];
+  stage.appendChild($(`<p class="sg-intro">Scene di tutti i giorni: <b>ascolta</b> il dialogo a due voci, leggi la traduzione e poi <b>recita una parte</b>. Tocca una battuta per riascoltarla.</p>`));
+  if(!all.length){ stage.appendChild($(`<div class="empty"><div class="big">💬</div>Nessun dialogo disponibile.</div>`)); return; }
+  const recitati = all.filter(d=>dlgStato(d.id).r).length;
+  const pct = Math.round(recitati/all.length*100);
+  stage.appendChild($(`<div class="pcard dlg-prog">
+    <div><b>${recitati} / ${all.length}</b> <span>dialoghi recitati</span></div>
+    <div class="pbar"><i style="width:${pct}%;background:var(--good)"></i></div></div>`));
+  [[1,'Primi passi'],[2,'Un po\' più lunghi']].forEach(([lv, lab])=>{
+    const items = all.filter(d=>(d.livello||1)===lv);
+    if(!items.length) return;
+    stage.appendChild($(`<div class="sec-h">${lab}</div>`));
+    const list = $(`<div class="list"></div>`);
+    items.forEach(d=>{
+      const st = dlgStato(d.id);
+      const badge = st.r ? `<span class="pill green">${ic('check')} Recitato</span>`
+                  : st.a ? `<span class="pill blue">Ascoltato</span>` : '';
+      const t = $(`<button class="tile wide" type="button"><div class="ico">${d.icona||'💬'}</div>
+        <div class="txt"><div class="t"><span></span> <span class="tru"></span></div><div class="d"></div></div>${badge?`<div class="right">${badge}</div>`:''}</button>`);
+      t.querySelector('.t span').textContent = d.titolo;
+      t.querySelector('.tru').textContent = d.titoloRu;
+      t.querySelector('.d').textContent = d.scena || '';
+      t.onclick = ()=>navigateTo(()=>runDialogo(d));
+      list.appendChild(t);
+    });
+    stage.appendChild(list);
+  });
+}
+
+function runDialogo(d){
+  const stage = header(d.titolo, {narrow:true});
+  const mio = dlgMio(d);
+
+  const hero = $(`<div class="dlg-hero"><div class="e">${d.icona||'💬'}</div>
+    <div class="tx"><button class="ru" type="button" title="Ascolta"><span></span>${ic('vol')}</button><p></p></div></div>`);
+  hero.querySelector('.ru span').textContent = d.titoloRu;
+  hero.querySelector('p').textContent = d.scena || '';
+  hero.querySelector('.ru').onclick = ()=>{ stopPlay(); speak(d.titoloRu); };
+  stage.appendChild(hero);
+
+  const bar = $(`<div class="dlg-bar"></div>`);
+  const playBtn = $(`<button class="btn blue sm" type="button"></button>`);
+  const trBtn = $(`<button class="btn soft sm" type="button"></button>`);
+  bar.append(playBtn, trBtn);
+  stage.appendChild(bar);
+
+  const chat = $(`<div class="chat"></div>`);
+  const bubs = d.battute.map((b,k)=>{
+    const el = $(`<button class="bub${b.s===mio?' me':''}" type="button"><div class="who"></div><div class="ru"></div><div class="it"></div></button>`);
+    el.querySelector('.who').textContent = nomeRuolo(d, b.s);
+    el.querySelector('.ru').textContent = b.ru;
+    el.querySelector('.it').textContent = b.it;
+    el.style.animationDelay = Math.min(k*35, 400) + 'ms';
+    el.onclick = ()=>{ stopPlay(); mark(k); speakAs(b.ru, b.s, ()=>mark(-1)); };
+    chat.appendChild(el);
+    return el;
+  });
+  stage.appendChild(chat);
+
+  // Traduzione visibile o nascosta (la scelta resta per i dialoghi successivi)
+  let showIt = settings().dlgIt !== false;
+  function paintTr(){
+    chat.classList.toggle('no-it', !showIt);
+    trBtn.innerHTML = `${ic('eye')} ${showIt ? 'Nascondi traduzione' : 'Mostra traduzione'}`;
+  }
+  trBtn.onclick = ()=>{ showIt = !showIt; setSetting('dlgIt', showIt); paintTr(); };
+  paintTr();
+
+  // Ascolta tutto: una battuta dopo l'altra, evidenziata mentre parla
+  let playTok = 0, playing = false;
+  function mark(k){ bubs.forEach((b,i)=>b.classList.toggle('playing', i===k)); }
+  function paintPlay(){ playBtn.innerHTML = playing ? `${ic('stop')} Ferma` : `${ic('play')} Ascolta tutto`; }
+  function stopPlay(){ playTok++; playing = false; mark(-1); paintPlay(); }
+  function playAll(){
+    const tok = ++playTok; playing = true; paintPlay();
+    let k = 0;
+    const step = ()=>{
+      if(tok!==playTok) return;
+      if(k>=d.battute.length){ playing = false; mark(-1); paintPlay(); segnaDialogo(d.id, 'a'); return; }
+      mark(k);
+      bubs[k].scrollIntoView({block:'nearest', behavior:'smooth'});
+      const b = d.battute[k];
+      speakAs(b.ru, b.s, ()=>{ if(tok!==playTok) return; k++; setTimeout(step, 420); });
+    };
+    step();
+  }
+  playBtn.onclick = ()=>{ if(playing){ stopPlay(); stopSpeech(); } else playAll(); };
+  paintPlay();
+  onLeave(()=>{ playTok++; stopSpeech(); });
+
+  // Frasi chiave e nota culturale
+  if(d.parole && d.parole.length){
+    const kw = $(`<div class="pcard"><h3>${ic('key')} Frasi chiave</h3><div class="kw-list"></div></div>`);
+    d.parole.forEach(p=>{
+      const r = $(`<button class="kw" type="button"><b></b><span></span></button>`);
+      r.querySelector('b').textContent = p.ru;
+      r.querySelector('span').textContent = p.it;
+      r.onclick = ()=>{ stopPlay(); speak(onlyCyrillic(p.ru)); };
+      kw.querySelector('.kw-list').appendChild(r);
+    });
+    stage.appendChild(kw);
+  }
+  if(d.nota) stage.appendChild($(`<div class="nota-box">${ic('bulb')}<div>${esc(d.nota)}</div></div>`));
+
+  // Mettiti alla prova
+  stage.appendChild($(`<div class="sec-h">Mettiti alla prova</div>`));
+  const list = $(`<div class="list"></div>`);
+  [mio, mio==='A'?'B':'A'].forEach(r=>{
+    const nome = nomeRuolo(d, r);
+    const t = $(`<button class="tile wide" type="button"><div class="ico">${r===mio?'🎭':'🔁'}</div>
+      <div class="txt"><div class="t"></div><div class="d"></div></div></button>`);
+    t.querySelector('.t').textContent = nome==='Tu' ? 'Recita la tua parte' : `Recita la parte di ${nome}`;
+    t.querySelector('.d').textContent = `L'altro parla, tu rispondi in russo${SpeechRec?' (anche a voce)':''}`;
+    t.onclick = ()=>{ stopPlay(); stopSpeech(); navigateTo(()=>runRecita(d, r)); };
+    list.appendChild(t);
+  });
+  const quiz = $(`<button class="tile wide" type="button"><div class="ico">💡</div>
+    <div class="txt"><div class="t">Cosa rispondi?</div><div class="d">Scegli la battuta giusta per continuare il dialogo</div></div></button>`);
+  quiz.onclick = ()=>{ stopPlay(); stopSpeech(); navigateTo(()=>runDlgQuiz(d)); };
+  list.appendChild(quiz);
+  stage.appendChild(list);
+
+  // Le mie battute negli esercizi (scheda Frasi)
+  const mie = d.battute.map((b,k)=>({b,k})).filter(({b})=>b.s===mio && b.ru.split(/\s+/).length>=2)
+    .map(({b,k})=>({id:`d-${d.id}-${k}`, ru:b.ru, it:b.it, tema:`Dialogo: ${d.titolo}`}));
+  if(mie.length){
+    const save = $(`<button class="add-flash-btn" type="button" style="align-self:center"></button>`);
+    const paint = ()=>{
+      const tutte = mie.every(f=>isEsesFrase(fraseEseId(f)));
+      save.innerHTML = tutte ? `${ic('check')} Le tue frasi sono negli esercizi` : `${ic('plus')} Salva le tue ${mie.length} frasi negli esercizi`;
+      save.classList.toggle('added', tutte); save.disabled = tutte;
+    };
+    save.onclick = ()=>{ mie.forEach(f=>addEsesFrase(f)); paint(); haptic(true); };
+    paint();
+    stage.appendChild(save);
+  }
+}
+
+// Recita: le battute dell'altro le legge il telefono, le tue le dici tu.
+function runRecita(d, ruolo){
+  const stage = header(`Recita · ${d.titolo}`, {narrow:true});
+  const nome = nomeRuolo(d, ruolo);
+  stage.appendChild($(`<p class="sg-intro">${nome==='Tu' ? 'Fai la tua parte' : `Sei <b>${esc(nome)}</b>`}: quando tocca a te leggi l'italiano e dillo in russo${SpeechRec ? ' — tocca <b>Parla</b> e il telefono ti ascolta' : ' ad alta voce'}. Poi controlla.</p>`));
+  const bar = progressBar(stage);
+  const chat = $(`<div class="chat"></div>`); stage.appendChild(chat);
+  const ctrl = $(`<div class="rp-ctrl"></div>`); stage.appendChild(ctrl);
+  const n = d.battute.length;
+  let k = 0, tok = 0, rec = null, parlate = 0, capite = 0;
+  const stopRec = ()=>{ if(rec){ try{ rec.abort(); }catch(e){} rec = null; } };
+  onLeave(()=>{ tok++; stopSpeech(); stopRec(); });
+  const scorri = el => requestAnimationFrame(()=>el.scrollIntoView({block:'center', behavior:'smooth'}));
+
+  function bolla(b, mia){
+    const el = $(`<div class="bub${mia?' me':''}"><div class="who"></div><div class="ru"></div><div class="it"></div></div>`);
+    el.querySelector('.who').textContent = nomeRuolo(d, b.s);
+    el.querySelector('.ru').textContent = b.ru;
+    el.querySelector('.it').textContent = b.it;
+    return el;
+  }
+  function next(){
+    const my = ++tok;
+    bar.style.width = (k/n*100)+'%'; bar.setNum(Math.min(k, n-1), n);
+    ctrl.innerHTML = '';
+    if(k>=n) return fine();
+    const b = d.battute[k];
+    if(b.s !== ruolo){
+      const el = bolla(b, false);
+      el.classList.add('playing');
+      chat.appendChild(el); scorri(el);
+      const salta = $(`<button class="textbtn" type="button" style="align-self:center">Salta ›</button>`);
+      salta.onclick = ()=>{ stopSpeech(); el.classList.remove('playing'); k++; next(); };
+      ctrl.appendChild(salta);
+      speakAs(b.ru, b.s, ()=>{ if(my!==tok) return; el.classList.remove('playing'); k++; setTimeout(()=>{ if(my===tok) next(); }, 380); });
+      return;
+    }
+    // tocca a te
+    const el = $(`<div class="bub me turn"><div class="who"></div><div class="hint"></div><div class="heard"></div></div>`);
+    el.querySelector('.who').textContent = `${nomeRuolo(d, b.s)} · tocca a te`;
+    el.querySelector('.hint').textContent = `«${b.it}»`;
+    chat.appendChild(el); scorri(el);
+    const row = $(`<div class="row"></div>`);
+    const show = $(`<button class="btn" type="button">${ic('eye')} Mostra</button>`);
+    show.onclick = ()=>rivela(null);
+    if(SpeechRec){
+      const mic = $(`<button class="btn blue" type="button">${ic('mic')} Parla</button>`);
+      mic.onclick = ()=>{
+        if(rec){ try{ rec.stop(); }catch(e){} return; }
+        stopSpeech();
+        mic.innerHTML = `${ic('stop')} Ascolto…`; mic.classList.add('rec');
+        const heard = el.querySelector('.heard');
+        rec = ascoltaRusso((testo, err)=>{
+          rec = null;
+          if(my!==tok) return;
+          mic.innerHTML = `${ic('mic')} Parla`; mic.classList.remove('rec');
+          if(testo) rivela(testo);
+          else heard.textContent = err==='not-allowed' || err==='service-not-allowed'
+            ? 'Microfono non consentito: usa «Mostra».' : 'Non ho sentito: riprova o tocca «Mostra».';
+        }, parz=>{ heard.textContent = parz; });
+      };
+      row.append(mic, show);
+    } else {
+      show.classList.add('primary');
+      row.append(show);
+    }
+    ctrl.appendChild(row);
+
+    function rivela(detto){
+      stopRec();
+      el.classList.remove('turn');
+      el.innerHTML = `<div class="who"></div><div class="ru"></div><div class="it"></div>`;
+      el.querySelector('.who').textContent = nomeRuolo(d, b.s);
+      el.querySelector('.it').textContent = b.it;
+      if(detto!=null){
+        parlate++;
+        const c = confrontaDetto(detto, b.ru);
+        const ok = c.pct >= 70;
+        if(ok) capite++;
+        haptic(ok);
+        el.querySelector('.ru').innerHTML = c.html;
+        el.classList.add(ok ? 'good' : 'meh');
+        const res = $(`<div class="sr-res"></div>`);
+        res.textContent = `${ok ? '✓ Bene!' : 'Quasi.'} Hai detto: «${detto}»`;
+        el.appendChild(res);
+      } else {
+        el.querySelector('.ru').textContent = b.ru;
+      }
+      speakAs(b.ru, b.s);
+      ctrl.innerHTML = '';
+      const go = $(`<button class="btn primary block" type="button">${k+1<n?'Continua':'Fine'} →</button>`);
+      go.onclick = ()=>{ k++; next(); };
+      ctrl.appendChild(go);
+    }
+  }
+  function fine(){
+    segnaDialogo(d.id, 'r');
+    recordActivity(true);
+    const testo = parlate
+      ? `Il telefono ha capito bene ${capite} ${capite===1?'battuta':'battute'} su ${parlate}.`
+      : `Hai recitato tutte le battute di «${nomeRuolo(d, ruolo)}».`;
+    finish(stage, 'Dialogo completato!', ()=>runRecita(d, ruolo), {titolo:'Dialogo completato! 🎭', testo});
+    confetti(stage.querySelector('.done'));
+    const altro = ruolo==='A' ? 'B' : 'A';
+    const sw = $(`<button class="textbtn" type="button" style="align-self:center">${ic('users')} Ora fai la parte di ${esc(nomeRuolo(d, altro))}</button>`);
+    sw.onclick = ()=>runRecita(d, altro);
+    stage.appendChild(sw);
+  }
+  // Chi parla per primo? Se è l'altro, parte subito la sua battuta.
+  next();
+}
+
+// «Cosa rispondi?»: la battuta dell'altro, poi quattro risposte possibili.
+function runDlgQuiz(d){
+  const mio = dlgMio(d);
+  const mieAltrove = (DB.dialoghi||[]).filter(x=>x.id!==d.id)
+    .flatMap(x=>x.battute.filter(b=>b.s===dlgMio(x)).map(b=>b.ru));
+  const qs = [];
+  d.battute.forEach((b,k)=>{
+    if(k===0 || b.s!==mio || d.battute[k-1].s===mio) return;
+    const prima = d.battute[k-1];
+    const stesse = d.battute.filter((x,j)=>j!==k && x.s===mio && x.ru!==b.ru).map(x=>x.ru);
+    const distr = [...new Set([...shuffle(stesse), ...shuffle(mieAltrove)])].filter(x=>x!==b.ru).slice(0,3);
+    qs.push({q:prima.ru, sub:`«${prima.it}» — cosa rispondi?`, correct:b.ru, opts:shuffle([b.ru, ...distr]),
+             listen:prima.ru, speak:b.ru, after:b.it});
+  });
+  const restart = ()=>runDlgQuiz(d);
+  runMCQ(qs, `Cosa rispondi? · ${d.titolo}`, restart, {
+    onAnswer:(Q, ok)=>recordActivity(ok),
+    onEnd:()=>segnaDialogo(d.id, 'q')
+  });
+}
+
+// ================= NUMERI =================
+const NUM_U = ['ноль','один','два','три','четыре','пять','шесть','семь','восемь','девять'];
+const NUM_T = ['десять','одиннадцать','двенадцать','тринадцать','четырнадцать','пятнадцать','шестнадцать','семнадцать','восемнадцать','девятнадцать'];
+const NUM_D = ['','','двадцать','тридцать','сорок','пятьдесят','шестьдесят','семьдесят','восемьдесят','девяносто'];
+const NUM_H = ['','сто','двести','триста','четыреста','пятьсот','шестьсот','семьсот','восемьсот','девятьсот'];
+// 1 / 2-4 / 5+ (11-14 fanno parte del terzo gruppo): рубль, рубля, рублей
+function pluralRu(n, f){
+  const a = Math.abs(n) % 100, b = a % 10;
+  if(a>10 && a<20) return f[2];
+  if(b===1) return f[0];
+  if(b>=2 && b<=4) return f[1];
+  return f[2];
+}
+function _num999(n, fem){
+  const out = [], h = Math.floor(n/100), r = n % 100;
+  if(h) out.push(NUM_H[h]);
+  if(r>=10 && r<20) out.push(NUM_T[r-10]);
+  else {
+    const dd = Math.floor(r/10), u = r % 10;
+    if(dd) out.push(NUM_D[dd]);
+    if(u) out.push(fem && u===1 ? 'одна' : fem && u===2 ? 'две' : NUM_U[u]);
+  }
+  return out;
+}
+// Numero in lettere (fino a 999 999 999). fem: «одна/две» (минута, тысяча…)
+function numRu(n, fem){
+  n = Math.floor(Math.abs(+n || 0));
+  if(n===0) return 'ноль';
+  const mil = Math.floor(n/1e6) % 1000, th = Math.floor(n/1000) % 1000, rest = n % 1000;
+  const p = [];
+  if(mil) p.push(...(mil===1 ? [] : _num999(mil, false)), pluralRu(mil, ['миллион','миллиона','миллионов']));
+  if(th)  p.push(...(th===1 ? [] : _num999(th, true)), pluralRu(th, ['тысяча','тысячи','тысяч']));
+  if(rest) p.push(..._num999(rest, fem));
+  return p.join(' ');
+}
+const RUBLI = ['рубль','рубля','рублей'];
+const prezzoRu = n => `${numRu(n)} ${pluralRu(n, RUBLI)}`;
+// Ore "ufficiali" (le più facili): три часа двадцать минут
+function oraRu(h, m){
+  const hh = h===1 ? 'час' : `${numRu(h)} ${pluralRu(h, ['час','часа','часов'])}`;
+  return m ? `${hh} ${numRu(m, true)} ${pluralRu(m, ['минута','минуты','минут'])}` : hh;
+}
+// Ore "di tutti i giorni": половина четвёртого, без четверти четыре…
+const ORD_GEN = ['','первого','второго','третьего','четвёртого','пятого','шестого','седьмого','восьмого','девятого','десятого','одиннадцатого','двенадцатого'];
+const MIN_GEN = {5:'пяти',10:'десяти',15:'четверти',20:'двадцати',25:'двадцати пяти'};
+function oraColloquiale(h, m){
+  const dopo = h % 12 + 1;
+  if(m===0) return null;
+  if(m===30) return `половина ${ORD_GEN[dopo]}`;
+  if(m===15) return `четверть ${ORD_GEN[dopo]}`;
+  if(m<30) return `${numRu(m, true)} ${pluralRu(m, ['минута','минуты','минут'])} ${ORD_GEN[dopo]}`;
+  const manca = MIN_GEN[60-m];
+  return manca ? `без ${manca} ${dopo===1 ? 'час' : numRu(dopo)}` : null;
+}
+function clockSVG(h, m){
+  const ma = m*6, ha = (h%12)*30 + m*0.5;
+  let tk = '';
+  for(let i=0; i<60; i++){
+    const big = i%5===0, a = i*6*Math.PI/180, r1 = big ? 45 : 48.5, r2 = 52;
+    tk += `<line class="${big?'tk':'tk2'}" x1="${(60+r1*Math.sin(a)).toFixed(1)}" y1="${(60-r1*Math.cos(a)).toFixed(1)}" x2="${(60+r2*Math.sin(a)).toFixed(1)}" y2="${(60-r2*Math.cos(a)).toFixed(1)}"/>`;
+  }
+  const nums = [[12,60,22],[3,98,60],[6,60,98],[9,22,60]].map(([t,x,y])=>`<text x="${x}" y="${y}">${t}</text>`).join('');
+  return `<svg class="clock" viewBox="0 0 120 120" aria-label="Orologio: ${h}:${String(m).padStart(2,'0')}">
+    <circle class="cf" cx="60" cy="60" r="56"/>${tk}${nums}
+    <line class="hh" x1="60" y1="60" x2="60" y2="33" transform="rotate(${ha} 60 60)"/>
+    <line class="mh" x1="60" y1="60" x2="60" y2="16" transform="rotate(${ma} 60 60)"/>
+    <circle class="cc" cx="60" cy="60" r="4.5"/></svg>`;
+}
+
+const NUM_RANGES = [
+  ['r20',  '0–20',       0, 20],
+  ['r100', '21–100',     21, 100],
+  ['r1000','100–1000',   100, 1000],
+  ['r10k', '1000–10 000',1000, 10000],
+];
+function numRange(){ const r = NUM_RANGES.find(x=>x[0]===settings().numRange); return r || NUM_RANGES[1]; }
+const rnd = (a, b) => a + Math.floor(Math.random()*(b-a+1));
+// numeri "vicini" per i distrattori: stesse cifre scambiate, ±1, ±10, 12↔20…
+function numeriVicini(n, lo, hi){
+  const c = new Set();
+  const s = String(n);
+  if(s.length>1){ const r = s.split('').reverse().join(''); if(r[0]!=='0') c.add(+r); }
+  [1,2,10,11,20,100].forEach(dd=>{ c.add(n+dd); c.add(n-dd); });
+  if(n>=12 && n<=19) c.add((n-10)*10);
+  if(n%10===0 && n>=20 && n<=90) c.add(n/10+10);
+  c.add(rnd(lo, hi)); c.add(rnd(lo, hi));
+  return shuffle([...c].filter(x=>x!==n && x>=0 && x>=lo-10 && x<=hi*1.1));
+}
+
+function runNumeri(){
+  const stage = header('Numeri');
+  stage.appendChild($(`<p class="sg-intro">Contare, dire l'ora e capire un prezzo. Tocca qualsiasi numero russo per ascoltarlo.</p>`));
+
+  // --- Convertitore: scrivi un numero, leggilo in russo ---
+  const conv = $(`<div class="pcard num-conv"><h3>${ic('hash')} Scrivi un numero</h3>
+    <div class="nc-row"><input class="vocab-input plain nc-in" type="text" inputmode="numeric" maxlength="9" placeholder="Es. 2026" autocomplete="off">
+    <button class="btn blue sm" type="button" aria-label="Ascolta">${ic('vol')}</button></div>
+    <div class="nc-out"></div></div>`);
+  const inp = conv.querySelector('input'), out = conv.querySelector('.nc-out');
+  const paintConv = ()=>{
+    const v = inp.value.replace(/\D/g,'');
+    if(inp.value!==v) inp.value = v;
+    out.textContent = v ? numRu(+v) : 'Il numero in lettere comparirà qui.';
+    out.classList.toggle('muted-out', !v);
+  };
+  inp.oninput = paintConv;
+  conv.querySelector('button').onclick = ()=>{ const v = inp.value.replace(/\D/g,''); if(v) speak(numRu(+v)); };
+  inp.onkeydown = e=>{ if(e.key==='Enter') conv.querySelector('button').click(); };
+  paintConv();
+  stage.appendChild(conv);
+
+  // --- Esercizi ---
+  stage.appendChild($(`<div class="sec-h">Esercizi</div>`));
+  const seg = $(`<div class="seg sm wrap" role="group" aria-label="Numeri da allenare"></div>`);
+  NUM_RANGES.forEach(([k, lab])=>{
+    const b = $(`<button type="button"></button>`); b.textContent = lab; b.dataset.k = k;
+    b.onclick = ()=>{ setSetting('numRange', k); paintSeg(); };
+    seg.appendChild(b);
+  });
+  const paintSeg = ()=>seg.querySelectorAll('button').forEach(b=>b.classList.toggle('on', b.dataset.k===numRange()[0]));
+  paintSeg();
+  stage.appendChild(seg);
+  const list = $(`<div class="list"></div>`);
+  [
+    ['🎧','Ascolta e scrivi','Senti il numero in russo e scrivilo in cifre', ()=>runNumDettato()],
+    ['👀','Leggi il numero','Dalle parole russe alle cifre', ()=>runNumLeggi()],
+    ['🕒','Che ore sono?','Leggi l\'orologio e scegli l\'ora in russo', ()=>runOre()],
+    ['💸','Quanto costa?','Prezzi in rubli: рубль, рубля o рублей?', ()=>runPrezzi()],
+  ].forEach(([e,t,dd,fn])=>{
+    const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t">${t}</div><div class="d">${dd}</div></div></button>`);
+    b.onclick = ()=>navigateTo(fn);
+    list.appendChild(b);
+  });
+  stage.appendChild(list);
+
+  // --- Tabella ---
+  const gruppi = [
+    ['Da 0 a 10', [0,1,2,3,4,5,6,7,8,9,10]],
+    ['Da 11 a 19 (-надцать)', [11,12,13,14,15,16,17,18,19]],
+    ['Le decine', [20,30,40,50,60,70,80,90]],
+    ['Le centinaia', [100,200,300,400,500,600,700,800,900]],
+    ['Grandi numeri', [1000,2000,5000,10000,1000000]],
+  ];
+  stage.appendChild($(`<div class="sec-h">Tabella</div>`));
+  gruppi.forEach(([tit, nums])=>{
+    const card = $(`<div class="pcard"><h3></h3><div class="num-grid"></div></div>`);
+    card.querySelector('h3').textContent = tit;
+    const g = card.querySelector('.num-grid');
+    nums.forEach(n=>{
+      const r = $(`<button class="num-row" type="button"><b></b><span></span></button>`);
+      r.querySelector('b').textContent = n.toLocaleString('it-IT');
+      r.querySelector('span').textContent = numRu(n);
+      r.onclick = ()=>speak(numRu(n));
+      g.appendChild(r);
+    });
+    stage.appendChild(card);
+  });
+  stage.appendChild(regolaCard('Numeri e nomi: 1 · 2–4 · 5+', 'Dopo un numero il nome cambia forma. Conta l\'ultima cifra (ma 11–14 vanno sempre col terzo gruppo).', [
+    ['один рубль','1 rublo (nominativo singolare)'],
+    ['два рубля · три дня','2, 3, 4 → genitivo singolare'],
+    ['пять рублей · десять дней','5–20 → genitivo plurale'],
+    ['двадцать один рубль','finisce per 1 → come «один»'],
+    ['одиннадцать рублей','11–14 → sempre genitivo plurale'],
+    ['одна минута · две минуты','femminile: одна / две'],
+  ]));
+  stage.appendChild(regolaCard('Che ore sono?', 'Il modo più semplice: ore + minuti, come sul display. Nel parlato si sente spesso anche «половина» (mezza, verso l\'ora dopo).', [
+    ['Который час? · Сколько времени?','Che ore sono?'],
+    ['Сейчас час.','È l\'una.'],
+    ['Сейчас два часа. · Пять часов.','Sono le due. · Sono le cinque.'],
+    ['Три часа двадцать минут.','Le tre e venti.'],
+    ['Половина четвёртого.','Le tre e mezza (lett. «metà della quarta»).'],
+    ['Без четверти четыре.','Le quattro meno un quarto.'],
+    ['Во сколько? — В семь часов.','A che ora? — Alle sette.'],
+  ]));
+}
+// Scheda di teoria con esempi da ascoltare
+function regolaCard(titolo, testo, esempi){
+  const c = $(`<div class="pcard"><h3>${ic('bulb')} <span></span></h3><p class="regola-p"></p><div class="kw-list"></div></div>`);
+  c.querySelector('h3 span').textContent = titolo;
+  c.querySelector('.regola-p').textContent = testo;
+  esempi.forEach(([ru, it])=>{
+    const r = $(`<button class="kw" type="button"><b></b><span></span></button>`);
+    r.querySelector('b').textContent = ru; r.querySelector('span').textContent = it;
+    r.onclick = ()=>speak(onlyCyrillic(ru));
+    c.querySelector('.kw-list').appendChild(r);
+  });
+  return c;
+}
+
+// Ascolta e scrivi: il numero si sente soltanto, si risponde in cifre.
+function runNumDettato(){
+  const [, lab, lo, hi] = numRange();
+  const N = 10;
+  const nums = []; let guard = 0;
+  while(nums.length<N && guard++<200){ const x = rnd(lo, hi); if(!nums.includes(x) || hi-lo<N) nums.push(x); }
+  let i = 0, correct = 0;
+  const stage = header(`Ascolta e scrivi · ${lab}`, {narrow:true});
+  const bar = progressBar(stage);
+  const wrap = $(`<div class="list" style="gap:12px"></div>`); stage.appendChild(wrap);
+  let onKey = null;
+  const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
+  onLeave(()=>{ stopKeys(); stopSpeech(); });
+  function show(){
+    if(i>=N){ stopKeys(); return finish(stage, `${correct} / ${N}`, runNumDettato); }
+    bar.style.width = (i/N*100)+'%'; bar.setNum(i, N);
+    const n = nums[i], parole = numRu(n);
+    wrap.innerHTML = '';
+    const card = $(`<div class="qcard"><div class="kick">Che numero senti?</div>
+      <button class="big-play" type="button" aria-label="Ascolta di nuovo">${ic('vol')}</button>
+      <div class="qsub">Tocca per riascoltare</div></div>`);
+    card.querySelector('.big-play').onclick = ()=>{ speak(parole); inp.focus(); };
+    wrap.appendChild(card);
+    const inp = $(`<input class="vocab-input plain num-input" type="text" inputmode="numeric" maxlength="6" autocomplete="off" placeholder="Scrivi in cifre">`);
+    const chk = $(`<button class="btn primary block" type="button">${ic('check')} Verifica</button>`);
+    wrap.append(inp, chk);
+    let answered = false;
+    inp.oninput = ()=>{ inp.value = inp.value.replace(/\D/g,''); };
+    chk.onclick = ()=>{
+      if(answered){ i++; return show(); }
+      const v = inp.value.replace(/\D/g,'');
+      if(!v){ inp.focus(); return; }
+      answered = true;
+      const ok = +v === n;
+      if(ok) correct++;
+      haptic(ok); recordActivity(ok); contaExtra('num', ok);
+      inp.disabled = true;
+      inp.classList.add(ok ? 'ok' : 'ko');
+      const res = $(`<div class="qsub num-res"></div>`);
+      res.innerHTML = ok ? `<b style="color:var(--good)">✓ ${n.toLocaleString('it-IT')}</b> — ${esc(parole)}`
+                         : `<b style="color:var(--bad)">Era ${n.toLocaleString('it-IT')}</b> — ${esc(parole)}`;
+      card.appendChild(res);
+      speak(parole);
+      chk.innerHTML = `${i+1<N ? 'Continua' : 'Risultato'} →`;
+    };
+    stopKeys();
+    onKey = e=>{ if(e.key==='Enter'){ e.preventDefault(); chk.click(); } };
+    document.addEventListener('keydown', onKey);
+    setTimeout(()=>speak(parole), 250);
+    setTimeout(()=>{ try{ inp.focus({preventScroll:true}); }catch(e){} }, 60);
+  }
+  show();
+}
+
+// Leggi il numero: parole russe → cifre (scelta multipla)
+function runNumLeggi(){
+  const [, lab, lo, hi] = numRange();
+  const qs = [];
+  const usati = new Set();
+  for(let k=0; k<10; k++){
+    let n = rnd(lo, hi), g = 0;
+    while(usati.has(n) && g++<20) n = rnd(lo, hi);
+    usati.add(n);
+    const opts = [n, ...numeriVicini(n, lo, hi).slice(0,3)].map(x=>x.toLocaleString('it-IT'));
+    qs.push({q:numRu(n), sub:'Quale numero è?', correct:n.toLocaleString('it-IT'), opts:shuffle(opts), speak:numRu(n)});
+  }
+  runMCQ(qs, `Leggi il numero · ${lab}`, runNumLeggi, {onAnswer:(Q, ok)=>{ recordActivity(ok); contaExtra('num', ok); }});
+}
+
+// Che ore sono? Orologio → ora in russo
+function runOre(){
+  const qs = [];
+  const usate = new Set();
+  while(qs.length<8){
+    const h = rnd(1, 12), m = rnd(0, 11)*5, key = h+':'+m;
+    if(usate.has(key)) continue;
+    usate.add(key);
+    const giusta = oraRu(h, m);
+    const cand = new Set();
+    [[h, (m+5)%60],[h, (m+10)%60],[h%12+1, m],[(h+10)%12+1, m],[h, (m+30)%60],[m/5 || 12, h*5%60],[rnd(1,12), rnd(0,11)*5]]
+      .forEach(([hh, mm])=>{ const s = oraRu(hh, mm); if(s!==giusta) cand.add(s); });
+    const coll = oraColloquiale(h, m);
+    qs.push({
+      qHtml: clockSVG(h, m), sub:`Sono le ${h}:${String(m).padStart(2,'0')}`, correct:giusta,
+      opts: shuffle([giusta, ...shuffle([...cand]).slice(0,3)]), speak:`Сейчас ${giusta}`, speakAfter:true,
+      after: coll ? `Nel parlato: «${coll}»` : 'Esatta: si può aggiungere «ровно» (in punto).'
+    });
+  }
+  runMCQ(qs, 'Che ore sono?', runOre, {onAnswer:(Q, ok)=>{ recordActivity(ok); contaExtra('num', ok); }});
+}
+
+// Quanto costa? Prezzo → frase in russo con рубль / рубля / рублей
+const PREZZI = [
+  ['☕','кофе',120,450,10],['🥐','круассан',60,250,5],['🍎','килограмм яблок',80,260,10],['🍞','хлеб',40,120,1],
+  ['🎟️','билет в музей',250,900,50],['🚕','такси',300,1800,10],['🧥','куртка',2500,9000,100],['📕','книга',200,1200,10],
+  ['🚆','билет на поезд',1500,6500,50],['💊','лекарство',90,900,1],['🍦','мороженое',51,99,1],['🎂','торт',400,2200,1],
+];
+function runPrezzi(){
+  const qs = shuffle(PREZZI).slice(0,8).map(([e, cosa, lo, hi, step])=>{
+    let n = Math.round(rnd(lo, hi)/step)*step;
+    if(Math.random()<.4) n = n - n%10 + [1,2,3,4,1,2][rnd(0,5)];     // tanti numeri che finiscono in 1-4
+    const giusta = prezzoRu(n);
+    const cand = new Set();
+    numeriVicini(n, lo, hi).slice(0,4).forEach(x=>{ if(x>0) cand.add(prezzoRu(x)); });
+    // un distrattore con il numero giusto e la forma sbagliata di «рубль»
+    const sbagliata = RUBLI.filter(f=>f!==pluralRu(n, RUBLI));
+    const trappola = `${numRu(n)} ${sbagliata[rnd(0, sbagliata.length-1)]}`;
+    const altri = shuffle([...cand].filter(x=>x!==giusta)).slice(0,2);
+    return {
+      qHtml:`<div class="price-q"><span class="e">${e}</span><b>${n.toLocaleString('it-IT')} ₽</b></div>`,
+      sub:`${cosa} — сколько стоит?`, correct:giusta, opts:shuffle([giusta, trappola, ...altri]),
+      speak:`Это стоит ${giusta}.`, speakAfter:true, after:`${n.toLocaleString('it-IT')} ₽: ${n%100>10 && n%100<20 ? 'finisce per 11–19 → sempre «рублей»' : n%10===1 ? 'finisce per 1 → «рубль»' : n%10>=2 && n%10<=4 ? 'finisce per 2, 3, 4 → «рубля»' : 'finisce per 5–9 o 0 → «рублей»'}`
+    };
+  });
+  runMCQ(qs, 'Quanto costa?', runPrezzi, {onAnswer:(Q, ok)=>{ recordActivity(ok); contaExtra('num', ok); }});
+}
+
+// ================= FRASARIO =================
+// Tutte le frasi pronte, divise per situazione, più le frasi chiave dei
+// dialoghi. Si ascoltano, si cercano e si salvano negli esercizi.
+const FRASARIO_CAT = [
+  ['saluti','👋','Saluti e presentazioni',['saluti','presentarsi']],
+  ['cortesia','🙏','Cortesia',['cortesia']],
+  ['conversazione','💬','Conversazione',['conversazione','espressioni','comunicazione','frasi','telefono']],
+  ['domande','❓','Domande utili',['domande']],
+  ['quotidiano','🏠','Vita quotidiana',['quotidiano','routine','casa','pianificazione']],
+  ['opinioni','💭','Opinioni e sentimenti',['opinioni']],
+  ['viaggio','✈️','Viaggi e trasporti',['viaggio','trasporti','luogo','istruzioni']],
+  ['cibo','🍽️','Cibo e ristorante',['cibo','ristorante','alimentazione']],
+  ['acquisti','🛍️','Acquisti',['shopping','vestiti','numeri']],
+  ['famiglia','👪','Famiglia, lavoro, scuola',['famiglia','lavoro','professioni','scuola']],
+  ['tempo','🌦️','Tempo e stagioni',['meteo','tempo','stagioni','natura']],
+  ['salute','💊','Salute ed emergenze',['salute','corpo','urgenza']],
+  ['dialoghi','🎭','Dai dialoghi',['dialoghi']],
+];
+function frasarioItems(){
+  const out = (DB.frasi||[]).map(f=>({id:f.id, ru:f.ru, it:f.it, translit:f.translit||'', tags:f.tag||[]}));
+  (DB.dialoghi||[]).forEach(d=>(d.parole||[]).forEach((p,k)=>
+    out.push({id:`dp-${d.id}-${k}`, ru:p.ru, it:p.it, translit:'', tags:['dialoghi'], dlg:d})));
+  return out;
+}
+function frasiDiCategoria(items, cat){ return items.filter(f=>f.tags.some(t=>cat[3].includes(t))); }
+
+function fraseRow(f, tema){
+  const row = $(`<div class="fr-item"><div class="txt"><div class="ru"></div>${f.translit?'<div class="tr"></div>':''}<div class="it"></div></div></div>`);
+  row.querySelector('.ru').textContent = f.ru;
+  if(f.translit) row.querySelector('.tr').textContent = f.translit;
+  row.querySelector('.it').textContent = f.it;
+  if(f.dlg){
+    const src = $(`<button class="fr-src" type="button"></button>`);
+    src.textContent = `${f.dlg.icona||'💬'} ${f.dlg.titolo}`;
+    src.onclick = e=>{ e.stopPropagation(); navigateTo(()=>runDialogo(f.dlg)); };
+    row.querySelector('.txt').appendChild(src);
+  }
+  const spk = $(`<button class="mini-btn spk" type="button" title="Ascolta" aria-label="Ascolta">${ic('vol')}</button>`);
+  spk.onclick = e=>{ e.stopPropagation(); speak(onlyCyrillic(f.ru)); };
+  const add = $(`<button class="mini-btn add" type="button"></button>`);
+  const eid = fraseEseId(f);
+  const paint = ()=>{
+    const s = isEsesFrase(eid);
+    add.innerHTML = s ? ic('check') : ic('plus');
+    add.classList.toggle('added', s); add.disabled = s;
+    add.title = s ? 'Negli esercizi' : 'Aggiungi agli esercizi';
+    add.setAttribute('aria-label', add.title);
+  };
+  add.onclick = e=>{ e.stopPropagation(); addEsesFrase({id:f.id, ru:f.ru, it:f.it, translit:f.translit, tema:tema||''}); paint(); haptic(true); };
+  paint();
+  row.append(spk, add);
+  row.onclick = ()=>speak(onlyCyrillic(f.ru));
+  return row;
+}
+
+function runFrasario(){
+  const stage = header('Frasario');
+  const items = frasarioItems();
+  stage.appendChild($(`<p class="sg-intro">Frasi pronte per ogni situazione. Tocca una frase per ascoltarla, <b>＋</b> per allenarla negli esercizi.</p>`));
+  const sWrap = $(`<div class="search sticky">${ic('search')}<input class="vocab-input" type="search" enterkeyhint="search" placeholder="Cerca una frase, in italiano o in russo…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div>`);
+  const inp = sWrap.querySelector('input');
+  stage.appendChild(sWrap);
+  const browse = $(`<div class="list" style="gap:12px"></div>`);
+  const results = $(`<div class="list" style="display:none;gap:8px"></div>`);
+  stage.append(browse, results);
+
+  const grid = $(`<div class="topic-grid"></div>`);
+  FRASARIO_CAT.forEach(cat=>{
+    const n = frasiDiCategoria(items, cat).length;
+    if(!n) return;
+    const b = $(`<button class="topic" type="button"><span class="e">${cat[1]}</span><span class="tt"><b></b><small>${plur(n,'frase','frasi')}</small></span></button>`);
+    b.querySelector('b').textContent = cat[2];
+    b.onclick = ()=>navigateTo(()=>runFrasarioCat(cat));
+    grid.appendChild(b);
+  });
+  browse.appendChild($(`<div class="sec-h">Situazioni</div>`));
+  browse.appendChild(grid);
+
+  let t = null;
+  inp.oninput = ()=>{ clearTimeout(t); t = setTimeout(cerca, 120); };
+  function cerca(){
+    const q = normSearch(inp.value);
+    if(!q){ results.style.display='none'; browse.style.display=''; return; }
+    const found = searchVoci(items, inp.value);
+    results.innerHTML = '';
+    results.appendChild($(`<div class="results-hdr">${plur(found.length,'frase trovata','frasi trovate')}</div>`));
+    if(!found.length) results.appendChild($(`<div class="empty"><div class="big">🔍</div>Nessuna frase con «${esc(inp.value.trim())}».<small>Prova con una parola sola, o cerca nel <b>Vocabolario</b>.</small></div>`));
+    found.slice(0, 60).forEach(f=>results.appendChild(fraseRow(f, 'Frasario')));
+    results.style.display=''; browse.style.display='none';
+  }
+}
+function runFrasarioCat(cat){
+  const stage = header(cat[2]);
+  const frasi = frasiDiCategoria(frasarioItems(), cat);
+  const row = $(`<div class="row"></div>`);
+  const allena = $(`<button class="btn primary" type="button">${ic('headphones')} Ascolto</button>`);
+  const pool = frasi.map(f=>({id:f.id, ru:f.ru, it:f.it, translit:f.translit}));
+  allena.onclick = ()=>navigateTo(()=>runPhrase(0, {pool:sample(pool, Math.min(10, pool.length)), titolo:cat[2]}));
+  const comp = $(`<button class="btn" type="button">${ic('blocks')} Componi</button>`);
+  comp.onclick = ()=>navigateTo(()=>runComponi(null, {pool, titolo:cat[2]}));
+  row.append(allena, comp);
+  stage.appendChild(row);
+  stage.appendChild($(`<div class="sec-h">${cat[1]} ${plur(frasi.length,'frase','frasi')}</div>`));
+  const list = $(`<div class="list" style="gap:8px"></div>`);
+  frasi.forEach(f=>list.appendChild(fraseRow(f, cat[2])));
+  stage.appendChild(list);
+}
+
+// ================= COMPONI LA FRASE =================
+// Le parole della frase arrivano mescolate: si toccano nell'ordine giusto.
+function paroleFrase(ru){
+  return String(ru||'').split(/\s+/).map(w=>w.replace(/^[«"(]+|[.,!?;:»")…]+$/g,'')).filter(w=>/[а-яё0-9]/i.test(w));
+}
+function poolComponi(){
+  const frasi = (DB.frasi||[]).map(f=>({id:f.id, ru:f.ru, it:f.it, translit:f.translit||''}));
+  const dlg = (DB.dialoghi||[]).flatMap(d=>d.battute.map((b,k)=>({id:`d-${d.id}-${k}`, ru:b.ru, it:b.it, dlg:true})));
+  return {frasi, dlg};
+}
+function runComponi(level, opts){
+  opts = opts || {};
+  const custom = opts.pool && opts.pool.length ? opts.pool : null;
+  const {frasi, dlg} = poolComponi();
+  const nW = f => paroleFrase(f.ru).length;
+  const LIV = [
+    ['brevi','🌱','Brevi','3–4 parole', frasi.filter(f=>nW(f)>=3 && nW(f)<=4)],
+    ['medie','🌿','Medie','5–6 parole', frasi.filter(f=>nW(f)>=5 && nW(f)<=6)],
+    ['lunghe','🌳','Lunghe','7 parole o più', frasi.filter(f=>nW(f)>=7 && nW(f)<=12)],
+    ['dialoghi','🎭','Dai dialoghi','Battute delle scene di tutti i giorni', dlg.filter(f=>nW(f)>=3 && nW(f)<=9)],
+  ];
+  if(!custom && !level){
+    const stage = header('Componi la frase');
+    stage.appendChild($(`<p class="sg-intro">Leggi la frase in italiano e tocca le parole russe <b>nell'ordine giusto</b>. Un ottimo modo per fissare l'ordine delle parole e le desinenze.</p>`));
+    const list = $(`<div class="list"></div>`);
+    LIV.forEach(([k,e,t,dd,p])=>{
+      const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t">${t}</div><div class="d">${dd} &middot; ${plur(p.length,'frase','frasi')}</div></div></button>`);
+      b.onclick = ()=>navigateTo(()=>runComponi(k));
+      list.appendChild(b);
+    });
+    stage.appendChild(list);
+    const tot = extraStore().cmp || 0;
+    if(tot) stage.appendChild($(`<p class="muted" style="margin:4px 0 0">Finora hai composto ${plur(tot,'frase','frasi')} giuste.</p>`));
+    return;
+  }
+  const liv = LIV.find(l=>l[0]===level);
+  const base = (custom || (liv ? liv[4] : [])).filter(f=>nW(f)>=2 && nW(f)<=12);
+  if(!base.length){ const st = header('Componi la frase'); return emptyDone(st, '🧩', 'Nessuna frase adatta', 'Qui servono frasi di almeno due parole.'); }
+  // prima le frasi da ripassare, poi le altre
+  const deck = shuffle(shuffle(base).sort((a,b)=>(isDue(b.id)?1:0)-(isDue(a.id)?1:0)).slice(0, 8));
+  const titolo = opts.titolo ? `Componi · ${opts.titolo}` : liv ? `Componi · ${liv[2]}` : 'Componi la frase';
+  const stage = header(titolo, {narrow:true});
+  const bar = progressBar(stage);
+  const wrap = $(`<div class="list" style="gap:14px"></div>`); stage.appendChild(wrap);
+  let i = 0, correct = 0, onKey = null;
+  const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
+  onLeave(stopKeys);
+  const restart = ()=>runComponi(level, opts);
+
+  function show(){
+    if(i>=deck.length){ stopKeys(); return finish(stage, `${correct} / ${deck.length}`, restart); }
+    bar.style.width = (i/deck.length*100)+'%'; bar.setNum(i, deck.length);
+    const f = deck[i];
+    const giuste = paroleFrase(f.ru);
+    // mescola finché l'ordine non è diverso da quello giusto
+    let chips = giuste.map((w,k)=>({w,k}));
+    for(let g=0; g<8; g++){ chips = shuffle(chips); if(chips.some((c,j)=>c.w!==giuste[j])) break; }
+    const scelte = [];
+    wrap.innerHTML = '';
+    const card = $(`<div class="qcard"><div class="kick">Traduci in russo</div><div class="big-it"></div>
+      <button class="btn soft sm listen-btn" type="button">${ic('vol')} Aiutino: ascolta</button></div>`);
+    card.querySelector('.big-it').textContent = f.it;
+    card.querySelector('.big-it').style.fontSize = Math.max(19, 27 - Math.max(0, f.it.length-24)*0.3) + 'px';
+    card.querySelector('.listen-btn').onclick = ()=>speak(onlyCyrillic(f.ru));
+    const line = $(`<div class="cmp-line"><span class="ph">Tocca le parole qui sotto</span></div>`);
+    const bank = $(`<div class="cmp-bank"></div>`);
+    const chk = $(`<button class="btn primary block" type="button" disabled>${ic('check')} Verifica</button>`);
+    wrap.append(card, line, bank, chk);
+    let answered = false;
+    const bankBtns = chips.map((c, j)=>{
+      const b = $(`<button class="chipw" type="button"></button>`);
+      b.textContent = c.w;
+      b.onclick = ()=>{ if(answered || b.classList.contains('used')) return; b.classList.add('used'); scelte.push(j); paint(); };
+      bank.appendChild(b);
+      return b;
+    });
+    function paint(){
+      line.innerHTML = '';
+      if(!scelte.length) line.appendChild($(`<span class="ph">Tocca le parole qui sotto</span>`));
+      scelte.forEach((j, pos)=>{
+        const b = $(`<button class="chipw" type="button"></button>`);
+        b.textContent = chips[j].w;
+        b.onclick = ()=>{ if(answered) return; scelte.splice(pos, 1); bankBtns[j].classList.remove('used'); paint(); };
+        line.appendChild(b);
+      });
+      chk.disabled = scelte.length !== chips.length;
+    }
+    chk.onclick = ()=>{
+      if(answered){ i++; return show(); }
+      if(scelte.length !== chips.length) return;
+      answered = true;
+      const ok = scelte.every((j, pos)=>chips[j].w === giuste[pos]);
+      if(ok) correct++;
+      haptic(ok); contaExtra('cmp', ok);
+      if(!f.dlg && /^f\d/.test(f.id)) grade(f.id, ok); else recordActivity(ok);
+      line.classList.add(ok ? 'ok' : 'ko');
+      bank.style.display = 'none';
+      const sol = $(`<div class="cmp-sol"><div class="lab"></div><div class="ru"></div>${f.translit?'<div class="tr"></div>':''}</div>`);
+      sol.querySelector('.lab').textContent = ok ? '✓ Perfetto!' : 'La frase giusta:';
+      sol.querySelector('.lab').style.color = ok ? 'var(--good)' : 'var(--bad)';
+      sol.querySelector('.ru').textContent = f.ru;
+      if(f.translit) sol.querySelector('.tr').textContent = f.translit;
+      sol.onclick = ()=>speak(onlyCyrillic(f.ru));
+      wrap.insertBefore(sol, chk);
+      speak(onlyCyrillic(f.ru));
+      chk.innerHTML = `${i+1<deck.length ? 'Continua' : 'Risultato'} →`;
+      chk.disabled = false;
+    };
+    // tastiera: numeri per scegliere, Backspace per togliere, Invio per verificare
+    stopKeys();
+    onKey = e=>{
+      if(e.key==='Enter'){ if(!chk.disabled){ e.preventDefault(); chk.click(); } return; }
+      if(answered) return;
+      if(e.key==='Backspace' && scelte.length){ e.preventDefault(); const j = scelte.pop(); bankBtns[j].classList.remove('used'); paint(); return; }
+      const k = parseInt(e.key, 10);
+      if(k>=1 && k<=9){ const free = bankBtns.filter(b=>!b.classList.contains('used')); if(free[k-1]) free[k-1].click(); }
+    };
+    document.addEventListener('keydown', onKey);
+  }
+  show();
+}
+
+// ================= PAROLA DEL GIORNO =================
+// Una parola nuova al giorno in home (sempre la stessa fino a mezzanotte).
+function parolaDelGiorno(){
+  const voci = (DB.voci||[]).filter(v=>v.ru && v.it && !/\s/.test(v.ru.trim()) && v.ru.length>=3);
+  if(!voci.length) return null;
+  const s = extraStore(), oggi = todayStr();
+  if(s.wotd && s.wotd.d===oggi){ const v = voci.find(x=>x.id===s.wotd.id); if(v) return v; }
+  const storia = new Set(s.wotdStoria||[]);
+  const cand = voci.filter(v=>box(v.id)<2 && !storia.has(v.id));
+  const pool = cand.length ? cand : voci;
+  const v = pool[Math.floor(Math.random()*pool.length)];
+  updExtra(x=>{ x.wotd = {d:oggi, id:v.id}; x.wotdStoria = [...(x.wotdStoria||[]), v.id].slice(-500); });
+  return v;
+}
+function makeWotd(){
+  const v = parolaDelGiorno();
+  if(!v) return null;
+  const el = $(`<div class="wotd" role="button" tabindex="0">
+    <div class="wtxt"><div class="k">${ic('sparkle')} Parola del giorno</div>
+    <div class="w"><span class="wr"></span> <span class="wt"></span></div><div class="it"></div></div></div>`);
+  el.querySelector('.wr').textContent = v.ru;
+  el.querySelector('.wt').textContent = v.translit || '';
+  el.querySelector('.it').textContent = v.it;
+  const spk = $(`<button class="mini-btn spk" type="button" title="Ascolta" aria-label="Ascolta">${ic('vol')}</button>`);
+  spk.onclick = e=>{ e.stopPropagation(); speak(v.ru); };
+  el.appendChild(spk);
+  const apri = ()=>navigateTo(()=>runParolaGiorno(v));
+  el.onclick = apri;
+  el.onkeydown = e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); apri(); } };
+  return el;
+}
+// Frasi (dal frasario e dai dialoghi) che contengono la parola
+function frasiConParola(ru){
+  const w = normSearch(ru);
+  const radice = w.length>=5 ? w.slice(0, -2) : w.length>=4 ? w.slice(0, -1) : w;
+  const tutte = [
+    ...(DB.frasi||[]).map(f=>({ru:f.ru, it:f.it})),
+    ...(DB.dialoghi||[]).flatMap(d=>d.battute.map(b=>({ru:b.ru, it:b.it}))),
+    ...(DB.frasiGrammar||[]).map(f=>({ru:f.ru, it:f.it})),
+  ];
+  const esatte = [], simili = [];
+  tutte.forEach(f=>{
+    const ws = paroleFrase(f.ru).map(normSearch);
+    if(ws.includes(w)) esatte.push(f);
+    else if(radice.length>=3 && ws.some(x=>x.startsWith(radice))) simili.push(f);
+  });
+  const seen = new Set();
+  return [...esatte, ...simili].filter(f=>!seen.has(f.ru) && seen.add(f.ru)).slice(0, 6);
+}
+function runParolaGiorno(v){
+  const stage = header('Parola del giorno', {narrow:true});
+  stage.appendChild(makeVocabCard(v.ru, v.it, {translit:v.translit, tipo:v.tipo, tags:v.tag, id:v.id}));
+  const es = frasiConParola(v.ru);
+  if(es.length){
+    stage.appendChild($(`<div class="sec-h">Nelle frasi</div>`));
+    const list = $(`<div class="list" style="gap:8px"></div>`);
+    es.forEach(f=>list.appendChild(fraseRow({id:'x', ru:f.ru, it:f.it}, 'Parola del giorno')));
+    // qui il ＋ non serve: le frasi si salvano dal Frasario
+    list.querySelectorAll('.mini-btn.add').forEach(b=>b.remove());
+    stage.appendChild(list);
+  }
+  stage.appendChild($(`<p class="muted" style="margin:6px 0 0">Domani ne arriva un'altra. Tocca <b>＋ Esercizi</b> per non perderla di vista.</p>`));
+}
+
+// ================= TRAGUARDI =================
+function traguardi(){
+  const st = studyStats(), ex = extraStore();
+  const record = Math.max(serieRecord(), dailyStreak());
+  const dlg = Object.values(ex.dlg || {});
+  const recitati = dlg.filter(x=>x.r).length;
+  const ascoltati = dlg.filter(x=>x.a || x.r).length;
+  const nDlg = (DB.dialoghi||[]).length || 1;
+  const mem = memBest();
+  const ese = esesStore();
+  const salvati = ese.voci.length + ese.frasi.length + (ese.verbi||[]).length;
+  // tutte le risposte, anche quelle di numeri, dialoghi e frasi composte
+  const risposte = Math.max(st.seen, st.risposteTot);
+  return [
+    ['🌱','Primo passo','La prima risposta', risposte, 1],
+    ['🔥','Tre di fila','3 giorni di studio consecutivi', record, 3],
+    ['📅','Una settimana','7 giorni consecutivi', record, 7],
+    ['🏆','Un mese','30 giorni consecutivi', record, 30],
+    ['📗','Prime parole','25 parole imparate', st.note, 25],
+    ['📘','Cento parole','100 parole imparate', st.note, 100],
+    ['📚','Poliglotta','500 parole imparate', st.note, 500],
+    ['🎯','Mille risposte','1000 risposte date', risposte, 1000],
+    ['🎧','Buon orecchio','5 dialoghi ascoltati', ascoltati, 5],
+    ['🎭','Attore','Il primo dialogo recitato', recitati, 1],
+    ['🌟','Protagonista',`Tutti i ${nDlg} dialoghi recitati`, recitati, nDlg],
+    ['🔢','Contabile','50 numeri e ore giusti', ex.num||0, 50],
+    ['🧩','Costruttore','25 frasi composte', ex.cmp||0, 25],
+    ['🧠','Memoria d\'acciaio','Memory difficile completato', mem[10] ? 1 : 0, 1],
+    ['🔖','Collezionista','20 elementi negli esercizi', salvati, 20],
+  ];
+}
+function makeTraguardiCard(){
+  const tg = traguardi();
+  const on = tg.filter(t=>t[3]>=t[4]).length;
+  const card = $(`<div class="pcard"><h3>${ic('award')} Traguardi <span class="pill gold">${on} / ${tg.length}</span></h3><div class="badges"></div></div>`);
+  const g = card.querySelector('.badges');
+  tg.forEach(([e, t, dd, v, max])=>{
+    const ok = v >= max;
+    const b = $(`<div class="badge-it ${ok?'on':'off'}"><div class="e">${e}</div><b></b><small></small>${ok?'':`<div class="bp"><i style="width:${Math.min(100, v/max*100).toFixed(0)}%"></i></div>`}</div>`);
+    b.querySelector('b').textContent = t;
+    b.querySelector('small').textContent = ok ? dd : `${dd} · ${Math.min(v, max)}/${max}`;
+    b.title = dd;
+    g.appendChild(b);
+  });
+  return card;
 }
 
 // ========== VIKA — Gemini Live + fallback REST ==========
@@ -4907,6 +6117,8 @@ function runProgressi(){
     <div class="stat s-gold">${ic('flame')}<b>${streak}</b><span>${streak===1?'giorno':'giorni'} di fila &middot; record ${record}</span></div>
     <div class="stat s-red">${ic('target')}<b>${st.precisione}%</b><span>risposte giuste</span></div>
   </div>`));
+
+  stage.appendChild(makeTraguardiCard());
 
   // --- Barra di avanzamento sul dizionario ---
   const pct = st.totale ? Math.round((st.note + st.corso)/st.totale*100) : 0;

@@ -2,12 +2,12 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 21,
-    "aggiornato": "2026-09-21",
+    "versione": 22,
+    "aggiornato": "2026-09-26",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
     ],
-    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc. Sezione 'riferimento' = schede di consultazione (Regole grammaticali). Sezione 'frasiGrammar' (id 100+) = frasi semplici spiegate parola per parola con la grammatica dietro, in Teoria."
+    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc. Sezione 'riferimento' = schede di consultazione (Regole grammaticali). Sezione 'frasiGrammar' (id 100+) = frasi semplici spiegate parola per parola con la grammatica dietro, in Teoria. Sezione 'dialoghi' = situazioni di tutti i giorni da ascoltare e recitare (scripts/add_dialoghi.py)."
   },
   "alfabeto": [
     {
@@ -36394,6 +36394,1448 @@
           "будут болтать"
         ]
       }
+    }
+  ],
+  "dialoghi": [
+    {
+      "id": "bar",
+      "icona": "☕",
+      "titolo": "Al bar",
+      "titoloRu": "В кафе",
+      "scena": "Ordini un cappuccino e un cornetto al bancone.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Бариста",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Здравствуйте! Что вы хотите?",
+          "it": "Buongiorno! Cosa desidera?"
+        },
+        {
+          "s": "B",
+          "ru": "Здравствуйте. Один капучино, пожалуйста.",
+          "it": "Buongiorno. Un cappuccino, per favore."
+        },
+        {
+          "s": "A",
+          "ru": "Большой или маленький?",
+          "it": "Grande o piccolo?"
+        },
+        {
+          "s": "B",
+          "ru": "Маленький. И ещё круассан.",
+          "it": "Piccolo. E anche un cornetto."
+        },
+        {
+          "s": "A",
+          "ru": "С собой или здесь?",
+          "it": "Da portare via o qui?"
+        },
+        {
+          "s": "B",
+          "ru": "Здесь. Сколько с меня?",
+          "it": "Qui. Quanto le devo?"
+        },
+        {
+          "s": "A",
+          "ru": "Триста двадцать рублей.",
+          "it": "Trecentoventi rubli."
+        },
+        {
+          "s": "B",
+          "ru": "Можно картой?",
+          "it": "Posso pagare con la carta?"
+        },
+        {
+          "s": "A",
+          "ru": "Конечно. Вот ваш кофе. Приятного аппетита!",
+          "it": "Certo. Ecco il suo caffè. Buon appetito!"
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо!",
+          "it": "Grazie!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "С собой",
+          "it": "da portare via"
+        },
+        {
+          "ru": "Сколько с меня?",
+          "it": "quanto le devo?"
+        },
+        {
+          "ru": "Можно картой?",
+          "it": "posso pagare con la carta?"
+        },
+        {
+          "ru": "конечно",
+          "it": "certo"
+        },
+        {
+          "ru": "Приятного аппетита!",
+          "it": "buon appetito!"
+        }
+      ],
+      "nota": "In Russia il «кофе» è maschile anche se finisce in -е: si dice «мой кофе», non «моё кофе»."
+    },
+    {
+      "id": "ristorante",
+      "icona": "🍽️",
+      "titolo": "Al ristorante",
+      "titoloRu": "В ресторане",
+      "scena": "Una cena in due: il cameriere consiglia le specialità russe.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Официант",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Добрый вечер! Вас сколько?",
+          "it": "Buonasera! Quanti siete?"
+        },
+        {
+          "s": "B",
+          "ru": "Добрый вечер. Нас двое.",
+          "it": "Buonasera. Siamo in due."
+        },
+        {
+          "s": "A",
+          "ru": "Пожалуйста, вот ваш столик. Вот меню.",
+          "it": "Prego, ecco il vostro tavolo. Ecco il menù."
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо. Что вы нам посоветуете?",
+          "it": "Grazie. Cosa ci consiglia?"
+        },
+        {
+          "s": "A",
+          "ru": "Попробуйте борщ и пельмени. Это наши фирменные блюда.",
+          "it": "Provate il boršč e i pel'meni. Sono le nostre specialità."
+        },
+        {
+          "s": "B",
+          "ru": "Хорошо. Два борща и одну порцию пельменей, пожалуйста.",
+          "it": "Va bene. Due boršč e una porzione di pel'meni, per favore."
+        },
+        {
+          "s": "A",
+          "ru": "Что будете пить?",
+          "it": "Cosa prendete da bere?"
+        },
+        {
+          "s": "B",
+          "ru": "Воду без газа и чай с лимоном.",
+          "it": "Acqua naturale e tè al limone."
+        },
+        {
+          "s": "A",
+          "ru": "Отлично. Минуточку.",
+          "it": "Perfetto. Un attimo."
+        },
+        {
+          "s": "B",
+          "ru": "Принесите, пожалуйста, счёт.",
+          "it": "Ci porti il conto, per favore."
+        },
+        {
+          "s": "A",
+          "ru": "Конечно, сейчас.",
+          "it": "Certo, subito."
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Нас двое.",
+          "it": "siamo in due"
+        },
+        {
+          "ru": "столик",
+          "it": "tavolino (al ristorante)"
+        },
+        {
+          "ru": "Что вы посоветуете?",
+          "it": "cosa consiglia?"
+        },
+        {
+          "ru": "фирменное блюдо",
+          "it": "specialità della casa"
+        },
+        {
+          "ru": "вода без газа",
+          "it": "acqua naturale"
+        },
+        {
+          "ru": "счёт",
+          "it": "il conto"
+        }
+      ],
+      "nota": "Il борщ è una zuppa di barbabietole, i пельмени sono ravioli di carne: due classici della cucina russa."
+    },
+    {
+      "id": "albergo",
+      "icona": "🏨",
+      "titolo": "In albergo",
+      "titoloRu": "В гостинице",
+      "scena": "Arrivi alla reception con una camera già prenotata.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Администратор",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Добрый день! Чем могу помочь?",
+          "it": "Buongiorno! Come posso aiutarla?"
+        },
+        {
+          "s": "B",
+          "ru": "Добрый день. У меня забронирован номер. Моя фамилия Росси.",
+          "it": "Buongiorno. Ho una camera prenotata. Il mio cognome è Rossi."
+        },
+        {
+          "s": "A",
+          "ru": "Минутку… Да, одноместный номер на три ночи. Ваш паспорт, пожалуйста.",
+          "it": "Un momento… Sì, una camera singola per tre notti. Il suo passaporto, per favore."
+        },
+        {
+          "s": "B",
+          "ru": "Вот, пожалуйста.",
+          "it": "Ecco, prego."
+        },
+        {
+          "s": "A",
+          "ru": "Спасибо. Ваш номер двести пятнадцать, на втором этаже. Вот ключ.",
+          "it": "Grazie. La sua camera è la 215, al primo piano. Ecco la chiave."
+        },
+        {
+          "s": "B",
+          "ru": "Во сколько завтрак?",
+          "it": "A che ora è la colazione?"
+        },
+        {
+          "s": "A",
+          "ru": "С семи до десяти утра.",
+          "it": "Dalle sette alle dieci di mattina."
+        },
+        {
+          "s": "B",
+          "ru": "А здесь есть вай-фай?",
+          "it": "E qui c'è il wi-fi?"
+        },
+        {
+          "s": "A",
+          "ru": "Да, пароль на карточке.",
+          "it": "Sì, la password è sul cartoncino."
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо большое!",
+          "it": "Grazie mille!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Чем могу помочь?",
+          "it": "come posso aiutarla?"
+        },
+        {
+          "ru": "забронирован номер",
+          "it": "camera prenotata"
+        },
+        {
+          "ru": "одноместный номер",
+          "it": "camera singola"
+        },
+        {
+          "ru": "ключ",
+          "it": "chiave"
+        },
+        {
+          "ru": "завтрак",
+          "it": "colazione"
+        },
+        {
+          "ru": "пароль",
+          "it": "password"
+        }
+      ],
+      "nota": "In Russia il piano terra è il «первый этаж»: il «второй этаж» è il nostro primo piano."
+    },
+    {
+      "id": "strada",
+      "icona": "🗺️",
+      "titolo": "Chiedere la strada",
+      "titoloRu": "Как пройти?",
+      "scena": "Cerchi la Piazza Rossa e chiedi a un passante.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Вы",
+        "B": "Прохожий"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Извините, вы не подскажете, как пройти к Красной площади?",
+          "it": "Mi scusi, sa dirmi come si arriva alla Piazza Rossa?"
+        },
+        {
+          "s": "B",
+          "ru": "Идите прямо, потом налево.",
+          "it": "Vada dritto, poi a sinistra."
+        },
+        {
+          "s": "A",
+          "ru": "Это далеко?",
+          "it": "È lontano?"
+        },
+        {
+          "s": "B",
+          "ru": "Нет, недалеко. Минут десять пешком.",
+          "it": "No, non è lontano. Una decina di minuti a piedi."
+        },
+        {
+          "s": "A",
+          "ru": "А где здесь метро?",
+          "it": "E dov'è la metro qui?"
+        },
+        {
+          "s": "B",
+          "ru": "Метро направо, рядом с банком.",
+          "it": "La metro è a destra, vicino alla banca."
+        },
+        {
+          "s": "A",
+          "ru": "Спасибо большое!",
+          "it": "Grazie mille!"
+        },
+        {
+          "s": "B",
+          "ru": "Не за что.",
+          "it": "Di niente."
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Как пройти к…?",
+          "it": "come si arriva a…?"
+        },
+        {
+          "ru": "прямо",
+          "it": "dritto"
+        },
+        {
+          "ru": "налево",
+          "it": "a sinistra"
+        },
+        {
+          "ru": "направо",
+          "it": "a destra"
+        },
+        {
+          "ru": "далеко / недалеко",
+          "it": "lontano / non lontano"
+        },
+        {
+          "ru": "пешком",
+          "it": "a piedi"
+        },
+        {
+          "ru": "Не за что.",
+          "it": "di niente"
+        }
+      ],
+      "nota": "«Минут десять» con il numero dopo il nome vuol dire «circa dieci minuti»: l'ordine delle parole rende l'idea di approssimazione."
+    },
+    {
+      "id": "mercato",
+      "icona": "🍎",
+      "titolo": "Al mercato",
+      "titoloRu": "На рынке",
+      "scena": "Compri frutta e latte e chiedi i prezzi.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Продавец",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Здравствуйте! Что вам?",
+          "it": "Buongiorno! Cosa le serve?"
+        },
+        {
+          "s": "B",
+          "ru": "Здравствуйте. Сколько стоят яблоки?",
+          "it": "Buongiorno. Quanto costano le mele?"
+        },
+        {
+          "s": "A",
+          "ru": "Сто двадцать рублей за килограмм.",
+          "it": "Centoventi rubli al chilo."
+        },
+        {
+          "s": "B",
+          "ru": "Дайте, пожалуйста, килограмм яблок и два банана.",
+          "it": "Mi dia, per favore, un chilo di mele e due banane."
+        },
+        {
+          "s": "A",
+          "ru": "Что-нибудь ещё?",
+          "it": "Qualcos'altro?"
+        },
+        {
+          "s": "B",
+          "ru": "Да, бутылку молока.",
+          "it": "Sì, una bottiglia di latte."
+        },
+        {
+          "s": "A",
+          "ru": "Это всё?",
+          "it": "È tutto?"
+        },
+        {
+          "s": "B",
+          "ru": "Да, всё. Сколько с меня?",
+          "it": "Sì, è tutto. Quanto le devo?"
+        },
+        {
+          "s": "A",
+          "ru": "Двести девяносто рублей.",
+          "it": "Duecentonovanta rubli."
+        },
+        {
+          "s": "B",
+          "ru": "Вот, пожалуйста.",
+          "it": "Ecco, prego."
+        },
+        {
+          "s": "A",
+          "ru": "Ваша сдача. Всего доброго!",
+          "it": "Il suo resto. Buona giornata!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Сколько стоит / стоят?",
+          "it": "quanto costa / costano?"
+        },
+        {
+          "ru": "за килограмм",
+          "it": "al chilo"
+        },
+        {
+          "ru": "Дайте, пожалуйста…",
+          "it": "mi dia, per favore…"
+        },
+        {
+          "ru": "Что-нибудь ещё?",
+          "it": "qualcos'altro?"
+        },
+        {
+          "ru": "сдача",
+          "it": "il resto"
+        },
+        {
+          "ru": "Всего доброго!",
+          "it": "buona giornata! (congedo)"
+        }
+      ],
+      "nota": "Dopo «килограмм» e «бутылка» il cibo va al genitivo: килограмм яблок, бутылка молока."
+    },
+    {
+      "id": "stazione",
+      "icona": "🚆",
+      "titolo": "Alla stazione",
+      "titoloRu": "На вокзале",
+      "scena": "Compri un biglietto del treno per San Pietroburgo.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Вы",
+        "B": "Кассир"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Здравствуйте. Один билет до Санкт-Петербурга, пожалуйста.",
+          "it": "Buongiorno. Un biglietto per San Pietroburgo, per favore."
+        },
+        {
+          "s": "B",
+          "ru": "На какое число?",
+          "it": "Per che data?"
+        },
+        {
+          "s": "A",
+          "ru": "На завтра, на утро.",
+          "it": "Per domani mattina."
+        },
+        {
+          "s": "B",
+          "ru": "Есть поезд в восемь тридцать.",
+          "it": "C'è un treno alle otto e trenta."
+        },
+        {
+          "s": "A",
+          "ru": "Хорошо. Сколько стоит билет?",
+          "it": "Va bene. Quanto costa il biglietto?"
+        },
+        {
+          "s": "B",
+          "ru": "Три тысячи пятьсот рублей.",
+          "it": "Tremilacinquecento rubli."
+        },
+        {
+          "s": "A",
+          "ru": "С какой платформы отправляется поезд?",
+          "it": "Da quale binario parte il treno?"
+        },
+        {
+          "s": "B",
+          "ru": "Это будет на табло. Приходите за двадцать минут.",
+          "it": "Sarà sul tabellone. Venga venti minuti prima."
+        },
+        {
+          "s": "A",
+          "ru": "Спасибо!",
+          "it": "Grazie!"
+        },
+        {
+          "s": "B",
+          "ru": "Счастливого пути!",
+          "it": "Buon viaggio!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "билет до…",
+          "it": "biglietto per…"
+        },
+        {
+          "ru": "На какое число?",
+          "it": "per che data?"
+        },
+        {
+          "ru": "поезд",
+          "it": "treno"
+        },
+        {
+          "ru": "платформа",
+          "it": "binario"
+        },
+        {
+          "ru": "табло",
+          "it": "tabellone"
+        },
+        {
+          "ru": "Счастливого пути!",
+          "it": "buon viaggio!"
+        }
+      ],
+      "nota": "Il treno veloce Mosca–San Pietroburgo si chiama «Сапсан» (falco pellegrino) e impiega circa quattro ore."
+    },
+    {
+      "id": "taxi",
+      "icona": "🚕",
+      "titolo": "In taxi",
+      "titoloRu": "В такси",
+      "scena": "Vai in aeroporto e hai un po' di fretta.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Водитель",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Добрый день! Куда едем?",
+          "it": "Buongiorno! Dove andiamo?"
+        },
+        {
+          "s": "B",
+          "ru": "В аэропорт, пожалуйста.",
+          "it": "In aeroporto, per favore."
+        },
+        {
+          "s": "A",
+          "ru": "Хорошо. Вы торопитесь?",
+          "it": "Va bene. Ha fretta?"
+        },
+        {
+          "s": "B",
+          "ru": "Да, немного. Мой самолёт в шесть часов.",
+          "it": "Sì, un po'. Il mio aereo è alle sei."
+        },
+        {
+          "s": "A",
+          "ru": "Не волнуйтесь, успеем.",
+          "it": "Non si preoccupi, facciamo in tempo."
+        },
+        {
+          "s": "B",
+          "ru": "Сколько ехать?",
+          "it": "Quanto ci vuole?"
+        },
+        {
+          "s": "A",
+          "ru": "Минут сорок, если нет пробок.",
+          "it": "Una quarantina di minuti, se non c'è traffico."
+        },
+        {
+          "s": "A",
+          "ru": "Приехали!",
+          "it": "Siamo arrivati!"
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо. Сколько с меня?",
+          "it": "Grazie. Quanto le devo?"
+        },
+        {
+          "s": "A",
+          "ru": "Тысяча двести.",
+          "it": "Milleduecento."
+        },
+        {
+          "s": "B",
+          "ru": "Вот, пожалуйста. Сдачи не надо.",
+          "it": "Ecco a lei. Tenga il resto."
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Куда едем?",
+          "it": "dove andiamo?"
+        },
+        {
+          "ru": "торопиться",
+          "it": "avere fretta"
+        },
+        {
+          "ru": "Не волнуйтесь.",
+          "it": "non si preoccupi"
+        },
+        {
+          "ru": "Сколько ехать?",
+          "it": "quanto ci vuole (in macchina)?"
+        },
+        {
+          "ru": "пробка",
+          "it": "ingorgo, traffico"
+        },
+        {
+          "ru": "Сдачи не надо.",
+          "it": "tenga il resto"
+        }
+      ],
+      "nota": ""
+    },
+    {
+      "id": "farmacia",
+      "icona": "💊",
+      "titolo": "In farmacia",
+      "titoloRu": "В аптеке",
+      "scena": "Hai mal di testa e un po' di tosse.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Фармацевт",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Здравствуйте. Слушаю вас.",
+          "it": "Buongiorno. Mi dica."
+        },
+        {
+          "s": "B",
+          "ru": "Здравствуйте. У меня болит голова. Что вы можете посоветовать?",
+          "it": "Buongiorno. Ho mal di testa. Cosa mi può consigliare?"
+        },
+        {
+          "s": "A",
+          "ru": "Вот хорошее лекарство. Одна таблетка три раза в день после еды.",
+          "it": "Ecco un buon farmaco. Una compressa tre volte al giorno dopo i pasti."
+        },
+        {
+          "s": "B",
+          "ru": "А у вас есть что-нибудь от кашля?",
+          "it": "E avete qualcosa per la tosse?"
+        },
+        {
+          "s": "A",
+          "ru": "Да, есть сироп.",
+          "it": "Sì, c'è lo sciroppo."
+        },
+        {
+          "s": "B",
+          "ru": "Хорошо, дайте, пожалуйста, и сироп тоже.",
+          "it": "Bene, mi dia anche lo sciroppo, per favore."
+        },
+        {
+          "s": "A",
+          "ru": "С вас пятьсот сорок рублей. Выздоравливайте!",
+          "it": "Sono cinquecentoquaranta rubli. Guarisca presto!"
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо!",
+          "it": "Grazie!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Слушаю вас.",
+          "it": "mi dica (lett. la ascolto)"
+        },
+        {
+          "ru": "У меня болит голова.",
+          "it": "ho mal di testa"
+        },
+        {
+          "ru": "лекарство",
+          "it": "medicina, farmaco"
+        },
+        {
+          "ru": "таблетка",
+          "it": "compressa"
+        },
+        {
+          "ru": "от кашля",
+          "it": "per la tosse"
+        },
+        {
+          "ru": "Выздоравливайте!",
+          "it": "guarisca presto!"
+        }
+      ],
+      "nota": "«У меня болит…» + la parte del corpo: болит голова (testa), болит горло (gola), болит живот (pancia)."
+    },
+    {
+      "id": "conoscenza",
+      "icona": "👋",
+      "titolo": "Fare conoscenza",
+      "titoloRu": "Знакомство",
+      "scena": "A una festa Maša conosce Marco, un italiano.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Маша",
+        "B": "Марко"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Привет! Я Маша. А тебя как зовут?",
+          "it": "Ciao! Io sono Maša. E tu come ti chiami?"
+        },
+        {
+          "s": "B",
+          "ru": "Привет! Меня зовут Марко.",
+          "it": "Ciao! Mi chiamo Marco."
+        },
+        {
+          "s": "A",
+          "ru": "Очень приятно. Ты откуда?",
+          "it": "Molto piacere. Di dove sei?"
+        },
+        {
+          "s": "B",
+          "ru": "Я из Италии, из Рима. А ты?",
+          "it": "Sono italiano, di Roma. E tu?"
+        },
+        {
+          "s": "A",
+          "ru": "Я из Москвы. Ты давно здесь?",
+          "it": "Io sono di Mosca. Sei qui da tanto?"
+        },
+        {
+          "s": "B",
+          "ru": "Нет, только неделю. Я изучаю русский язык.",
+          "it": "No, solo da una settimana. Studio il russo."
+        },
+        {
+          "s": "A",
+          "ru": "Ты хорошо говоришь по-русски!",
+          "it": "Parli bene il russo!"
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо, но я ещё говорю медленно.",
+          "it": "Grazie, ma parlo ancora lentamente."
+        },
+        {
+          "s": "A",
+          "ru": "Ничего, это нормально. Кем ты работаешь?",
+          "it": "Non importa, è normale. Che lavoro fai?"
+        },
+        {
+          "s": "B",
+          "ru": "Я архитектор. А ты?",
+          "it": "Sono architetto. E tu?"
+        },
+        {
+          "s": "A",
+          "ru": "А я учительница.",
+          "it": "E io sono insegnante."
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Ты откуда?",
+          "it": "di dove sei?"
+        },
+        {
+          "ru": "Я из Италии.",
+          "it": "vengo dall'Italia"
+        },
+        {
+          "ru": "давно",
+          "it": "da tanto tempo"
+        },
+        {
+          "ru": "неделя",
+          "it": "settimana"
+        },
+        {
+          "ru": "Кем ты работаешь?",
+          "it": "che lavoro fai?"
+        },
+        {
+          "ru": "Ничего.",
+          "it": "non importa, niente"
+        }
+      ],
+      "nota": "Con «из» il nome va al genitivo: из Италии, из Рима, из Москвы."
+    },
+    {
+      "id": "telefono",
+      "icona": "📞",
+      "titolo": "Al telefono",
+      "titoloRu": "По телефону",
+      "scena": "Paolo chiama Anja per invitarla al cinema.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Аня",
+        "B": "Паоло"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Алло!",
+          "it": "Pronto!"
+        },
+        {
+          "s": "B",
+          "ru": "Алло, Аня? Привет, это Паоло.",
+          "it": "Pronto, Anja? Ciao, sono Paolo."
+        },
+        {
+          "s": "A",
+          "ru": "Привет, Паоло! Как дела?",
+          "it": "Ciao Paolo! Come va?"
+        },
+        {
+          "s": "B",
+          "ru": "Хорошо, спасибо. Что ты делаешь в субботу?",
+          "it": "Bene, grazie. Cosa fai sabato?"
+        },
+        {
+          "s": "A",
+          "ru": "Пока не знаю. А что?",
+          "it": "Ancora non lo so. Perché?"
+        },
+        {
+          "s": "B",
+          "ru": "Давай пойдём в кино!",
+          "it": "Andiamo al cinema!"
+        },
+        {
+          "s": "A",
+          "ru": "С удовольствием! Во сколько?",
+          "it": "Con piacere! A che ora?"
+        },
+        {
+          "s": "B",
+          "ru": "В семь часов, у кинотеатра.",
+          "it": "Alle sette, davanti al cinema."
+        },
+        {
+          "s": "A",
+          "ru": "Отлично. До субботы!",
+          "it": "Perfetto. A sabato!"
+        },
+        {
+          "s": "B",
+          "ru": "Пока!",
+          "it": "Ciao!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Алло!",
+          "it": "pronto! (al telefono)"
+        },
+        {
+          "ru": "в субботу",
+          "it": "sabato"
+        },
+        {
+          "ru": "пока не знаю",
+          "it": "ancora non lo so"
+        },
+        {
+          "ru": "Давай пойдём…",
+          "it": "andiamo…"
+        },
+        {
+          "ru": "С удовольствием!",
+          "it": "con piacere!"
+        },
+        {
+          "ru": "Во сколько?",
+          "it": "a che ora?"
+        }
+      ],
+      "nota": "Qui «пока» vuol dire «per ora»: «пока не знаю» = «per ora non lo so». In fondo al dialogo lo stesso «Пока!» è il saluto «ciao»."
+    },
+    {
+      "id": "medico",
+      "icona": "🩺",
+      "titolo": "Dal medico",
+      "titoloRu": "У врача",
+      "scena": "Hai la febbre e mal di gola.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Врач",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Здравствуйте. Что вас беспокоит?",
+          "it": "Buongiorno. Cosa la disturba?"
+        },
+        {
+          "s": "B",
+          "ru": "Здравствуйте, доктор. У меня высокая температура и болит горло.",
+          "it": "Buongiorno, dottore. Ho la febbre alta e mi fa male la gola."
+        },
+        {
+          "s": "A",
+          "ru": "Давно?",
+          "it": "Da quanto tempo?"
+        },
+        {
+          "s": "B",
+          "ru": "Два дня.",
+          "it": "Da due giorni."
+        },
+        {
+          "s": "A",
+          "ru": "Откройте рот, пожалуйста… Да, горло красное. У вас простуда.",
+          "it": "Apra la bocca, per favore… Sì, la gola è rossa. Ha preso un raffreddore."
+        },
+        {
+          "s": "B",
+          "ru": "Это серьёзно?",
+          "it": "È grave?"
+        },
+        {
+          "s": "A",
+          "ru": "Нет, не волнуйтесь. Пейте много тёплого чая и отдыхайте.",
+          "it": "No, non si preoccupi. Beva molto tè caldo e si riposi."
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо, доктор.",
+          "it": "Grazie, dottore."
+        },
+        {
+          "s": "A",
+          "ru": "Выздоравливайте!",
+          "it": "Guarisca presto!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Что вас беспокоит?",
+          "it": "cosa la disturba?"
+        },
+        {
+          "ru": "высокая температура",
+          "it": "febbre alta"
+        },
+        {
+          "ru": "болит горло",
+          "it": "fa male la gola"
+        },
+        {
+          "ru": "простуда",
+          "it": "raffreddore"
+        },
+        {
+          "ru": "Это серьёзно?",
+          "it": "è grave?"
+        },
+        {
+          "ru": "отдыхайте",
+          "it": "si riposi"
+        }
+      ],
+      "nota": ""
+    },
+    {
+      "id": "meteo",
+      "icona": "🌦️",
+      "titolo": "Che tempo fa?",
+      "titoloRu": "Какая погода?",
+      "scena": "Olja e Giulia parlano del freddo di Mosca.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Оля",
+        "B": "Джулия"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Какая сегодня погода?",
+          "it": "Che tempo fa oggi?"
+        },
+        {
+          "s": "B",
+          "ru": "Холодно! Минус десять.",
+          "it": "Fa freddo! Meno dieci."
+        },
+        {
+          "s": "A",
+          "ru": "Правда? А вчера было тепло.",
+          "it": "Davvero? E ieri faceva caldo."
+        },
+        {
+          "s": "B",
+          "ru": "Да, а завтра будет снег.",
+          "it": "Sì, e domani nevicherà."
+        },
+        {
+          "s": "A",
+          "ru": "Я люблю зиму! А ты?",
+          "it": "Io amo l'inverno! E tu?"
+        },
+        {
+          "s": "B",
+          "ru": "А я больше люблю лето. В Италии летом жарко и солнечно.",
+          "it": "Io preferisco l'estate. In Italia d'estate fa caldo e c'è il sole."
+        },
+        {
+          "s": "A",
+          "ru": "Не забудь шапку и шарф!",
+          "it": "Non dimenticare il berretto e la sciarpa!"
+        },
+        {
+          "s": "B",
+          "ru": "Хорошо, спасибо!",
+          "it": "Va bene, grazie!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Какая погода?",
+          "it": "che tempo fa?"
+        },
+        {
+          "ru": "холодно / тепло / жарко",
+          "it": "fa freddo / fa caldo (mite) / fa molto caldo"
+        },
+        {
+          "ru": "снег",
+          "it": "neve"
+        },
+        {
+          "ru": "зима / лето",
+          "it": "inverno / estate"
+        },
+        {
+          "ru": "летом",
+          "it": "d'estate"
+        },
+        {
+          "ru": "шапка, шарф",
+          "it": "berretto, sciarpa"
+        }
+      ],
+      "nota": "Per il tempo il russo usa avverbi senza soggetto: «холодно» = «fa freddo», «было тепло» = «faceva caldo»."
+    },
+    {
+      "id": "vestiti",
+      "icona": "👕",
+      "titolo": "Comprare una giacca",
+      "titoloRu": "В магазине одежды",
+      "scena": "Cerchi una giacca e chiedi un'altra taglia.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Продавец",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Здравствуйте! Вам помочь?",
+          "it": "Buongiorno! Posso aiutarla?"
+        },
+        {
+          "s": "B",
+          "ru": "Да, я ищу куртку.",
+          "it": "Sì, cerco una giacca."
+        },
+        {
+          "s": "A",
+          "ru": "Какой у вас размер?",
+          "it": "Che taglia porta?"
+        },
+        {
+          "s": "B",
+          "ru": "Сорок восьмой.",
+          "it": "La quarantotto."
+        },
+        {
+          "s": "A",
+          "ru": "Вот, посмотрите. Есть чёрная и синяя.",
+          "it": "Ecco, guardi. Ce n'è una nera e una blu."
+        },
+        {
+          "s": "B",
+          "ru": "Можно примерить синюю?",
+          "it": "Posso provare quella blu?"
+        },
+        {
+          "s": "A",
+          "ru": "Конечно. Примерочная там.",
+          "it": "Certo. Il camerino è là."
+        },
+        {
+          "s": "B",
+          "ru": "Она мне немного мала. У вас есть размер побольше?",
+          "it": "Mi sta un po' piccola. Avete una taglia più grande?"
+        },
+        {
+          "s": "A",
+          "ru": "Да, вот пятидесятый.",
+          "it": "Sì, ecco la cinquanta."
+        },
+        {
+          "s": "B",
+          "ru": "Отлично, как раз! Я её беру.",
+          "it": "Perfetto, è giusta! La prendo."
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Вам помочь?",
+          "it": "posso aiutarla?"
+        },
+        {
+          "ru": "я ищу…",
+          "it": "cerco…"
+        },
+        {
+          "ru": "размер",
+          "it": "taglia"
+        },
+        {
+          "ru": "примерить",
+          "it": "provare (un vestito)"
+        },
+        {
+          "ru": "примерочная",
+          "it": "camerino"
+        },
+        {
+          "ru": "мала / велика",
+          "it": "piccola / grande (di taglia)"
+        },
+        {
+          "ru": "как раз",
+          "it": "giusto, della misura giusta"
+        }
+      ],
+      "nota": ""
+    },
+    {
+      "id": "aeroporto",
+      "icona": "✈️",
+      "titolo": "Controllo passaporti",
+      "titoloRu": "В аэропорту",
+      "scena": "Arrivi a Mosca e passi il controllo di frontiera.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Пограничник",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Добрый день. Ваш паспорт, пожалуйста.",
+          "it": "Buongiorno. Il suo passaporto, per favore."
+        },
+        {
+          "s": "B",
+          "ru": "Вот, пожалуйста.",
+          "it": "Ecco, prego."
+        },
+        {
+          "s": "A",
+          "ru": "Цель вашего визита?",
+          "it": "Scopo della visita?"
+        },
+        {
+          "s": "B",
+          "ru": "Туризм.",
+          "it": "Turismo."
+        },
+        {
+          "s": "A",
+          "ru": "Сколько дней вы будете в России?",
+          "it": "Quanti giorni resterà in Russia?"
+        },
+        {
+          "s": "B",
+          "ru": "Десять дней.",
+          "it": "Dieci giorni."
+        },
+        {
+          "s": "A",
+          "ru": "Где вы будете жить?",
+          "it": "Dove alloggerà?"
+        },
+        {
+          "s": "B",
+          "ru": "В гостинице в центре Москвы.",
+          "it": "In un albergo nel centro di Mosca."
+        },
+        {
+          "s": "A",
+          "ru": "Хорошо. Добро пожаловать в Россию!",
+          "it": "Bene. Benvenuto in Russia!"
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо!",
+          "it": "Grazie!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "паспорт",
+          "it": "passaporto"
+        },
+        {
+          "ru": "Цель визита?",
+          "it": "scopo della visita?"
+        },
+        {
+          "ru": "туризм",
+          "it": "turismo"
+        },
+        {
+          "ru": "Где вы будете жить?",
+          "it": "dove alloggerà?"
+        },
+        {
+          "ru": "в центре",
+          "it": "in centro"
+        },
+        {
+          "ru": "Добро пожаловать!",
+          "it": "benvenuto!"
+        }
+      ],
+      "nota": ""
+    },
+    {
+      "id": "ospiti",
+      "icona": "🏠",
+      "titolo": "Ospiti a cena",
+      "titoloRu": "В гостях",
+      "scena": "Natascia ti invita a cena a casa sua.",
+      "livello": 1,
+      "ruoli": {
+        "A": "Наташа",
+        "B": "Вы"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Добро пожаловать! Проходите, пожалуйста.",
+          "it": "Benvenuto! Prego, entri."
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо за приглашение! Это вам.",
+          "it": "Grazie per l'invito! Questo è per lei."
+        },
+        {
+          "s": "A",
+          "ru": "Ой, какие красивые цветы! Спасибо!",
+          "it": "Oh, che bei fiori! Grazie!"
+        },
+        {
+          "s": "A",
+          "ru": "Садитесь за стол. Угощайтесь!",
+          "it": "Si accomodi a tavola. Si serva pure!"
+        },
+        {
+          "s": "B",
+          "ru": "Как вкусно! Что это?",
+          "it": "Che buono! Cos'è?"
+        },
+        {
+          "s": "A",
+          "ru": "Это салат «Оливье». Хотите ещё?",
+          "it": "È l'insalata Olivier. Ne vuole ancora?"
+        },
+        {
+          "s": "B",
+          "ru": "Да, с удовольствием.",
+          "it": "Sì, con piacere."
+        },
+        {
+          "s": "A",
+          "ru": "А теперь чай с тортом.",
+          "it": "E adesso tè con la torta."
+        },
+        {
+          "s": "B",
+          "ru": "Спасибо, всё было очень вкусно!",
+          "it": "Grazie, era tutto buonissimo!"
+        }
+      ],
+      "parole": [
+        {
+          "ru": "Проходите!",
+          "it": "entri, prego!"
+        },
+        {
+          "ru": "Спасибо за приглашение!",
+          "it": "grazie per l'invito!"
+        },
+        {
+          "ru": "Это вам.",
+          "it": "questo è per lei"
+        },
+        {
+          "ru": "Угощайтесь!",
+          "it": "si serva!"
+        },
+        {
+          "ru": "Как вкусно!",
+          "it": "che buono!"
+        },
+        {
+          "ru": "с удовольствием",
+          "it": "con piacere"
+        }
+      ],
+      "nota": "In Russia i fiori si regalano in numero dispari: i mazzi con un numero pari si portano ai funerali."
+    },
+    {
+      "id": "museo",
+      "icona": "🎟️",
+      "titolo": "Al museo",
+      "titoloRu": "В музее",
+      "scena": "Compri i biglietti e chiedi le regole del museo.",
+      "livello": 2,
+      "ruoli": {
+        "A": "Вы",
+        "B": "Кассир"
+      },
+      "battute": [
+        {
+          "s": "A",
+          "ru": "Здравствуйте! Два билета, пожалуйста.",
+          "it": "Buongiorno! Due biglietti, per favore."
+        },
+        {
+          "s": "B",
+          "ru": "Взрослые?",
+          "it": "Adulti?"
+        },
+        {
+          "s": "A",
+          "ru": "Один взрослый и один студенческий. Вот студенческий билет.",
+          "it": "Uno intero e uno per studenti. Ecco la tessera universitaria."
+        },
+        {
+          "s": "B",
+          "ru": "С вас семьсот рублей.",
+          "it": "Sono settecento rubli."
+        },
+        {
+          "s": "A",
+          "ru": "Во сколько закрывается музей?",
+          "it": "A che ora chiude il museo?"
+        },
+        {
+          "s": "B",
+          "ru": "В шесть часов вечера.",
+          "it": "Alle sei di sera."
+        },
+        {
+          "s": "A",
+          "ru": "Здесь можно фотографировать?",
+          "it": "Qui si possono fare foto?"
+        },
+        {
+          "s": "B",
+          "ru": "Можно, но без вспышки.",
+          "it": "Sì, ma senza flash."
+        },
+        {
+          "s": "A",
+          "ru": "Спасибо! А где гардероб?",
+          "it": "Grazie! E dov'è il guardaroba?"
+        },
+        {
+          "s": "B",
+          "ru": "Внизу, направо.",
+          "it": "Di sotto, a destra."
+        }
+      ],
+      "parole": [
+        {
+          "ru": "взрослый",
+          "it": "adulto"
+        },
+        {
+          "ru": "студенческий билет",
+          "it": "tessera universitaria"
+        },
+        {
+          "ru": "Во сколько закрывается…?",
+          "it": "a che ora chiude…?"
+        },
+        {
+          "ru": "можно / нельзя",
+          "it": "si può / non si può"
+        },
+        {
+          "ru": "без вспышки",
+          "it": "senza flash"
+        },
+        {
+          "ru": "гардероб",
+          "it": "guardaroba"
+        }
+      ],
+      "nota": "Nei musei e nei teatri russi il cappotto non si porta dentro: si lascia sempre al «гардероб»."
     }
   ]
 }

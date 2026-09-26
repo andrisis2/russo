@@ -5,7 +5,7 @@
 //   in Inter invece di ripiegare sul carattere di sistema).
 // - Il resto dello stesso sito (immagini…): prima la cache; ciò che arriva dalla
 //   rete ci finisce dentro per la volta dopo.
-const CACHE = "russo-v50";
+const CACHE = "russo-v51";
 const ASSETS = [
   "./", "./index.html", "./knowledge.json", "./manifest.json", "./icon.png", "./splash.png", "./vika.png",
   "./splash-ios/splash-750x1334.jpg","./splash-ios/splash-828x1792.jpg",
