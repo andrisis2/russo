@@ -930,8 +930,8 @@
     background:var(--card);border:1px solid var(--line);border-radius:18px 18px 18px 6px;padding:9px 14px 10px;
     box-shadow:var(--shadow-sm);transition:border-color .15s,box-shadow .15s,transform .12s;animation:rise .24s ease both;
   }
-  button.bub{cursor:pointer}
-  button.bub:active{transform:scale(.985)}
+  .bub[role=button]{cursor:pointer}
+  .bub[role=button]:active{transform:scale(.985)}
   .bub.me{align-self:flex-end;background:var(--accent2-soft);border-color:transparent;border-radius:18px 18px 6px 18px}
   .bub .who{font-size:10.5px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
   .bub.me .who{color:var(--accent2)}
@@ -1098,7 +1098,8 @@
   .lt-w.on{background:var(--accent2-soft);color:var(--accent2)}
   .lt-it{display:none;font-size:13.5px;color:var(--muted);line-height:1.45;margin-top:2px}
   .lt-text.show-it .lt-it{display:block}
-  .lt-pop{min-width:220px}
+  .lt-pop{min-width:min(290px,calc(100vw - 24px))}
+  .lt-pop .pop-row{flex-wrap:wrap}
   .lt-pop .vika-it{font-size:13.5px}
   .lt-pop .pop-row button{white-space:nowrap}
   .lt-gloss summary{cursor:pointer;font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px;list-style:none}
@@ -1238,6 +1239,79 @@
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--snow:#e9eef9} }
   :root[data-theme="dark"]{--snow:#e9eef9}
 
+  /* ============================ SPIEGA E SALVA ============================ */
+  .tile[data-mode="frasi"]{--tc:#2f8de8}  .tile[data-mode="frasi"] .ico{background:linear-gradient(135deg,#45bdf5,#2f7fe8)}
+  .tile[data-mode="giochi"]{--tc:#e89a0c} .tile[data-mode="giochi"] .ico{background:linear-gradient(135deg,#ffd84d,#f29a12)}
+  /* barra «Spiega · Salva · Pronuncia» */
+  .act-wrap{display:flex;flex-direction:column;align-items:center;gap:6px;width:100%}
+  .act-wrap.hidden{display:none}
+  .act-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+  .act{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--text2);border-radius:99px;padding:8px 14px;font-size:13.5px;font-weight:700;box-shadow:var(--shadow-sm);transition:transform .12s,background .15s,color .15s;line-height:1.2}
+  .act .i{width:16px;height:16px}
+  .act:active{transform:scale(.96)}
+  .act.act-spiega{color:var(--violet);border-color:rgba(122,92,240,.35)}
+  @media (hover:hover){ .act:hover:not(:disabled){border-color:var(--accent2);color:var(--accent2)} .act.act-spiega:hover{border-color:var(--violet);color:var(--violet)} }
+  .act.fatto{color:var(--good);background:var(--good-soft);border-color:transparent;box-shadow:none;cursor:default}
+  .act.rec{animation:pulse 1.2s ease-in-out infinite;color:var(--accent2)}
+  .mini-btn.lens{color:var(--violet);background:rgba(122,92,240,.11)}
+  @media (hover:hover){ .mini-btn.lens:hover{background:rgba(122,92,240,.2)} }
+  .bub .who{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:22px}
+  .bub .who .mini-btn.lens{width:26px;height:26px;border-radius:8px;margin:-3px -6px -3px 0}
+  .bub .who .mini-btn.lens .i{width:15px;height:15px}
+  .lt-s .lt-lens{width:30px;height:30px;border-radius:9px;margin-top:1px}
+  .lt-s .lt-lens .i{width:16px;height:16px}
+  .pv-top{display:flex;align-items:flex-start;gap:8px}
+  .pv-top .pv-ru{flex:1;min-width:0}
+  .pv-acts{display:flex;gap:4px;flex:0 0 auto}
+  .ese-item.sbagliata{box-shadow:inset 3px 0 0 var(--bad),var(--shadow-sm)}
+  .num-conv .nc-row .mini-btn{align-self:center}
+  .kw-add .mini-btn{width:32px;height:32px}
+
+  /* pannello dal basso */
+  @keyframes sheetUp{from{transform:translateY(60px);opacity:.3}to{transform:none;opacity:1}}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  .sheet-ov{position:fixed;inset:0;z-index:250;background:rgba(8,12,24,.52);display:flex;align-items:flex-end;justify-content:center;animation:fadeIn .18s ease both;transition:opacity .18s}
+  .sheet-ov.out{opacity:0}
+  .sheet{background:var(--bg);width:100%;max-width:640px;max-height:88vh;max-height:88dvh;border-radius:26px 26px 0 0;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;animation:sheetUp .3s cubic-bezier(.2,.8,.3,1) both;padding-bottom:env(safe-area-inset-bottom)}
+  .sh-head{display:flex;align-items:center;gap:6px;padding:14px 10px 6px;position:relative;flex:0 0 auto}
+  .sh-head::before{content:"";position:absolute;top:7px;left:50%;width:42px;height:5px;margin-left:-21px;border-radius:9px;background:var(--line2)}
+  .sh-back,.sh-close{width:38px;height:38px;border-radius:12px;border:0;background:var(--card2);color:var(--text2);display:grid;place-items:center;flex:0 0 auto}
+  .sh-back .i,.sh-close .i{width:19px;height:19px}
+  .sh-title{flex:1;text-align:center;font-weight:800;font-size:15.5px;letter-spacing:-.1px}
+  .sh-body{overflow-y:auto;padding:6px 16px 22px;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .sh-page{display:flex;flex-direction:column;gap:12px;animation:rise .2s ease both}
+  .sh-hero{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:15px 16px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:4px;align-items:flex-start}
+  .sh-hero .ru{font-size:22px;font-weight:800;line-height:1.35;letter-spacing:-.3px;cursor:pointer;color:var(--text)}
+  .sh-hero .tr{font-size:13.5px;color:var(--accent2);font-style:italic}
+  .sh-hero .it{font-size:15px;color:var(--text2);font-weight:600;line-height:1.45}
+  .sh-hero .an{font-size:13px;color:var(--muted);line-height:1.5;background:var(--card2);border-radius:10px;padding:6px 10px;margin-top:4px}
+  .sh-hero .act-bar{justify-content:flex-start;margin-top:10px}
+  .sh-hero .mic-res{align-self:stretch;text-align:left}
+  .wbw{display:flex;flex-direction:column;gap:6px}
+  .wbw-row{display:flex;gap:10px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:10px 8px 10px 10px;cursor:pointer;transition:border-color .15s,transform .12s}
+  .wbw-row:active{transform:scale(.99)}
+  @media (hover:hover){ .wbw-row:hover{border-color:var(--violet)} }
+  .wbw-ru{border:0;background:var(--accent2-soft);color:var(--accent2);font-size:16px;font-weight:800;border-radius:10px;padding:6px 10px;min-width:64px;max-width:42%;text-align:left;overflow-wrap:anywhere;line-height:1.25;flex:0 0 auto}
+  .wbw-txt{flex:1;min-width:0;padding-top:2px}
+  .wbw-it{font-size:14.5px;font-weight:700;color:var(--text);line-height:1.35}
+  .wbw-nota{font-size:12.5px;color:var(--muted);line-height:1.5;margin-top:2px}
+  .wbw-alt{font-size:11.5px;color:var(--muted);font-style:italic;margin-top:3px;line-height:1.4}
+  .wbw-row.ignota .wbw-it{color:var(--muted);font-weight:600;font-style:italic}
+  .wbw-row.ignota .wbw-ru{background:var(--card2);color:var(--text2)}
+  .wbw-go{color:var(--muted);opacity:.55;flex:0 0 auto;align-self:center}
+  .wbw-go .i{transform:rotate(180deg);width:17px;height:17px}
+  .sh-note{font-size:12px;color:var(--muted);text-align:center;margin:0;line-height:1.5}
+  .sh-alt{display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--text2);line-height:1.45}
+  .sh-alt b{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .sh-forme{padding:12px}
+  .sh-forme .decl-toggle{display:none}
+  .sh-forme .decl-panel{display:block!important}
+  .sh-es{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:9px 8px 9px 12px;cursor:pointer}
+  .sh-es .txt{flex:1;min-width:0}
+  .sh-es .ru{font-size:15px;font-weight:700;line-height:1.35}
+  .sh-es .it{font-size:12.5px;color:var(--muted);margin-top:1px}
+  .sh-page .sg-tema{align-self:flex-start}
+
   /* ============================ DESKTOP ============================ */
   @media (min-width:760px){
     .appbar{padding:0 24px}
@@ -1341,6 +1415,7 @@
   <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
   <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-2.1a2 2 0 0 0 1.3-1.3z"/></symbol>
+  <symbol id="i-textsearch" viewBox="0 0 24 24"><path d="M21 6H3"/><path d="M10 12H3"/><path d="M10 18H3"/><circle cx="17" cy="15" r="3"/><path d="m21 19-1.9-1.9"/></symbol>
   <symbol id="i-map" viewBox="0 0 24 24"><path d="M14.1 5.1a2 2 0 0 0 1.8 0l3.7-1.8A1 1 0 0 1 21 4.2v12.6a1 1 0 0 1-.55.9l-4.55 2.3a2 2 0 0 1-1.8 0l-4.2-2.1a2 2 0 0 0-1.8 0l-3.7 1.8A1 1 0 0 1 3 18.8V6.2a1 1 0 0 1 .55-.9L8.1 3a2 2 0 0 1 1.8 0z"/><path d="M15 5.76v15"/><path d="M9 3.24v15"/></symbol>
   <symbol id="i-share" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v13"/></symbol>
   <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
@@ -1637,7 +1712,7 @@ function leaveScreen(){
   const fns = _onLeave; _onLeave = [];
   fns.forEach(f=>{ try{ f(); }catch(e){} });
   try{ if('speechSynthesis' in window) speechSynthesis.cancel(); }catch(e){}
-  document.querySelectorAll('.vika-pop,.modal-ov').forEach(p=>p.remove());
+  document.querySelectorAll('.vika-pop,.modal-ov,.sheet-ov').forEach(p=>p.remove());
 }
 
 // ---------- utility ----------
@@ -1926,7 +2001,7 @@ function renderHome(){
       const on = b.dataset.tab===tab;
       b.classList.toggle('active', on); b.setAttribute('aria-selected', on);
     });
-    const grid = $(`<div class="grid g5"></div>`);
+    const grid = $(`<div class="grid g4"></div>`);
     if(dir) grid.classList.add(dir==='left' ? 'slide-left' : 'slide-right');
     gridWrap.innerHTML = '';
     gridWrap.appendChild(grid);
@@ -1934,18 +2009,15 @@ function renderHome(){
     if(tab === 'pratica'){
       const st = studyStats();
       const dueAll = (DB.voci||[]).filter(v=>isDue(v.id)).length;
-      const best = memBest(), rec = best[6] || best[8] || best[10];
-      const cmpTot = extraStore().cmp || 0;
+      const lampo = extraStore().lampo || 0;
       [
         [ic('cards'),"Flashcard", `${dueAll} parole da ripassare`, "flash"],
-        [ic('pen'),"Scrittura","Scrivila tu, in cirillico","write"],
+        [ic('pen'),"Scrittura","Scrivi le parole in cirillico","write"],
         [ic('list'),"Coniugazione","Allena le forme dei verbi","conj"],
-        [ic('headphones'),"Frasi &amp; ascolto","Completa la frase e ascoltala","phrase"],
-        [ic('blocks'),"Componi la frase", cmpTot ? `${cmpTot} frasi composte &middot; metti in ordine` : "Metti in ordine le parole","compose"],
+        [ic('headphones'),"Frasi","Completa, componi, dettato","frasi"],
         [ic('hash'),"Numeri e ore","Contare, l'ora, i prezzi","numeri"],
-        [ic('dumbbell'),"Palestra di grammatica","Casi al volo e verbi di moto","palestra"],
-        [ic('timer'),"Sfida lampo", (extraStore().lampo ? `Record: ${extraStore().lampo} parole` : "Quante parole in 60 secondi?"),"lampo"],
-        [ic('grid'),"Memory", rec ? `Record ${fmtTime(rec)} &middot; abbina a tempo` : "Abbina le coppie a tempo","memory"],
+        [ic('dumbbell'),"Palestra di grammatica","Casi, verbi di moto, regole","palestra"],
+        [ic('timer'),"Giochi", lampo ? `Sfida lampo (record ${lampo}) &middot; Memory` : "Sfida lampo e Memory","giochi"],
         [ic('chart'),"Progressi", st.seen ? `${st.note} imparate &middot; ${st.precisione}% giuste` : "Mappa dello studio e statistiche","stats"],
       ].forEach(([ico,t,d,mode])=>grid.appendChild(mkTile(ico,t,d,mode)));
       const vika = $(`<button class="tile wide feat" data-mode="vika" type="button">
@@ -1961,11 +2033,9 @@ function renderHome(){
         [ic('zap'),"Verbi", `${(DB.verbi||[]).length} verbi coniugati in tutti i tempi`, "verbi"],
         [ic('chat'),"Dialoghi", `${(DB.dialoghi||[]).length} scene da ascoltare e recitare`, "dialoghi"],
         [ic('quote'),"Frasario", "Frasi pronte per ogni situazione", "frasario"],
-        [ic('bookopen'),"Letture", `${(DB.letture||[]).length} racconti, traduzione al tocco`, "letture"],
-        [ic('landmark'),"Cultura e curiosità", "Proverbi, tradizioni, falsi amici", "cultura"],
+        [ic('bookopen'),"Letture e cultura", `${(DB.letture||[]).length} racconti, proverbi, tradizioni`, "cultura"],
         [`<span class="glyph">Жж</span>`,"Cirillico","Alfabeto, pronuncia e quiz","cyr"],
-        [ic('rules'),"Regole grammaticali", `${(DB.riferimento||[]).length} schede da consultare`, "ref"],
-        [ic('quiz'),"Grammatica","Regole in breve + quiz","gram"],
+        [ic('rules'),"Regole grammaticali", `${(DB.riferimento||[]).length} schede + regole in breve`, "ref"],
         [ic('puzzle'),"Frasi &amp; grammatica", `${nFg} frasi spiegate parola per parola`, "frasigram"],
       ].forEach(([ico,t,d,mode])=>grid.appendChild(mkTile(ico,t,d,mode)));
     }
@@ -2057,6 +2127,8 @@ function start(mode){
     if(mode==="proverbi") return runProverbi();
     if(mode==="palestra") return runPalestra();
     if(mode==="lampo") return runLampo();
+    if(mode==="frasi") return runFrasiHub();
+    if(mode==="giochi") return runGiochi();
   });
 }
 
@@ -2747,6 +2819,9 @@ function makeVocabCard(ruWord, itTrans, {translit=null, online=false, tipo=null,
     setAdded(); notaConj(); haptic(true);
   };
   actions.appendChild(addBtn);
+  const spBtn = $(`<button class="add-flash-btn" type="button">${ic('textsearch')} Spiega</button>`);
+  spBtn.onclick = e=>{ e.stopPropagation(); spiega(ruWord, itTrans, {translit, tipo, tag:tags}); };
+  actions.appendChild(spBtn);
   // Declinazioni (solo per i sostantivi con genere noto)
   const decl = makeDeclensionBlock(ruWord, tipo, tags);
   if(decl) actions.appendChild(decl);
@@ -3065,7 +3140,7 @@ function runEsercizi(){
       row.querySelector('.ru').textContent = w.ru;
       row.querySelector('.it').textContent = w.it;
       row.prepend(spkBtn(w.ru));
-      row.appendChild(delBtn(()=>removeEsesVoce(w.id)));
+      row.append(lensBtn(w.ru, w.it), delBtn(()=>removeEsesVoce(w.id)));
       list.appendChild(row);
     });
     body.appendChild(list);
@@ -3099,7 +3174,7 @@ function runEsercizi(){
         row.querySelector('.txt').appendChild(tema);
       }
       row.prepend(spkBtn(onlyCyrillic(f.ru)));
-      row.appendChild(delBtn(()=>removeEsesFrase(f.id)));
+      row.append(lensBtn(f.ru, f.it, {translit:f.translit}), delBtn(()=>removeEsesFrase(f.id)));
       list.appendChild(row);
     });
     body.appendChild(list);
@@ -3123,7 +3198,7 @@ function runEsercizi(){
       row.querySelector('.it').textContent = e.it || '';
       row.querySelector('.sg-tema').textContent = e.fonte || 'Errore';
       row.prepend(spkBtn(onlyCyrillic(e.ru)));
-      row.appendChild(delBtn(()=>togliErrore(e.ru)));
+      row.append(lensBtn(e.ru, e.it), delBtn(()=>togliErrore(e.ru)));
       list.appendChild(row);
     });
     body.appendChild(list);
@@ -3220,6 +3295,9 @@ const hasCyrillic = s => /[а-яё]/i.test(s);
 function runReference(scrollToId){
   const stage = header('Regole grammaticali');
   const secs = DB.riferimento || [];
+  const breve = $(`<button class="textbtn" type="button" style="align-self:flex-start;margin:-4px 0 -6px -8px">${ic('quiz')} Regole in breve e quiz</button>`);
+  breve.onclick = ()=>navigateTo(()=>runGram());
+  stage.appendChild(breve);
 
   // navigazione a chip (resta in alto mentre si scorre) per saltare alle sezioni
   const nav = $(`<div class="ref-nav"></div>`);
@@ -3710,12 +3788,15 @@ function runFlash(pool, topicLabel, opts){
         <button class="btn bad" type="button">${ic('x')} Da ripassare <span class="kbd-hint">1</span></button>
         <button class="btn good" type="button">${ic('check')} La sapevo <span class="kbd-hint">2</span></button>
       </div>`);
+    const acts = azioniTesto(c.ru, c.it, {translit:c.translit, tipo:c.tipo, tag:c.tag});
+    acts.classList.add('hidden');
     flipFn = ()=>{
       if(flipped) return;
       flipped=true;
       flip.classList.add("flipped");
       reveal.classList.add("hidden");
       controls.classList.remove("hidden");
+      acts.classList.remove("hidden");
       if(decl) decl.style.display='';
       if(!ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 200);
     };
@@ -3733,8 +3814,7 @@ function runFlash(pool, topicLabel, opts){
     cardWrap.appendChild(flip);
     cardWrap.appendChild(reveal);
     cardWrap.appendChild(controls);
-    const mic = makeMicBtn(()=>c.ru);
-    if(mic) cardWrap.appendChild(mic);
+    cardWrap.appendChild(acts);
     if(decl){ decl.style.display = ruFront ? '' : 'none'; cardWrap.appendChild(decl); }
     if(ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
   }
@@ -3890,6 +3970,7 @@ function playMemory(pairs){
       const back=$(`<button class="btn" type="button">${ic('back')} Indietro</button>`); back.onclick=goBack;
       const again=$(`<button class="btn primary" type="button">${ic('refresh')} Ancora</button>`); again.onclick=()=>playMemory(pairs);
       row.appendChild(back); row.appendChild(again); stage.appendChild(row);
+      stage.appendChild(listaParole('Le parole della partita', scelte));
     }, 500);
   }
 }
@@ -4040,6 +4121,7 @@ function runConjugation(tenseFilter, verbiPool){
       reveal.querySelector('.speak').onclick = ()=>speak(q.inf);
       reveal.appendChild(makeVerbConjBlock(q.verb, true, q.tk));
       wrap.insertBefore(reveal, btn);
+      wrap.insertBefore(azioniTesto(q.answer, `${q.en} — ${q.pron}`, {verbo:q.verb}), btn);
 
       btn.innerHTML = `${i+1<deck.length ? 'Avanti' : 'Risultato'} →`;
       btn.onclick = next;
@@ -4284,8 +4366,7 @@ function runPhrase(level, opts){
       card.querySelector('.q').innerHTML = rawWords.map((w,idx)=>idx===hideIdx?`<span style="color:var(--good)">${esc(w)}</span>`:esc(w)).join(" ");
       // Rivela la traslitterazione completa solo dopo la risposta
       if(f.translit) card.appendChild($(`<div class="qsub" style="color:var(--accent2);font-style:italic">${esc(f.translit)}</div>`));
-      const mic = makeMicBtn(()=>sentence, 'Ripeti la frase');
-      if(mic) card.appendChild(mic);
+      card.appendChild(azioniTesto(sentence, f.it, {translit:f.translit}));
       const next=$(`<button class="btn primary block" type="button">${i+1<deck.length?'Continua':'Risultato'} →</button>`);
       next.onclick=()=>{i++; show();}; wrap.appendChild(next);
     }
@@ -4368,6 +4449,8 @@ function runMCQ(questions, title, restart, hooks){
         else if(!Q.id) recordActivity(ok);
         if(Q.speak) speak(Q.speak);
         if(Q.after){ const a = $(`<div class="qsub q-after"></div>`); a.textContent = Q.after; card.appendChild(a); }
+        const fr = Q.frase===false ? null : (Q.frase || Q.err);
+        if(fr && fr.ru) card.appendChild(azioniTesto(fr.ru, fr.it));
         const next=$(`<button class="btn primary block" type="button">${i+1<questions.length?"Avanti":"Risultato"} →</button>`);
         next.onclick=()=>{i++; show();}; wrap.appendChild(next);
       };
@@ -4566,12 +4649,14 @@ function runDialogo(d){
 
   const chat = $(`<div class="chat"></div>`);
   const bubs = d.battute.map((b,k)=>{
-    const el = $(`<button class="bub${b.s===mio?' me':''}" type="button"><div class="who"></div><div class="ru"></div><div class="it"></div></button>`);
-    el.querySelector('.who').textContent = nomeRuolo(d, b.s);
+    const el = $(`<div class="bub${b.s===mio?' me':''}" role="button" tabindex="0"><div class="who"><span></span></div><div class="ru"></div><div class="it"></div></div>`);
+    el.querySelector('.who span').textContent = nomeRuolo(d, b.s);
+    el.querySelector('.who').appendChild(lensBtn(b.ru, b.it));
     el.querySelector('.ru').textContent = b.ru;
     el.querySelector('.it').textContent = b.it;
     el.style.animationDelay = Math.min(k*35, 400) + 'ms';
     el.onclick = ()=>{ stopPlay(); mark(k); speakAs(b.ru, b.s, ()=>mark(-1)); };
+    el.onkeydown = e=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); el.onclick(); } };
     chat.appendChild(el);
     return el;
   });
@@ -4611,13 +4696,7 @@ function runDialogo(d){
   // Frasi chiave e nota culturale
   if(d.parole && d.parole.length){
     const kw = $(`<div class="pcard"><h3>${ic('key')} Frasi chiave</h3><div class="kw-list"></div></div>`);
-    d.parole.forEach(p=>{
-      const r = $(`<button class="kw" type="button"><b></b><span></span></button>`);
-      r.querySelector('b').textContent = p.ru;
-      r.querySelector('span').textContent = p.it;
-      r.onclick = ()=>{ stopPlay(); speak(onlyCyrillic(p.ru)); };
-      kw.querySelector('.kw-list').appendChild(r);
-    });
+    d.parole.forEach(p=>kw.querySelector('.kw-list').appendChild(kwRow(p.ru, p.it, {tema:`Dialogo: ${d.titolo}`})));
     stage.appendChild(kw);
   }
   if(d.nota) stage.appendChild($(`<div class="nota-box">${ic('bulb')}<div>${esc(d.nota)}</div></div>`));
@@ -4671,8 +4750,9 @@ function runRecita(d, ruolo){
   const scorri = el => requestAnimationFrame(()=>el.scrollIntoView({block:'center', behavior:'smooth'}));
 
   function bolla(b, mia){
-    const el = $(`<div class="bub${mia?' me':''}"><div class="who"></div><div class="ru"></div><div class="it"></div></div>`);
-    el.querySelector('.who').textContent = nomeRuolo(d, b.s);
+    const el = $(`<div class="bub${mia?' me':''}"><div class="who"><span></span></div><div class="ru"></div><div class="it"></div></div>`);
+    el.querySelector('.who span').textContent = nomeRuolo(d, b.s);
+    el.querySelector('.who').appendChild(lensBtn(b.ru, b.it));
     el.querySelector('.ru').textContent = b.ru;
     el.querySelector('.it').textContent = b.it;
     return el;
@@ -4727,8 +4807,9 @@ function runRecita(d, ruolo){
     function rivela(detto){
       stopRec();
       el.classList.remove('turn');
-      el.innerHTML = `<div class="who"></div><div class="ru"></div><div class="it"></div>`;
-      el.querySelector('.who').textContent = nomeRuolo(d, b.s);
+      el.innerHTML = `<div class="who"><span></span></div><div class="ru"></div><div class="it"></div>`;
+      el.querySelector('.who span').textContent = nomeRuolo(d, b.s);
+      el.querySelector('.who').appendChild(lensBtn(b.ru, b.it));
       el.querySelector('.it').textContent = b.it;
       if(detto!=null){
         parlate++;
@@ -4897,6 +4978,9 @@ function runNumeri(){
   };
   inp.oninput = paintConv;
   conv.querySelector('button').onclick = ()=>{ const v = inp.value.replace(/\D/g,''); if(v) speak(numRu(+v)); };
+  const lenteN = lensBtn('', '');
+  lenteN.onclick = e=>{ e.stopPropagation(); const v = inp.value.replace(/\D/g,''); if(v) spiega(numRu(+v), (+v).toLocaleString('it-IT')); };
+  conv.querySelector('.nc-row').appendChild(lenteN);
   inp.onkeydown = e=>{ if(e.key==='Enter') conv.querySelector('button').click(); };
   paintConv();
   stage.appendChild(conv);
@@ -4970,12 +5054,7 @@ function regolaCard(titolo, testo, esempi){
   const c = $(`<div class="pcard"><h3>${ic('bulb')} <span></span></h3><p class="regola-p"></p><div class="kw-list"></div></div>`);
   c.querySelector('h3 span').textContent = titolo;
   c.querySelector('.regola-p').textContent = testo;
-  esempi.forEach(([ru, it])=>{
-    const r = $(`<button class="kw" type="button"><b></b><span></span></button>`);
-    r.querySelector('b').textContent = ru; r.querySelector('span').textContent = it;
-    r.onclick = ()=>speak(onlyCyrillic(ru));
-    c.querySelector('.kw-list').appendChild(r);
-  });
+  esempi.forEach(([ru, it])=>c.querySelector('.kw-list').appendChild(kwRow(ru, it)));
   return c;
 }
 
@@ -5022,6 +5101,7 @@ function runNumDettato(rangeKey){
       res.innerHTML = ok ? `<b style="color:var(--good)">✓ ${n.toLocaleString('it-IT')}</b> — ${esc(parole)}`
                          : `<b style="color:var(--bad)">Era ${n.toLocaleString('it-IT')}</b> — ${esc(parole)}`;
       card.appendChild(res);
+      card.appendChild(azioniTesto(parole, n.toLocaleString('it-IT'), {mic:true}));
       speak(parole);
       chk.innerHTML = `${i+1<N ? 'Continua' : 'Risultato'} →`;
     };
@@ -5150,7 +5230,7 @@ function fraseRow(f, tema){
   };
   add.onclick = e=>{ e.stopPropagation(); addEsesFrase({id:f.id, ru:f.ru, it:f.it, translit:f.translit, tema:tema||''}); paint(); haptic(true); };
   paint();
-  row.append(spk, add);
+  row.append(lensBtn(f.ru, f.it, {translit:f.translit, tema}), spk, add);
   row.onclick = ()=>speak(onlyCyrillic(f.ru));
   return row;
 }
@@ -5313,6 +5393,7 @@ function runComponi(level, opts){
       if(f.translit) sol.querySelector('.tr').textContent = f.translit;
       sol.onclick = ()=>speak(onlyCyrillic(f.ru));
       wrap.insertBefore(sol, chk);
+      wrap.insertBefore(azioniTesto(f.ru, f.it, {translit:f.translit}), chk);
       speak(onlyCyrillic(f.ru));
       chk.innerHTML = `${i+1<deck.length ? 'Continua' : 'Risultato'} →`;
       chk.disabled = false;
@@ -5685,6 +5766,9 @@ function runLettura(l){
   const testo = $(`<div class="lt-text"></div>`);
   const righe = l.frasi.map((f,k)=>{
     const r = $(`<div class="lt-s"><button class="lt-play" type="button" aria-label="Ascolta la frase">${ic('vol')}</button><div class="lt-body"><div class="lt-ru"></div><div class="lt-it"></div></div></div>`);
+    const lente = lensBtn(f.ru, f.it, {glossario:gl, tema:`Lettura: ${l.titolo}`});
+    lente.classList.add('lt-lens');
+    r.appendChild(lente);
     const ruEl = r.querySelector('.lt-ru');
     // ogni parola è toccabile; la punteggiatura resta testo semplice
     f.ru.split(/(\s+)/).forEach(tok=>{
@@ -5719,6 +5803,9 @@ function runLettura(l){
     const sp = $(`<button type="button">🔊 Ascolta</button>`);
     sp.onclick = e=>{ e.stopPropagation(); speak(parola); };
     row.appendChild(sp);
+    const sg = $(`<button type="button">🔍 Spiega</button>`);
+    sg.onclick = e=>{ e.stopPropagation(); pop.remove(); el.classList.remove('on'); sheetApri('La parola', ()=>pagParola(parola, tr && !tr.nome ? tr.it : '', {glossario:gl})); };
+    row.appendChild(sg);
     if(tr && !tr.nome){
       const id = tr.voce ? tr.voce.id : 'lt_' + normYo(parola.toLowerCase());
       const gia = isEsesVoce(id);
@@ -5735,7 +5822,7 @@ function runLettura(l){
     }
     document.body.appendChild(pop);
     const rc = el.getBoundingClientRect();
-    const pw = Math.min(250, window.innerWidth - 24);
+    const pw = Math.min(300, window.innerWidth - 24);
     pop.style.maxWidth = pw + 'px';
     const left = Math.max(12, Math.min(window.innerWidth - pw - 12, rc.left + window.scrollX + rc.width/2 - pw/2));
     pop.style.left = left + 'px';
@@ -5774,12 +5861,7 @@ function runLettura(l){
   const voci = Object.entries(l.glossario||{});
   if(voci.length){
     const det = $(`<details class="pcard lt-gloss"><summary>${ic('book')} Glossario <span class="pill">${voci.length}</span></summary><div class="kw-list"></div></details>`);
-    voci.forEach(([ru, it])=>{
-      const r = $(`<button class="kw" type="button"><b></b><span></span></button>`);
-      r.querySelector('b').textContent = ru; r.querySelector('span').textContent = it;
-      r.onclick = ()=>speak(ru);
-      det.querySelector('.kw-list').appendChild(r);
-    });
+    voci.forEach(([ru, it])=>det.querySelector('.kw-list').appendChild(kwRow(ru, it, {glossario:gl, tag:['letture']})));
     stage.appendChild(det);
   }
 
@@ -5788,7 +5870,7 @@ function runLettura(l){
   stage.appendChild(q);
 }
 function runLetturaQuiz(l){
-  const qs = l.domande.map(d=>({q:d.q, sub:d.it, correct:d.ok, opts:shuffle([d.ok, ...d.opts]), speak:d.q,
+  const qs = l.domande.map(d=>({q:d.q, sub:d.it, correct:d.ok, opts:shuffle([d.ok, ...d.opts]), speak:d.q, frase:{ru:d.q, it:d.it},
                                 err:{ru:`${d.q} — ${d.ok}`, it:d.it, fonte:'Letture'}}));
   runMCQ(shuffle(qs), `Domande · ${l.titolo}`, ()=>runLetturaQuiz(l), {
     onAnswer:(Q, ok)=>recordActivity(ok),
@@ -5809,8 +5891,22 @@ function pillolaDelGiorno(){ const p = DB.cultura || []; return p.length ? p[(gi
 function cardProverbio(p){ return {kick:'Proverbio russo', big:p.ru, sub:p.lett, it:p.it ? '≈ '+p.it : '', bigSize:96, file:'proverbio-russo.jpg'}; }
 
 function runCultura(){
-  const stage = header('Cultura e curiosità');
-  stage.appendChild($(`<p class="sg-intro">Tradizioni, modi di dire e parole trappola: tutto quello che un libro di grammatica non ti racconta.</p>`));
+  const stage = header('Letture e cultura');
+  stage.appendChild($(`<p class="sg-intro">Racconti da leggere con la traduzione al tocco, proverbi, tradizioni e parole trappola. Su ogni frase c'è la lente ${ic('textsearch')} per la spiegazione parola per parola.</p>`));
+  const lette = letteStato();
+  stage.appendChild($(`<div class="sec-h">Racconti</div>`));
+  const rl = $(`<div class="list"></div>`);
+  (DB.letture||[]).forEach(l=>{
+    const badge = lette[l.id] ? `<div class="right"><span class="pill green">${ic('check')} Letta</span></div>` : '';
+    const t = $(`<button class="tile wide" type="button"><div class="ico">${l.icona||'📖'}</div>
+      <div class="txt"><div class="t"><span></span> <span class="tru"></span></div><div class="d"></div></div>${badge}</button>`);
+    t.querySelector('.t span').textContent = l.titolo;
+    t.querySelector('.tru').textContent = l.titoloRu;
+    t.querySelector('.d').textContent = `Livello ${l.livello||1} · ${l.frasi.length} frasi · ${l.domande.length} domande`;
+    t.onclick = ()=>navigateTo(()=>runLettura(l));
+    rl.appendChild(t);
+  });
+  stage.appendChild(rl);
   const p = proverbioDelGiorno();
   if(p){
     stage.appendChild($(`<div class="sec-h">Proverbio del giorno</div>`));
@@ -5822,6 +5918,7 @@ function runCultura(){
     const tutti = $(`<button class="btn sm" type="button">${ic('list')} Tutti i proverbi</button>`);
     tutti.onclick = ()=>navigateTo(runProverbi);
     c.querySelector('.row').append(shareBtn(cardProverbio(p)), tutti);
+    c.appendChild(azioniTesto(p.ru, p.it || p.lett, {tema:'Proverbio', mic:false}));
     stage.appendChild(c);
   }
   stage.appendChild($(`<div class="sec-h">Parole trappola</div>`));
@@ -5837,10 +5934,10 @@ function runCultura(){
   });
   stage.appendChild(list);
   stage.appendChild($(`<div class="sec-h">Russia in pillole</div>`));
-  const lette = new Set(extraStore().pillole || []);
+  const pilLette = new Set(extraStore().pillole || []);
   const grid = $(`<div class="topic-grid"></div>`);
   (DB.cultura||[]).forEach(c=>{
-    const b = $(`<button class="topic${lette.has(c.id)?' letta':''}" type="button"><span class="e">${c.icona}</span><span class="tt"><b></b><small>${lette.has(c.id)?'✓ letta':plur(c.parole.length,'parola','parole')}</small></span></button>`);
+    const b = $(`<button class="topic${pilLette.has(c.id)?' letta':''}" type="button"><span class="e">${c.icona}</span><span class="tt"><b></b><small>${pilLette.has(c.id)?'✓ letta':plur(c.parole.length,'parola','parole')}</small></span></button>`);
     b.querySelector('b').textContent = c.titolo;
     b.onclick = ()=>navigateTo(()=>runPillola(c));
     grid.appendChild(b);
@@ -5859,18 +5956,7 @@ function runPillola(c){
   stage.appendChild(p);
   if(c.parole && c.parole.length){
     const kw = $(`<div class="pcard"><h3>${ic('key')} Le parole</h3><div class="kw-list"></div></div>`);
-    c.parole.forEach((w,j)=>{
-      const r = $(`<div class="kw kw-add"><button class="kw-t" type="button"><b></b><span></span></button></div>`);
-      r.querySelector('b').textContent = w.ru; r.querySelector('span').textContent = w.it;
-      r.querySelector('.kw-t').onclick = ()=>speak(onlyCyrillic(w.ru));
-      const id = `cu_${c.id}_${j}`;
-      const add = $(`<button class="mini-btn add" type="button"></button>`);
-      const paint = ()=>{ const s = isEsesVoce(id); add.innerHTML = s ? ic('check') : ic('plus'); add.classList.toggle('added', s); add.disabled = s; add.title = s ? 'Negli esercizi' : 'Aggiungi agli esercizi'; add.setAttribute('aria-label', add.title); };
-      add.onclick = ()=>{ addEsesVoce(id, w.ru, w.it, '', '', ['cultura']); paint(); haptic(true); };
-      paint();
-      r.appendChild(add);
-      kw.querySelector('.kw-list').appendChild(r);
-    });
+    c.parole.forEach(w=>kw.querySelector('.kw-list').appendChild(kwRow(w.ru, w.it, {tag:['cultura'], tema:c.titolo})));
     stage.appendChild(kw);
   }
   const nav = $(`<div class="row"></div>`);
@@ -5888,7 +5974,8 @@ function runProverbi(){
   stage.appendChild(quiz);
   const list = $(`<div class="list" style="gap:10px"></div>`);
   all.forEach(p=>{
-    const c = $(`<div class="prov-card sm${p===oggi?' today':''}"><button class="pv-ru" type="button"></button><div class="pv-lett"></div><div class="pv-it"></div></div>`);
+    const c = $(`<div class="prov-card sm${p===oggi?' today':''}"><div class="pv-top"><button class="pv-ru" type="button"></button><div class="pv-acts"></div></div><div class="pv-lett"></div><div class="pv-it"></div></div>`);
+    c.querySelector('.pv-acts').append(lensBtn(p.ru, p.it || p.lett, {tema:'Proverbio'}), saveMini(p.ru, p.it || p.lett, {tema:'Proverbio'}));
     c.querySelector('.pv-ru').textContent = p.ru;
     c.querySelector('.pv-ru').onclick = ()=>speak(p.ru);
     c.querySelector('.pv-lett').textContent = p.lett;
@@ -6004,6 +6091,14 @@ function runPalestra(){
     go.onclick = ()=>navigateTo(runMotoQuiz);
     stage.appendChild(go);
   }
+  const reg = DB.grammatica || [];
+  if(reg.length){
+    stage.appendChild($(`<div class="sec-h">Regole in breve</div>`));
+    const l2 = $(`<div class="list"></div>`);
+    l2.appendChild(mk('📐', 'Le regole di base', `${reg.length} regole spiegate in poche righe`, ()=>runGram()));
+    l2.appendChild(mk('❓', 'Quiz sulle regole', '10 domande a caso su tutte le regole', function quizAll(){ runMCQ(shuffle(gramQuestions(reg)).slice(0,10), 'Quiz di grammatica', quizAll); }));
+    stage.appendChild(l2);
+  }
 }
 function runCasi(caso){
   const pool = (DB.casi||[]).filter(c=>!caso || c.caso===caso);
@@ -6045,7 +6140,7 @@ function runLampo(){
     const fill = top.querySelector('.lampo-time i'), scoreEl = top.querySelector('.lampo-score b');
     const DURATA = 60000, t0 = Date.now();
     let punti = 0, sbagli = 0, fine = false, timer = null, onKey = null;
-    const usate = new Set();
+    const usate = new Set(), viste = [];
     const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
     const tick = ()=>{
       const rest = Math.max(0, DURATA - (Date.now()-t0));
@@ -6077,6 +6172,7 @@ function runLampo(){
           risposto = true;
           const ok = o===v.it;
           b.classList.add(ok ? 'correct' : 'wrong');
+          viste.push(Object.assign({sbagliata:!ok}, v));
           haptic(ok); recordActivity(ok);
           if(ok){ punti++; scoreEl.textContent = punti; setTimeout(domanda, 160); }
           else {
@@ -6103,6 +6199,7 @@ function runLampo(){
       });
       if(record) confetti(stage.querySelector('.done'));
       if(punti) stage.appendChild(shareBtn({kick:'Sfida lampo', big:`${punti} parole`, sub:'in 60 secondi', it:'Riesci a battermi?', bigSize:170, file:'sfida-lampo.jpg'}, 'Condividi il risultato'));
+      if(viste.length) stage.appendChild(listaParole('Le parole della sfida', viste.slice().sort((a,b)=>b.sbagliata-a.sbagliata)));
     }
     domanda();
     timer = requestAnimationFrame(tick);
@@ -6161,6 +6258,7 @@ function runDettatoFrasi(){
       res.querySelector('.dt-it').textContent = f.it;
       if(f.translit) res.querySelector('.dt-tr').textContent = f.translit;
       res.style.display = '';
+      res.appendChild(azioniTesto(f.ru, f.it, {translit:f.translit}));
       inp.classList.add(ok ? 'ok' : 'ko');
       if(kbd) kbd.style.display = 'none';
       chk.innerHTML = `${ok ? '✓ Giusto! ' : ''}${i+1<deck.length ? 'Continua' : 'Risultato'} →`;
@@ -6199,9 +6297,11 @@ function runErrori(){
     card.querySelector('.er-ru').textContent = e.ru;
     const rev = $(`<button class="btn block" type="button">${ic('eye')} Mostra il russo</button>`);
     const grade2 = $(`<div class="grade-row hidden"><button class="btn bad" type="button">${ic('x')} Ancora</button><button class="btn good" type="button">${ic('check')} La so</button></div>`);
-    wrap.append(card, rev, grade2);
+    const acts = azioniTesto(e.ru, e.it);
+    acts.classList.add('hidden');
+    wrap.append(card, rev, grade2, acts);
     let aperta = false;
-    const apri = ()=>{ if(aperta) return; aperta = true; card.querySelector('.er-ru').style.display = ''; rev.classList.add('hidden'); grade2.classList.remove('hidden'); speak(onlyCyrillic(e.ru)); };
+    const apri = ()=>{ if(aperta) return; aperta = true; card.querySelector('.er-ru').style.display = ''; rev.classList.add('hidden'); grade2.classList.remove('hidden'); acts.classList.remove('hidden'); speak(onlyCyrillic(e.ru)); };
     const vota = ok=>{
       if(!aperta) return;
       aperta = false;
@@ -6458,6 +6558,476 @@ function makeLivelloCard(){
       <div><b>${s.giorni}/7</b><span>giorni di studio</span></div></div>
   </div>`);
   return c;
+}
+
+// ================= SPIEGAZIONE PAROLA PER PAROLA =================
+// Ovunque l'app proponga una parola o una frase c'è «Spiega»: si apre un
+// pannello dal basso con la frase smontata parola per parola (forma, caso,
+// persona del verbo, preposizione e caso che regge…) e i pulsanti per salvare
+// negli esercizi la frase intera o le singole parole.
+const CASO_IT = {nom:'nominativo', gen:'genitivo', dat:'dativo', acc:'accusativo', ins:'strumentale', pre:'prepositivo'};
+const GEN_IT = {m:'maschile', f:'femminile', n:'neutro', pl:'plurale'};
+const PRON_IT = {'я':'io','ты':'tu','он':'lui','она':'lei','оно':'esso','мы':'noi','вы':'voi / Lei','они':'loro','себя':'sé stesso',
+  'кто':'chi','что':'che cosa','никто':'nessuno','ничто':'niente'};
+const PRON_EXTRA = {'его':'anche possessivo: «suo» (di lui)', 'её':'anche possessivo: «suo» (di lei)', 'их':'anche possessivo: «loro»'};
+const ADJPRON_IT = {'этот':'questo','тот':'quello','мой':'mio','твой':'tuo','наш':'nostro','ваш':'vostro / Suo','свой':'proprio (suo)','чей':'di chi'};
+const PREP_IT = {'в':'in, a','во':'in, a','на':'su, a','у':'presso (у меня = io ho)','о':'di, su (argomento)','об':'di, su','от':'da',
+  'до':'fino a','для':'per','без':'senza','через':'attraverso, tra','после':'dopo','перед':'davanti a, prima di','между':'tra, fra',
+  'под':'sotto','с':'con / da','со':'con / da','к':'verso, da (qualcuno)','из':'da (fuori da)','за':'dietro, per','над':'sopra','при':'presso','по':'per, lungo'};
+const PERS_IT = ['io (я)','tu (ты)','lui / lei (он/она)','noi (мы)','voi / Lei (вы)','loro (они)'];
+const PAST_IT = ['maschile','femminile','neutro','plurale'];
+const DOPO_234 = new Set(['два','две','три','четыре','полтора','полторы']);
+const DOPO_5 = new Set(['пять','шесть','семь','восемь','девять','десять','одиннадцать','двенадцать','тринадцать','четырнадцать','пятнадцать',
+  'шестнадцать','семнадцать','восемнадцать','девятнадцать','двадцать','тридцать','сорок','пятьдесят','шестьдесят','семьдесят','восемьдесят',
+  'девяносто','сто','двести','триста','четыреста','пятьсот','шестьсот','семьсот','восемьсот','девятьсот','много','мало','сколько','несколько']);
+const normW = s => normYo(String(s||'').toLowerCase().replace(/́/g,''));
+// Parole brevissime ma importantissime: la spiegazione la scriviamo noi.
+const PAROLE_FUNZIONE = {
+  'есть':['c\'è, ci sono (у меня есть = io ho)','presente di «быть» (essere), usato per dire che qualcosa c\'è; lo stesso «есть» come verbo vuol dire anche «mangiare»'],
+  'нет':['no · non c\'è','«нет» + genitivo = «non c\'è, non ho»: у меня нет машины'],
+  'не':['non','negazione: va subito prima della parola che nega'],
+  'это':['questo, ciò · è','pronome che non cambia forma: «Это дом» = questa è una casa (al presente «essere» non si dice)'],
+  'вот':['ecco','per indicare o porgere qualcosa: «Вот ваш кофе»'],
+  'ли':['(particella di domanda)','rende la frase una domanda: «Знаешь ли ты…?» = sai…?'],
+  'бы':['(condizionale)','con il passato forma il condizionale: «я бы хотел» = vorrei'],
+  'же':['(rafforzativo)','dà enfasi: «тот же» = lo stesso'],
+  'сколько':['quanto, quanti','vuole il genitivo: сколько стоит? · сколько лет?'],
+  'где':['dove (stato)','dove si è: «Где ты?»'],
+  'куда':['dove (moto)','verso dove si va: «Куда ты идёшь?»'],
+  'откуда':['da dove','provenienza: «Откуда ты?»'],
+  'почему':['perché','la causa: «Почему ты не пришёл?»'],
+  'зачем':['a che scopo, perché','lo scopo: «Зачем?»'],
+  'стоит':['costa (стоить) · oppure: sta, si trova (стоять)','3ª persona singolare; con i prezzi è «стоить»: сколько стоит?'],
+  'пожалуйста':['per favore · prego','si usa sia per chiedere sia per rispondere a «спасибо»'],
+};
+// Numerali che si declinano (один… четыре): la forma dice genere e caso
+const NUMERALI = {
+  'один':['uno',{один:'maschile, nominativo / accusativo',одного:'maschile/neutro, genitivo (accusativo animato)',одному:'maschile/neutro, dativo',одним:'maschile/neutro, strumentale · plurale, dativo',одном:'maschile/neutro, prepositivo',
+    одна:'femminile, nominativo',одной:'femminile, genitivo / dativo / strumentale / prepositivo',одну:'femminile, accusativo',одно:'neutro, nominativo / accusativo',одни:'plurale, nominativo',одних:'plurale, genitivo',одними:'plurale, strumentale'}],
+  'два':['due',{два:'maschile/neutro, nominativo',две:'femminile, nominativo',двух:'genitivo / prepositivo',двум:'dativo',двумя:'strumentale'}],
+  'три':['tre',{три:'nominativo / accusativo',трёх:'genitivo / prepositivo',трём:'dativo',тремя:'strumentale'}],
+  'четыре':['quattro',{четыре:'nominativo / accusativo',четырёх:'genitivo / prepositivo',четырём:'dativo',четырьмя:'strumentale'}],
+};
+
+let _formeIdx = null;
+function _addForma(m, forma, an){
+  const k = normW(forma);
+  if(!k || /\s/.test(k)) return;
+  const arr = m.get(k) || [];
+  // stessa parola, stessa categoria: le note si uniscono (es. «genitivo / accusativo»)
+  const gemello = arr.find(x=>x.lemma===an.lemma && x.cat===an.cat);
+  if(gemello){ if(an.nota && !gemello.note.includes(an.nota)) gemello.note.push(an.nota); }
+  else { const x = Object.assign({}, an, {note: an.nota ? [an.nota] : []}); delete x.nota; arr.push(x); }
+  m.set(k, arr);
+}
+function indiceForme(){
+  if(_formeIdx) return _formeIdx;
+  const m = new Map();
+  Object.entries(PAROLE_FUNZIONE).forEach(([w, [it, nota]])=>_addForma(m, w, {lemma:w, it, cat:'funz', nota}));
+  Object.entries(NUMERALI).forEach(([lemma, [it, forme]])=>Object.entries(forme).forEach(([f, nota])=>_addForma(m, f, {lemma, it, cat:'num', nota:`numerale, ${nota}`})));
+  Object.entries(PREP_INFO).forEach(([p, info])=>{
+    if(!/\s/.test(p)) _addForma(m, p, {lemma:p, it:PREP_IT[p]||'', cat:'prep', nota:`preposizione: regge il ${info.caso}`});
+  });
+  Object.entries(PRONOUN_DECL).forEach(([lemma, forms])=>{
+    Object.entries(forms).forEach(([c, f])=>{ if(f && f!=='—') _addForma(m, f, {lemma, it:PRON_IT[lemma]||'', cat:'pron', nota:CASO_IT[c]}); });
+  });
+  Object.entries(ADJLIKE_PRON).forEach(([lemma, g])=>{
+    ['m','f','n','pl'].forEach(gg=>Object.entries(g[gg]).forEach(([c, f])=>{
+      _addForma(m, f, {lemma, it:ADJPRON_IT[lemma]||'', cat:'apron', nota:`${GEN_IT[gg]}, ${CASO_IT[c.replace(/_.*/,'')]}`});
+    }));
+  });
+  (DB.verbi||[]).forEach(v=>{
+    const base = {lemma:v.inf, it:v.en||'', cat:'verbo', verbo:v};
+    _addForma(m, v.inf, Object.assign({}, base, {nota:'infinito'}));
+    const cj = v.coniugazioni || {};
+    (cj.pres||[]).forEach((f,i)=>_addForma(m, f, Object.assign({}, base, {nota:`presente, ${PERS_IT[i]}`})));
+    (cj.fut||[]).forEach((f,i)=>_addForma(m, f, Object.assign({}, base, {nota:`futuro, ${PERS_IT[i]}`})));
+    (cj.past||[]).forEach((f,i)=>_addForma(m, f, Object.assign({}, base, {nota:`passato, ${PAST_IT[i]}`})));
+    (cj.imp||[]).forEach((f,i)=>_addForma(m, f, Object.assign({}, base, {nota:`imperativo (${i ? 'вы' : 'ты'})`})));
+  });
+  (DB.voci||[]).forEach(v=>{
+    const ru = (v.ru||'').trim();
+    if(!ru || /\s/.test(ru)) return;
+    const tipo = (v.tipo||'').toLowerCase();
+    if(/sostantiv/.test(tipo)){
+      const d = declineNoun(ru, v.tipo, v.tag);
+      if(d){
+        const gen = GENDER_INFO[d.gender] ? GENDER_INFO[d.gender][1] : '';
+        ['sg','pl'].forEach(n=>Object.entries(d[n]||{}).forEach(([c, f])=>{
+          if(f && f!=='—') _addForma(m, f, {lemma:ru, it:v.it, cat:'nome', voce:v, gen, nota:`${CASO_IT[c]} ${n==='sg' ? 'singolare' : 'plurale'}`});
+        }));
+        return;
+      }
+    }
+    // aggettivi (anche quelli registrati come «vocabolo»: красивый, большой…)
+    if(tipo==='aggettivo' || (!/verbo|sostantiv|numero/.test(tipo) && /(ый|ий|ой)$/.test(ru.toLowerCase()) && ru.length>4 && !ADJLIKE_PRON[ru.toLowerCase()])){
+      const d = declineAdj(ru);
+      if(d){
+        ['m','f','n','pl'].forEach(gg=>Object.entries(d[gg]||{}).forEach(([c, f])=>{
+          if(f) _addForma(m, f, {lemma:ru, it:v.it, cat:'agg', voce:v, nota:`${GEN_IT[gg]}, ${CASO_IT[c.replace(/_.*/,'')]}`});
+        }));
+        return;
+      }
+    }
+    _addForma(m, ru, {lemma:ru, it:v.it, cat:'voce', voce:v, nota:''});
+  });
+  // parole frequenti dei racconti (congiunzioni, avverbi…) per ciò che manca
+  Object.entries(DB.glossarioLetture||{}).forEach(([k, it])=>{ if(!m.has(normW(k))) _addForma(m, k, {lemma:k, it, cat:'gloss', nota:''}); });
+  _formeIdx = m;
+  return m;
+}
+const CAT_ORD = {funz:0, prep:0, num:1, pron:1, apron:1, verbo:2, nome:2, agg:2, voce:3, gloss:4};
+const CAT_NOME = {prep:'preposizione', pron:'pronome', apron:'pronome', verbo:'verbo', agg:'aggettivo', gloss:'', voce:''};
+// Analisi di una parola nel suo contesto (la parola prima decide il caso,
+// per esempio dopo «в» o dopo un numero)
+function analizzaParola(tok, prev, gloss){
+  const k = normW(tok);
+  let an = (indiceForme().get(k) || []).map(a=>Object.assign({}, a, {note:a.note.slice()}));
+  // la stessa parola già spiegata con la grammatica non si ripete come voce semplice
+  const gramm = an.filter(a=>!['voce','gloss'].includes(a.cat));
+  if(gramm.length) an = gramm.concat(an.filter(a=>['voce','gloss'].includes(a.cat) && !gramm.some(b=>normW(b.lemma)===normW(a.lemma) || normW(b.lemma)===k)));
+  an.sort((a,b)=>(CAT_ORD[a.cat]??5) - (CAT_ORD[b.cat]??5) || (normW(b.lemma)===k) - (normW(a.lemma)===k));
+  let perche = '';
+  const pk = prev ? normW(prev) : '';
+  const regola = PREP_INFO[pk] ? PREP_INFO[pk].caso.split(/\s*\/\s*/) : DOPO_234.has(pk) ? ['genitivo singolare'] : DOPO_5.has(pk) ? ['genitivo plurale'] : null;
+  if(regola && an.length){
+    an.forEach(a=>{ const n = a.note.filter(x=>regola.some(r=>x.startsWith(r) || x.includes(', '+r))); a.match = n.length ? n : null; });
+    const ok = an.filter(a=>a.match);
+    if(ok.length){ ok.forEach(a=>a.note = a.match); an = ok; perche = `dopo «${prev}»`; }
+  }
+  const g = gloss && gloss.get ? gloss.get(k) : null;
+  if(!an.length && g) an = [{lemma:tok, it:g, cat:'gloss', note:[]}];
+  // maiuscola in mezzo alla frase e sconosciuta: quasi sempre un nome proprio
+  if(!an.length && prev !== undefined && /^[А-ЯЁ]/.test(tok)) an = [{lemma:tok, it:'nome proprio (di persona o di luogo)', cat:'nomep', note:[]}];
+  // nel racconto il glossario dà la traduzione giusta per il contesto
+  if(an.length && g && an[0].cat!=='prep') an[0] = Object.assign({}, an[0], {itCtx:g});
+  return {parola:tok, an, perche};
+}
+// «presente, io / presente, tu / …» uguali per tutte le persone → una riga sola
+function sintesiNote(note){
+  if(note.length>=4){ const pre = note.map(n=>n.split(',')[0]); if(pre.every(p=>p===pre[0])) return [`${pre[0]}, uguale per tutte le persone`]; }
+  return note;
+}
+function descriviAnalisi(a, perche){
+  if(!a) return '';
+  const pezzi = [];
+  if(a.cat==='nome') pezzi.push(`nome ${a.gen||''} «${a.lemma}»`.replace(/\s+/g,' '));
+  else if(a.cat==='verbo') pezzi.push(`verbo «${a.lemma}»`);
+  else if(a.cat==='agg') pezzi.push(`aggettivo «${a.lemma}»`);
+  else if(a.cat==='pron' || a.cat==='apron') pezzi.push(`pronome «${a.lemma}»`);
+  else if(a.voce && a.voce.tipo && a.voce.tipo!=='vocabolo') pezzi.push(a.voce.tipo);
+  const note = sintesiNote(a.note.filter(Boolean));
+  if(note.length && a.cat!=='prep') pezzi.push(a.cat==='num' ? `«${a.lemma}» · ${note.join(' / ')}` : note.join(' / '));
+  if(a.cat==='prep') pezzi.push(note[0] || 'preposizione');
+  if(a.cat==='pron' && PRON_EXTRA[normW(a.form||'')]) pezzi.push(PRON_EXTRA[normW(a.form)]);
+  if(perche) pezzi.push(perche);
+  return pezzi.join(' · ');
+}
+
+// ---------- Salvare negli esercizi (mai due volte la stessa) ----------
+const normFr = s => normW(s).replace(/[^а-яa-z0-9\s-]/g,' ').replace(/\s+/g,' ').trim();
+function hashStr(s){ let h = 5381; for(let i=0; i<s.length; i++) h = ((h<<5) + h + s.charCodeAt(i)) >>> 0; return h.toString(36); }
+function fraseSalvata(ru){ const k = normFr(ru); return esesStore().frasi.some(f=>normFr(f.ru)===k); }
+function salvaFrase(ru, it, extra){
+  extra = extra || {};
+  if(fraseSalvata(ru)) return false;
+  const df = (DB.frasi||[]).find(f=>normFr(f.ru)===normFr(ru));
+  const base = df ? {id:df.id, ru:df.ru, it:df.it, translit:df.translit||''}
+                  : {id:'x'+hashStr(normFr(ru)), ru, it:it||'', translit:extra.translit||''};
+  return addEsesFrase(Object.assign(base, {tema:extra.tema||''}));
+}
+function parolaSalvata(ru){ const k = normW(ru); return esesStore().voci.some(v=>normW(v.ru)===k); }
+function salvaParola(ru, it, extra){
+  extra = extra || {};
+  if(parolaSalvata(ru)) return false;
+  const v = (DB.voci||[]).find(x=>normW(x.ru)===normW(ru));
+  if(v) return addEsesVoce(v.id, v.ru, v.it, v.translit, v.tipo, v.tag);
+  return addEsesVoce('x_'+normW(ru), ru, it||'', extra.translit||'', extra.tipo||'', extra.tag||[]);
+}
+
+// ---------- Il pannello «Spiega» ----------
+function sheetChiudi(){ const ov = document.querySelector('.sheet-ov'); if(ov){ ov.classList.add('out'); setTimeout(()=>ov.remove(), 180); } }
+function sheetApri(titolo, build){
+  let ov = document.querySelector('.sheet-ov');
+  if(!ov){
+    ov = $(`<div class="sheet-ov" role="dialog" aria-modal="true"><div class="sheet">
+      <div class="sh-head"><button class="sh-back" type="button" aria-label="Indietro">${ic('back')}</button><div class="sh-title"></div>
+      <button class="sh-close" type="button" aria-label="Chiudi">${ic('x')}</button></div><div class="sh-body"></div></div></div>`);
+    ov._stack = [];
+    ov.addEventListener('click', e=>{ if(e.target===ov) sheetChiudi(); });
+    ov.querySelector('.sh-close').onclick = sheetChiudi;
+    ov.querySelector('.sh-back').onclick = ()=>{ ov._stack.pop(); disegna(); };
+    ov._key = e=>{ if(e.key==='Escape'){ e.stopPropagation(); sheetChiudi(); } };
+    document.addEventListener('keydown', ov._key, true);
+    const obs = new MutationObserver(()=>{ if(!document.body.contains(ov)){ document.removeEventListener('keydown', ov._key, true); obs.disconnect(); } });
+    obs.observe(document.body, {childList:true});
+    document.body.appendChild(ov);
+  }
+  function disegna(){
+    const top = ov._stack[ov._stack.length-1];
+    if(!top){ sheetChiudi(); return; }
+    ov.querySelector('.sh-title').textContent = top.titolo;
+    ov.querySelector('.sh-back').style.visibility = ov._stack.length>1 ? 'visible' : 'hidden';
+    const body = ov.querySelector('.sh-body');
+    body.innerHTML = '';
+    body.appendChild(top.build());
+    body.scrollTop = 0;
+  }
+  ov._stack.push({titolo, build});
+  disegna();
+}
+// Apre la spiegazione giusta: una parola sola o una frase intera
+function spiega(ru, it, opts){
+  opts = opts || {};
+  const testo = String(ru||'').replace(/́/g,'').trim();
+  if(!testo) return;
+  if(paroleFrase(testo).length <= 1) sheetApri('La parola', ()=>pagParola(paroleFrase(testo)[0] || testo, it, opts));
+  else sheetApri('Parola per parola', ()=>pagFrase(testo, it, opts));
+}
+function saveBtnSheet(label, isSaved, save){
+  const b = $(`<button class="act" type="button"></button>`);
+  const paint = ()=>{ const s = isSaved(); b.innerHTML = s ? `${ic('check')} Negli esercizi` : `${ic('plus')} ${label}`; b.classList.toggle('fatto', s); b.disabled = s; };
+  b.onclick = e=>{ e.stopPropagation(); save(); paint(); haptic(true); };
+  paint();
+  return b;
+}
+function pagFrase(ru, it, opts){
+  const box = $(`<div class="sh-page"></div>`);
+  const curata = (DB.frasiGrammar||[]).find(f=>normFr(f.ru)===normFr(ru));
+  const hero = $(`<div class="sh-hero"><div class="ru" role="button" tabindex="0"></div>${opts.translit?'<div class="tr"></div>':''}<div class="it"></div><div class="act-bar"></div></div>`);
+  hero.querySelector('.ru').textContent = ru;
+  hero.querySelector('.ru').onclick = ()=>speak(onlyCyrillic(ru));
+  if(opts.translit) hero.querySelector('.tr').textContent = opts.translit;
+  const tradu = it || (curata && curata.it) || '';
+  hero.querySelector('.it').textContent = tradu;
+  if(!tradu) hero.querySelector('.it').remove();
+  const bar = hero.querySelector('.act-bar');
+  const sp = $(`<button class="act" type="button">${ic('vol')} Ascolta</button>`);
+  sp.onclick = ()=>speak(onlyCyrillic(ru));
+  bar.append(sp, saveBtnSheet('Salva la frase', ()=>fraseSalvata(ru), ()=>salvaFrase(ru, tradu, opts)));
+  const mic = micParts(()=>ru);
+  if(mic){ bar.appendChild(mic.btn); hero.appendChild(mic.res); }
+  box.appendChild(hero);
+  if(curata && curata.tema){
+    const t = $(`<button class="sg-tema" type="button"></button>`);
+    t.textContent = `Regola: ${curata.tema}`;
+    t.onclick = ()=>{ sheetChiudi(); navigateTo(()=> curata.regola && curata.regola.sez==='grammatica' ? runGram(curata.regola.id) : runReference(curata.regola ? curata.regola.id : undefined)); };
+    box.appendChild(t);
+  }
+  box.appendChild($(`<div class="sec-h" style="margin:4px 2px 0">Parola per parola</div>`));
+  const list = $(`<div class="wbw"></div>`);
+  const toks = String(ru).split(/\s+/).map(w=>w.replace(/^[«"(—–-]+|[.,!?;:»")…]+$/g,'')).filter(w=>/[а-яё]/i.test(w)).slice(0, 40);
+  const gloss = opts.glossario || null;
+  toks.forEach((w, i)=>{
+    const cur = curata ? (curata.parole||[]).find(p=>normW(p.ru)===normW(w)) : null;
+    const r = analizzaParola(w, toks[i-1], gloss);
+    const a = r.an[0];
+    const tr = cur ? cur.it : a ? (a.itCtx || a.it) : '';
+    const nota = cur ? cur.nota : descriviAnalisi(a && Object.assign({form:w}, a), r.perche);
+    const row = $(`<div class="wbw-row${a || cur ? '' : ' ignota'}" role="button" tabindex="0"><button class="wbw-ru" type="button"></button>
+      <div class="wbw-txt"><div class="wbw-it"></div><div class="wbw-nota"></div></div><span class="wbw-go">${ic('back')}</span></div>`);
+    row.querySelector('.wbw-ru').textContent = w;
+    row.querySelector('.wbw-ru').onclick = e=>{ e.stopPropagation(); speak(w); };
+    row.querySelector('.wbw-it').textContent = tr || 'non è nel dizionario dell\'app';
+    row.querySelector('.wbw-nota').textContent = nota || '';
+    if(!nota) row.querySelector('.wbw-nota').remove();
+    if(!cur && r.an.length>1){
+      const alt = $(`<div class="wbw-alt"></div>`);
+      alt.textContent = 'oppure: ' + r.an.slice(1,3).map(x=>`${x.it}${x.note.length ? ' ('+sintesiNote(x.note)[0]+')' : ''}`).join('; ');
+      row.querySelector('.wbw-txt').appendChild(alt);
+    }
+    const apri = ()=>sheetApri('La parola', ()=>pagParola(w, tr, {glossario:gloss, prev:toks[i-1]}));
+    row.onclick = apri;
+    row.onkeydown = e=>{ if(e.key==='Enter'){ e.preventDefault(); apri(); } };
+    list.appendChild(row);
+  });
+  box.appendChild(list);
+  box.appendChild($(`<p class="sh-note">Tocca una parola per la scheda completa (declinazione o coniugazione, esempi) e per salvarla.</p>`));
+  return box;
+}
+function pagParola(w, it, opts){
+  opts = opts || {};
+  const box = $(`<div class="sh-page"></div>`);
+  const r = analizzaParola(w, opts.prev, opts.glossario);
+  const a = r.an[0];
+  const lemma = a && a.cat!=='nomep' ? a.lemma : w;
+  const tr = it || (a ? (a.itCtx || a.it) : '');
+  const voce = a && a.voce;
+  const hero = $(`<div class="sh-hero"><div class="ru" role="button" tabindex="0"></div><div class="tr"></div><div class="it"></div><div class="an"></div><div class="act-bar"></div></div>`);
+  hero.querySelector('.ru').textContent = w;
+  hero.querySelector('.ru').onclick = ()=>speak(w);
+  const trl = voce && normW(voce.ru)===normW(w) ? voce.translit : '';
+  if(trl) hero.querySelector('.tr').textContent = trl; else hero.querySelector('.tr').remove();
+  hero.querySelector('.it').textContent = tr || 'Non è nel dizionario dell\'app.';
+  const desc = descriviAnalisi(a && Object.assign({form:w}, a), r.perche);
+  if(desc) hero.querySelector('.an').textContent = desc; else hero.querySelector('.an').remove();
+  const bar = hero.querySelector('.act-bar');
+  const sp = $(`<button class="act" type="button">${ic('vol')} Ascolta</button>`);
+  sp.onclick = ()=>speak(w);
+  bar.appendChild(sp);
+  if(a && a.cat==='verbo') bar.appendChild(saveBtnSheet('Salva il verbo', ()=>isEsesVerbo(a.verbo.id) && parolaSalvata(a.verbo.inf), ()=>{ salvaParola(a.verbo.inf, a.verbo.en, {tipo:'verbo'}); addEsesVerbo(a.verbo.id); }));
+  else if(a && a.cat!=='nomep') bar.appendChild(saveBtnSheet(normW(lemma)!==normW(w) ? `Salva «${lemma}»` : 'Salva la parola', ()=>parolaSalvata(lemma), ()=>salvaParola(lemma, a.it || tr, {tipo: voce ? voce.tipo : ''})));
+  else bar.appendChild(saveBtnSheet('Salva la parola', ()=>parolaSalvata(w), ()=>salvaParola(w, tr)));
+  const mic = micParts(()=>w);
+  if(mic){ bar.appendChild(mic.btn); hero.appendChild(mic.res); }
+  box.appendChild(hero);
+  if(r.an.length>1){
+    const alt = $(`<div class="pcard sh-alt"><b>Può essere anche</b></div>`);
+    r.an.slice(1,4).forEach(x=>{ const d = $(`<div></div>`); d.textContent = `${x.it} — ${descriviAnalisi(Object.assign({form:w}, x), '')}`; alt.appendChild(d); });
+    box.appendChild(alt);
+  }
+  // forme: coniugazione, declinazione, caso retto dalla preposizione
+  let forme = null;
+  if(a && a.cat==='verbo') forme = makeVerbConjBlock(a.verbo, true);
+  else if(a && a.cat==='nome') forme = openDecl(makeDeclensionBlock(a.lemma, voce && voce.tipo, voce && voce.tag));
+  else if(a && a.cat==='agg') forme = openDecl(makeAdjDeclensionBlock(a.lemma));
+  else if(a && a.cat==='apron') forme = openDecl(makeAdjDeclensionBlock(a.lemma));
+  else if(a && a.cat==='pron') forme = openDecl(makePronounDeclensionBlock(a.lemma));
+  else if(a && a.cat==='prep') forme = makePrepInfoBlock(a.lemma);
+  if(forme){ const c = $(`<div class="pcard sh-forme"></div>`); c.appendChild(forme); box.appendChild(c); }
+  if(a && a.cat==='verbo'){
+    const l = $(`<button class="textbtn" type="button" style="align-self:flex-start">${ic('zap')} Scheda completa del verbo</button>`);
+    l.onclick = ()=>{ sheetChiudi(); navigateTo(()=>runVerboDetail(a.verbo)); };
+    box.appendChild(l);
+  }
+  // la parola nelle frasi dell'app
+  const es = frasiConParola(lemma);
+  if(es.length){
+    box.appendChild($(`<div class="sec-h" style="margin:4px 2px 0">Nelle frasi</div>`));
+    const list = $(`<div class="list" style="gap:6px"></div>`);
+    es.slice(0,5).forEach(f=>{
+      const row = $(`<div class="sh-es" role="button" tabindex="0"><div class="txt"><div class="ru"></div><div class="it"></div></div><span class="mini-btn lens">${ic('textsearch')}</span></div>`);
+      row.querySelector('.ru').textContent = f.ru; row.querySelector('.it').textContent = f.it;
+      row.onclick = ()=>sheetApri('Parola per parola', ()=>pagFrase(f.ru, f.it, {}));
+      list.appendChild(row);
+    });
+    box.appendChild(list);
+  }
+  return box;
+}
+
+// ---------- Pulsanti riutilizzabili ----------
+// Microfono: pulsante + riga del risultato (la usano Pronuncia e le barre azioni)
+function micParts(getTarget, label){
+  if(!SpeechRec) return null;
+  label = label || 'Pronuncia';
+  const btn = $(`<button class="act mic-act" type="button">${ic('mic')} ${label}</button>`);
+  const res = $(`<div class="mic-res"></div>`);
+  let rec = null;
+  const reset = ()=>{ btn.classList.remove('rec'); btn.innerHTML = `${ic('mic')} ${label}`; };
+  btn.onclick = e=>{
+    e.stopPropagation();
+    if(rec){ try{ rec.stop(); }catch(_){} return; }
+    stopSpeech();
+    btn.classList.add('rec'); btn.innerHTML = `${ic('stop')} Ascolto…`;
+    res.textContent = '';
+    rec = ascoltaRusso((testo, err)=>{
+      rec = null; reset();
+      if(!testo){ res.innerHTML = `<span class="mr-no">${err==='not-allowed'||err==='service-not-allowed' ? 'Microfono non consentito.' : 'Non ho sentito: riprova.'}</span>`; return; }
+      const c = confrontaDetto(testo, getTarget());
+      const [cls, msg] = c.pct>=80 ? ['ok','Ottima pronuncia!'] : c.pct>=50 ? ['mid','Quasi!'] : ['ko','Riprova'];
+      res.innerHTML = `<b class="${cls}">${msg}</b><span class="mr-heard"></span>`;
+      res.querySelector('.mr-heard').textContent = ` Ho sentito: «${testo}»`;
+      haptic(c.pct>=80);
+    }, parz=>{ res.textContent = parz; });
+  };
+  onLeave(()=>{ if(rec){ try{ rec.abort(); }catch(_){} rec = null; } });
+  return {btn, res};
+}
+// Barra «Spiega · Salva · Pronuncia» sotto una parola o una frase proposta
+function azioniTesto(ru, it, opts){
+  opts = opts || {};
+  const testo = String(ru||'').replace(/́/g,'');
+  const singola = paroleFrase(testo).length <= 1;
+  const wrap = $(`<div class="act-wrap"><div class="act-bar"></div></div>`);
+  const bar = wrap.firstChild;
+  const sp = $(`<button class="act act-spiega" type="button">${ic('textsearch')} Spiega</button>`);
+  sp.onclick = e=>{ e.stopPropagation(); spiega(testo, it, opts); };
+  bar.appendChild(sp);
+  if(opts.verbo) bar.appendChild(saveBtnSheet('Salva il verbo', ()=>isEsesVerbo(opts.verbo.id) && parolaSalvata(opts.verbo.inf), ()=>{ salvaParola(opts.verbo.inf, opts.verbo.en, {tipo:'verbo'}); addEsesVerbo(opts.verbo.id); }));
+  else if(singola) bar.appendChild(saveBtnSheet('Salva', ()=>parolaSalvata(opts.lemma || testo), ()=>salvaParola(opts.lemma || testo, it, opts)));
+  else bar.appendChild(saveBtnSheet('Salva la frase', ()=>fraseSalvata(testo), ()=>salvaFrase(testo, it, opts)));
+  if(opts.mic !== false){ const m = micParts(()=>testo); if(m){ bar.appendChild(m.btn); wrap.appendChild(m.res); } }
+  return wrap;
+}
+// Lente piccola per le righe degli elenchi
+function lensBtn(ru, it, opts){
+  const b = $(`<button class="mini-btn lens" type="button" title="Spiega parola per parola" aria-label="Spiega parola per parola">${ic('textsearch')}</button>`);
+  b.onclick = e=>{ e.stopPropagation(); spiega(ru, it, opts); };
+  return b;
+}
+// ＋ piccolo per le righe: salva la parola o la frase
+function saveMini(ru, it, opts){
+  opts = opts || {};
+  const singola = paroleFrase(ru).length <= 1;
+  const b = $(`<button class="mini-btn add" type="button"></button>`);
+  const isS = ()=> singola ? parolaSalvata(ru) : fraseSalvata(ru);
+  const paint = ()=>{ const s = isS(); b.innerHTML = s ? ic('check') : ic('plus'); b.classList.toggle('added', s); b.disabled = s; b.title = s ? 'Negli esercizi' : 'Salva negli esercizi'; b.setAttribute('aria-label', b.title); };
+  b.onclick = e=>{ e.stopPropagation(); if(singola) salvaParola(ru, it, opts); else salvaFrase(ru, it, opts); paint(); haptic(true); };
+  paint();
+  return b;
+}
+// Riga «parola — traduzione» con ascolto, Spiega e ＋ (frasi chiave, esempi, glossari)
+function kwRow(ru, it, opts){
+  const r = $(`<div class="kw kw-add"><button class="kw-t" type="button"><b></b><span></span></button></div>`);
+  r.querySelector('b').textContent = ru; r.querySelector('span').textContent = it;
+  r.querySelector('.kw-t').onclick = ()=>speak(onlyCyrillic(ru));
+  r.append(lensBtn(ru, it, opts), saveMini(ru, it, opts));
+  return r;
+}
+// Elenco delle parole viste in una partita (Memory, Sfida lampo)
+function listaParole(titolo, voci){
+  const c = $(`<div class="pcard"><h3>${ic('list')} <span></span></h3><div class="list" style="gap:6px"></div></div>`);
+  c.querySelector('h3 span').textContent = titolo;
+  const l = c.querySelector('.list');
+  voci.forEach(v=>{
+    const row = $(`<div class="ese-item${v.sbagliata ? ' sbagliata' : ''}"><div class="txt"><div class="ru"></div><div class="it"></div></div></div>`);
+    row.querySelector('.ru').textContent = v.ru; row.querySelector('.it').textContent = v.it;
+    const spk = $(`<button class="mini-btn spk" type="button" aria-label="Ascolta">${ic('vol')}</button>`);
+    spk.onclick = ()=>speak(v.ru);
+    row.prepend(spk);
+    row.append(lensBtn(v.ru, v.it), saveMini(v.ru, v.it, {tipo:v.tipo, tag:v.tag, translit:v.translit}));
+    l.appendChild(row);
+  });
+  return c;
+}
+
+// ================= HUB: Frasi e Giochi =================
+function runFrasiHub(){
+  const stage = header('Frasi');
+  stage.appendChild($(`<p class="sg-intro">Tre modi di allenare le frasi intere. In ognuno, dopo la risposta, tocca <b>Spiega</b> per vedere la frase parola per parola.</p>`));
+  const list = $(`<div class="list"></div>`);
+  const nF = (DB.frasi||[]).length;
+  [
+    ['🎧','Completa e ascolta', `Scegli la parola che manca · ${nF} frasi`, ()=>runPhrase()],
+    ['🧩','Componi la frase', `Metti in ordine le parole${extraStore().cmp ? ` · ${extraStore().cmp} composte` : ''}`, ()=>runComponi()],
+    ['✍️','Dettato di frasi', 'Ascolta una frase intera e scrivila', ()=>runDettatoFrasi()],
+  ].forEach(([e,t,dd,fn])=>{
+    const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t">${t}</div><div class="d">${dd}</div></div></button>`);
+    b.onclick = ()=>navigateTo(fn);
+    list.appendChild(b);
+  });
+  stage.appendChild(list);
+  const n = esesStore().frasi.length;
+  const mie = $(`<button class="textbtn" type="button" style="align-self:center">${ic('bookmark')} Le mie frasi salvate${n ? ` (${n})` : ''}</button>`);
+  mie.onclick = ()=>{ try{ localStorage.setItem('russo_ese_tab','frasi'); }catch(e){} navigateTo(runEsercizi); };
+  stage.appendChild(mie);
+}
+function runGiochi(){
+  const stage = header('Giochi');
+  const best = memBest(), rec = best[6] || best[8] || best[10];
+  const lampo = extraStore().lampo || 0;
+  stage.appendChild($(`<p class="sg-intro">Per ripassare le parole divertendosi. A fine partita trovi l'elenco delle parole viste, da spiegare e salvare.</p>`));
+  const list = $(`<div class="list"></div>`);
+  [
+    ['⚡','Sfida lampo', lampo ? `Record: ${lampo} parole in 60 secondi` : 'Quante parole traduci in 60 secondi?', runLampo],
+    ['🧠','Memory', rec ? `Record ${fmtTime(rec)} · abbina russo e italiano` : 'Abbina russo e italiano, a tempo', runMemory],
+  ].forEach(([e,t,dd,fn])=>{
+    const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t">${t}</div><div class="d">${dd}</div></div></button>`);
+    b.onclick = ()=>navigateTo(fn);
+    list.appendChild(b);
+  });
+  stage.appendChild(list);
 }
 
 // ========== VIKA — Gemini Live + fallback REST ==========
@@ -7136,6 +7706,8 @@ function runVika(){
     const slow=$(`<button class="vika-tool" type="button">🐢 più lento</button>`);
     slow.onclick=()=>speakBubble(text,0.55);
     tools.appendChild(rep); tools.appendChild(slow);
+    const ruTxt = text.replace(/^🗣️[^\n]*\n+/,'').split('\n').filter(r=>/[а-яё]/i.test(r)).join(' ').trim();
+    if(ruTxt){ const sp = $(`<button class="vika-tool" type="button">🔍 spiega</button>`); sp.onclick = ()=>spiega(ruTxt, '', {tag:['vika']}); tools.appendChild(sp); }
     bub.appendChild(tools);
     if(!key) return;
     const itDiv=$(`<div class="vika-it" style="display:none"></div>`);
@@ -7560,10 +8132,6 @@ function pickScritturaTopic(){
     b.onclick = ()=>navigateTo(open);
     list.appendChild(b);
   }
-  const dt = $(`<button class="tile wide" type="button"><div class="ico">🎧</div>
-    <div class="txt"><div class="t">Dettato di frasi</div><div class="d">Ascolta una frase intera e scrivila</div></div></button>`);
-  dt.onclick = ()=>navigateTo(runDettatoFrasi);
-  list.appendChild(dt);
   const due = allPool.filter(v=>isDue(v.id));
   mk("⚡","In scadenza oggi",`<span class="due">${due.length} da ripassare</span> &middot; 12 per giro`, due, "In scadenza", {limit:12});
 
@@ -7697,12 +8265,16 @@ function runScrittura(pool, label, opts){
       if(kbd) kbd.style.display = "none";
       sol.style.display = "";
       speak(c.ru);
+      const acts = azioniTesto(c.ru, c.it, {translit:c.translit, tipo:c.tipo, tag:c.tag});
+      wrap.insertBefore(acts, row);
       if(ok){
         mastered++;
         sol.innerHTML = `<span style="color:var(--good);font-weight:800">✓ Giusto!</span>`+
           `${c.translit?` &middot; <i>${esc(c.translit)}</i>`:""}${modo==="audio"?` &middot; ${esc(c.it)}`:""}`;
         check.textContent = "Avanti →";
-        setTimeout(()=>{ if(answered) avanti(); }, 1100);
+        // si va avanti da soli, a meno che non si tocchi Spiega/Salva
+        const auto = setTimeout(()=>{ if(answered) avanti(); }, 1600);
+        acts.addEventListener('pointerdown', ()=>clearTimeout(auto), true);
       } else {
         errori++;
         queue.push(c);   // torna in coda: la rivedrai in questa sessione
