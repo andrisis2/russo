@@ -2,12 +2,12 @@
   "meta": {
     "progetto": "Russo",
     "livello": "A1",
-    "versione": 22,
+    "versione": 23,
     "aggiornato": "2026-09-26",
     "fonti": [
       "Russo Facile con Yula — Corso completo per principianti (YouTube: hXWiEWwLy98). Lezioni elaborate: L01, L02, L03, '1000 parole', L04, L05"
     ],
-    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc. Sezione 'riferimento' = schede di consultazione (Regole grammaticali). Sezione 'frasiGrammar' (id 100+) = frasi semplici spiegate parola per parola con la grammatica dietro, in Teoria. Sezione 'dialoghi' = situazioni di tutti i giorni da ascoltare e recitare (scripts/add_dialoghi.py)."
+    "note": "Fonte unica di verità. Ogni voce alimenta gli esercizi dell'app. Aggiungere voci all'array 'voci', regole all'array 'grammatica'. Le voci dai video sono taggate 'video-01' ecc. Sezione 'riferimento' = schede di consultazione (Regole grammaticali). Sezione 'frasiGrammar' (id 100+) = frasi semplici spiegate parola per parola con la grammatica dietro, in Teoria. Sezione 'dialoghi' = situazioni di tutti i giorni da ascoltare e recitare (scripts/add_dialoghi.py). Secondo blocco (scripts/add_contenuti_2.py): 'letture' (racconti A1 con glossario e domande), 'proverbi', 'cultura', 'falsiAmici', 'paroleGemelle', 'casi' + 'casiNomi', 'verbiMoto', 'percorso' (Percorso A1)."
   },
   "alfabeto": [
     {
@@ -37836,6 +37836,3624 @@
         }
       ],
       "nota": "Nei musei e nei teatri russi il cappotto non si porta dentro: si lascia sempre al «гардероб»."
+    }
+  ],
+  "letture": [
+    {
+      "id": "anna",
+      "icona": "👩‍🏫",
+      "titolo": "Mi chiamo Anna",
+      "titoloRu": "Меня зовут Анна",
+      "livello": 1,
+      "frasi": [
+        {
+          "ru": "Привет! Меня зовут Анна.",
+          "it": "Ciao! Mi chiamo Anna."
+        },
+        {
+          "ru": "Я живу в Москве.",
+          "it": "Vivo a Mosca."
+        },
+        {
+          "ru": "Мне двадцать пять лет.",
+          "it": "Ho venticinque anni."
+        },
+        {
+          "ru": "Я работаю в школе. Я учительница.",
+          "it": "Lavoro in una scuola. Sono insegnante."
+        },
+        {
+          "ru": "У меня есть брат и сестра.",
+          "it": "Ho un fratello e una sorella."
+        },
+        {
+          "ru": "Мой брат Иван — врач.",
+          "it": "Mio fratello Ivan è medico."
+        },
+        {
+          "ru": "Моя сестра Оля ещё учится в университете.",
+          "it": "Mia sorella Olja studia ancora all'università."
+        },
+        {
+          "ru": "Вечером я читаю книги или гуляю в парке.",
+          "it": "La sera leggo libri o passeggio nel parco."
+        },
+        {
+          "ru": "Я очень люблю кошек. У меня есть кошка Мурка.",
+          "it": "Amo molto i gatti. Ho una gatta, Murka."
+        },
+        {
+          "ru": "А как тебя зовут?",
+          "it": "E tu come ti chiami?"
+        }
+      ],
+      "glossario": {
+        "привет": "ciao",
+        "зовут": "chiamano (меня зовут = mi chiamo)",
+        "живу": "vivo (жить)",
+        "москве": "Mosca (prepositivo)",
+        "двадцать": "venti",
+        "пять": "cinque",
+        "лет": "anni (dopo i numeri)",
+        "работаю": "lavoro (работать)",
+        "школе": "scuola (prepositivo)",
+        "учительница": "insegnante (f.)",
+        "брат": "fratello",
+        "сестра": "sorella",
+        "врач": "medico",
+        "учится": "studia (учиться)",
+        "университете": "università (prepositivo)",
+        "вечером": "la sera",
+        "читаю": "leggo (читать)",
+        "книги": "libri",
+        "гуляю": "passeggio (гулять)",
+        "парке": "parco (prepositivo)",
+        "люблю": "amo (любить)",
+        "кошек": "gatti (accusativo plurale)",
+        "кошка": "gatta",
+        "тебя": "te (accusativo)"
+      },
+      "domande": [
+        {
+          "q": "Где живёт Анна?",
+          "it": "Dove vive Anna?",
+          "ok": "В Москве",
+          "opts": [
+            "В Петербурге",
+            "В Риме"
+          ]
+        },
+        {
+          "q": "Кем работает Анна?",
+          "it": "Che lavoro fa Anna?",
+          "ok": "Учительницей",
+          "opts": [
+            "Врачом",
+            "Студенткой"
+          ]
+        },
+        {
+          "q": "Кто Иван?",
+          "it": "Chi è Ivan?",
+          "ok": "Её брат, врач",
+          "opts": [
+            "Её муж",
+            "Её учитель"
+          ]
+        },
+        {
+          "q": "Как зовут кошку?",
+          "it": "Come si chiama la gatta?",
+          "ok": "Мурка",
+          "opts": [
+            "Оля",
+            "Анна"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marco",
+      "icona": "☕",
+      "titolo": "La mattina di Marco",
+      "titoloRu": "Утро Марко",
+      "livello": 1,
+      "frasi": [
+        {
+          "ru": "Марко — итальянец. Он живёт в Петербурге.",
+          "it": "Marco è italiano. Vive a San Pietroburgo."
+        },
+        {
+          "ru": "Каждое утро он встаёт в семь часов.",
+          "it": "Ogni mattina si alza alle sette."
+        },
+        {
+          "ru": "Сначала он принимает душ.",
+          "it": "Prima fa la doccia."
+        },
+        {
+          "ru": "Потом он завтракает: пьёт кофе и ест бутерброд.",
+          "it": "Poi fa colazione: beve un caffè e mangia un panino."
+        },
+        {
+          "ru": "В восемь часов он идёт на работу.",
+          "it": "Alle otto va al lavoro."
+        },
+        {
+          "ru": "Он работает в офисе недалеко от дома.",
+          "it": "Lavora in un ufficio non lontano da casa."
+        },
+        {
+          "ru": "Обычно он ходит пешком, но когда идёт дождь, он едет на метро.",
+          "it": "Di solito va a piedi, ma quando piove prende la metro."
+        },
+        {
+          "ru": "Днём он обедает в кафе с коллегами.",
+          "it": "A mezzogiorno pranza al bar con i colleghi."
+        },
+        {
+          "ru": "Вечером он учит русский язык.",
+          "it": "La sera studia il russo."
+        },
+        {
+          "ru": "Марко говорит: «Русский язык трудный, но очень красивый!»",
+          "it": "Marco dice: «Il russo è difficile, ma molto bello!»"
+        }
+      ],
+      "glossario": {
+        "итальянец": "italiano (uomo)",
+        "живёт": "vive (жить)",
+        "петербурге": "San Pietroburgo (prepositivo)",
+        "каждое": "ogni (n.)",
+        "утро": "mattina",
+        "встаёт": "si alza (вставать)",
+        "семь": "sette",
+        "часов": "ore (dopo 5+)",
+        "сначала": "prima, all'inizio",
+        "принимает": "prende (принимать душ = fare la doccia)",
+        "душ": "doccia",
+        "завтракает": "fa colazione",
+        "пьёт": "beve (пить)",
+        "кофе": "caffè",
+        "ест": "mangia (есть)",
+        "бутерброд": "panino, tartina",
+        "восемь": "otto",
+        "идёт": "va (a piedi, adesso)",
+        "работу": "lavoro (accusativo)",
+        "работает": "lavora",
+        "офисе": "ufficio (prepositivo)",
+        "недалеко": "non lontano",
+        "дома": "casa (genitivo) / a casa",
+        "обычно": "di solito",
+        "ходит": "va (a piedi, di solito)",
+        "пешком": "a piedi",
+        "дождь": "pioggia (идёт дождь = piove)",
+        "едет": "va (con un mezzo)",
+        "метро": "metro",
+        "днём": "di giorno, a mezzogiorno",
+        "обедает": "pranza",
+        "кафе": "bar, caffè",
+        "коллегами": "colleghi (strumentale)",
+        "учит": "studia, impara",
+        "русский": "russo",
+        "язык": "lingua",
+        "говорит": "dice, parla",
+        "трудный": "difficile",
+        "красивый": "bello"
+      },
+      "domande": [
+        {
+          "q": "Во сколько встаёт Марко?",
+          "it": "A che ora si alza Marco?",
+          "ok": "В семь часов",
+          "opts": [
+            "В восемь часов",
+            "В десять часов"
+          ]
+        },
+        {
+          "q": "Что он пьёт утром?",
+          "it": "Cosa beve la mattina?",
+          "ok": "Кофе",
+          "opts": [
+            "Чай",
+            "Сок"
+          ]
+        },
+        {
+          "q": "Как он едет на работу, когда идёт дождь?",
+          "it": "Come va al lavoro quando piove?",
+          "ok": "На метро",
+          "opts": [
+            "Пешком",
+            "На такси"
+          ]
+        },
+        {
+          "q": "Что он делает вечером?",
+          "it": "Cosa fa la sera?",
+          "ok": "Учит русский язык",
+          "opts": [
+            "Смотрит футбол",
+            "Работает в офисе"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mercato",
+      "icona": "🥕",
+      "titolo": "Al mercato",
+      "titoloRu": "На рынке",
+      "livello": 1,
+      "frasi": [
+        {
+          "ru": "Сегодня суббота. Бабушка Нина идёт на рынок.",
+          "it": "Oggi è sabato. Nonna Nina va al mercato."
+        },
+        {
+          "ru": "На рынке много людей.",
+          "it": "Al mercato c'è molta gente."
+        },
+        {
+          "ru": "Там продают овощи, фрукты, мясо и рыбу.",
+          "it": "Lì vendono verdura, frutta, carne e pesce."
+        },
+        {
+          "ru": "Бабушка покупает картошку, морковь и капусту.",
+          "it": "La nonna compra patate, carote e cavolo."
+        },
+        {
+          "ru": "Она хочет приготовить борщ.",
+          "it": "Vuole preparare il boršč."
+        },
+        {
+          "ru": "Ещё она покупает килограмм яблок для внуков.",
+          "it": "Compra anche un chilo di mele per i nipoti."
+        },
+        {
+          "ru": "Продавец говорит: «Яблоки очень сладкие!»",
+          "it": "Il venditore dice: «Le mele sono dolcissime!»"
+        },
+        {
+          "ru": "Всё стоит пятьсот рублей.",
+          "it": "Tutto costa cinquecento rubli."
+        },
+        {
+          "ru": "Дома бабушка готовит борщ весь день.",
+          "it": "A casa la nonna cucina il boršč tutto il giorno."
+        },
+        {
+          "ru": "Вечером приходят внуки, и все вместе ужинают.",
+          "it": "La sera arrivano i nipoti e cenano tutti insieme."
+        }
+      ],
+      "glossario": {
+        "сегодня": "oggi",
+        "суббота": "sabato",
+        "бабушка": "nonna",
+        "рынок": "mercato",
+        "рынке": "mercato (prepositivo)",
+        "много": "molto, molti",
+        "людей": "persone (genitivo plurale)",
+        "продают": "vendono",
+        "овощи": "verdure",
+        "фрукты": "frutta",
+        "мясо": "carne",
+        "рыбу": "pesce (accusativo)",
+        "покупает": "compra",
+        "картошку": "patate (accusativo)",
+        "морковь": "carote",
+        "капусту": "cavolo (accusativo)",
+        "хочет": "vuole",
+        "приготовить": "preparare, cucinare",
+        "борщ": "boršč (zuppa di barbabietole)",
+        "килограмм": "chilo",
+        "яблок": "mele (genitivo plurale)",
+        "для": "per",
+        "внуков": "nipoti (genitivo plurale)",
+        "продавец": "venditore",
+        "яблоки": "mele",
+        "сладкие": "dolci",
+        "стоит": "costa",
+        "пятьсот": "cinquecento",
+        "рублей": "rubli",
+        "дома": "a casa",
+        "готовит": "cucina, prepara",
+        "весь": "tutto (m.)",
+        "день": "giorno",
+        "приходят": "arrivano, vengono",
+        "внуки": "nipoti",
+        "вместе": "insieme",
+        "ужинают": "cenano"
+      },
+      "domande": [
+        {
+          "q": "Какой сегодня день?",
+          "it": "Che giorno è oggi?",
+          "ok": "Суббота",
+          "opts": [
+            "Понедельник",
+            "Воскресенье"
+          ]
+        },
+        {
+          "q": "Что хочет приготовить бабушка?",
+          "it": "Cosa vuole preparare la nonna?",
+          "ok": "Борщ",
+          "opts": [
+            "Пельмени",
+            "Салат"
+          ]
+        },
+        {
+          "q": "Для кого яблоки?",
+          "it": "Per chi sono le mele?",
+          "ok": "Для внуков",
+          "opts": [
+            "Для продавца",
+            "Для соседки"
+          ]
+        },
+        {
+          "q": "Сколько всё стоит?",
+          "it": "Quanto costa tutto?",
+          "ok": "Пятьсот рублей",
+          "opts": [
+            "Пятьдесят рублей",
+            "Пять тысяч рублей"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meteo",
+      "icona": "❄️",
+      "titolo": "Il tempo a Mosca",
+      "titoloRu": "Погода в Москве",
+      "livello": 1,
+      "frasi": [
+        {
+          "ru": "В Москве зима длинная и холодная.",
+          "it": "A Mosca l'inverno è lungo e freddo."
+        },
+        {
+          "ru": "Часто идёт снег, и на улице минус пятнадцать.",
+          "it": "Nevica spesso e fuori ci sono meno quindici gradi."
+        },
+        {
+          "ru": "Люди носят тёплые куртки, шапки и шарфы.",
+          "it": "La gente porta giacche calde, berretti e sciarpe."
+        },
+        {
+          "ru": "Весной погода меняется: то солнце, то дождь.",
+          "it": "In primavera il tempo cambia: ora sole, ora pioggia."
+        },
+        {
+          "ru": "Летом в Москве тепло, иногда даже жарко.",
+          "it": "D'estate a Mosca fa caldo, a volte perfino molto caldo."
+        },
+        {
+          "ru": "Все гуляют в парках и едят мороженое.",
+          "it": "Tutti passeggiano nei parchi e mangiano il gelato."
+        },
+        {
+          "ru": "Осенью деревья жёлтые и красные.",
+          "it": "In autunno gli alberi sono gialli e rossi."
+        },
+        {
+          "ru": "Это очень красиво, но часто идёт дождь.",
+          "it": "È molto bello, ma piove spesso."
+        },
+        {
+          "ru": "А какое время года любишь ты?",
+          "it": "E tu quale stagione preferisci?"
+        }
+      ],
+      "glossario": {
+        "москве": "Mosca (prepositivo)",
+        "зима": "inverno",
+        "длинная": "lunga",
+        "холодная": "fredda",
+        "часто": "spesso",
+        "снег": "neve (идёт снег = nevica)",
+        "улице": "strada (на улице = fuori)",
+        "минус": "meno",
+        "пятнадцать": "quindici",
+        "люди": "persone, gente",
+        "носят": "portano, indossano",
+        "тёплые": "calde",
+        "куртки": "giacche",
+        "шапки": "berretti",
+        "шарфы": "sciarpe",
+        "весной": "in primavera",
+        "погода": "tempo (meteo)",
+        "меняется": "cambia",
+        "то": "ora… ora (то… то)",
+        "солнце": "sole",
+        "дождь": "pioggia",
+        "летом": "d'estate",
+        "тепло": "fa caldo (mite)",
+        "иногда": "a volte",
+        "даже": "perfino",
+        "жарко": "fa molto caldo",
+        "гуляют": "passeggiano",
+        "парках": "parchi (prepositivo plurale)",
+        "едят": "mangiano",
+        "мороженое": "gelato",
+        "осенью": "in autunno",
+        "деревья": "alberi",
+        "жёлтые": "gialli",
+        "красные": "rossi",
+        "красиво": "(è) bello",
+        "какое": "quale (n.)",
+        "время": "tempo (время года = stagione)",
+        "года": "dell'anno",
+        "любишь": "ami, preferisci (tu)"
+      },
+      "domande": [
+        {
+          "q": "Какая зима в Москве?",
+          "it": "Com'è l'inverno a Mosca?",
+          "ok": "Длинная и холодная",
+          "opts": [
+            "Короткая и тёплая",
+            "Жаркая"
+          ]
+        },
+        {
+          "q": "Что люди делают летом?",
+          "it": "Cosa fa la gente d'estate?",
+          "ok": "Гуляют в парках",
+          "opts": [
+            "Носят шапки",
+            "Катаются на лыжах"
+          ]
+        },
+        {
+          "q": "Какие деревья осенью?",
+          "it": "Come sono gli alberi in autunno?",
+          "ok": "Жёлтые и красные",
+          "opts": [
+            "Зелёные",
+            "Белые"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sasha",
+      "icona": "🧑‍💻",
+      "titolo": "Il mio amico Saša",
+      "titoloRu": "Мой друг Саша",
+      "livello": 1,
+      "frasi": [
+        {
+          "ru": "У меня есть друг. Его зовут Саша.",
+          "it": "Ho un amico. Si chiama Saša."
+        },
+        {
+          "ru": "Саша высокий, у него короткие тёмные волосы и голубые глаза.",
+          "it": "Saša è alto, ha i capelli corti e scuri e gli occhi azzurri."
+        },
+        {
+          "ru": "Он очень весёлый и добрый.",
+          "it": "È molto allegro e gentile."
+        },
+        {
+          "ru": "Саша программист. Он работает дома за компьютером.",
+          "it": "Saša è programmatore. Lavora a casa al computer."
+        },
+        {
+          "ru": "Он любит спорт: по утрам он бегает, а по субботам играет в футбол.",
+          "it": "Ama lo sport: la mattina corre e il sabato gioca a calcio."
+        },
+        {
+          "ru": "Ещё он хорошо готовит. Его любимое блюдо — пельмени.",
+          "it": "Inoltre cucina bene. Il suo piatto preferito sono i pel'meni."
+        },
+        {
+          "ru": "Саша не говорит по-итальянски, но хочет выучить язык.",
+          "it": "Saša non parla italiano, ma vuole impararlo."
+        },
+        {
+          "ru": "Мы часто говорим по телефону: я помогаю ему с итальянским, а он мне — с русским.",
+          "it": "Parliamo spesso al telefono: io lo aiuto con l'italiano e lui aiuta me con il russo."
+        }
+      ],
+      "glossario": {
+        "друг": "amico",
+        "его": "lui / suo (di lui)",
+        "зовут": "chiamano (его зовут = si chiama)",
+        "высокий": "alto",
+        "него": "lui (у него = lui ha)",
+        "короткие": "corti",
+        "тёмные": "scuri",
+        "волосы": "capelli",
+        "голубые": "azzurri",
+        "глаза": "occhi",
+        "весёлый": "allegro",
+        "добрый": "buono, gentile",
+        "программист": "programmatore",
+        "работает": "lavora",
+        "дома": "a casa",
+        "компьютером": "computer (strumentale: за компьютером = al computer)",
+        "любит": "ama",
+        "спорт": "sport",
+        "утрам": "mattine (по утрам = la mattina, di solito)",
+        "бегает": "corre",
+        "субботам": "sabati (по субботам = il sabato)",
+        "играет": "gioca",
+        "футбол": "calcio",
+        "хорошо": "bene",
+        "готовит": "cucina",
+        "любимое": "preferito (n.)",
+        "блюдо": "piatto",
+        "пельмени": "pel'meni (ravioli di carne)",
+        "говорит": "parla",
+        "по-итальянски": "in italiano",
+        "хочет": "vuole",
+        "выучить": "imparare (bene, fino in fondo)",
+        "язык": "lingua",
+        "говорим": "parliamo",
+        "телефону": "telefono (по телефону = al telefono)",
+        "помогаю": "aiuto",
+        "ему": "a lui",
+        "итальянским": "italiano (strumentale)",
+        "русским": "russo (strumentale)"
+      },
+      "domande": [
+        {
+          "q": "Какие глаза у Саши?",
+          "it": "Di che colore ha gli occhi Saša?",
+          "ok": "Голубые",
+          "opts": [
+            "Карие",
+            "Зелёные"
+          ]
+        },
+        {
+          "q": "Кем работает Саша?",
+          "it": "Che lavoro fa Saša?",
+          "ok": "Программистом",
+          "opts": [
+            "Врачом",
+            "Поваром"
+          ]
+        },
+        {
+          "q": "Что Саша делает по субботам?",
+          "it": "Cosa fa Saša il sabato?",
+          "ok": "Играет в футбол",
+          "opts": [
+            "Бегает",
+            "Готовит пельмени"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metro",
+      "icona": "🚇",
+      "titolo": "In metro",
+      "titoloRu": "В метро",
+      "livello": 2,
+      "frasi": [
+        {
+          "ru": "Московское метро — одно из самых красивых в мире.",
+          "it": "La metro di Mosca è una delle più belle del mondo."
+        },
+        {
+          "ru": "Некоторые станции похожи на музеи: там есть мозаики, статуи и люстры.",
+          "it": "Alcune stazioni sembrano musei: ci sono mosaici, statue e lampadari."
+        },
+        {
+          "ru": "Метро работает с шести утра до часа ночи.",
+          "it": "La metro è aperta dalle sei di mattina all'una di notte."
+        },
+        {
+          "ru": "Поезда ходят очень часто, каждые две-три минуты.",
+          "it": "I treni passano molto spesso, ogni due o tre minuti."
+        },
+        {
+          "ru": "Чтобы войти, нужна карта «Тройка» или банковская карта.",
+          "it": "Per entrare serve la tessera «Trojka» o una carta bancaria."
+        },
+        {
+          "ru": "В вагоне голос говорит: «Осторожно, двери закрываются!»",
+          "it": "Nel vagone una voce dice: «Attenzione, le porte si chiudono!»"
+        },
+        {
+          "ru": "Потом он называет следующую станцию.",
+          "it": "Poi annuncia la prossima fermata."
+        },
+        {
+          "ru": "Люди в метро читают, слушают музыку или спят.",
+          "it": "In metro la gente legge, ascolta musica o dorme."
+        },
+        {
+          "ru": "Если вы потерялись, спросите: «Как доехать до Красной площади?»",
+          "it": "Se vi perdete, chiedete: «Come si arriva alla Piazza Rossa?»"
+        }
+      ],
+      "glossario": {
+        "московское": "di Mosca (n.)",
+        "две-три": "due o tre",
+        "тройка": "Trojka, la tessera dei trasporti di Mosca",
+        "одно": "uno (n.; одно из = uno dei)",
+        "самых": "i più (superlativo)",
+        "красивых": "belli (genitivo plurale)",
+        "мире": "mondo (prepositivo)",
+        "некоторые": "alcuni",
+        "станции": "stazioni",
+        "похожи": "somigliano (похожи на = somigliano a)",
+        "музеи": "musei",
+        "мозаики": "mosaici",
+        "статуи": "statue",
+        "люстры": "lampadari",
+        "работает": "funziona, è aperto",
+        "шести": "sei (genitivo)",
+        "утра": "di mattina",
+        "часа": "l'una (genitivo)",
+        "ночи": "di notte",
+        "поезда": "treni",
+        "ходят": "passano, circolano",
+        "каждые": "ogni",
+        "минуты": "minuti",
+        "чтобы": "per (+ infinito)",
+        "войти": "entrare",
+        "нужна": "serve (f.)",
+        "карта": "tessera, carta",
+        "банковская": "bancaria",
+        "вагоне": "vagone (prepositivo)",
+        "голос": "voce",
+        "осторожно": "attenzione",
+        "двери": "porte",
+        "закрываются": "si chiudono",
+        "называет": "annuncia, nomina",
+        "следующую": "prossima (accusativo)",
+        "станцию": "stazione (accusativo)",
+        "читают": "leggono",
+        "слушают": "ascoltano",
+        "музыку": "musica (accusativo)",
+        "спят": "dormono",
+        "если": "se",
+        "потерялись": "vi siete persi",
+        "спросите": "chiedete",
+        "доехать": "arrivare (con un mezzo)",
+        "красной": "rossa (genitivo)",
+        "площади": "piazza (genitivo)"
+      },
+      "domande": [
+        {
+          "q": "На что похожи некоторые станции?",
+          "it": "A cosa somigliano alcune stazioni?",
+          "ok": "На музеи",
+          "opts": [
+            "На магазины",
+            "На парки"
+          ]
+        },
+        {
+          "q": "Как часто ходят поезда?",
+          "it": "Ogni quanto passano i treni?",
+          "ok": "Каждые две-три минуты",
+          "opts": [
+            "Каждый час",
+            "Раз в день"
+          ]
+        },
+        {
+          "q": "Что говорит голос в вагоне?",
+          "it": "Cosa dice la voce nel vagone?",
+          "ok": "Осторожно, двери закрываются!",
+          "opts": [
+            "Добро пожаловать!",
+            "Приятного аппетита!"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dacia",
+      "icona": "🏡",
+      "titolo": "Alla dacia",
+      "titoloRu": "Дача",
+      "livello": 2,
+      "frasi": [
+        {
+          "ru": "Летом многие русские ездят на дачу.",
+          "it": "D'estate molti russi vanno alla dacia."
+        },
+        {
+          "ru": "Дача — это маленький дом за городом, обычно с садом.",
+          "it": "La dacia è una casetta fuori città, di solito con l'orto."
+        },
+        {
+          "ru": "Семья Петровых едет на дачу каждую пятницу вечером.",
+          "it": "La famiglia Petrov va alla dacia ogni venerdì sera."
+        },
+        {
+          "ru": "Дорога занимает два часа, потому что на шоссе пробки.",
+          "it": "Il viaggio dura due ore, perché sulla statale c'è traffico."
+        },
+        {
+          "ru": "На даче папа работает в саду, а мама собирает ягоды.",
+          "it": "Alla dacia il papà lavora nell'orto e la mamma raccoglie i frutti di bosco."
+        },
+        {
+          "ru": "Дети купаются в речке и играют с собакой.",
+          "it": "I bambini fanno il bagno nel fiumiciattolo e giocano con il cane."
+        },
+        {
+          "ru": "Вечером все пьют чай на веранде.",
+          "it": "La sera tutti bevono il tè sulla veranda."
+        },
+        {
+          "ru": "Иногда соседи приходят в гости с пирогом.",
+          "it": "A volte i vicini vengono a trovarli con una torta."
+        },
+        {
+          "ru": "В воскресенье вечером семья возвращается в город — усталая, но счастливая.",
+          "it": "Domenica sera la famiglia torna in città: stanca, ma felice."
+        }
+      ],
+      "glossario": {
+        "летом": "d'estate",
+        "многие": "molti",
+        "русские": "russi",
+        "ездят": "vanno (con un mezzo, di solito)",
+        "дачу": "dacia (accusativo)",
+        "дача": "dacia, casa di campagna",
+        "маленький": "piccolo",
+        "дом": "casa",
+        "городом": "città (за городом = fuori città)",
+        "садом": "orto, giardino (strumentale)",
+        "семья": "famiglia",
+        "петровых": "dei Petrov",
+        "едет": "va (con un mezzo)",
+        "каждую": "ogni (f. accusativo)",
+        "пятницу": "venerdì (accusativo)",
+        "дорога": "strada, viaggio",
+        "занимает": "richiede, dura",
+        "часа": "ore (dopo 2, 3, 4)",
+        "потому": "perché (потому что)",
+        "шоссе": "strada statale",
+        "пробки": "ingorghi",
+        "даче": "dacia (prepositivo)",
+        "папа": "papà",
+        "саду": "orto, giardino (в саду)",
+        "мама": "mamma",
+        "собирает": "raccoglie",
+        "ягоды": "frutti di bosco",
+        "дети": "bambini",
+        "купаются": "fanno il bagno",
+        "речке": "fiumiciattolo (prepositivo)",
+        "играют": "giocano",
+        "собакой": "cane (strumentale)",
+        "пьют": "bevono",
+        "чай": "tè",
+        "веранде": "veranda (prepositivo)",
+        "соседи": "vicini",
+        "гости": "ospiti (приходить в гости = andare a trovare)",
+        "пирогом": "torta (strumentale)",
+        "воскресенье": "domenica",
+        "возвращается": "torna",
+        "город": "città",
+        "усталая": "stanca",
+        "счастливая": "felice"
+      },
+      "domande": [
+        {
+          "q": "Что такое дача?",
+          "it": "Che cos'è la dacia?",
+          "ok": "Дом за городом",
+          "opts": [
+            "Квартира в центре",
+            "Гостиница"
+          ]
+        },
+        {
+          "q": "Когда Петровы едут на дачу?",
+          "it": "Quando vanno alla dacia i Petrov?",
+          "ok": "В пятницу вечером",
+          "opts": [
+            "В понедельник утром",
+            "Только зимой"
+          ]
+        },
+        {
+          "q": "Что делают дети?",
+          "it": "Cosa fanno i bambini?",
+          "ok": "Купаются и играют с собакой",
+          "opts": [
+            "Работают в саду",
+            "Смотрят телевизор"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "capodanno",
+      "icona": "🎄",
+      "titolo": "Capodanno",
+      "titoloRu": "Новый год",
+      "livello": 2,
+      "frasi": [
+        {
+          "ru": "Новый год — самый любимый праздник в России.",
+          "it": "Il Capodanno è la festa più amata in Russia."
+        },
+        {
+          "ru": "В декабре люди покупают ёлку и подарки.",
+          "it": "A dicembre la gente compra l'albero e i regali."
+        },
+        {
+          "ru": "Дети ждут Деда Мороза и Снегурочку.",
+          "it": "I bambini aspettano Nonno Gelo e Sneguročka."
+        },
+        {
+          "ru": "Тридцать первого декабря вся семья сидит за большим столом.",
+          "it": "Il trentuno dicembre tutta la famiglia siede a una grande tavola."
+        },
+        {
+          "ru": "На столе салат «Оливье», селёдка под шубой и мандарины.",
+          "it": "In tavola ci sono l'insalata Olivier, l'aringa «in pelliccia» e i mandarini."
+        },
+        {
+          "ru": "В полночь бьют куранты, и все кричат: «С Новым годом!»",
+          "it": "A mezzanotte suonano i rintocchi del Cremlino e tutti gridano: «Buon anno!»"
+        },
+        {
+          "ru": "Потом люди пьют шампанское и загадывают желание.",
+          "it": "Poi si beve lo spumante e si esprime un desiderio."
+        },
+        {
+          "ru": "Праздник длится долго: в январе почти две недели не работают.",
+          "it": "La festa dura a lungo: a gennaio per quasi due settimane non si lavora."
+        },
+        {
+          "ru": "А седьмого января — Рождество.",
+          "it": "E il sette gennaio è Natale."
+        }
+      ],
+      "glossario": {
+        "новый": "nuovo",
+        "год": "anno",
+        "самый": "il più",
+        "любимый": "amato, preferito",
+        "праздник": "festa",
+        "россии": "Russia (prepositivo)",
+        "декабре": "dicembre (prepositivo)",
+        "покупают": "comprano",
+        "ёлку": "albero di Natale (accusativo)",
+        "подарки": "regali",
+        "дети": "bambini",
+        "ждут": "aspettano",
+        "деда": "nonno (accusativo)",
+        "мороза": "gelo (Дед Мороз = Nonno Gelo)",
+        "снегурочку": "Sneguročka, la nipote di Nonno Gelo",
+        "тридцать": "trenta",
+        "первого": "primo (il trentuno = тридцать первое)",
+        "декабря": "di dicembre",
+        "вся": "tutta",
+        "семья": "famiglia",
+        "сидит": "siede",
+        "большим": "grande (strumentale)",
+        "столом": "tavola (strumentale; за столом = a tavola)",
+        "столе": "tavola (prepositivo)",
+        "салат": "insalata",
+        "оливье": "Olivier (la nostra insalata russa)",
+        "селёдка": "aringa",
+        "шубой": "pelliccia (strumentale)",
+        "мандарины": "mandarini",
+        "полночь": "mezzanotte",
+        "бьют": "battono, suonano",
+        "куранты": "i rintocchi (dell'orologio del Cremlino)",
+        "кричат": "gridano",
+        "новым": "nuovo (strumentale; с Новым годом = buon anno)",
+        "годом": "anno (strumentale)",
+        "пьют": "bevono",
+        "шампанское": "spumante",
+        "загадывают": "esprimono (un desiderio)",
+        "желание": "desiderio",
+        "длится": "dura",
+        "долго": "a lungo",
+        "январе": "gennaio (prepositivo)",
+        "почти": "quasi",
+        "недели": "settimane",
+        "работают": "lavorano",
+        "седьмого": "il sette",
+        "января": "di gennaio",
+        "рождество": "Natale"
+      },
+      "domande": [
+        {
+          "q": "Кого ждут дети?",
+          "it": "Chi aspettano i bambini?",
+          "ok": "Деда Мороза и Снегурочку",
+          "opts": [
+            "Папу",
+            "Учителя"
+          ]
+        },
+        {
+          "q": "Что все кричат в полночь?",
+          "it": "Cosa gridano tutti a mezzanotte?",
+          "ok": "С Новым годом!",
+          "opts": [
+            "Спокойной ночи!",
+            "Приятного аппетита!"
+          ]
+        },
+        {
+          "q": "Когда в России Рождество?",
+          "it": "Quando è Natale in Russia?",
+          "ok": "Седьмого января",
+          "opts": [
+            "Двадцать пятого декабря",
+            "Первого мая"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "petersburg",
+      "icona": "🌉",
+      "titolo": "Le notti bianche",
+      "titoloRu": "Белые ночи",
+      "livello": 2,
+      "frasi": [
+        {
+          "ru": "Лаура из Милана. Она первый раз в России.",
+          "it": "Laura è di Milano. È in Russia per la prima volta."
+        },
+        {
+          "ru": "Сначала она была в Москве, а теперь едет в Петербург.",
+          "it": "Prima è stata a Mosca e ora va a San Pietroburgo."
+        },
+        {
+          "ru": "Она едет на поезде «Сапсан». Поездка занимает четыре часа.",
+          "it": "Viaggia sul treno «Sapsan». Il viaggio dura quattro ore."
+        },
+        {
+          "ru": "В поезде она смотрит в окно: леса, деревни, реки.",
+          "it": "In treno guarda dal finestrino: boschi, villaggi, fiumi."
+        },
+        {
+          "ru": "В Петербурге её гостиница находится на Невском проспекте.",
+          "it": "A San Pietroburgo il suo albergo è sulla Prospettiva Nevskij."
+        },
+        {
+          "ru": "Вечером она гуляет по городу. Уже одиннадцать часов, но на улице светло!",
+          "it": "La sera passeggia per la città. Sono già le undici, ma fuori è chiaro!"
+        },
+        {
+          "ru": "Это белые ночи: в июне солнце почти не заходит.",
+          "it": "Sono le notti bianche: a giugno il sole quasi non tramonta."
+        },
+        {
+          "ru": "Завтра Лаура пойдёт в Эрмитаж.",
+          "it": "Domani Laura andrà all'Ermitage."
+        },
+        {
+          "ru": "Она пишет маме: «Здесь очень красиво! Я не хочу уезжать!»",
+          "it": "Scrive alla mamma: «Qui è bellissimo! Non voglio partire!»"
+        }
+      ],
+      "glossario": {
+        "милана": "Milano (genitivo)",
+        "сапсан": "Sapsan, il treno veloce (lett. falco pellegrino)",
+        "первый": "primo (первый раз = la prima volta)",
+        "раз": "volta",
+        "россии": "Russia (prepositivo)",
+        "сначала": "prima",
+        "была": "è stata (f.)",
+        "москве": "Mosca (prepositivo)",
+        "теперь": "ora",
+        "едет": "va (con un mezzo)",
+        "петербург": "San Pietroburgo",
+        "поезде": "treno (prepositivo)",
+        "поездка": "viaggio",
+        "занимает": "dura, richiede",
+        "четыре": "quattro",
+        "часа": "ore (dopo 2, 3, 4)",
+        "смотрит": "guarda",
+        "окно": "finestra, finestrino",
+        "леса": "boschi",
+        "деревни": "villaggi",
+        "реки": "fiumi",
+        "петербурге": "San Pietroburgo (prepositivo)",
+        "её": "suo (di lei)",
+        "гостиница": "albergo",
+        "находится": "si trova",
+        "невском": "Nevskij (prepositivo)",
+        "проспекте": "viale, prospettiva",
+        "гуляет": "passeggia",
+        "городу": "città (по городу = per la città)",
+        "уже": "già",
+        "одиннадцать": "undici",
+        "часов": "ore (dopo 5+)",
+        "улице": "strada (на улице = fuori)",
+        "светло": "c'è luce, è chiaro",
+        "белые": "bianche",
+        "ночи": "notti",
+        "июне": "giugno (prepositivo)",
+        "солнце": "sole",
+        "почти": "quasi",
+        "заходит": "tramonta",
+        "завтра": "domani",
+        "пойдёт": "andrà (a piedi)",
+        "эрмитаж": "Ermitage",
+        "пишет": "scrive",
+        "маме": "alla mamma",
+        "красиво": "(è) bello",
+        "хочу": "voglio",
+        "уезжать": "partire, andarsene"
+      },
+      "domande": [
+        {
+          "q": "Откуда Лаура?",
+          "it": "Di dov'è Laura?",
+          "ok": "Из Милана",
+          "opts": [
+            "Из Рима",
+            "Из Москвы"
+          ]
+        },
+        {
+          "q": "Сколько времени едет «Сапсан»?",
+          "it": "Quanto ci mette il «Sapsan»?",
+          "ok": "Четыре часа",
+          "opts": [
+            "Два часа",
+            "Десять часов"
+          ]
+        },
+        {
+          "q": "Почему вечером на улице светло?",
+          "it": "Perché la sera fuori è chiaro?",
+          "ok": "Это белые ночи",
+          "opts": [
+            "Это зима",
+            "Это утро"
+          ]
+        },
+        {
+          "q": "Куда Лаура пойдёт завтра?",
+          "it": "Dove andrà Laura domani?",
+          "ok": "В Эрмитаж",
+          "opts": [
+            "В Кремль",
+            "На вокзал"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compleanno",
+      "icona": "🎂",
+      "titolo": "Il compleanno di Katja",
+      "titoloRu": "День рождения",
+      "livello": 2,
+      "frasi": [
+        {
+          "ru": "Сегодня у Кати день рождения. Ей тридцать лет.",
+          "it": "Oggi è il compleanno di Katja. Compie trent'anni."
+        },
+        {
+          "ru": "Утром ей звонят родители и друзья.",
+          "it": "La mattina la chiamano i genitori e gli amici."
+        },
+        {
+          "ru": "Коллеги на работе дарят ей цветы и торт.",
+          "it": "I colleghi al lavoro le regalano fiori e una torta."
+        },
+        {
+          "ru": "Вечером Катя приглашает гостей домой.",
+          "it": "La sera Katja invita gli ospiti a casa."
+        },
+        {
+          "ru": "Гости приносят подарки: книгу, духи и красивую чашку.",
+          "it": "Gli ospiti portano regali: un libro, un profumo e una bella tazza."
+        },
+        {
+          "ru": "Все садятся за стол и говорят тосты.",
+          "it": "Tutti si siedono a tavola e fanno i brindisi."
+        },
+        {
+          "ru": "Брат Кати говорит: «Желаю тебе здоровья, счастья и любви!»",
+          "it": "Il fratello di Katja dice: «Ti auguro salute, felicità e amore!»"
+        },
+        {
+          "ru": "Потом Катя задувает свечи на торте.",
+          "it": "Poi Katja spegne le candeline sulla torta."
+        },
+        {
+          "ru": "Все поют песню и танцуют до полуночи.",
+          "it": "Tutti cantano e ballano fino a mezzanotte."
+        }
+      ],
+      "glossario": {
+        "сегодня": "oggi",
+        "кати": "Katja (genitivo)",
+        "день": "giorno (день рождения = compleanno)",
+        "рождения": "della nascita",
+        "ей": "a lei",
+        "тридцать": "trenta",
+        "лет": "anni",
+        "утром": "la mattina",
+        "звонят": "telefonano",
+        "родители": "genitori",
+        "друзья": "amici",
+        "коллеги": "colleghi",
+        "работе": "lavoro (prepositivo)",
+        "дарят": "regalano",
+        "цветы": "fiori",
+        "торт": "torta",
+        "вечером": "la sera",
+        "приглашает": "invita",
+        "гостей": "ospiti (accusativo)",
+        "домой": "a casa (moto)",
+        "гости": "ospiti",
+        "приносят": "portano",
+        "подарки": "regali",
+        "книгу": "libro (accusativo)",
+        "духи": "profumo",
+        "красивую": "bella (accusativo)",
+        "чашку": "tazza (accusativo)",
+        "садятся": "si siedono",
+        "стол": "tavola (за стол = a tavola)",
+        "говорят": "dicono",
+        "тосты": "brindisi",
+        "брат": "fratello",
+        "желаю": "auguro",
+        "тебе": "a te",
+        "здоровья": "salute (genitivo)",
+        "счастья": "felicità (genitivo)",
+        "любви": "amore (genitivo)",
+        "задувает": "spegne soffiando",
+        "свечи": "candeline",
+        "торте": "torta (prepositivo)",
+        "поют": "cantano",
+        "песню": "canzone (accusativo)",
+        "танцуют": "ballano",
+        "полуночи": "mezzanotte (genitivo)"
+      },
+      "domande": [
+        {
+          "q": "Сколько лет Кате?",
+          "it": "Quanti anni ha Katja?",
+          "ok": "Тридцать",
+          "opts": [
+            "Двадцать",
+            "Сорок"
+          ]
+        },
+        {
+          "q": "Что дарят коллеги?",
+          "it": "Cosa regalano i colleghi?",
+          "ok": "Цветы и торт",
+          "opts": [
+            "Книгу",
+            "Духи"
+          ]
+        },
+        {
+          "q": "Что желает брат?",
+          "it": "Cosa augura il fratello?",
+          "ok": "Здоровья, счастья и любви",
+          "opts": [
+            "Хорошей погоды",
+            "Много денег"
+          ]
+        }
+      ]
+    }
+  ],
+  "glossarioLetture": {
+    "я": "io",
+    "ты": "tu",
+    "он": "lui",
+    "она": "lei",
+    "оно": "esso",
+    "мы": "noi",
+    "вы": "voi / Lei",
+    "они": "loro",
+    "меня": "me",
+    "мне": "a me",
+    "тебе": "a te",
+    "нас": "noi (acc.)",
+    "их": "loro (acc.) / il loro",
+    "и": "e",
+    "а": "e, invece",
+    "но": "ma",
+    "или": "o, oppure",
+    "что": "che, cosa",
+    "как": "come",
+    "где": "dove",
+    "когда": "quando",
+    "куда": "dove (moto)",
+    "кто": "chi",
+    "почему": "perché",
+    "в": "in, a",
+    "во": "in, a",
+    "на": "su, a",
+    "с": "con / da",
+    "со": "con",
+    "у": "presso (у меня есть = ho)",
+    "к": "verso, da",
+    "по": "per, lungo",
+    "о": "di, su (argomento)",
+    "об": "di, su",
+    "из": "da (provenienza)",
+    "до": "fino a",
+    "от": "da",
+    "за": "dietro, per",
+    "для": "per",
+    "под": "sotto",
+    "не": "non",
+    "нет": "no / non c'è",
+    "да": "sì",
+    "это": "questo, è",
+    "там": "lì",
+    "здесь": "qui",
+    "тут": "qui",
+    "всё": "tutto",
+    "все": "tutti",
+    "очень": "molto",
+    "ещё": "ancora, anche",
+    "уже": "già",
+    "тоже": "anche",
+    "потом": "poi",
+    "есть": "c'è / mangiare",
+    "мой": "mio",
+    "моя": "mia",
+    "моё": "mio (n.)",
+    "мои": "miei",
+    "твой": "tuo",
+    "наш": "nostro",
+    "ваш": "vostro",
+    "её": "suo (di lei)",
+    "его": "suo (di lui)",
+    "так": "così",
+    "один": "uno",
+    "одна": "una",
+    "два": "due",
+    "две": "due (f.)",
+    "три": "tre",
+    "сейчас": "adesso",
+    "вечером": "la sera",
+    "утром": "la mattina",
+    "днём": "di giorno",
+    "ночью": "di notte",
+    "часто": "spesso",
+    "иногда": "a volte",
+    "всегда": "sempre",
+    "люди": "persone, gente",
+    "много": "molto, molti",
+    "хорошо": "bene",
+    "плохо": "male",
+    "дома": "a casa",
+    "говорит": "dice, parla",
+    "потому": "perché (потому что)",
+    "чтобы": "per (+ infinito)",
+    "если": "se",
+    "бы": "(condizionale)"
+  },
+  "proverbi": [
+    {
+      "ru": "Без труда не выловишь и рыбку из пруда.",
+      "lett": "Senza fatica non tiri fuori neanche un pesciolino dallo stagno.",
+      "it": "Chi dorme non piglia pesci."
+    },
+    {
+      "ru": "Тише едешь — дальше будешь.",
+      "lett": "Più piano vai, più lontano arrivi.",
+      "it": "Chi va piano va sano e va lontano."
+    },
+    {
+      "ru": "Не имей сто рублей, а имей сто друзей.",
+      "lett": "Non avere cento rubli, ma cento amici.",
+      "it": "Chi trova un amico trova un tesoro."
+    },
+    {
+      "ru": "Утро вечера мудренее.",
+      "lett": "Il mattino è più saggio della sera.",
+      "it": "La notte porta consiglio."
+    },
+    {
+      "ru": "Друг познаётся в беде.",
+      "lett": "L'amico si riconosce nella sventura.",
+      "it": "Nel bisogno si conosce l'amico."
+    },
+    {
+      "ru": "Лучше поздно, чем никогда.",
+      "lett": "Meglio tardi che mai.",
+      "it": "Meglio tardi che mai."
+    },
+    {
+      "ru": "Век живи — век учись.",
+      "lett": "Vivi un secolo, impara un secolo.",
+      "it": "Non si finisce mai di imparare."
+    },
+    {
+      "ru": "Повторение — мать учения.",
+      "lett": "La ripetizione è la madre dell'apprendimento.",
+      "it": "Repetita iuvant."
+    },
+    {
+      "ru": "Что посеешь, то и пожнёшь.",
+      "lett": "Ciò che semini, quello raccoglierai.",
+      "it": "Si raccoglie ciò che si semina."
+    },
+    {
+      "ru": "Не всё то золото, что блестит.",
+      "lett": "Non è tutto oro quello che luccica.",
+      "it": "Non è tutto oro quel che luccica."
+    },
+    {
+      "ru": "Москва не сразу строилась.",
+      "lett": "Mosca non è stata costruita tutta in una volta.",
+      "it": "Roma non fu fatta in un giorno."
+    },
+    {
+      "ru": "В гостях хорошо, а дома лучше.",
+      "lett": "Da ospite si sta bene, ma a casa si sta meglio.",
+      "it": "Casa dolce casa."
+    },
+    {
+      "ru": "Любишь кататься — люби и саночки возить.",
+      "lett": "Se ti piace andare in slitta, ti deve piacere anche tirarla su.",
+      "it": "Hai voluto la bicicletta? Adesso pedala."
+    },
+    {
+      "ru": "Слово — серебро, молчание — золото.",
+      "lett": "La parola è d'argento, il silenzio è d'oro.",
+      "it": "Il silenzio è d'oro."
+    },
+    {
+      "ru": "Яблоко от яблони недалеко падает.",
+      "lett": "La mela non cade lontano dal melo.",
+      "it": "Tale padre, tale figlio."
+    },
+    {
+      "ru": "Аппетит приходит во время еды.",
+      "lett": "L'appetito viene durante il pasto.",
+      "it": "L'appetito vien mangiando."
+    },
+    {
+      "ru": "На вкус и цвет товарищей нет.",
+      "lett": "Sui gusti e sui colori non ci sono compagni.",
+      "it": "Tutti i gusti sono gusti."
+    },
+    {
+      "ru": "Первый блин комом.",
+      "lett": "La prima frittella viene a grumi.",
+      "it": "La prima volta non viene mai bene."
+    },
+    {
+      "ru": "Не откладывай на завтра то, что можно сделать сегодня.",
+      "lett": "Non rimandare a domani quello che puoi fare oggi.",
+      "it": "Non rimandare a domani quello che puoi fare oggi."
+    },
+    {
+      "ru": "Под лежачий камень вода не течёт.",
+      "lett": "Sotto una pietra ferma l'acqua non scorre.",
+      "it": "Aiutati che il ciel t'aiuta."
+    },
+    {
+      "ru": "Глаза боятся, а руки делают.",
+      "lett": "Gli occhi hanno paura, ma le mani lavorano.",
+      "it": "Il difficile è cominciare."
+    },
+    {
+      "ru": "Волков бояться — в лес не ходить.",
+      "lett": "Se hai paura dei lupi, non andare nel bosco.",
+      "it": "Chi non risica non rosica."
+    },
+    {
+      "ru": "Семь раз отмерь, один раз отрежь.",
+      "lett": "Misura sette volte, taglia una volta sola.",
+      "it": "Pensaci bene prima di agire."
+    },
+    {
+      "ru": "Где хотенье, там и уменье.",
+      "lett": "Dove c'è la voglia, c'è anche la capacità.",
+      "it": "Volere è potere."
+    },
+    {
+      "ru": "Язык до Киева доведёт.",
+      "lett": "La lingua ti porta fino a Kiev.",
+      "it": "Domandando si arriva a Roma."
+    },
+    {
+      "ru": "Нет худа без добра.",
+      "lett": "Non c'è male senza bene.",
+      "it": "Non tutto il male vien per nuocere."
+    },
+    {
+      "ru": "Кто рано встаёт, тому Бог подаёт.",
+      "lett": "A chi si alza presto, Dio dà.",
+      "it": "Il mattino ha l'oro in bocca."
+    },
+    {
+      "ru": "Беда не приходит одна.",
+      "lett": "La sventura non arriva mai da sola.",
+      "it": "Le disgrazie non vengono mai sole."
+    },
+    {
+      "ru": "Сделал дело — гуляй смело.",
+      "lett": "Finito il lavoro, vai a spasso tranquillo.",
+      "it": "Prima il dovere, poi il piacere."
+    },
+    {
+      "ru": "Всему своё время.",
+      "lett": "A ogni cosa il suo tempo.",
+      "it": "Ogni cosa a suo tempo."
+    },
+    {
+      "ru": "Одна голова хорошо, а две лучше.",
+      "lett": "Una testa va bene, ma due vanno meglio.",
+      "it": "Quattro occhi vedono meglio di due."
+    },
+    {
+      "ru": "Лучше синица в руках, чем журавль в небе.",
+      "lett": "Meglio una cinciallegra in mano che una gru in cielo.",
+      "it": "Meglio un uovo oggi che una gallina domani."
+    },
+    {
+      "ru": "Цыплят по осени считают.",
+      "lett": "I pulcini si contano in autunno.",
+      "it": "Non dire gatto se non ce l'hai nel sacco."
+    },
+    {
+      "ru": "Не в деньгах счастье.",
+      "lett": "La felicità non sta nei soldi.",
+      "it": "I soldi non fanno la felicità."
+    },
+    {
+      "ru": "Время — деньги.",
+      "lett": "Il tempo è denaro.",
+      "it": "Il tempo è denaro."
+    },
+    {
+      "ru": "Как аукнется, так и откликнется.",
+      "lett": "Come chiami nel bosco, così ti risponde l'eco.",
+      "it": "Chi la fa l'aspetti."
+    },
+    {
+      "ru": "Ученье — свет, а неученье — тьма.",
+      "lett": "Lo studio è luce, l'ignoranza è buio.",
+      "it": ""
+    },
+    {
+      "ru": "Хлеб всему голова.",
+      "lett": "Il pane è a capo di tutto.",
+      "it": ""
+    }
+  ],
+  "cultura": [
+    {
+      "id": "capodanno",
+      "icona": "🎄",
+      "titolo": "Capodanno e Nonno Gelo",
+      "testo": "In Russia la festa più grande non è Natale, ma Capodanno (Новый год). I regali li porta Дед Мороз, «Nonno Gelo», insieme alla nipote Снегурочка. A mezzanotte si ascoltano in tv i rintocchi dell'orologio del Cremlino e si esprime un desiderio. Il Natale ortodosso arriva dopo, il 7 gennaio.",
+      "parole": [
+        {
+          "ru": "Новый год",
+          "it": "Capodanno"
+        },
+        {
+          "ru": "Дед Мороз",
+          "it": "Nonno Gelo"
+        },
+        {
+          "ru": "ёлка",
+          "it": "albero di Natale"
+        },
+        {
+          "ru": "подарок",
+          "it": "regalo"
+        },
+        {
+          "ru": "С Новым годом!",
+          "it": "Buon anno!"
+        }
+      ]
+    },
+    {
+      "id": "te",
+      "icona": "🫖",
+      "titolo": "Il tè e il samovar",
+      "testo": "In Russia si beve tè a tutte le ore, spesso con la marmellata (варенье), il limone o lo zucchero in zollette. Il самовар è il grande bollitore tradizionale di metallo. «Пойдём попьём чаю» (andiamo a bere un tè) vuol dire anche: sediamoci a chiacchierare.",
+      "parole": [
+        {
+          "ru": "чай",
+          "it": "tè"
+        },
+        {
+          "ru": "самовар",
+          "it": "samovar"
+        },
+        {
+          "ru": "варенье",
+          "it": "marmellata"
+        },
+        {
+          "ru": "сахар",
+          "it": "zucchero"
+        },
+        {
+          "ru": "с лимоном",
+          "it": "al limone"
+        }
+      ]
+    },
+    {
+      "id": "dacia",
+      "icona": "🏡",
+      "titolo": "La dacia",
+      "testo": "Tantissime famiglie hanno una дача, una casetta di campagna con l'orto. Ci si va nei fine settimana d'estate: si coltivano patate, cetrioli e fragole, si fanno le conserve per l'inverno e si riposa lontano dalla città.",
+      "parole": [
+        {
+          "ru": "дача",
+          "it": "dacia"
+        },
+        {
+          "ru": "огород",
+          "it": "orto"
+        },
+        {
+          "ru": "огурец",
+          "it": "cetriolo"
+        },
+        {
+          "ru": "клубника",
+          "it": "fragola"
+        },
+        {
+          "ru": "за городом",
+          "it": "fuori città"
+        }
+      ]
+    },
+    {
+      "id": "banja",
+      "icona": "🧖",
+      "titolo": "La banja",
+      "testo": "La баня è la sauna russa a vapore. Ci si batte dolcemente con un mazzo di rametti di betulla (веник), poi ci si tuffa nell'acqua fredda o, d'inverno, nella neve. A chi esce dalla banja si dice «С лёгким паром!», più o meno «buon vapore leggero!».",
+      "parole": [
+        {
+          "ru": "баня",
+          "it": "sauna russa"
+        },
+        {
+          "ru": "пар",
+          "it": "vapore"
+        },
+        {
+          "ru": "веник",
+          "it": "mazzo di rametti"
+        },
+        {
+          "ru": "берёза",
+          "it": "betulla"
+        },
+        {
+          "ru": "С лёгким паром!",
+          "it": "Buon vapore!"
+        }
+      ]
+    },
+    {
+      "id": "nomi",
+      "icona": "🪪",
+      "titolo": "Nome, patronimico e diminutivi",
+      "testo": "I russi hanno nome, patronimico (отчество, dal nome del padre) e cognome: Анна Ивановна Петрова è Anna, figlia di Ivan. Con insegnanti, colleghi più anziani e sconosciuti si usa nome + patronimico: «Анна Ивановна». Tra amici si usano i diminutivi: Александр → Саша, Мария → Маша, Дмитрий → Дима, Екатерина → Катя.",
+      "parole": [
+        {
+          "ru": "имя",
+          "it": "nome"
+        },
+        {
+          "ru": "отчество",
+          "it": "patronimico"
+        },
+        {
+          "ru": "фамилия",
+          "it": "cognome"
+        },
+        {
+          "ru": "Как вас зовут?",
+          "it": "Come si chiama?"
+        }
+      ]
+    },
+    {
+      "id": "tu-lei",
+      "icona": "🤝",
+      "titolo": "Ты o вы?",
+      "testo": "Funziona come il nostro «tu» e «Lei»: ты con amici, familiari e bambini; вы con sconosciuti, adulti e in situazioni formali (ed è anche il plurale, «voi»). Il passaggio al ты di solito si propone: «Давай на ты?», «Diamoci del tu?».",
+      "parole": [
+        {
+          "ru": "ты",
+          "it": "tu"
+        },
+        {
+          "ru": "вы",
+          "it": "Lei / voi"
+        },
+        {
+          "ru": "Давай на ты?",
+          "it": "Diamoci del tu?"
+        },
+        {
+          "ru": "Можно на ты?",
+          "it": "Posso darti del tu?"
+        }
+      ]
+    },
+    {
+      "id": "superstizioni",
+      "icona": "🐈‍⬛",
+      "titolo": "Superstizioni",
+      "testo": "Prima di un viaggio ci si siede un attimo in silenzio: si chiama присесть на дорожку. Non ci si stringe la mano sopra la soglia di casa, e non si fischia in casa perché «si fischiano via i soldi». Se torni indietro perché hai dimenticato qualcosa, guardati allo specchio prima di uscire di nuovo.",
+      "parole": [
+        {
+          "ru": "примета",
+          "it": "superstizione"
+        },
+        {
+          "ru": "порог",
+          "it": "soglia"
+        },
+        {
+          "ru": "на дорожку",
+          "it": "per il viaggio"
+        },
+        {
+          "ru": "зеркало",
+          "it": "specchio"
+        },
+        {
+          "ru": "чёрная кошка",
+          "it": "gatto nero"
+        }
+      ]
+    },
+    {
+      "id": "fiori",
+      "icona": "💐",
+      "titolo": "Fiori e regali",
+      "testo": "I fiori si regalano in numero dispari: i mazzi con un numero pari si portano ai funerali. Quando si è ospiti non si arriva mai a mani vuote: fiori, una torta o qualcosa per il tè. E a tavola chi ospita insiste perché si mangi ancora: rifiutare con garbo fa parte del gioco.",
+      "parole": [
+        {
+          "ru": "цветы",
+          "it": "fiori"
+        },
+        {
+          "ru": "букет",
+          "it": "mazzo di fiori"
+        },
+        {
+          "ru": "в гости",
+          "it": "(andare) da qualcuno"
+        },
+        {
+          "ru": "торт",
+          "it": "torta"
+        },
+        {
+          "ru": "Угощайтесь!",
+          "it": "Si serva!"
+        }
+      ]
+    },
+    {
+      "id": "maslenica",
+      "icona": "🥞",
+      "titolo": "Maslenica",
+      "testo": "Масленица è la settimana che saluta l'inverno prima della Quaresima. Si mangiano i блины, frittelle rotonde e dorate come il sole, con panna acida, miele o caviale. L'ultimo giorno si brucia un fantoccio di paglia che rappresenta l'inverno e ci si chiede perdono a vicenda: è la «Domenica del perdono».",
+      "parole": [
+        {
+          "ru": "Масленица",
+          "it": "Maslenica"
+        },
+        {
+          "ru": "блины",
+          "it": "frittelle, crêpes"
+        },
+        {
+          "ru": "сметана",
+          "it": "panna acida"
+        },
+        {
+          "ru": "мёд",
+          "it": "miele"
+        },
+        {
+          "ru": "прости",
+          "it": "perdonami"
+        }
+      ]
+    },
+    {
+      "id": "vittoria",
+      "icona": "🎖️",
+      "titolo": "Il 9 maggio",
+      "testo": "Il Giorno della Vittoria (День Победы) ricorda la fine della Seconda guerra mondiale, che in Russia si chiama «Grande guerra patriottica». Quasi ogni famiglia ha perso qualcuno, per questo è una ricorrenza molto sentita: si portano fiori ai monumenti e molti sfilano con le foto dei propri nonni.",
+      "parole": [
+        {
+          "ru": "День Победы",
+          "it": "Giorno della Vittoria"
+        },
+        {
+          "ru": "победа",
+          "it": "vittoria"
+        },
+        {
+          "ru": "война",
+          "it": "guerra"
+        },
+        {
+          "ru": "память",
+          "it": "memoria"
+        },
+        {
+          "ru": "дедушка",
+          "it": "nonno"
+        }
+      ]
+    },
+    {
+      "id": "matrioska",
+      "icona": "🪆",
+      "titolo": "La matrioska",
+      "testo": "La матрёшка è una bambola di legno che ne contiene altre, sempre più piccole. È più giovane di quanto si pensi: nacque alla fine dell'Ottocento, ispirata a una bambola giapponese. Il nome viene da Матрёна, un nome femminile di campagna molto diffuso allora.",
+      "parole": [
+        {
+          "ru": "матрёшка",
+          "it": "matrioska"
+        },
+        {
+          "ru": "кукла",
+          "it": "bambola"
+        },
+        {
+          "ru": "дерево",
+          "it": "legno, albero"
+        },
+        {
+          "ru": "сувенир",
+          "it": "souvenir"
+        }
+      ]
+    },
+    {
+      "id": "tavola",
+      "icona": "🍽️",
+      "titolo": "A tavola",
+      "testo": "Il pranzo russo comincia spesso con una zuppa: борщ, щи (di cavolo) o солянка. Il pane non manca mai, nero o bianco. Durante le cene si fanno molti brindisi (тосты), e non si beve «a vuoto», senza dire qualcosa. Prima di mangiare si augura «Приятного аппетита!».",
+      "parole": [
+        {
+          "ru": "суп",
+          "it": "zuppa"
+        },
+        {
+          "ru": "хлеб",
+          "it": "pane"
+        },
+        {
+          "ru": "тост",
+          "it": "brindisi"
+        },
+        {
+          "ru": "За здоровье!",
+          "it": "Alla salute!"
+        },
+        {
+          "ru": "Приятного аппетита!",
+          "it": "Buon appetito!"
+        }
+      ]
+    },
+    {
+      "id": "casa",
+      "icona": "🥿",
+      "titolo": "Entrare in una casa russa",
+      "testo": "Appena entrati ci si toglie le scarpe, e spesso il padrone di casa offre le pantofole (тапочки). Per strada i russi non sorridono agli sconosciuti: non è freddezza, un sorriso senza motivo sembra solo strano. Tra amici, invece, l'accoglienza è calorosissima.",
+      "parole": [
+        {
+          "ru": "тапочки",
+          "it": "pantofole"
+        },
+        {
+          "ru": "разуваться",
+          "it": "togliersi le scarpe"
+        },
+        {
+          "ru": "улыбка",
+          "it": "sorriso"
+        },
+        {
+          "ru": "Проходите!",
+          "it": "Entri pure!"
+        }
+      ]
+    },
+    {
+      "id": "notti-bianche",
+      "icona": "🌉",
+      "titolo": "Le notti bianche",
+      "testo": "A San Pietroburgo, tra fine maggio e luglio, il sole tramonta appena e la notte resta chiara: sono le белые ночи. Di notte sulla Neva si aprono i ponti levatoi (разводные мосты) per far passare le navi: se sei dall'altra parte, a casa non torni fino al mattino!",
+      "parole": [
+        {
+          "ru": "белые ночи",
+          "it": "notti bianche"
+        },
+        {
+          "ru": "мост",
+          "it": "ponte"
+        },
+        {
+          "ru": "река",
+          "it": "fiume"
+        },
+        {
+          "ru": "корабль",
+          "it": "nave"
+        }
+      ]
+    },
+    {
+      "id": "lingua",
+      "icona": "🌍",
+      "titolo": "Il russo nel mondo",
+      "testo": "Il russo è la lingua slava più parlata: lo usano circa 250 milioni di persone ed è una delle sei lingue ufficiali dell'ONU. L'alfabeto cirillico porta il nome di san Cirillo, il monaco che nel IX secolo, con il fratello Metodio, portò la scrittura agli slavi; il cirillico vero e proprio lo svilupparono i loro discepoli.",
+      "parole": [
+        {
+          "ru": "язык",
+          "it": "lingua"
+        },
+        {
+          "ru": "алфавит",
+          "it": "alfabeto"
+        },
+        {
+          "ru": "буква",
+          "it": "lettera"
+        },
+        {
+          "ru": "кириллица",
+          "it": "cirillico"
+        }
+      ]
+    },
+    {
+      "id": "metro-mosca",
+      "icona": "🚇",
+      "titolo": "La metro di Mosca",
+      "testo": "Aperta nel 1935, la metro di Mosca è famosa per le stazioni-palazzo: marmi, mosaici, lampadari. Sulle linee circolari gli annunci cambiano voce: verso il centro parla un uomo, verso la periferia una donna. Un trucco per orientarsi a occhi chiusi!",
+      "parole": [
+        {
+          "ru": "станция",
+          "it": "stazione"
+        },
+        {
+          "ru": "вход",
+          "it": "entrata"
+        },
+        {
+          "ru": "выход",
+          "it": "uscita"
+        },
+        {
+          "ru": "пересадка",
+          "it": "cambio di linea"
+        },
+        {
+          "ru": "линия",
+          "it": "linea"
+        }
+      ]
+    }
+  ],
+  "falsiAmici": [
+    {
+      "ru": "магазин",
+      "sembra": "magazzino",
+      "it": "negozio (il magazzino è склад)"
+    },
+    {
+      "ru": "фамилия",
+      "sembra": "famiglia",
+      "it": "cognome (la famiglia è семья)"
+    },
+    {
+      "ru": "кабинет",
+      "sembra": "gabinetto",
+      "it": "studio, ufficio, ambulatorio"
+    },
+    {
+      "ru": "банка",
+      "sembra": "banca",
+      "it": "barattolo (la banca è банк)"
+    },
+    {
+      "ru": "камера",
+      "sembra": "camera",
+      "it": "macchina fotografica / cella (la stanza è комната)"
+    },
+    {
+      "ru": "мост",
+      "sembra": "mosto",
+      "it": "ponte"
+    },
+    {
+      "ru": "конфета",
+      "sembra": "confetto",
+      "it": "caramella, cioccolatino"
+    },
+    {
+      "ru": "палка",
+      "sembra": "palco",
+      "it": "bastone"
+    },
+    {
+      "ru": "портфель",
+      "sembra": "portafoglio",
+      "it": "cartella per documenti (il portafoglio è кошелёк)"
+    },
+    {
+      "ru": "карта",
+      "sembra": "carta",
+      "it": "mappa / carta bancaria (la carta da scrivere è бумага)"
+    },
+    {
+      "ru": "гастроном",
+      "sembra": "gastronomo",
+      "it": "negozio di alimentari"
+    },
+    {
+      "ru": "анекдот",
+      "sembra": "aneddoto",
+      "it": "barzelletta"
+    },
+    {
+      "ru": "ремонт",
+      "sembra": "rimonta",
+      "it": "ristrutturazione, riparazione"
+    },
+    {
+      "ru": "симпатичный",
+      "sembra": "simpatico",
+      "it": "carino, di bell'aspetto (simpatico si dice приятный, милый)"
+    },
+    {
+      "ru": "ангина",
+      "sembra": "angina",
+      "it": "tonsillite, mal di gola forte"
+    },
+    {
+      "ru": "бланк",
+      "sembra": "bianco",
+      "it": "modulo da compilare"
+    },
+    {
+      "ru": "духи",
+      "sembra": "duchi",
+      "it": "profumo"
+    },
+    {
+      "ru": "спирт",
+      "sembra": "spirito (anima)",
+      "it": "alcol etilico"
+    },
+    {
+      "ru": "стол",
+      "sembra": "stola",
+      "it": "tavolo"
+    },
+    {
+      "ru": "батон",
+      "sembra": "bastone",
+      "it": "filone di pane"
+    },
+    {
+      "ru": "мармелад",
+      "sembra": "marmellata",
+      "it": "gelatine di frutta (la marmellata è варенье o джем)"
+    },
+    {
+      "ru": "журнал",
+      "sembra": "giornale",
+      "it": "rivista (il giornale è газета)"
+    },
+    {
+      "ru": "палата",
+      "sembra": "palato",
+      "it": "corsia d'ospedale / camera del parlamento"
+    },
+    {
+      "ru": "артист",
+      "sembra": "artista (pittore)",
+      "it": "attore, artista di spettacolo (il pittore è художник)"
+    }
+  ],
+  "paroleGemelle": [
+    {
+      "ru": "театр",
+      "it": "teatro"
+    },
+    {
+      "ru": "музыка",
+      "it": "musica"
+    },
+    {
+      "ru": "телефон",
+      "it": "telefono"
+    },
+    {
+      "ru": "машина",
+      "it": "macchina"
+    },
+    {
+      "ru": "банк",
+      "it": "banca"
+    },
+    {
+      "ru": "кофе",
+      "it": "caffè"
+    },
+    {
+      "ru": "паспорт",
+      "it": "passaporto"
+    },
+    {
+      "ru": "пальто",
+      "it": "cappotto (paltò)"
+    },
+    {
+      "ru": "фото",
+      "it": "foto"
+    },
+    {
+      "ru": "радио",
+      "it": "radio"
+    },
+    {
+      "ru": "опера",
+      "it": "opera"
+    },
+    {
+      "ru": "балет",
+      "it": "balletto"
+    },
+    {
+      "ru": "компьютер",
+      "it": "computer"
+    },
+    {
+      "ru": "университет",
+      "it": "università"
+    },
+    {
+      "ru": "студент",
+      "it": "studente"
+    },
+    {
+      "ru": "профессор",
+      "it": "professore"
+    },
+    {
+      "ru": "доктор",
+      "it": "dottore"
+    },
+    {
+      "ru": "музей",
+      "it": "museo"
+    },
+    {
+      "ru": "парк",
+      "it": "parco"
+    },
+    {
+      "ru": "метро",
+      "it": "metro"
+    },
+    {
+      "ru": "такси",
+      "it": "taxi"
+    },
+    {
+      "ru": "автобус",
+      "it": "autobus"
+    },
+    {
+      "ru": "ресторан",
+      "it": "ristorante"
+    },
+    {
+      "ru": "меню",
+      "it": "menù"
+    },
+    {
+      "ru": "пицца",
+      "it": "pizza"
+    },
+    {
+      "ru": "лимон",
+      "it": "limone"
+    },
+    {
+      "ru": "банан",
+      "it": "banana"
+    },
+    {
+      "ru": "шоколад",
+      "it": "cioccolato"
+    },
+    {
+      "ru": "аэропорт",
+      "it": "aeroporto"
+    },
+    {
+      "ru": "гитара",
+      "it": "chitarra"
+    },
+    {
+      "ru": "роза",
+      "it": "rosa"
+    },
+    {
+      "ru": "лампа",
+      "it": "lampada"
+    },
+    {
+      "ru": "календарь",
+      "it": "calendario"
+    },
+    {
+      "ru": "минута",
+      "it": "minuto"
+    },
+    {
+      "ru": "момент",
+      "it": "momento"
+    },
+    {
+      "ru": "идея",
+      "it": "idea"
+    },
+    {
+      "ru": "проблема",
+      "it": "problema"
+    },
+    {
+      "ru": "программа",
+      "it": "programma"
+    },
+    {
+      "ru": "президент",
+      "it": "presidente"
+    },
+    {
+      "ru": "поэт",
+      "it": "poeta"
+    },
+    {
+      "ru": "фильм",
+      "it": "film"
+    },
+    {
+      "ru": "газета",
+      "it": "giornale (gazzetta)"
+    },
+    {
+      "ru": "фабрика",
+      "it": "fabbrica"
+    },
+    {
+      "ru": "трамвай",
+      "it": "tram"
+    },
+    {
+      "ru": "капитан",
+      "it": "capitano"
+    },
+    {
+      "ru": "пилот",
+      "it": "pilota"
+    },
+    {
+      "ru": "торт",
+      "it": "torta"
+    },
+    {
+      "ru": "банкомат",
+      "it": "bancomat"
+    }
+  ],
+  "casiNomi": {
+    "Москва": [
+      "Москва",
+      "Москвы",
+      "Москве",
+      "Москву",
+      "Москвой",
+      "Москве"
+    ],
+    "школа": [
+      "школа",
+      "школы",
+      "школе",
+      "школу",
+      "школой",
+      "школе"
+    ],
+    "мама": [
+      "мама",
+      "мамы",
+      "маме",
+      "маму",
+      "мамой",
+      "маме"
+    ],
+    "брат": [
+      "брат",
+      "брата",
+      "брату",
+      "брата",
+      "братом",
+      "брате"
+    ],
+    "друг": [
+      "друг",
+      "друга",
+      "другу",
+      "друга",
+      "другом",
+      "друге"
+    ],
+    "сестра": [
+      "сестра",
+      "сестры",
+      "сестре",
+      "сестру",
+      "сестрой",
+      "сестре"
+    ],
+    "книга": [
+      "книга",
+      "книги",
+      "книге",
+      "книгу",
+      "книгой",
+      "книге"
+    ],
+    "парк": [
+      "парк",
+      "парка",
+      "парку",
+      "парк",
+      "парком",
+      "парке"
+    ],
+    "работа": [
+      "работа",
+      "работы",
+      "работе",
+      "работу",
+      "работой",
+      "работе"
+    ],
+    "вода": [
+      "вода",
+      "воды",
+      "воде",
+      "воду",
+      "водой",
+      "воде"
+    ],
+    "машина": [
+      "машина",
+      "машины",
+      "машине",
+      "машину",
+      "машиной",
+      "машине"
+    ],
+    "Италия": [
+      "Италия",
+      "Италии",
+      "Италии",
+      "Италию",
+      "Италией",
+      "Италии"
+    ],
+    "Рим": [
+      "Рим",
+      "Рима",
+      "Риму",
+      "Рим",
+      "Римом",
+      "Риме"
+    ],
+    "театр": [
+      "театр",
+      "театра",
+      "театру",
+      "театр",
+      "театром",
+      "театре"
+    ],
+    "врач": [
+      "врач",
+      "врача",
+      "врачу",
+      "врача",
+      "врачом",
+      "враче"
+    ],
+    "подруга": [
+      "подруга",
+      "подруги",
+      "подруге",
+      "подругу",
+      "подругой",
+      "подруге"
+    ],
+    "папа": [
+      "папа",
+      "папы",
+      "папе",
+      "папу",
+      "папой",
+      "папе"
+    ],
+    "ручка": [
+      "ручка",
+      "ручки",
+      "ручке",
+      "ручку",
+      "ручкой",
+      "ручке"
+    ],
+    "сыр": [
+      "сыр",
+      "сыра",
+      "сыру",
+      "сыр",
+      "сыром",
+      "сыре"
+    ],
+    "молоко": [
+      "молоко",
+      "молока",
+      "молоку",
+      "молоко",
+      "молоком",
+      "молоке"
+    ],
+    "стол": [
+      "стол",
+      "стола",
+      "столу",
+      "стол",
+      "столом",
+      "столе"
+    ],
+    "город": [
+      "город",
+      "города",
+      "городу",
+      "город",
+      "городом",
+      "городе"
+    ],
+    "университет": [
+      "университет",
+      "университета",
+      "университету",
+      "университет",
+      "университетом",
+      "университете"
+    ],
+    "музыка": [
+      "музыка",
+      "музыки",
+      "музыке",
+      "музыку",
+      "музыкой",
+      "музыке"
+    ],
+    "учитель": [
+      "учитель",
+      "учителя",
+      "учителю",
+      "учителя",
+      "учителем",
+      "учителе"
+    ],
+    "собака": [
+      "собака",
+      "собаки",
+      "собаке",
+      "собаку",
+      "собакой",
+      "собаке"
+    ],
+    "лимон": [
+      "лимон",
+      "лимона",
+      "лимону",
+      "лимон",
+      "лимоном",
+      "лимоне"
+    ],
+    "сахар": [
+      "сахар",
+      "сахара",
+      "сахару",
+      "сахар",
+      "сахаром",
+      "сахаре"
+    ],
+    "Анна": [
+      "Анна",
+      "Анны",
+      "Анне",
+      "Анну",
+      "Анной",
+      "Анне"
+    ],
+    "Иван": [
+      "Иван",
+      "Ивана",
+      "Ивану",
+      "Ивана",
+      "Иваном",
+      "Иване"
+    ],
+    "поезд": [
+      "поезд",
+      "поезда",
+      "поезду",
+      "поезд",
+      "поездом",
+      "поезде"
+    ],
+    "автобус": [
+      "автобус",
+      "автобуса",
+      "автобусу",
+      "автобус",
+      "автобусом",
+      "автобусе"
+    ],
+    "море": [
+      "море",
+      "моря",
+      "морю",
+      "море",
+      "морем",
+      "море"
+    ],
+    "кухня": [
+      "кухня",
+      "кухни",
+      "кухне",
+      "кухню",
+      "кухней",
+      "кухне"
+    ],
+    "семья": [
+      "семья",
+      "семьи",
+      "семье",
+      "семью",
+      "семьёй",
+      "семье"
+    ],
+    "магазин": [
+      "магазин",
+      "магазина",
+      "магазину",
+      "магазин",
+      "магазином",
+      "магазине"
+    ]
+  },
+  "casi": [
+    {
+      "frase": "Я живу в ___.",
+      "base": "Москва",
+      "caso": "pre",
+      "ok": "Москве",
+      "it": "Vivo a Mosca.",
+      "perche": "в + prepositivo: dove si è (stato in luogo)."
+    },
+    {
+      "frase": "Мы гуляем в ___.",
+      "base": "парк",
+      "caso": "pre",
+      "ok": "парке",
+      "it": "Passeggiamo nel parco.",
+      "perche": "в + prepositivo: dove si è (stato in luogo)."
+    },
+    {
+      "frase": "Дети сейчас в ___.",
+      "base": "школа",
+      "caso": "pre",
+      "ok": "школе",
+      "it": "I bambini ora sono a scuola.",
+      "perche": "в + prepositivo: dove si è (stato in luogo)."
+    },
+    {
+      "frase": "Папа сейчас на ___.",
+      "base": "работа",
+      "caso": "pre",
+      "ok": "работе",
+      "it": "Papà ora è al lavoro.",
+      "perche": "на + prepositivo: alcuni luoghi vogliono на (lavoro, mare, cucina…)."
+    },
+    {
+      "frase": "Я часто думаю о ___.",
+      "base": "мама",
+      "caso": "pre",
+      "ok": "маме",
+      "it": "Penso spesso alla mamma.",
+      "perche": "о + prepositivo: «a proposito di, a»."
+    },
+    {
+      "frase": "Книга лежит на ___.",
+      "base": "стол",
+      "caso": "pre",
+      "ok": "столе",
+      "it": "Il libro è sul tavolo.",
+      "perche": "на + prepositivo: alcuni luoghi vogliono на (lavoro, mare, cucina…)."
+    },
+    {
+      "frase": "Мой брат учится в ___.",
+      "base": "университет",
+      "caso": "pre",
+      "ok": "университете",
+      "it": "Mio fratello studia all'università.",
+      "perche": "в + prepositivo: dove si è (stato in luogo)."
+    },
+    {
+      "frase": "Мама готовит на ___.",
+      "base": "кухня",
+      "caso": "pre",
+      "ok": "кухне",
+      "it": "La mamma cucina in cucina.",
+      "perche": "на + prepositivo: alcuni luoghi vogliono на (lavoro, mare, cucina…)."
+    },
+    {
+      "frase": "Летом мы отдыхаем на ___.",
+      "base": "море",
+      "caso": "pre",
+      "ok": "море",
+      "it": "D'estate ci riposiamo al mare.",
+      "perche": "на + prepositivo: alcuni luoghi vogliono на (lavoro, mare, cucina…)."
+    },
+    {
+      "frase": "В прошлом году я был в ___.",
+      "base": "Рим",
+      "caso": "pre",
+      "ok": "Риме",
+      "it": "L'anno scorso sono stato a Roma.",
+      "perche": "в + prepositivo: dove si è (stato in luogo)."
+    },
+    {
+      "frase": "Мы едем на ___.",
+      "base": "поезд",
+      "caso": "pre",
+      "ok": "поезде",
+      "it": "Viaggiamo in treno.",
+      "perche": "на + prepositivo per il mezzo di trasporto: на поезде, на автобусе."
+    },
+    {
+      "frase": "Я еду на работу на ___.",
+      "base": "автобус",
+      "caso": "pre",
+      "ok": "автобусе",
+      "it": "Vado al lavoro in autobus.",
+      "perche": "на + prepositivo per il mezzo di trasporto: на поезде, на автобусе."
+    },
+    {
+      "frase": "Я иду в ___.",
+      "base": "школа",
+      "caso": "acc",
+      "ok": "школу",
+      "it": "Vado a scuola.",
+      "perche": "в + accusativo: dove si va (moto a luogo)."
+    },
+    {
+      "frase": "Завтра мы едем в ___.",
+      "base": "Москва",
+      "caso": "acc",
+      "ok": "Москву",
+      "it": "Domani andiamo a Mosca.",
+      "perche": "в + accusativo: dove si va (moto a luogo)."
+    },
+    {
+      "frase": "Вечером мы идём в ___.",
+      "base": "театр",
+      "caso": "acc",
+      "ok": "театр",
+      "it": "Stasera andiamo a teatro.",
+      "perche": "complemento oggetto maschile inanimato: accusativo = nominativo."
+    },
+    {
+      "frase": "Я читаю ___.",
+      "base": "книга",
+      "caso": "acc",
+      "ok": "книгу",
+      "it": "Leggo un libro.",
+      "perche": "complemento oggetto: accusativo (femminile -а → -у)."
+    },
+    {
+      "frase": "Я люблю ___.",
+      "base": "музыка",
+      "caso": "acc",
+      "ok": "музыку",
+      "it": "Amo la musica.",
+      "perche": "complemento oggetto: accusativo (femminile -а → -у)."
+    },
+    {
+      "frase": "Я вижу ___.",
+      "base": "Анна",
+      "caso": "acc",
+      "ok": "Анну",
+      "it": "Vedo Anna.",
+      "perche": "complemento oggetto: accusativo (femminile -а → -у)."
+    },
+    {
+      "frase": "Я жду ___.",
+      "base": "брат",
+      "caso": "acc",
+      "ok": "брата",
+      "it": "Aspetto mio fratello.",
+      "perche": "complemento oggetto maschile animato: accusativo = genitivo (-а)."
+    },
+    {
+      "frase": "Мы покупаем ___.",
+      "base": "машина",
+      "caso": "acc",
+      "ok": "машину",
+      "it": "Compriamo una macchina.",
+      "perche": "complemento oggetto: accusativo (femminile -а → -у)."
+    },
+    {
+      "frase": "Я пью ___.",
+      "base": "вода",
+      "caso": "acc",
+      "ok": "воду",
+      "it": "Bevo acqua.",
+      "perche": "complemento oggetto: accusativo (femminile -а → -у)."
+    },
+    {
+      "frase": "Я хорошо знаю ___.",
+      "base": "Иван",
+      "caso": "acc",
+      "ok": "Ивана",
+      "it": "Conosco bene Ivan.",
+      "perche": "complemento oggetto maschile animato: accusativo = genitivo (-а)."
+    },
+    {
+      "frase": "У меня нет ___.",
+      "base": "машина",
+      "caso": "gen",
+      "ok": "машины",
+      "it": "Non ho la macchina.",
+      "perche": "нет + genitivo: «non c'è, non ho»."
+    },
+    {
+      "frase": "Это книга ___.",
+      "base": "сестра",
+      "caso": "gen",
+      "ok": "сестры",
+      "it": "È il libro di mia sorella.",
+      "perche": "possesso («di qualcuno»): genitivo."
+    },
+    {
+      "frase": "Дайте, пожалуйста, стакан ___.",
+      "base": "молоко",
+      "caso": "gen",
+      "ok": "молока",
+      "it": "Mi dia un bicchiere di latte, per favore.",
+      "perche": "quantità o contenuto (un bicchiere di…): genitivo."
+    },
+    {
+      "frase": "Я из ___.",
+      "base": "Италия",
+      "caso": "gen",
+      "ok": "Италии",
+      "it": "Vengo dall'Italia.",
+      "perche": "из + genitivo: da dove vieni (provenienza)."
+    },
+    {
+      "frase": "У ___ есть собака.",
+      "base": "брат",
+      "caso": "gen",
+      "ok": "брата",
+      "it": "Mio fratello ha un cane.",
+      "perche": "у + genitivo: у брата есть = mio fratello ha."
+    },
+    {
+      "frase": "Чай без ___, пожалуйста.",
+      "base": "лимон",
+      "caso": "gen",
+      "ok": "лимона",
+      "it": "Un tè senza limone, per favore.",
+      "perche": "без + genitivo: «senza»."
+    },
+    {
+      "frase": "Я живу недалеко от ___.",
+      "base": "парк",
+      "caso": "gen",
+      "ok": "парка",
+      "it": "Abito non lontano dal parco.",
+      "perche": "от + genitivo: «da» (distanza, provenienza)."
+    },
+    {
+      "frase": "Это подарок для ___.",
+      "base": "мама",
+      "caso": "gen",
+      "ok": "мамы",
+      "it": "È un regalo per la mamma.",
+      "perche": "для + genitivo: «per»."
+    },
+    {
+      "frase": "Сегодня нет ___.",
+      "base": "учитель",
+      "caso": "gen",
+      "ok": "учителя",
+      "it": "Oggi l'insegnante non c'è.",
+      "perche": "нет + genitivo: «non c'è, non ho»."
+    },
+    {
+      "frase": "Дайте, пожалуйста, бутылку ___.",
+      "base": "вода",
+      "caso": "gen",
+      "ok": "воды",
+      "it": "Mi dia una bottiglia d'acqua, per favore.",
+      "perche": "quantità o contenuto (un bicchiere di…): genitivo."
+    },
+    {
+      "frase": "Я звоню ___.",
+      "base": "мама",
+      "caso": "dat",
+      "ok": "маме",
+      "it": "Telefono alla mamma.",
+      "perche": "a chi? → dativo (dare, scrivere, telefonare a qualcuno)."
+    },
+    {
+      "frase": "Я даю книгу ___.",
+      "base": "друг",
+      "caso": "dat",
+      "ok": "другу",
+      "it": "Do il libro a un amico.",
+      "perche": "a chi? → dativo (dare, scrivere, telefonare a qualcuno)."
+    },
+    {
+      "frase": "Завтра я иду к ___.",
+      "base": "врач",
+      "caso": "dat",
+      "ok": "врачу",
+      "it": "Domani vado dal medico.",
+      "perche": "к + dativo: andare da una persona."
+    },
+    {
+      "frase": "Я пишу письмо ___.",
+      "base": "сестра",
+      "caso": "dat",
+      "ok": "сестре",
+      "it": "Scrivo una lettera a mia sorella.",
+      "perche": "a chi? → dativo (dare, scrivere, telefonare a qualcuno)."
+    },
+    {
+      "frase": "___ нравится музыка.",
+      "base": "Анна",
+      "caso": "dat",
+      "ok": "Анне",
+      "it": "Ad Anna piace la musica.",
+      "perche": "нравиться: chi prova il piacere va al dativo (Анне нравится = ad Anna piace)."
+    },
+    {
+      "frase": "Я помогаю ___.",
+      "base": "папа",
+      "caso": "dat",
+      "ok": "папе",
+      "it": "Aiuto papà.",
+      "perche": "помогать + dativo: aiutare qualcuno."
+    },
+    {
+      "frase": "Мы гуляем по ___.",
+      "base": "город",
+      "caso": "dat",
+      "ok": "городу",
+      "it": "Passeggiamo per la città.",
+      "perche": "по + dativo: «per, lungo» (in giro per)."
+    },
+    {
+      "frase": "Я покупаю подарок ___.",
+      "base": "подруга",
+      "caso": "dat",
+      "ok": "подруге",
+      "it": "Compro un regalo all'amica.",
+      "perche": "a chi? → dativo (dare, scrivere, telefonare a qualcuno)."
+    },
+    {
+      "frase": "Я пишу ___.",
+      "base": "ручка",
+      "caso": "str",
+      "ok": "ручкой",
+      "it": "Scrivo con la penna.",
+      "perche": "strumento (con cosa?): strumentale, senza preposizione."
+    },
+    {
+      "frase": "Чай с ___, пожалуйста.",
+      "base": "лимон",
+      "caso": "str",
+      "ok": "лимоном",
+      "it": "Un tè al limone, per favore.",
+      "perche": "с + strumentale: «con, insieme a»."
+    },
+    {
+      "frase": "Я гуляю с ___.",
+      "base": "собака",
+      "caso": "str",
+      "ok": "собакой",
+      "it": "Passeggio con il cane.",
+      "perche": "с + strumentale: «con, insieme a»."
+    },
+    {
+      "frase": "Мой брат работает ___.",
+      "base": "врач",
+      "caso": "str",
+      "ok": "врачом",
+      "it": "Mio fratello fa il medico.",
+      "perche": "работать / стать + strumentale: la professione."
+    },
+    {
+      "frase": "Мы разговариваем с ___.",
+      "base": "учитель",
+      "caso": "str",
+      "ok": "учителем",
+      "it": "Parliamo con l'insegnante.",
+      "perche": "с + strumentale: «con, insieme a»."
+    },
+    {
+      "frase": "Он хочет стать ___.",
+      "base": "врач",
+      "caso": "str",
+      "ok": "врачом",
+      "it": "Vuole diventare medico.",
+      "perche": "работать / стать + strumentale: la professione."
+    },
+    {
+      "frase": "Я интересуюсь ___.",
+      "base": "музыка",
+      "caso": "str",
+      "ok": "музыкой",
+      "it": "Mi interesso di musica.",
+      "perche": "интересоваться + strumentale: interessarsi di."
+    },
+    {
+      "frase": "Хлеб с ___.",
+      "base": "сыр",
+      "caso": "str",
+      "ok": "сыром",
+      "it": "Pane con il formaggio.",
+      "perche": "с + strumentale: «con, insieme a»."
+    },
+    {
+      "frase": "Я живу с ___.",
+      "base": "семья",
+      "caso": "str",
+      "ok": "семьёй",
+      "it": "Vivo con la mia famiglia.",
+      "perche": "с + strumentale: «con, insieme a»."
+    },
+    {
+      "frase": "Мы идём в кино с ___.",
+      "base": "друг",
+      "caso": "str",
+      "ok": "другом",
+      "it": "Andiamo al cinema con un amico.",
+      "perche": "с + strumentale: «con, insieme a»."
+    }
+  ],
+  "verbiMoto": {
+    "verbi": [
+      {
+        "inf": "идти",
+        "it": "andare a piedi — adesso, in una direzione",
+        "pres": [
+          "иду",
+          "идёшь",
+          "идёт",
+          "идём",
+          "идёте",
+          "идут"
+        ],
+        "pass": "шёл, шла, шли"
+      },
+      {
+        "inf": "ходить",
+        "it": "andare a piedi — di solito, spesso, andata e ritorno",
+        "pres": [
+          "хожу",
+          "ходишь",
+          "ходит",
+          "ходим",
+          "ходите",
+          "ходят"
+        ],
+        "pass": "ходил, ходила, ходили"
+      },
+      {
+        "inf": "ехать",
+        "it": "andare con un mezzo — adesso, in una direzione",
+        "pres": [
+          "еду",
+          "едешь",
+          "едет",
+          "едем",
+          "едете",
+          "едут"
+        ],
+        "pass": "ехал, ехала, ехали"
+      },
+      {
+        "inf": "ездить",
+        "it": "andare con un mezzo — di solito, spesso, andata e ritorno",
+        "pres": [
+          "езжу",
+          "ездишь",
+          "ездит",
+          "ездим",
+          "ездите",
+          "ездят"
+        ],
+        "pass": "ездил, ездила, ездили"
+      }
+    ],
+    "regole": [
+      "A piedi → идти / ходить. Con un mezzo (macchina, treno, autobus, metro) → ехать / ездить.",
+      "Adesso, in una direzione («sto andando») → идти / ехать.",
+      "Di solito, spesso, ogni giorno, oppure andata e ritorno («ci sono stato») → ходить / ездить.",
+      "«Вчера я ходил в театр» = ieri sono andato a teatro (e sono tornato): è come «я был в театре»."
+    ],
+    "frasi": [
+      {
+        "frase": "Сейчас я ___ в магазин.",
+        "ok": "иду",
+        "opts": [
+          "хожу",
+          "еду",
+          "езжу"
+        ],
+        "it": "Adesso sto andando al negozio (a piedi).",
+        "perche": "adesso, a piedi, in una direzione → идти"
+      },
+      {
+        "frase": "Каждый день я ___ на работу пешком.",
+        "ok": "хожу",
+        "opts": [
+          "иду",
+          "езжу",
+          "еду"
+        ],
+        "it": "Ogni giorno vado al lavoro a piedi.",
+        "perche": "abitudine + a piedi → ходить"
+      },
+      {
+        "frase": "Завтра мы ___ в Москву на поезде.",
+        "ok": "едем",
+        "opts": [
+          "ездим",
+          "идём",
+          "ходим"
+        ],
+        "it": "Domani andiamo a Mosca in treno.",
+        "perche": "un viaggio preciso, con un mezzo → ехать"
+      },
+      {
+        "frase": "Летом мы часто ___ на дачу.",
+        "ok": "ездим",
+        "opts": [
+          "едем",
+          "ходим",
+          "идём"
+        ],
+        "it": "D'estate andiamo spesso alla dacia.",
+        "perche": "spesso + con un mezzo → ездить"
+      },
+      {
+        "frase": "Куда ты ___? — В парк.",
+        "ok": "идёшь",
+        "opts": [
+          "ходишь",
+          "едешь",
+          "ездишь"
+        ],
+        "it": "Dove stai andando? — Al parco (a piedi).",
+        "perche": "adesso, verso un posto → идти"
+      },
+      {
+        "frase": "Дети ___ в школу каждое утро.",
+        "ok": "ходят",
+        "opts": [
+          "идут",
+          "ездят",
+          "едут"
+        ],
+        "it": "I bambini vanno a scuola ogni mattina.",
+        "perche": "ogni mattina = abitudine → ходить"
+      },
+      {
+        "frase": "Вчера я ___ в театр.",
+        "ok": "ходил",
+        "opts": [
+          "шёл",
+          "ездил",
+          "ехал"
+        ],
+        "it": "Ieri sono andato a teatro (a piedi, e sono tornato).",
+        "perche": "andata e ritorno nel passato → ходить"
+      },
+      {
+        "frase": "Мой папа ___ на работу на машине.",
+        "ok": "ездит",
+        "opts": [
+          "едет",
+          "ходит",
+          "идёт"
+        ],
+        "it": "Mio papà va al lavoro in macchina (di solito).",
+        "perche": "abitudine + con un mezzo → ездить"
+      },
+      {
+        "frase": "Когда я ___ домой, я встретил друга.",
+        "ok": "шёл",
+        "opts": [
+          "ходил",
+          "ехал",
+          "ездил"
+        ],
+        "it": "Mentre tornavo a casa a piedi, ho incontrato un amico.",
+        "perche": "in quel momento, in una direzione → идти (шёл)"
+      },
+      {
+        "frase": "Вы часто ___ в кино?",
+        "ok": "ходите",
+        "opts": [
+          "идёте",
+          "ездите",
+          "едете"
+        ],
+        "it": "Andate spesso al cinema?",
+        "perche": "spesso → ходить"
+      },
+      {
+        "frase": "Мы ___ на такси в аэропорт.",
+        "ok": "едем",
+        "opts": [
+          "ездим",
+          "идём",
+          "ходим"
+        ],
+        "it": "Stiamo andando in taxi all'aeroporto.",
+        "perche": "adesso, con un mezzo → ехать"
+      },
+      {
+        "frase": "Я не люблю ___ на метро.",
+        "ok": "ездить",
+        "opts": [
+          "ехать",
+          "ходить",
+          "идти"
+        ],
+        "it": "Non mi piace andare in metro.",
+        "perche": "in generale, con un mezzo → ездить"
+      },
+      {
+        "frase": "Анна ___ в бассейн три раза в неделю.",
+        "ok": "ходит",
+        "opts": [
+          "идёт",
+          "ездит",
+          "едет"
+        ],
+        "it": "Anna va in piscina tre volte a settimana.",
+        "perche": "tre volte a settimana = abitudine → ходить"
+      },
+      {
+        "frase": "Прошлым летом мы ___ в Италию.",
+        "ok": "ездили",
+        "opts": [
+          "ехали",
+          "ходили",
+          "шли"
+        ],
+        "it": "L'estate scorsa siamo stati in Italia.",
+        "perche": "andata e ritorno, con un mezzo → ездить"
+      },
+      {
+        "frase": "Куда вы ___ на машине?",
+        "ok": "едете",
+        "opts": [
+          "ездите",
+          "идёте",
+          "ходите"
+        ],
+        "it": "Dove state andando in macchina?",
+        "perche": "adesso, con un mezzo → ехать"
+      },
+      {
+        "frase": "Моему сыну год, и он уже ___.",
+        "ok": "ходит",
+        "opts": [
+          "идёт",
+          "ездит",
+          "едет"
+        ],
+        "it": "Mio figlio ha un anno e cammina già.",
+        "perche": "saper camminare → ходить"
+      },
+      {
+        "frase": "Сейчас они ___ в театр на автобусе.",
+        "ok": "едут",
+        "opts": [
+          "ездят",
+          "идут",
+          "ходят"
+        ],
+        "it": "Adesso stanno andando a teatro in autobus.",
+        "perche": "adesso, con un mezzo → ехать"
+      },
+      {
+        "frase": "Обычно я ___ в университет пешком.",
+        "ok": "хожу",
+        "opts": [
+          "иду",
+          "езжу",
+          "еду"
+        ],
+        "it": "Di solito vado all'università a piedi.",
+        "perche": "di solito → ходить"
+      },
+      {
+        "frase": "Мы ___ по парку и разговариваем.",
+        "ok": "ходим",
+        "opts": [
+          "идём",
+          "ездим",
+          "едем"
+        ],
+        "it": "Camminiamo per il parco e chiacchieriamo.",
+        "perche": "in giro, senza una direzione → ходить"
+      },
+      {
+        "frase": "Смотри, вон ___ Маша!",
+        "ok": "идёт",
+        "opts": [
+          "ходит",
+          "едет",
+          "ездит"
+        ],
+        "it": "Guarda, sta arrivando Maša!",
+        "perche": "la vedi adesso, a piedi → идти"
+      }
+    ]
+  },
+  "percorso": [
+    {
+      "id": "primi-passi",
+      "icona": "👋",
+      "titolo": "Primi passi",
+      "desc": "Le lettere, salutare e presentarsi",
+      "passi": [
+        {
+          "t": "cyr",
+          "titolo": "Quiz sulle lettere"
+        },
+        {
+          "t": "flash",
+          "titolo": "Parole: saluti e cortesia",
+          "tags": [
+            "saluti",
+            "cortesia"
+          ],
+          "n": 12
+        },
+        {
+          "t": "frasi",
+          "titolo": "Frasi per presentarsi",
+          "tags": [
+            "saluti",
+            "presentarsi",
+            "cortesia"
+          ]
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: fare conoscenza",
+          "id": "conoscenza"
+        }
+      ]
+    },
+    {
+      "id": "numeri",
+      "icona": "🔢",
+      "titolo": "I numeri",
+      "desc": "Da 0 a 100 e i primi prezzi",
+      "passi": [
+        {
+          "t": "numLeggi",
+          "titolo": "Leggi i numeri 0–20",
+          "range": "r20"
+        },
+        {
+          "t": "numDettato",
+          "titolo": "Ascolta e scrivi 0–20",
+          "range": "r20"
+        },
+        {
+          "t": "numLeggi",
+          "titolo": "Leggi i numeri 21–100",
+          "range": "r100"
+        },
+        {
+          "t": "prezzi",
+          "titolo": "Quanto costa?"
+        }
+      ]
+    },
+    {
+      "id": "famiglia",
+      "icona": "👨‍👩‍👧",
+      "titolo": "Famiglia e persone",
+      "desc": "Parlare di sé e dei propri cari",
+      "passi": [
+        {
+          "t": "flash",
+          "titolo": "Parole: famiglia",
+          "tags": [
+            "famiglia"
+          ],
+          "n": 12
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Mi chiamo Anna",
+          "id": "anna"
+        },
+        {
+          "t": "frasi",
+          "titolo": "Frasi sulla famiglia",
+          "tags": [
+            "famiglia",
+            "presentarsi"
+          ]
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Il mio amico Saša",
+          "id": "sasha"
+        }
+      ]
+    },
+    {
+      "id": "bar",
+      "icona": "☕",
+      "titolo": "Al bar e a tavola",
+      "desc": "Ordinare, pagare, il cibo",
+      "passi": [
+        {
+          "t": "flash",
+          "titolo": "Parole: cibo",
+          "tags": [
+            "cibo"
+          ],
+          "n": 12
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: al bar",
+          "id": "bar"
+        },
+        {
+          "t": "dlgquiz",
+          "titolo": "Cosa rispondi? Al ristorante",
+          "id": "ristorante"
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Al mercato",
+          "id": "mercato"
+        },
+        {
+          "t": "componi",
+          "titolo": "Componi: cibo e ristorante",
+          "tags": [
+            "cibo",
+            "ristorante"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "citta",
+      "icona": "🏙️",
+      "titolo": "In città",
+      "desc": "Chiedere la strada, dove sei",
+      "passi": [
+        {
+          "t": "flash",
+          "titolo": "Parole: città",
+          "tags": [
+            "città"
+          ],
+          "n": 12
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: chiedere la strada",
+          "id": "strada"
+        },
+        {
+          "t": "casi",
+          "titolo": "Casi: dove sei? (prepositivo)",
+          "caso": "pre"
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: In metro",
+          "id": "metro"
+        }
+      ]
+    },
+    {
+      "id": "tempo",
+      "icona": "🕒",
+      "titolo": "Ore, giorni e meteo",
+      "desc": "Che ore sono, che tempo fa",
+      "passi": [
+        {
+          "t": "ore",
+          "titolo": "Che ore sono?"
+        },
+        {
+          "t": "flash",
+          "titolo": "Parole: tempo",
+          "tags": [
+            "tempo"
+          ],
+          "n": 12
+        },
+        {
+          "t": "flash",
+          "titolo": "Parole: meteo",
+          "tags": [
+            "meteo"
+          ],
+          "n": 12
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Il tempo a Mosca",
+          "id": "meteo"
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: che tempo fa?",
+          "id": "meteo"
+        }
+      ]
+    },
+    {
+      "id": "casa",
+      "icona": "🏠",
+      "titolo": "Casa e giornata",
+      "desc": "La routine di tutti i giorni",
+      "passi": [
+        {
+          "t": "flash",
+          "titolo": "Parole: casa",
+          "tags": [
+            "casa"
+          ],
+          "n": 12
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: La mattina di Marco",
+          "id": "marco"
+        },
+        {
+          "t": "frasi",
+          "titolo": "Frasi di tutti i giorni",
+          "tags": [
+            "quotidiano",
+            "routine"
+          ]
+        },
+        {
+          "t": "componi",
+          "titolo": "Componi: la giornata",
+          "tags": [
+            "quotidiano",
+            "routine"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "andare",
+      "icona": "🚶",
+      "titolo": "Andare: i verbi di moto",
+      "desc": "идти, ходить, ехать, ездить",
+      "passi": [
+        {
+          "t": "moto",
+          "titolo": "Verbi di moto"
+        },
+        {
+          "t": "casi",
+          "titolo": "Casi: dove vai? (accusativo)",
+          "caso": "acc"
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: in taxi",
+          "id": "taxi"
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Alla dacia",
+          "id": "dacia"
+        }
+      ]
+    },
+    {
+      "id": "viaggio",
+      "icona": "✈️",
+      "titolo": "In viaggio",
+      "desc": "Stazione, aeroporto, albergo",
+      "passi": [
+        {
+          "t": "flash",
+          "titolo": "Parole: viaggio",
+          "tags": [
+            "viaggio"
+          ],
+          "n": 12
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: alla stazione",
+          "id": "stazione"
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: in albergo",
+          "id": "albergo"
+        },
+        {
+          "t": "dlgquiz",
+          "titolo": "Cosa rispondi? Controllo passaporti",
+          "id": "aeroporto"
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Le notti bianche",
+          "id": "petersburg"
+        }
+      ]
+    },
+    {
+      "id": "negozi",
+      "icona": "🛍️",
+      "titolo": "Negozi e vestiti",
+      "desc": "Comprare, provare, pagare",
+      "passi": [
+        {
+          "t": "flash",
+          "titolo": "Parole: vestiti",
+          "tags": [
+            "vestiti"
+          ],
+          "n": 12
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: al mercato",
+          "id": "mercato"
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: comprare una giacca",
+          "id": "vestiti"
+        },
+        {
+          "t": "casi",
+          "titolo": "Casi: di chi? quanto? (genitivo)",
+          "caso": "gen"
+        }
+      ]
+    },
+    {
+      "id": "salute",
+      "icona": "💊",
+      "titolo": "Salute",
+      "desc": "Il corpo, la farmacia, il medico",
+      "passi": [
+        {
+          "t": "flash",
+          "titolo": "Parole: corpo",
+          "tags": [
+            "corpo"
+          ],
+          "n": 12
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: in farmacia",
+          "id": "farmacia"
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: dal medico",
+          "id": "medico"
+        },
+        {
+          "t": "frasi",
+          "titolo": "Frasi: salute",
+          "tags": [
+            "salute",
+            "corpo",
+            "urgenza"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feste",
+      "icona": "🎉",
+      "titolo": "Feste e ospiti",
+      "desc": "Auguri, regali, cultura",
+      "passi": [
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Capodanno",
+          "id": "capodanno"
+        },
+        {
+          "t": "lettura",
+          "titolo": "Lettura: Il compleanno di Katja",
+          "id": "compleanno"
+        },
+        {
+          "t": "recita",
+          "titolo": "Dialogo: ospiti a cena",
+          "id": "ospiti"
+        },
+        {
+          "t": "casi",
+          "titolo": "Casi: a chi? (dativo)",
+          "caso": "dat"
+        },
+        {
+          "t": "casi",
+          "titolo": "Casi: con chi? (strumentale)",
+          "caso": "str"
+        }
+      ]
     }
   ]
 }

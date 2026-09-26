@@ -260,6 +260,8 @@
   @media (hover:hover){ .home-tab:hover:not(.active){color:var(--text)} }
   .home-tabs.tre{margin:0}
   .home-tabs.tre .home-tab{font-size:12.5px;padding:10px 3px;white-space:nowrap;gap:5px}
+  .home-tabs.quattro .home-tab{padding:10px 2px;gap:4px}
+  @media (max-width:400px){ .home-tabs.quattro .home-tab .i{display:none} }
   .home-tab .n{font-size:11px;font-weight:800;min-width:19px;height:19px;padding:0 5px;border-radius:99px;background:var(--card3);color:var(--text2);display:inline-grid;place-items:center}
   .home-tab.active .n{background:var(--accent2-soft);color:var(--accent2)}
   .grid-wrap{overflow:hidden;width:100%;margin:-4px;padding:4px;box-sizing:content-box}
@@ -1031,6 +1033,211 @@
   .badge-it .bp{width:78%;height:4px;border-radius:9px;background:var(--card3);overflow:hidden;margin-top:5px}
   .badge-it .bp i{display:block;height:100%;background:var(--accent2);border-radius:9px}
 
+  /* ============================ SECONDO BLOCCO ============================ */
+  .tile[data-mode="palestra"]{--tc:#d6337a} .tile[data-mode="palestra"] .ico{background:linear-gradient(135deg,#ff78b4,#d2337a)}
+  .tile[data-mode="lampo"]{--tc:#e89a0c}    .tile[data-mode="lampo"] .ico{background:linear-gradient(135deg,#ffd84d,#f29a12)}
+  .tile[data-mode="letture"]{--tc:#1c8f8a}  .tile[data-mode="letture"] .ico{background:linear-gradient(135deg,#4fd1ab,#1a8a8c)}
+  .tile[data-mode="cultura"]{--tc:#b8372f}  .tile[data-mode="cultura"] .ico{background:linear-gradient(135deg,#f06a5a,#ae2f2f)}
+  .tile.percorso-card{--tc:#7a5cf0}
+  .tile.percorso-card .ico{background:var(--grad-prog)}
+  .tile.percorso-card .pbar{height:6px;margin-top:8px}
+  .tile.percorso-card .pbar i{background:var(--grad-prog)}
+  .tile.feat .nuovo{top:10px;right:38px}
+
+  /* avvisi in basso */
+  #toasts{position:fixed;left:0;right:0;bottom:calc(18px + env(safe-area-inset-bottom));z-index:300;display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;padding:0 16px}
+  .toast{background:var(--text);color:var(--bg);padding:11px 16px;border-radius:14px;font-size:14px;font-weight:600;box-shadow:var(--shadow-lg);max-width:420px;text-align:center;animation:rise .25s ease both;transition:opacity .4s,transform .4s}
+  .toast.gold{background:linear-gradient(135deg,#ffd76a,#f0a92a);color:#3d2600}
+  .toast.out{opacity:0;transform:translateY(8px)}
+
+  /* livello in home */
+  .lvl-chip{margin-top:9px;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:4px 12px 4px 4px;box-shadow:var(--shadow-sm);color:var(--text2);font-size:12.5px;max-width:100%}
+  .lvl-chip .lv-n{width:24px;height:24px;border-radius:50%;background:var(--grad-prog);color:#fff;font-weight:800;font-size:12.5px;display:grid;place-items:center;flex:0 0 auto}
+  .lvl-chip .lv-t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .lvl-chip .lv-t b{color:var(--text)}
+  .lvl-chip .lv-bar{width:46px;height:5px;border-radius:9px;background:var(--card3);overflow:hidden;flex:0 0 auto}
+  .lvl-chip .lv-bar i{display:block;height:100%;background:var(--grad-prog)}
+
+  /* «Oggi per te»: schede che scorrono in orizzontale */
+  .oggi-box{margin-top:18px}
+  .oggi-box .sec-h{margin:0 2px 8px}
+  .oggi-row{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;margin:0 -16px;padding:2px 16px 8px;scrollbar-width:none}
+  .oggi-row::-webkit-scrollbar{display:none}
+  .oggi-row>*{flex:0 0 82%;scroll-snap-align:start;min-width:0}
+  .og-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:13px 15px;box-shadow:var(--shadow-sm);cursor:pointer;display:flex;flex-direction:column;gap:5px;position:relative;overflow:hidden;transition:transform .16s}
+  .og-card:active{transform:scale(.985)}
+  .og-card .k{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:5px}
+  .og-card .k .i{width:14px;height:14px}
+  .og-card.prov .k{color:var(--gold)} .og-card.pil .k{color:var(--brick)}
+  .og-card.prov::before,.og-card.pil::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+  .og-card.prov::before{background:linear-gradient(180deg,#ffd76a,#f0a92a)} .og-card.pil::before{background:linear-gradient(180deg,#f06a5a,#ae2f2f)}
+  .og-ru{font-size:16px;font-weight:700;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .og-it{font-size:13px;color:var(--muted);line-height:1.4}
+  .og-t{display:flex;align-items:center;gap:9px;font-size:16px;font-weight:700;line-height:1.3}
+  .og-t .e{font-size:26px}
+
+  /* microfono «Pronuncia» */
+  .mic-box{display:flex;flex-direction:column;align-items:center;gap:6px;width:100%}
+  .mic-btn.rec{animation:pulse 1.2s ease-in-out infinite}
+  .mic-res{font-size:13px;color:var(--muted);text-align:center;line-height:1.45;min-height:0}
+  .mic-res:empty{display:none}
+  .mic-res b.ok{color:var(--good)} .mic-res b.mid{color:var(--warn)} .mic-res b.ko{color:var(--bad)}
+  .mic-res .mr-no{color:var(--warn)}
+
+  /* letture */
+  .lt-text{display:flex;flex-direction:column;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:10px 8px;box-shadow:var(--shadow-sm)}
+  .lt-s{display:flex;gap:6px;align-items:flex-start;padding:6px 8px 6px 4px;border-radius:12px;transition:background .2s}
+  .lt-s.playing{background:var(--accent2-soft)}
+  .lt-play{flex:0 0 auto;width:28px;height:28px;border-radius:9px;border:0;background:none;color:var(--muted);display:grid;place-items:center;margin-top:1px}
+  .lt-play .i{width:16px;height:16px}
+  .lt-play:active{background:var(--card2)}
+  .lt-body{flex:1;min-width:0}
+  .lt-ru{font-size:18px;line-height:1.55;color:var(--text)}
+  .lt-w{cursor:pointer;border-radius:4px;transition:background .15s,color .15s;border-bottom:1px dotted transparent}
+  .lt-w:hover{border-bottom-color:var(--accent2)}
+  .lt-w.on{background:var(--accent2-soft);color:var(--accent2)}
+  .lt-it{display:none;font-size:13.5px;color:var(--muted);line-height:1.45;margin-top:2px}
+  .lt-text.show-it .lt-it{display:block}
+  .lt-pop{min-width:220px}
+  .lt-pop .vika-it{font-size:13.5px}
+  .lt-pop .pop-row button{white-space:nowrap}
+  .lt-gloss summary{cursor:pointer;font-size:15px;font-weight:800;display:flex;align-items:center;gap:8px;list-style:none}
+  .lt-gloss summary::-webkit-details-marker{display:none}
+  .lt-gloss summary .i{width:18px;height:18px;color:var(--muted)}
+  .lt-gloss[open] summary{margin-bottom:8px}
+
+  /* cultura, proverbi, parole trappola */
+  .prov-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden}
+  .prov-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,#ffd76a,#f0a92a)}
+  .prov-card .pv-ru{border:0;background:none;padding:0;text-align:left;font-size:19px;font-weight:800;line-height:1.35;color:var(--text);letter-spacing:-.2px}
+  .prov-card.sm .pv-ru{font-size:16.5px}
+  .prov-card .pv-lett{font-size:13px;color:var(--muted);font-style:italic;line-height:1.45}
+  .prov-card .pv-it{font-size:14px;color:var(--text2);font-weight:600}
+  .prov-card .pv-it:empty{display:none}
+  .prov-card .row{margin-top:6px;flex-wrap:wrap;gap:8px}
+  .prov-card.today{border-color:var(--gold)}
+  .prov-card .pill{align-self:flex-start}
+  .topic.letta{background:var(--good-soft);border-color:transparent}
+  .pill-hero{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:6px 0 2px}
+  .pill-hero .e{font-size:54px;line-height:1.1}
+  .pill-hero h2{margin:0;font-size:22px;font-weight:800;letter-spacing:-.4px}
+  .pill-testo p{font-size:15.5px;line-height:1.65;color:var(--text2)}
+  .kw-add{display:flex;align-items:center;gap:8px}
+  .kw-add .kw-t{flex:1;display:flex;align-items:baseline;gap:12px;border:0;background:none;text-align:left;color:var(--text);font:inherit;padding:0;min-width:0}
+  .kw-add .kw-t b{font-size:15px;font-weight:700;flex:1 1 55%;min-width:0}
+  .kw-add .kw-t span{font-size:13px;color:var(--muted);flex:1 1 45%;text-align:right;line-height:1.4}
+  .ff-item{display:flex;flex-direction:column;align-items:flex-start;gap:3px;background:var(--card);border:1px solid var(--line);border-radius:15px;padding:11px 14px;box-shadow:var(--shadow-sm);text-align:left;color:var(--text);font:inherit}
+  .ff-item b{font-size:17px;font-weight:800}
+  .ff-item .ff-no,.ff-item .ff-si{display:flex;align-items:flex-start;gap:6px;font-size:13.5px;line-height:1.4}
+  .ff-item .i{width:15px;height:15px;margin-top:2px;flex:0 0 auto}
+  .ff-no{color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+  .ff-no .i{text-decoration:none}
+  .ff-si{color:var(--good);font-weight:600}
+  .gm-ru{font-size:15px;font-weight:700;color:var(--text)}
+  .num-row .gm-ru + b{font-size:13px;color:var(--muted);font-weight:600;min-width:0}
+
+  /* palestra di grammatica */
+  .caso-tag{font-size:12px;font-weight:800;letter-spacing:.02em;color:#fff;width:100%;height:100%;display:grid;place-items:center;border-radius:13px}
+  .tile.wide .ico:has(.caso-tag){background:none}
+  .c-pre{background:linear-gradient(135deg,#45bdf5,#2f7fe8)} .c-acc{background:linear-gradient(135deg,#f5727f,#d6334a)}
+  .c-gen{background:linear-gradient(135deg,#9ad94a,#35a95c)} .c-dat{background:linear-gradient(135deg,#f9b93e,#ef7f17)}
+  .c-str{background:linear-gradient(135deg,#a276f5,#6a4bdf)}
+  .moto-reg{margin:0 0 12px;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:13.5px;line-height:1.5;color:var(--text2)}
+  .moto-tab{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .mv{background:var(--card2);border-radius:13px;padding:10px 11px;display:flex;flex-direction:column;gap:3px;min-width:0}
+  .mv-inf{border:0;background:none;padding:0;text-align:left;font-size:17px;font-weight:800;color:var(--accent2)}
+  .mv-it{font-size:11.5px;color:var(--muted);line-height:1.35}
+  .mv-f{font-size:13px;font-weight:600;line-height:1.4;color:var(--text)}
+  .mv-p{font-size:11.5px;color:var(--muted)}
+
+  /* sfida lampo */
+  .lampo-top{display:flex;align-items:center;gap:12px}
+  .lampo-time{flex:1;height:12px;border-radius:99px;background:var(--card3);overflow:hidden}
+  .lampo-time i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#ffd84d,#f29a12);border-radius:99px}
+  .lampo-time i.poco{background:linear-gradient(90deg,#ff8a8a,var(--bad))}
+  .lampo-score{font-size:14px;color:var(--muted);font-weight:600;white-space:nowrap}
+  .lampo-score b{font-size:24px;color:var(--text);font-weight:800;font-variant-numeric:tabular-nums}
+  .lampo-q{padding:26px 18px}
+  .lampo-opts .opt{padding:13px 16px;font-size:16.5px}
+
+  /* dettato di frasi */
+  .slow-play{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);background:var(--card2);font-size:24px;display:grid;place-items:center;align-self:center}
+  .dt-input{font-size:18px;font-weight:600}
+  .dt-input.ok{border-color:var(--good);background:var(--good-soft)}
+  .dt-input.ko{border-color:var(--bad);background:var(--bad-soft)}
+  .dt-res{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:13px 15px;box-shadow:var(--shadow-sm)}
+  .dt-cmp{font-size:18px;font-weight:700;line-height:1.5}
+  .dt-cmp .ok{color:var(--good)} .dt-cmp .no{color:var(--bad);text-decoration:underline wavy;text-underline-offset:3px;text-decoration-thickness:1px}
+  .dt-it{font-size:13.5px;color:var(--muted);margin-top:3px}
+  .dt-tr{font-size:12.5px;color:var(--accent2);font-style:italic;margin-top:2px}
+  .er-ru{font-size:22px;font-weight:800;color:var(--accent2);line-height:1.3;margin-top:4px}
+
+  /* percorso A1 */
+  .path{display:flex;flex-direction:column;gap:0;position:relative;padding-left:4px}
+  .pnode{display:flex;gap:14px;align-items:flex-start;border:0;background:none;text-align:left;color:var(--text);font:inherit;padding:0 0 18px;position:relative}
+  .pnode::before{content:"";position:absolute;left:23px;top:48px;bottom:-2px;width:3px;border-radius:3px;background:var(--line2)}
+  .pnode:last-child::before{display:none}
+  .pnode.p-done::before{background:var(--good)}
+  .pn-dot{width:48px;height:48px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;font-size:22px;background:var(--card);border:2px solid var(--line2);box-shadow:var(--shadow-sm);position:relative;z-index:1}
+  .pnode.p-done .pn-dot{background:var(--good);border-color:var(--good);color:#fff}
+  .pnode.p-done .pn-dot .i{width:24px;height:24px;stroke-width:3}
+  .pnode.p-cur .pn-dot{border-color:var(--accent2);box-shadow:0 0 0 5px var(--accent2-soft);animation:pulse2 2s ease-in-out infinite}
+  .pnode.p-lock .pn-dot{background:var(--card2);color:var(--muted)}
+  .pnode.p-lock .pn-dot .i{width:19px;height:19px}
+  @keyframes pulse2{0%,100%{box-shadow:0 0 0 4px var(--accent2-soft)}50%{box-shadow:0 0 0 9px var(--accent2-soft)}}
+  .pn-txt{flex:1;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 13px;box-shadow:var(--shadow-sm);transition:transform .15s,border-color .15s}
+  .pnode:active .pn-txt{transform:scale(.985)}
+  .pnode.p-cur .pn-txt{border-color:var(--accent2)}
+  .pnode.p-lock .pn-txt{opacity:.62;box-shadow:none}
+  .pn-k{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .pn-k b{color:var(--accent2)}
+  .pn-t{font-size:16px;font-weight:800;margin-top:1px}
+  .pn-d{font-size:12.5px;color:var(--muted);margin-top:1px}
+  .pn-bar{height:5px;border-radius:9px;background:var(--card3);overflow:hidden;margin-top:8px}
+  .pn-bar i{display:block;height:100%;background:var(--good);border-radius:9px}
+  .tile.passo.p-fatto{background:var(--good-soft);border-color:transparent}
+  .tile.passo.p-next{border-color:var(--accent2);box-shadow:0 0 0 3px var(--accent2-soft)}
+  .passo-box{display:flex;flex-direction:column;gap:6px}
+  .passo-box b{font-size:15px}
+  .passo-box p{font-size:13.5px;color:var(--muted);line-height:1.5}
+  .passo-box.ok{border-color:var(--good);background:linear-gradient(135deg,var(--card) 60%,var(--good-soft))}
+  .passo-box.ko{border-color:var(--gold)}
+  .passo-box .btn{margin-top:4px}
+
+  /* progressi: livello e settimana */
+  .lvl-head{display:flex;align-items:center;gap:12px}
+  .lvl-badge{width:48px;height:48px;border-radius:15px;background:var(--grad-prog);color:#fff;font-size:22px;font-weight:800;display:grid;place-items:center;flex:0 0 auto;box-shadow:0 8px 18px -8px rgba(122,92,240,.7)}
+  .lvl-name{font-size:17px}
+  .sett{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+  .sett>div{background:var(--card2);border-radius:12px;padding:9px 10px;display:flex;flex-direction:column;gap:1px;min-width:0}
+  .sett b{font-size:19px;font-weight:800}
+  .sett span{font-size:11px;color:var(--muted);font-weight:600;line-height:1.3}
+  .sett .up{color:var(--good);white-space:nowrap} .sett .down{color:var(--bad);white-space:nowrap}
+  .pm-ora{max-width:150px;font-size:17px;font-weight:700}
+
+  /* Cremlino vivo: di sera stelle, luna e finestre accese; d'inverno la neve */
+  .kremlin-sky,.kremlin-snow{display:none;position:absolute;inset:0;pointer-events:none;overflow:hidden}
+  body.is-home.sera .kremlin-sky{display:block}
+  body.is-home.inverno .kremlin-snow{display:block}
+  body.sera{--kwin:#ffd463}
+  body.inverno{--ksnow:#ffffff}
+  .kremlin-sky i{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--gold);opacity:.8;animation:twinkle 3s ease-in-out infinite}
+  .kremlin-sky i:nth-child(2){left:18%;top:10px} .kremlin-sky i:nth-child(3){left:31%;top:24px;animation-delay:.8s}
+  .kremlin-sky i:nth-child(4){left:64%;top:8px;animation-delay:1.6s} .kremlin-sky i:nth-child(5){left:74%;top:26px;animation-delay:.4s}
+  .kremlin-sky i:nth-child(6){left:87%;top:14px;animation-delay:2.2s} .kremlin-sky i:nth-child(7){left:8%;top:30px;animation-delay:1.2s}
+  .kremlin-sky .moon{left:auto;right:12%;top:6px;width:15px;height:15px;background:none;border-radius:50%;box-shadow:4px -3px 0 0 var(--gold);opacity:.95;animation:none}
+  @keyframes twinkle{0%,100%{opacity:.25;transform:scale(.8)}50%{opacity:.95;transform:scale(1.15)}}
+  .kremlin-snow i{position:absolute;top:-6px;width:4px;height:4px;border-radius:50%;background:var(--snow,#b9c6db);opacity:.9;animation:snow 5s linear infinite}
+  .kremlin-snow i:nth-child(1){left:5%} .kremlin-snow i:nth-child(2){left:15%;animation-delay:1.1s;animation-duration:6s}
+  .kremlin-snow i:nth-child(3){left:26%;animation-delay:2.3s} .kremlin-snow i:nth-child(4){left:37%;animation-delay:.6s;animation-duration:7s}
+  .kremlin-snow i:nth-child(5){left:48%;animation-delay:3.1s} .kremlin-snow i:nth-child(6){left:58%;animation-delay:1.7s;animation-duration:6.5s}
+  .kremlin-snow i:nth-child(7){left:69%;animation-delay:.3s} .kremlin-snow i:nth-child(8){left:79%;animation-delay:2.7s;animation-duration:5.5s}
+  .kremlin-snow i:nth-child(9){left:88%;animation-delay:1.4s} .kremlin-snow i:nth-child(10){left:96%;animation-delay:3.6s;animation-duration:6.2s}
+  @keyframes snow{0%{transform:translate(0,0)}50%{transform:translate(6px,30px)}100%{transform:translate(-2px,62px);opacity:0}}
+
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--snow:#e9eef9} }
+  :root[data-theme="dark"]{--snow:#e9eef9}
+
   /* ============================ DESKTOP ============================ */
   @media (min-width:760px){
     .appbar{padding:0 24px}
@@ -1053,11 +1260,17 @@
     .home-top{display:grid;grid-template-columns:1.25fr 1fr;gap:16px!important;align-items:stretch}
     .home-top .tile.feat{height:100%;grid-column:auto}
     .ref-nav{margin:-8px -32px 0;padding:8px 32px}
-    .grid.g4{grid-template-columns:repeat(4,1fr)}
-    .home-top .wotd{grid-column:1/-1}
+    .grid.g4,.grid.g5{grid-template-columns:repeat(4,1fr)}
+    .home-top .hero{grid-row:span 2}
+    .oggi-row{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible;margin:0;padding:0}
+    .oggi-row>*{min-width:0}
+    .moto-tab{grid-template-columns:repeat(4,1fr)}
     .badges{grid-template-columns:repeat(5,1fr)}
     .num-grid{grid-template-columns:repeat(3,1fr)}
     .clock{width:190px;height:190px}
+  }
+  @media (min-width:900px){
+    .grid.g5{grid-template-columns:repeat(5,1fr)}
   }
   @media (min-width:1100px){
     main{max-width:980px;padding:30px 40px 44px}
@@ -1128,6 +1341,15 @@
   <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
   <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
   <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-2.1a2 2 0 0 0 1.3-1.3z"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M14.1 5.1a2 2 0 0 0 1.8 0l3.7-1.8A1 1 0 0 1 21 4.2v12.6a1 1 0 0 1-.55.9l-4.55 2.3a2 2 0 0 1-1.8 0l-4.2-2.1a2 2 0 0 0-1.8 0l-3.7 1.8A1 1 0 0 1 3 18.8V6.2a1 1 0 0 1 .55-.9L8.1 3a2 2 0 0 1 1.8 0z"/><path d="M15 5.76v15"/><path d="M9 3.24v15"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v13"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-landmark" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 3 20 8H4z"/></symbol>
+  <symbol id="i-bookopen" viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M7.5 12h9"/><rect x="3.5" y="6" width="4" height="12" rx="1.5"/><rect x="16.5" y="6" width="4" height="12" rx="1.5"/><path d="M1.5 10v4"/><path d="M22.5 10v4"/></symbol>
+  <symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="M12 14l3-3"/><circle cx="12" cy="14" r="8"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4.5"/><path d="M12 16.5h.01"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
 </defs></svg>
 <header id="hdr">
   <div class="appbar">
@@ -1136,6 +1358,8 @@
     <div class="appbar-side" aria-hidden="true"></div>
   </div>
   <div class="kremlin" role="img" aria-label="Mura del Cremlino">
+    <div class="kremlin-sky" aria-hidden="true"><i class="moon"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="kremlin-snow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <span class="kremlin-wall"></span>
     <div class="kremlin-towers" aria-hidden="true">
       <svg viewBox="0 0 44 48" style="height:24px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
@@ -1150,12 +1374,14 @@
       <!-- corpo torre in mattoni -->
       <rect x="14" y="22" width="16" height="22" fill="#bb4a3c"/>
       <!-- finestre ad arco -->
-      <rect x="16.5" y="27" width="3.6" height="6.5" rx="1.8" fill="#2e211e"/>
-      <rect x="23.9" y="27" width="3.6" height="6.5" rx="1.8" fill="#2e211e"/>
+      <rect x="16.5" y="27" width="3.6" height="6.5" rx="1.8" style="fill:var(--kwin,#2e211e)"/>
+      <rect x="23.9" y="27" width="3.6" height="6.5" rx="1.8" style="fill:var(--kwin,#2e211e)"/>
       <!-- cornice sotto il tetto -->
       <rect x="12.5" y="19.5" width="19" height="3" fill="#9c3f33"/>
       <!-- tetto a tenda verde -->
       <path d="M11.5 20 L22 3 L32.5 20 Z" fill="#3f8161"/>
+      <!-- neve sul tetto (solo d'inverno) -->
+      <path d="M16.6 11.8 L22 3 L27.4 11.8 Q25.6 10.6 24.2 12.2 Q22.8 10.8 21.4 12.3 Q19.8 10.7 18.4 12.1 Q17.6 11.3 16.6 11.8 Z" style="fill:var(--ksnow,transparent)"/>
       <!-- guglia e stella dorata -->
       <rect x="21.4" y="0.5" width="1.2" height="3" fill="#9c3f33"/>
       <circle cx="22" cy="1.4" r="1.9" fill="#e7b84a"/>
@@ -1343,8 +1569,10 @@ function dailyStreak(){
 function recordDailyDone(){
   const s=dailyState(), t=todayStr();
   s.streak = (s.last===yesterdayStr()) ? (s.streak||0)+1 : (s.last===t ? (s.streak||1) : 1);
+  const primaOggi = s.last !== t;
   s.last=t; s.completed=true;
   localStorage.setItem(DAILY_KEY, JSON.stringify(s));
+  if(primaOggi) addXP(50);
 }
 // Restituisce le stesse 20 carte per tutto il giorno.
 // Si rinnova solo a mezzanotte o dopo aver completato il mazzo.
@@ -1527,6 +1755,9 @@ function grade(id, ok){
   s.last = Date.now();
   srs[id]=s; saveSrs();
   recordActivity(ok);        // alimenta la mappa dei progressi
+  // sbagliata: finisce tra gli errori; giusta: se c'era, ne esce
+  const x = voceDaId(id);
+  if(x){ if(ok) togliErrore(x.ru); else logErrore(x.ru, x.it, x.fonte); }
 }
 
 // ---------- HOME ----------
@@ -1620,6 +1851,8 @@ function makeDailyHero(){
 
 function renderHome(){
   leaveScreen();
+  _passoAttivo = null;
+  aggiornaCremlino();
   document.body.classList.add("is-home");
   backBtn.classList.add("hidden");
   appTitle.textContent = "";
@@ -1641,12 +1874,15 @@ function renderHome(){
       <button class="icon-btn" type="button" aria-label="Impostazioni" title="Impostazioni">${ic('gear')}</button>
     </div>`);
   hello.querySelector('h1').onclick = ()=>speak(sal.ru);
+  hello.querySelector('.hello-txt').appendChild(makeLivelloChip());
   hello.querySelector('.icon-btn').onclick = ()=>start("settings");
   home.appendChild(hello);
 
   // --- Ripasso del giorno + esercizi salvati ---
   const top = $(`<div class="home-top list" style="gap:12px"></div>`);
   top.appendChild(makeDailyHero());
+  const perc = makePercorsoCard();
+  if(perc) top.appendChild(perc);
   const ese = esesStore();
   const nVerbi = (ese.verbi||[]).filter(id=>(DB.verbi||[]).some(v=>v.id===id)).length;
   const eseParts = [];
@@ -1660,9 +1896,8 @@ function renderHome(){
     </button>`);
   eseTile.onclick = ()=>start("esercizi");
   top.appendChild(eseTile);
-  const wotd = makeWotd();
-  if(wotd) top.appendChild(wotd);
   home.appendChild(top);
+  home.appendChild(makeOggi());
 
   // --- Schede Pratica / Teoria ---
   let activeTab = localStorage.getItem('russo_home_tab') === 'teoria' ? 'teoria' : 'pratica';
@@ -1691,7 +1926,7 @@ function renderHome(){
       const on = b.dataset.tab===tab;
       b.classList.toggle('active', on); b.setAttribute('aria-selected', on);
     });
-    const grid = $(`<div class="grid g4"></div>`);
+    const grid = $(`<div class="grid g5"></div>`);
     if(dir) grid.classList.add(dir==='left' ? 'slide-left' : 'slide-right');
     gridWrap.innerHTML = '';
     gridWrap.appendChild(grid);
@@ -1708,6 +1943,8 @@ function renderHome(){
         [ic('headphones'),"Frasi &amp; ascolto","Completa la frase e ascoltala","phrase"],
         [ic('blocks'),"Componi la frase", cmpTot ? `${cmpTot} frasi composte &middot; metti in ordine` : "Metti in ordine le parole","compose"],
         [ic('hash'),"Numeri e ore","Contare, l'ora, i prezzi","numeri"],
+        [ic('dumbbell'),"Palestra di grammatica","Casi al volo e verbi di moto","palestra"],
+        [ic('timer'),"Sfida lampo", (extraStore().lampo ? `Record: ${extraStore().lampo} parole` : "Quante parole in 60 secondi?"),"lampo"],
         [ic('grid'),"Memory", rec ? `Record ${fmtTime(rec)} &middot; abbina a tempo` : "Abbina le coppie a tempo","memory"],
         [ic('chart'),"Progressi", st.seen ? `${st.note} imparate &middot; ${st.precisione}% giuste` : "Mappa dello studio e statistiche","stats"],
       ].forEach(([ico,t,d,mode])=>grid.appendChild(mkTile(ico,t,d,mode)));
@@ -1724,6 +1961,8 @@ function renderHome(){
         [ic('zap'),"Verbi", `${(DB.verbi||[]).length} verbi coniugati in tutti i tempi`, "verbi"],
         [ic('chat'),"Dialoghi", `${(DB.dialoghi||[]).length} scene da ascoltare e recitare`, "dialoghi"],
         [ic('quote'),"Frasario", "Frasi pronte per ogni situazione", "frasario"],
+        [ic('bookopen'),"Letture", `${(DB.letture||[]).length} racconti, traduzione al tocco`, "letture"],
+        [ic('landmark'),"Cultura e curiosità", "Proverbi, tradizioni, falsi amici", "cultura"],
         [`<span class="glyph">Жж</span>`,"Cirillico","Alfabeto, pronuncia e quiz","cyr"],
         [ic('rules'),"Regole grammaticali", `${(DB.riferimento||[]).length} schede da consultare`, "ref"],
         [ic('quiz'),"Grammatica","Regole in breve + quiz","gram"],
@@ -1812,6 +2051,12 @@ function start(mode){
     if(mode==="frasario") return runFrasario();
     if(mode==="compose") return runComponi();
     if(mode==="numeri") return runNumeri();
+    if(mode==="percorso") return runPercorso();
+    if(mode==="letture") return runLetture();
+    if(mode==="cultura") return runCultura();
+    if(mode==="proverbi") return runProverbi();
+    if(mode==="palestra") return runPalestra();
+    if(mode==="lampo") return runLampo();
   });
 }
 
@@ -2765,19 +3010,20 @@ function runEsercizi(){
   const stage = header('I miei esercizi');
 
   // Tre schede: Parole | Frasi | Verbi. Swipe come nella home.
-  const TABS = ['flash','frasi','verbi'];
+  const TABS = ['flash','frasi','verbi','errori'];
   const tabSalvata = localStorage.getItem('russo_ese_tab');
   let activeTab = TABS.includes(tabSalvata) ? tabSalvata : 'flash';
-  const tabsDiv = $(`<div class="home-tabs tre" role="tablist">
+  const tabsDiv = $(`<div class="home-tabs tre quattro" role="tablist">
     <button class="home-tab" data-tab="flash" type="button">${ic('cards')}Parole</button>
     <button class="home-tab" data-tab="frasi" type="button">${ic('headphones')}Frasi</button>
     <button class="home-tab" data-tab="verbi" type="button">${ic('zap')}Verbi</button>
+    <button class="home-tab" data-tab="errori" type="button">${ic('alert')}Errori</button>
   </div>`);
   stage.appendChild(tabsDiv);
   // i contatori sulle schede si aggiornano a ogni rimozione
   function paintCounts(){
     const s = esesStore();
-    const n = {flash:s.voci.length, frasi:s.frasi.length, verbi:(s.verbi||[]).filter(id=>(DB.verbi||[]).some(v=>v.id===id)).length};
+    const n = {flash:s.voci.length, frasi:s.frasi.length, verbi:(s.verbi||[]).filter(id=>(DB.verbi||[]).some(v=>v.id===id)).length, errori:erroriStore().length};
     tabsDiv.querySelectorAll('.home-tab').forEach(b=>{
       let c = b.querySelector('.n');
       if(!n[b.dataset.tab]){ if(c) c.remove(); return; }
@@ -2859,6 +3105,30 @@ function runEsercizi(){
     body.appendChild(list);
   }
 
+  // ---- Scheda Errori: le risposte sbagliate di tutti gli esercizi ----
+  function buildErrori(body){
+    const er = erroriStore();
+    if(!er.length){
+      body.appendChild($(`<div class="empty"><div class="big">🎯</div>Nessun errore da rivedere.<small>Ogni risposta sbagliata, in qualsiasi esercizio, finisce qui:<br>la riallenerai finché non la sai.</small></div>`));
+      return;
+    }
+    const go = $(`<button class="btn primary block" type="button">${ic('refresh')} Ripassa gli errori (${er.length})</button>`);
+    go.onclick = ()=>navigateTo(runErrori);
+    body.appendChild(go);
+    body.appendChild($(`<div class="sec-h">I più recenti</div>`));
+    const list = $(`<div class="list" style="gap:6px"></div>`);
+    er.slice().reverse().forEach(e=>{
+      const row = $(`<div class="ese-item" style="align-items:flex-start"><div class="txt"><div class="ru"></div><div class="it wrap"></div><span class="sg-tema"></span></div></div>`);
+      row.querySelector('.ru').textContent = e.ru;
+      row.querySelector('.it').textContent = e.it || '';
+      row.querySelector('.sg-tema').textContent = e.fonte || 'Errore';
+      row.prepend(spkBtn(onlyCyrillic(e.ru)));
+      row.appendChild(delBtn(()=>togliErrore(e.ru)));
+      list.appendChild(row);
+    });
+    body.appendChild(list);
+  }
+
   // ---- Scheda Verbi ----
   function buildVerbi(body){
     const s = esesStore();
@@ -2900,10 +3170,12 @@ function runEsercizi(){
     if(dir) panel.classList.add(dir==='left' ? 'slide-left' : 'slide-right');
     if(tab==='flash') buildFlash(panel);
     else if(tab==='frasi') buildFrasi(panel);
+    else if(tab==='errori') buildErrori(panel);
     else buildVerbi(panel);
     wrapOuter.innerHTML='';
     wrapOuter.appendChild(panel);
-    resetBtn.style.display = (()=>{ const s=esesStore(); return (s.voci.length||s.frasi.length||s.verbi.length) ? '' : 'none'; })();
+    const s0 = esesStore();
+    resetBtn.style.display = tab!=='errori' && (s0.voci.length || s0.frasi.length || s0.verbi.length) ? '' : 'none';
   }
 
   tabsDiv.querySelectorAll('.home-tab').forEach(b=>{
@@ -3461,6 +3733,8 @@ function runFlash(pool, topicLabel, opts){
     cardWrap.appendChild(flip);
     cardWrap.appendChild(reveal);
     cardWrap.appendChild(controls);
+    const mic = makeMicBtn(()=>c.ru);
+    if(mic) cardWrap.appendChild(mic);
     if(decl){ decl.style.display = ruFront ? '' : 'none'; cardWrap.appendChild(decl); }
     if(ruFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.ru), 150);
   }
@@ -4010,6 +4284,8 @@ function runPhrase(level, opts){
       card.querySelector('.q').innerHTML = rawWords.map((w,idx)=>idx===hideIdx?`<span style="color:var(--good)">${esc(w)}</span>`:esc(w)).join(" ");
       // Rivela la traslitterazione completa solo dopo la risposta
       if(f.translit) card.appendChild($(`<div class="qsub" style="color:var(--accent2);font-style:italic">${esc(f.translit)}</div>`));
+      const mic = makeMicBtn(()=>sentence, 'Ripeti la frase');
+      if(mic) card.appendChild(mic);
       const next=$(`<button class="btn primary block" type="button">${i+1<deck.length?'Continua':'Risultato'} →</button>`);
       next.onclick=()=>{i++; show();}; wrap.appendChild(next);
     }
@@ -4087,7 +4363,9 @@ function runMCQ(questions, title, restart, hooks){
         if(ok) correct++;
         else [...box.children].find(c=>c.dataset.v===Q.correct).classList.add("correct");
         if(Q.id) grade(Q.id, ok);
+        if(!ok && Q.err) logErrore(Q.err.ru, Q.err.it, Q.err.fonte);
         if(hooks.onAnswer) hooks.onAnswer(Q, ok);
+        else if(!Q.id) recordActivity(ok);
         if(Q.speak) speak(Q.speak);
         if(Q.after){ const a = $(`<div class="qsub q-after"></div>`); a.textContent = Q.after; card.appendChild(a); }
         const next=$(`<button class="btn primary block" type="button">${i+1<questions.length?"Avanti":"Risultato"} →</button>`);
@@ -4135,6 +4413,8 @@ function finish(stage, score, restart, info){
   const a=$(`<button class="btn" type="button">${ic('back')} Indietro</button>`); a.onclick=goBack;
   const b=$(`<button class="btn primary" type="button">${ic('refresh')} Ancora</button>`); b.onclick=restart;
   row.appendChild(a); row.appendChild(b); stage.appendChild(row);
+  const passo = passoCompletato(pct);
+  if(passo){ stage.appendChild(passoBox(passo)); if(passo.tappaFinita) confetti(stage.querySelector('.done')); }
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
@@ -4154,7 +4434,7 @@ function updExtra(fn){
 const contaExtra = (campo, ok) => { if(ok) updExtra(s=>{ s[campo] = (s[campo]||0) + 1; }); };
 
 // Le sezioni nuove hanno l'etichetta «Nuovo» in home finché non si aprono.
-const NUOVE_SEZIONI = ["dialoghi","frasario","compose","numeri"];
+const NUOVE_SEZIONI = ["dialoghi","frasario","compose","numeri","percorso","letture","cultura","palestra","lampo"];
 function sezioniViste(){ try{ return JSON.parse(localStorage.getItem("russo_sezioni_viste")||"[]"); }catch(e){ return []; } }
 function segnaSezioneVista(mode){
   if(!NUOVE_SEZIONI.includes(mode)) return;
@@ -4454,7 +4734,7 @@ function runRecita(d, ruolo){
         parlate++;
         const c = confrontaDetto(detto, b.ru);
         const ok = c.pct >= 70;
-        if(ok) capite++;
+        if(ok) capite++; else logErrore(b.ru, b.it, 'Recita');
         haptic(ok);
         el.querySelector('.ru').innerHTML = c.html;
         el.classList.add(ok ? 'good' : 'meh');
@@ -4473,6 +4753,7 @@ function runRecita(d, ruolo){
   }
   function fine(){
     segnaDialogo(d.id, 'r');
+    addXP(40);
     recordActivity(true);
     const testo = parlate
       ? `Il telefono ha capito bene ${capite} ${capite===1?'battuta':'battute'} su ${parlate}.`
@@ -4500,7 +4781,7 @@ function runDlgQuiz(d){
     const stesse = d.battute.filter((x,j)=>j!==k && x.s===mio && x.ru!==b.ru).map(x=>x.ru);
     const distr = [...new Set([...shuffle(stesse), ...shuffle(mieAltrove)])].filter(x=>x!==b.ru).slice(0,3);
     qs.push({q:prima.ru, sub:`«${prima.it}» — cosa rispondi?`, correct:b.ru, opts:shuffle([b.ru, ...distr]),
-             listen:prima.ru, speak:b.ru, after:b.it});
+             listen:prima.ru, speak:b.ru, after:b.it, err:{ru:b.ru, it:b.it, fonte:'Dialoghi'}});
   });
   const restart = ()=>runDlgQuiz(d);
   runMCQ(qs, `Cosa rispondi? · ${d.titolo}`, restart, {
@@ -4699,8 +4980,8 @@ function regolaCard(titolo, testo, esempi){
 }
 
 // Ascolta e scrivi: il numero si sente soltanto, si risponde in cifre.
-function runNumDettato(){
-  const [, lab, lo, hi] = numRange();
+function runNumDettato(rangeKey){
+  const [, lab, lo, hi] = NUM_RANGES.find(x=>x[0]===rangeKey) || numRange();
   const N = 10;
   const nums = []; let guard = 0;
   while(nums.length<N && guard++<200){ const x = rnd(lo, hi); if(!nums.includes(x) || hi-lo<N) nums.push(x); }
@@ -4712,7 +4993,7 @@ function runNumDettato(){
   const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
   onLeave(()=>{ stopKeys(); stopSpeech(); });
   function show(){
-    if(i>=N){ stopKeys(); return finish(stage, `${correct} / ${N}`, runNumDettato); }
+    if(i>=N){ stopKeys(); return finish(stage, `${correct} / ${N}`, ()=>runNumDettato(rangeKey)); }
     bar.style.width = (i/N*100)+'%'; bar.setNum(i, N);
     const n = nums[i], parole = numRu(n);
     wrap.innerHTML = '';
@@ -4734,6 +5015,7 @@ function runNumDettato(){
       const ok = +v === n;
       if(ok) correct++;
       haptic(ok); recordActivity(ok); contaExtra('num', ok);
+      if(!ok) logErrore(parole, n.toLocaleString('it-IT'), 'Numeri');
       inp.disabled = true;
       inp.classList.add(ok ? 'ok' : 'ko');
       const res = $(`<div class="qsub num-res"></div>`);
@@ -4753,8 +5035,8 @@ function runNumDettato(){
 }
 
 // Leggi il numero: parole russe → cifre (scelta multipla)
-function runNumLeggi(){
-  const [, lab, lo, hi] = numRange();
+function runNumLeggi(rangeKey){
+  const [, lab, lo, hi] = NUM_RANGES.find(x=>x[0]===rangeKey) || numRange();
   const qs = [];
   const usati = new Set();
   for(let k=0; k<10; k++){
@@ -4762,9 +5044,10 @@ function runNumLeggi(){
     while(usati.has(n) && g++<20) n = rnd(lo, hi);
     usati.add(n);
     const opts = [n, ...numeriVicini(n, lo, hi).slice(0,3)].map(x=>x.toLocaleString('it-IT'));
-    qs.push({q:numRu(n), sub:'Quale numero è?', correct:n.toLocaleString('it-IT'), opts:shuffle(opts), speak:numRu(n)});
+    qs.push({q:numRu(n), sub:'Quale numero è?', correct:n.toLocaleString('it-IT'), opts:shuffle(opts), speak:numRu(n),
+             err:{ru:numRu(n), it:n.toLocaleString('it-IT'), fonte:'Numeri'}});
   }
-  runMCQ(qs, `Leggi il numero · ${lab}`, runNumLeggi, {onAnswer:(Q, ok)=>{ recordActivity(ok); contaExtra('num', ok); }});
+  runMCQ(qs, `Leggi il numero · ${lab}`, ()=>runNumLeggi(rangeKey), {onAnswer:(Q, ok)=>{ recordActivity(ok); contaExtra('num', ok); }});
 }
 
 // Che ore sono? Orologio → ora in russo
@@ -4783,6 +5066,7 @@ function runOre(){
     qs.push({
       qHtml: clockSVG(h, m), sub:`Sono le ${h}:${String(m).padStart(2,'0')}`, correct:giusta,
       opts: shuffle([giusta, ...shuffle([...cand]).slice(0,3)]), speak:`Сейчас ${giusta}`, speakAfter:true,
+      err:{ru:giusta, it:`${h}:${String(m).padStart(2,'0')}`, fonte:'Ore'},
       after: coll ? `Nel parlato: «${coll}»` : 'Esatta: si può aggiungere «ровно» (in punto).'
     });
   }
@@ -4809,6 +5093,7 @@ function runPrezzi(){
     return {
       qHtml:`<div class="price-q"><span class="e">${e}</span><b>${n.toLocaleString('it-IT')} ₽</b></div>`,
       sub:`${cosa} — сколько стоит?`, correct:giusta, opts:shuffle([giusta, trappola, ...altri]),
+      err:{ru:giusta, it:`${n.toLocaleString('it-IT')} ₽`, fonte:'Prezzi'},
       speak:`Это стоит ${giusta}.`, speakAfter:true, after:`${n.toLocaleString('it-IT')} ₽: ${n%100>10 && n%100<20 ? 'finisce per 11–19 → sempre «рублей»' : n%10===1 ? 'finisce per 1 → «рубль»' : n%10>=2 && n%10<=4 ? 'finisce per 2, 3, 4 → «рубля»' : 'finisce per 5–9 o 0 → «рублей»'}`
     };
   });
@@ -5017,6 +5302,7 @@ function runComponi(level, opts){
       const ok = scelte.every((j, pos)=>chips[j].w === giuste[pos]);
       if(ok) correct++;
       haptic(ok); contaExtra('cmp', ok);
+      if(!ok) logErrore(f.ru, f.it, 'Componi');
       if(!f.dlg && /^f\d/.test(f.id)) grade(f.id, ok); else recordActivity(ok);
       line.classList.add(ok ? 'ok' : 'ko');
       bank.style.display = 'none';
@@ -5097,6 +5383,11 @@ function frasiConParola(ru){
 function runParolaGiorno(v){
   const stage = header('Parola del giorno', {narrow:true});
   stage.appendChild(makeVocabCard(v.ru, v.it, {translit:v.translit, tipo:v.tipo, tags:v.tag, id:v.id}));
+  const az = $(`<div class="row" style="flex-wrap:wrap;gap:8px"></div>`);
+  const mic = makeMicBtn(()=>v.ru);
+  az.appendChild(shareBtn({kick:'Parola del giorno', big:v.ru, sub:v.translit||'', it:v.it, file:'parola-del-giorno.jpg'}));
+  if(mic) az.appendChild(mic);
+  stage.appendChild(az);
   const es = frasiConParola(v.ru);
   if(es.length){
     stage.appendChild($(`<div class="sec-h">Nelle frasi</div>`));
@@ -5138,6 +5429,11 @@ function traguardi(){
     ['🧩','Costruttore','25 frasi composte', ex.cmp||0, 25],
     ['🧠','Memoria d\'acciaio','Memory difficile completato', mem[10] ? 1 : 0, 1],
     ['🔖','Collezionista','20 elementi negli esercizi', salvati, 20],
+    ['📖','Lettore','5 letture completate', Object.keys(ex.letture||{}).length, 5],
+    ['🏛️','Curioso','8 pillole di cultura lette', (ex.pillole||[]).length, 8],
+    ['🗺️','Esploratore','3 tappe del percorso', (DB.percorso||[]).filter(t=>tappaCompleta(t)).length, 3],
+    ['⚡','Fulmine','20 parole nella sfida lampo', ex.lampo||0, 20],
+    ['🎓','Studente','Livello 3 raggiunto', livelloDi(xpTotale()).n, 3],
   ];
 }
 function makeTraguardiCard(){
@@ -5154,6 +5450,1014 @@ function makeTraguardiCard(){
     g.appendChild(b);
   });
   return card;
+}
+
+// ================= PUNTI E LIVELLI =================
+// 10 punti per ogni risposta giusta, 2 per quelle sbagliate (provarci conta),
+// più i bonus: ripasso completato, dialogo recitato, lettura, tappe del percorso.
+const LIVELLI_XP = [
+  [0,'Новичок','Principiante'], [300,'Ученик','Apprendista'], [900,'Студент','Studente'],
+  [2000,'Знаток','Conoscitore'], [4000,'Мастер','Maestro'], [7000,'Профессор','Professore'],
+  [11000,'Академик','Accademico'], [16000,'Легенда','Leggenda'],
+];
+function xpTotale(){
+  const s = extraStore();
+  if(typeof s.xp === 'number') return s.xp;
+  // la prima volta si contano le risposte già date
+  let xp = 0;
+  Object.values(activityLog()).forEach(d=>{ xp += (d.ok||0)*10 + Math.max(0,(d.r||0)-(d.ok||0))*2; });
+  updExtra(x=>{ x.xp = xp; });
+  return xp;
+}
+function livelloDi(xp){
+  let i = 0;
+  while(i+1 < LIVELLI_XP.length && xp >= LIVELLI_XP[i+1][0]) i++;
+  const [da, ru, it] = LIVELLI_XP[i];
+  const prossimo = LIVELLI_XP[i+1] ? LIVELLI_XP[i+1][0] : null;
+  return {n:i+1, ru, it, da, prossimo, frac: prossimo ? (xp-da)/(prossimo-da) : 1};
+}
+function addXP(n){
+  if(!n) return;
+  const prima = xpTotale(), dopo = prima + n;
+  updExtra(s=>{ s.xp = dopo; });
+  // anche nel registro del giorno, per il riepilogo della settimana
+  const log = activityLog(), t = todayStr();
+  const d = log[t] || {r:0, ok:0};
+  d.xp = (d.xp||0) + n; log[t] = d;
+  try{ localStorage.setItem(ACTIVITY_KEY, JSON.stringify(log)); }catch(e){}
+  const a = livelloDi(prima), b = livelloDi(dopo);
+  if(b.n > a.n) setTimeout(()=>{ toast(`🎉 Livello ${b.n}: <b>${b.ru}</b> · ${b.it}`, 'gold'); haptic(true); }, 350);
+}
+
+// Avviso che compare in basso per qualche secondo
+function toast(html, tipo){
+  let box = document.getElementById('toasts');
+  if(!box){ box = $(`<div id="toasts" aria-live="polite"></div>`); document.body.appendChild(box); }
+  const t = $(`<div class="toast${tipo?' '+tipo:''}"></div>`);
+  t.innerHTML = html;
+  box.appendChild(t);
+  setTimeout(()=>t.classList.add('out'), 3300);
+  setTimeout(()=>t.remove(), 3800);
+}
+
+// ================= I MIEI ERRORI =================
+// Ogni risposta sbagliata (in qualsiasi esercizio) finisce qui, con il russo
+// giusto e la traduzione: si riallenano tutte insieme negli Esercizi.
+const ERRORI_KEY = "russo_errori_v1";
+function erroriStore(){ try{ const a = JSON.parse(localStorage.getItem(ERRORI_KEY)||"[]"); return Array.isArray(a) ? a : []; }catch(e){ return []; } }
+function saveErrori(a){ try{ localStorage.setItem(ERRORI_KEY, JSON.stringify(a.slice(-150))); }catch(e){} }
+function logErrore(ru, it, fonte){
+  if(!ru) return;
+  const a = erroriStore().filter(x=>x.ru!==ru);
+  a.push({ru, it:it||'', fonte:fonte||'', t:Date.now()});
+  saveErrori(a);
+}
+function togliErrore(ru){ const a = erroriStore(); const b = a.filter(x=>x.ru!==ru); if(b.length!==a.length) saveErrori(b); }
+// Da un id dell'SRS alla coppia russo/italiano (parole, frasi, frasi salvate)
+function voceDaId(id){
+  if(!DB) return null;
+  const v = (DB.voci||[]).find(x=>x.id===id);
+  if(v) return {ru:v.ru, it:v.it, fonte:'Parole'};
+  const f = (DB.frasi||[]).find(x=>x.id===id);
+  if(f) return {ru:f.ru, it:f.it, fonte:'Frasi'};
+  const e = esesStore().frasi.find(x=>x.id===id);
+  if(e) return {ru:e.ru, it:e.it, fonte:'Le mie frasi'};
+  return null;
+}
+
+// ================= PRONUNCIA: il microfono che ascolta =================
+// Pulsante «Pronuncia» riutilizzabile: il telefono ascolta e confronta con il
+// russo atteso, parola per parola (riconoscimento vocale del browser, nessuna chiave).
+function makeMicBtn(getTarget, label){
+  if(!SpeechRec) return null;
+  label = label || 'Pronuncia';
+  const box = $(`<div class="mic-box"><button class="btn soft sm mic-btn" type="button">${ic('mic')} ${label}</button><div class="mic-res"></div></div>`);
+  const btn = box.querySelector('button'), res = box.querySelector('.mic-res');
+  let rec = null;
+  const reset = ()=>{ btn.classList.remove('rec'); btn.innerHTML = `${ic('mic')} ${label}`; };
+  btn.onclick = e=>{
+    e.stopPropagation();
+    if(rec){ try{ rec.stop(); }catch(_){} return; }
+    stopSpeech();
+    btn.classList.add('rec'); btn.innerHTML = `${ic('stop')} Ascolto…`;
+    res.textContent = '';
+    rec = ascoltaRusso((testo, err)=>{
+      rec = null; reset();
+      if(!testo){
+        res.innerHTML = `<span class="mr-no">${err==='not-allowed'||err==='service-not-allowed' ? 'Microfono non consentito.' : 'Non ho sentito: riprova.'}</span>`;
+        return;
+      }
+      const c = confrontaDetto(testo, getTarget());
+      const [cls, msg] = c.pct>=80 ? ['ok','Ottima pronuncia!'] : c.pct>=50 ? ['mid','Quasi!'] : ['ko','Riprova'];
+      res.innerHTML = `<b class="${cls}">${msg}</b><span class="mr-heard"></span>`;
+      res.querySelector('.mr-heard').textContent = ` Ho sentito: «${testo}»`;
+      haptic(c.pct>=80);
+    }, parz=>{ res.textContent = parz; });
+  };
+  onLeave(()=>{ if(rec){ try{ rec.abort(); }catch(_){} rec = null; } });
+  return box;
+}
+
+// ================= IMMAGINE DA CONDIVIDERE =================
+// Una card 1080×1350 (parola del giorno, proverbio, record) da mandare su
+// WhatsApp & co. Dove il telefono non sa condividere file, si scarica.
+function _righe(ctx, testo, maxW){
+  const parole = String(testo).split(/\s+/), out = [];
+  let r = '';
+  parole.forEach(w=>{
+    const prova = r ? r + ' ' + w : w;
+    if(ctx.measureText(prova).width > maxW && r){ out.push(r); r = w; } else r = prova;
+  });
+  if(r) out.push(r);
+  return out;
+}
+async function condividiCard(o){
+  const W = 1080, H = 1350;
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const x = c.getContext('2d');
+  try{ await Promise.all([document.fonts.load('800 120px Inter'), document.fonts.load('600 44px Inter'), document.fonts.load('italic 500 44px Inter')]); }catch(e){}
+  const F = 'Inter, -apple-system, "Segoe UI", Roboto, sans-serif';
+  const g = x.createLinearGradient(0, 0, W*.6, H);
+  g.addColorStop(0, '#ef5064'); g.addColorStop(.55, '#c72a46'); g.addColorStop(1, '#5c1838');
+  x.fillStyle = g; x.fillRect(0, 0, W, H);
+  x.fillStyle = 'rgba(255,255,255,.08)';
+  x.beginPath(); x.arc(W-120, 150, 330, 0, Math.PI*2); x.fill();
+  x.beginPath(); x.arc(110, H-420, 210, 0, Math.PI*2); x.fill();
+  // mura del Cremlino in fondo
+  x.fillStyle = 'rgba(40,6,20,.42)';
+  x.fillRect(0, H-110, W, 110);
+  for(let i=-10; i<W; i+=72){
+    x.beginPath(); x.moveTo(i+10, H-109); x.lineTo(i+10, H-176); x.lineTo(i+36, H-150); x.lineTo(i+62, H-176); x.lineTo(i+62, H-109); x.closePath(); x.fill();
+  }
+  x.textAlign = 'center'; x.fillStyle = '#fff';
+  x.globalAlpha = .82; x.font = `800 38px ${F}`;
+  x.fillText(String(o.kick||'').toUpperCase(), W/2, 250);
+  x.globalAlpha = 1;
+  // testo grande, rimpicciolito finché sta in al massimo 4 righe
+  let size = o.bigSize || 150, righe;
+  do { x.font = `800 ${size}px ${F}`; righe = _righe(x, o.big, W-160); size -= 6; } while((righe.length>4 || righe.some(r=>x.measureText(r).width>W-160)) && size>48);
+  size += 6;
+  const lh = size*1.14, y0 = 560 - (righe.length-1)*lh/2;
+  righe.forEach((r,k)=>x.fillText(r, W/2, y0 + k*lh));
+  let y = y0 + (righe.length-1)*lh + 110;
+  if(o.sub){ x.globalAlpha = .85; x.font = `italic 500 46px ${F}`; _righe(x, o.sub, W-200).forEach(r=>{ x.fillText(r, W/2, y); y += 60; }); x.globalAlpha = 1; y += 20; }
+  if(o.it){ x.font = `600 54px ${F}`; _righe(x, o.it, W-200).forEach(r=>{ x.fillText(r, W/2, y); y += 70; }); }
+  x.globalAlpha = .9; x.font = `700 36px ${F}`;
+  x.fillText('Русский · impara il russo', W/2, H-40);
+  x.globalAlpha = 1;
+  const blob = await new Promise(r=>c.toBlob(r, 'image/jpeg', .92));
+  if(!blob) return;
+  const file = new File([blob], o.file || 'russo.jpg', {type:'image/jpeg'});
+  try{
+    if(navigator.canShare && navigator.canShare({files:[file]})){ await navigator.share({files:[file], title:o.kick||'Русский'}); return; }
+  }catch(e){ if(e && e.name==='AbortError') return; }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = file.name;
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+}
+function shareBtn(dati, testo){
+  const b = $(`<button class="btn soft sm" type="button">${ic('share')} ${testo||'Condividi'}</button>`);
+  b.onclick = async e=>{ e.stopPropagation(); b.disabled = true; try{ await condividiCard(typeof dati==='function' ? dati() : dati); } finally { b.disabled = false; } };
+  return b;
+}
+
+// ================= LETTURE =================
+// Racconti brevi: si leggono con la traduzione al tocco su ogni parola,
+// si ascoltano frase per frase e si chiudono con le domande di comprensione.
+function letteStato(){ return extraStore().letture || {}; }
+function runLetture(){
+  const stage = header('Letture');
+  const all = DB.letture || [];
+  stage.appendChild($(`<p class="sg-intro">Racconti brevi per il livello A1. <b>Tocca una parola</b> per la traduzione, ascolta il testo frase per frase e alla fine rispondi alle domande.</p>`));
+  if(!all.length){ stage.appendChild($(`<div class="empty"><div class="big">📖</div>Nessuna lettura disponibile.</div>`)); return; }
+  const fatte = letteStato();
+  [[1,'Livello 1 · Primi racconti'],[2,'Livello 2 · Un po\' più lunghi']].forEach(([lv, lab])=>{
+    const items = all.filter(l=>(l.livello||1)===lv);
+    if(!items.length) return;
+    stage.appendChild($(`<div class="sec-h">${lab}</div>`));
+    const list = $(`<div class="list"></div>`);
+    items.forEach(l=>{
+      const badge = fatte[l.id] ? `<div class="right"><span class="pill green">${ic('check')} Letta</span></div>` : '';
+      const t = $(`<button class="tile wide" type="button"><div class="ico">${l.icona||'📖'}</div>
+        <div class="txt"><div class="t"><span></span> <span class="tru"></span></div><div class="d"></div></div>${badge}</button>`);
+      t.querySelector('.t span').textContent = l.titolo;
+      t.querySelector('.tru').textContent = l.titoloRu;
+      t.querySelector('.d').textContent = `${l.frasi.length} frasi · ${l.domande.length} domande`;
+      t.onclick = ()=>navigateTo(()=>runLettura(l));
+      list.appendChild(t);
+    });
+    stage.appendChild(list);
+  });
+}
+function glossarioDi(l){
+  const m = new Map();
+  Object.entries(DB.glossarioLetture||{}).forEach(([k,v])=>m.set(normYo(k.toLowerCase()), v));
+  Object.entries(l.glossario||{}).forEach(([k,v])=>m.set(normYo(k.toLowerCase()), v));
+  return m;
+}
+function traduciParola(w, gl){
+  const k = normYo(String(w).toLowerCase());
+  if(gl.has(k)) return {it: gl.get(k)};
+  const v = (DB.voci||[]).find(x=>normYo((x.ru||'').toLowerCase())===k);
+  if(v) return {it: v.it, voce: v};
+  const vb = verbFormIndex().get(k);
+  if(vb) return {it: `forma di «${vb.inf}»${vb.en ? ' — '+vb.en : ''}`, verbo: vb};
+  if(/^[А-ЯЁ]/.test(w)) return {it: 'nome proprio (di persona o di luogo)', nome: true};
+  return null;
+}
+function runLettura(l){
+  const stage = header(l.titolo, {narrow:true});
+  const gl = glossarioDi(l);
+  const hero = $(`<div class="dlg-hero"><div class="e">${l.icona||'📖'}</div>
+    <div class="tx"><button class="ru" type="button" title="Ascolta"><span></span>${ic('vol')}</button><p></p></div></div>`);
+  hero.querySelector('.ru span').textContent = l.titoloRu;
+  hero.querySelector('p').textContent = `Livello ${l.livello||1} · tocca le parole per tradurle`;
+  hero.querySelector('.ru').onclick = ()=>{ stopPlay(); speak(l.titoloRu); };
+  stage.appendChild(hero);
+
+  const bar = $(`<div class="dlg-bar"></div>`);
+  const playBtn = $(`<button class="btn blue sm" type="button"></button>`);
+  const trBtn = $(`<button class="btn soft sm" type="button"></button>`);
+  bar.append(playBtn, trBtn);
+  stage.appendChild(bar);
+
+  const testo = $(`<div class="lt-text"></div>`);
+  const righe = l.frasi.map((f,k)=>{
+    const r = $(`<div class="lt-s"><button class="lt-play" type="button" aria-label="Ascolta la frase">${ic('vol')}</button><div class="lt-body"><div class="lt-ru"></div><div class="lt-it"></div></div></div>`);
+    const ruEl = r.querySelector('.lt-ru');
+    // ogni parola è toccabile; la punteggiatura resta testo semplice
+    f.ru.split(/(\s+)/).forEach(tok=>{
+      if(/^\s+$/.test(tok)){ ruEl.appendChild(document.createTextNode(' ')); return; }
+      const m = tok.match(/^([«"(—–-]*)(.*?)([.,!?;:»")…]*)$/);
+      const [, pre, core, post] = m || ['', '', tok, ''];
+      if(pre) ruEl.appendChild(document.createTextNode(pre));
+      if(core && /[а-яё]/i.test(core)){
+        const w = $(`<span class="lt-w" role="button" tabindex="0"></span>`);
+        w.textContent = core;
+        w.onclick = e=>{ e.stopPropagation(); popParola(w, core); };
+        ruEl.appendChild(w);
+      } else if(core) ruEl.appendChild(document.createTextNode(core));
+      if(post) ruEl.appendChild(document.createTextNode(post));
+    });
+    r.querySelector('.lt-it').textContent = f.it;
+    r.querySelector('.lt-play').onclick = ()=>{ stopPlay(); mark(k); speakAs(f.ru, 'A', ()=>mark(-1)); };
+    testo.appendChild(r);
+    return r;
+  });
+  stage.appendChild(testo);
+
+  function popParola(el, parola){
+    document.querySelectorAll('.vika-pop').forEach(p=>p.remove());
+    document.querySelectorAll('.lt-w.on').forEach(p=>p.classList.remove('on'));
+    el.classList.add('on');
+    const tr = traduciParola(parola, gl);
+    const pop = $(`<div class="vika-pop lt-pop"><b></b><div class="vika-it"></div><div class="pop-row"></div></div>`);
+    pop.querySelector('b').textContent = parola;
+    pop.querySelector('.vika-it').textContent = tr ? tr.it : 'Non è nel glossario: guarda la traduzione della frase.';
+    const row = pop.querySelector('.pop-row');
+    const sp = $(`<button type="button">🔊 Ascolta</button>`);
+    sp.onclick = e=>{ e.stopPropagation(); speak(parola); };
+    row.appendChild(sp);
+    if(tr && !tr.nome){
+      const id = tr.voce ? tr.voce.id : 'lt_' + normYo(parola.toLowerCase());
+      const gia = isEsesVoce(id);
+      const add = $(`<button type="button"></button>`);
+      add.textContent = gia ? '✓ Salvata' : '＋ Esercizi';
+      add.disabled = gia;
+      add.onclick = e=>{
+        e.stopPropagation();
+        const v = tr.voce;
+        addEsesVoce(id, v ? v.ru : parola.toLowerCase(), v ? v.it : tr.it, v ? v.translit : '', v ? v.tipo : (tr.verbo ? 'verbo' : ''), v ? v.tag : ['letture']);
+        add.textContent = '✓ Salvata'; add.disabled = true; haptic(true);
+      };
+      row.appendChild(add);
+    }
+    document.body.appendChild(pop);
+    const rc = el.getBoundingClientRect();
+    const pw = Math.min(250, window.innerWidth - 24);
+    pop.style.maxWidth = pw + 'px';
+    const left = Math.max(12, Math.min(window.innerWidth - pw - 12, rc.left + window.scrollX + rc.width/2 - pw/2));
+    pop.style.left = left + 'px';
+    pop.style.top = (rc.bottom + window.scrollY + 8) + 'px';
+    speak(parola);
+    const chiudi = ev=>{ if(!pop.contains(ev.target) && ev.target!==el){ pop.remove(); el.classList.remove('on'); document.removeEventListener('pointerdown', chiudi, true); } };
+    setTimeout(()=>document.addEventListener('pointerdown', chiudi, true), 0);
+    onLeave(()=>document.removeEventListener('pointerdown', chiudi, true));
+  }
+
+  let showIt = !!settings().ltIt;
+  function paintTr(){ testo.classList.toggle('show-it', showIt); trBtn.innerHTML = `${ic('eye')} ${showIt ? 'Nascondi traduzione' : 'Mostra traduzione'}`; }
+  trBtn.onclick = ()=>{ showIt = !showIt; setSetting('ltIt', showIt); paintTr(); };
+  paintTr();
+
+  let tok = 0, playing = false;
+  function mark(k){ righe.forEach((r,i)=>r.classList.toggle('playing', i===k)); }
+  function paintPlay(){ playBtn.innerHTML = playing ? `${ic('stop')} Ferma` : `${ic('play')} Ascolta tutto`; }
+  function stopPlay(){ tok++; playing = false; mark(-1); paintPlay(); }
+  playBtn.onclick = ()=>{
+    if(playing){ stopPlay(); stopSpeech(); return; }
+    const my = ++tok; playing = true; paintPlay();
+    let k = 0;
+    const step = ()=>{
+      if(my!==tok) return;
+      if(k>=l.frasi.length){ stopPlay(); return; }
+      mark(k); righe[k].scrollIntoView({block:'nearest', behavior:'smooth'});
+      speakAs(l.frasi[k].ru, 'A', ()=>{ if(my!==tok) return; k++; setTimeout(step, 450); });
+    };
+    step();
+  };
+  paintPlay();
+  onLeave(()=>{ tok++; stopSpeech(); });
+
+  // glossario completo, chiuso
+  const voci = Object.entries(l.glossario||{});
+  if(voci.length){
+    const det = $(`<details class="pcard lt-gloss"><summary>${ic('book')} Glossario <span class="pill">${voci.length}</span></summary><div class="kw-list"></div></details>`);
+    voci.forEach(([ru, it])=>{
+      const r = $(`<button class="kw" type="button"><b></b><span></span></button>`);
+      r.querySelector('b').textContent = ru; r.querySelector('span').textContent = it;
+      r.onclick = ()=>speak(ru);
+      det.querySelector('.kw-list').appendChild(r);
+    });
+    stage.appendChild(det);
+  }
+
+  const q = $(`<button class="btn primary block" type="button">${ic('quiz')} Domande di comprensione (${l.domande.length})</button>`);
+  q.onclick = ()=>{ stopPlay(); stopSpeech(); navigateTo(()=>runLetturaQuiz(l)); };
+  stage.appendChild(q);
+}
+function runLetturaQuiz(l){
+  const qs = l.domande.map(d=>({q:d.q, sub:d.it, correct:d.ok, opts:shuffle([d.ok, ...d.opts]), speak:d.q,
+                                err:{ru:`${d.q} — ${d.ok}`, it:d.it, fonte:'Letture'}}));
+  runMCQ(shuffle(qs), `Domande · ${l.titolo}`, ()=>runLetturaQuiz(l), {
+    onAnswer:(Q, ok)=>recordActivity(ok),
+    onEnd:(giuste, tot)=>{
+      if(giuste/tot >= .6){
+        const prima = !!letteStato()[l.id];
+        updExtra(s=>{ s.letture = s.letture || {}; s.letture[l.id] = true; });
+        if(!prima) addXP(40);
+      }
+    }
+  });
+}
+
+// ================= CULTURA E CURIOSITÀ =================
+const giornoN = () => Math.floor((new Date(todayStr()+'T12:00:00')).getTime() / DAY_MS);
+function proverbioDelGiorno(){ const p = DB.proverbi || []; return p.length ? p[giornoN() % p.length] : null; }
+function pillolaDelGiorno(){ const p = DB.cultura || []; return p.length ? p[(giornoN()*7 + 3) % p.length] : null; }
+function cardProverbio(p){ return {kick:'Proverbio russo', big:p.ru, sub:p.lett, it:p.it ? '≈ '+p.it : '', bigSize:96, file:'proverbio-russo.jpg'}; }
+
+function runCultura(){
+  const stage = header('Cultura e curiosità');
+  stage.appendChild($(`<p class="sg-intro">Tradizioni, modi di dire e parole trappola: tutto quello che un libro di grammatica non ti racconta.</p>`));
+  const p = proverbioDelGiorno();
+  if(p){
+    stage.appendChild($(`<div class="sec-h">Proverbio del giorno</div>`));
+    const c = $(`<div class="prov-card"><button class="pv-ru" type="button"></button><div class="pv-lett"></div><div class="pv-it"></div><div class="row"></div></div>`);
+    c.querySelector('.pv-ru').textContent = p.ru;
+    c.querySelector('.pv-ru').onclick = ()=>speak(p.ru);
+    c.querySelector('.pv-lett').textContent = `Alla lettera: ${p.lett}`;
+    c.querySelector('.pv-it').textContent = p.it ? `≈ ${p.it}` : '';
+    const tutti = $(`<button class="btn sm" type="button">${ic('list')} Tutti i proverbi</button>`);
+    tutti.onclick = ()=>navigateTo(runProverbi);
+    c.querySelector('.row').append(shareBtn(cardProverbio(p)), tutti);
+    stage.appendChild(c);
+  }
+  stage.appendChild($(`<div class="sec-h">Parole trappola</div>`));
+  const list = $(`<div class="list"></div>`);
+  [
+    ['🪤','Falsi amici', `${(DB.falsiAmici||[]).length} parole che sembrano italiane ma non lo sono`, ()=>runParoleTrappola('falsi')],
+    ['👯','Parole gemelle', `${(DB.paroleGemelle||[]).length} parole che capisci già`, ()=>runParoleTrappola('gemelle')],
+    ['❓','Quiz: amico o nemico?','Cosa vuol dire davvero questa parola?', ()=>runQuizTrappola()],
+  ].forEach(([e,t,dd,fn])=>{
+    const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t">${t}</div><div class="d">${dd}</div></div></button>`);
+    b.onclick = ()=>navigateTo(fn);
+    list.appendChild(b);
+  });
+  stage.appendChild(list);
+  stage.appendChild($(`<div class="sec-h">Russia in pillole</div>`));
+  const lette = new Set(extraStore().pillole || []);
+  const grid = $(`<div class="topic-grid"></div>`);
+  (DB.cultura||[]).forEach(c=>{
+    const b = $(`<button class="topic${lette.has(c.id)?' letta':''}" type="button"><span class="e">${c.icona}</span><span class="tt"><b></b><small>${lette.has(c.id)?'✓ letta':plur(c.parole.length,'parola','parole')}</small></span></button>`);
+    b.querySelector('b').textContent = c.titolo;
+    b.onclick = ()=>navigateTo(()=>runPillola(c));
+    grid.appendChild(b);
+  });
+  stage.appendChild(grid);
+}
+function runPillola(c){
+  const all = DB.cultura || [];
+  const k = all.indexOf(c);
+  const stage = header(c.titolo, {narrow:true});
+  updExtra(s=>{ const a = s.pillole || []; if(!a.includes(c.id)) a.push(c.id); s.pillole = a; });
+  stage.appendChild($(`<div class="pill-hero"><div class="e">${c.icona}</div><h2></h2></div>`));
+  stage.querySelector('.pill-hero h2').textContent = c.titolo;
+  const p = $(`<div class="pcard pill-testo"><p></p></div>`);
+  p.querySelector('p').textContent = c.testo;
+  stage.appendChild(p);
+  if(c.parole && c.parole.length){
+    const kw = $(`<div class="pcard"><h3>${ic('key')} Le parole</h3><div class="kw-list"></div></div>`);
+    c.parole.forEach((w,j)=>{
+      const r = $(`<div class="kw kw-add"><button class="kw-t" type="button"><b></b><span></span></button></div>`);
+      r.querySelector('b').textContent = w.ru; r.querySelector('span').textContent = w.it;
+      r.querySelector('.kw-t').onclick = ()=>speak(onlyCyrillic(w.ru));
+      const id = `cu_${c.id}_${j}`;
+      const add = $(`<button class="mini-btn add" type="button"></button>`);
+      const paint = ()=>{ const s = isEsesVoce(id); add.innerHTML = s ? ic('check') : ic('plus'); add.classList.toggle('added', s); add.disabled = s; add.title = s ? 'Negli esercizi' : 'Aggiungi agli esercizi'; add.setAttribute('aria-label', add.title); };
+      add.onclick = ()=>{ addEsesVoce(id, w.ru, w.it, '', '', ['cultura']); paint(); haptic(true); };
+      paint();
+      r.appendChild(add);
+      kw.querySelector('.kw-list').appendChild(r);
+    });
+    stage.appendChild(kw);
+  }
+  const nav = $(`<div class="row"></div>`);
+  if(k>0){ const a = $(`<button class="btn" type="button">${ic('back')} ${esc(all[k-1].icona)}</button>`); a.onclick = ()=>runPillola(all[k-1]); nav.appendChild(a); }
+  if(k<all.length-1){ const b = $(`<button class="btn primary" type="button">Prossima: ${esc(all[k+1].titolo)} ›</button>`); b.onclick = ()=>runPillola(all[k+1]); nav.appendChild(b); }
+  stage.appendChild(nav);
+}
+function runProverbi(){
+  const stage = header('Proverbi russi');
+  const all = DB.proverbi || [];
+  const oggi = proverbioDelGiorno();
+  stage.appendChild($(`<p class="sg-intro">${all.length} proverbi con la traduzione alla lettera e il nostro modo di dire più vicino. Tocca il russo per ascoltarlo.</p>`));
+  const quiz = $(`<button class="btn primary block" type="button">${ic('quiz')} Quiz: trova l'equivalente italiano</button>`);
+  quiz.onclick = ()=>navigateTo(runQuizProverbi);
+  stage.appendChild(quiz);
+  const list = $(`<div class="list" style="gap:10px"></div>`);
+  all.forEach(p=>{
+    const c = $(`<div class="prov-card sm${p===oggi?' today':''}"><button class="pv-ru" type="button"></button><div class="pv-lett"></div><div class="pv-it"></div></div>`);
+    c.querySelector('.pv-ru').textContent = p.ru;
+    c.querySelector('.pv-ru').onclick = ()=>speak(p.ru);
+    c.querySelector('.pv-lett').textContent = p.lett;
+    c.querySelector('.pv-it').textContent = p.it ? `≈ ${p.it}` : '';
+    if(p===oggi) c.prepend($(`<span class="pill gold">Proverbio di oggi</span>`));
+    list.appendChild(c);
+  });
+  stage.appendChild(list);
+}
+function runQuizProverbi(){
+  const con = (DB.proverbi||[]).filter(p=>p.it && p.it!==p.lett);
+  const qs = sample(con, Math.min(8, con.length)).map(p=>{
+    const altri = sample([...new Set(con.filter(x=>x.it!==p.it).map(x=>x.it))], 3);
+    return {q:p.ru, sub:'Qual è il proverbio italiano più vicino?', correct:p.it, opts:shuffle([p.it, ...altri]), speak:p.ru,
+            after:`Alla lettera: ${p.lett}`, err:{ru:p.ru, it:p.it, fonte:'Proverbi'}};
+  });
+  runMCQ(qs, 'Quiz dei proverbi', runQuizProverbi, {onAnswer:(Q, ok)=>recordActivity(ok)});
+}
+function runParoleTrappola(tab){
+  const stage = header('Parole trappola');
+  const seg = $(`<div class="seg center"><button type="button" data-t="falsi">🪤 Falsi amici</button><button type="button" data-t="gemelle">👯 Parole gemelle</button></div>`);
+  stage.appendChild(seg);
+  const body = $(`<div class="list" style="gap:8px"></div>`);
+  stage.appendChild(body);
+  function paint(){
+    seg.querySelectorAll('button').forEach(b=>b.classList.toggle('on', b.dataset.t===tab));
+    body.innerHTML = '';
+    if(tab==='falsi'){
+      body.appendChild($(`<p class="sg-intro">Sembrano parole italiane, ma vogliono dire tutt'altro. Occhio!</p>`));
+      (DB.falsiAmici||[]).forEach(f=>{
+        const r = $(`<button class="ff-item" type="button"><b></b><div class="ff-no">${ic('x')} <span></span></div><div class="ff-si">${ic('check')} <span></span></div></button>`);
+        r.querySelector('b').textContent = f.ru;
+        r.querySelector('.ff-no span').textContent = `non è «${f.sembra}»`;
+        r.querySelector('.ff-si span').textContent = f.it;
+        r.onclick = ()=>speak(f.ru);
+        body.appendChild(r);
+      });
+    } else {
+      body.appendChild($(`<p class="sg-intro">Queste invece le capisci già: stessa origine, suono quasi uguale. Leggile ad alta voce!</p>`));
+      const g = $(`<div class="num-grid"></div>`);
+      (DB.paroleGemelle||[]).forEach(p=>{
+        const r = $(`<button class="num-row" type="button"><span class="gm-ru"></span><b></b></button>`);
+        r.querySelector('.gm-ru').textContent = p.ru; r.querySelector('b').textContent = p.it;
+        r.onclick = ()=>speak(p.ru);
+        g.appendChild(r);
+      });
+      body.appendChild(g);
+    }
+    const q = $(`<button class="btn primary block" type="button" style="margin-top:6px">${ic('quiz')} Mettiti alla prova</button>`);
+    q.onclick = ()=>navigateTo(runQuizTrappola);
+    body.appendChild(q);
+  }
+  seg.querySelectorAll('button').forEach(b=>b.onclick = ()=>{ tab = b.dataset.t; paint(); });
+  paint();
+}
+function runQuizTrappola(){
+  const falsi = DB.falsiAmici || [], gem = DB.paroleGemelle || [];
+  const breve = s => String(s).replace(/\s*\(.*\)\s*$/, '');
+  const qs = [...sample(falsi, 6).map(f=>({ru:f.ru, ok:breve(f.it), trappola:f.sembra})), ...sample(gem, 4).map(g=>({ru:g.ru, ok:breve(g.it)}))]
+    .map(x=>{
+      const altri = sample([...falsi.map(f=>breve(f.it)), ...gem.map(g=>breve(g.it))].filter(t=>t!==x.ok && t!==x.trappola), x.trappola ? 2 : 3);
+      const opts = shuffle([x.ok, ...(x.trappola ? [x.trappola] : []), ...altri]);
+      return {q:x.ru, sub:'Cosa vuol dire?', correct:x.ok, opts, speak:x.ru,
+              after: x.trappola ? `Falso amico: sembra «${x.trappola}», ma non lo è!` : 'Parola gemella: si capisce al volo.',
+              err:{ru:x.ru, it:x.ok, fonte:'Parole trappola'}};
+    });
+  runMCQ(shuffle(qs), 'Amico o nemico?', runQuizTrappola, {onAnswer:(Q, ok)=>recordActivity(ok)});
+}
+
+// ================= PALESTRA DI GRAMMATICA =================
+const CASI_INFO = {
+  pre:['Prepositivo','dove? di cosa? — в, на, о'], acc:['Accusativo','dove vai? cosa? — в, на + oggetto'],
+  gen:['Genitivo','di chi? quanto? non c\'è — нет, у, из, без'], dat:['Dativo','a chi? da chi? — к, по, нравится'],
+  str:['Strumentale','con chi? con cosa? — с, lavoro come…'],
+};
+function runPalestra(){
+  const stage = header('Palestra di grammatica');
+  stage.appendChild($(`<p class="sg-intro">Le due cose che fanno sudare chi studia il russo: <b>i casi</b> e <b>i verbi di moto</b>. Qui si allenano in frasi vere, con la spiegazione dopo ogni risposta.</p>`));
+  stage.appendChild($(`<div class="sec-h">Casi al volo</div>`));
+  const list = $(`<div class="list"></div>`);
+  const casi = DB.casi || [];
+  const mk = (e, t, dd, fn)=>{ const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t">${t}</div><div class="d">${dd}</div></div></button>`); b.onclick = ()=>navigateTo(fn); return b; };
+  list.appendChild(mk('🎲', 'Tutti i casi', `${casi.length} frasi · 10 per giro`, ()=>runCasi(null)));
+  Object.entries(CASI_INFO).forEach(([k,[nome, uso]])=>{
+    const n = casi.filter(c=>c.caso===k).length;
+    if(n) list.appendChild(mk(`<span class="caso-tag c-${k}">${nome.slice(0,3)}</span>`, nome, `${uso} · ${n} frasi`, ()=>runCasi(k)));
+  });
+  stage.appendChild(list);
+  const rif = (DB.riferimento||[]).find(r=>/casi/i.test(r.titolo||''));
+  if(rif){
+    const l = $(`<button class="textbtn" type="button" style="align-self:flex-start">${ic('rules')} Rivedi la scheda «${esc(rif.titolo)}»</button>`);
+    l.onclick = ()=>navigateTo(()=>runReference(rif.id));
+    stage.appendChild(l);
+  }
+  // Verbi di moto: teoria in breve + allenamento
+  const vm = DB.verbiMoto;
+  if(vm){
+    stage.appendChild($(`<div class="sec-h">Verbi di moto</div>`));
+    const c = $(`<div class="pcard moto-card"><h3>${ic('zap')} Andare: a piedi o con un mezzo, adesso o di solito</h3><ul class="moto-reg"></ul><div class="moto-tab"></div></div>`);
+    vm.regole.forEach(r=>{ const li = document.createElement('li'); li.textContent = r; c.querySelector('.moto-reg').appendChild(li); });
+    const tab = c.querySelector('.moto-tab');
+    vm.verbi.forEach(v=>{
+      const col = $(`<div class="mv"><button class="mv-inf" type="button"></button><div class="mv-it"></div><div class="mv-f"></div><div class="mv-p"></div></div>`);
+      col.querySelector('.mv-inf').textContent = v.inf;
+      col.querySelector('.mv-inf').onclick = ()=>speak(v.inf);
+      col.querySelector('.mv-it').textContent = v.it;
+      col.querySelector('.mv-f').textContent = v.pres.join(', ');
+      col.querySelector('.mv-p').textContent = `passato: ${v.pass}`;
+      tab.appendChild(col);
+    });
+    stage.appendChild(c);
+    const go = $(`<button class="btn primary block" type="button">${ic('zap')} Allenati: ${vm.frasi.length} frasi</button>`);
+    go.onclick = ()=>navigateTo(runMotoQuiz);
+    stage.appendChild(go);
+  }
+}
+function runCasi(caso){
+  const pool = (DB.casi||[]).filter(c=>!caso || c.caso===caso);
+  const nomi = DB.casiNomi || {};
+  const qs = sample(pool, Math.min(10, pool.length)).map(c=>{
+    const forme = [...new Set(nomi[c.base] || [])].filter(f=>f!==c.ok);
+    const intera = c.frase.replace('___', c.ok);
+    return {q:c.frase.replace('___', '____'), sub:`(${c.base}) · ${c.it}`, correct:c.ok, opts:shuffle([c.ok, ...sample(forme, 3)]),
+            speak:intera, speakAfter:true, after:`${CASI_INFO[c.caso][0]}: ${c.perche}`, err:{ru:intera, it:c.it, fonte:'Casi'}};
+  });
+  runMCQ(qs, caso ? `Casi · ${CASI_INFO[caso][0]}` : 'Casi al volo', ()=>runCasi(caso), {onAnswer:(Q, ok)=>recordActivity(ok)});
+}
+function runMotoQuiz(){
+  const fr = (DB.verbiMoto||{}).frasi || [];
+  const qs = sample(fr, Math.min(10, fr.length)).map(f=>{
+    const intera = f.frase.replace('___', f.ok);
+    return {q:f.frase.replace('___', '____'), sub:f.it, correct:f.ok, opts:shuffle([f.ok, ...f.opts]), speak:intera, speakAfter:true,
+            after:f.perche, err:{ru:intera, it:f.it, fonte:'Verbi di moto'}};
+  });
+  runMCQ(qs, 'Verbi di moto', runMotoQuiz, {onAnswer:(Q, ok)=>recordActivity(ok)});
+}
+
+// ================= SFIDA LAMPO =================
+// 60 secondi: quante parole riesci a tradurre? Il record resta sul telefono.
+function runLampo(){
+  const stage = header('Sfida lampo', {narrow:true});
+  const rec = extraStore().lampo || 0;
+  const pool = (DB.voci||[]).filter(v=>v.ru && v.it && !/\s/.test(v.ru.trim()) && (v.difficolta||1)<=2 && v.it.length<=26);
+  const start = $(`<div class="done lampo-start"><div class="big">⚡</div><h2>60 secondi</h2>
+    <p class="muted" style="margin:0">Leggi la parola russa e tocca la traduzione giusta, il più in fretta possibile.<br>${rec ? `Il tuo record: <b>${rec}</b> parole.` : 'Ancora nessun record: fissalo tu!'}</p></div>`);
+  const via = $(`<button class="btn primary block" type="button">${ic('play')} Via!</button>`);
+  stage.append(start, via);
+  via.onclick = ()=>gioca();
+  function gioca(){
+    stage.innerHTML = '';
+    const top = $(`<div class="lampo-top"><div class="lampo-time"><i></i></div><div class="lampo-score"><b>0</b> parole</div></div>`);
+    const wrap = $(`<div class="list" style="gap:12px"></div>`);
+    stage.append(top, wrap);
+    const fill = top.querySelector('.lampo-time i'), scoreEl = top.querySelector('.lampo-score b');
+    const DURATA = 60000, t0 = Date.now();
+    let punti = 0, sbagli = 0, fine = false, timer = null, onKey = null;
+    const usate = new Set();
+    const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
+    const tick = ()=>{
+      const rest = Math.max(0, DURATA - (Date.now()-t0));
+      fill.style.width = (rest/DURATA*100) + '%';
+      fill.classList.toggle('poco', rest < 10000);
+      if(rest<=0) return termina();
+      timer = requestAnimationFrame(tick);
+    };
+    onLeave(()=>{ fine = true; cancelAnimationFrame(timer); stopKeys(); });
+    function domanda(){
+      if(fine) return;
+      let v, g = 0;
+      do { v = pool[Math.floor(Math.random()*pool.length)]; } while(usate.has(v.id) && g++<30);
+      usate.add(v.id);
+      const altri = [];
+      while(altri.length<3){ const x = pool[Math.floor(Math.random()*pool.length)]; if(x.it!==v.it && !altri.includes(x.it)) altri.push(x.it); }
+      const opts = shuffle([v.it, ...altri]);
+      wrap.innerHTML = '';
+      const card = $(`<div class="qcard lampo-q"><div class="q"></div></div>`);
+      card.querySelector('.q').textContent = v.ru;
+      card.querySelector('.q').style.fontSize = fitSize(v.ru, 38, 24) + 'px';
+      const box = $(`<div class="options lampo-opts"></div>`);
+      let risposto = false;
+      opts.forEach((o,k)=>{
+        const b = $(`<button class="opt" type="button"><span class="kn">${k+1}</span></button>`);
+        b.appendChild(document.createTextNode(o));
+        b.onclick = ()=>{
+          if(risposto || fine) return;
+          risposto = true;
+          const ok = o===v.it;
+          b.classList.add(ok ? 'correct' : 'wrong');
+          haptic(ok); recordActivity(ok);
+          if(ok){ punti++; scoreEl.textContent = punti; setTimeout(domanda, 160); }
+          else {
+            sbagli++; logErrore(v.ru, v.it, 'Sfida lampo');
+            [...box.children].find(c=>c.lastChild.textContent===v.it).classList.add('correct');
+            setTimeout(domanda, 650);
+          }
+        };
+        box.appendChild(b);
+      });
+      wrap.append(card, box);
+    }
+    onKey = e=>{ const k = parseInt(e.key,10); const box = wrap.querySelector('.options'); if(box && k>=1 && k<=4) box.children[k-1].click(); };
+    document.addEventListener('keydown', onKey);
+    function termina(){
+      if(fine) return;
+      fine = true; stopKeys();
+      const prima = extraStore().lampo || 0;
+      const record = punti > prima;
+      if(record){ updExtra(s=>{ s.lampo = punti; }); addXP(20); }
+      finish(stage, record ? `${punti} parole` : `${punti} parole`, runLampo, {
+        titolo: record ? `Nuovo record: ${punti}! ⚡` : `${punti} ${punti===1?'parola':'parole'} in 60 secondi`,
+        testo: `${sbagli ? `${plur(sbagli,'errore','errori')}, finiti tra gli errori da ripassare. ` : 'Nessun errore! '}${record ? '' : `Record: ${prima}.`}`
+      });
+      if(record) confetti(stage.querySelector('.done'));
+      if(punti) stage.appendChild(shareBtn({kick:'Sfida lampo', big:`${punti} parole`, sub:'in 60 secondi', it:'Riesci a battermi?', bigSize:170, file:'sfida-lampo.jpg'}, 'Condividi il risultato'));
+    }
+    domanda();
+    timer = requestAnimationFrame(tick);
+  }
+}
+
+// ================= DETTATO DI FRASI =================
+// Si sente una frase intera e la si scrive: ascolto + ortografia insieme.
+function runDettatoFrasi(){
+  const pool = (DB.frasi||[]).filter(f=>{ const n = paroleFrase(f.ru).length; return n>=2 && n<=7; });
+  const deck = shuffle(pool.slice()).sort((a,b)=>(isDue(b.id)?1:0)-(isDue(a.id)?1:0)).slice(0, 8);
+  const stage = header('Dettato di frasi', {narrow:true});
+  const bar = progressBar(stage);
+  const wrap = $(`<div class="list" style="gap:12px"></div>`); stage.appendChild(wrap);
+  let i = 0, correct = 0, onKey = null;
+  const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
+  onLeave(()=>{ stopKeys(); stopSpeech(); });
+  function show(){
+    if(i>=deck.length){ stopKeys(); return finish(stage, `${correct} / ${deck.length}`, runDettatoFrasi); }
+    bar.style.width = (i/deck.length*100)+'%'; bar.setNum(i, deck.length);
+    const f = deck[i], sol = f.ru, solW = paroleFrase(sol);
+    wrap.innerHTML = '';
+    const card = $(`<div class="qcard"><div class="kick">Scrivi quello che senti</div>
+      <div class="row" style="justify-content:center;gap:10px"><button class="big-play" type="button" aria-label="Ascolta">${ic('vol')}</button>
+      <button class="slow-play" type="button" aria-label="Ascolta piano">🐢</button></div>
+      <div class="qsub">${plur(solW.length,'parola','parole')} · tocca per riascoltare</div></div>`);
+    const dire = rate=>{
+      if(!('speechSynthesis' in window)) return;
+      _ttsGen++; speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(sol); u.lang = 'ru-RU'; if(ruVoice) u.voice = ruVoice; u.rate = rate; speechSynthesis.speak(u);
+    };
+    card.querySelector('.big-play').onclick = ()=>dire(settings().ttsRate);
+    card.querySelector('.slow-play').onclick = ()=>dire(0.55);
+    wrap.appendChild(card);
+    const inp = $(`<input class="vocab-input plain dt-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Scrivi in cirillico…">`);
+    const chk = $(`<button class="btn primary block" type="button">${ic('check')} Verifica</button>`);
+    const res = $(`<div class="dt-res" style="display:none"></div>`);
+    wrap.append(inp, res, chk);
+    let answered = false;
+    const useKbd = settings().kbd;
+    let kbd = null;
+    if(useKbd){ inp.readOnly = true; inp.inputMode = 'none'; kbd = makeCyrKeyboard(inp, ()=>{}, ()=>answered); wrap.appendChild(kbd); }
+    chk.onclick = ()=>{
+      if(answered){ i++; return show(); }
+      if(!inp.value.trim()){ if(!useKbd) inp.focus(); return; }
+      answered = true;
+      const scritte = normWrite(inp.value).split(' ').filter(Boolean);
+      const giuste = solW.map(w=>normWrite(w));
+      const ok = scritte.join(' ') === giuste.join(' ');
+      if(ok) correct++;
+      haptic(ok); grade(f.id, ok);
+      if(!ok) logErrore(f.ru, f.it, 'Dettato di frasi');
+      // parola per parola: verde se giusta nella stessa posizione
+      res.innerHTML = `<div class="dt-cmp">${solW.map((w,k)=>`<span class="${scritte[k]===giuste[k]?'ok':'no'}">${esc(w)}</span>`).join(' ')}</div>
+        <div class="dt-it"></div>${f.translit?'<div class="dt-tr"></div>':''}`;
+      res.querySelector('.dt-it').textContent = f.it;
+      if(f.translit) res.querySelector('.dt-tr').textContent = f.translit;
+      res.style.display = '';
+      inp.classList.add(ok ? 'ok' : 'ko');
+      if(kbd) kbd.style.display = 'none';
+      chk.innerHTML = `${ok ? '✓ Giusto! ' : ''}${i+1<deck.length ? 'Continua' : 'Risultato'} →`;
+      dire(settings().ttsRate);
+    };
+    stopKeys();
+    onKey = e=>{ if(e.key==='Enter'){ e.preventDefault(); chk.click(); } };
+    document.addEventListener('keydown', onKey);
+    setTimeout(()=>dire(settings().ttsRate), 300);
+    if(!useKbd) setTimeout(()=>{ try{ inp.focus({preventScroll:true}); }catch(e){} }, 80);
+  }
+  if(!deck.length) return emptyDone(stage, '🎧', 'Nessuna frase', 'Non ci sono frasi adatte al dettato.');
+  show();
+}
+
+// ================= RIPASSO DEGLI ERRORI =================
+function runErrori(){
+  let deck = shuffle(erroriStore().slice());
+  const tot = deck.length;
+  const stage = header('Ripasso degli errori', {narrow:true});
+  if(!tot) return emptyDone(stage, '🎯', 'Nessun errore da rivedere', 'Quando sbagli una risposta, la ritrovi qui.');
+  const bar = progressBar(stage);
+  const wrap = $(`<div class="list" style="gap:12px"></div>`); stage.appendChild(wrap);
+  let fatti = 0, sbagli = 0, onKey = null;
+  const stopKeys = ()=>{ if(onKey) document.removeEventListener('keydown', onKey); onKey = null; };
+  onLeave(stopKeys);
+  function show(){
+    if(!deck.length){ stopKeys(); return finish(stage, `${fatti} / ${fatti+sbagli}`, runErrori, {titolo:'Errori ripassati!', testo:`${plur(fatti,'errore sistemato','errori sistemati')}.`}); }
+    bar.style.width = (fatti/tot*100)+'%'; bar.setNum(fatti, tot);
+    const e = deck[0];
+    wrap.innerHTML = '';
+    const card = $(`<div class="qcard"><div class="kick"></div><div class="big-it"></div><div class="er-ru" style="display:none"></div></div>`);
+    card.querySelector('.kick').textContent = e.fonte || 'Errore';
+    card.querySelector('.big-it').textContent = e.it || '—';
+    card.querySelector('.big-it').style.fontSize = Math.max(19, 27 - Math.max(0, (e.it||'').length-24)*0.3) + 'px';
+    card.querySelector('.er-ru').textContent = e.ru;
+    const rev = $(`<button class="btn block" type="button">${ic('eye')} Mostra il russo</button>`);
+    const grade2 = $(`<div class="grade-row hidden"><button class="btn bad" type="button">${ic('x')} Ancora</button><button class="btn good" type="button">${ic('check')} La so</button></div>`);
+    wrap.append(card, rev, grade2);
+    let aperta = false;
+    const apri = ()=>{ if(aperta) return; aperta = true; card.querySelector('.er-ru').style.display = ''; rev.classList.add('hidden'); grade2.classList.remove('hidden'); speak(onlyCyrillic(e.ru)); };
+    const vota = ok=>{
+      if(!aperta) return;
+      aperta = false;
+      haptic(ok); recordActivity(ok);
+      deck.shift();
+      if(ok){ fatti++; togliErrore(e.ru); } else { sbagli++; deck.push(e); }
+      show();
+    };
+    rev.onclick = apri; card.onclick = apri;
+    grade2.children[0].onclick = ()=>vota(false);
+    grade2.children[1].onclick = ()=>vota(true);
+    stopKeys();
+    onKey = ev=>{ if(ev.key===' '||ev.key==='Enter'){ ev.preventDefault(); apri(); } else if(ev.key==='1') vota(false); else if(ev.key==='2') vota(true); };
+    document.addEventListener('keydown', onKey);
+  }
+  show();
+}
+
+// ================= PERCORSO A1 =================
+// Tappe in fila: ogni tappa è fatta di passi che rimandano agli esercizi
+// dell'app. Finita una tappa si sblocca la successiva.
+let _passoAttivo = null;       // {tappa, i, soglia, depth}: il passo in corso
+function percorsoStato(){ return extraStore().percorso || {}; }
+function passiFatti(t){ return new Set(percorsoStato()[t.id] || []); }
+function tappaCompleta(t){ const f = passiFatti(t); return t.passi.every((p,i)=>f.has(i)); }
+function tappaSbloccata(k){ const P = DB.percorso || []; return k===0 || (P[k-1] && tappaCompleta(P[k-1])); }
+function tappaCorrente(){ const P = DB.percorso || []; const k = P.findIndex(t=>!tappaCompleta(t)); return k<0 ? P.length : k; }
+function segnaPasso(t, i){
+  let nuovo = false;
+  updExtra(s=>{ s.percorso = s.percorso || {}; const a = s.percorso[t.id] || []; if(!a.includes(i)){ a.push(i); nuovo = true; } s.percorso[t.id] = a; });
+  return nuovo;
+}
+const PASSO_TIPI = {
+  cyr:['🔤','Quiz'], flash:['🃏','Flashcard'], frasi:['🎧','Frasi & ascolto'], componi:['🧩','Componi'], recita:['🎭','Dialogo'],
+  dlgquiz:['💡','Cosa rispondi?'], lettura:['📖','Lettura'], numLeggi:['🔢','Numeri'], numDettato:['🎧','Dettato di numeri'],
+  ore:['🕒','Che ore sono?'], prezzi:['💸','Prezzi'], casi:['🧠','Casi'], moto:['🚶','Verbi di moto'],
+};
+function lanciaPasso(p){
+  const frasiTag = tags => (DB.frasi||[]).filter(f=>(f.tag||[]).some(t=>tags.includes(t)));
+  switch(p.t){
+    case 'cyr': return runCyrQuiz();
+    case 'flash': {
+      const pool = (DB.voci||[]).filter(v=>(v.tag||[]).some(t=>(p.tags||[]).includes(t)));
+      return runFlash(pool, p.titolo, {ignoreDue:true, limit:p.n||12, restart:()=>lanciaPasso(p)});
+    }
+    case 'frasi': return runPhrase(0, {pool:sample(frasiTag(p.tags||[]), 8), titolo:p.titolo});
+    case 'componi': return runComponi(null, {pool:frasiTag(p.tags||[]).map(f=>({id:f.id, ru:f.ru, it:f.it, translit:f.translit||''})), titolo:p.titolo});
+    case 'recita': { const d = (DB.dialoghi||[]).find(x=>x.id===p.id); return d ? runRecita(d, dlgMio(d)) : runPercorso(); }
+    case 'dlgquiz': { const d = (DB.dialoghi||[]).find(x=>x.id===p.id); return d ? runDlgQuiz(d) : runPercorso(); }
+    case 'lettura': { const l = (DB.letture||[]).find(x=>x.id===p.id); return l ? runLettura(l) : runPercorso(); }
+    case 'numLeggi': return runNumLeggi(p.range);
+    case 'numDettato': return runNumDettato(p.range);
+    case 'ore': return runOre();
+    case 'prezzi': return runPrezzi();
+    case 'casi': return runCasi(p.caso || null);
+    case 'moto': return runMotoQuiz();
+  }
+  return runPercorso();
+}
+function avviaPasso(t, i){
+  const p = t.passi[i];
+  const soglia = ['flash','recita'].includes(p.t) ? 0 : 60;
+  navigateTo(()=>{
+    _passoAttivo = {tappa:t, i, soglia, depth:_navStack.length};
+    lanciaPasso(p);
+  });
+}
+// Chiamata dalla schermata di fine: se c'era un passo del percorso in corso
+// (anche da una schermata più in fondo, come le domande di una lettura), lo segna.
+function passoCompletato(pct){
+  const pa = _passoAttivo;
+  if(!pa || _navStack.length < pa.depth) return null;
+  if(pct!==null && pct < pa.soglia) return {pa, fallito:true};
+  const eraFinita = tappaCompleta(pa.tappa);
+  const nuovo = segnaPasso(pa.tappa, pa.i);
+  const finita = tappaCompleta(pa.tappa);
+  if(nuovo){ addXP(30); if(finita && !eraFinita) addXP(100); }
+  return {pa, nuovo, tappaFinita: finita && !eraFinita};
+}
+function passoBox(r){
+  const p = r.pa.tappa.passi[r.pa.i];
+  const indietro = ()=>history.go(-(_navStack.length - r.pa.depth + 1));
+  if(r.fallito){
+    const b = $(`<div class="pcard passo-box ko"><b>🗺️ Percorso</b><p>Per completare «${esc(p.titolo)}» serve almeno il ${r.pa.soglia}% di risposte giuste. Riprova con «Ancora»!</p></div>`);
+    return b;
+  }
+  const P = DB.percorso || [];
+  const k = P.indexOf(r.pa.tappa);
+  const b = $(`<div class="pcard passo-box ok"><b></b><p></p><button class="btn blue block" type="button">${ic('map')} Torna al percorso</button></div>`);
+  b.querySelector('b').textContent = r.tappaFinita ? `🎉 Tappa «${r.pa.tappa.titolo}» completata!` : `✓ Passo completato: ${p.titolo}`;
+  b.querySelector('p').textContent = r.tappaFinita
+    ? (P[k+1] ? `Si sblocca la tappa ${k+2}: ${P[k+1].icona} ${P[k+1].titolo}. +100 punti` : 'Hai finito tutto il Percorso A1. Molodéc!')
+    : `${r.nuovo ? '+30 punti · ' : ''}${passiFatti(r.pa.tappa).size} di ${r.pa.tappa.passi.length} passi fatti in questa tappa.`;
+  b.querySelector('button').onclick = indietro;
+  return b;
+}
+function runPercorso(){
+  _passoAttivo = null;
+  const stage = header('Percorso A1');
+  const P = DB.percorso || [];
+  const cur = tappaCorrente();
+  const tot = P.reduce((n,t)=>n+t.passi.length, 0), fatti = P.reduce((n,t)=>n+passiFatti(t).size, 0);
+  stage.appendChild($(`<p class="sg-intro">${P.length} tappe, dall'alfabeto alle feste. Ogni tappa mescola parole, frasi, dialoghi e letture: finita una, si apre la successiva.</p>`));
+  stage.appendChild($(`<div class="pcard dlg-prog"><div><b>${fatti} / ${tot}</b> <span>passi completati</span></div><div class="pbar"><i style="width:${tot?fatti/tot*100:0}%;background:var(--grad-prog)"></i></div></div>`));
+  const path = $(`<div class="path"></div>`);
+  P.forEach((t,k)=>{
+    const f = passiFatti(t).size, n = t.passi.length;
+    const stato = tappaCompleta(t) ? 'done' : tappaSbloccata(k) ? (k===cur ? 'cur' : 'open') : 'lock';
+    const node = $(`<button class="pnode p-${stato}" type="button"><div class="pn-dot">${stato==='done' ? ic('check') : stato==='lock' ? ic('lock') : t.icona}</div>
+      <div class="pn-txt"><div class="pn-k">Tappa ${k+1}${stato==='cur'?' · <b>adesso</b>':''}</div><div class="pn-t"></div><div class="pn-d"></div>
+      <div class="pn-bar"><i style="width:${f/n*100}%"></i></div></div></button>`);
+    node.querySelector('.pn-t').textContent = `${t.icona} ${t.titolo}`;
+    node.querySelector('.pn-d').textContent = `${t.desc} · ${f}/${n}`;
+    node.onclick = ()=>{
+      if(stato==='lock'){ haptic(false); toast(`🔒 Prima completa la tappa ${k}: ${P[k-1].titolo}`); return; }
+      navigateTo(()=>runTappa(t));
+    };
+    path.appendChild(node);
+  });
+  stage.appendChild(path);
+  requestAnimationFrame(()=>{ const c = path.querySelector('.pnode.p-cur'); if(c && cur>2) c.scrollIntoView({block:'center'}); });
+}
+function runTappa(t){
+  _passoAttivo = null;
+  const P = DB.percorso || [];
+  const k = P.indexOf(t);
+  const stage = header(`Tappa ${k+1} · ${t.titolo}`);
+  const f = passiFatti(t);
+  stage.appendChild($(`<div class="pill-hero"><div class="e">${t.icona}</div><h2></h2><p class="muted" style="margin:0"></p></div>`));
+  stage.querySelector('.pill-hero h2').textContent = t.titolo;
+  stage.querySelector('.pill-hero p').textContent = `${t.desc} · ${f.size} di ${t.passi.length} passi`;
+  const list = $(`<div class="list"></div>`);
+  let prossimo = t.passi.findIndex((p,i)=>!f.has(i));
+  t.passi.forEach((p,i)=>{
+    const [e, tipo] = PASSO_TIPI[p.t] || ['•', ''];
+    const done = f.has(i);
+    const b = $(`<button class="tile wide passo${done?' p-fatto':''}${i===prossimo?' p-next':''}" type="button"><div class="ico">${done ? '✅' : e}</div>
+      <div class="txt"><div class="t"></div><div class="d"></div></div></button>`);
+    b.querySelector('.t').textContent = p.titolo;
+    b.querySelector('.d').textContent = done ? `${tipo} · fatto ✓ (puoi rifarlo)` : `${tipo}${['flash','recita'].includes(p.t) ? '' : ' · serve il 60%'}`;
+    b.onclick = ()=>avviaPasso(t, i);
+    list.appendChild(b);
+  });
+  stage.appendChild(list);
+  if(tappaCompleta(t)){
+    stage.appendChild($(`<div class="nota-box">🎉<div>Tappa completata! ${P[k+1] ? `Ora si passa a <b>${esc(P[k+1].titolo)}</b>.` : 'Hai finito tutto il percorso.'}</div></div>`));
+    if(P[k+1]){ const nx = $(`<button class="btn primary block" type="button">Vai alla tappa ${k+2}: ${esc(P[k+1].titolo)} ›</button>`); nx.onclick = ()=>runTappa(P[k+1]); stage.appendChild(nx); }
+  } else if(prossimo>=0){
+    const go = $(`<button class="btn primary block" type="button">${ic('play')} Continua: ${esc(t.passi[prossimo].titolo)}</button>`);
+    go.onclick = ()=>avviaPasso(t, prossimo);
+    stage.appendChild(go);
+  }
+}
+function makePercorsoCard(){
+  const P = DB.percorso || [];
+  if(!P.length) return null;
+  const k = tappaCorrente();
+  const tot = P.reduce((n,t)=>n+t.passi.length, 0), fatti = P.reduce((n,t)=>n+passiFatti(t).size, 0);
+  const nuovo = !sezioniViste().includes('percorso') ? `<span class="nuovo">Nuovo</span>` : '';
+  const t = P[Math.min(k, P.length-1)];
+  const d = k>=P.length ? 'Percorso completato! 🎓' : `Tappa ${k+1} di ${P.length}: ${t.icona} ${t.titolo} · ${passiFatti(t).size}/${t.passi.length}`;
+  const el = $(`<button class="tile wide feat percorso-card" data-mode="percorso" type="button"><div class="ico">${ic('map')}</div>
+    <div class="txt"><div class="t">Percorso A1</div><div class="d"></div><div class="pbar"><i style="width:${tot?fatti/tot*100:0}%"></i></div></div>${nuovo}</button>`);
+  el.querySelector('.d').textContent = d;
+  el.onclick = ()=>start('percorso');
+  return el;
+}
+
+// ================= HOME: «Oggi per te», livello, Cremlino vivo =================
+function makeOggi(){
+  const row = $(`<div class="oggi-row"></div>`);
+  const w = makeWotd();
+  if(w) row.appendChild(w);
+  const p = proverbioDelGiorno();
+  if(p){
+    const c = $(`<div class="og-card prov" role="button" tabindex="0"><div class="k">${ic('quote')} Proverbio del giorno</div><div class="og-ru"></div><div class="og-it"></div></div>`);
+    c.querySelector('.og-ru').textContent = p.ru;
+    c.querySelector('.og-it').textContent = p.it ? `≈ ${p.it}` : p.lett;
+    c.onclick = ()=>start('proverbi');
+    row.appendChild(c);
+  }
+  const pl = pillolaDelGiorno();
+  if(pl){
+    const c = $(`<div class="og-card pil" role="button" tabindex="0"><div class="k">${ic('landmark')} Pillola di cultura</div><div class="og-t"><span class="e">${pl.icona}</span><span></span></div><div class="og-it">Leggi in un minuto ›</div></div>`);
+    c.querySelector('.og-t span:last-child').textContent = pl.titolo;
+    c.onclick = ()=>{ segnaSezioneVista('cultura'); navigateTo(()=>runPillola(pl)); };
+    row.appendChild(c);
+  }
+  row.querySelectorAll('[role=button]').forEach(c=>c.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); c.click(); } }));
+  const box = $(`<div class="oggi-box"><div class="sec-h">Oggi per te</div></div>`);
+  box.appendChild(row);
+  return box;
+}
+function makeLivelloChip(){
+  const xp = xpTotale(), lv = livelloDi(xp);
+  const el = $(`<button class="lvl-chip" type="button" title="Punti e livello"><span class="lv-n">${lv.n}</span><span class="lv-t"><b>${lv.ru}</b> · ${xp} punti</span><span class="lv-bar"><i style="width:${Math.round(lv.frac*100)}%"></i></span></button>`);
+  el.onclick = ()=>start('stats');
+  return el;
+}
+function aggiornaCremlino(){
+  const d = new Date(), h = d.getHours(), m = d.getMonth();
+  document.body.classList.toggle('sera', h>=19 || h<6);
+  document.body.classList.toggle('inverno', m===11 || m<=1);
+}
+
+// ================= PROMEMORIA NEL CALENDARIO =================
+// Le notifiche vere richiederebbero un server: un evento ricorrente nel
+// calendario del telefono fa lo stesso lavoro.
+function scaricaPromemoria(ora){
+  const [hh, mm] = (ora || '19:00').split(':').map(n=>parseInt(n,10)||0);
+  const d = new Date(); d.setHours(hh, mm, 0, 0);
+  if(d < new Date()) d.setDate(d.getDate()+1);
+  const p2 = n=>String(n).padStart(2,'0');
+  const dt = x=>`${x.getFullYear()}${p2(x.getMonth()+1)}${p2(x.getDate())}T${p2(x.getHours())}${p2(x.getMinutes())}00`;
+  const now = new Date();
+  const stamp = `${now.getUTCFullYear()}${p2(now.getUTCMonth()+1)}${p2(now.getUTCDate())}T${p2(now.getUTCHours())}${p2(now.getUTCMinutes())}00Z`;
+  const url = location.origin + location.pathname.replace(/index\.html$/, '');
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Russo//Promemoria//IT','CALSCALE:GREGORIAN','BEGIN:VEVENT',
+    'UID:promemoria-russo-'+Date.now()+'@russo','DTSTAMP:'+stamp,'DTSTART:'+dt(d),'DURATION:PT10M','RRULE:FREQ=DAILY',
+    'SUMMARY:🇷🇺 Russo: 10 minuti','DESCRIPTION:Ripasso del giorno. Apri l\'app: '+url,'URL:'+url,
+    'BEGIN:VALARM','TRIGGER:PT0M','ACTION:DISPLAY','DESCRIPTION:Russo: 10 minuti di ripasso','END:VALARM','END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const blob = new Blob([ics], {type:'text/calendar'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'promemoria-russo.ics';
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+}
+
+// ================= PROGRESSI: livello e settimana =================
+function statsSettimana(offset){
+  const log = activityLog();
+  const oggi = new Date(); oggi.setHours(0,0,0,0);
+  const lun = new Date(oggi); lun.setDate(oggi.getDate() - ((oggi.getDay()+6)%7) - 7*offset);
+  let r = 0, ok = 0, xp = 0, giorni = 0;
+  for(let g=0; g<7; g++){
+    const d = new Date(lun); d.setDate(lun.getDate()+g);
+    if(d > oggi) break;
+    const x = log[dateStr(d)];
+    if(x && x.r){ giorni++; r += x.r; ok += x.ok||0; }
+    if(x) xp += x.xp || (x.ok||0)*10 + Math.max(0,(x.r||0)-(x.ok||0))*2;
+  }
+  return {r, ok, xp, giorni};
+}
+function makeLivelloCard(){
+  const xp = xpTotale(), lv = livelloDi(xp);
+  const s = statsSettimana(0), p = statsSettimana(1);
+  const delta = (a, b)=> b ? (a>=b ? `<span class="up">▲ ${a-b}</span>` : `<span class="down">▼ ${b-a}</span>`) : '';
+  const c = $(`<div class="pcard lvl-card">
+    <div class="lvl-head"><div class="lvl-badge">${lv.n}</div><div><div class="lvl-name"><b>${lv.ru}</b> · ${lv.it}</div>
+      <div class="muted" style="text-align:left;font-size:12.5px">${xp} punti${lv.prossimo ? ` · ne mancano ${lv.prossimo-xp} al livello ${lv.n+1}` : ' · livello massimo!'}</div></div></div>
+    <div class="pbar" style="margin-top:10px"><i style="width:${Math.round(lv.frac*100)}%;background:var(--grad-prog)"></i></div>
+    <div class="sett"><div><b>${s.xp}</b><span>punti questa settimana ${delta(s.xp, p.xp)}</span></div>
+      <div><b>${s.r}</b><span>risposte ${delta(s.r, p.r)}</span></div>
+      <div><b>${s.giorni}/7</b><span>giorni di studio</span></div></div>
+  </div>`);
+  return c;
 }
 
 // ========== VIKA — Gemini Live + fallback REST ==========
@@ -6028,6 +7332,7 @@ function applyTheme(){
 const ACTIVITY_KEY = "russo_activity_v1";
 function activityLog(){ try{ return JSON.parse(localStorage.getItem(ACTIVITY_KEY)||"{}"); }catch(e){ return {}; } }
 function recordActivity(ok){
+  xpTotale();                // la prima volta conta i punti delle risposte passate
   const log = activityLog(), t = todayStr();
   const d = log[t] || {r:0, ok:0};
   d.r++; if(ok) d.ok++;
@@ -6035,6 +7340,7 @@ function recordActivity(ok){
   const cut = dateStr(new Date(Date.now() - 370*DAY_MS));
   Object.keys(log).forEach(k=>{ if(k < cut) delete log[k]; });
   try{ localStorage.setItem(ACTIVITY_KEY, JSON.stringify(log)); }catch(e){}
+  addXP(ok ? 10 : 2);
 }
 
 // ================= PROGRESSI =================
@@ -6118,6 +7424,7 @@ function runProgressi(){
     <div class="stat s-red">${ic('target')}<b>${st.precisione}%</b><span>risposte giuste</span></div>
   </div>`));
 
+  stage.appendChild(makeLivelloCard());
   stage.appendChild(makeTraguardiCard());
 
   // --- Barra di avanzamento sul dizionario ---
@@ -6253,6 +7560,10 @@ function pickScritturaTopic(){
     b.onclick = ()=>navigateTo(open);
     list.appendChild(b);
   }
+  const dt = $(`<button class="tile wide" type="button"><div class="ico">🎧</div>
+    <div class="txt"><div class="t">Dettato di frasi</div><div class="d">Ascolta una frase intera e scrivila</div></div></button>`);
+  dt.onclick = ()=>navigateTo(runDettatoFrasi);
+  list.appendChild(dt);
   const due = allPool.filter(v=>isDue(v.id));
   mk("⚡","In scadenza oggi",`<span class="due">${due.length} da ripassare</span> &middot; 12 per giro`, due, "In scadenza", {limit:12});
 
@@ -6493,6 +7804,17 @@ function runImpostazioni(){
   segK.querySelectorAll("button").forEach(b=>{ b.onclick = ()=>{ setSetting("kbd", b.dataset.v==="1"); paintK(); }; });
   paintK(); rKbd.querySelector(".ctl").appendChild(segK); card.appendChild(rKbd);
   stage.appendChild(card);
+
+  // --- Promemoria nel calendario ---
+  const pm = $(`<div class="pcard"><h3>${ic('bell')} Promemoria giornaliero</h3>
+    <p class="muted" style="margin:0 0 12px;font-size:13.5px;line-height:1.55;text-align:left">
+      Aggiunge al calendario del telefono un appuntamento ogni giorno, con l'avviso e il link all'app:
+      «🇷🇺 Russo: 10 minuti».</p>
+    <div class="row" style="align-items:center"><input class="vocab-input plain pm-ora" type="time" value="${esc(settings().promemoria||'19:00')}" aria-label="Ora del promemoria">
+    <button class="btn blue" type="button">${ic('cal')} Aggiungi</button></div></div>`);
+  const pmOra = pm.querySelector('input');
+  pm.querySelector('button').onclick = ()=>{ setSetting('promemoria', pmOra.value||'19:00'); scaricaPromemoria(pmOra.value); toast('📅 Apri il file per aggiungerlo al calendario'); };
+  stage.appendChild(pm);
 
   // --- Backup ---
   const bk = $(`<div class="pcard"><h3>${ic('dl')} Backup dei progressi</h3>
