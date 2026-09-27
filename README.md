@@ -11,7 +11,8 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
   (punti per ogni risposta, da Новичок a Легенда) e la fascia **«Oggi per te»**: ✨ Parola del giorno,
   proverbio del giorno e pillola di cultura. In cima, la Piazza Rossa (San Basilio e la torre Spasskaja fra le mura):
   di sera il Cremlino accende le finestre, d'inverno nevica. In fondo alla home le matrioske (toccale: ballano e dicono
-  «матрёшка»); in «Letture e cultura» una scena del tè col samovar, nel Percorso A1 la strada verso Mosca. Sotto, due schede: **Pratica** e **Teoria** (si passa dall'una all'altra anche con uno swipe).
+  «матрёшка»); in «Letture e cultura» una scena del tè col samovar, nel Percorso A1 la strada verso Mosca. Sullo sfondo un bosco
+  di betulle che cambia con le stagioni, e dietro l'icona di ogni sezione un motivo russo (matrioska, samovar, Sputnik…). Sotto, due schede: **Pratica** e **Teoria** (si passa dall'una all'altra anche con uno swipe).
 
   Ovunque l'app ti proponga una parola o una frase (flashcard, esercizi, quiz, dialoghi, letture, frasario, errori…)
   c'è **🔍 Spiega**: si apre un pannello con la frase **smontata parola per parola** (traduzione, caso, persona del
