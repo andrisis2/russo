@@ -62,6 +62,9 @@
     --shadow:0 2px 6px rgba(20,28,51,.05),0 10px 28px rgba(20,28,51,.08);
     --shadow-lg:0 10px 24px rgba(20,28,51,.10),0 28px 56px rgba(20,28,51,.14);
     --ring:0 0 0 3px rgba(47,102,232,.24);
+    /* scena illustrata (Letture e cultura) */
+    --sky1:#d6ebff; --sky2:#fff3df; --hill1:#98cf80; --hill2:#c4e6aa;
+    --cloth:#fffaf1; --sun:#ffd46b; --cloud:rgba(255,255,255,.92); --road:#ecd6ae; --road2:#d3b27a;
     color-scheme:light;
   }
   /* Tema scuro: automatico (segue il sistema, se l'utente non ha forzato il
@@ -90,6 +93,8 @@
       --shadow:0 2px 6px rgba(0,0,0,.28),0 12px 30px rgba(0,0,0,.34);
       --shadow-lg:0 10px 26px rgba(0,0,0,.42),0 30px 60px rgba(0,0,0,.46);
       --ring:0 0 0 3px rgba(107,149,255,.32);
+    --sky1:#0f1836; --sky2:#2a2448; --hill1:#1b3a34; --hill2:#24443f;
+    --cloth:#e6dccb; --sun:#f2e2a4; --cloud:rgba(255,255,255,.07); --road:#4b4662; --road2:#5d5878;
     }
   }
   :root[data-theme="dark"]{
@@ -115,6 +120,8 @@
     --shadow:0 2px 6px rgba(0,0,0,.28),0 12px 30px rgba(0,0,0,.34);
     --shadow-lg:0 10px 26px rgba(0,0,0,.42),0 30px 60px rgba(0,0,0,.46);
     --ring:0 0 0 3px rgba(107,149,255,.32);
+    --sky1:#0f1836; --sky2:#2a2448; --hill1:#1b3a34; --hill2:#24443f;
+    --cloth:#e6dccb; --sun:#f2e2a4; --cloud:rgba(255,255,255,.07); --road:#4b4662; --road2:#5d5878;
   }
 
   /* ============================ BASE ============================ */
@@ -1315,6 +1322,82 @@
   .sh-es .it{font-size:12.5px;color:var(--muted);margin-top:1px}
   .sh-page .sg-tema{align-self:flex-start}
 
+  /* ============================ DECORAZIONI RUSSE ============================
+     Ornamenti che non coprono mai i comandi (pointer-events:none, aria-hidden).
+     Disegni nello sprite «ill-*» in cima al body: Piazza Rossa nella barra della
+     home, rosone popolare (stile Chochloma) su tessere e Ripasso del giorno,
+     ricamo a punto croce (рушник) sulle schermate di fine, matrioske in fondo
+     alla home, scena del tè in «Letture e cultura», strada verso Mosca nel
+     Percorso A1. */
+  :root{
+    --rosone:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Ccircle r='6.5'/%3E%3Ccircle r='10.5' fill='none' stroke='%23000' stroke-width='2.2'/%3E%3Cpath transform='rotate(0)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(45)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(90)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(135)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(180)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(225)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(270)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(315)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(22.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(67.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(112.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(157.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(202.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(247.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(292.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(337.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Ccircle r='33' fill='none' stroke='%23000' stroke-width='3.4' stroke-linecap='round' stroke-dasharray='0 25.92' stroke-dashoffset='12.96' opacity='.7'/%3E%3Ccircle r='40' fill='none' stroke='%23000' stroke-width='1.6' opacity='.55'/%3E%3Ccircle r='45' fill='none' stroke='%23000' stroke-width='4.4' stroke-linecap='round' stroke-dasharray='0 17.67'/%3E%3C/svg%3E");
+    --ricamo:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='11' viewBox='0 0 18 11'%3E%3Cpath d='M0 0h18v1H0zM9 2h1v1h-1zM0 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM1 4h1v1h-1zM7 4h1v1h-1zM9 4h1v1h-1zM11 4h1v1h-1zM17 4h1v1h-1zM0 5h1v1h-1zM3 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM9 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM15 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM11 6h1v1h-1zM17 6h1v1h-1zM0 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM9 8h1v1h-1zM0 10h18v1H0z'/%3E%3C/svg%3E");
+  }
+  /* Piazza Rossa: San Basilio e la Spasskaja fra le torri delle mura */
+  body.is-home .kremlin{height:60px}
+  .kremlin-towers{gap:8px}
+  .kremlin-towers .tw-far{display:none}
+  @media (min-width:600px){ .kremlin-towers{gap:14px} .kremlin-towers .tw-far{display:block} }
+  /* le betulle cambiano colore con le stagioni (aggiornaCremlino) */
+  body.autunno{--leaf1:#f4b63f;--leaf2:#e38b2c;--leaf3:#fbd661}
+  body.inverno{--leaf1:transparent;--leaf2:transparent;--leaf3:transparent;--hill1:#e9f0f8;--hill2:#d7e3f1}
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) body.inverno{--hill1:#2c3654;--hill2:#243049} }
+  :root[data-theme="dark"] body.inverno{--hill1:#2c3654;--hill2:#243049}
+
+  /* rosone al posto del cerchio in un angolo delle tessere */
+  .grid .tile::before,.tile.feat::before{
+    border-radius:0; background:var(--tc); opacity:.1;
+    -webkit-mask:var(--rosone) center/contain no-repeat; mask:var(--rosone) center/contain no-repeat;
+    transition:transform .6s cubic-bezier(.2,.7,.3,1);
+  }
+  .grid .tile::before{width:118px;height:118px;right:-38px;bottom:-38px}
+  .tile.feat::before{width:106px;height:106px;right:-30px;top:-40px}
+  @media (hover:hover) and (pointer:fine){ .tile:hover::before{transform:rotate(22.5deg) scale(1.06)} }
+  /* …e un rosone grande dietro l'anello del Ripasso del giorno */
+  .hero-orn{
+    position:absolute; right:-58px; top:50%; width:220px; height:220px; margin-top:-110px;
+    background:#fff; opacity:.13; pointer-events:none;
+    -webkit-mask:var(--rosone) center/contain no-repeat; mask:var(--rosone) center/contain no-repeat;
+    animation:ornIn 1.1s cubic-bezier(.2,.7,.3,1) both;
+  }
+  @keyframes ornIn{from{transform:rotate(-60deg) scale(.7);opacity:0}}
+
+  /* ricamo a punto croce in cima alle schermate di fine, rosone d'oro dietro il risultato */
+  .done{padding-top:40px}
+  .done::before{
+    content:""; position:absolute; left:26px; right:26px; top:14px; height:11px;
+    background:var(--accent); opacity:.78; pointer-events:none;
+    -webkit-mask:var(--ricamo) center/auto 100% round; mask:var(--ricamo) center/auto 100% round;
+  }
+  .done:has(> .ring){background:url("data:image/svg+xml,%3Csvg fill='%23e2a93b' opacity='.17' xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Ccircle r='6.5'/%3E%3Ccircle r='10.5' fill='none' stroke='%23e2a93b' stroke-width='2.2'/%3E%3Cpath transform='rotate(0)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(45)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(90)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(135)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(180)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(225)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(270)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(315)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(22.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(67.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(112.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(157.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(202.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(247.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(292.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(337.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Ccircle r='33' fill='none' stroke='%23e2a93b' stroke-width='3.4' stroke-linecap='round' stroke-dasharray='0 25.92' stroke-dashoffset='12.96' opacity='.7'/%3E%3Ccircle r='40' fill='none' stroke='%23e2a93b' stroke-width='1.6' opacity='.55'/%3E%3Ccircle r='45' fill='none' stroke='%23e2a93b' stroke-width='4.4' stroke-linecap='round' stroke-dasharray='0 17.67'/%3E%3C/svg%3E") no-repeat center -4px/220px, var(--card)}
+  .done:has(> .big){background:url("data:image/svg+xml,%3Csvg fill='%23e2a93b' opacity='.17' xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Ccircle r='6.5'/%3E%3Ccircle r='10.5' fill='none' stroke='%23e2a93b' stroke-width='2.2'/%3E%3Cpath transform='rotate(0)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(45)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(90)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(135)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(180)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(225)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(270)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(315)' fill-rule='evenodd' d='M0-14C7.5-19 9.5-29 0-37C-9.5-29-7.5-19 0-14ZM0-19.5C2.6-22 3-26 0-30.5C-3-26-2.6-22 0-19.5Z'/%3E%3Cpath transform='rotate(22.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(67.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(112.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(157.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(202.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(247.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(292.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Cpath transform='rotate(337.5)' opacity='.55' d='M0-15C4-19 5.5-25 0-30C-5.5-25-4-19 0-15Z'/%3E%3Ccircle r='33' fill='none' stroke='%23e2a93b' stroke-width='3.4' stroke-linecap='round' stroke-dasharray='0 25.92' stroke-dashoffset='12.96' opacity='.7'/%3E%3Ccircle r='40' fill='none' stroke='%23e2a93b' stroke-width='1.6' opacity='.55'/%3E%3Ccircle r='45' fill='none' stroke='%23e2a93b' stroke-width='4.4' stroke-linecap='round' stroke-dasharray='0 17.67'/%3E%3C/svg%3E") no-repeat center 22px/124px, var(--card)}
+
+  /* matrioske in fondo alla home: toccandole ballano e dicono «матрёшка» */
+  .matr-row{display:flex;flex-direction:column;align-items:center;border:0;background:none;padding:4px 12px 0;color:inherit;border-radius:16px}
+  .matr-dolls{display:flex;align-items:flex-end;gap:3px}
+  .matr-dolls svg{display:block;width:auto;transform-origin:50% 100%;filter:drop-shadow(0 3px 3px rgba(20,28,51,.16))}
+  .matr-shelf{width:236px;max-width:100%;height:9px;margin-top:4px;background:var(--accent);opacity:.6;
+    -webkit-mask:var(--ricamo) center/auto 100% round; mask:var(--ricamo) center/auto 100% round}
+  .matr-row.balla .matr-dolls svg{animation:matrBallo .8s ease-in-out both}
+  .matr-row.balla .matr-dolls svg:nth-child(2){animation-delay:.07s}
+  .matr-row.balla .matr-dolls svg:nth-child(3){animation-delay:.14s}
+  .matr-row.balla .matr-dolls svg:nth-child(4){animation-delay:.21s}
+  .matr-row.balla .matr-dolls svg:nth-child(5){animation-delay:.28s}
+  @keyframes matrBallo{0%,100%{transform:none}20%{transform:rotate(-10deg)}45%{transform:rotate(8deg)}70%{transform:rotate(-4deg)}}
+
+  /* scene illustrate: il tè in «Letture e cultura», la strada verso Mosca nel Percorso */
+  .scene{position:relative;overflow:hidden;border-radius:22px;border:1px solid var(--line);background:linear-gradient(180deg,var(--sky1),var(--sky2) 72%);box-shadow:var(--shadow-sm)}
+  .scene>svg{display:block;width:100%;height:auto;aspect-ratio:360/150}
+  .scene-cap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 14px 12px;background:var(--card);border-top:1px solid var(--line)}
+  .scene-ru{border:0;background:none;padding:0;display:inline-flex;align-items:center;gap:6px;font-size:16.5px;font-weight:800;letter-spacing:-.2px;color:var(--text)}
+  .scene-ru .i{width:17px;height:17px;color:var(--muted)}
+  .scene-cap span{font-size:13px;color:var(--muted);line-height:1.4}
+  /* Percorso A1: una pietra miliare per tappa, la matrioska dove si è arrivati */
+  .pc-miles .m-ok{fill:var(--good);stroke:#fff;stroke-width:.7}
+  .pc-miles .m-no{fill:#fff;stroke:var(--line2);stroke-width:.7}
+  .pc-me use{animation:matrPasso 2.6s ease-in-out infinite}
+  @keyframes matrPasso{0%,70%,100%{transform:none}80%{transform:translateY(-2px)}90%{transform:translateY(0)}}
+
   /* ============================ DESKTOP ============================ */
   @media (min-width:760px){
     .appbar{padding:0 24px}
@@ -1429,6 +1512,304 @@
   <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4.5"/><path d="M12 16.5h.01"/></symbol>
   <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
 </defs></svg>
+<!-- illustrazioni russe (solo decorazione, sprite «ill-*»): San Basilio, torre
+     Spasskaja, matrioska, samovar, bicchiere da tè, balalaika, betulla, la scena
+     del tè e la strada verso Mosca. Ciò che cambia passa da variabili CSS:
+     --kwin (finestre accese la sera), --ksnow (neve d'inverno), --leaf1..3 (foglie secondo la stagione),
+     --mt/--md/--mf (colori di ogni matrioska), --d1/--d2 (colori delle cupole). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="g-brass" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#a96d18"/><stop offset=".24" stop-color="#f8da7c"/><stop offset=".52" stop-color="#e2aa3e"/><stop offset="1" stop-color="#9c6414"/></linearGradient>
+  <linearGradient id="g-silver" x1="0" x2="1"><stop offset="0" stop-color="#8b94a6"/><stop offset=".32" stop-color="#f1f4f9"/><stop offset="1" stop-color="#858fa1"/></linearGradient>
+  <linearGradient id="g-wood" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f6cb86"/><stop offset="1" stop-color="#c0722f"/></linearGradient>
+  <linearGradient id="g-gold" x1="0" x2="1"><stop offset="0" stop-color="#fbe08a"/><stop offset="1" stop-color="#d09426"/></linearGradient>
+  <linearGradient id="g-tea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#e0772b"/><stop offset="1" stop-color="#9c3b12"/></linearGradient>
+  <pattern id="p-ricamo" width="18" height="11" patternUnits="userSpaceOnUse" y="135"><path style="fill:var(--accent)" d="M0 0h18v1H0zM9 2h1v1h-1zM0 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM1 4h1v1h-1zM7 4h1v1h-1zM9 4h1v1h-1zM11 4h1v1h-1zM17 4h1v1h-1zM0 5h1v1h-1zM3 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM9 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM15 5h1v1h-1zM1 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM11 6h1v1h-1zM17 6h1v1h-1zM0 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM9 8h1v1h-1zM0 10h18v1H0z"/></pattern>
+
+  <!-- cupola a cipolla (20×24, punta in alto) e le sue decorazioni -->
+  <path id="d-onion" d="M10 0C11 5 20 8.5 20 15C20 19.5 16.5 22 15.5 24H4.5C3.5 22 0 19.5 0 15C0 8.5 9 5 10 0Z"/>
+  <clipPath id="c-onion"><path d="M10 0C11 5 20 8.5 20 15C20 19.5 16.5 22 15.5 24H4.5C3.5 22 0 19.5 0 15C0 8.5 9 5 10 0Z"/></clipPath>
+  <g id="dm-luce">
+    <path d="M10 0C11 5 20 8.5 20 15C20 19.5 16.5 22 15.5 24H11.5C14.5 20 15.5 11 10 0Z" fill="#000" opacity=".17"/>
+    <ellipse cx="5.4" cy="13.4" rx="1.6" ry="4.4" fill="#fff" opacity=".4" transform="rotate(14 5.4 13.4)"/>
+    <path d="M10 0C10.6 3 14 5.6 15.6 7.6Q13.5 7 12.5 8.4Q11 7.2 10 8.6Q8.6 7.2 7.5 8.4Q6.5 7 4.4 7.6C6 5.6 9.4 3 10 0Z" style="fill:var(--ksnow,transparent)"/>
+  </g>
+  <g id="dm-spirale">
+    <use href="#d-onion" style="fill:var(--d1,#2f9a5d)"/>
+    <g clip-path="url(#c-onion)" fill="none" style="stroke:var(--d2,#f6c945)" stroke-width="2.4">
+      <path d="M-22 26Q-12 14-6-2M-15 26Q-5 14 1-2M-8 26Q2 14 8-2M-1 26Q9 14 15-2M6 26Q16 14 22-2M13 26Q23 14 29-2M20 26Q30 14 36-2"/>
+    </g>
+    <use href="#dm-luce"/>
+  </g>
+  <g id="dm-zigzag">
+    <use href="#d-onion" style="fill:var(--d1,#2d6bd3)"/>
+    <g clip-path="url(#c-onion)" fill="none" style="stroke:var(--d2,#fff)" stroke-width="1.5" stroke-linejoin="round">
+      <path d="M-1 7l3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6M-1 11.5l3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6M-1 16l3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6M-1 20.5l3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6M-1 25l3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6 3.5-2.6 3.5 2.6"/>
+    </g>
+    <use href="#dm-luce"/>
+  </g>
+  <g id="dm-strisce">
+    <use href="#d-onion" style="fill:var(--d1,#d8323f)"/>
+    <g clip-path="url(#c-onion)" fill="none" style="stroke:var(--d2,#fff)" stroke-width="1.6">
+      <path d="M10 0C10 6 4 9 4 15C4 19.5 6.7 22 6.7 24M10 0C10 6 8 9 8 15C8 19.5 8.9 22 8.9 24M10 0C10 6 12 9 12 15C12 19.5 11.1 22 11.1 24M10 0C10 6 16 9 16 15C16 19.5 13.3 22 13.3 24"/>
+    </g>
+    <use href="#dm-luce"/>
+  </g>
+  <g id="dm-rombi">
+    <use href="#d-onion" style="fill:var(--d1,#f1be47)"/>
+    <g clip-path="url(#c-onion)" fill="none" style="stroke:var(--d2,#2e8a58)" stroke-width="1.1">
+      <path d="M-18-2L10 26M-12-2L16 26M-6-2L22 26M0-2L28 26M6-2L34 26M12-2L40 26M18-2L46 26M2-2L-26 26M8-2L-20 26M14-2L-14 26M20-2L-8 26M26-2L-2 26M32-2L4 26M38-2L10 26"/>
+    </g>
+    <use href="#dm-luce"/>
+  </g>
+  <g id="dm-oro"><use href="#d-onion" fill="url(#g-gold)"/><use href="#dm-luce"/></g>
+  <!-- croce ortodossa (alta 8.5) e tamburo in mattoni sotto le cupole (12×16) -->
+  <path id="croce" d="M0 0V8.5M-2.3 2.6H2.3M-1.5 5.8L1.5 4.8" fill="none" stroke="#e8b84a" stroke-width="1" stroke-linecap="round"/>
+  <g id="tamburo">
+    <rect width="12" height="16" fill="#c0483a"/>
+    <rect x="9" width="3" height="16" fill="#000" opacity=".13"/>
+    <rect x="-.7" width="13.4" height="2" fill="#f4e7d4"/>
+    <rect x="2.2" y="4.2" width="2.4" height="5" rx="1.2" style="fill:var(--kwin,#3a2521)"/>
+    <rect x="7.4" y="4.2" width="2.4" height="5" rx="1.2" style="fill:var(--kwin,#3a2521)"/>
+    <path d="M0 16v-2.4a3 3 0 0 1 6 0V16M6 16v-2.4a3 3 0 0 1 6 0V16" fill="none" stroke="#f4e7d4" stroke-width=".9"/>
+  </g>
+
+  <!-- Cattedrale di San Basilio (96×86) -->
+  <symbol id="ill-basil" viewBox="0 0 96 86">
+    <use href="#tamburo" transform="translate(16.5 50) scale(1.08 1.1)"/>
+    <use href="#dm-spirale" transform="translate(13 27)"/>
+    <use href="#croce" transform="translate(23 18.5)"/>
+    <use href="#tamburo" transform="translate(66.5 50) scale(1.08 1.1)"/>
+    <use href="#dm-zigzag" transform="translate(63 27)"/>
+    <use href="#croce" transform="translate(73 18.5)"/>
+    <!-- la tenda centrale -->
+    <rect x="39" y="44" width="18" height="28" fill="#c0483a"/>
+    <rect x="50" y="44" width="7" height="28" fill="#000" opacity=".12"/>
+    <rect x="41.6" y="52" width="2.4" height="6" rx="1.2" style="fill:var(--kwin,#3a2521)"/>
+    <rect x="46.8" y="52" width="2.4" height="6" rx="1.2" style="fill:var(--kwin,#3a2521)"/>
+    <rect x="52" y="52" width="2.4" height="6" rx="1.2" style="fill:var(--kwin,#3a2521)"/>
+    <path d="M40 46.5 45.6 15h4.8l5.6 31.5z" fill="#f4e6ca"/>
+    <path d="M48 15h2.4l5.6 31.5H48z" fill="#000" opacity=".1"/>
+    <g fill="#3f8f63"><path d="M43.2 38.6l1.1 1.6-1.1 1.6-1.1-1.6zM48 38.6l1.1 1.6-1.1 1.6-1.1-1.6zM52.8 38.6l1.1 1.6-1.1 1.6-1.1-1.6zM45.6 30.4l1 1.5-1 1.5-1-1.5zM50.4 30.4l1 1.5-1 1.5-1-1.5zM48 22.6l.9 1.4-.9 1.4-.9-1.4z"/></g>
+    <g fill="#e0773a"><path d="M45.6 35l.8 1.1-.8 1.1-.8-1.1zM50.4 35l.8 1.1-.8 1.1-.8-1.1zM48 27l.8 1.1-.8 1.1-.8-1.1zM46.8 19.3l.6.9-.6.9-.6-.9zM49.2 19.3l.6.9-.6.9-.6-.9z"/></g>
+    <path d="M38.4 48.6v-1.2a3.1 3.1 0 0 1 6.2 0 3.1 3.1 0 0 1 6.2 0 3.1 3.1 0 0 1 6.2 0v1.2z" fill="#f4e7d4"/>
+    <path d="M40 48.6v-1a1.6 1.6 0 0 1 3.2 0v1M46.2 48.6v-1a1.6 1.6 0 0 1 3.2 0v1M52.4 48.6v-1a1.6 1.6 0 0 1 3.2 0v1" fill="none" stroke="#c0483a" stroke-width=".7"/>
+    <rect x="45.6" y="12.2" width="4.8" height="3.2" fill="#c0483a"/>
+    <use href="#dm-oro" transform="translate(45 5.2) scale(.3)"/>
+    <use href="#croce" transform="translate(48 .3) scale(.58)"/>
+    <!-- cupole davanti -->
+    <use href="#tamburo" transform="translate(30.3 60) scale(.62 .8)"/>
+    <use href="#dm-spirale" transform="translate(28.5 48) scale(.52)" style="--d1:#ee7e2c;--d2:#fff0c2"/>
+    <use href="#croce" transform="translate(33.7 42.4) scale(.6)"/>
+    <use href="#tamburo" transform="translate(58.9 60) scale(.62 .8)"/>
+    <use href="#dm-zigzag" transform="translate(57.1 48) scale(.52)" style="--d1:#1f9a5d"/>
+    <use href="#croce" transform="translate(62.3 42.4) scale(.6)"/>
+    <use href="#tamburo" transform="translate(3.2 58) scale(.8 1)"/>
+    <use href="#dm-strisce" transform="translate(1 42) scale(.7)"/>
+    <use href="#croce" transform="translate(8 35.4) scale(.72)"/>
+    <use href="#tamburo" transform="translate(83.2 58) scale(.8 1)"/>
+    <use href="#dm-rombi" transform="translate(81 42) scale(.7)"/>
+    <use href="#croce" transform="translate(88 35.4) scale(.72)"/>
+    <!-- galleria con le arcate e il portico -->
+    <rect y="71" width="96" height="15" fill="#b8453a"/>
+    <rect y="70" width="96" height="2" fill="#f4e7d4"/>
+    <rect y="69.3" width="96" height="1.3" style="fill:var(--ksnow,transparent)"/>
+    <g style="fill:var(--kwin,#3a2521)"><path d="M3 82v-4.4a2 2 0 0 1 4 0V82zM11 82v-4.4a2 2 0 0 1 4 0V82zM19 82v-4.4a2 2 0 0 1 4 0V82zM27 82v-4.4a2 2 0 0 1 4 0V82zM65 82v-4.4a2 2 0 0 1 4 0V82zM73 82v-4.4a2 2 0 0 1 4 0V82zM81 82v-4.4a2 2 0 0 1 4 0V82zM89 82v-4.4a2 2 0 0 1 4 0V82z"/></g>
+    <rect y="83.4" width="96" height="1.1" fill="#f4e7d4" opacity=".75"/>
+    <path d="M41 86V69h14v17z" fill="#c9503f"/>
+    <path d="M39.8 69.6 48 62.6l8.2 7z" fill="#3f8161"/>
+    <path d="M39.8 69.6 48 62.6l8.2 7-1.8.1L48 64.3l-6.4 5.4z" style="fill:var(--ksnow,transparent)"/>
+    <path d="M44.8 86v-7.6a3.2 3.2 0 0 1 6.4 0V86z" fill="#4a211b"/>
+    <path d="M43.6 86v-7.6a4.4 4.4 0 0 1 8.8 0V86" fill="none" stroke="#f4e7d4" stroke-width=".8"/>
+  </symbol>
+
+  <!-- Torre Spasskaja con l'orologio e la stella rossa (34×90) -->
+  <symbol id="ill-spasskaya" viewBox="0 0 34 90">
+    <rect x="3" y="58" width="28" height="32" fill="#bb4a3c"/>
+    <rect x="24" y="58" width="7" height="32" fill="#000" opacity=".1"/>
+    <path d="M12 90V80a5 5 0 0 1 10 0v10z" fill="#4a211b"/>
+    <path d="M10.8 90V80a6.2 6.2 0 0 1 12.4 0v10" fill="none" stroke="#f4e7d4" stroke-width="1"/>
+    <path d="M5.5 70v-3.6a1.6 1.6 0 0 1 3.2 0V70M25.3 70v-3.6a1.6 1.6 0 0 1 3.2 0V70" fill="none" stroke="#f4e7d4" stroke-width=".8"/>
+    <rect x="2" y="56.5" width="30" height="2.4" fill="#f4e7d4"/>
+    <rect x="2" y="55.6" width="30" height="1.2" style="fill:var(--ksnow,transparent)"/>
+    <path d="M3 57 4.6 49.5 6.2 57zM27.8 57 29.4 49.5 31 57z" fill="#f4e7d4"/>
+    <circle cx="4.6" cy="49.3" r=".8" fill="#e8b84a"/><circle cx="29.4" cy="49.3" r=".8" fill="#e8b84a"/>
+    <!-- piano dell'orologio -->
+    <rect x="7" y="38" width="20" height="18.5" fill="#c34e3f"/>
+    <rect x="22" y="38" width="5" height="18.5" fill="#000" opacity=".1"/>
+    <rect x="6" y="36.6" width="22" height="2" fill="#f4e7d4"/>
+    <rect x="7" y="38" width="1.4" height="18.5" fill="#f4e7d4"/><rect x="25.6" y="38" width="1.4" height="18.5" fill="#f4e7d4"/>
+    <circle cx="17" cy="47.3" r="6.1" fill="#1d2c55" stroke="#e8b84a" stroke-width="1.1"/>
+    <g fill="#e8b84a"><circle cx="17" cy="42.6" r=".55"/><circle cx="21.7" cy="47.3" r=".55"/><circle cx="17" cy="52" r=".55"/><circle cx="12.3" cy="47.3" r=".55"/></g>
+    <path d="M17 47.3v-3.7M17 47.3l2.8 1.2" stroke="#e8b84a" stroke-width=".9" stroke-linecap="round"/>
+    <!-- piani superiori -->
+    <rect x="9" y="29" width="16" height="7.6" fill="#bb4a3c"/>
+    <path d="M10.5 36.6v-3a1.5 1.5 0 0 1 3 0v3M15.5 36.6v-3a1.5 1.5 0 0 1 3 0v3M20.5 36.6v-3a1.5 1.5 0 0 1 3 0v3" fill="none" stroke="#f4e7d4" stroke-width=".8"/>
+    <rect x="8.2" y="27.8" width="17.6" height="1.6" fill="#f4e7d4"/>
+    <path d="M8.2 28 9.6 22.5 11 28zM23 28l1.4-5.5 1.4 5.5z" fill="#f4e7d4"/>
+    <circle cx="9.6" cy="22.3" r=".6" fill="#e8b84a"/><circle cx="24.4" cy="22.3" r=".6" fill="#e8b84a"/>
+    <rect x="11.5" y="20" width="11" height="8" fill="#c75545"/>
+    <rect x="13" y="21.6" width="2.6" height="5" rx="1.3" style="fill:var(--kwin,#3a2521)"/>
+    <rect x="18.4" y="21.6" width="2.6" height="5" rx="1.3" style="fill:var(--kwin,#3a2521)"/>
+    <rect x="11" y="19.2" width="12" height="1.4" fill="#f4e7d4"/>
+    <!-- tetto a tenda, guglia e stella -->
+    <path d="M11 19.5 17 5.5l6 14z" fill="#3f8161"/>
+    <path d="M17 5.5l6 14h-6z" fill="#2f6b4f"/>
+    <path d="M17 5.5l1.9 4.5q-1-.6-1.9.3-.9-.9-1.9-.3z" style="fill:var(--ksnow,transparent)"/>
+    <rect x="16.5" y="4" width="1" height="2.2" fill="#e8b84a"/>
+    <polygon points="17,0.2 17.76,2.25 19.95,2.34 18.24,3.7 18.82,5.81 17,4.6 15.18,5.81 15.76,3.7 14.05,2.34 16.24,2.25" fill="#e3263b" stroke="#f3c34a" stroke-width=".45" stroke-linejoin="round"/>
+  </symbol>
+
+  <!-- Matrioska (40×56): colori da --mt (abito), --md (bordo del fazzoletto), --mf (fiore) -->
+  <symbol id="ill-matr" viewBox="0 0 40 56">
+    <path d="M20 1.5C28.5 1.5 32.5 8 31.8 15.5C31.4 20 29.6 22.6 28.6 24.4C34.6 29 38 36.5 38 44C38 51.5 31.5 55 20 55C8.5 55 2 51.5 2 44C2 36.5 5.4 29 11.4 24.4C10.4 22.6 8.6 20 8.2 15.5C7.5 8 11.5 1.5 20 1.5Z" style="fill:var(--mt,#d62c44)"/>
+    <g fill="#fff" opacity=".7"><circle cx="13.4" cy="6.4" r=".95"/><circle cx="26.6" cy="6.4" r=".95"/><circle cx="20" cy="3.6" r=".95"/><circle cx="10.4" cy="11.6" r=".95"/><circle cx="29.6" cy="11.6" r=".95"/><circle cx="9.9" cy="19.4" r=".95"/><circle cx="30.1" cy="19.4" r=".95"/><circle cx="6.6" cy="36" r=".95"/><circle cx="33.4" cy="36" r=".95"/><circle cx="5.2" cy="44" r=".95"/><circle cx="34.8" cy="44" r=".95"/></g>
+    <ellipse cx="20" cy="15.6" rx="9.4" ry="9" style="fill:var(--md,#8f1d33)"/>
+    <ellipse cx="20" cy="15.6" rx="8" ry="7.6" fill="#fde8d6"/>
+    <path d="M12.3 15.5C12.3 10 16 8 20 8C24 8 27.7 10 27.7 15.5C26.5 12.5 23.5 11 20 12.6C16.5 11 13.5 12.5 12.3 15.5Z" fill="#6b3f26"/>
+    <ellipse cx="17.1" cy="16.7" rx=".95" ry="1.15" fill="#2a2438"/><ellipse cx="22.9" cy="16.7" rx=".95" ry="1.15" fill="#2a2438"/>
+    <circle cx="17.4" cy="16.3" r=".32" fill="#fff"/><circle cx="23.2" cy="16.3" r=".32" fill="#fff"/>
+    <circle cx="15.3" cy="19.2" r="1.7" fill="#f47d86" opacity=".75"/><circle cx="24.7" cy="19.2" r="1.7" fill="#f47d86" opacity=".75"/>
+    <path d="M18.9 20.9Q20 20.2 21.1 20.9Q20 22.3 18.9 20.9Z" fill="#d42f48"/>
+    <path d="M20 25.4l-3.8-2.3v4.6zM20 25.4l3.8-2.3v4.6z" style="fill:var(--md,#8f1d33)"/>
+    <circle cx="20" cy="25.4" r="1.3" style="fill:var(--md,#8f1d33)"/>
+    <!-- grembiule col fiore -->
+    <path d="M20 28.2C28.8 28.2 32.8 35 32.8 42.6C32.8 49.6 27.8 52.4 20 52.4C12.2 52.4 7.2 49.6 7.2 42.6C7.2 35 11.2 28.2 20 28.2Z" fill="#fff7e8"/>
+    <path d="M13.8 36.2Q17 38.5 17.3 40.6M26.2 36.2Q23 38.5 22.7 40.6M20 44v5" fill="none" stroke="#3f9a5b" stroke-width=".8"/>
+    <ellipse cx="13.4" cy="43.4" rx="3.6" ry="1.5" fill="#3f9a5b" transform="rotate(-32 13.4 43.4)"/>
+    <ellipse cx="26.6" cy="43.4" rx="3.6" ry="1.5" fill="#3f9a5b" transform="rotate(32 26.6 43.4)"/>
+    <circle cx="13.4" cy="35.6" r="1.5" style="fill:var(--mf,#e8364e)"/><circle cx="26.6" cy="35.6" r="1.5" style="fill:var(--mf,#e8364e)"/>
+    <g style="fill:var(--mf,#e8364e)"><circle cx="20" cy="36.6" r="3"/><circle cx="23.2" cy="38.9" r="3"/><circle cx="22" cy="42.7" r="3"/><circle cx="18" cy="42.7" r="3"/><circle cx="16.8" cy="38.9" r="3"/></g>
+    <circle cx="20" cy="40" r="2.2" fill="#f5c542"/><circle cx="20" cy="40" r=".9" fill="#c9771f"/>
+    <g fill="#e23b3b"><circle cx="18.6" cy="50" r=".85"/><circle cx="20" cy="50.6" r=".85"/><circle cx="21.4" cy="50" r=".85"/></g>
+    <path d="M4.4 48.9C10 53 30 53 35.6 48.9" fill="none" stroke="#f5c542" stroke-width="1.3"/>
+    <!-- lacca: ombra e riflessi -->
+    <path d="M20 1.5C28.5 1.5 32.5 8 31.8 15.5C31.4 20 29.6 22.6 28.6 24.4C34.6 29 38 36.5 38 44C38 51.5 31.5 55 20 55C27.5 53.6 33.6 50 33.6 43C33.6 35.5 29 29.6 25.6 26.6C27.6 23 29.2 19.6 29.2 14.6C29.2 8.2 25.6 3 20 1.5Z" fill="#000" opacity=".12"/>
+    <ellipse cx="9" cy="41" rx="1.5" ry="6" fill="#fff" opacity=".24" transform="rotate(8 9 41)"/>
+    <ellipse cx="13.3" cy="7.6" rx="1.3" ry="2.4" fill="#fff" opacity=".3" transform="rotate(-28 13.3 7.6)"/>
+  </symbol>
+
+  <!-- Samovar con la teiera in stile Gzhel (64×80) -->
+  <symbol id="ill-samovar" viewBox="0 0 64 80">
+    <path d="M23.4 9.2C18.6 9.2 18.6 16 23.6 15.6" fill="none" stroke="#2f5fb8" stroke-width="1.5"/>
+    <path d="M40.5 10.4C43.6 10.4 45.6 8.4 47 5.4l1.6.7C47.1 10 44 13.6 40.5 14z" fill="#fff" stroke="#2f5fb8" stroke-width=".7"/>
+    <ellipse cx="32" cy="12.2" rx="9.2" ry="7" fill="#fff" stroke="#2f5fb8" stroke-width=".8"/>
+    <g fill="#2f5fb8"><circle cx="32" cy="12.6" r="1.3"/><ellipse cx="32" cy="9.6" rx="1" ry="1.7"/><ellipse cx="32" cy="15.6" rx="1" ry="1.7"/><ellipse cx="29" cy="12.6" rx="1.7" ry="1"/><ellipse cx="35" cy="12.6" rx="1.7" ry="1"/></g>
+    <path d="M24.3 14.2q3.2 2.2 2.4 4.6M39.7 14.2q-3.2 2.2-2.4 4.6" fill="none" stroke="#2f5fb8" stroke-width=".6"/>
+    <ellipse cx="32" cy="5.7" rx="4.6" ry="1.6" fill="#fff" stroke="#2f5fb8" stroke-width=".7"/>
+    <circle cx="32" cy="3.6" r="1.4" fill="#2f5fb8"/>
+    <path d="M25 18.6h14l2 4.2H23z" fill="url(#g-brass)"/>
+    <rect x="22" y="17.8" width="20" height="1.6" rx=".8" fill="#9c6414"/>
+    <!-- corpo -->
+    <path d="M14.5 30.5C8 30.5 8 41 14 41M49.5 30.5C56 30.5 56 41 50 41" fill="none" stroke="#3b2a22" stroke-width="2.3" stroke-linecap="round"/>
+    <path d="M22 22.8h20C50 27 52.4 38 50.4 48C49.3 53 45 57 40 58H24C19 57 14.7 53 13.6 48C11.6 38 14 27 22 22.8Z" fill="url(#g-brass)"/>
+    <path d="M19.6 28C17.4 37 17.6 47 20.8 55M26 24V57.6M38 24V57.6M44.4 28C46.6 37 46.4 47 43.2 55" fill="none" stroke="#7a4d10" stroke-width=".6" opacity=".45"/>
+    <g fill="#f8da7c" stroke="#9c6414" stroke-width=".4"><circle cx="23.2" cy="33.4" r="2.1"/><circle cx="29.1" cy="33.1" r="2.1"/><circle cx="34.9" cy="33.1" r="2.1"/><circle cx="40.8" cy="33.4" r="2.1"/></g>
+    <path d="M14.6 41.5H49.4" stroke="#9c6414" stroke-width=".8"/>
+    <ellipse cx="20.6" cy="44" rx="2" ry="8" fill="#fff" opacity=".34"/>
+    <!-- rubinetto -->
+    <path d="M46.6 49.6h7.6v4" fill="none" stroke="#c68f2c" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M51.4 49.4l2.6-3.2" stroke="#3b2a22" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- collo e base -->
+    <rect x="27" y="57.6" width="10" height="6.4" fill="#b98424"/>
+    <path d="M20 64h24l2.4 6H17.6z" fill="url(#g-brass)"/>
+    <rect x="15.6" y="69.6" width="32.8" height="3.2" rx="1.4" fill="#9c6414"/>
+    <g fill="#8a5810"><circle cx="19" cy="75" r="2.2"/><circle cx="45" cy="75" r="2.2"/></g>
+  </symbol>
+
+  <!-- Bicchiere da tè nel podstakannik (24×34) -->
+  <symbol id="ill-tea" viewBox="0 0 24 34">
+    <path d="M14 1.5 16.3 13" stroke="#b9c0cc" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M5 5h14l-1 25H6z" fill="#fff" opacity=".55" stroke="#c9ced8" stroke-width=".5"/>
+    <path d="M5.4 10h13.2l-.6 20H6z" fill="url(#g-tea)" opacity=".92"/>
+    <circle cx="12" cy="11.4" r="2.9" fill="#ffe36b" stroke="#f0b400" stroke-width=".6"/>
+    <path d="M12 8.6v5.6M9.2 11.4h5.6" stroke="#f0b400" stroke-width=".35"/>
+    <path d="M18.3 18.6C23.3 18.6 23.3 27.4 18.1 27.4" fill="none" stroke="#9aa3b3" stroke-width="1.7"/>
+    <path d="M5.6 17h12.8l-.4 14H6z" fill="url(#g-silver)"/>
+    <g fill="none" stroke="#7c8597" stroke-width=".5"><path d="M7.2 20.4q4.8 3 9.6 0M7.4 27q4.6-3 9.2 0"/><circle cx="12" cy="23.7" r="1.6"/></g>
+    <rect x="4.6" y="30.6" width="14.8" height="2.4" rx="1" fill="#8c95a6"/>
+  </symbol>
+
+  <!-- Balalaika (40×108) -->
+  <symbol id="ill-balalaika" viewBox="0 0 40 108">
+    <path d="M20 57C24 70 32 88 37.5 100C38.5 103 37 105 34 105H6C3 105 1.5 103 2.5 100C8 88 16 70 20 57Z" fill="url(#g-wood)" stroke="#7a4320" stroke-width=".9"/>
+    <path d="M20 60.5 21.5 104M20 60.5 18.5 104" stroke="#a9612a" stroke-width=".5" opacity=".6"/>
+    <g fill="#5a2f14"><circle cx="20" cy="84" r="1"/><circle cx="17.6" cy="82.6" r=".65"/><circle cx="22.4" cy="82.6" r=".65"/><circle cx="17.6" cy="85.4" r=".65"/><circle cx="22.4" cy="85.4" r=".65"/><circle cx="20" cy="81.2" r=".65"/><circle cx="20" cy="86.8" r=".65"/></g>
+    <g fill="#d8323f"><circle cx="8.6" cy="99" r="1.3"/><circle cx="31.4" cy="99" r="1.3"/></g>
+    <path d="M6 100.6q2.6-3.4 5.2-1.4M34 100.6q-2.6-3.4-5.2-1.4" fill="none" stroke="#3f8161" stroke-width=".8"/>
+    <rect x="14" y="94" width="12" height="1.6" rx=".6" fill="#3b2412"/>
+    <rect x="17.5" y="10" width="5" height="49" rx="1" fill="#7a4320"/>
+    <path d="M17.5 16h5M17.5 22h5M17.5 28h5M17.5 33h5M17.5 38h5M17.5 42h5M17.5 46h5M17.5 50h5" stroke="#e6c98e" stroke-width=".55"/>
+    <path d="M18.9 95 19.3 9M20 95V9M21.1 95 20.7 9" stroke="#f4f1ea" stroke-width=".35"/>
+    <path d="M16.5 1.5h7L23 11h-6z" fill="#5a3018"/>
+    <g fill="#ecdcb4"><circle cx="15.4" cy="4" r="1.2"/><circle cx="15.4" cy="8" r="1.2"/><circle cx="24.6" cy="6" r="1.2"/></g>
+  </symbol>
+
+  <!-- Betulla (44×130): foglie da --leaf1..3, d'inverno spoglia e con la neve -->
+  <symbol id="ill-birch" viewBox="0 0 44 130">
+    <g fill="none" stroke="#6d5d4e" stroke-width=".9" stroke-linecap="round">
+      <path d="M21 44Q11 34 4 36M21.5 32Q31 22 39 24M21.4 58Q31 50 40 51M20.6 70Q10 62 3 64M21 22Q15 12 9 12M22 18Q27 9 34 8"/>
+    </g>
+    <g style="fill:var(--ksnow,transparent)"><path d="M4 35.2q7-2 13 3.2l-.8.6q-5.6-4.4-12.2-3zM39 23.2q-7-1.4-13 4.2l.8.6q5.4-4.8 12.2-4zM3 63.2q7.4-2 14 3.6l-.8.6Q10.4 62 3 64z"/></g>
+    <path d="M18.6 130C19.6 96 20 56 21.6 6C23.2 56 23.6 96 24.8 130Z" fill="#f7f5ef" stroke="#d6d0c3" stroke-width=".5"/>
+    <g fill="#2b2b2b"><path d="M19.4 118h3.2l-.6 1h-2.6zM21.6 108h2.4v1h-2.1zM19.6 99h2.6l-.4.9h-2.2zM21.4 90h2.2l-.1.8h-2zM19.9 80h2.3l-.4.8h-1.9zM21.4 70h1.9v.8h-1.8zM20.2 61h2l-.3.7h-1.7zM21.3 52h1.6v.7h-1.5zM20.6 43h1.8l-.2.7h-1.6zM21.3 34h1.3v.6h-1.2zM20.9 25h1.3v.6h-1.2zM21.6 124.5h2.8v1.1h-2.6z"/></g>
+    <!-- chiome -->
+    <g style="fill:var(--leaf2,#6aaa3a)"><circle cx="6" cy="34" r="4.2"/><circle cx="38" cy="22" r="4.4"/><circle cx="39" cy="49" r="4.2"/><circle cx="4.6" cy="62" r="4.2"/><circle cx="9" cy="10.6" r="4"/><circle cx="33.6" cy="6.8" r="4"/><circle cx="21.6" cy="4.6" r="3.8"/></g>
+    <g style="fill:var(--leaf1,#8cc63f)"><circle cx="10" cy="31" r="3.6"/><circle cx="3" cy="38.4" r="3"/><circle cx="34" cy="19.6" r="3.6"/><circle cx="41" cy="26" r="2.8"/><circle cx="35" cy="47" r="3.4"/><circle cx="41.4" cy="53.6" r="2.6"/><circle cx="8.6" cy="60" r="3.4"/><circle cx="2.4" cy="66" r="2.6"/><circle cx="13" cy="9" r="3"/><circle cx="29.4" cy="5" r="3"/><circle cx="25.6" cy="2.8" r="2.6"/><circle cx="17.4" cy="3.6" r="2.6"/></g>
+    <g style="fill:var(--leaf3,#b5d95a)"><circle cx="7.6" cy="32.2" r="1.7"/><circle cx="37" cy="20.6" r="1.8"/><circle cx="37.6" cy="47.8" r="1.7"/><circle cx="6" cy="60.6" r="1.7"/><circle cx="10.6" cy="9.4" r="1.5"/><circle cx="32" cy="5.4" r="1.5"/><circle cx="21" cy="3" r="1.4"/></g>
+  </symbol>
+
+  <!-- Scena del tè in giardino (360×150), per «Letture e cultura» -->
+  <symbol id="ill-scena" viewBox="0 0 360 150">
+    <circle cx="298" cy="34" r="15" style="fill:var(--sun,#ffd76a)"/>
+    <circle cx="298" cy="34" r="24" style="fill:var(--sun,#ffd76a)" opacity=".22"/>
+    <g style="fill:var(--cloud,#fff)"><path d="M70 36a8 8 0 0 1 15-3 6 6 0 0 1 10 5H64a5 5 0 0 1 6-2zM186 24a7 7 0 0 1 13-2.4 5 5 0 0 1 8.6 4.4H181a4.4 4.4 0 0 1 5-2z"/></g>
+    <path d="M0 102C56 84 118 92 178 98C236 104 298 82 360 90V150H0Z" style="fill:var(--hill2,#bfe3a6)"/>
+    <use href="#ill-basil" x="238" y="62" width="46" height="41" opacity=".92"/>
+    <path d="M0 116C78 104 150 111 204 114C262 118 312 106 360 110V150H0Z" style="fill:var(--hill1,#93cc7c)"/>
+    <use href="#ill-birch" x="-8" y="4" width="46" height="136"/>
+    <use href="#ill-birch" x="24" y="34" width="34" height="104"/>
+    <use href="#ill-birch" x="324" y="6" width="44" height="130"/>
+    <use href="#ill-birch" x="302" y="40" width="30" height="92"/>
+    <!-- tovaglia ricamata -->
+    <path d="M62 126h238l6 24H56z" style="fill:var(--cloth,#fffaf0)"/>
+    <rect x="58" y="135" width="246" height="11" fill="url(#p-ricamo)"/>
+    <path d="M62 126h238" style="stroke:var(--line2)" stroke-width="1"/>
+    <!-- sul tavolo -->
+    <use href="#ill-matr" x="74" y="84" width="31" height="43.4" style="--mt:#d62c44;--md:#8f1d33;--mf:#f5c542"/>
+    <use href="#ill-matr" x="104" y="96" width="23" height="32.2" style="--mt:#2f66e8;--md:#1d3f9a;--mf:#e8364e"/>
+    <use href="#ill-matr" x="126" y="106" width="16" height="22.4" style="--mt:#1f9a5d;--md:#0f5e38;--mf:#e8364e"/>
+    <use href="#ill-samovar" x="148" y="50" width="64" height="80"/>
+    <use href="#ill-tea" x="214" y="103" width="18" height="25.5"/>
+    <ellipse cx="256" cy="127.4" rx="19" ry="3.4" fill="#fff" stroke="#2f5fb8" stroke-width=".8"/>
+    <g fill="none" stroke-width="3.4"><ellipse cx="250" cy="122.4" rx="7" ry="3.1" stroke="#d6923f"/><ellipse cx="262" cy="122.8" rx="7" ry="3.1" stroke="#c98333"/><ellipse cx="256" cy="118.2" rx="7" ry="3.1" stroke="#e2a24c"/></g>
+    <g fill="none" stroke="#fff" stroke-width=".7" opacity=".5"><path d="M245 121.4q5-2.2 10 0M257 121.8q5-2.2 10 0M251 117.2q5-2.2 10 0"/></g>
+    <use href="#ill-balalaika" x="278" y="54" width="28" height="75.6" transform="rotate(16 292 129)"/>
+  </symbol>
+  <!-- La strada verso Mosca (360×150), per il Percorso A1: la città all'orizzonte,
+       le betulle e la strada in prospettiva (tappe e matrioska si aggiungono via JS) -->
+  <pattern id="p-merli" width="6" height="2.8" patternUnits="userSpaceOnUse" x="197" y="89.8"><path d="M0 2.8V0l1.6 1 1.6-1v2.8z" fill="#bb4a3c"/></pattern>
+  <symbol id="ill-strada" viewBox="0 0 360 150">
+    <circle cx="62" cy="30" r="14" style="fill:var(--sun,#ffd76a)"/>
+    <circle cx="62" cy="30" r="23" style="fill:var(--sun,#ffd76a)" opacity=".22"/>
+    <g style="fill:var(--cloud,#fff)"><path d="M146 30a8 8 0 0 1 15-3 6 6 0 0 1 10 5h-31a5 5 0 0 1 6-2zM318 22a7 7 0 0 1 13-2.4 5 5 0 0 1 8.6 4.4h-26.6a4.4 4.4 0 0 1 5-2z"/></g>
+    <path d="M0 94C60 80 130 88 190 92C250 96 300 84 360 88V150H0Z" style="fill:var(--hill2,#c4e6aa)"/>
+    <rect x="196" y="92.4" width="144" height="7.2" fill="#bb4a3c"/>
+    <rect x="196" y="89.8" width="144" height="2.8" fill="url(#p-merli)"/>
+    <use href="#torre" transform="translate(196 77.4) scale(.5)"/>
+    <use href="#ill-basil" x="220" y="62" width="42" height="37.6"/>
+    <use href="#ill-spasskaya" x="263.5" y="55" width="17" height="45"/>
+    <use href="#torre" transform="translate(284 77.4) scale(.5)"/>
+    <use href="#torre" transform="translate(312 80.6) scale(.42)"/>
+    <path d="M0 110C70 99 128 104 186 106C246 108 298 99 360 102V150H0Z" style="fill:var(--hill1,#98cf80)"/>
+    <path d="M111.7 188.5 113.7 182.9 115.4 177.6 116.9 172.6 118.2 167.9 119.3 163.4 120.4 159.2 121.3 155.3 122.3 151.5 123.1 148.0 124.0 144.7 125.0 141.5 126.0 138.6 127.1 135.8 128.3 133.1 129.6 130.6 131.1 128.2 132.8 125.9 134.8 123.7 137.0 121.6 139.5 119.6 142.3 117.7 145.5 116.0 148.9 114.3 152.8 112.8 157.0 111.5 161.7 110.2 166.7 109.1 172.2 108.1 176.0 107.6 179.8 107.0 183.5 106.5 187.2 106.0 190.9 105.6 194.6 105.1 198.2 104.7 201.7 104.2 205.3 103.8 208.8 103.4 212.4 103.0 215.9 102.7 219.4 102.3 222.8 102.0 226.3 101.6 229.8 101.3 233.2 101.0 236.7 100.7 240.2 100.4 243.7 100.2 247.1 99.9 250.6 99.6 254.2 99.4 257.7 99.2 261.2 98.9 264.8 98.7 268.4 98.5 272.0 98.3 272.0 96.9 268.3 97.1 264.7 97.3 261.2 97.5 257.6 97.7 254.1 97.9 250.5 98.1 247.0 98.3 243.5 98.6 240.1 98.8 236.6 99.1 233.1 99.3 229.6 99.6 226.2 99.8 222.7 100.1 219.2 100.4 215.7 100.7 212.2 101.0 208.6 101.3 205.1 101.6 201.5 101.9 197.9 102.3 194.3 102.6 190.6 103.0 186.9 103.3 183.2 103.7 179.4 104.1 175.6 104.5 171.8 104.9 166.1 105.6 160.9 106.5 156.0 107.4 151.5 108.4 147.2 109.5 143.3 110.7 139.6 111.9 136.0 113.3 132.7 114.8 129.5 116.4 126.4 118.2 123.5 120.0 120.6 122.0 117.7 124.0 115.0 126.1 112.2 128.3 109.4 130.6 106.6 132.9 103.7 135.3 100.8 137.6 97.8 140.0 94.6 142.4 91.4 144.7 87.9 147.0 84.3 149.2 80.5 151.4 76.5 153.5 72.3 155.5Z" style="fill:var(--road,#ecd6ae);stroke:var(--road2,#d3b27a)" stroke-width=".7"/>
+    <path d="M92 172C122 136 118 114 172 106.5C208 102 238 99.4 272 97.6" fill="none" stroke="#fff" stroke-width=".8" stroke-dasharray="3 3" opacity=".6"/>
+    <use href="#ill-birch" x="-6" y="8" width="46" height="136"/>
+    <use href="#ill-birch" x="30" y="44" width="30" height="90"/>
+    <use href="#ill-birch" x="148" y="86" width="14" height="42"/>
+    <use href="#ill-birch" x="178" y="82" width="11" height="33"/>
+    <use href="#ill-birch" x="318" y="18" width="42" height="124"/>
+  </symbol>
+</defs></svg>
 <header id="hdr">
   <div class="appbar">
     <button class="nav-back" id="backBtn" type="button" aria-label="Indietro"><svg class="i"><use href="#i-back"/></svg><span>Indietro</span></button>
@@ -1439,12 +1820,16 @@
     <div class="kremlin-sky" aria-hidden="true"><i class="moon"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <div class="kremlin-snow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
     <span class="kremlin-wall"></span>
+    <!-- Piazza Rossa: torri delle mura, San Basilio e la Spasskaja (le più esterne solo su schermi larghi) -->
     <div class="kremlin-towers" aria-hidden="true">
-      <svg viewBox="0 0 44 48" style="height:24px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
-      <svg viewBox="0 0 44 48" style="height:32px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
-      <svg viewBox="0 0 44 48" style="height:44px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
-      <svg viewBox="0 0 44 48" style="height:32px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
-      <svg viewBox="0 0 44 48" style="height:24px" xmlns="http://www.w3.org/2000/svg"><use href="#torre"/></svg>
+      <svg class="tw-far" viewBox="0 0 44 48" style="height:20px"><use href="#torre"/></svg>
+      <svg viewBox="0 0 44 48" style="height:24px"><use href="#torre"/></svg>
+      <svg viewBox="0 0 44 48" style="height:32px"><use href="#torre"/></svg>
+      <svg viewBox="0 0 96 86" style="height:52px"><use href="#ill-basil" width="100%" height="100%"/></svg>
+      <svg viewBox="0 0 34 90" style="height:58px"><use href="#ill-spasskaya" width="100%" height="100%"/></svg>
+      <svg viewBox="0 0 44 48" style="height:32px"><use href="#torre"/></svg>
+      <svg viewBox="0 0 44 48" style="height:24px"><use href="#torre"/></svg>
+      <svg class="tw-far" viewBox="0 0 44 48" style="height:20px"><use href="#torre"/></svg>
     </div>
   </div>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -2007,6 +2392,7 @@ function makeDailyHero(){
   }
   const chip = streak>0 ? `<span class="chip-streak">${ic('flame')} ${plur(streak,'giorno','giorni')} di fila</span>` : "";
   const el = $(`<button class="hero" type="button" data-mode="daily">
+    <span class="hero-orn" aria-hidden="true"></span>
     <div class="h-body">
       <div class="h-kick">${p.completatoOggi ? "Oggi &middot; obiettivo raggiunto ✓" : "Oggi"}</div>
       <div class="h-title">${title}</div>
@@ -2158,7 +2544,12 @@ function renderHome(){
 
   // --- Piede: versione dei contenuti, impostazioni, aggiornamento ---
   const standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone;
+  // matrioske dalla più grande alla più piccola: [altezza, abito, fazzoletto, fiore]
+  const matr = [[64,'#d62c44','#8f1d33','#f5c542'],[53,'#2f66e8','#1d3f9a','#e8364e'],[44,'#1f9a5d','#0f5e38','#f5a623'],
+                [36,'#ef8a17','#a84f06','#d62c44'],[29,'#7a5cf0','#4a33b0','#f5c542']]
+    .map(([h,mt,md,mf])=>`<svg viewBox="0 0 40 56" style="height:${h}px;--mt:${mt};--md:${md};--mf:${mf}"><use href="#ill-matr" width="100%" height="100%"/></svg>`).join('');
   const foot = $(`<div class="home-foot">
+    <button class="matr-row" type="button" aria-label="Матрёшка: ascolta" title="Матрёшка"><span class="matr-dolls" aria-hidden="true">${matr}</span><span class="matr-shelf" aria-hidden="true"></span></button>
     <div class="muted">Livello A1 &middot; contenuti v${esc(DB.meta.versione)} del ${fmtData(DB.meta.aggiornato)}${standalone ? '' : '<br>Dal menu del browser scegli <b>«Aggiungi a schermata Home»</b> per usarla come app.'}</div>
     <div class="row-btns"></div></div>`);
   const setBtn=$(`<button class="linkbtn" type="button">${ic('gear')} Impostazioni</button>`);
@@ -2166,6 +2557,11 @@ function renderHome(){
   const updBtn=$(`<button class="linkbtn" type="button">${ic('refresh')} Aggiorna app</button>`);
   updBtn.onclick=()=>forceUpdate(updBtn);
   foot.querySelector('.row-btns').append(setBtn, updBtn);
+  const matrBtn = foot.querySelector('.matr-row');
+  matrBtn.onclick = ()=>{
+    speak("Матрёшка");
+    matrBtn.classList.remove('balla'); void matrBtn.offsetWidth; matrBtn.classList.add('balla');
+  };
   home.appendChild(foot);
 }
 
@@ -6440,6 +6836,12 @@ function cardProverbio(p){ return {kick:'Proverbio russo', big:p.ru, sub:p.lett,
 
 function runCultura(){
   const stage = header('Letture e cultura');
+  const scena = $(`<div class="scene">
+      <svg viewBox="0 0 360 150" role="img" aria-label="Tè col samovar fra le betulle, con matrioske e balalaika"><use href="#ill-scena" width="100%" height="100%"/></svg>
+      <div class="scene-cap"><button class="scene-ru" type="button">Добро пожаловать!${ic('vol')}</button><span>Benvenuto nella Russia di tutti i giorni</span></div>
+    </div>`);
+  scena.querySelector('.scene-ru').onclick = ()=>speak("Добро пожаловать!");
+  stage.appendChild(scena);
   stage.appendChild($(`<p class="sg-intro">Racconti da leggere con la traduzione al tocco, proverbi, tradizioni e parole trappola. Su ogni frase c'è la lente ${ic('textsearch')} per la spiegazione parola per parola.</p>`));
   const lette = letteStato();
   stage.appendChild($(`<div class="sec-h">Racconti</div>`));
@@ -6946,12 +7348,50 @@ function passoBox(r){
   b.querySelector('button').onclick = indietro;
   return b;
 }
+// Banner del Percorso: la strada verso Mosca, una pietra miliare alla fine di ogni
+// tappa (verde se completata) e la matrioska che segna quanta strada si è fatta.
+function scenaPercorso(fatti, tot){
+  const el = $(`<div class="scene">
+      <svg viewBox="0 0 360 150" role="img" aria-label="La strada verso Mosca: ${fatti} passi su ${tot}">
+        <use href="#ill-strada" width="100%" height="100%"/>
+        <path class="pc-road" d="M92 172C122 136 118 114 172 106.5C208 102 238 99.4 272 97.6" fill="none"/>
+        <g class="pc-miles"></g>
+        <g class="pc-me"><use href="#ill-matr" x="-6.5" y="-17.6" width="13" height="18.2"/></g>
+      </svg>
+      <div class="scene-cap"><button class="scene-ru" type="button">Дорога в Москву${ic('vol')}</button><span>La strada verso Mosca: la matrioska segna dove sei</span></div>
+    </div>`);
+  el.querySelector('.scene-ru').onclick = ()=>speak("Дорога в Москву");
+  return el;
+}
+// Va chiamata quando il banner è già nella pagina (servono le misure del percorso).
+function posaStrada(el, P, frac){
+  const road = el.querySelector('.pc-road');
+  if(!road || !road.getTotalLength) return;
+  try{
+    const L = road.getTotalLength();
+    let s0 = 0; while(s0 < L && road.getPointAtLength(s0).y > 146) s0 += 1;   // il tratto fuori dal riquadro non conta
+    const at = f => road.getPointAtLength(s0 + (L - s0)*Math.max(0, Math.min(1, f)));
+    const g = el.querySelector('.pc-miles');
+    P.forEach((t,k)=>{
+      const f = (k+1)/P.length, p = at(f);
+      const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      c.setAttribute('cx', p.x.toFixed(1)); c.setAttribute('cy', p.y.toFixed(1));
+      c.setAttribute('r', (1.1 + 2.5*(1-f)).toFixed(2));          // più piccole in lontananza
+      c.setAttribute('class', tappaCompleta(t) ? 'm-ok' : 'm-no');
+      g.appendChild(c);
+    });
+    const me = at(frac), sc = 1.3 - .75*Math.max(0, Math.min(1, frac));
+    el.querySelector('.pc-me').setAttribute('transform', `translate(${me.x.toFixed(1)} ${me.y.toFixed(1)}) scale(${sc.toFixed(2)})`);
+  }catch(e){}
+}
 function runPercorso(){
   _passoAttivo = null;
   const stage = header('Percorso A1');
   const P = DB.percorso || [];
   const cur = tappaCorrente();
   const tot = P.reduce((n,t)=>n+t.passi.length, 0), fatti = P.reduce((n,t)=>n+passiFatti(t).size, 0);
+  const strada = stage.appendChild(scenaPercorso(fatti, tot));
+  posaStrada(strada, P, tot ? fatti/tot : 0);
   stage.appendChild($(`<p class="sg-intro">${P.length} tappe, dall'alfabeto alle feste. Ogni tappa mescola parole, frasi, dialoghi e letture: finita una, si apre la successiva.</p>`));
   stage.appendChild($(`<div class="pcard dlg-prog"><div><b>${fatti} / ${tot}</b> <span>passi completati</span></div><div class="pbar"><i style="width:${tot?fatti/tot*100:0}%;background:var(--grad-prog)"></i></div></div>`));
   const path = $(`<div class="path"></div>`);
@@ -7053,6 +7493,7 @@ function aggiornaCremlino(){
   const d = new Date(), h = d.getHours(), m = d.getMonth();
   document.body.classList.toggle('sera', h>=19 || h<6);
   document.body.classList.toggle('inverno', m===11 || m<=1);
+  document.body.classList.toggle('autunno', m>=8 && m<=10);
 }
 
 // ================= PROMEMORIA NEL CALENDARIO =================
