@@ -3563,9 +3563,15 @@ function runVocabolario(opts){
     if(!q || q.length<2){ onlineSection.innerHTML=''; return; }
     const langpair = /[а-яё]/i.test(q) ? 'ru|it' : 'it|ru';
     onlineSection.innerHTML='';
+    if(senzaRete()){
+      onlineSection.appendChild($(`<div class="results-hdr">${ic('globe')} Online &middot; sei offline</div>`));
+      return;
+    }
     onlineSection.appendChild($(`<div class="results-hdr">${ic('globe')} Online &middot; ricerca in corso…</div>`));
     try{
-      const r = await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(q)+"&langpair="+encodeURIComponent(langpair));
+      // con la rete appesa (campo debole) si rinuncia dopo 10 secondi
+      const opz = (window.AbortSignal && AbortSignal.timeout) ? {signal: AbortSignal.timeout(10000)} : {};
+      const r = await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(q)+"&langpair="+encodeURIComponent(langpair), opz);
       const d = await r.json();
       if(inp.value.trim() !== q) return;
       onlineSection.innerHTML = '';
@@ -5653,7 +5659,16 @@ function speakAs(text, who, onDone){
 }
 function stopSpeech(){ _ttsGen++; try{ speechSynthesis.cancel(); }catch(e){} }
 
+// ---------- Rete ----------
+// Vero quando il dispositivo sa di essere senza rete (con un Wi-Fi senza
+// internet può non accorgersene: lì decide l'errore della richiesta).
+function senzaRete(){ return navigator.onLine === false; }
+// Una fetch fallita per mancanza di rete (messaggi di Chrome, Safari, Firefox)
+function erroreDiRete(e){ return senzaRete() || /failed to fetch|load failed|networkerror/i.test(String((e && e.message) || e)); }
+
 // ---------- Riconoscimento vocale (dove c'è: Chrome, Safari) ----------
+// Su alcuni browser il riconoscimento passa da un server: offline dà "network".
+const MIC_SENZA_RETE = "Qui il riconoscimento vocale ha bisogno di internet.";
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition || null;
 function ascoltaRusso(onFine, onParziale){
   const rec = new SpeechRec();
@@ -5895,7 +5910,8 @@ function runRecita(d, ruolo){
           mic.innerHTML = `${ic('mic')} Parla`; mic.classList.remove('rec');
           if(testo) rivela(testo);
           else heard.textContent = err==='not-allowed' || err==='service-not-allowed'
-            ? 'Microfono non consentito: usa «Mostra».' : 'Non ho sentito: riprova o tocca «Mostra».';
+            ? 'Microfono non consentito: usa «Mostra».'
+            : err==='network' ? `${MIC_SENZA_RETE} Tocca «Mostra».` : 'Non ho sentito: riprova o tocca «Mostra».';
         }, parz=>{ heard.textContent = parz; });
       };
       row.append(mic, show);
@@ -6726,7 +6742,7 @@ function makeMicBtn(getTarget, label){
     rec = ascoltaRusso((testo, err)=>{
       rec = null; reset();
       if(!testo){
-        res.innerHTML = `<span class="mr-no">${err==='not-allowed'||err==='service-not-allowed' ? 'Microfono non consentito.' : 'Non ho sentito: riprova.'}</span>`;
+        res.innerHTML = `<span class="mr-no">${err==='not-allowed'||err==='service-not-allowed' ? 'Microfono non consentito.' : err==='network' ? MIC_SENZA_RETE : 'Non ho sentito: riprova.'}</span>`;
         return;
       }
       const c = confrontaDetto(testo, getTarget());
@@ -8069,7 +8085,7 @@ function micParts(getTarget, label){
     res.textContent = '';
     rec = ascoltaRusso((testo, err)=>{
       rec = null; reset();
-      if(!testo){ res.innerHTML = `<span class="mr-no">${err==='not-allowed'||err==='service-not-allowed' ? 'Microfono non consentito.' : 'Non ho sentito: riprova.'}</span>`; return; }
+      if(!testo){ res.innerHTML = `<span class="mr-no">${err==='not-allowed'||err==='service-not-allowed' ? 'Microfono non consentito.' : err==='network' ? MIC_SENZA_RETE : 'Non ho sentito: riprova.'}</span>`; return; }
       const c = confrontaDetto(testo, getTarget());
       const [cls, msg] = c.pct>=80 ? ['ok','Ottima pronuncia!'] : c.pct>=50 ? ['mid','Quasi!'] : ['ko','Riprova'];
       res.innerHTML = `<b class="${cls}">${msg}</b><span class="mr-heard"></span>`;
@@ -8473,7 +8489,7 @@ class VikaSession {
         this.audioMode=false;
         this.onMsg({role:"vika",text:"⚠️ Audio diretto non disponibile — continuo col riconoscimento vocale del browser.",final:true});
       } else {
-        this.onMsg({role:"vika",text:`⚠️ Errore: ${e.message}`,final:true});
+        this.onMsg({role:"vika",text: erroreDiRete(e) ? "📡 Senza internet Vika non può rispondere: riprova quando torna la rete." : `⚠️ Errore: ${e.message}`,final:true});
         this.onStatus("error"); this._busy=false; return;
       }
     }
@@ -8932,7 +8948,9 @@ function runVika(){
     micLabel.textContent=active?"Premi per terminare":busy?"Connessione…":"Premi per parlare con Vika";
     if(s==="error"){
       const eb=addBubble("vika");
-      eb.textContent="❌ Connessione a Gemini fallita. Verifica che la API key sia corretta e riprova.";
+      eb.textContent = senzaRete()
+        ? "📡 Sei offline: per parlare con Vika serve internet. Tutto il resto dell'app funziona anche senza rete."
+        : "❌ Connessione a Gemini fallita. Verifica che la API key sia corretta e riprova.";
       session=null; vikaEl=null; userEl=null;
     }
     if(s==="dropped"){
@@ -9667,6 +9685,13 @@ fetch("knowledge.json", {cache:"no-cache"})
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('sw.js', {updateViaCache:'none'}).catch(()=>{});
 }
+// App installata: si chiede al browser di non svuotare da solo la copia offline
+// e i progressi quando lo spazio scarseggia (solo da installata, perché alcuni
+// browser lo chiedono con un avviso).
+try{
+  const installata = navigator.standalone || (window.matchMedia && matchMedia('(display-mode: standalone)').matches);
+  if(installata && navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(()=>{});
+}catch(e){}
 </script>
 </body>
 </html>
