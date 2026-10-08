@@ -12,7 +12,7 @@
 //   serve e resta in una cache a parte che sopravvive agli aggiornamenti
 //   dell'app. Se si rigenera il file, cambiare il nome di CACHE_DIZ.
 // - Vika e la ricerca online (altri siti) passano dritte: lì internet serve.
-const CACHE = "russo-v58";
+const CACHE = "russo-v59";
 const CACHE_FONT = "russo-font";
 const CACHE_DIZ = "russo-diz-1";
 

@@ -2082,6 +2082,21 @@ function addEsesVerbo(verbId){ const s=esesStore(); if(s.verbi.includes(verbId))
 function removeEsesVerbo(verbId){ const s=esesStore(); s.verbi=s.verbi.filter(v=>v!==verbId); saveEses(s); }
 function isEsesVoce(id){ return esesStore().voci.some(v=>v.id===id); }
 function isEsesVerbo(id){ return esesStore().verbi.includes(id); }
+// I verbi salvati come carte da flashcard (infinito ↔ traduzione), per
+// ricordarli prima di coniugarli. Se il verbo è anche tra le parole salvate
+// o del dizionario si usa quella voce: stessa carta, stesso ripasso (SRS).
+// soloNuovi: salta i verbi già salvati anche come parola (niente doppioni
+// quando parole e verbi finiscono nello stesso mazzo).
+function verbiEseComeVoci(s, soloNuovi){
+  s = s || esesStore();
+  const gia = new Set(soloNuovi ? s.voci.map(x=>normW(x.ru)) : []);
+  return (s.verbi||[]).map(id=>(DB.verbi||[]).find(v=>v.id===id)).filter(v=>v && v.inf && !gia.has(normW(v.inf))).map(v=>{
+    const k = normW(v.inf);
+    const w = s.voci.find(x=>normW(x.ru)===k) || (DB.voci||[]).find(x=>normW(x.ru)===k);
+    if(w) return {...w, it:w.it||v.en||'', translit:w.translit||v.translit_inf||'', tipo:w.tipo||'verbo', tag:w.tag||[]};
+    return {id:v.id, ru:v.inf, it:v.en||'', translit:v.translit_inf||'', tipo:'verbo', tag:[]};
+  }).filter(v=>v.it);
+}
 
 // ---------- Parola -> verbo: la coniugazione segue la parola ----------
 // Ovunque si salvi una parola negli esercizi (Vocabolario, Frasi & grammatica,
@@ -4007,7 +4022,7 @@ function runEsercizi(){
   // i contatori sulle schede si aggiornano a ogni rimozione
   function paintCounts(){
     const s = esesStore();
-    const n = {flash:s.voci.length, frasi:s.frasi.length, verbi:(s.verbi||[]).filter(id=>(DB.verbi||[]).some(v=>v.id===id)).length, errori:erroriStore().length};
+    const n = {flash:s.voci.length + verbiEseComeVoci(s, true).length, frasi:s.frasi.length, verbi:(s.verbi||[]).filter(id=>(DB.verbi||[]).some(v=>v.id===id)).length, errori:erroriStore().length};
     tabsDiv.querySelectorAll('.home-tab').forEach(b=>{
       let c = b.querySelector('.n');
       if(!n[b.dataset.tab]){ if(c) c.remove(); return; }
@@ -4024,13 +4039,16 @@ function runEsercizi(){
   const delBtn = (fn)=>{ const b=$(`<button class="mini-btn del" type="button" title="Rimuovi" aria-label="Rimuovi">${ic('x')}</button>`); b.onclick=(e)=>{e.stopPropagation(); fn(); haptic(false); renderTab(activeTab);}; return b; };
 
   // ---- Scheda Parole ----
+  // Nel mazzo entrano anche i verbi salvati (infinito ↔ traduzione), così li
+  // ricordi prima di coniugarli; nell'elenco stanno sotto le parole.
   function buildFlash(body){
     const s = esesStore();
-    if(!s.voci.length){
+    const verbiCarte = verbiEseComeVoci(s, true);
+    if(!s.voci.length && !verbiCarte.length){
       body.appendChild($(`<div class="empty"><div class="big">📚</div>Nessuna parola salvata.<small>Nel <b>Vocabolario</b> o in <b>Frasi &amp; grammatica</b> tocca «Aggiungi agli esercizi».</small></div>`));
       return;
     }
-    const voci = enrichVoci(s.voci);
+    const voci = enrichVoci(s.voci).concat(verbiCarte);
     const due = voci.filter(v=>isDue(v.id)).length;
     const btns = $(`<div class="row"></div>`);
     const study = $(`<button class="btn primary" type="button">${ic('cards')} Flashcard</button>`);
@@ -4042,17 +4060,32 @@ function runEsercizi(){
     write.onclick = ()=>navigateTo(openWrite);
     btns.append(study, write);
     body.appendChild(btns);
-    body.appendChild($(`<div class="sec-h">${plur(s.voci.length,'parola','parole')} &middot; ${due} da ripassare</div>`));
-    const list = $(`<div class="list" style="gap:6px"></div>`);
-    s.voci.slice().reverse().forEach(w=>{
+    const conta = [];
+    if(s.voci.length) conta.push(plur(s.voci.length,'parola','parole'));
+    if(verbiCarte.length) conta.push(plur(verbiCarte.length,'verbo','verbi'));
+    body.appendChild($(`<div class="sec-h">${conta.join(' + ')} &middot; ${due} da ripassare</div>`));
+    const riga = (ru, it, del)=>{
       const row = $(`<div class="ese-item"><div class="txt"><div class="ru"></div><div class="it"></div></div></div>`);
-      row.querySelector('.ru').textContent = w.ru;
-      row.querySelector('.it').textContent = w.it;
-      row.prepend(spkBtn(w.ru));
-      row.append(lensBtn(w.ru, w.it), delBtn(()=>removeEsesVoce(w.id)));
-      list.appendChild(row);
-    });
+      row.querySelector('.ru').textContent = ru;
+      row.querySelector('.it').textContent = it;
+      row.prepend(spkBtn(ru));
+      row.append(lensBtn(ru, it), delBtn(del));
+      return row;
+    };
+    const list = $(`<div class="list" style="gap:6px"></div>`);
+    s.voci.slice().reverse().forEach(w=>list.appendChild(riga(w.ru, w.it, ()=>removeEsesVoce(w.id))));
     body.appendChild(list);
+    if(verbiCarte.length){
+      body.appendChild($(`<div class="sec-h">Dai tuoi verbi</div>`));
+      const lv = $(`<div class="list" style="gap:6px"></div>`);
+      // la ✕ toglie il verbo dagli esercizi (anche dalla scheda Verbi)
+      (s.verbi||[]).slice().reverse().forEach(id=>{
+        const v = (DB.verbi||[]).find(x=>x.id===id);
+        const c = v && verbiCarte.find(x=>normW(x.ru)===normW(v.inf));
+        if(c) lv.appendChild(riga(c.ru, c.it, ()=>removeEsesVerbo(id)));
+      });
+      body.appendChild(lv);
+    }
   }
 
   // ---- Scheda Frasi ----
@@ -4122,10 +4155,18 @@ function runEsercizi(){
       body.appendChild($(`<div class="empty"><div class="big">⚡</div>Nessun verbo salvato.<small>Salva un verbo da <b>Verbi</b>, dal <b>Vocabolario</b> o da <b>Frasi &amp; grammatica</b>:<br>se ne conosciamo la coniugazione arriva qui, con tutte le sue forme.</small></div>`));
       return;
     }
-    const trainBtn = $(`<button class="btn primary block" type="button">${ic('zap')} Allenati: coniugazione (${plur(savedVerbi.length,'verbo','verbi')})</button>`);
+    // Prima si ricorda il verbo (flashcard), poi lo si coniuga.
+    const btns = $(`<div class="row"></div>`);
+    const flashBtn = $(`<button class="btn primary" type="button">${ic('cards')} Flashcard</button>`);
+    const openFlash = ()=>runFlash(verbiEseComeVoci(), 'I miei verbi', {fallbackAll:true, restart:openFlash});
+    flashBtn.onclick = ()=>navigateTo(openFlash);
+    const trainBtn = $(`<button class="btn" type="button">${ic('zap')} Coniugazione</button>`);
     trainBtn.onclick = ()=>navigateTo(()=>runConjugation(CONJ_TENSES_RU.map(t=>t.key), savedVerbi));
-    body.appendChild(trainBtn);
-    const list = $(`<div class="list" style="margin-top:12px"></div>`);
+    btns.append(flashBtn, trainBtn);
+    body.appendChild(btns);
+    const dueV = verbiEseComeVoci(s).filter(v=>isDue(v.id)).length;
+    body.appendChild($(`<div class="sec-h">${plur(savedVerbi.length,'verbo','verbi')} &middot; ${dueV} da ripassare</div>`));
+    const list = $(`<div class="list"></div>`);
     savedVerbi.slice().reverse().forEach(v=>{
       const row = $(`<div class="ese-item col"><div class="top"><div class="txt"><div class="ru"></div><div class="it"></div></div></div></div>`);
       const top = row.querySelector('.top');
@@ -4552,14 +4593,16 @@ function pickFlashTopic(){
   const dueOf = pool => pool.filter(x=>isDue(x.id)).length;
 
   // Riga argomento + pulsante rapido "15 carte"
-  function mkRow(ico, label, desc, pool){
+  function mkRow(ico, label, desc, pool, salvati){
     const due = dueOf(pool);
     const btn = $(`<button class="tile wide" type="button"><div class="ico">${ico}</div>
       <div class="txt"><div class="t">${label}</div><div class="d">${desc} &middot; <span class="due">${due} da ripassare</span></div></div></button>`);
-    btn.onclick = ()=>navigateTo(()=>startTopicFlash(pool, label));
+    // ciò che hai salvato tu si ripassa anche se nulla è in scadenza
+    const open = ()=>runFlash(pool, label, {fallbackAll:true, restart:open});
+    btn.onclick = ()=>navigateTo(salvati ? open : ()=>startTopicFlash(pool, label));
     const wrap = $(`<div class="rowpair"></div>`);
     wrap.appendChild(btn);
-    if(pool.length > 15){
+    if(pool.length > 15 && !salvati){
       const q = $(`<button class="qbtn" type="button" title="Ripassa 15 carte" aria-label="Ripassa 15 carte di ${label}">${ic('zap')}<b>15</b>carte</button>`);
       q.onclick = ()=>navigateTo(()=>startQuick15(pool, label));
       wrap.appendChild(q);
@@ -4567,8 +4610,20 @@ function pickFlashTopic(){
     return wrap;
   }
 
+  // ----- Salvati da te (I miei esercizi) -----
+  const ese = esesStore();
+  const mieParole = enrichVoci(ese.voci).filter(v=>v.ru && v.it);
+  const mieiVerbi = verbiEseComeVoci(ese);
+  if(mieParole.length || mieiVerbi.length){
+    stage.appendChild($(`<div class="sec-h" style="margin-top:0">Salvati da te</div>`));
+    const mine = $(`<div class="list"></div>`);
+    if(mieiVerbi.length) mine.appendChild(mkRow('⚡', 'I miei verbi', `${plur(mieiVerbi.length,'verbo','verbi')}: ricordali prima di coniugarli`, mieiVerbi, true));
+    if(mieParole.length) mine.appendChild(mkRow('🔖', 'Le mie parole', plur(mieParole.length,'parola salvata','parole salvate'), mieParole, true));
+    stage.appendChild(mine);
+  }
+
   // ----- Per livello -----
-  stage.appendChild($(`<div class="sec-h" style="margin-top:0">Per livello</div>`));
+  stage.appendChild($(`<div class="sec-h"${mieParole.length || mieiVerbi.length ? '' : ' style="margin-top:0"'}>Per livello</div>`));
   const levels = [
     [1,'🌱','Facile','Parole di base'],
     [2,'🌿','Medio','Vocabolario quotidiano'],
