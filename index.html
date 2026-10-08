@@ -2378,21 +2378,28 @@ if('scrollRestoration' in history) history.scrollRestoration = 'manual';
 // orfane: mostrava la home lì sopra e al primo Indietro l'app ripartiva da capo,
 // splash compreso. Così invece si torna subito alla voce di partenza (la home),
 // e da lì Indietro esce dall'app come deve.
+let _vaVia = false;               // questa pagina sta tornando alla voce della home
 (function(){
   const st = history.state;
   const orfane = st && st.depth > 0 ? st.depth : 0;
-  if(orfane && orfane < history.length) history.go(-orfane);
+  if(orfane && orfane < history.length){ _vaVia = true; history.go(-orfane); }
   else history.replaceState({depth:0}, "");
 })();
-function navigateTo(fn){
+// `sez`: la sezione (Vocabolario, Scrittura…) da cui viene la schermata; le
+// schermate più interne la ereditano. Serve per riprendere da lì (riprendiSezione).
+function navigateTo(fn, sez){
   _scrollAt[_navStack.length] = window.scrollY;
   _navStack.push(fn);
-  history.pushState({depth:_navStack.length},"");
+  sez = sez || (history.state && history.state.sez) || null;
+  history.pushState({depth:_navStack.length, sez},"");
   fn();
 }
 function goBack(){ history.back(); }
 backBtn.onclick = goBack;
 window.addEventListener("popstate", e=>{
+  // arrivati alla voce della home dopo una ricarica (vedi sopra). Secondo il
+  // browser ci si arriva così, nella stessa pagina, o caricandone una nuova.
+  if(_vaVia){ _vaVia = false; if(DB){ renderHome(); riprendiSezione(); } return; }
   if(!DB) return;
   // la profondità arriva dallo stato: così anche history.go(-n) torna al livello giusto
   const depth = Math.max(0, (e.state && e.state.depth) || 0);
@@ -2403,6 +2410,39 @@ window.addEventListener("popstate", e=>{
   _scrollAt.length = _navStack.length;
   requestAnimationFrame(()=>window.scrollTo(0, y));
 });
+
+// ---------- Riprendere da dove si era ----------
+// Uscendo dall'app (anche solo per cambiare la lingua della tastiera: su
+// Android, tenendo premuta la barra spaziatrice si apre una finestra del
+// sistema) il telefono può chiuderla o ricaricarla. Al ritorno si ripartiva
+// dalla home; ora si riapre la sezione in cui si era, e nel Vocabolario anche
+// la ricerca. Si annota quando la pagina va in secondo piano; vale 10 minuti.
+const RIPRENDI_KEY = 'russo_riprendi_v1';
+const RIPRENDI_MAX = 10*60*1000;
+const SEZ_RIPRENDIBILI = ['daily','flash','cyr','conj','gram','phrase','vocab','ref','frasigram','verbi','esercizi','write',
+  'stats','settings','dialoghi','frasario','compose','numeri','percorso','letture','cultura','proverbi','palestra','frasi','giochi'];
+let _vocabQ = '';                 // ricerca in corso nel Vocabolario
+function annotaSezione(){
+  if(_vaVia) return;                // la nota l'ha già lasciata la pagina di prima
+  const st = history.state || {};
+  try{
+    if(st.depth > 0 && SEZ_RIPRENDIBILI.includes(st.sez))
+      localStorage.setItem(RIPRENDI_KEY, JSON.stringify({sez:st.sez, q: st.sez==='vocab' ? _vocabQ : '', t:Date.now()}));
+    else localStorage.removeItem(RIPRENDI_KEY);
+  }catch(e){}
+}
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='hidden') annotaSezione(); });
+window.addEventListener('pagehide', annotaSezione);
+// All'avvio (dopo la home): se poco fa si era in una sezione, la si riapre
+function riprendiSezione(){
+  if(_vaVia) return;
+  let r = null;
+  try{ r = JSON.parse(localStorage.getItem(RIPRENDI_KEY)||'null'); localStorage.removeItem(RIPRENDI_KEY); }catch(e){}
+  if(!r || !SEZ_RIPRENDIBILI.includes(r.sez) || !(Date.now() - r.t < RIPRENDI_MAX)) return;
+  start(r.sez);
+  const inp = r.sez==='vocab' && r.q ? document.querySelector('.vocab-input') : null;
+  if(inp){ inp.value = r.q; inp.dispatchEvent(new Event('input')); }
+}
 
 // Chi apre risorse "vive" (il microfono di Vika, un timer…) registra qui come
 // chiuderle: si chiudono da sole appena si cambia schermata.
@@ -2834,7 +2874,7 @@ function start(mode){
     if(mode==="lampo") return runLampo();
     if(mode==="frasi") return runFrasiHub();
     if(mode==="giochi") return runGiochi();
-  });
+  }, mode);
 }
 
 // ---------- DECLINAZIONE AUTOMATICA DEI SOSTANTIVI (regolare) ----------
@@ -3880,13 +3920,14 @@ function runVocabolario(opts){
   inp.addEventListener('input', ()=>{
     clearTimeout(tLocal);
     const q = inp.value.trim();
+    if(!tag) _vocabQ = q;
     tLocal = setTimeout(()=>triggerSearch(q), 60);
   });
   inp.addEventListener('keydown', e=>{
     if(e.key==='Escape'){ inp.value=''; triggerSearch(''); inp.blur(); }
     if(e.key==='Enter') inp.blur();          // chiude la tastiera del telefono
   });
-  onLeave(()=>{ clearTimeout(tOnline); clearTimeout(tLocal); });
+  onLeave(()=>{ clearTimeout(tOnline); clearTimeout(tLocal); if(!tag) _vocabQ = ''; });
 
   buildBrowse();
 }
@@ -10100,6 +10141,7 @@ fetch("knowledge.json", {cache:"no-cache"})
     const u = userStore();
     db.voci = [...(db.voci||[]), ...(u.voci||[])];
     DB=db; sincronizzaVerbiEsercizi(); renderHome(); hideSplash();
+    riprendiSezione();
   })
   .catch(e=>{
     hideSplash(true);
