@@ -28,7 +28,8 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
   - 🃏 **Flashcard** — vocaboli RU↔IT per livello o argomento (sistema Leitner: ciò che sbagli torna più spesso).
   - ✍️ **Scrittura** — l'unico esercizio in cui la parola russa va **prodotta**, non riconosciuta: dall'italiano o
     sotto **dettato**, con **tastiera cirillica a schermo** (niente layout russo da installare) e correzione
-    lettera per lettera.
+    lettera per lettera. Col pulsante sotto il campo si passa alla tastiera del telefono, e se questa non è in
+    russo si può scrivere in lettere latine: *privet* diventa привет.
   - 🎤 **Pronuncia** — nelle flashcard, nelle frasi e nella parola del giorno: dici la parola e il telefono
     controlla (riconoscimento vocale del browser, nessuna chiave).
   - ✏️ **Coniugazione** — allenamento sulle forme verbali, con la stessa tastiera cirillica a schermo.
@@ -57,8 +58,10 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
     una parola e vedi la traduzione, li ascolti frase per frase e rispondi alle domande di comprensione. E poi
     proverbi russi con il nostro equivalente, 16 «pillole» su tradizioni e usanze, **falsi amici** (магазин non
     è il magazzino!) e parole gemelle, con quiz.
-  - 📖 **Vocabolario** — dizionario con ricerca (prima le corrispondenze esatte) e argomenti; se una parola
-    manca, la cerca online. ⚡ **Verbi** — coniugazioni complete, con ricerca e allenamento sul singolo verbo.
+  - 📖 **Vocabolario** — le parole dell'app per argomento e un **dizionario esteso di oltre 40.000 parole**
+    (da [WikDict](https://www.wikdict.com), dati di Wiktionary, licenza CC BY-SA 3.0). La ricerca capisce anche
+    le forme (книги → книга, говорю → говорить) e le lettere latine (privet → привет); se una parola manca
+    ancora, la cerca online. Lo stesso dizionario dà la traduzione in «Spiega» e nelle letture. ⚡ **Verbi** — coniugazioni complete, con ricerca e allenamento sul singolo verbo.
   - 🔤 **Cirillico** — alfabeto, pronuncia e quiz sulle lettere. 📚 **Regole grammaticali** — tabelle di
     consultazione con indice che segue la lettura.
   - 🧩 **Frasi & grammatica** — 120 frasi spiegate parola per parola a mano, filtrabili per parola o regola.

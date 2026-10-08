@@ -8,9 +8,13 @@
 //   carattere di sistema). Senza copia e senza rete si rinuncia presto.
 // - Il resto dello stesso sito (immagini…): prima la cache; ciò che arriva dalla
 //   rete ci finisce dentro per la volta dopo.
+// - Dizionario esteso (dizionario.txt, ~1,4 MB): si scarica la prima volta che
+//   serve e resta in una cache a parte che sopravvive agli aggiornamenti
+//   dell'app. Se si rigenera il file, cambiare il nome di CACHE_DIZ.
 // - Vika e la ricerca online (altri siti) passano dritte: lì internet serve.
-const CACHE = "russo-v57";
+const CACHE = "russo-v58";
 const CACHE_FONT = "russo-font";
+const CACHE_DIZ = "russo-diz-1";
 
 // Indispensabili per aprire l'app senza rete: se uno non si scarica,
 // l'installazione fallisce e resta in uso il service worker di prima.
@@ -46,7 +50,7 @@ self.addEventListener("install", e => {
 
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys().then(keys =>
-    Promise.all(keys.filter(k => k !== CACHE && k !== CACHE_FONT).map(k => caches.delete(k)))
+    Promise.all(keys.filter(k => k !== CACHE && k !== CACHE_FONT && k !== CACHE_DIZ).map(k => caches.delete(k)))
   ).then(() => self.clients.claim()));
 });
 
@@ -130,6 +134,14 @@ self.addEventListener("fetch", e => {
 
   if(FONT_HOSTS.includes(url.hostname)){
     e.respondWith(font(e));
+    return;
+  }
+
+  if(stessoSito && url.pathname.endsWith("dizionario.txt")){
+    e.respondWith(caches.open(CACHE_DIZ).then(c => c.match(req, { ignoreSearch: true }).then(hit => hit || fetch(req).then(r => {
+      if(daSalvare(r)) e.waitUntil(c.put(req, r.clone()).catch(() => {}));
+      return r;
+    }))));
     return;
   }
 

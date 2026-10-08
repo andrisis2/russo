@@ -622,6 +622,7 @@
   .vocab-speak .i{width:19px;height:19px}
   .vocab-speak:active{transform:scale(.92);color:var(--accent2)}
   @media (hover:hover){ .vocab-speak:hover{color:var(--accent2);background:var(--accent2-soft);border-color:transparent} }
+  .vocab-nota{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.4}
   .online-tag{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;color:var(--accent2);background:var(--accent2-soft);border-radius:99px;padding:3px 8px;margin-top:6px}
   .online-tag .i{width:12px;height:12px}
   .vc-actions{display:flex;gap:8px;flex-wrap:wrap}
@@ -807,6 +808,15 @@
   .kbd button.wide{flex:2 1 0;font-size:13.5px;color:var(--muted);font-weight:700;display:flex;align-items:center;justify-content:center;gap:5px}
   .kbd button.wide .i{width:18px;height:18px}
   @media (min-width:520px){ .kbd button{padding:13px 0;font-size:19px} }
+  /* campo in cirillico: anteprima di ciò che si scrive in lettere latine + scelta della tastiera */
+  .cyr-box{width:100%;display:flex;flex-direction:column;align-items:center;gap:4px}
+  .cyr-sw{font-size:13px;color:var(--muted)}
+  .cyr-sw .i{width:17px;height:17px}
+  .cyr-prev{display:none;width:100%;text-align:center;font-size:13px;color:var(--muted);line-height:1.45;margin-top:8px}
+  .cyr-prev.on{display:block;font-size:22px;font-weight:800;color:var(--accent2);letter-spacing:.3px}
+  .cyr-prev.on::before{content:"in cirillico: ";font-size:12.5px;font-weight:600;color:var(--muted);letter-spacing:0}
+  .cyr-prev.hint{display:block}
+  .cyr-prev b{color:var(--text)}
 
   /* ============================ PROGRESSI ============================ */
   .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;width:100%}
@@ -1507,6 +1517,12 @@
 </head>
 <body class="is-home">
 <div id="splash"><picture><source media="(min-width:760px)" srcset="splash-desktop.png"><img src="splash.png" alt="Русский с Викой"></picture></div>
+<script>
+// Lo splash solo all'apertura dell'app. Se invece la pagina si ricarica su una
+// voce della cronologia già aperta (il telefono l'ha ricaricata, o ci si torna
+// col tasto Indietro), l'immagine non deve ricomparire.
+try{ if(history.state && history.state.depth != null) document.getElementById('splash').remove(); }catch(e){}
+</script>
 <!-- icone (tratto, colore = currentColor) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></symbol>
@@ -1565,6 +1581,8 @@
   <symbol id="i-dumbbell" viewBox="0 0 24 24"><path d="M7.5 12h9"/><rect x="3.5" y="6" width="4" height="12" rx="1.5"/><rect x="16.5" y="6" width="4" height="12" rx="1.5"/><path d="M1.5 10v4"/><path d="M22.5 10v4"/></symbol>
   <symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="M12 14l3-3"/><circle cx="12" cy="14" r="8"/></symbol>
   <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4.5"/><path d="M12 16.5h.01"/></symbol>
+  <symbol id="i-kbd" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
   <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
 </defs></svg>
 <!-- illustrazioni russe (solo decorazione, sprite «ill-*»): San Basilio, torre
@@ -2338,6 +2356,19 @@ const appTitle = document.getElementById("appTitle");
 const _navStack = [];
 const _scrollAt = [];            // posizione di scorrimento per livello (0 = home)
 if('scrollRestoration' in history) history.scrollRestoration = 'manual';
+// Le schermate interne sono voci della cronologia che questa pagina crea man
+// mano (navigateTo), ma le schermate stesse vivono solo in memoria. Se il
+// telefono ricarica l'app (dopo un po' in background, o tornando indietro su
+// una voce rimasta da prima), la pagina nuova si ritrova sopra una pila di voci
+// orfane: mostrava la home lì sopra e al primo Indietro l'app ripartiva da capo,
+// splash compreso. Così invece si torna subito alla voce di partenza (la home),
+// e da lì Indietro esce dall'app come deve.
+(function(){
+  const st = history.state;
+  const orfane = st && st.depth > 0 ? st.depth : 0;
+  if(orfane && orfane < history.length) history.go(-orfane);
+  else history.replaceState({depth:0}, "");
+})();
 function navigateTo(fn){
   _scrollAt[_navStack.length] = window.scrollY;
   _navStack.push(fn);
@@ -2502,7 +2533,14 @@ async function forceUpdate(btnEl){
       await Promise.all(keys.map(k=>caches.delete(k)));
     }
   }catch(e){}
-  location.replace(location.pathname + "?fresh=" + Date.now());
+  // prima si torna alla voce della home, poi si ricarica lì: niente voci
+  // orfane sopra la pagina nuova
+  const url = location.pathname + "?fresh=" + Date.now();
+  const n = _navStack.length;
+  if(!n) return location.replace(url);
+  window.addEventListener('popstate', ()=>location.replace(url), {once:true});
+  setTimeout(()=>location.replace(url), 1500);
+  history.go(-n);
 }
 
 // Saluto russo secondo l'ora del giorno (in home: si tocca per ascoltarlo)
@@ -3399,6 +3437,143 @@ function makeVerbConjBlock(v, compact, initialTense){
   return wrap;
 }
 
+// ---------- DIZIONARIO ESTESO ----------
+// Oltre alle parole dell'app, un dizionario russo → italiano di circa 42.000
+// parole: dizionario.txt, da WikDict (dati di Wiktionary, CC BY-SA 3.0), che si
+// rigenera con scripts/build_dizionario.py. È un file a parte: si scarica solo
+// quando serve (ricerca nel Vocabolario, «Spiega», letture) e poi resta nella
+// cache del telefono, quindi funziona anche offline.
+let _dizEst = null, _dizEstP = null;
+function caricaDizEsteso(){
+  if(_dizEst) return Promise.resolve(_dizEst);
+  if(!_dizEstP) _dizEstP = fetch('dizionario.txt')
+    .then(r=>{ if(!r.ok) throw new Error('HTTP '+r.status); return r.text(); })
+    .then(t=>{
+      const voci = [], perRu = new Map();
+      for(const riga of t.split('\n')){
+        if(!riga || riga[0]==='#') continue;
+        const k = riga.indexOf('\t');
+        if(k < 1) continue;
+        const e = {ru: riga.slice(0, k), it: riga.slice(k+1).trim()};
+        e.n = normW(e.ru);
+        voci.push(e);
+        if(!perRu.has(e.n)) perRu.set(e.n, e);
+      }
+      return (_dizEst = {voci, perRu});
+    })
+    .catch(e=>{ _dizEstP = null; throw e; });
+  return _dizEstP;
+}
+// Si comincia a scaricarlo in sottofondo (per esempio aprendo il Vocabolario)
+function preparaDizEsteso(){ caricaDizEsteso().catch(()=>{}); }
+
+// Da una forma flessa alle forme che stanno nel dizionario: nominativo
+// singolare dei nomi, maschile degli aggettivi, infinito dei verbi
+// (книги → книга, хорошая → хороший, говорю → говорить, учится → учиться).
+// È un'euristica: propone dei candidati, nell'ordine dal più probabile, e chi
+// la usa tiene solo quelli che esistono davvero.
+const LEMMA_REGOLE = [
+  // aggettivi
+  [['ого','ому','ыми','ая','ое','ые','ую','ых','ым','ой','ом'], ['ый','ий','ой']],
+  [['его','ему','ими','яя','ее','ие','юю','их','им','ей','ем'], ['ий']],
+  // verbi: presente e futuro
+  [['ую','уешь','ует','уем','уете','уют'], ['овать']],
+  [['аю','аешь','ает','аем','аете','ают'], ['ать','авать']],
+  [['яю','яешь','яет','яем','яете','яют'], ['ять']],
+  [['ею','еешь','еет','еем','еете','еют'], ['еть']],
+  [['ишь','ит','им','ите','ят','ат'], ['ить','еть','ать','ять']],
+  [['ешь','ет','ем','ете','ют','ут'], ['ть','ать','ять','ти','еть']],
+  [['ю','у'], ['ить','ть','ать','еть','ять','ти']],
+  // verbi: passato e imperativo
+  [['л','ла','ло','ли'], ['ть','ти']],
+  [['й','йте'], ['ть']],
+  [['и','ите'], ['ить','ать','ять','еть']],
+  // nomi
+  [['ами','ах','ам'], ['','а','о']],
+  [['ями','ях','ям'], ['ь','я','е','й']],
+  [['ией','ии','ию','ий','ием','иям','иями','иях'], ['ия','ие']],
+  [['ов','ом'], ['','о']],
+  [['ев','ем','ей','ею'], ['ь','й','е','я']],
+  [['ой','ою'], ['а','о']],
+  [['а'], ['','о']],
+  [['я'], ['ь','й','е']],
+  [['у'], ['','а','о']],
+  [['ю'], ['ь','й','я','е']],
+  [['е'], ['','а','о','я','ь','й']],
+  [['ы'], ['','а']],
+  [['и'], ['ь','я','а','','й','о']],
+  [[''], ['а','о','я','ь']],            // genitivo plurale senza desinenza: книг → книга
+];
+function lemmiCandidati(w){
+  const k = normW(w), out = [];
+  const add = c=>{ if(c.length >= 2 && c !== k && !out.includes(c)) out.push(c); };
+  const prova = (s, rifl)=>{
+    LEMMA_REGOLE.forEach(([fini, lemmi])=>fini.forEach(f=>{
+      if(!s.endsWith(f) || s.length - f.length < 2) return;
+      const base = s.slice(0, s.length - f.length);
+      // i riflessivi tornano all'infinito in -ся (учится → учиться)
+      lemmi.forEach(l=>{ if(!rifl) add(base + l); else if(/(ть|ти)$/.test(base + l)) add(base + l + 'ся'); });
+    }));
+  };
+  if(/(ся|сь)$/.test(k) && k.length > 4) prova(k.slice(0, -2), true);
+  prova(k, false);
+  return out;
+}
+// Traduzione dal dizionario esteso di una parola qualsiasi: prima la parola
+// com'è, poi la sua forma base. null se non c'è (o se il file non è ancora
+// caricato: per aspettarlo c'è trEstesa).
+function trovaEsteso(w){
+  const D = _dizEst;
+  if(!D || !w) return null;
+  const e = D.perRu.get(normW(w));
+  if(e) return {ru:e.ru, it:e.it};
+  for(const c of lemmiCandidati(w)){ const x = D.perRu.get(c); if(x) return {ru:x.ru, it:x.it, forma:true}; }
+  return null;
+}
+// Scrive in `el` la traduzione di una parola che l'app non conosce, appena il
+// dizionario esteso è pronto; `fatto(testo)` riceve la traduzione trovata.
+function trEstesa(w, el, fatto){
+  const scrivi = ()=>{
+    const e = trovaEsteso(w);
+    if(!e){ el.textContent = 'Non è nel dizionario.'; return; }
+    const t = e.forma ? `${e.it} (forma di «${e.ru}»)` : e.it;
+    el.textContent = t;
+    if(fatto) fatto(t, e);
+  };
+  if(_dizEst) return scrivi();
+  el.textContent = 'Cerco nel dizionario…';
+  caricaDizEsteso().then(scrivi, ()=>{ el.textContent = senzaRete() ? 'Non è nel dizionario dell\'app (il dizionario esteso si scarica con la rete).' : 'Non è nel dizionario dell\'app.'; });
+}
+// Ricerca nel dizionario esteso per il Vocabolario. In russo: la parola, poi
+// la sua forma base (con la nota «forma di»), poi quelle che iniziano così e
+// infine quelle che la contengono. In italiano: tra le traduzioni, prima la
+// parola esatta, poi quelle che iniziano così, poi quelle che la contengono.
+// `escludi`: parole (normalizzate) già mostrate dal dizionario dell'app.
+function cercaEsteso(q, escludi, max){
+  const D = _dizEst;
+  if(!D) return [];
+  max = max || 150;
+  const out = [], visti = new Set(escludi || []);
+  const push = (e, nota)=>{ if(out.length < max && !visti.has(e.n)){ visti.add(e.n); out.push(nota ? Object.assign({}, e, {nota}) : e); } };
+  if(/[а-яё]/i.test(q)){
+    const k = normW(q);
+    const e = D.perRu.get(k);
+    if(e) push(e);
+    if(!/\s/.test(k)) lemmiCandidati(k).map(c=>D.perRu.get(c)).filter(Boolean).slice(0, 2)
+      .forEach(x=>push(x, `«${q}» è una forma di «${x.ru}»`));
+    for(const x of D.voci){ if(out.length >= max) break; if(x.n.startsWith(k)) push(x); }
+    if(k.length >= 3) for(const x of D.voci){ if(out.length >= max) break; if(x.n.includes(k)) push(x); }
+    return out;
+  }
+  const k = normSearch(q);
+  if(!k) return out;
+  D.voci.forEach(x=>{ if(!x.nit){ x.nit = normSearch(x.it); x.tok = x.nit.split(/\s*,\s*/); } });
+  const passi = [x=>x.tok.includes(k), x=>x.tok.some(t=>t.startsWith(k) || t.split(' ').includes(k))];
+  if(k.length >= 3) passi.push(x=>x.nit.includes(k));
+  for(const ok of passi){ for(const x of D.voci){ if(out.length >= max) break; if(ok(x)) push(x); } }
+  return out;
+}
+
 // ---------- VOCABOLARIO (dizionario locale + ricerca online) ----------
 // Normalizza per la ricerca: minuscole, ё=е, niente accenti sulle lettere
 // latine (privét = privet). Le lettere cirilliche restano intatte (й ≠ и).
@@ -3422,6 +3597,12 @@ function searchVoci(words, q){
   });
   return scored.sort((a,b)=>a[0]-b[0] || a[1]-b[1]).map(x=>x[2]);
 }
+// I verbi dell'app che non sono anche tra le parole, in forma di voce
+function verbiComeVoci(voci){
+  const gia = new Set(voci.map(v=>normW(v.ru)));
+  return (DB.verbi||[]).filter(v=>v.inf && !gia.has(normW(v.inf)))
+    .map(v=>({id:v.id, ru:v.inf, it:v.en||'', translit:v.translit_inf||'', tipo:'verbo', tag:[]}));
+}
 // Argomenti con almeno `min` parole, nell'ordine di TOPIC_LABELS: [tag, etichetta, parole]
 function topicList(words, min){
   const out = [];
@@ -3433,21 +3614,24 @@ function topicList(words, min){
 }
 
 // ---- Scheda di una parola (dizionario, argomenti, ricerca online) ----
-function makeVocabCard(ruWord, itTrans, {translit=null, online=false, tipo=null, tags=null, id=null}={}){
-  const card = $(`<div class="vocab-card${online?' online':''}"></div>`);
+function makeVocabCard(ruWord, itTrans, {translit=null, online=false, tipo=null, tags=null, id=null, esteso=false, nota=null}={}){
+  const card = $(`<div class="vocab-card${online||esteso?' online':''}"></div>`);
   const gv = genderOf(ruWord, tipo, tags);   // scritta M/F/N per i sostantivi
   const top = $(`<div class="vocab-top">
       <div>
         <div class="vocab-ru"><span></span>${gv?`<span class="gpill g${gv}" title="${GENDER_INFO[gv][1]}">${{m:'M',f:'F',n:'N'}[gv]}</span>`:''}</div>
         ${translit?`<div class="vocab-translit"></div>`:''}
         <div class="vocab-it"></div>
+        ${nota?`<div class="vocab-nota"></div>`:''}
         ${online?`<span class="online-tag">${ic('globe')} traduzione online</span>`:''}
+        ${esteso?`<span class="online-tag">${ic('book')} dizionario esteso</span>`:''}
       </div>
       <button class="vocab-speak" type="button" title="Ascolta" aria-label="Ascolta">${ic('vol')}</button>
     </div>`);
   top.querySelector('.vocab-ru span').textContent = ruWord;
   if(translit) top.querySelector('.vocab-translit').textContent = translit;
   top.querySelector('.vocab-it').textContent = itTrans;
+  if(nota) top.querySelector('.vocab-nota').textContent = nota;
   top.querySelector('.vocab-speak').onclick = ()=>speak(ruWord);
   card.appendChild(top);
 
@@ -3466,7 +3650,7 @@ function makeVocabCard(ruWord, itTrans, {translit=null, online=false, tipo=null,
   }
   if(alreadySaved) setAdded(); else setAdd();
   addBtn.onclick = ()=>{
-    const eid = id || ('online_'+Date.now());
+    const eid = id || (esteso ? 'x_'+normW(ruWord) : 'online_'+Date.now());
     addEsesVoce(eid, ruWord, itTrans, translit, tipo, tags ? (Array.isArray(tags) ? tags : [tags]) : []);
     setAdded(); notaConj(); haptic(true);
   };
@@ -3491,7 +3675,7 @@ function renderWordList(host, list, hdrHtml){
   let shown = 0;
   const more = $(`<button class="btn sm more-btn" type="button"></button>`);
   function page(){
-    list.slice(shown, shown+VOCAB_PAGE).forEach(w=>host.insertBefore(makeVocabCard(w.ru, w.it, {translit:w.translit, tipo:w.tipo, tags:w.tag, id:w.id}), more));
+    list.slice(shown, shown+VOCAB_PAGE).forEach(w=>host.insertBefore(makeVocabCard(w.ru, w.it, {translit:w.translit, tipo:w.tipo, tags:w.tag, id:w.id, esteso:!!w.esteso, nota:w.nota}), more));
     shown = Math.min(list.length, shown+VOCAB_PAGE);
     const rest = list.length - shown;
     more.innerHTML = `${ic('down')} Mostra altre ${Math.min(rest, VOCAB_PAGE)} <span style="opacity:.6;font-weight:600">&middot; ne restano ${rest}</span>`;
@@ -3509,6 +3693,9 @@ function runVocabolario(opts){
   const all = DB.voci || [];
   const tag = opts.tag || null;
   const base = !tag || tag==='all' ? all : all.filter(w=>w.tag && w.tag.includes(tag));
+  // nella ricerca principale anche i verbi che non sono tra le parole
+  const cercabili = tag ? base : base.concat(verbiComeVoci(all));
+  if(!tag) preparaDizEsteso();
   const titolo = !tag ? 'Vocabolario' : tag==='all' ? 'Tutte le parole' : (TOPIC_LABELS[tag]||tag);
   const stage = header(titolo);
 
@@ -3519,9 +3706,11 @@ function runVocabolario(opts){
 
   const browseView = $(`<div class="list" style="gap:12px"></div>`);
   const resultsView = $(`<div class="list" style="display:none"></div>`);
+  const formeSection = $(`<div class="list"></div>`);
   const localSection = $(`<div class="list"></div>`);
+  const estesoSection = $(`<div class="list"></div>`);
   const onlineSection = $(`<div class="list"></div>`);
-  resultsView.append(localSection, onlineSection);
+  resultsView.append(formeSection, localSection, estesoSection, onlineSection);
   stage.append(browseView, resultsView);
 
   function buildBrowse(){
@@ -3544,18 +3733,77 @@ function runVocabolario(opts){
       grid.appendChild(b);
     });
     browseView.appendChild(grid);
-    browseView.appendChild($(`<p class="muted" style="margin:6px 0 0">${ic('globe')} Se una parola non c'è nel dizionario, mentre scrivi la cerco anche online (italiano ⇄ russo).</p>`));
+    browseView.appendChild($(`<p class="muted" style="margin:6px 0 0;line-height:1.55">${ic('book')} Mentre scrivi cerco tra le parole dell'app e in un dizionario di oltre 40.000 parole, anche partendo da una forma (книги → книга, говорю → говорить) o dalle lettere latine (privet → привет). Se non c'è, cerco online.</p>`));
+    browseView.appendChild($(`<p class="muted" style="margin:0;font-size:11.5px">Dizionario esteso: <a href="https://www.wikdict.com" target="_blank" rel="noopener">WikDict</a>, dai dati di Wiktionary (CC BY-SA 3.0).</p>`));
   }
 
   // ---- Risultati ricerca locale ----
-  function renderLocal(q){
-    const found = searchVoci(base, q);
+  // Le lettere latine valgono anche come traslitterazione: «privet» trova привет
+  function renderLocal(q, conForme){
+    let found = searchVoci(cercabili, q);
+    const cy = latToCyr(q);
+    if(cy !== q && /[а-яё]/i.test(cy)){
+      const k = normW(cy);
+      const extra = cercabili.filter(w=>normW(w.ru)===k && !found.includes(w));
+      found = extra.concat(found);
+    }
     if(!found.length){
       localSection.innerHTML = '';
-      localSection.appendChild($(`<div class="results-hdr">${ic('book')} Nel dizionario &middot; nessuna parola</div>`));
-      return;
+      if(!conForme) localSection.appendChild($(`<div class="results-hdr">${ic('book')} Nelle parole dell'app &middot; nessuna</div>`));
+      return found;
     }
-    renderWordList(localSection, found, `${ic('book')} Nel dizionario &middot; ${plur(found.length,'parola','parole')}`);
+    renderWordList(localSection, found, `${ic('book')} Nelle parole dell'app &middot; ${plur(found.length,'parola','parole')}`);
+    return found;
+  }
+
+  // ---- Una forma flessa di una parola che l'app conosce (книги → книга) ----
+  function renderForme(q){
+    formeSection.innerHTML = '';
+    if(!/^[а-яё-]+$/i.test(q)) return [];
+    const k = normW(q);
+    const an = (indiceForme().get(k) || []).filter(a=>a.it && normW(a.lemma)!==k).slice(0, 2);
+    an.forEach(a=>{
+      const t = $(`<button class="tile wide forma-tile" type="button"><div class="ico">🧩</div>
+        <div class="txt"><div class="t"></div><div class="d"></div></div></button>`);
+      t.querySelector('.t').textContent = `${a.lemma} — ${a.it}`;
+      const note = sintesiNote(a.note.filter(Boolean));
+      t.querySelector('.d').textContent = `«${q}» è una forma di «${a.lemma}»${note.length ? ': '+note.join(' / ') : ''}`;
+      t.onclick = ()=>spiega(q, '', {});
+      formeSection.appendChild(t);
+    });
+    return an.map(a=>a.lemma);
+  }
+
+  // ---- Dizionario esteso (si carica la prima volta che serve) ----
+  let cercaSeq = 0;
+  function renderEsteso(q, foundLocal, lemmi){
+    const mio = ++cercaSeq;
+    estesoSection.innerHTML = '';
+    // ciò che è già in alto (parole dell'app, forme riconosciute) non si ripete
+    const escludi = foundLocal.map(w=>normW(w.ru)).concat(lemmi.map(normW));
+    const dopo = ()=>{
+      if(mio !== cercaSeq) return;
+      let res = cercaEsteso(q, escludi);
+      const cy = latToCyr(q);
+      if(cy !== q && /[а-яё]/i.test(cy)){
+        const e = _dizEst.perRu.get(normW(cy));
+        if(e && !res.some(x=>x.n===e.n) && !escludi.includes(e.n)) res = [Object.assign({}, e, {nota:`in cirillico: «${q}» → ${cy}`})].concat(res);
+      }
+      estesoSection.innerHTML = '';
+      if(res.length) renderWordList(estesoSection, res.map(e=>({ru:e.ru, it:e.it, nota:e.nota, esteso:true})),
+        `${ic('book')} Dizionario esteso &middot; ${plur(res.length,'parola','parole')}${res.length>=150?' (le prime)':''}`);
+      // online solo se non si è trovato niente: le frasi intere, le parole rare
+      const trovato = foundLocal.length || res.length || formeSection.children.length;
+      if(!trovato && q.length>=2) tOnline = setTimeout(()=>doOnline(q), 300);
+      else onlineSection.innerHTML = '';
+    };
+    if(_dizEst) return dopo();
+    estesoSection.appendChild($(`<div class="results-hdr">${ic('book')} Dizionario esteso &middot; caricamento…</div>`));
+    caricaDizEsteso().then(dopo, ()=>{
+      if(mio !== cercaSeq) return;
+      estesoSection.innerHTML = '';
+      if(!foundLocal.length && q.length>=2) tOnline = setTimeout(()=>doOnline(q), 300);
+    });
   }
 
   // ---- Ricerca online (MyMemory): la direzione si capisce dall'alfabeto ----
@@ -3604,12 +3852,15 @@ function runVocabolario(opts){
   let tOnline = null, tLocal = null;
   function triggerSearch(q){
     clearTimeout(tOnline);
+    cercaSeq++;
     if(!q){ resultsView.style.display='none'; browseView.style.display=''; onlineSection.innerHTML=''; return; }
     browseView.style.display='none'; resultsView.style.display='';
-    renderLocal(q);
-    // negli argomenti si filtra solo il dizionario; nella pagina principale anche online
-    if(!tag && q.length>=2) tOnline = setTimeout(()=>doOnline(q), 500);
-    else onlineSection.innerHTML='';
+    onlineSection.innerHTML='';
+    // negli argomenti si filtrano solo le parole dell'argomento; nella pagina
+    // principale anche le forme, il dizionario esteso e, se serve, online
+    if(tag){ formeSection.innerHTML=''; estesoSection.innerHTML=''; renderLocal(q); return; }
+    const lemmi = renderForme(q);
+    renderEsteso(q, renderLocal(q, lemmi.length>0), lemmi);
   }
   inp.addEventListener('input', ()=>{
     clearTimeout(tLocal);
@@ -5110,6 +5361,116 @@ function makeCyrKeyboard(inp, onInput, locked){
   return kbd;
 }
 
+// ---------- Dal latino al cirillico ----------
+// Per scrivere in russo anche con la tastiera del telefono in italiano. Vale
+// la traslitterazione dell'app (č š ž, j = й, y = ы, c = ц, h = х, ʹ = ь) e
+// quella «a orecchio» (ch, sh, zh, kh, shch, ya, yu, yo, ' = ь, '' = ъ).
+// Gli accenti acuti sono solo l'accento tonico (privét); «è» è la э.
+const LAT_CYR = {a:'а',b:'б',v:'в',w:'в',g:'г',d:'д',e:'е',z:'з',i:'и',j:'й',k:'к',q:'к',l:'л',m:'м',n:'н',o:'о',
+  p:'п',r:'р',s:'с',t:'т',u:'у',f:'ф',h:'х',c:'ц',x:'кс',y:'ы','č':'ч','š':'ш','ž':'ж','è':'э',
+  'á':'а','à':'а','é':'е','í':'и','ì':'и','ó':'о','ò':'о','ú':'у','ù':'у','ý':'ы'};
+const LAT_PIANA = {'á':'a','à':'a','é':'e','í':'i','ì':'i','ó':'o','ò':'o','ú':'u','ù':'u','ý':'y'};
+const LAT_RE = /[a-zà-ÿčšž]/i;
+function latToCyr(s){
+  s = String(s||'').normalize('NFC');
+  if(!LAT_RE.test(s) && !/['’ʹʺ`"#]/.test(s)) return s;
+  const lettera = c => /[а-яё]/i.test(c);
+  const vocale = c => /[аеёиоуыэюяьъ]/i.test(c);   // dopo vocale o segno: ya = я, y = й
+  let out = '';
+  for(let i = 0; i < s.length; ){
+    const ch = s[i];
+    const low = s.slice(i, i+4).toLowerCase().replace(/[áàéíìóòúùý]/g, c=>LAT_PIANA[c]);
+    const prev = out.slice(-1);
+    const inizio = !lettera(prev);
+    let cy = null, n = 1, m;
+    if((m = /^(shch|sch|šč)/.exec(low))) { cy = 'щ'; n = m[0].length; }
+    else if((m = /^(zh|kh|ch|sh)/.exec(low))) { cy = {zh:'ж', kh:'х', ch:'ч', sh:'ш'}[m[0]]; n = 2; }
+    else if((m = /^[yj][auoe]/.exec(low))){
+      const v = m[0][1]; n = 2;
+      // dopo consonante «ye» è ые (novye → новые); altrimenti я ю ё е (dyadya → дядя)
+      cy = (m[0][0]==='y' && v==='e' && !inizio && !vocale(prev)) ? 'ые' : {a:'я', u:'ю', o:'ё', e:'е'}[v];
+    }
+    else if(low[0]==='y') cy = !inizio && vocale(prev) && !/[ьъ]/.test(prev) ? 'й' : 'ы';
+    // «novyi» → новый: la i dopo ы, a fine parola, è й
+    else if(low[0]==='i' && prev==='ы' && !LAT_RE.test(s[i+1]||'')) cy = 'й';
+    else if(/^(''|ʺ|")/.test(low)){ cy = 'ъ'; n = low[0]==="'" ? 2 : 1; }
+    else if(/^['’ʹ`]/.test(low)) cy = inizio ? null : 'ь';
+    else if(low[0]==='#') cy = 'ъ';
+    else cy = LAT_CYR[ch.toLowerCase()] || null;
+    if(cy === null){ out += ch; i++; continue; }
+    // maiuscola se lo era la lettera latina
+    if(ch !== ch.toLowerCase()) cy = cy[0].toUpperCase() + cy.slice(1);
+    out += cy; i += n;
+  }
+  return out;
+}
+
+// ---------- Campo per scrivere in cirillico ----------
+// Due modi, e si passa dall'uno all'altro col pulsante sotto il campo (la
+// scelta resta, come nelle Impostazioni):
+// - la tastiera cirillica dell'app (quella del telefono resta chiusa);
+// - la tastiera del telefono: se è ancora in italiano si può scrivere in
+//   lettere latine (privet, spasibo, khorosho) e sotto si vede la parola in
+//   cirillico, che è quella che si verifica.
+// Con la tastiera del telefono il campo non si blocca mai dopo la risposta
+// (readonly la chiuderebbe): le lettere battute si ignorano e basta, così la
+// tastiera resta aperta da una domanda all'altra, con la lingua che si è scelta.
+function campoCirillico(inp, onInput, locked){
+  // anteprima in cirillico (va subito sotto il campo) e, a parte, tastiera + pulsante
+  const prev = $(`<div class="cyr-prev" aria-live="polite"></div>`);
+  const box = $(`<div class="cyr-box"></div>`);
+  const sw = $(`<button type="button" class="textbtn cyr-sw"></button>`);
+  box.appendChild(sw);
+  const app = ()=>!!settings().kbd;
+  let kbd = null, fermo = null;
+  inp.setAttribute('enterkeyhint', 'go');
+  function anteprima(){
+    const v = inp.value;
+    prev.className = 'cyr-prev';
+    prev.textContent = '';
+    if(fermo !== null) return;
+    if(LAT_RE.test(v)){ prev.className = 'cyr-prev on'; prev.textContent = latToCyr(v); }
+    else if(!app() && !v){ prev.className = 'cyr-prev hint'; prev.innerHTML = `Tastiera del telefono non in russo? Scrivi in lettere latine: <b>privet</b> → привет`; }
+  }
+  function applica(){
+    const a = app();
+    inp.setAttribute('inputmode', a ? 'none' : 'text');
+    inp.placeholder = a ? 'usa la tastiera qui sotto' : 'scrivi in russo…';
+    if(a && !kbd){ kbd = makeCyrKeyboard(inp, ()=>{ anteprima(); onInput(); }, ()=>fermo!==null || locked()); box.insertBefore(kbd, sw); }
+    if(kbd) kbd.style.display = a && fermo===null ? '' : 'none';
+    sw.innerHTML = a ? `${ic('phone')} Usa la tastiera del telefono` : `${ic('kbd')} Usa la tastiera cirillica dell'app`;
+    anteprima();
+  }
+  // toccando i pulsanti il campo non perde il fuoco: la tastiera del telefono non si chiude
+  const tieni = b=>b.addEventListener('mousedown', e=>{ if(!app() && document.activeElement===inp) e.preventDefault(); });
+  tieni(sw);
+  sw.onclick = ()=>{
+    setSetting('kbd', !app());
+    applica();
+    inp.blur();
+    // con inputmode cambiato la tastiera del telefono si apre solo rimettendo il fuoco
+    if(!app()) try{ inp.focus({preventScroll:true}); }catch(e){}
+  };
+  inp.addEventListener('input', ()=>{
+    if(fermo !== null){ inp.value = fermo; return; }
+    anteprima();
+  });
+  applica();
+  return {
+    box, prev, tieni, aggiorna: anteprima,
+    telefono: ()=>!app(),
+    // il testo da verificare, in cirillico (anche nel campo)
+    testo(){ const v = latToCyr(inp.value); if(v !== inp.value) inp.value = v; return v; },
+    // risposta data: via tastiera dell'app e anteprima, il testo non cambia più
+    fine(){ fermo = inp.value; if(kbd) kbd.style.display = 'none'; sw.style.display = 'none'; anteprima(); },
+    // fuoco al campo nuovo: subito, così la tastiera del telefono resta su
+    fuoco(){
+      if(app()) setTimeout(()=>{ try{ inp.focus({preventScroll:true}); }catch(e){} }, 60);
+      else try{ inp.focus({preventScroll:true}); }catch(e){}
+    }
+  };
+}
+
 // ---------- 2. CONIUGAZIONE ----------
 function runConjugation(tenseFilter, verbiPool){
   const verbi = verbiPool || DB.verbi || [];
@@ -5182,30 +5543,30 @@ function runConjugation(tenseFilter, verbiPool){
     card.querySelector('.big-it').textContent = q.en;
     card.querySelector('.pron').textContent = q.pron;
     wrap.appendChild(card);
-    const useKbd = settings().kbd;
-    const inp = $(`<input class="winput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-        inputmode="${useKbd?"none":"text"}" lang="ru" placeholder="${useKbd?"scrivi con la tastiera qui sotto":"scrivi la forma in cirillico…"}" style="margin-top:0">`);
+    const inp = $(`<input class="winput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" lang="ru" style="margin-top:0">`);
     wrap.appendChild(inp);
     const fb = $(`<div class="fb"></div>`);
     wrap.appendChild(fb);
     let answered = false;
-    const kbd = useKbd ? makeCyrKeyboard(inp, ()=>{}, ()=>answered) : null;
-    if(kbd) wrap.appendChild(kbd);
+    const ctl = campoCirillico(inp, ()=>{}, ()=>answered);
+    inp.after(ctl.prev);
+    wrap.appendChild(ctl.box);
     const btn = $(`<button class="btn primary block" type="button">Controlla</button>`);
     wrap.appendChild(btn);
+    ctl.tieni(btn);
 
     function next(){ i++; show(); }
     function check(){
-      const val = normConj(inp.value);
+      const val = normConj(ctl.testo());
       if(!val) return;
       answered = true;
+      ctl.fine();
       const target = normConj(q.answer);
       const exact = val===target;
       const loose = normYo(val)===normYo(target);
       const ok = exact || loose;
       grade(q.id, ok); if(ok) correct++;
       haptic(ok);
-      inp.readOnly = true;
       inp.classList.add(ok ? 'ok' : 'ko');
       if(exact){
         fb.className = 'fb ok'; fb.innerHTML = `${ic('check')} Corretto!`;
@@ -5215,7 +5576,6 @@ function runConjugation(tenseFilter, verbiPool){
         fb.className = 'fb no'; fb.innerHTML = `La risposta giusta è <b>${esc(q.answer)}</b>`;
       }
       speak(q.answer);
-      if(kbd) kbd.style.display = 'none';
 
       // Reveal: infinito russo + traslitterazione + tabella coniugazioni completa
       const reveal = $(`<div class="reveal"><div class="reveal-head">
@@ -5239,7 +5599,7 @@ function runConjugation(tenseFilter, verbiPool){
       e.preventDefault();
       answered ? next() : check();
     });
-    setTimeout(()=>{ try{ inp.focus({preventScroll:true}); }catch(e){} }, 60);
+    ctl.fuoco();
   }
   show();
 }
@@ -6861,10 +7221,14 @@ function traduciParola(w, gl){
   if(v) return {it: v.it, voce: v};
   const vb = verbFormIndex().get(k);
   if(vb) return {it: `forma di «${vb.inf}»${vb.en ? ' — '+vb.en : ''}`, verbo: vb};
+  // il dizionario esteso, se è già pronto (lo si prepara aprendo la lettura)
+  const e = trovaEsteso(w);
+  if(e) return {it: e.forma ? `${e.it} (forma di «${e.ru}»)` : e.it, esteso: e};
   if(/^[А-ЯЁ]/.test(w)) return {it: 'nome proprio (di persona o di luogo)', nome: true};
   return null;
 }
 function runLettura(l){
+  preparaDizEsteso();
   const stage = header(l.titolo, {narrow:true});
   const gl = glossarioDi(l);
   const hero = $(`<div class="dlg-hero"><div class="e">${l.icona||'📖'}</div>
@@ -6915,7 +7279,8 @@ function runLettura(l){
     const tr = traduciParola(parola, gl);
     const pop = $(`<div class="vika-pop lt-pop"><b></b><div class="vika-it"></div><div class="pop-row"></div></div>`);
     pop.querySelector('b').textContent = parola;
-    pop.querySelector('.vika-it').textContent = tr ? tr.it : 'Non è nel glossario: guarda la traduzione della frase.';
+    if(tr) pop.querySelector('.vika-it').textContent = tr.it;
+    else trEstesa(parola, pop.querySelector('.vika-it'));
     const row = pop.querySelector('.pop-row');
     const sp = $(`<button type="button">🔊 Ascolta</button>`);
     sp.onclick = e=>{ e.stopPropagation(); speak(parola); };
@@ -7357,19 +7722,20 @@ function runDettatoFrasi(){
     card.querySelector('.big-play').onclick = ()=>dire(settings().ttsRate);
     card.querySelector('.slow-play').onclick = ()=>dire(0.55);
     wrap.appendChild(card);
-    const inp = $(`<input class="vocab-input plain dt-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Scrivi in cirillico…">`);
+    const inp = $(`<input class="vocab-input plain dt-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" lang="ru">`);
     const chk = $(`<button class="btn primary block" type="button">${ic('check')} Verifica</button>`);
     const res = $(`<div class="dt-res" style="display:none"></div>`);
-    wrap.append(inp, res, chk);
     let answered = false;
-    const useKbd = settings().kbd;
-    let kbd = null;
-    if(useKbd){ inp.readOnly = true; inp.inputMode = 'none'; kbd = makeCyrKeyboard(inp, ()=>{}, ()=>answered); wrap.appendChild(kbd); }
+    const ctl = campoCirillico(inp, ()=>{}, ()=>answered);
+    wrap.append(inp, ctl.prev, res, chk, ctl.box);
+    ctl.tieni(chk);
     chk.onclick = ()=>{
       if(answered){ i++; return show(); }
-      if(!inp.value.trim()){ if(!useKbd) inp.focus(); return; }
+      const scritto = ctl.testo();
+      if(!scritto.trim()){ if(ctl.telefono()) inp.focus(); return; }
       answered = true;
-      const scritte = normWrite(inp.value).split(' ').filter(Boolean);
+      ctl.fine();
+      const scritte = normWrite(scritto).split(' ').filter(Boolean);
       const giuste = solW.map(w=>normWrite(w));
       const ok = scritte.join(' ') === giuste.join(' ');
       if(ok) correct++;
@@ -7383,7 +7749,6 @@ function runDettatoFrasi(){
       res.style.display = '';
       res.appendChild(azioniTesto(f.ru, f.it, {translit:f.translit}));
       inp.classList.add(ok ? 'ok' : 'ko');
-      if(kbd) kbd.style.display = 'none';
       chk.innerHTML = `${ok ? '✓ Giusto! ' : ''}${i+1<deck.length ? 'Continua' : 'Risultato'} →`;
       dire(settings().ttsRate);
     };
@@ -7391,7 +7756,7 @@ function runDettatoFrasi(){
     onKey = e=>{ if(e.key==='Enter'){ e.preventDefault(); chk.click(); } };
     document.addEventListener('keydown', onKey);
     setTimeout(()=>dire(settings().ttsRate), 300);
-    if(!useKbd) setTimeout(()=>{ try{ inp.focus({preventScroll:true}); }catch(e){} }, 80);
+    if(ctl.telefono()) ctl.fuoco();
   }
   if(!deck.length) return emptyDone(stage, '🎧', 'Nessuna frase', 'Non ci sono frasi adatte al dettato.');
   show();
@@ -7910,6 +8275,7 @@ function salvaParola(ru, it, extra){
 // ---------- Il pannello «Spiega» ----------
 function sheetChiudi(){ const ov = document.querySelector('.sheet-ov'); if(ov){ ov.classList.add('out'); setTimeout(()=>ov.remove(), 180); } }
 function sheetApri(titolo, build){
+  preparaDizEsteso();
   let ov = document.querySelector('.sheet-ov');
   if(!ov){
     ov = $(`<div class="sheet-ov" role="dialog" aria-modal="true"><div class="sheet">
@@ -7984,13 +8350,14 @@ function pagFrase(ru, it, opts){
     const cur = curata ? (curata.parole||[]).find(p=>normW(p.ru)===normW(w)) : null;
     const r = analizzaParola(w, toks[i-1], gloss);
     const a = r.an[0];
-    const tr = cur ? cur.it : a ? (a.itCtx || a.it) : '';
+    let tr = cur ? cur.it : a ? (a.itCtx || a.it) : '';
     const nota = cur ? cur.nota : descriviAnalisi(a && Object.assign({form:w}, a), r.perche);
     const row = $(`<div class="wbw-row${a || cur ? '' : ' ignota'}" role="button" tabindex="0"><button class="wbw-ru" type="button"></button>
       <div class="wbw-txt"><div class="wbw-it"></div><div class="wbw-nota"></div></div><span class="wbw-go">${ic('back')}</span></div>`);
     row.querySelector('.wbw-ru').textContent = w;
     row.querySelector('.wbw-ru').onclick = e=>{ e.stopPropagation(); speak(w); };
-    row.querySelector('.wbw-it').textContent = tr || 'non è nel dizionario dell\'app';
+    if(tr) row.querySelector('.wbw-it').textContent = tr;
+    else trEstesa(w, row.querySelector('.wbw-it'), t=>{ tr = t; row.classList.remove('ignota'); });
     row.querySelector('.wbw-nota').textContent = nota || '';
     if(!nota) row.querySelector('.wbw-nota').remove();
     if(!cur && r.an.length>1){
@@ -8013,14 +8380,16 @@ function pagParola(w, it, opts){
   const r = analizzaParola(w, opts.prev, opts.glossario);
   const a = r.an[0];
   const lemma = a && a.cat!=='nomep' ? a.lemma : w;
-  const tr = it || (a ? (a.itCtx || a.it) : '');
+  let tr = it || (a ? (a.itCtx || a.it) : '');
   const voce = a && a.voce;
   const hero = $(`<div class="sh-hero"><div class="ru" role="button" tabindex="0"></div><div class="tr"></div><div class="it"></div><div class="an"></div><div class="act-bar"></div></div>`);
   hero.querySelector('.ru').textContent = w;
   hero.querySelector('.ru').onclick = ()=>speak(w);
   const trl = voce && normW(voce.ru)===normW(w) ? voce.translit : '';
   if(trl) hero.querySelector('.tr').textContent = trl; else hero.querySelector('.tr').remove();
-  hero.querySelector('.it').textContent = tr || 'Non è nel dizionario dell\'app.';
+  // parola che l'app non conosce: la traduzione dal dizionario esteso
+  if(tr) hero.querySelector('.it').textContent = tr;
+  else trEstesa(w, hero.querySelector('.it'), t=>{ tr = t; });
   const desc = descriviAnalisi(a && Object.assign({form:w}, a), r.perche);
   if(desc) hero.querySelector('.an').textContent = desc; else hero.querySelector('.an').remove();
   const bar = hero.querySelector('.act-bar');
@@ -9367,7 +9736,6 @@ function runScrittura(pool, label, opts){
   function show(){
     bar.style.width = (mastered/total*100)+"%"; bar.setNum(mastered, total);
     wrap.innerHTML = "";
-    const useKbd = settings().kbd;
     const mySeq = cardSeq;
 
     const wbox = $(`<div class="wbox">
@@ -9377,8 +9745,7 @@ function runScrittura(pool, label, opts){
         : `<div class="prompt"></div><div class="sub">Scrivi la parola in russo</div>`}
     </div>`);
     if(modo!=="audio") wbox.querySelector('.prompt').textContent = c.it;
-    const inp = $(`<input class="winput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" lang="ru"
-        inputmode="${useKbd?"none":"text"}" placeholder="${useKbd?"usa la tastiera qui sotto":"scrivi in cirillico…"}">`);
+    const inp = $(`<input class="winput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" lang="ru">`);
     wbox.appendChild(inp);
     const sol = $(`<div class="wsol" style="display:none"></div>`);
     wbox.appendChild(sol);
@@ -9389,15 +9756,17 @@ function runScrittura(pool, label, opts){
       setTimeout(()=>{ if(mySeq===cardSeq) speak(c.ru); }, 250);
     }
 
-    // --- Tastiera cirillica a schermo ---
-    const kbd = useKbd ? makeCyrKeyboard(inp, ()=>paintInput(), ()=>answered) : null;
-    if(kbd) wrap.appendChild(kbd);
+    // --- Tastiera cirillica dell'app o del telefono ---
+    const ctl = campoCirillico(inp, ()=>paintInput(), ()=>answered);
+    inp.after(ctl.prev);
+    wrap.appendChild(ctl.box);
 
     const row = $(`<div class="row"></div>`);
     const hint = $(`<button class="btn" type="button" style="flex:0 0 auto;padding:0 16px" title="Scopre la prossima lettera: la carta conta come sbagliata" aria-label="Suggerimento">${ic('bulb')}</button>`);
     const check = $(`<button class="btn primary" type="button" style="flex:1">Verifica</button>`);
     row.appendChild(hint); row.appendChild(check);
     wrap.appendChild(row);
+    ctl.tieni(hint); ctl.tieni(check);
 
     function paintInput(){
       inp.classList.remove("ok","ko");
@@ -9411,22 +9780,22 @@ function runScrittura(pool, label, opts){
       while(keep < inp.value.length && keep < target.length &&
             normWrite(inp.value[keep]) === normWrite(target[keep])) keep++;
       inp.value = target.slice(0, keep+1);
-      paintInput();
-      if(!settings().kbd) inp.focus();
+      paintInput(); ctl.aggiorna();
+      if(ctl.telefono()) inp.focus();
     };
     const avanti = ()=>{ if(mySeq===cardSeq) advance(); };
     check.onclick = ()=>{
       if(answered){ avanti(); return; }
-      const esatto = normWrite(inp.value) === normWrite(c.ru);
+      const scritto = ctl.testo();
+      const esatto = normWrite(scritto) === normWrite(c.ru);
       const ok = esatto && !usedHint;
-      if(!esatto && !inp.value.trim()) return;   // niente risposta: non si valuta
+      if(!esatto && !scritto.trim()) return;   // niente risposta: non si valuta
       answered = true;
-      inp.readOnly = true;
+      ctl.fine();
       hint.style.display = "none";
       inp.classList.add(ok ? "ok" : "ko");
       grade(c.id, ok);
       haptic(ok);
-      if(kbd) kbd.style.display = "none";
       sol.style.display = "";
       speak(c.ru);
       const acts = azioniTesto(c.ru, c.it, {translit:c.translit, tipo:c.tipo, tag:c.tag});
@@ -9449,10 +9818,10 @@ function runScrittura(pool, label, opts){
       }
     };
 
-    // Tastiera fisica (desktop): Invio verifica / prosegue
+    // Invio (tastiera fisica o del telefono) verifica / prosegue
     inp.onkeydown = e=>{ if(e.key === "Enter"){ e.preventDefault(); check.onclick(); } };
     inp.oninput = paintInput;
-    setTimeout(()=>{ try{ inp.focus({preventScroll:true}); }catch(e){} }, 60);
+    ctl.fuoco();
   }
   advance();
 }
@@ -9534,7 +9903,7 @@ function runImpostazioni(){
   paintD(); rDaily.querySelector(".ctl").appendChild(segD); card.appendChild(rDaily);
 
   // --- Tastiera cirillica ---
-  const rKbd = $(`<div class="srow"><div class="lbl">Tastiera cirillica<small>In Scrittura e Coniugazione. Spenta: usi quella del telefono</small></div><div class="ctl"></div></div>`);
+  const rKbd = $(`<div class="srow"><div class="lbl">Tastiera cirillica<small>In Scrittura, Coniugazione e Dettato (si cambia anche lì). Spenta: usi quella del telefono, anche in lettere latine (privet → привет)</small></div><div class="ctl"></div></div>`);
   const segK = $(`<div class="seg sm"><button type="button" data-v="1">Accesa</button><button type="button" data-v="0">Spenta</button></div>`);
   function paintK(){ const v = settings().kbd ? "1" : "0"; segK.querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===v)); }
   segK.querySelectorAll("button").forEach(b=>{ b.onclick = ()=>{ setSetting("kbd", b.dataset.v==="1"); paintK(); }; });
