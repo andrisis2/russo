@@ -361,6 +361,39 @@
   .qbtn .i{width:15px;height:15px;stroke-width:2.4}
   .qbtn:active{transform:scale(.95);background:var(--accent2-soft)}
 
+  /* «Scegli tu le parole»: filtri, caselle da spuntare e barra in basso */
+  .sc-chips{display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:2px 16px 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .sc-chips::-webkit-scrollbar{display:none}
+  .sc-chips .ref-chip{display:inline-flex;align-items:center;gap:5px}
+  .sc-chips .ref-chip .i{width:14px;height:14px;stroke-width:2.6}
+  .sc-chips .ref-chip small{font-size:11px;font-weight:700;opacity:.65}
+  .sc-chips .ref-chip.on small{opacity:.85}
+  .sc-acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:-4px}
+  .sc-acts:empty{display:none}
+  .sc-act{border:1px solid var(--line);background:var(--card);color:var(--text2);border-radius:99px;padding:6px 12px;
+    font-size:12.5px;font-weight:600;display:inline-flex;align-items:center;gap:5px;box-shadow:var(--shadow-sm);transition:.15s}
+  .sc-act .i{width:14px;height:14px;stroke-width:2.4;color:var(--accent2)}
+  .sc-act:active{transform:scale(.96);background:var(--card2)}
+  @media (hover:hover){ .sc-act:hover{border-color:var(--accent2);color:var(--accent2)} }
+  .sc-item{display:flex;align-items:center;gap:11px;background:var(--card);border:1.5px solid var(--line);border-radius:14px;
+    padding:7px 7px 7px 11px;box-shadow:var(--shadow-sm);cursor:pointer;-webkit-tap-highlight-color:transparent;
+    transition:border-color .15s,background .15s;user-select:none;-webkit-user-select:none}
+  .sc-item .box{flex:0 0 auto;width:24px;height:24px;border-radius:8px;border:2px solid var(--line2);display:grid;place-items:center;
+    color:#fff;transition:background .15s,border-color .15s}
+  .sc-item .box .i{width:15px;height:15px;stroke-width:3.2;opacity:0;transform:scale(.6);transition:.15s}
+  .sc-item .txt{flex:1;min-width:0}
+  .sc-item .ru{font-size:15.5px;font-weight:700;color:var(--text);line-height:1.3;display:flex;align-items:center;gap:6px}
+  .sc-item .ru span:first-child{min-width:0;overflow-wrap:anywhere}
+  .sc-item .ru .gpill{width:19px;height:19px;font-size:10px}
+  .sc-item .it{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sc-item.on{border-color:var(--accent2);background:linear-gradient(var(--accent2-soft),var(--accent2-soft)),var(--card)}
+  .sc-item.on .box{background:var(--accent2);border-color:var(--accent2)}
+  .sc-item.on .box .i{opacity:1;transform:none}
+  .sc-bar{position:sticky;bottom:calc(10px + env(safe-area-inset-bottom));z-index:5;display:flex;flex-direction:column;gap:8px;
+    background:var(--card);border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:var(--shadow)}
+  .sc-bar .cnt{font-size:13.5px;font-weight:700;color:var(--accent2);text-align:center}
+  .sc-bar.vuota .cnt{color:var(--muted);font-weight:600}
+
   .home-foot{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:12px}
   .home-foot .row-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 
@@ -4101,6 +4134,12 @@ function runEsercizi(){
     write.onclick = ()=>navigateTo(openWrite);
     btns.append(study, write);
     body.appendChild(btns);
+    // solo alcune: le spunti tu e ti alleni su quelle
+    const gruppiSc = ()=>[{k:'mie', label:'Tutte le salvate', pool:enrichVoci(esesStore().voci).reverse().concat(verbiEseComeVoci(esesStore(), true))}];
+    body.appendChild(bottoneScegli('Scegli tu quali parole', scelteValide('ese', gruppiSc()).length, ()=>runScegliParole({
+      key:'ese', titolo:'Scegli le parole', gruppi:gruppiSc(), azioni:AZIONI_SCEGLI_PAROLE,
+      intro:'Spunta le parole salvate su cui vuoi allenarti adesso, poi parti con le flashcard o scrivendole.',
+    })));
     const conta = [];
     if(s.voci.length) conta.push(plur(s.voci.length,'parola','parole'));
     if(verbiCarte.length) conta.push(plur(verbiCarte.length,'verbo','verbi'));
@@ -4205,6 +4244,17 @@ function runEsercizi(){
     trainBtn.onclick = ()=>navigateTo(()=>runConjugation(CONJ_TENSES_RU.map(t=>t.key), savedVerbi));
     btns.append(flashBtn, trainBtn);
     body.appendChild(btns);
+    // solo alcuni verbi: flashcard o coniugazione su quelli che spunti
+    body.appendChild(bottoneScegli('Scegli tu quali verbi', scelteValide('eseVerbi', gruppiScegliVerbi()).length, ()=>runScegliParole({
+      key:'eseVerbi', titolo:'Scegli i verbi', gruppi:gruppiScegliVerbi(), nome:['verbo scelto','verbi scelti'], maschile:true,
+      intro:'Spunta i verbi su cui vuoi allenarti: prima ricordali con le flashcard, poi coniugali.',
+      azioni:[
+        {ico:'cards', label:'Flashcard', primary:true,
+         run:(cards, again)=>runFlash(shuffle(cards), 'I tuoi verbi', {ignoreDue:true, restart:again})},
+        {ico:'zap', label:'Coniugazione',
+         run:cards=>runConjugation(CONJ_TENSES_RU.map(t=>t.key), cards.map(c=>c.verbo).filter(Boolean))},
+      ],
+    }), ['scelto','scelti']));
     const dueV = verbiEseComeVoci(s).filter(v=>isDue(v.id)).length;
     body.appendChild($(`<div class="sec-h">${plur(savedVerbi.length,'verbo','verbi')} &middot; ${dueV} da ripassare</div>`));
     const list = $(`<div class="list"></div>`);
@@ -4266,6 +4316,25 @@ function runEsercizi(){
   };
   stage.appendChild(resetBtn);
   renderTab(activeTab);
+}
+
+// Pulsante «Scegli tu…» degli esercizi, con quante ne avevi scelte l'ultima volta
+function bottoneScegli(testo, n, apri, scelt){
+  scelt = scelt || ['scelta','scelte'];
+  const b = $(`<button class="btn soft block" type="button">${ic('check')} <span></span></button>`);
+  b.querySelector('span').textContent = testo + (n ? ` · ${n} ${n===1?scelt[0]:scelt[1]}` : '');
+  b.onclick = ()=>navigateTo(apri);
+  return b;
+}
+// I verbi salvati come carte, ognuna col suo verbo (per la coniugazione)
+function gruppiScegliVerbi(){
+  const s = esesStore();
+  const carte = verbiEseComeVoci(s);
+  const pool = (s.verbi||[]).slice().reverse().map(id=>(DB.verbi||[]).find(v=>v.id===id)).filter(Boolean).map(v=>{
+    const c = carte.find(x=>normW(x.ru)===normW(v.inf));
+    return c ? {...c, verbo:v} : null;
+  }).filter(Boolean);
+  return [{k:'verbi', label:'Tutti i verbi', pool}];
 }
 
 // Arricchisce le voci salvate con tipo/tag dal dizionario, così le
@@ -4651,12 +4720,22 @@ function pickFlashTopic(){
     return wrap;
   }
 
+  // ----- Scegli tu le parole: solo quelle che spunti -----
+  const nScelte = scelteValide('flash', gruppiScegliFlash()).length;
+  const scegli = $(`<button class="tile wide" type="button"><div class="ico">☑️</div>
+    <div class="txt"><div class="t">Scegli tu le parole</div><div class="d"></div></div></button>`);
+  scegli.querySelector('.d').textContent = nScelte
+    ? `Ultima scelta: ${plur(nScelte,'parola','parole')} · tocca per cambiarla o ripartire`
+    : 'Spunta quelle che vuoi, da qualsiasi argomento, e allenati solo su quelle';
+  scegli.onclick = ()=>navigateTo(apriScegliFlash);
+  stage.appendChild(scegli);
+
   // ----- Salvati da te (I miei esercizi) -----
   const ese = esesStore();
   const mieParole = enrichVoci(ese.voci).filter(v=>v.ru && v.it);
   const mieiVerbi = verbiEseComeVoci(ese);
   if(mieParole.length || mieiVerbi.length){
-    stage.appendChild($(`<div class="sec-h" style="margin-top:0">Salvati da te</div>`));
+    stage.appendChild($(`<div class="sec-h">Salvati da te</div>`));
     const mine = $(`<div class="list"></div>`);
     if(mieiVerbi.length) mine.appendChild(mkRow('⚡', 'I miei verbi', `${plur(mieiVerbi.length,'verbo','verbi')}: ricordali prima di coniugarli`, mieiVerbi, true));
     if(mieParole.length) mine.appendChild(mkRow('🔖', 'Le mie parole', plur(mieParole.length,'parola salvata','parole salvate'), mieParole, true));
@@ -4664,7 +4743,7 @@ function pickFlashTopic(){
   }
 
   // ----- Per livello -----
-  stage.appendChild($(`<div class="sec-h"${mieParole.length || mieiVerbi.length ? '' : ' style="margin-top:0"'}>Per livello</div>`));
+  stage.appendChild($(`<div class="sec-h">Per livello</div>`));
   const levels = [
     [1,'🌱','Facile','Parole di base'],
     [2,'🌿','Medio','Vocabolario quotidiano'],
@@ -4694,6 +4773,234 @@ function startTopicFlash(pool, label){
 }
 function startQuick15(pool, label){
   runFlash(pool, label + ' · 15 carte', { limit: 15, restart: ()=>startQuick15(pool, label) });
+}
+
+// ---------- Scegli tu le parole ----------
+// Elenco con le caselle: spunti le parole che vuoi (da un argomento, da un
+// livello, da quelle salvate…) e ti alleni solo su quelle, con le flashcard
+// o scrivendole. La scelta resta salvata in russo_scelte_v1 (una per
+// schermata: 'flash', 'ese', 'eseVerbi'), così tornando indietro dopo
+// l'esercizio, o riaprendo la schermata un altro giorno, la ritrovi.
+const SCELTE_KEY = 'russo_scelte_v1';
+function scelteStore(){
+  try{ const s = JSON.parse(localStorage.getItem(SCELTE_KEY)||'{}'); return s && typeof s==='object' ? s : {}; }
+  catch(e){ return {}; }
+}
+function scelteGet(key){
+  const r = scelteStore()[key] || {};
+  return {ids: Array.isArray(r.ids) ? r.ids : [], g: r.g || null};
+}
+function scelteSet(key, ids, g){
+  const s = scelteStore();
+  s[key] = {ids, g};
+  try{ localStorage.setItem(SCELTE_KEY, JSON.stringify(s)); }catch(e){}
+}
+// Gli id scelti che esistono ancora (una parola salvata si può togliere)
+function scelteValide(key, gruppi){
+  const ids = new Set();
+  gruppi.forEach(g=>g.pool.forEach(c=>ids.add(c.id)));
+  return scelteGet(key).ids.filter(id=>ids.has(id));
+}
+
+// I gruppi della schermata delle Flashcard: le salvate, tutte, per livello e per argomento
+function gruppiScegliFlash(){
+  const all = (DB.voci||[]).filter(v=>v.ru && v.it);
+  const ese = esesStore();
+  const mie = enrichVoci(ese.voci).filter(v=>v.ru && v.it).reverse().concat(verbiEseComeVoci(ese, true));
+  const g = [];
+  if(mie.length) g.push({k:'mie', label:'Salvate da te', pool:mie});
+  g.push({k:'tutte', label:'Tutte', pool:all});
+  [[1,'Facile'],[2,'Medio'],[3,'Difficile']].forEach(([lvl, label])=>{
+    g.push({k:'l'+lvl, label, pool:all.filter(e=>e.difficolta===lvl)});
+  });
+  topicList(all).forEach(([tag, label, ws])=>g.push({k:'t:'+tag, label, pool:ws}));
+  return g;
+}
+function apriScegliFlash(){
+  runScegliParole({
+    key:'flash', titolo:'Scegli le parole', gruppi:gruppiScegliFlash(),
+    intro:'Spunta le parole su cui vuoi allenarti: scegli un argomento qui sotto o cercale. Puoi prenderle da argomenti diversi.',
+    azioni:AZIONI_SCEGLI_PAROLE,
+  });
+}
+// Con le parole scelte: flashcard o scrittura, tutte (anche se non sono in scadenza)
+const AZIONI_SCEGLI_PAROLE = [
+  {ico:'cards', label:'Flashcard', primary:true,
+   run:(cards, again)=>runFlash(shuffle(cards), 'Le tue parole', {ignoreDue:true, restart:again})},
+  {ico:'pen', label:'Scrivile',
+   run:(cards, again)=>runScrittura(cards, 'Le tue parole', {ignoreDue:true, restart:again})},
+];
+
+// cfg: {key, titolo, intro, gruppi:[{k, label, pool}], azioni:[{ico, label, primary, run(carte, ancora)}],
+//       nome:['parola scelta','parole scelte'], maschile (per i verbi: «Tutti», «Nessuno»…)}
+function runScegliParole(cfg){
+  const nome = cfg.nome || ['parola scelta','parole scelte'];
+  const M = !!cfg.maschile;
+  const T = M ? {scelte:'Scelti', tutte:'Tutti', nessuna:'Nessuno', queste:'Togli questi', una:'Toglilo', tocca:'Tocca i verbi per sceglierli', trovata:'Nessun verbo trovato.', cerca:'Cerca tra quelli scelti…'}
+              : {scelte:'Scelte', tutte:'Tutte', nessuna:'Nessuna', queste:'Togli queste', una:'Toglila', tocca:'Tocca le parole per sceglierle', trovata:'Nessuna parola trovata.', cerca:'Cerca tra quelle scelte…'};
+  const stage = header(cfg.titolo || 'Scegli le parole', {narrow:true});
+  // ogni carta una volta sola, per id (la stessa parola può stare in più gruppi)
+  const perId = new Map();
+  const gruppi = cfg.gruppi.map(g=>({...g, pool:g.pool.filter(c=>c && c.id && c.ru && c.it)})).filter(g=>g.pool.length);
+  gruppi.forEach(g=>g.pool.forEach(c=>{ if(!perId.has(c.id)) perId.set(c.id, c); }));
+  if(!gruppi.length){
+    emptyDone(stage, '📭', 'Niente da scegliere', 'Qui non ci sono ancora parole: salvane qualcuna dal Vocabolario o dalle frasi.');
+    return;
+  }
+  const salvata = scelteGet(cfg.key);
+  const scelte = new Set(salvata.ids.filter(id=>perId.has(id)));
+  const SCELTE = '_scelte';            // il filtro «Scelte»: solo quelle spuntate
+  let gruppo = salvata.g===SCELTE && scelte.size ? SCELTE
+    : gruppi.some(g=>g.k===salvata.g) ? salvata.g : gruppi[0].k;
+  let q = '', quante = 0;
+  const PAGINA = 120;
+  const salva = ()=>scelteSet(cfg.key, [...scelte], gruppo);
+
+  if(cfg.intro) stage.appendChild($(`<p class="sg-intro">${esc(cfg.intro)}</p>`));
+
+  // ---- filtri (gruppi) ----
+  const chips = $(`<div class="sc-chips"></div>`);
+  const chipScelte = $(`<button class="ref-chip" type="button">${ic('check')} ${T.scelte} <small></small></button>`);
+  chipScelte.onclick = ()=>{ gruppo = SCELTE; salva(); disegnaLista(); };
+  chips.appendChild(chipScelte);
+  const chipDi = new Map();
+  gruppi.forEach(g=>{
+    const b = $(`<button class="ref-chip" type="button"><span></span> <small></small></button>`);
+    b.querySelector('span').textContent = g.label;
+    b.onclick = ()=>{ gruppo = g.k; salva(); disegnaLista(); };
+    chips.appendChild(b);
+    chipDi.set(g.k, b);
+  });
+  if(gruppi.length > 1 || scelte.size) stage.appendChild(chips);
+
+  // ---- ricerca (anche in lettere latine: privet → привет) ----
+  const sWrap = $(`<div class="search">${ic('search')}<input class="vocab-input" type="search" enterkeyhint="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div>`);
+  const inp = sWrap.querySelector('input');
+  inp.oninput = ()=>{ q = inp.value.trim(); disegnaLista(); };
+  stage.appendChild(sWrap);
+
+  const acts = $(`<div class="sc-acts"></div>`);
+  stage.appendChild(acts);
+  const list = $(`<div class="list" style="gap:6px"></div>`);
+  stage.appendChild(list);
+  const altre = $(`<button class="btn ghost block" type="button"></button>`);
+  altre.onclick = ()=>{ disegnaRighe(quante, quante + PAGINA); };
+  stage.appendChild(altre);
+
+  // ---- barra in basso: quante ne hai scelte e via ----
+  const bar = $(`<div class="sc-bar"><div class="cnt"></div><div class="row"></div></div>`);
+  const cnt = bar.querySelector('.cnt');
+  const btnAz = cfg.azioni.map(a=>{
+    const b = $(`<button class="btn${a.primary?' primary':''}" type="button">${ic(a.ico)} ${esc(a.label)}</button>`);
+    b.onclick = ()=>{
+      const cards = [...scelte].map(id=>perId.get(id)).filter(Boolean);
+      if(!cards.length) return;
+      const ancora = ()=>a.run(cards, ancora);
+      navigateTo(ancora);
+    };
+    bar.querySelector('.row').appendChild(b);
+    return b;
+  });
+  stage.appendChild(bar);
+
+  // le carte del filtro attivo, filtrate dalla ricerca
+  function visibili(){
+    const base = gruppo===SCELTE ? [...scelte].map(id=>perId.get(id)).filter(Boolean)
+      : (gruppi.find(g=>g.k===gruppo) || gruppi[0]).pool;
+    if(!q) return base;
+    const out = searchVoci(base, q);
+    const cy = latToCyr(q);
+    if(cy !== q && /[а-яё]/i.test(cy)){
+      const gia = new Set(out.map(c=>c.id));
+      searchVoci(base, cy).forEach(c=>{ if(!gia.has(c.id)) out.push(c); });
+    }
+    return out;
+  }
+  let vis = [];
+  function riga(c){
+    const r = $(`<div class="sc-item" role="checkbox" tabindex="0"><span class="box">${ic('check')}</span>
+      <div class="txt"><div class="ru"><span></span></div><div class="it"></div></div></div>`);
+    r.querySelector('.ru span').textContent = c.ru;
+    const g = genderOf(c.ru, c.tipo, c.tag);
+    if(g) r.querySelector('.ru').insertAdjacentHTML('beforeend', ` <span class="gpill g${g}" title="${GENDER_INFO[g][1]}">${{m:'M',f:'F',n:'N'}[g]}</span>`);
+    r.querySelector('.it').textContent = c.it;
+    const spk = $(`<button class="mini-btn spk" type="button" title="Ascolta" aria-label="Ascolta">${ic('vol')}</button>`);
+    spk.onclick = e=>{ e.stopPropagation(); speak(c.ru); };
+    r.appendChild(spk);
+    const dipingi = ()=>{ const on = scelte.has(c.id); r.classList.toggle('on', on); r.setAttribute('aria-checked', on); };
+    const tocca = ()=>{
+      if(scelte.has(c.id)) scelte.delete(c.id); else scelte.add(c.id);
+      dipingi(); aggiorna();
+    };
+    r.onclick = tocca;
+    r.onkeydown = e=>{ if(e.target===r && (e.key===' ' || e.key==='Enter')){ e.preventDefault(); tocca(); } };
+    r._dipingi = dipingi;
+    dipingi();
+    return r;
+  }
+  function disegnaRighe(da, a){
+    vis.slice(da, a).forEach(c=>list.appendChild(riga(c)));
+    quante = Math.min(a, vis.length);
+    const resto = vis.length - quante;
+    altre.classList.toggle('hidden', resto <= 0);
+    altre.textContent = `Mostra altre ${Math.min(resto, PAGINA)} (ne restano ${resto})`;
+  }
+  function disegnaLista(){
+    if(gruppo===SCELTE && !scelte.size) gruppo = gruppi[0].k;
+    vis = visibili();
+    list.innerHTML = '';
+    quante = 0;
+    const g = gruppi.find(x=>x.k===gruppo);
+    inp.placeholder = gruppo===SCELTE ? T.cerca : `Cerca in «${g.label}» (${g.pool.length})…`;
+    if(!vis.length){
+      const altrove = gruppo!=='tutte' && gruppi.some(x=>x.k==='tutte');
+      list.appendChild($(`<div class="empty"><div class="big">🔍</div>${T.trovata}<small>${altrove ? 'Prova a cercarla in «Tutte».' : 'Prova con un\'altra parola.'}</small></div>`));
+    }
+    disegnaRighe(0, PAGINA);
+    aggiorna();
+  }
+  // contatori, filtri e pulsanti dopo ogni cambio di scelta
+  function aggiorna(){
+    salva();
+    const n = scelte.size;
+    cnt.textContent = n ? plur(n, nome[0], nome[1]) : T.tocca;
+    bar.classList.toggle('vuota', !n);
+    btnAz.forEach(b=>b.disabled = !n);
+    chipScelte.classList.toggle('hidden', !n && gruppo!==SCELTE);
+    chipScelte.classList.toggle('on', gruppo===SCELTE);
+    chipScelte.querySelector('small').textContent = n;
+    gruppi.forEach(g=>{
+      const b = chipDi.get(g.k);
+      const sel = g.pool.reduce((k,c)=>k + (scelte.has(c.id)?1:0), 0);
+      b.classList.toggle('on', g.k===gruppo);
+      b.querySelector('small').textContent = sel ? `${sel} / ${g.pool.length}` : g.pool.length;
+    });
+    if(n && !chips.isConnected) stage.insertBefore(chips, sWrap);
+    // azioni rapide sulle parole che vedi
+    acts.innerHTML = '';
+    const mk = (icona, testo, fn, titolo)=>{
+      const b = $(`<button class="sc-act" type="button">${ic(icona)} <span></span></button>`);
+      b.querySelector('span').textContent = testo;
+      if(titolo) b.title = titolo;
+      b.onclick = ()=>{ fn(); haptic(true); list.querySelectorAll('.sc-item').forEach(r=>r._dipingi()); aggiorna(); };
+      acts.appendChild(b);
+    };
+    const libere = vis.filter(c=>!scelte.has(c.id));
+    if(vis.length && !libere.length) mk('x', vis.length > 1 ? T.queste : T.una, ()=>vis.forEach(c=>scelte.delete(c.id)));
+    else if(libere.length > 1 && gruppo!==SCELTE) mk('check', `${T.tutte} (${libere.length})`, ()=>libere.forEach(c=>scelte.add(c.id)), M ? 'Scegli tutti quelli che vedi' : 'Scegli tutte quelle che vedi');
+    const daRip = libere.filter(c=>isDue(c.id));
+    if(daRip.length && daRip.length < libere.length) mk('refresh', `Da ripassare (${daRip.length})`, ()=>daRip.forEach(c=>scelte.add(c.id)), 'Scegli quelle in scadenza');
+    if(libere.length > 10) mk('zap', '10 a caso', ()=>shuffle(libere).slice(0, 10).forEach(c=>scelte.add(c.id)), 'Aggiungine 10 a caso tra quelle che vedi');
+    if(n) mk('trash', T.nessuna, ()=>{
+      if(n >= 5 && !confirm(`Togliere ${M?'tutti i':'tutte le'} ${n} ${nome[1]}?`)) return;
+      scelte.clear();
+      if(gruppo===SCELTE){ gruppo = gruppi[0].k; disegnaLista(); }
+    }, 'Ricomincia la scelta da zero');
+  }
+  disegnaLista();
+  // il filtro attivo in vista anche se sta in fondo alla fila
+  const attivo = chips.querySelector('.ref-chip.on');
+  if(attivo && chips.isConnected) chips.scrollLeft = Math.max(0, attivo.offsetLeft - chips.offsetLeft - 16);
 }
 
 function runFlash(pool, topicLabel, opts){
