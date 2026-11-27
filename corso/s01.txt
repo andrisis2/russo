@@ -1,0 +1,421 @@
+# Settimana 1 | L'alfabeto cirillico
+
+## Giorno 1 | Lettere amiche: А, К, М, О, Т
+obiettivo: Leggere le prime cinque lettere e le tue prime parole russe.
+breve: А, К, М, О, Т si leggono come in italiano.
+breve: Ogni parola russa ha una sillaba accentata: qui la segniamo così: ма́ма.
+vedi: cyr
+
+### Lezione
+Il russo si scrive con l'**alfabeto cirillico**: 33 lettere. Sembra difficile, ma la buona notizia è che si legge quasi sempre **come si scrive**, e alcune lettere le conosci già.
+
+Oggi cominciamo da cinque «lettere amiche»: hanno la stessa forma delle nostre e si leggono allo stesso modo.
+
+| Lettera | Si legge | Esempio |
+|---|---|---|
+| А а | a, come in «casa» | ма́ма |
+| К к | k, come in «casa» | кот |
+| М м | m | ма́ма |
+| О о | o | кот |
+| Т т | t | там |
+
+---
+#### L'accento
+Ogni parola russa ha **una sillaba accentata**, che si pronuncia più forte e più lunga. In russo l'accento può cadere su qualsiasi sillaba e non c'è una regola per indovinarlo.
+
+I russi non lo scrivono, ma nei libri per stranieri (e in questa app) si segna con un trattino: **ма́ма** si legge «MÀ-ma».
+
+> Impara ogni parola insieme al suo accento: è la cosa che fa sembrare il tuo russo davvero russo.
+
+---
+#### Le tue prime parole
+Con queste cinque lettere puoi già leggere: **кот** (gatto), **там** (là), **кто** (chi), **так** (così).
+
+E una prima domanda: **Кто там?** — Chi è là?
+
+Tocca le parole russe per ascoltarle.
+
+### Parole
+ма́ма = mamma [f]
+кот = gatto [m]
+кто = chi [pron]
+там = là, lì [avv]
+так = così [avv]
+тот = quello [pron]
+кака́о = cacao [n; non si declina]
+а́том = atomo [m]
+
+### Frasi
+Кто там? = Chi è là?
+Там кот. = Là c'è un gatto.
+Там ма́ма. = Là c'è la mamma.
+Кто там? — Ма́ма. = Chi è là? — La mamma.
+Там тот кот. = Là c'è quel gatto.
+
+### Esercizi
+? Come si legge «кот»? {kot | kto | tak}
+? Come si legge «там»? {tam | mat | tak}
+? Come si legge «кто»? {kto | kot | tok}
+? Quale lettera russa si legge «m»? {М | Т | К}
+? Quale lettera russa si legge «t»? {Т | М | А}
+? In «ма́ма» l'accento cade sulla… {prima sillaba | seconda sillaba}
+? «Кто там?» vuol dire… {Chi è là? | Che cos'è? | Dov'è?}
+> Scrivi «gatto» in russo → кот
+> Scrivi «là» in russo → там
+~ Там ма́ма. = Là c'è la mamma.
+
+## Giorno 2 | Lettere trabocchetto: В, Е, Н, Р, С, У, Х
+obiettivo: Riconoscere le lettere che sembrano latine ma si leggono in un altro modo.
+breve: В = v, Н = n, Р = r, С = s, У = u, Х = h aspirata, Е = e (o «je»).
+breve: Attenzione: Р non è la «p» e Н non è la «h».
+vedi: cyr
+
+### Lezione
+Oggi le lettere più insidiose: **sembrano** lettere latine, ma si leggono in un altro modo. Sono i «falsi amici» dell'alfabeto.
+
+| Lettera | Sembra | Ma si legge | Esempio |
+|---|---|---|---|
+| В в | b | **v** | вот |
+| Е е | e | **e**, a inizio parola **je** | нет |
+| Н н | h | **n** | нос |
+| Р р | p | **r** (arrotata, come in italiano) | рука́ |
+| С с | c | **s** (sempre sorda, come in «sole») | сок |
+| У у | y | **u** | у́тро |
+| Х х | x | **h aspirata**, come la «j» spagnola | му́ха |
+
+---
+#### Un trucco per ricordarle
+- **Р** è la «r»: pensa a **р**есторан, «ristorante».
+- **Н** è la «n»: **н**ет, «no».
+- **С** è sempre «s»: **с**ок, «succo».
+- **В** è la «v»: **в**от, «ecco».
+
+> La Х non esiste in italiano: è un'aspirata che si sente in gola, come in «Bach» in tedesco o in «jota» in spagnolo.
+
+---
+#### Parole che si leggono da sole
+Molte parole internazionali ora le sai leggere: **метро́** (metropolitana), **рестора́н** (ristorante).
+
+E due parole utilissime: **нет** (no) e **вот** (ecco): **Вот метро́!** — Ecco la metro!
+
+### Parole
+нет = no, non c'è [part]
+вот = ecco [part]
+сок = succo [m]
+нос = naso [m]
+рука́ = mano, braccio [f]
+у́тро = mattina [n]
+сестра́ = sorella [f]
+метро́ = metropolitana [n; non si declina]
+рестора́н = ristorante [m]
+
+### Frasi
+Вот метро́. = Ecco la metropolitana.
+Вот рестора́н. = Ecco il ristorante.
+Там сестра́? — Нет, там ма́ма. = Là c'è la sorella? — No, là c'è la mamma.
+Вот сок. = Ecco il succo.
+Кто там? — Сестра́. = Chi è là? — La sorella.
+
+### Esercizi
+? La lettera Р si legge… {r | p | b}
+? La lettera Н si legge… {n | h | i}
+? La lettera В si legge… {v | b | f}
+? La lettera С si legge… {s | c | k}
+? La lettera Х si legge… {h aspirata | x | k}
+? Come si legge «нос»? {nos | hoc | noc}
+? Come si legge «рука́»? {ruká | pyka | ryká}
+? «Нет» vuol dire… {no | sì | ecco}
+? Вот ___ . = Ecco la metropolitana. {метро́ | у́тро | сок}
+> Scrivi «succo» in russo → сок
+> Scrivi «no» in russo → нет
+~ Вот рестора́н. = Ecco il ristorante.
+
+## Giorno 3 | Lettere nuove: Б, Г, Д, З, И, Й, Л, П, Ф
+obiettivo: Imparare nove lettere nuove e leggere parole come «привет» e «парк».
+breve: Б = b, Г = g dura, Д = d, З = z sonora, И = i, Й = i breve (j), Л = l, П = p, Ф = f.
+breve: Г è sempre dura: «га, го, гу», ma anche «ги» = «ghi».
+vedi: cyr
+
+### Lezione
+Oggi arrivano nove lettere **nuove**: non le hai mai viste, ma i suoni sono tutti italiani.
+
+| Lettera | Si legge | Esempio |
+|---|---|---|
+| Б б | b | брат |
+| Г г | g dura, sempre: га = ga, ги = ghi | друг |
+| Д д | d | дом |
+| З з | z sonora, come in «rosa» | музе́й |
+| И и | i | и |
+| Й й | i breve, come in «aiuto» | музе́й |
+| Л л | l | лимо́н |
+| П п | p | па́па |
+| Ф ф | f | фо́то |
+
+---
+#### Attenzione a tre lettere
+- **П** è la «p» (la «П» greca), non la «n».
+- **Г** è sempre una «g» dura: **ги** si legge «ghi», mai «gi».
+- **З** è una «s» sonora, come in «rosa» o «sbaglio»: **з**ал, **з**вук. Non è mai «z» di «pizza».
+
+---
+#### La parola più importante
+**Приве́т!** — Ciao! È il saluto tra amici. Prova a leggerla lettera per lettera: п-р-и-в-е-т.
+
+E una piccolissima: **и** vuol dire «e»: **брат и сестра́** — fratello e sorella. **Да** vuol dire «sì».
+
+### Parole
+да = sì [part]
+и = e [cong]
+дом = casa, palazzo [m]
+па́па = papà [m; si declina come i femminili in -а]
+брат = fratello [m]
+друг = amico [m]
+приве́т = ciao [inter]
+музе́й = museo [m]
+парк = parco [m]
+кафе́ = caffè, bar [n; non si declina]
+фо́то = foto [n; non si declina]
+
+### Frasi
+Приве́т, па́па! = Ciao, papà!
+Вот дом. = Ecco la casa.
+Там парк и кафе́. = Là c'è un parco e un bar.
+Кто там? — Брат и друг. = Chi è là? — Il fratello e un amico.
+Да, там музе́й. = Sì, là c'è un museo.
+
+### Esercizi
+? La lettera П si legge… {p | n | g}
+? La lettera Г si legge… {g dura | j | h}
+? La lettera Д si legge… {d | g | b}
+? La lettera Л si legge… {l | p | j}
+? Come si legge «друг»? {druk | drudž | dpyr}
+? Come si legge «приве́т»? {privét | npubet | pribét}
+? «Да» vuol dire… {sì | no | ecco}
+? Там парк ___ кафе́. = Là c'è un parco e un bar. {и | да | нет}
+> Scrivi «fratello» in russo → брат
+> Scrivi «casa» in russo → дом
+~ Приве́т, па́па! = Ciao, papà!
+
+## Giorno 4 | Lettere nuove: Ж, Ш, Щ, Ч, Ц, Ы, Э
+obiettivo: Imparare i suoni «fruscianti» e la vocale Ы.
+breve: Ж = j francese, Ш = sc di «scena», Щ = sc più lunga e morbida, Ч = c di «cena», Ц = z di «pizza».
+breve: Ы è una «i» cupa; Э è una «e» aperta.
+vedi: cyr
+
+### Lezione
+Le lettere di oggi sono le più «russe» di tutte. Niente paura: quasi tutti i suoni esistono anche in italiano.
+
+| Lettera | Si legge | Esempio |
+|---|---|---|
+| Ж ж | come la j francese di «jour» | журна́л |
+| Ш ш | sc di «scena», ma più dura | шко́ла |
+| Щ щ | sc lunga e morbida, «sci» | борщ |
+| Ч ч | c di «cena» | чай |
+| Ц ц | z di «pizza» | у́лица |
+| Ы ы | una «i» cupa, con la lingua indietro | ры́ба |
+| Э э | e aperta, come in «bello» | э́то |
+
+---
+#### La Ы
+Non esiste in italiano. Prova così: di' «i», poi tira indietro la lingua senza muovere le labbra, come se dicessi «u» con il sorriso. Ascolta **ры́ба** (pesce) e **мы** (noi) e ripeti.
+
+> La Ы non si trova mai all'inizio di una parola.
+
+---
+#### Due parole per chiedere tutto
+**Что э́то?** — Che cos'è?
+**Э́то чай.** — È tè.
+
+Nota: **что** si pronuncia «što». È una delle poche eccezioni alla regola «si legge come si scrive».
+
+E una parola che userai sempre: **хорошо́!** — bene, va bene!
+
+### Parole
+э́то = questo, questa, ecco [pron; invariabile in «Это …»]
+что = che cosa [pron; si pronuncia «što»]
+хорошо́ = bene, va bene [avv]
+шко́ла = scuola [f]
+чай = tè [m]
+у́лица = via, strada [f]
+борщ = boršč (zuppa di barbabietola) [m]
+журна́л = rivista [m]
+ры́ба = pesce [f]
+
+### Frasi
+Что э́то? = Che cos'è?
+Э́то чай. = È tè.
+Э́то шко́ла. = Questa è una scuola.
+Э́то борщ? — Да, э́то борщ. = È boršč? — Sì, è boršč.
+Вот у́лица и шко́ла. = Ecco la via e la scuola.
+Хорошо́! = Bene!
+
+### Esercizi
+? La lettera Ч si legge… {c di «cena» | sc di «scena» | z di «pizza»}
+? La lettera Ш si legge… {sc di «scena» | c di «cena» | j francese}
+? La lettera Ц si legge… {z di «pizza» | s | c di «casa»}
+? La lettera Ж si legge… {j francese | g dura | z}
+? Come si pronuncia «что»? {što | čto | kto}
+? «Что э́то?» vuol dire… {Che cos'è? | Chi è? | Dov'è?}
+? Э́то ___ . = Questa è una scuola. {шко́ла | у́лица | ры́ба}
+? Quale lettera non c'è in italiano? {Ы | Э | Ч}
+> Scrivi «tè» in russo → чай
+> Scrivi «pesce» in russo → ры́ба
+~ Что э́то? = Che cos'è?
+
+## Giorno 5 | Я, Ю, Ё e i segni Ь, Ъ
+obiettivo: Leggere le vocali «iotate» e capire a cosa servono i due segni.
+breve: Я = ja, Ю = ju, Ё = jo (sempre accentata), Е = je.
+breve: Ь rende «morbida» la consonante prima; Ъ separa (è rarissimo).
+vedi: cyr
+
+### Lezione
+Il russo ha due serie di vocali: «dure» e «morbide». Le morbide hanno una piccola **i** davanti:
+
+| Dura | Morbida | Si legge | Esempio |
+|---|---|---|---|
+| А | Я | ja | я́блоко |
+| У | Ю | ju | юг |
+| О | Ё | jo | ёлка |
+| Э | Е | je | нет |
+| Ы | И | i | и |
+
+Dopo una consonante, la vocale morbida la «ammorbidisce»: **тётя** si legge «tjòtja».
+
+> La Ё ha **sempre** l'accento. Spesso i russi la scrivono senza puntini (Е), ma in questa app la troverai sempre con i puntini.
+
+---
+#### I due segni
+- **Ь** (segno molle) non ha suono: rende morbida la consonante prima, come la «gn» di «gnomo» rispetto alla «n». **день** (giorno), **ночь** (notte).
+- **Ъ** (segno duro) separa la consonante dalla vocale dopo: **объе́кт** si legge «ob-jèkt». È rarissimo.
+
+---
+#### Io
+La parola più corta del russo è anche una delle più importanti: **я** — io.
+
+**Э́то я!** — Sono io!
+
+### Parole
+я = io [pron]
+я́блоко = mela [n]
+ёлка = abete, albero di Natale [f]
+юг = sud [m]
+тётя = zia [f]
+дя́дя = zio [m; si declina come i femminili in -я]
+день = giorno [m]
+ночь = notte [f]
+семья́ = famiglia [f]
+
+### Frasi
+Э́то я. = Sono io.
+Вот я́блоко. = Ecco una mela.
+Вот тётя и дя́дя. = Ecco la zia e lo zio.
+Э́то ёлка? — Да. = È un abete? — Sì.
+День и ночь. = Giorno e notte.
+Э́то семья́. = Questa è una famiglia.
+
+### Esercizi
+? Я si legge… {ja | r al contrario | e}
+? Ю si legge… {ju | io | u}
+? Ё si legge… {jo | e | o}
+? Il segno Ь… {rende morbida la consonante prima | si legge «i» | si legge «b»}
+? La lettera Ё è accentata… {sempre | mai | a volte}
+? «Я» vuol dire… {io | tu | è}
+? Вот тётя и ___ . = Ecco la zia e lo zio. {дя́дя | день | юг}
+> Scrivi «io» in russo → я
+> Scrivi «mela» in russo → я́блоко
+~ Вот тётя и дя́дя. = Ecco la zia e lo zio.
+
+## Giorno 6 | La pronuncia: accento, «o» che diventa «a», consonanti finali
+obiettivo: Pronunciare come un russo: la «o» senza accento, le consonanti in fondo alla parola.
+breve: La «о» senza accento si legge «a»: молоко́ = malakó.
+breve: La «е» e la «я» senza accento suonano quasi «i».
+breve: In fondo alla parola Б Д Г В З Ж diventano П Т К Ф С Ш: хлеб = hlep.
+
+### Lezione
+Ora che conosci le lettere, ecco i tre segreti della pronuncia russa.
+
+#### 1. La «o» senza accento diventa «a»
+Solo la **о** accentata si legge «o». Tutte le altre si leggono «a»:
+- **молоко́** (latte) si legge «ma-la-KÒ»;
+- **хорошо́** si legge «ha-ra-SCIÒ»;
+- **спаси́бо** (grazie) si legge «spa-SÌ-ba».
+
+Ecco perché l'accento è così importante: cambia il suono di tutta la parola.
+
+---
+#### 2. La «е» e la «я» senza accento
+Quando non sono accentate, **е** e **я** si pronunciano quasi come una «i»: **сестра́** si legge «sis-TRÀ».
+
+---
+#### 3. Le consonanti in fondo alla parola
+Alla fine di una parola le consonanti «sonore» diventano «sorde»:
+
+| Si scrive | Si legge | Esempio |
+|---|---|---|
+| б | p | хлеб → hlep |
+| д | t | го́род → góra**t** |
+| г | k | друг → druk |
+| в | f | Ивано́в → Ivanóf |
+| з | s | глаз → glas |
+| ж | š | нож → noš |
+
+> Non devi studiare queste regole a memoria: ascolta ogni parola e ripetila. L'orecchio impara da solo.
+
+---
+#### Due parole magiche
+**Спаси́бо!** — Grazie!
+**Пожа́луйста!** — Prego! / Per favore.
+
+E il saluto formale, lungo ma importantissimo: **Здра́вствуйте!** — Buongiorno! (la prima «в» non si pronuncia: «zdràstvujte»).
+
+### Parole
+спаси́бо = grazie [inter]
+пожа́луйста = per favore, prego [inter; si pronuncia «pažàlusta»]
+здра́вствуйте = buongiorno, salve (formale) [inter]
+молоко́ = latte [n]
+вода́ = acqua [f]
+хлеб = pane [m]
+го́род = città [m]
+Москва́ = Mosca [nome]
+Росси́я = Russia [nome]
+
+### Frasi
+Спаси́бо! — Пожа́луйста! = Grazie! — Prego!
+Молоко́ и хлеб. = Latte e pane.
+Э́то Москва́. = Questa è Mosca.
+Вода́, пожа́луйста. = Acqua, per favore.
+Здра́вствуйте, ма́ма! = Buongiorno, mamma!
+
+### Esercizi
+? Come si pronuncia «молоко́»? {malakó | molokó | málako}
+? Come si pronuncia «хлеб»? {hlep | hleb | kleb}
+? Come si pronuncia «го́род»? {górat | gorod | garód}
+? «Спаси́бо» vuol dire… {grazie | prego | ciao}
+? «Пожа́луйста» vuol dire… {per favore, prego | grazie | buongiorno}
+? Quale «о» si legge «o» in «молоко́»? {l'ultima | la prima | la seconda}
+? Э́то ___ . = Questa è Mosca. {Москва́ | Росси́я | го́род}
+> Scrivi «grazie» in russo → спаси́бо
+> Scrivi «acqua» in russo → вода́
+~ Спаси́бо! — Пожа́луйста! = Grazie! — Prego!
+
+## Giorno 7 | Ripasso della settimana
+obiettivo: Leggere un primo testo tutto in russo.
+
+### Lettura | Э́то Москва́ | Questa è Mosca
+Э́то Москва́. = Questa è Mosca.
+Вот Кремль. = Ecco il Cremlino.
+Вот метро́. = Ecco la metropolitana.
+Вот у́лица и рестора́н. = Ecco una via e un ristorante.
+Там шко́ла и парк. = Là ci sono una scuola e un parco.
+А э́то кафе́. = E questo è un bar.
+Кто э́то? = Chi è?
+Э́то Ива́н и Ма́ша. = Sono Ivan e Maša.
+Ива́н — брат, Ма́ша — сестра́. = Ivan è il fratello, Maša la sorella.
+Э́то борщ и хлеб. = Questi sono boršč e pane.
+Спаси́бо, Москва́! = Grazie, Mosca!
+
+### Domande
+? In che città siamo? {A Mosca | A San Pietroburgo | A Roma}
+? Chi è Maša? {la sorella | la mamma | la zia}
+? Cosa c'è là? {una scuola e un parco | un museo e un parco | una via e un museo}
+? «Кремль» è… {il Cremlino | il ristorante | la metro}

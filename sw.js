@@ -1,5 +1,5 @@
 // Service worker: l'app funziona anche offline.
-// - Pagina (navigazioni), index.html, knowledge.json: prima la rete, così gli
+// - Pagina (navigazioni), index.html, knowledge.json, corso.json: prima la rete, così gli
 //   aggiornamenti arrivano subito. Ma se la rete non risponde entro pochi
 //   secondi (campo debole, Wi-Fi senza internet) si apre la copia in cache; la
 //   risposta della rete, se poi arriva, aggiorna la cache per la volta dopo.
@@ -12,13 +12,13 @@
 //   serve e resta in una cache a parte che sopravvive agli aggiornamenti
 //   dell'app. Se si rigenera il file, cambiare il nome di CACHE_DIZ.
 // - Vika e la ricerca online (altri siti) passano dritte: lì internet serve.
-const CACHE = "russo-v60";
+const CACHE = "russo-v61";
 const CACHE_FONT = "russo-font";
 const CACHE_DIZ = "russo-diz-1";
 
 // Indispensabili per aprire l'app senza rete: se uno non si scarica,
 // l'installazione fallisce e resta in uso il service worker di prima.
-const ESSENZIALI = ["./", "./index.html", "./knowledge.json", "./manifest.json", "./icon.png"];
+const ESSENZIALI = ["./", "./index.html", "./knowledge.json", "./corso.json", "./manifest.json", "./icon.png"];
 // Utili ma non indispensabili: un errore qui non blocca l'installazione.
 const EXTRA = [
   "./splash.png", "./vika.png",
@@ -29,7 +29,7 @@ const EXTRA = [
 ];
 
 // Risorse sempre prese dalla rete se disponibile
-const NETWORK_FIRST = ["knowledge.json", "index.html", "sw.js"];
+const NETWORK_FIRST = ["knowledge.json", "corso.json", "index.html", "sw.js"];
 const FONT_HOSTS = ["fonts.googleapis.com", "fonts.gstatic.com"];
 // Quanto si aspetta la rete prima di ripiegare sulla copia in cache
 const ATTESA_RETE = 2500;

@@ -1,0 +1,14 @@
+# I 13 moduli del corso: numero | titolo | livello | icona | descrizione
+1 | Primi passi | A1 | 🔤 | L'alfabeto, salutare e presentarsi, la famiglia, gli aggettivi, il presente dei verbi.
+2 | Dove vivo, cosa faccio | A1 | 🏠 | Il prepositivo (dove?), la casa e la città, numeri e ore, la giornata, l'accusativo, il cibo, passato e futuro.
+3 | In giro e a far spesa | A1 | 🛍️ | Andare (идти, ехать), i trasporti, il genitivo, i numeri con i nomi, fare la spesa, il corpo e il dativo.
+4 | I casi al lavoro | A2 | 🧩 | Lo strumentale, l'accusativo delle persone, i pronomi, i verbi in -ся, le date, l'aspetto del verbo.
+5 | Plurale e persone | A2 | 👥 | Il genitivo plurale, tutti i casi al plurale, gli aggettivi declinati, l'imperativo, inviti, descrivere le persone.
+6 | In viaggio | A2 | 🚆 | I verbi di moto con i prefissi, portare, viaggiare, la casa, il tempo, «se» e «perché».
+7 | Studio, lavoro, denaro | B1 | 💼 | Università e lavoro, который, il discorso indiretto, economia e numeri grandi, nessuno e qualcuno.
+8 | Opinioni e racconti | B1 | 💬 | Dire la propria, le notizie, participi e gerundi, raccontare, biografie e storia, le emozioni.
+9 | La Russia da vicino | B1 | 🪆 | Geografia, feste e tradizioni, la tavola russa, teatro, musica, cinema, sport e spazio.
+10 | Il mondo di oggi | B1 | 🌍 | Tecnologia, ambiente, salute, società: il russo per parlare dell'attualità.
+11 | Lingua viva | B1 | 🗣️ | Il russo parlato: particelle, modi di dire, proverbi, diminutivi, formazione delle parole, registro.
+12 | Grammatica avanzata | B1 | 🎓 | I numeri declinati, l'aspetto nei casi difficili, il moto in senso figurato, le frasi complesse.
+13 | Verso il B1 | B1 | 🏁 | Scrivere, parlare, leggere testi veri e l'esame finale.
