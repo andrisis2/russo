@@ -1,0 +1,340 @@
+# Settimana 49 | Scrivere
+
+## Giorno 337 | La lettera personale
+obiettivo: Scrivere una lettera o un messaggio lungo a un amico.
+breve: Apertura: **Дорого́й Ма́рк! / Дорога́я А́ня!** o **Приве́т, Ле́на!** Poi: **Как ты? Как у тебя́ дела́?**
+breve: **Извини́, что до́лго не писа́л(а).** — Scusa se non ti ho scritto per tanto tempo. **Я соску́чился по тебе́!** — Mi sei mancato!
+breve: Chiusura: **Жду отве́та!** (Aspetto tue notizie) **Пиши́ ча́ще!** **Обнима́ю! Целу́ю!** **Твой / Твоя́…**
+
+### Lezione
+#### La struttura
+1. **Saluto**: **Дорого́й Серге́й!** (lui) / **Дорога́я Ната́ша!** (lei) / **Приве́т, Ди́ма!**
+2. **Apertura**: **Как ты? Как дела́? Спаси́бо за письмо́!** **Извини́, что до́лго не писа́л.**
+3. **Il corpo**: **У меня́ всё хорошо́. Хочу́ рассказа́ть тебе́ о…** **Представля́ешь, …**
+4. **Chiusura**: **Переда́й приве́т роди́телям. Жду отве́та!**
+5. **Firma**: **Обнима́ю, твой Ма́рко.** / **Целу́ю, твоя́ А́ня.**
+
+---
+#### Sentire la mancanza
+**соску́читься по** + dativo (pf) = sentire la mancanza, aver nostalgia:
+- **Я о́чень соску́чился по тебе́!** — Mi sei mancato tantissimo!
+- **Мы соску́чились по до́му.** — Abbiamo nostalgia di casa.
+(L'imperfettivo **скуча́ть по** l'hai visto nel giorno 219.)
+
+---
+#### La lettera di carta
+Sulla **конве́рт** (busta) l'indirizzo in Russia si scrive «al contrario» rispetto all'Italia: prima la città, poi la via, poi il nome: **Москва́, ул. Арба́т, д. 10, кв. 5, Ивано́ву И. И.** (destinatario al dativo!).
+
+### Parole
+соску́читься = sentire la mancanza [v pf; соску́чусь, соску́чишься; по + dat.]
+Жду отве́та! = Aspetto una tua risposta! [espr]
+Пиши́ ча́ще! = Scrivimi più spesso! [espr]
+Обнима́ю! = Un abbraccio! [espr]
+Целу́ю! = Un bacio! [espr]
+Извини́, что до́лго не писа́л. = Scusa se non ti ho scritto per tanto tempo. [espr]
+конве́рт = busta [m]
+
+### Frasi
+Дорога́я А́ня! Спаси́бо за твоё письмо́. = Cara Anja! Grazie per la tua lettera.
+Извини́, что до́лго не писа́л: бы́ло мно́го рабо́ты. = Scusa se non ti ho scritto per tanto tempo: c'era molto lavoro.
+Я о́чень соску́чился по тебе́! = Mi sei mancata tantissimo!
+Представля́ешь, я сдал экза́мен по ру́сскому! = Pensa, ho passato l'esame di russo!
+Переда́й приве́т роди́телям. Жду отве́та! = Saluta i tuoi genitori. Aspetto una tua risposta!
+Обнима́ю, твой Ма́рко. = Un abbraccio, il tuo Marco.
+
+### Esercizi
+? ___ А́ня! = Cara Anja! {Дорога́я | Дорого́й | Дороги́е}
+? Я о́чень соску́чился по ___ ! = Mi sei mancata tantissimo! {тебе́ | тебя́ | тобо́й}
+? Извини́, что до́лго не ___ . = Scusa se non ti ho scritto per tanto tempo. {писа́л | напишу́ | пишу́}
+? Жду ___ ! = Aspetto una tua risposta! {отве́та | отве́т | отве́ту}
+? Пиши́ ___ ! = Scrivimi più spesso! {ча́ще | ча́сто | ча́стый}
+? Alla fine di una lettera a un amico si scrive… {Обнима́ю! | С уваже́нием | Уважа́емый}
+> Scrivi «Un abbraccio!» → Обнима́ю!
+~ Я о́чень соску́чился по тебе́! = Mi sei mancata tantissimo!
+
+## Giorno 338 | L'email formale (2)
+obiettivo: Scrivere un'email di lavoro ben costruita.
+breve: Apertura: **Уважа́емый Ива́н Петро́вич!** Poi il motivo: **Обраща́юсь к Вам с про́сьбой…** / **В отве́т на Ва́ше письмо́ от 5 ма́я…**
+breve: **по по́воду** + genitivo = riguardo a: **по по́воду встре́чи**. **Во вложе́нии** = in allegato.
+breve: Chiusura: **Бу́ду призна́телен за отве́т.** **С наилу́чшими пожела́ниями, …** **С уваже́нием, …**
+
+### Lezione
+#### Le formule
+| Momento | Formula |
+|---|---|
+| saluto | Уважа́емый Ива́н Петро́вич! / Уважа́емая Ольга Серге́евна! |
+| motivo | Обраща́юсь к Вам с про́сьбой… / Пишу́ Вам по по́воду… |
+| risposta | В отве́т на Ва́ше письмо́ от… |
+| allegato | Во вложе́нии Вы найдёте… |
+| conferma | Прошу́ подтверди́ть получе́ние письма́. |
+| ringraziamento | Зара́нее благодарю́. / Бу́ду призна́телен за отве́т. |
+| chiusura | С наилу́чшими пожела́ниями / С уваже́нием |
+
+---
+#### Le regole di stile
+- Nelle lettere formali **Вы, Вам, Ваш** si scrivono con la **maiuscola**;
+- frasi complete, niente particelle colloquiali (**ну, же, ведь**);
+- il tono si ammorbidisce con **к сожале́нию** (purtroppo), **бу́дем ра́ды** (saremo lieti), **наде́емся на сотру́дничество** (speriamo di collaborare).
+
+> **Призна́телен** è un «grato» più formale di **благода́рен**: **Бу́ду Вам о́чень призна́тельна за по́мощь.**
+
+### Parole
+в отве́т на = in risposta a [espr; + acc.]
+по по́воду = riguardo a [espr; + gen.]
+вложе́ние = allegato [n]
+подтверди́ть = confermare [v pf; подтвержу́, подтверди́шь]
+призна́тельный = grato, riconoscente (formale) [agg; breve: призна́телен]
+сотру́дничество = collaborazione [n]
+пожела́ние = augurio [n]
+С наилу́чшими пожела́ниями = Con i migliori auguri, cordialmente [espr]
+
+### Frasi
+Уважа́емый Ива́н Петро́вич! = Egregio Ivan Petrovič!
+Пишу́ Вам по по́воду на́шей встре́чи. = Le scrivo riguardo al nostro incontro.
+В отве́т на Ва́ше письмо́ сообща́ю, что докуме́нты гото́вы. = In risposta alla Sua lettera, Le comunico che i documenti sono pronti.
+Во вложе́нии Вы найдёте програ́мму конфере́нции. = In allegato troverà il programma della conferenza.
+Прошу́ подтверди́ть получе́ние письма́. = La prego di confermare la ricezione della lettera.
+Наде́емся на дальне́йшее сотру́дничество. = Speriamo in un'ulteriore collaborazione.
+
+### Esercizi
+? Пишу́ Вам по ___ на́шей встре́чи. = Le scrivo riguardo al nostro incontro. {по́воду | по́вод | по́вода}
+? В ___ на Ва́ше письмо́… = In risposta alla Sua lettera… {отве́т | отве́те | отве́та}
+? Во ___ Вы найдёте програ́мму. = In allegato troverà il programma. {вложе́нии | вложе́ние | вложи́ть}
+? Прошу́ ___ получе́ние письма́. = La prego di confermare la ricezione. {подтверди́ть | подтвержда́ю | подтвержде́ние}
+? Наде́емся на дальне́йшее ___ . = Speriamo in un'ulteriore collaborazione. {сотру́дничество | сотру́дник | сотру́дничать}
+? In una lettera formale «Вы» si scrive… {con la maiuscola | sempre minuscolo | in corsivo}
+> Scrivi «allegato» → вложе́ние
+~ Пишу́ Вам по по́воду на́шей встре́чи. = Le scrivo riguardo al nostro incontro.
+
+## Giorno 339 | Raccontare per iscritto
+obiettivo: Scrivere un racconto ordinato e vivace.
+breve: Per cominciare: **Как-то раз…** (Una volta…), **Э́то случи́лось про́шлым ле́том.** (È successo l'estate scorsa)
+breve: Per far avanzare la storia: **на сле́дующий день** (il giorno dopo), **неожи́данно** (inaspettatamente), **тем вре́менем** (nel frattempo), **в тот моме́нт** (in quel momento).
+breve: L'aspetto racconta: l'imperfettivo dipinge lo sfondo (**Шёл дождь…**), il perfettivo fa avanzare i fatti (**Вдруг зазвони́л телефо́н.**).
+
+### Lezione
+#### La scaletta di un racconto
+1. **Quando e dove**: **Э́то бы́ло про́шлым ле́том на да́че.**
+2. **Lo sfondo** (imperfettivo): **Шёл дождь, все сиде́ли до́ма.**
+3. **L'evento** (perfettivo): **Вдруг кто́-то постуча́л в дверь.**
+4. **Lo sviluppo**: **на сле́дующий день**, **тем вре́менем**, **по́сле э́того**.
+5. **La fine**: **в конце́ концо́в**, **в результа́те**, **с тех пор**.
+
+---
+#### I connettivi del racconto
+| Russo | Italiano |
+|---|---|
+| ка́к-то раз | una volta |
+| в тот моме́нт | in quel momento |
+| неожи́данно | inaspettatamente |
+| тем вре́менем | nel frattempo |
+| на сле́дующий день | il giorno dopo |
+| в результа́те | di conseguenza, alla fine |
+
+> Per rendere vivo un racconto, i russi usano spesso il **presente storico**: **Иду́ я вчера́ по у́лице, и вдруг ви́жу…** — Ieri cammino per strada e all'improvviso vedo…
+
+### Parole
+ка́к-то раз = una volta [espr]
+в тот моме́нт = in quel momento [espr]
+неожи́данно = inaspettatamente [avv]
+тем вре́менем = nel frattempo [espr]
+на сле́дующий день = il giorno dopo [espr]
+в результа́те = di conseguenza, alla fine [espr]
+
+### Frasi
+Ка́к-то раз я потеря́л ключи́ от до́ма. = Una volta ho perso le chiavi di casa.
+Шёл дождь, и все сиде́ли до́ма. = Pioveva e tutti stavano a casa.
+В тот моме́нт неожи́данно зазвони́л телефо́н. = In quel momento all'improvviso squillò il telefono.
+Тем вре́менем ма́ма гото́вила у́жин. = Nel frattempo la mamma preparava la cena.
+На сле́дующий день мы пое́хали в го́род. = Il giorno dopo siamo andati in città.
+В результа́те мы опозда́ли на по́езд. = Di conseguenza abbiamo perso il treno.
+
+### Esercizi
+? ___ раз я потеря́л ключи́. = Una volta ho perso le chiavi. {Ка́к-то | Когда́-то бы | Ка́ждый}
+? В тот ___ зазвони́л телефо́н. = In quel momento squillò il telefono. {моме́нт | моме́нта | моме́нте}
+? Тем ___ ма́ма гото́вила у́жин. = Nel frattempo la mamma preparava la cena. {вре́менем | вре́мя | вре́мени}
+? На ___ день мы пое́хали в го́род. = Il giorno dopo… {сле́дующий | сле́дующего | сле́дом}
+? Шёл дождь, и все ___ до́ма. = Pioveva e tutti stavano a casa. {сиде́ли | се́ли | ся́дут}
+? Nello sfondo di un racconto si usa di solito… {l'imperfettivo | il perfettivo | l'imperativo}
+> Scrivi «inaspettatamente» → неожи́данно
+~ На сле́дующий день мы пое́хали в го́род. = Il giorno dopo siamo andati in città.
+
+## Giorno 340 | Il testo d'opinione
+obiettivo: Scrivere un breve testo argomentativo.
+breve: Introduzione: **В после́днее вре́мя мно́го говоря́т о…** (Ultimamente si parla molto di…)
+breve: Tesi: **По моему́ мне́нию, …** / **Я счита́ю, что…**; argomenti: **во-пе́рвых, во-вторы́х, кро́ме того́**.
+breve: Conclusione: **Таки́м о́бразом, …** (Quindi…) / **В заключе́ние хочу́ сказа́ть, что…** (Per concludere…)
+
+### Lezione
+#### Lo schema in cinque passi
+| Passo | Formule |
+|---|---|
+| 1. il tema | В после́днее вре́мя мно́го говоря́т о… |
+| 2. la tesi | По моему́ мне́нию, … / Я счита́ю, что… |
+| 3. gli argomenti | Во-пе́рвых, … Во-вторы́х, … Кро́ме того́, … |
+| 4. l'obiezione | С друго́й стороны́, … Одна́ко… Тем не ме́нее… |
+| 5. la conclusione | Таки́м о́бразом, … / В заключе́ние… |
+
+---
+#### Parole per argomentare
+- **аргуме́нт** — argomento: **Э́то си́льный аргуме́нт.**
+- **вы́вод** — conclusione: **сде́лать вы́вод** (trarre una conclusione);
+- **безусло́вно** — senza dubbio: **Безусло́вно, интерне́т поле́зен.**
+
+> Un trucco per l'esame: scrivi frasi brevi e chiare, e lega le idee con i connettivi. Conta più la chiarezza della lunghezza!
+
+### Parole
+в после́днее вре́мя = ultimamente [espr]
+по моему́ мне́нию = secondo me, a mio parere [espr]
+таки́м о́бразом = quindi, in questo modo [espr]
+в заключе́ние = per concludere [espr]
+аргуме́нт = argomento (a favore o contro) [m]
+вы́вод = conclusione [m]
+безусло́вно = senza dubbio [avv]
+
+### Frasi
+В после́днее вре́мя мно́го говоря́т о вре́де соцсете́й. = Ultimamente si parla molto dei danni dei social.
+По моему́ мне́нию, ка́ждый до́лжен знать иностра́нный язы́к. = Secondo me ognuno dovrebbe conoscere una lingua straniera.
+Безусло́вно, у э́того есть свои́ плю́сы. = Senza dubbio questo ha i suoi vantaggi.
+Э́то о́чень си́льный аргуме́нт. = È un argomento molto forte.
+Таки́м о́бразом, мо́жно сде́лать вы́вод, что… = Quindi si può concludere che…
+В заключе́ние хочу́ сказа́ть спаси́бо всем. = Per concludere, voglio ringraziare tutti.
+
+### Esercizi
+? В после́днее ___ мно́го говоря́т о соцсетя́х. = Ultimamente si parla molto dei social. {вре́мя | вре́мени | вре́менем}
+? По моему́ ___ , э́то ва́жно. = Secondo me è importante. {мне́нию | мне́ние | мне́нием}
+? Таки́м ___ , мо́жно сде́лать вы́вод… = Quindi si può concludere… {о́бразом | о́браз | о́браза}
+? Мо́жно сде́лать ___ , что… = Si può concludere che… {вы́вод | вы́ход | вход}
+? В ___ хочу́ сказа́ть… = Per concludere vorrei dire… {заключе́ние | заключе́нии | заключи́ть}
+? «безусло́вно» vuol dire… {senza dubbio | senza condizioni | forse}
+> Scrivi «secondo me» (formale) → по моему́ мне́нию
+~ По моему́ мне́нию, ка́ждый до́лжен знать иностра́нный язы́к. = Secondo me ognuno dovrebbe conoscere una lingua straniera.
+
+## Giorno 341 | Riassumere
+obiettivo: Riassumere un testo letto o ascoltato.
+breve: **В те́ксте говори́тся о…** — Il testo parla di… **А́втор расска́зывает о… / счита́ет, что…**
+breve: **Гла́вная мысль те́кста — …** (L'idea principale del testo è…). **Ко́ротко говоря́, …** (In breve…)
+breve: I verbi del riassunto: **подчёркивать** (sottolineare), **сра́внивать** (confrontare), **упомина́ть** (citare), **приводи́ть приме́р** (fare un esempio).
+
+### Lezione
+#### Le formule del riassunto
+| Per dire… | In russo |
+|---|---|
+| Il testo parla di… | В те́ксте говори́тся о… |
+| L'autore racconta… | А́втор расска́зывает о… |
+| L'autore ritiene che… | А́втор счита́ет, что… |
+| L'idea principale è… | Гла́вная мысль те́кста — … |
+| All'inizio / Alla fine… | В нача́ле / В конце́ те́кста… |
+| In breve… | Ко́ротко говоря́, … |
+
+---
+#### I verbi
+- **подчёркивать** — sottolineare: **А́втор подчёркивает, что…**
+- **сра́внивать** — confrontare: **А́втор сра́внивает жизнь в го́роде и в дере́вне.**
+- **упомина́ть** — citare, menzionare: **В те́ксте упомина́ется Пу́шкин.**
+- **приводи́ть приме́р** — fare un esempio: **А́втор приво́дит приме́ры из жи́зни.**
+
+> Un buon riassunto usa **parole tue**: niente frasi copiate, solo l'essenziale, al presente.
+
+### Parole
+говори́тся = si dice, si parla [espr; в те́ксте говори́тся о…]
+а́втор = autore [m]
+гла́вная мысль = idea principale [espr]
+подчёркивать = sottolineare [v impf; подчёркиваю, подчёркиваешь]
+сра́внивать = confrontare [v impf; сра́вниваю, сра́вниваешь]
+упомина́ть = citare, menzionare [v impf; упомина́ю, упомина́ешь]
+приводи́ть приме́р = fare un esempio [espr]
+ко́ротко говоря́ = in breve [espr]
+
+### Frasi
+В те́ксте говори́тся о жи́зни в Сиби́ри. = Il testo parla della vita in Siberia.
+А́втор счита́ет, что приро́ду на́до бере́чь. = L'autore ritiene che la natura vada protetta.
+Гла́вная мысль те́кста — дру́жба важне́е де́нег. = L'idea principale del testo è che l'amicizia conta più dei soldi.
+А́втор сра́внивает жизнь в го́роде и в дере́вне. = L'autore confronta la vita in città e in campagna.
+А́втор приво́дит мно́го приме́ров. = L'autore fa molti esempi.
+Ко́ротко говоря́, всё зако́нчилось хорошо́. = In breve, è finito tutto bene.
+
+### Esercizi
+? В те́ксте ___ о жи́зни в Сиби́ри. = Il testo parla della vita in Siberia. {говори́тся | говори́т | говоря́т}
+? Гла́вная ___ те́кста — … = L'idea principale del testo… {мысль | мы́сли | мы́слью}
+? А́втор ___ жизнь в го́роде и в дере́вне. = L'autore confronta… {сра́внивает | подчёркивает | упомина́ет}
+? А́втор ___ мно́го приме́ров. = L'autore fa molti esempi. {приво́дит | де́лает | даёт}
+? ___ говоря́, всё зако́нчилось хорошо́. = In breve… {Ко́ротко | Коро́ткий | Коро́че}
+? «упомина́ть» vuol dire… {citare, menzionare | ricordare a qualcuno | dimenticare}
+> Scrivi «autore» → а́втор
+~ В те́ксте говори́тся о жи́зни в Сиби́ри. = Il testo parla della vita in Siberia.
+
+## Giorno 342 | Correggersi da soli
+obiettivo: Rileggere e correggere un testo con una lista di controllo.
+breve: Rileggi controllando: generi e desinenze, casi dopo le preposizioni, aspetto, numeri con i nomi, virgole prima di **что** e **кото́рый**.
+breve: **-тся** o **-ться**? Chiedi: «что де́лает?» → **-тся** (**Он у́чится**); «что де́лать?» → **-ться** (**Я хочу́ учи́ться**).
+breve: Minuscole in russo: giorni, mesi e nazionalità: **в понеде́льник**, **в ма́е**, **италья́нец**.
+
+### Lezione
+#### La lista di controllo
+1. **Genere e desinenze**: **но́вая кни́га**, **но́вое окно́**.
+2. **Casi dopo le preposizioni**: **в Москву́** (moto) / **в Москве́** (stato).
+3. **Aspetto**: abitudine o fatto singolo?
+4. **Numeri**: **два дру́га**, **пять друзе́й**.
+5. **Virgole**: prima di **что, что́бы, кото́рый, когда́, е́сли**.
+
+---
+#### Gli errori di ortografia più comuni
+- **-тся / -ться**: **Он у́чится** (che cosa fa?) — **Я люблю́ учи́ться** (che cosa fare?);
+- **ты чита́ешь** — la 2ª persona singolare ha sempre **ь**;
+- **не** con i verbi si scrive staccato: **не зна́ю**;
+- **maiuscole**: in russo giorni, mesi e nazionalità hanno la minuscola: **в понеде́льник**, **в ма́е**, **ру́сский**, **италья́нка**.
+
+---
+#### Correggere
+- **чернови́к** — la brutta copia;
+- **прове́рить** — controllare; **испра́вить** — correggere;
+- **опеча́тка** — errore di battitura.
+
+### Parole
+прове́рить = controllare, verificare [v pf; прове́рю, прове́ришь]
+испра́вить = correggere [v pf; испра́влю, испра́вишь]
+чернови́к = brutta copia [m]
+опеча́тка = errore di battitura [f]
+бу́ква = lettera (dell'alfabeto) [f]
+больша́я бу́ква = lettera maiuscola [espr]
+глаго́л = verbo [m]
+
+### Frasi
+Прове́рь, пожа́луйста, мой текст. = Controlla il mio testo, per favore.
+Я испра́вил все оши́бки. = Ho corretto tutti gli errori.
+Снача́ла напиши́ чернови́к. = Prima scrivi una brutta copia.
+Здесь опеча́тка. = Qui c'è un errore di battitura.
+Назва́ния ме́сяцев пи́шутся с ма́ленькой бу́квы. = I nomi dei mesi si scrivono con la minuscola.
+Он у́чится в университе́те, а я хочу́ учи́ться в шко́ле иску́сств. = Lui studia all'università, io voglio studiare in una scuola d'arte.
+
+### Esercizi
+? Он ___ в университе́те. = Studia all'università. {у́чится | учи́ться | у́чатся}
+? Я хочу́ ___ в Москве́. = Voglio studiare a Mosca. {учи́ться | у́чится | у́чимся}
+? In russo i nomi dei mesi (май, ию́нь…) si scrivono… {con la minuscola | con la maiuscola | come in italiano, sempre maiuscoli}
+? «италья́нец» in russo si scrive… {con la minuscola | con la maiuscola | indifferentemente}
+? Я ___ все оши́бки. = Ho corretto tutti gli errori. {испра́вил | прове́рил бы | исправля́ть}
+? «опеча́тка» è… {un errore di battitura | un timbro | un sigillo}
+> Scrivi «brutta copia» → чернови́к
+~ Прове́рь, пожа́луйста, мой текст. = Controlla il mio testo, per favore.
+
+## Giorno 343 | Ripasso della settimana
+obiettivo: Leggere un tema scritto da uno studente di russo.
+
+### Lettura | Моё сочине́ние | Il mio tema
+Заче́м я учу́ ру́сский язы́к? = Perché studio il russo?
+Мно́гие мои́ друзья́ удивля́ются, ведь ру́сский язы́к счита́ется о́чень тру́дным. = Molti miei amici si stupiscono, perché il russo è considerato molto difficile.
+Во-пе́рвых, я давно́ люблю́ ру́сскую литерату́ру и хочу́ чита́ть Пу́шкина и Че́хова в оригина́ле. = In primo luogo, amo da tempo la letteratura russa e voglio leggere Puškin e Čechov in originale.
+Во-вторы́х, по-ру́сски говоря́т бо́лее двухсо́т пяти́десяти миллио́нов челове́к. = In secondo luogo, il russo lo parlano più di duecentocinquanta milioni di persone.
+Кро́ме того́, зна́ние ру́сского помо́жет мне в рабо́те. = Inoltre, conoscere il russo mi aiuterà nel lavoro.
+Коне́чно, бы́ло нелегко́: падежи́, глаго́лы движе́ния, ударе́ние… = Certo, non è stato facile: i casi, i verbi di moto, l'accento…
+Иногда́ мне каза́лось, что я никогда́ не запо́мню все оконча́ния. = A volte mi sembrava che non avrei mai memorizzato tutte le desinenze.
+Одна́ко ка́ждый день я учи́л немно́го, и постепе́нно всё ста́ло получа́ться. = Però ogni giorno studiavo un po', e a poco a poco tutto ha cominciato a funzionare.
+Тепе́рь я могу́ говори́ть с ру́сскими друзья́ми, смотре́ть фи́льмы и да́же писа́ть сочине́ния. = Ora posso parlare con gli amici russi, guardare film e perfino scrivere temi.
+Таки́м о́бразом, я уве́рен: ру́сский язы́к сто́ит учи́ть, е́сли у тебя́ есть жела́ние и терпе́ние. = Quindi ne sono sicuro: il russo vale la pena di studiarlo, se hai voglia e pazienza.
+
+### Domande
+? Perché il narratore vuole leggere Puškin e Čechov in russo? {ama la letteratura russa | deve dare un esame | glielo chiede il capo}
+? Quante persone parlano russo secondo il testo? {più di 250 milioni | 100 milioni | un miliardo}
+? Che cosa gli sembrava impossibile? {memorizzare tutte le desinenze | scrivere in corsivo | ascoltare la radio}
+? Che cosa serve, secondo lui, per imparare il russo? {voglia e pazienza | molti soldi | vivere in Russia}
