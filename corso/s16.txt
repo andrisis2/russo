@@ -327,7 +327,7 @@ Un buon racconto al passato alterna i due aspetti:
 ? В суббо́ту ___ тепло́. = Sabato faceva caldo. {бы́ло | ста́ло | бу́дет}
 ? Мы ___ гуля́ли по па́рку. = Abbiamo passeggiato a lungo. {до́лго | наконе́ц | вдруг}
 ? Я ___ , поза́втракал и позвони́л дру́гу. = Mi sono alzato, ho fatto colazione e ho chiamato un amico. {встал | встава́л | встаю́}
-? Ве́чером она́ ра́но ___ спать. = La sera è andata a letto presto. {легла́ | лёг | ложи́лась бы}
+? Ве́чером она́ ра́но ___ спать. = La sera è andata a letto presto. {легла́ | лёг | ложи́лась}
 ~ Как ты провёл выходны́е? = Come hai passato il fine settimana?
 
 ## Giorno 112 | Ripasso e test del modulo 4

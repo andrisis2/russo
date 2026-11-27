@@ -1,0 +1,330 @@
+# Settimana 31 | Raccontare
+
+## Giorno 211 | Il gerundio perfettivo
+obiettivo: Usare il gerundio per un'azione che viene prima di un'altra.
+breve: Gerundio perfettivo: dal passato, tolta **-л**, si aggiunge **-в**: прочита́-л → **прочита́в** (avendo letto, dopo aver letto).
+breve: Verbi in -ся: **-вшись**: верну́ться → **верну́вшись** (tornato, dopo essere tornato).
+breve: Indica un'azione **conclusa prima** di quella principale: **Поза́втракав, он пошёл на рабо́ту.**
+
+### Lezione
+#### Prima questo, poi quello
+Il gerundio perfettivo indica un'azione **già conclusa** quando comincia l'azione principale:
+**Прочита́в письмо́, она́ запла́кала.** — Dopo aver letto la lettera, si è messa a piangere.
+
+---
+#### Come si forma
+Dal passato del verbo **perfettivo**, togliendo **-л**:
+| Passato | Gerundio |
+|---|---|
+| прочита́-л | прочита́в |
+| сде́ла-л | сде́лав |
+| поза́втрака-л | поза́втракав |
+| верну́-л-ся | верну́вшись |
+| уви́де-л | уви́дев |
+
+Alcuni verbi in **-ти** fanno **-я**: **прийти́ → придя́**, **уйти́ → уйдя́**, **войти́ → войдя́**.
+
+---
+#### Imperfettivo o perfettivo?
+- **Чита́я письмо́, она́ улыба́лась.** — Mentre leggeva la lettera, sorrideva. (contemporaneo)
+- **Прочита́в письмо́, она́ улыбну́лась.** — Dopo aver letto la lettera, ha sorriso. (prima)
+
+> Nella vita di tutti i giorni si dice più spesso **Когда́ она́ прочита́ла письмо́, …** Ma nei libri i gerundi sono ovunque.
+
+### Parole
+оказа́ться = rivelarsi, risultare, trovarsi [v pf; окажу́сь, ока́жешься]
+случи́ться = succedere, capitare [v pf; случи́тся; случи́лось]
+
+### Frasi
+Поза́втракав, он пошёл на рабо́ту. = Dopo aver fatto colazione, è andato al lavoro.
+Прочита́в письмо́, она́ запла́кала. = Dopo aver letto la lettera, si è messa a piangere.
+Верну́вшись домо́й, я сра́зу лёг спать. = Tornato a casa, sono andato subito a letto.
+Уви́дев меня́, он улыбну́лся. = Vedendomi, ha sorriso.
+Что случи́лось? = Che cosa è successo?
+Зада́ча оказа́лась о́чень тру́дной. = Il compito si è rivelato molto difficile.
+
+### Esercizi
+? прочита́ть → gerundio → {прочита́в | прочита́я | прочита́вший}
+? верну́ться → gerundio → {верну́вшись | верну́вшийся | возвраща́ясь}
+? ___ , он пошёл на рабо́ту. = Dopo aver fatto colazione, è andato al lavoro. {Поза́втракав | За́втракая | Поза́втракал}
+? ___ меня́, он улыбну́лся. = Vedendomi (dopo avermi visto), ha sorriso. {Уви́дев | Ви́дя | Уви́дел}
+? Что ___ ? = Che cosa è successo? {случи́лось | случи́лся | случа́й}
+? Зада́ча ___ тру́дной. = Il compito si è rivelato difficile. {оказа́лась | оказа́ла | ока́жется}
+> сде́лать → gerundio → сде́лав
+~ Что случи́лось? = Che cosa è successo?
+
+## Giorno 212 | Prima, poi, alla fine
+obiettivo: Collegare gli eventi di un racconto.
+breve: снача́ла → пото́м / зате́м → наконе́ц / в конце́ концо́в (prima → poi → infine).
+breve: вдруг / внеза́пно (all'improvviso), одна́жды (un giorno, una volta), тогда́ (allora).
+breve: к сча́стью (per fortuna) · к сожале́нию (purtroppo).
+
+### Lezione
+#### Le parole del racconto
+| Funzione | Russo |
+|---|---|
+| inizio | одна́жды (un giorno), снача́ла (prima) |
+| seguito | пото́м, зате́м (poi), по́сле э́того (dopo) |
+| sorpresa | вдруг, внеза́пно (all'improvviso) |
+| conseguenza | тогда́ (allora), поэ́тому |
+| fine | наконе́ц (finalmente), в конце́ концо́в (alla fine, dopo tutto) |
+| commento | к сча́стью (per fortuna), к сожале́нию (purtroppo) |
+
+---
+#### Una storia
+**Одна́жды я пошёл в лес за гриба́ми. Снача́ла всё бы́ло хорошо́. Пото́м вдруг пошёл дождь, и я потеря́л доро́гу. Я до́лго ходи́л по ле́су. К сча́стью, я уви́дел ста́рую доро́гу. Наконе́ц я вы́шел к дере́вне.**
+
+> **Наконе́ц** = finalmente (dopo un'attesa); **в конце́ концо́в** = alla fine (dopo tutto, alla fine dei conti): **В конце́ концо́в мы реши́ли оста́ться.**
+
+### Parole
+зате́м = poi, in seguito [avv]
+в конце́ концо́в = alla fine, dopo tutto [espr]
+внеза́пно = all'improvviso [avv]
+к сча́стью = per fortuna [espr]
+одна́жды = un giorno, una volta [avv]
+
+### Frasi
+Одна́жды я пошёл в лес за гриба́ми. = Un giorno sono andato nel bosco a funghi.
+Снача́ла всё бы́ло хорошо́, зате́м пошёл дождь. = All'inizio andava tutto bene, poi ha cominciato a piovere.
+Внеза́пно пога́с свет. = All'improvviso è andata via la luce.
+К сча́стью, у меня́ был фона́рик. = Per fortuna avevo una torcia.
+В конце́ концо́в мы реши́ли оста́ться до́ма. = Alla fine abbiamo deciso di restare a casa.
+Наконе́ц пришла́ весна́! = Finalmente è arrivata la primavera!
+
+### Esercizi
+? ___ я пошёл в лес. = Un giorno sono andato nel bosco. {Одна́жды | Одна́ | Одно́}
+? ___ всё бы́ло хорошо́. = All'inizio andava tutto bene. {Снача́ла | Наконе́ц | Зате́м}
+? ___ пошёл дождь. = All'improvviso ha cominciato a piovere. {Внеза́пно | Наконе́ц | Пото́м}
+? ___ , у меня́ был зонт. = Per fortuna avevo l'ombrello. {К сча́стью | К сожале́нию | В конце́}
+? В конце́ ___ мы оста́лись до́ма. = Alla fine siamo rimasti a casa. {концо́в | конца́ | коне́ц}
+? ___ пришла́ весна́! = Finalmente è arrivata la primavera! {Наконе́ц | Снача́ла | Вдруг}
+~ К сча́стью, у меня́ был фона́рик. = Per fortuna avevo una torcia.
+
+## Giorno 213 | L'aspetto nel racconto
+obiettivo: Usare bene i due aspetti in un racconto lungo.
+breve: Imperfettivo = descrizione, sfondo, abitudini, azioni in corso: **Шёл снег. Лю́ди спеши́ли домо́й.**
+breve: Perfettivo = gli eventi che fanno avanzare la storia: **Вдруг зазвони́л телефо́н. Я взял тру́бку.**
+breve: происходи́ть / произойти́ = accadere.
+
+### Lezione
+#### Lo sfondo e gli eventi
+Pensa a un film:
+- l'**imperfettivo** è la scenografia: com'era, che cosa succedeva, che cosa si faceva di solito;
+- il **perfettivo** è l'azione: ogni nuovo evento che cambia la situazione.
+
+---
+#### Un esempio commentato
+**Был ве́чер. Шёл снег.** (sfondo) **Я сиде́л до́ма и чита́л.** (sfondo, in corso) **Вдруг кто́-то позвони́л в дверь.** (evento) **Я откры́л дверь и уви́дел ста́рого дру́га.** (eventi in sequenza) **Мы до́лго разгова́ривали и пи́ли чай.** (durata) **Пото́м он ушёл, а я ещё до́лго не мог засну́ть.**
+
+---
+#### Due trucchi
+1. Se puoi dire «e poi?» dopo un'azione, quasi sempre è **perfettivo**.
+2. Se l'azione «fa da cornice» a un'altra (**когда́ я чита́л, …**), è **imperfettivo**.
+
+> **Происходи́ть** (impf) / **произойти́** (pf): **Что здесь происхо́дит?** — Che cosa succede qui? **Что произошло́?** — Che cosa è successo?
+
+### Parole
+происходи́ть = accadere, succedere [v impf; происхо́дит]
+засну́ть = addormentarsi [v pf; засну́, заснёшь]
+
+### Frasi
+Был ве́чер. Шёл снег. = Era sera. Nevicava.
+Я сиде́л до́ма и чита́л. = Ero seduto a casa e leggevo.
+Вдруг кто́-то позвони́л в дверь. = All'improvviso qualcuno ha suonato alla porta.
+Я откры́л дверь и уви́дел ста́рого дру́га. = Ho aperto la porta e ho visto un vecchio amico.
+Что здесь происхо́дит? = Che cosa succede qui?
+Я до́лго не мог засну́ть. = Per molto tempo non sono riuscito ad addormentarmi.
+
+### Esercizi
+? Был ве́чер. ___ снег. = Era sera. Nevicava. {Шёл | Пошёл | Прошёл}
+? Я сиде́л до́ма и ___ . = Ero a casa e leggevo. {чита́л | прочита́л | почита́л}
+? Вдруг кто́-то ___ в дверь. = All'improvviso qualcuno ha suonato. {позвони́л | звони́л | звони́т}
+? Я ___ дверь и уви́дел дру́га. = Ho aperto la porta e ho visto un amico. {откры́л | открыва́л | открыва́ю}
+? Мы до́лго ___ . = Abbiamo parlato a lungo. {разгова́ривали | поговори́ли | разговори́лись}
+? Что здесь ___ ? = Che cosa succede qui? {происхо́дит | произошло́ | произойдёт}
+~ Что здесь происхо́дит? = Che cosa succede qui?
+
+## Giorno 214 | Biografie
+obiettivo: Raccontare la vita di una persona.
+breve: роди́ться (nascere), вы́расти (crescere), око́нчить шко́лу / университе́т (diplomarsi / laurearsi), перее́хать (trasferirsi), умере́ть (morire).
+breve: **Он роди́лся в 1950 году́ в Москве́.** — È nato nel 1950 a Mosca.
+breve: жизнь (vita), судьба́ (destino), смерть (morte).
+
+### Lezione
+#### Le tappe della vita
+| Russo | Italiano |
+|---|---|
+| роди́ться | nascere |
+| вы́расти | crescere |
+| око́нчить шко́лу | finire la scuola |
+| око́нчить университе́т | laurearsi |
+| жени́ться / вы́йти за́муж | sposarsi |
+| перее́хать | trasferirsi |
+| умере́ть (у́мер, умерла́) | morire |
+
+---
+#### Lo schema di una biografia
+**Анто́н Па́влович Че́хов роди́лся в 1860 году́ в Таганро́ге. Он вы́рос в большо́й семье́. В 1879 году́ он перее́хал в Москву́ и поступи́л на медици́нский факульте́т. Око́нчив университе́т, он стал врачо́м, но всю жизнь писа́л расска́зы и пье́сы. Че́хов у́мер в 1904 году́ в Герма́нии.**
+
+---
+#### Date
+- **в 1860 году́** — nel 1860;
+- **в во́зрасте сорока́ лет** — all'età di quarant'anni;
+- **всю жизнь** — per tutta la vita.
+
+> **Судьба́** — destino: **Така́я судьба́!** — È il destino!
+
+### Parole
+око́нчить = finire, terminare (gli studi) [v pf; око́нчу, око́нчишь]
+перее́хать = trasferirsi, traslocare [v pf; перее́ду, перее́дешь]
+умере́ть = morire [v pf; умру́, умрёшь; у́мер, умерла́]
+судьба́ = destino, sorte [f]
+смерть = morte [f]
+
+### Frasi
+Че́хов роди́лся в 1860 году́ в Таганро́ге. = Čechov nacque nel 1860 a Taganrog.
+Он вы́рос в большо́й семье́. = Crebbe in una famiglia numerosa.
+По́сле шко́лы она́ перее́хала в Москву́. = Dopo la scuola si è trasferita a Mosca.
+Мой де́душка око́нчил университе́т в 1970 году́. = Mio nonno si è laureato nel 1970.
+Пу́шкин у́мер в три́дцать семь лет. = Puškin morì a trentasette anni.
+Така́я у него́ была́ судьба́. = Questo era il suo destino.
+
+### Esercizi
+? Он ___ в 1950 году́. = È nato nel 1950. {роди́лся | роди́л | рожда́лся}
+? Она́ ___ университе́т в про́шлом году́. = Si è laureata l'anno scorso. {око́нчила | ко́нчилась | ока́нчивала}
+? Мы ___ в Москву́. = Ci siamo trasferiti a Mosca. {перее́хали | перешли́ | прое́хали}
+? Он ___ в 1904 году́. = Morì nel 1904. {у́мер | умерла́ | умира́л}
+? Она́ ___ в 1990 году́. = Morì nel 1990. {умерла́ | у́мер | умерли́}
+? «судьба́» vuol dire… {destino | sabato | giudice}
+~ Он вы́рос в большо́й семье́. = Crebbe in una famiglia numerosa.
+
+## Giorno 215 | Un po' di storia
+obiettivo: Il lessico essenziale per parlare della storia russa.
+breve: царь (zar), импе́рия, револю́ция (1917), война́ (guerra), побе́да (vittoria).
+breve: Сове́тский Сою́з / СССР (1922-1991): **сою́з** = unione.
+breve: **Пётр Пе́рвый основа́л Петербу́рг в 1703 году́.**
+
+### Lezione
+#### Le grandi tappe
+| Periodo | Russo |
+|---|---|
+| gli zar | **цари́**: Ива́н Гро́зный (il Terribile), Пётр Пе́рвый (il Grande), Екатери́на Втора́я |
+| l'impero | **Росси́йская импе́рия** (1721-1917) |
+| la rivoluzione | **Октя́брьская револю́ция** (1917) |
+| l'URSS | **Сове́тский Сою́з, СССР** (1922-1991) |
+| la guerra | **Вели́кая Оте́чественная война́** (1941-1945) |
+| oggi | **Росси́йская Федера́ция** |
+
+---
+#### Frasi da storia
+- **Пётр Пе́рвый основа́л Петербу́рг в 1703 году́.** — Pietro il Grande fondò San Pietroburgo nel 1703.
+- **В 1917 году́ произошла́ револю́ция.**
+- **Сове́тский Сою́з распа́лся в 1991 году́.** — L'URSS si dissolse nel 1991.
+- **9 ма́я — День Побе́ды.**
+
+> I nomi degli zar si dicono con l'ordinale: **Пётр Пе́рвый** (Pietro I), **Никола́й Второ́й** (Nicola II).
+
+### Parole
+царь = zar, re [m]
+импе́рия = impero [f]
+револю́ция = rivoluzione [f]
+война́ = guerra [f]
+побе́да = vittoria [f]
+сою́з = unione, alleanza [m]
+
+### Frasi
+Пётр Пе́рвый основа́л Петербу́рг в 1703 году́. = Pietro il Grande fondò San Pietroburgo nel 1703.
+Росси́я была́ импе́рией бо́лее двухсо́т лет. = La Russia fu un impero per più di duecento anni.
+В 1917 году́ в Росси́и произошла́ револю́ция. = Nel 1917 in Russia ci fu la rivoluzione.
+Сове́тский Сою́з распа́лся в 1991 году́. = L'Unione Sovietica si dissolse nel 1991.
+Война́ зако́нчилась в 1945 году́. = La guerra finì nel 1945.
+Девя́того ма́я — День Побе́ды. = Il 9 maggio è il Giorno della Vittoria.
+
+### Esercizi
+? Пётр Пе́рвый ___ Петербу́рг. = Pietro il Grande fondò San Pietroburgo. {основа́л | основа́ние | основно́й}
+? В 1917 году́ произошла́ ___ . = Nel 1917 ci fu la rivoluzione. {револю́ция | револю́ции | револю́цию}
+? Сове́тский ___ распа́лся в 1991 году́. {Сою́з | Сою́за | Сою́зом}
+? «война́» vuol dire… {guerra | voce | vino}
+? «побе́да» vuol dire… {vittoria | pranzo | sconfitta}
+? Pietro I si dice… {Пётр Пе́рвый | Пётр Оди́н | Пе́рвый Пётр}
+~ Война́ зако́нчилась в 1945 году́. = La guerra finì nel 1945.
+
+## Giorno 216 | Grandi scrittori
+obiettivo: Parlare di libri e scrittori russi.
+breve: писа́тель (scrittore), поэ́т (poeta), рома́н (romanzo), расска́з (racconto), стихи́ (poesie, versi), произведе́ние (opera), геро́й (protagonista, eroe).
+breve: Пу́шкин, Толсто́й, Достое́вский, Че́хов, Булга́ков, Ахма́това…
+breve: **«Война́ и мир» — рома́н Толсто́го.** (di Tolstoj = genitivo)
+
+### Lezione
+#### Il lessico letterario
+| Russo | Italiano |
+|---|---|
+| писа́тель / писа́тельница | scrittore / scrittrice |
+| поэ́т | poeta |
+| рома́н | romanzo |
+| расска́з | racconto |
+| стихи́ (pl.) | poesie, versi |
+| пье́са | opera teatrale |
+| произведе́ние | opera (letteraria, artistica) |
+| геро́й | personaggio, protagonista; eroe |
+
+---
+#### I grandi
+- **Алекса́ндр Пу́шкин** — il padre della lingua letteraria russa: «Евге́ний Оне́гин»;
+- **Лев Толсто́й** — «Война́ и мир», «А́нна Каре́нина»;
+- **Фёдор Достое́вский** — «Преступле́ние и наказа́ние», «Бра́тья Карама́зовы»;
+- **Анто́н Че́хов** — racconti e opere teatrali: «Ча́йка», «Вишнёвый сад»;
+- **Михаи́л Булга́ков** — «Ма́стер и Маргари́та».
+
+---
+#### Parlare di un libro
+- **Э́то рома́н о любви́ и войне́.** — È un romanzo sull'amore e la guerra.
+- **Гла́вный геро́й — молодо́й офице́р.** — Il protagonista è un giovane ufficiale.
+- **Чья э́то кни́га? — Э́то рома́н Достое́вского.**
+
+### Parole
+писа́тель = scrittore [m]
+поэ́т = poeta [m]
+рома́н = romanzo [m]
+расска́з = racconto [m]
+стихи́ = poesie, versi [pl]
+геро́й = protagonista, personaggio; eroe [m]
+произведе́ние = opera (letteraria, artistica) [n]
+
+### Frasi
+«Война́ и мир» — рома́н Толсто́го. = «Guerra e pace» è un romanzo di Tolstoj.
+Пу́шкин — са́мый люби́мый поэ́т в Росси́и. = Puškin è il poeta più amato in Russia.
+Я люблю́ расска́зы Че́хова. = Amo i racconti di Čechov.
+Гла́вный геро́й рома́на — молодо́й студе́нт. = Il protagonista del romanzo è un giovane studente.
+Мы учи́ли стихи́ наизу́сть в шко́ле. = A scuola imparavamo le poesie a memoria.
+Э́то са́мое изве́стное произведе́ние Булга́кова. = È l'opera più famosa di Bulgakov.
+
+### Esercizi
+? «Война́ и мир» — рома́н ___ . = …romanzo di Tolstoj. {Толсто́го | Толсто́й | Толсто́му}
+? Я люблю́ расска́зы ___ . = Amo i racconti di Čechov. {Че́хова | Че́хов | Че́хову}
+? Пу́шкин — изве́стный ___ . = Puškin è un poeta famoso. {поэ́т | поэ́ма | поэ́зия}
+? Гла́вный ___ рома́на — студе́нт. = Il protagonista del romanzo… {геро́й | геро́я | геро́ем}
+? «расска́з» vuol dire… {racconto | romanzo | storia (materia)}
+? «стихи́» vuol dire… {poesie, versi | stili | storie}
+~ Я люблю́ расска́зы Че́хова. = Amo i racconti di Čechov.
+
+## Giorno 217 | Ripasso della settimana
+obiettivo: Leggere la biografia di Puškin.
+
+### Lettura | Алекса́ндр Пу́шкин | Aleksandr Puškin
+Алекса́ндр Серге́евич Пу́шкин роди́лся в Москве́ в 1799 году́. = Aleksandr Sergeevič Puškin nacque a Mosca nel 1799.
+В де́тстве он мно́го чита́л и слу́шал ска́зки, кото́рые ему́ расска́зывала ня́ня. = Da bambino leggeva molto e ascoltava le fiabe che gli raccontava la balia.
+Око́нчив лице́й в Ца́рском Селе́, он перее́хал в Петербу́рг. = Finito il liceo a Carskoe Selo, si trasferì a San Pietroburgo.
+Его́ стихи́ бы́стро ста́ли изве́стными. = Le sue poesie divennero presto famose.
+Но не все стихи́ нра́вились царю́, и поэ́та отпра́вили в ссы́лку на юг. = Ma non tutte le poesie piacevano allo zar, e il poeta fu mandato in esilio al sud.
+Там он написа́л мно́го произведе́ний, наприме́р, нача́ло рома́на «Евге́ний Оне́гин». = Là scrisse molte opere, per esempio l'inizio del romanzo «Evgenij Onegin».
+В 1831 году́ Пу́шкин жени́лся на Ната́лье Гончаро́вой, кото́рая счита́лась пе́рвой краса́вицей Петербу́рга. = Nel 1831 Puškin sposò Natal'ja Gončarova, considerata la donna più bella di San Pietroburgo.
+К сожале́нию, жизнь поэ́та была́ коро́ткой. = Purtroppo la vita del poeta fu breve.
+В 1837 году́ он был ра́нен на дуэ́ли и че́рез два дня у́мер. = Nel 1837 fu ferito in duello e due giorni dopo morì.
+Но его́ стихи́ до сих пор зна́ет наизу́сть вся Росси́я. = Ma le sue poesie ancora oggi le sa a memoria tutta la Russia.
+
+### Domande
+? Dove nacque Puškin? {a Mosca | a San Pietroburgo | a Carskoe Selo}
+? Perché fu mandato in esilio? {le sue poesie non piacevano allo zar | aveva combattuto un duello | aveva debiti}
+? Chi era Natal'ja Gončarova? {sua moglie | sua sorella | la sua balia}
+? Come morì Puškin? {ferito in un duello | di malattia | in guerra}

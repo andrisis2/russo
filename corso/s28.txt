@@ -104,7 +104,7 @@ breve: -нибудь nelle domande, negli ordini, nel futuro; -то nelle afferm
 
 ### Esercizi
 ? ___ звони́л тебе́. = Ti ha chiamato qualcuno. {Кто́-то | Кто́-нибудь | Никто́}
-? ___ звони́л? = Ha chiamato qualcuno? {Кто́-нибудь | Кто́-то | Кто бы}
+? ___ звони́л? = Ha chiamato qualcuno? {Кто́-нибудь | Кто́-то | Никто́}
 ? Скажи́ ___ ! = Di' qualcosa! {что́-нибудь | что́-то | ничего́}
 ? Я ___ ви́дел его́. = L'ho già visto da qualche parte. {где́-то | где́-нибудь | нигде́}
 ? Ты ___ был в Москве́? = Sei mai stato a Mosca? {когда́-нибудь | когда́-то | никогда́}
