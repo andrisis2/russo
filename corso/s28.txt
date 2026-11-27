@@ -1,0 +1,332 @@
+# Settimana 28 | Nessuno, qualcuno, tutti
+
+## Giorno 190 | Nessuno, niente, mai
+obiettivo: Usare i pronomi negativi con la doppia negazione.
+breve: никто́ (nessuno), ничего́ (niente), никогда́ (mai), нигде́ (da nessuna parte), никуда́ (verso nessun luogo), никако́й (nessun).
+breve: Vogliono sempre anche **не** davanti al verbo: **Я никого́ не зна́ю.** — Non conosco nessuno.
+breve: Con le preposizioni il pronome si spezza: **ни с кем** (con nessuno), **ни о чём** (di niente).
+
+### Lezione
+#### La doppia negazione
+In russo, come in italiano «non vedo nessuno», i negativi vogliono **не** col verbo:
+- **Никто́ не пришёл.** — Non è venuto nessuno.
+- **Я ничего́ не зна́ю.** — Non so niente.
+- **Он никогда́ не опа́здывает.** — Non arriva mai in ritardo.
+- **Мы нигде́ не́ были.** — Non siamo stati da nessuna parte.
+- **Я никуда́ не иду́.** — Non vado da nessuna parte.
+
+---
+#### I pronomi si declinano
+**никто́** e **ничто́** si declinano come **кто** e **что**: **никого́, никому́, нике́м**; **ничего́, ничему́, ниче́м**.
+- **Я никого́ не ви́жу.** — Non vedo nessuno.
+- **Он никому́ не звони́т.** — Non telefona a nessuno.
+
+> Con il verbo negato si usa quasi sempre **ничего́** (genitivo), non «ничто́»: **Я ничего́ не понима́ю.**
+
+---
+#### Con le preposizioni
+La preposizione va **in mezzo**: **ни с кем** (con nessuno), **ни о чём** (di niente), **ни у кого́** (da nessuno).
+**Я ни с кем не говори́л.** — Non ho parlato con nessuno.
+
+---
+#### Nessun
+**никако́й** + nome: **У меня́ нет никако́й иде́и.** — Non ho nessuna idea.
+
+### Parole
+никто́ = nessuno [pron]
+ничего́ = niente; non fa niente [pron]
+нигде́ = da nessuna parte (stato) [avv]
+никуда́ = da nessuna parte (moto) [avv]
+никако́й = nessun, nessuno [pron]
+
+### Frasi
+Никто́ не пришёл. = Non è venuto nessuno.
+Я ничего́ не понима́ю! = Non capisco niente!
+Я никого́ здесь не зна́ю. = Non conosco nessuno qui.
+В выходны́е мы никуда́ не е́здили. = Nel weekend non siamo andati da nessuna parte.
+Я ни с кем не говори́л. = Non ho parlato con nessuno.
+Извини́те! — Ничего́! = Mi scusi! — Non fa niente!
+
+### Esercizi
+? ___ не пришёл. = Non è venuto nessuno. {Никто́ | Ничего́ | Никогда́}
+? Я ___ не понима́ю. = Non capisco niente. {ничего́ | никто́ | ниче́м}
+? Я ___ не зна́ю здесь. = Non conosco nessuno qui. {никого́ | никто́ | никому́}
+? Мы ___ не е́здили. = Non siamo andati da nessuna parte. {никуда́ | нигде́ | никогда́}
+? Я ни ___ кем не говори́л. = Non ho parlato con nessuno. {с | о | у}
+? У меня́ нет ___ иде́и. = Non ho nessuna idea. {никако́й | никако́го | ничего́}
+? Il russo usa la doppia negazione: {Я никого́ не ви́жу. | Я никого́ ви́жу. | Я не ви́жу кто.}
+~ Я ничего́ не понима́ю! = Non capisco niente!
+
+## Giorno 191 | Qualcuno, qualcosa: -то e -нибудь
+obiettivo: Distinguere кто́-то e кто́-нибудь.
+breve: **-то** = qualcuno di preciso (esiste, ma non so chi): **Кто́-то звони́л.** — Ha chiamato qualcuno.
+breve: **-нибудь** = qualcuno qualsiasi (non si sa se esiste): **Кто́-нибудь звони́л?** — Ha chiamato qualcuno?
+breve: -нибудь nelle domande, negli ordini, nel futuro; -то nelle affermazioni al passato e al presente.
+
+### Lezione
+#### Due «qualcuno»
+| | -то (preciso, sconosciuto) | -нибудь (qualsiasi) |
+|---|---|---|
+| qualcuno | кто́-то | кто́-нибудь |
+| qualcosa | что́-то | что́-нибудь |
+| da qualche parte | где́-то | где́-нибудь |
+| una volta | когда́-то | когда́-нибудь |
+| in qualche modo | ка́к-то | ка́к-нибудь |
+
+---
+#### Come scegliere
+**-то**: la cosa **esiste**, è successa, ma non so (o non dico) quale:
+- **Кто́-то звони́л тебе́.** — Ti ha chiamato qualcuno.
+- **Я где́-то ви́дел э́того челове́ка.** — Ho già visto quest'uomo da qualche parte.
+
+**-нибудь**: una cosa **qualsiasi**, che forse non esiste:
+- domande: **Кто́-нибудь звони́л?** — Ha chiamato qualcuno?
+- ordini: **Скажи́ что́-нибудь!** — Di' qualcosa!
+- futuro: **Я когда́-нибудь пое́ду в Сиби́рь.** — Prima o poi andrò in Siberia.
+
+> **Когда́-то** = una volta, tanto tempo fa: **Когда́-то здесь был лес.** — Una volta qui c'era un bosco.
+
+### Parole
+кто́-то = qualcuno (preciso) [pron]
+что́-то = qualcosa (preciso) [pron]
+где́-то = da qualche parte [avv]
+когда́-то = una volta, un tempo [avv]
+кто́-нибудь = qualcuno (qualsiasi) [pron]
+что́-нибудь = qualcosa (qualsiasi) [pron]
+
+### Frasi
+Кто́-то звони́л тебе́ у́тром. = Ti ha chiamato qualcuno stamattina.
+Кто́-нибудь звони́л? = Ha chiamato qualcuno?
+Скажи́ что́-нибудь по-ру́сски! = Di' qualcosa in russo!
+Я где́-то ви́дел э́того челове́ка. = Ho già visto quest'uomo da qualche parte.
+Когда́-то здесь был лес. = Una volta qui c'era un bosco.
+Ты когда́-нибудь был в Москве́? = Sei mai stato a Mosca?
+
+### Esercizi
+? ___ звони́л тебе́. = Ti ha chiamato qualcuno. {Кто́-то | Кто́-нибудь | Никто́}
+? ___ звони́л? = Ha chiamato qualcuno? {Кто́-нибудь | Кто́-то | Кто бы}
+? Скажи́ ___ ! = Di' qualcosa! {что́-нибудь | что́-то | ничего́}
+? Я ___ ви́дел его́. = L'ho già visto da qualche parte. {где́-то | где́-нибудь | нигде́}
+? Ты ___ был в Москве́? = Sei mai stato a Mosca? {когда́-нибудь | когда́-то | никогда́}
+? ___ здесь был лес. = Una volta qui c'era un bosco. {Когда́-то | Когда́-нибудь | Когда́}
+~ Ты когда́-нибудь был в Москве́? = Sei mai stato a Mosca?
+
+## Giorno 192 | Non ho tempo di…: некогда, нечего
+obiettivo: Dire che non c'è tempo, posto o motivo per fare qualcosa.
+breve: **не́когда** (non c'è tempo), **не́где** (non c'è posto), **не́куда** (non c'è dove andare), **не́чего** (non c'è niente da), **не́кого** (non c'è nessuno da).
+breve: Costruzione: (dativo) + не́когда/не́чего… + **infinito**: **Мне не́когда отдыха́ть.**
+breve: L'accento è sempre su **не́**. Attenzione: никогда́ (mai) ≠ не́когда (non c'è tempo).
+
+### Lezione
+#### Una costruzione molto russa
+| Russo | Significato | Esempio |
+|---|---|---|
+| не́когда | non c'è tempo | **Мне не́когда отдыха́ть.** — Non ho tempo di riposarmi. |
+| не́где | non c'è posto | **Здесь не́где сесть.** — Qui non c'è dove sedersi. |
+| не́куда | non c'è dove andare | **Нам не́куда идти́.** — Non abbiamo dove andare. |
+| не́чего | non c'è niente da | **Мне не́чего де́лать.** — Non ho niente da fare. |
+| не́кого | non c'è nessuno da | **Мне не́кого спроси́ть.** — Non ho nessuno a cui chiedere. |
+
+La persona va al **dativo**, il verbo all'**infinito**.
+
+---
+#### Due coppie da non confondere
+- **никогда́** (mai) ≠ **не́когда** (non c'è tempo);
+- **ничего́ не де́лаю** (non faccio niente) ≠ **не́чего де́лать** (non c'è niente da fare).
+
+> **Не́чего** si usa anche per dire «non serve»: **Не́чего пла́кать!** — Non c'è motivo di piangere!
+
+### Parole
+не́когда = non c'è tempo [avv]
+не́где = non c'è posto (dove) [avv]
+не́куда = non c'è dove (andare) [avv]
+не́чего = non c'è niente (da) [pron]
+
+### Frasi
+Мне не́когда отдыха́ть. = Non ho tempo di riposarmi.
+Здесь не́где сесть. = Qui non c'è dove sedersi.
+Нам не́куда спеши́ть. = Non abbiamo fretta (non c'è dove correre).
+В выходны́е мне бы́ло не́чего де́лать. = Nel weekend non avevo niente da fare.
+Не́чего боя́ться! = Non c'è niente da temere!
+Мне не́кого спроси́ть. = Non ho nessuno a cui chiedere.
+
+### Esercizi
+? Мне ___ отдыха́ть. = Non ho tempo di riposarmi. {не́когда | никогда́ | не́где}
+? Здесь ___ сесть. = Qui non c'è dove sedersi. {не́где | нигде́ | не́куда}
+? Мне ___ де́лать. = Non ho niente da fare. {не́чего | ничего́ | не́кого}
+? Нам ___ идти́. = Non abbiamo dove andare. {не́куда | никуда́ | не́где}
+? ___ не́когда. = Non ho tempo. {Мне | Я | Меня́}
+? «Он никогда́ не отдыха́ет» vuol dire… {non si riposa mai | non ha tempo di riposarsi | non si riposa ora}
+~ Мне не́когда отдыха́ть. = Non ho tempo di riposarmi.
+
+## Giorno 193 | Себя e сам
+obiettivo: Usare il riflessivo себя́ e il rafforzativo сам.
+breve: **себя́** = se stesso (riferito al soggetto): **Он ду́мает то́лько о себе́.** — Pensa solo a sé.
+breve: себя́ si declina: себя́, себе́, собо́й, о себе́ (non ha nominativo).
+breve: **сам / сама́ / са́ми** = da solo, in persona: **Я сам э́то сде́лал.** — L'ho fatto da me.
+
+### Lezione
+#### Себя́ — sé stesso
+Si riferisce sempre al soggetto della frase, per tutte le persone:
+
+| Caso | Forma | Esempio |
+|---|---|---|
+| Gen./Acc. | себя́ | **Он лю́бит то́лько себя́.** |
+| Dat. | себе́ | **Я купи́л себе́ кни́гу.** — Mi sono comprato un libro. |
+| Strum. | собо́й | **Возьми́ с собо́й зонт.** — Prendi con te l'ombrello. |
+| Prep. | о себе́ | **Расскажи́ о себе́.** — Parlami di te. |
+
+Espressioni: **чу́вствовать себя́** (sentirsi), **у себя́ до́ма** (a casa propria), **как у себя́ до́ма** (come a casa tua).
+
+---
+#### Сам — da solo, in persona
+**сам** (m), **сама́** (f), **са́ми** (pl) sottolinea chi fa l'azione:
+- **Я сам э́то сде́лал.** — L'ho fatto da solo.
+- **Она́ сама́ позвони́ла.** — Ha chiamato lei stessa.
+- **Сам дире́ктор пришёл!** — È venuto il direttore in persona!
+
+> **самостоя́тельно** — in modo autonomo: **Он у́чится самостоя́тельно.** — Studia da autodidatta.
+
+### Parole
+себя́ = sé, se stesso [pron; себе́, собо́й]
+сам = da solo, stesso, in persona [pron; сама́, само́, са́ми]
+самостоя́тельно = autonomamente, da sé [avv]
+
+### Frasi
+Расскажи́ немно́го о себе́. = Parlami un po' di te.
+Я купи́л себе́ но́вый телефо́н. = Mi sono comprato un nuovo telefono.
+Возьми́ с собо́й зонт. = Prendi con te l'ombrello.
+Чу́вствуйте себя́ как до́ма! = Fate come se foste a casa vostra!
+Я сам э́то сде́лал. = L'ho fatto da solo.
+Она́ сама́ всё поняла́. = Ha capito tutto da sola.
+
+### Esercizi
+? Расскажи́ о ___ . = Parlami di te. {себе́ | себя́ | тебе́}
+? Я купи́л ___ кни́гу. = Mi sono comprato un libro. {себе́ | себя́ | собо́й}
+? Возьми́ с ___ зонт. = Prendi con te l'ombrello. {собо́й | себя́ | себе́}
+? Он лю́бит то́лько ___ . = Ama solo se stesso. {себя́ | себе́ | его́}
+? Я ___ э́то сде́лал. = L'ho fatto da solo. {сам | сама́ | себя́}
+? Она́ ___ позвони́ла. = Ha chiamato lei stessa. {сама́ | сам | себя́}
+~ Возьми́ с собо́й зонт. = Prendi con te l'ombrello.
+
+## Giorno 194 | Весь e друг друга
+obiettivo: Esprimere la reciprocità e la totalità.
+breve: **друг дру́га** = l'un l'altro, a vicenda: **Они́ лю́бят друг дру́га.**
+breve: Con le preposizioni: **друг с дру́гом**, **друг о дру́ге** (la preposizione va in mezzo).
+breve: **любо́й** = qualsiasi · **ка́ждый** = ogni: **в любо́е вре́мя** (a qualsiasi ora).
+
+### Lezione
+#### L'un l'altro
+**друг дру́га** — solo la seconda parte si declina:
+- **Они́ лю́бят друг дру́га.** — Si amano.
+- **Мы помога́ем друг дру́гу.** — Ci aiutiamo a vicenda.
+- **Они́ ча́сто говоря́т друг о дру́ге.** — Parlano spesso l'uno dell'altro.
+- **Мы зна́ем друг дру́га давно́.** — Ci conosciamo da tanto.
+
+La preposizione va **in mezzo**: **друг с дру́гом** (l'uno con l'altro), **друг для дру́га** (l'uno per l'altro).
+
+---
+#### Tutti, ogni, qualsiasi
+- **весь** — tutto (l'insieme): **все студе́нты** — tutti gli studenti;
+- **ка́ждый** — ogni (uno per uno): **ка́ждый студе́нт** — ogni studente;
+- **любо́й** — qualsiasi: **Звони́ в любо́е вре́мя.** — Chiama a qualsiasi ora.
+
+> **Все** e **ка́ждый** spesso dicono la stessa cosa, ma **ка́ждый** vuole il singolare: **Ка́ждый зна́ет э́то.** / **Все зна́ют э́то.**
+
+### Parole
+друг дру́га = l'un l'altro, a vicenda [espr]
+любо́й = qualsiasi [pron]
+
+### Frasi
+Они́ лю́бят друг дру́га. = Si amano.
+Мы помога́ем друг дру́гу. = Ci aiutiamo a vicenda.
+Мы зна́ем друг дру́га с де́тства. = Ci conosciamo dall'infanzia.
+Они́ ча́сто говоря́т друг о дру́ге. = Parlano spesso l'uno dell'altro.
+Звони́ мне в любо́е вре́мя. = Chiamami a qualsiasi ora.
+Ка́ждый студе́нт до́лжен сдать экза́мен. = Ogni studente deve sostenere l'esame.
+
+### Esercizi
+? Они́ лю́бят друг ___ . = Si amano. {дру́га | дру́гу | дру́гом}
+? Мы помога́ем друг ___ . = Ci aiutiamo a vicenda. {дру́гу | дру́га | дру́ге}
+? Они́ говоря́т друг ___ дру́ге. = Parlano l'uno dell'altro. {о | с | на}
+? Звони́ в ___ вре́мя. = Chiama a qualsiasi ora. {любо́е | люби́мое | ка́ждое}
+? ___ студе́нт до́лжен сдать экза́мен. = Ogni studente deve sostenere l'esame. {Ка́ждый | Все | Весь}
+? ___ студе́нты сда́ли экза́мен. = Tutti gli studenti hanno passato l'esame. {Все | Ка́ждый | Вся}
+~ Мы помога́ем друг дру́гу. = Ci aiutiamo a vicenda.
+
+## Giorno 195 | Il punto sulla grammatica
+obiettivo: Ripassare i punti più difficili del modulo.
+breve: кото́рый si accorda col nome ma prende il caso dalla sua frase.
+breve: потому́ что (perché) ≠ поэ́тому (perciò); е́сли (se, condizione) ≠ ли (se, domanda indiretta).
+breve: никто́ + не; кто́-то (preciso) / кто́-нибудь (qualsiasi); не́когда / не́чего + infinito.
+
+### Lezione
+#### Gli errori più comuni
+Ecco le coppie che più spesso confondono chi studia il russo, con un esempio giusto per ciascuna.
+
+**1. потому́ что / поэ́тому**
+- **Я не пришёл, потому́ что был бо́лен.** (causa)
+- **Я был бо́лен, поэ́тому не пришёл.** (conseguenza)
+
+**2. е́сли / ли**
+- **Е́сли он придёт, мы пойдём в кино́.** (condizione)
+- **Я не зна́ю, придёт ли он.** (domanda indiretta)
+
+**3. что / что́бы**
+- **Он сказа́л, что придёт.** (fatto)
+- **Он сказа́л, что́бы я пришёл.** (ordine)
+
+---
+**4. кото́рый**
+- **Я зна́ю челове́ка, кото́рый живёт там.** (soggetto)
+- **Я зна́ю челове́ка, кото́рого ты ви́дел.** (oggetto)
+
+**5. никто́ / кто́-то / кто́-нибудь**
+- **Никто́ не звони́л.** · **Кто́-то звони́л.** · **Кто́-нибудь звони́л?**
+
+**6. свой**
+- **Он лю́бит свою́ жену́.** (la propria) / **Он лю́бит его́ жену́.** (di un altro!)
+
+### Parole
+внима́тельно = attentamente, con attenzione [avv]
+повторе́ние = ripetizione, ripasso [n]
+
+### Frasi
+Чита́йте внима́тельно. = Leggete con attenzione.
+Повторе́ние — мать уче́ния. = La ripetizione è la madre dello studio.
+Я не зна́ю, придёт ли он. = Non so se verrà.
+Он сказа́л, что́бы я пришёл. = Mi ha detto di venire.
+Я зна́ю челове́ка, кото́рого ты ви́дел. = Conosco l'uomo che hai visto.
+Он лю́бит свою́ жену́. = Ama sua moglie.
+
+### Esercizi
+? Я не пришёл, ___ был бо́лен. {потому́ что | поэ́тому}
+? ___ он придёт, мы пойдём в кино́. {Е́сли | Ли}
+? Я не зна́ю, придёт ___ он. {ли | е́сли}
+? Он сказа́л, ___ я пришёл. (ordine) {что́бы | что}
+? Я зна́ю челове́ка, ___ ты ви́дел. {кото́рого | кото́рый | кото́рому}
+? ___ звони́л? (domanda) {Кто́-нибудь | Кто́-то}
+? ___ не звони́л. {Никто́ | Кто́-то | Не́кто}
+? Он лю́бит ___ жену́. (la propria) {свою́ | его́}
+? Мне ___ отдыха́ть. (non ho tempo) {не́когда | никогда́}
+
+## Giorno 196 | Ripasso e test del modulo 7
+obiettivo: Leggere un piccolo giallo e fare il test del modulo.
+
+### Lettura | Никто́ не знал | Nessuno lo sapeva
+В понеде́льник у́тром в о́фисе пропа́л ноутбу́к нача́льника. = Lunedì mattina in ufficio è sparito il portatile del capo.
+Нача́льник спроси́л: «Кто́-нибудь ви́дел мой ноутбу́к?» = Il capo ha chiesto: «Qualcuno ha visto il mio portatile?»
+Никто́ ничего́ не ви́дел. = Nessuno aveva visto niente.
+Секрета́рь сказа́ла, что ве́чером в о́фисе никого́ не́ было. = La segretaria ha detto che la sera in ufficio non c'era nessuno.
+Но кто́-то по́мнил, что в пя́тницу приходи́л ма́стер, кото́рый чини́л интерне́т. = Ma qualcuno si ricordava che venerdì era venuto un tecnico che aggiustava internet.
+Все на́чали ду́мать, что э́то он. = Tutti hanno cominciato a pensare che fosse stato lui.
+Нача́льник хоте́л позвони́ть в поли́цию, но пото́м сам откры́л свой шкаф… = Il capo voleva chiamare la polizia, ma poi ha aperto da sé il suo armadio…
+Ноутбу́к лежа́л там! В пя́тницу он сам его́ туда́ положи́л и забы́л. = Il portatile era lì! Venerdì l'aveva messo lui stesso e se n'era dimenticato.
+Все засмея́лись, а нача́льник извини́лся пе́ред колле́гами. = Tutti si sono messi a ridere, e il capo si è scusato con i colleghi.
+С тех пор он всегда́ внима́тельно смо́трит в свой шкаф. = Da allora guarda sempre con attenzione nel suo armadio.
+
+### Domande
+? Che cosa è sparito? {il portatile del capo | il telefono della segretaria | le chiavi dell'ufficio}
+? Di chi hanno sospettato tutti? {del tecnico | della segretaria | del capo}
+? Dove era il portatile? {nell'armadio del capo | a casa del capo | dal tecnico}
+? Che cosa ha fatto il capo alla fine? {si è scusato con i colleghi | ha chiamato la polizia | si è arrabbiato}
