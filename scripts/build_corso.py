@@ -583,6 +583,10 @@ def accenta_sorgenti(idx, files):
 # ---------------------------------------------------------------------------
 def controlla_testo(idx, morph, testo, f, n, dove, mancanti):
     testo = testo.replace('**', '').replace('*', '')
+    # refusi: lettere latine dentro parole russe (пожаluйста) o viceversa
+    for w in re.findall(r"[A-Za-zÀ-ÿА-Яа-яЁё\u0301]+", testo):
+        if re.search('[А-Яа-яЁё]', w) and re.search('[A-Za-zÀ-ÿ]', w):
+            avviso(f, n, f'{dove}: lettere latine e cirilliche mescolate in «{w}»')
     for m in CYR_WORD.finditer(testo):
         tok = m.group(0)
         if m.start() > 0 and testo[m.start() - 1] in '-–':
@@ -595,6 +599,9 @@ def controlla_testo(idx, morph, testo, f, n, dove, mancanti):
             continue
         intero_noto = '-' in tok and ((morph is not None and morph.word_is_known(nudo(tok).lower()))
                                       or (idx is not None and chiave(tok) in idx) or chiave(tok) in PAROLE_OK)
+        # nelle spiegazioni, radice-desinenza (говор-я́т, пиш-у́т) sono pezzi, non parole
+        if dove == 'lezione' and '-' in tok and not intero_noto:
+            continue
         for parte in tok.split('-'):
             if not parte:
                 continue

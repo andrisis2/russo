@@ -1,0 +1,346 @@
+# Settimana 18 | Il plurale nei casi
+
+## Giorno 120 | Dativo, strumentale e prepositivo plurale
+obiettivo: Usare i nomi al plurale dopo к, с, в, о.
+breve: Il plurale è facile: dativo **-ам/-ям**, strumentale **-ами/-ями**, prepositivo **-ах/-ях**, per tutti i generi.
+breve: к друзья́м, с друзья́ми, о друзья́х · к тури́стам, с тури́стами, о тури́стах.
+breve: Eccezioni da sapere: детьми́, людьми́ (strumentale).
+
+### Lezione
+Buona notizia: al plurale dativo, strumentale e prepositivo hanno **le stesse desinenze per tutti i generi**.
+
+| Caso | Dura | Morbida | Esempio |
+|---|---|---|---|
+| Dativo | -ам | -ям | к тури́ст**ам**, к друзь**я́м** |
+| Strumentale | -ами | -ями | с тури́ст**ами**, с друзь**я́ми** |
+| Prepositivo | -ах | -ях | о тури́ст**ах**, о друзь**я́х** |
+
+«Dura» = dopo consonante o **-а/-о**; «morbida» = dopo **-ь**, **-я**, **-й**, **-е**.
+
+---
+#### Esempi
+- **Я звоню́ роди́телям.** — Telefono ai genitori.
+- **Мы гуля́ли с друзья́ми.** — Abbiamo passeggiato con gli amici.
+- **Он расска́зывал о музе́ях.** — Raccontava dei musei.
+- **В Москве́ я был в теа́трах и в музе́ях.**
+
+---
+#### Eccezioni
+**лю́ди → людьми́**, **де́ти → детьми́** (strumentale): **с детьми́**, **с людьми́**. Al dativo e prepositivo invece sono regolari: **к де́тям**, **о лю́дях**.
+
+> **Гид** — guida turistica; **экску́рсия** — visita guidata, gita; **гру́ппа** — gruppo.
+
+### Parole
+гид = guida (turistica) [m]
+экску́рсия = visita guidata, escursione [f]
+гру́ппа = gruppo [f]
+
+### Frasi
+Я звоню́ роди́телям ка́ждое воскресе́нье. = Telefono ai genitori ogni domenica.
+Мы гуля́ли с друзья́ми по го́роду. = Abbiamo passeggiato per la città con gli amici.
+Гид расска́зывает тури́стам о Кремле́. = La guida racconta ai turisti del Cremlino.
+Я люблю́ игра́ть с детьми́. = Mi piace giocare con i bambini.
+В на́шей гру́ппе мно́го студе́нтов из ра́зных стран. = Nel nostro gruppo ci sono molti studenti di paesi diversi.
+Мы бы́ли на экску́рсии в музе́ях Кремля́. = Siamo stati in visita ai musei del Cremlino.
+
+### Esercizi
+? Я звоню́ ___ . = Telefono ai genitori. {роди́телям | роди́телей | роди́телями}
+? Мы гуля́ли с ___ . = Abbiamo passeggiato con gli amici. {друзья́ми | друзья́м | друзе́й}
+? Гид расска́зывает ___ . = La guida racconta ai turisti. {тури́стам | тури́стов | тури́стах}
+? Я игра́ю с ___ . = Gioco con i bambini. {детьми́ | де́тями | дете́й}
+? Он ду́мает о ___ . = Pensa ai figli. {де́тях | детя́х | детьми́}
+? Мы бы́ли в ___ . = Siamo stati nei musei. {музе́ях | музе́ям | музе́ев}
+> студе́нты → с … → студе́нтами
+> кни́ги → о … → кни́гах
+~ Мы гуля́ли с друзья́ми по го́роду. = Abbiamo passeggiato per la città con gli amici.
+
+## Giorno 121 | L'accusativo plurale
+obiettivo: Usare l'accusativo plurale con cose e persone.
+breve: Cose (inanimati): accusativo plurale = **nominativo**: Я покупа́ю кни́ги.
+breve: Persone e animali (animati): accusativo plurale = **genitivo**: Я ви́жу студе́нтов, сестёр, дете́й.
+breve: Vale per tutti i generi, anche il femminile!
+
+### Lezione
+#### Due casi in uno
+Al plurale l'accusativo non ha desinenze sue:
+- **cose** → come il **nominativo**: **Я люблю́ цветы́.** **Он чита́ет газе́ты.**
+- **persone e animali** → come il **genitivo**: **Я люблю́ дете́й.** **Я жду госте́й.**
+
+| | Nominativo | Accusativo |
+|---|---|---|
+| cose | кни́ги | (я ви́жу) кни́ги |
+| persone (m) | студе́нты | (я ви́жу) студе́нтов |
+| persone (f) | сёстры | (я ви́жу) сестёр |
+| animali | ко́шки | (я ви́жу) ко́шек |
+
+> Al plurale anche i **femminili** animati prendono il genitivo: **Я люблю́ сестёр**, **Я ви́жу де́вушек**.
+
+---
+#### Parole utili
+**пассажи́р** (passeggero), **зри́тель** (spettatore), **покупа́тель** (cliente, acquirente):
+- **Самолёт ждёт пассажи́ров.** — L'aereo aspetta i passeggeri.
+- **Магази́н ждёт покупа́телей.**
+
+### Parole
+пассажи́р = passeggero [m]
+зри́тель = spettatore [m]
+покупа́тель = cliente, acquirente [m]
+
+### Frasi
+Я люблю́ цветы́. = Amo i fiori.
+Я люблю́ дете́й. = Amo i bambini.
+Мы ждём госте́й. = Aspettiamo ospiti.
+Самолёт ждёт пассажи́ров. = L'aereo aspetta i passeggeri.
+Ты зна́ешь э́тих де́вушек? = Conosci queste ragazze?
+Арти́сты благодаря́т зри́телей. = Gli artisti ringraziano gli spettatori.
+
+### Esercizi
+? Я люблю́ ___ . = Amo i fiori. {цветы́ | цвето́в | цвета́м}
+? Я люблю́ ___ . = Amo i bambini. {дете́й | де́ти | де́тям}
+? Мы ждём ___ . = Aspettiamo ospiti. {госте́й | го́сти | гостя́м}
+? Он чита́ет ___ . = Legge i giornali. {газе́ты | газе́т | газе́там}
+? Я ви́жу ___ . = Vedo le ragazze. {де́вушек | де́вушки | де́вушкам}
+? Самолёт ждёт ___ . = L'aereo aspetta i passeggeri. {пассажи́ров | пассажи́ры | пассажи́рам}
+? L'accusativo plurale delle persone è uguale al… {genitivo | nominativo | dativo}
+~ Я люблю́ дете́й. = Amo i bambini.
+
+## Giorno 122 | Gli aggettivi: maschile e neutro
+obiettivo: Declinare gli aggettivi maschili e neutri in tutti i casi.
+breve: Gen. **-ого/-его** (si legge «-ova»), Dat. **-ому/-ему**, Strum. **-ым/-им**, Prep. **-ом/-ем**.
+breve: Acc. maschile: inanimato = nominativo (но́вый дом), animato = genitivo (но́вого дру́га).
+breve: Gli stessi finali hanno i pronomi: моего́, моему́, мои́м, о моём.
+
+### Lezione
+#### Il maschile e il neutro
+| Caso | Dura (но́вый) | Morbida (си́ний) |
+|---|---|---|
+| Nom. | но́вый дом / но́вое окно́ | си́ний / си́нее |
+| Gen. | но́в**ого** | си́н**его** |
+| Dat. | но́в**ому** | си́н**ему** |
+| Acc. | = nom. (cose) / = gen. (persone) | |
+| Strum. | но́в**ым** | си́н**им** |
+| Prep. | о но́в**ом** | о си́н**ем** |
+
+> Nella desinenza **-ого/-его** la **г** si pronuncia **v**: **но́вого** = «nòvava».
+
+---
+#### Fratelli maggiori e minori
+- **ста́рший брат** — fratello maggiore; **мла́дший брат** — fratello minore;
+- **У ста́ршего бра́та есть маши́на.** — Il fratello maggiore ha la macchina.
+- **Я звоню́ мла́дшему бра́ту.**
+
+---
+#### Vicino e lontano
+**бли́зкий** (vicino, intimo): **бли́зкий друг** — amico intimo. **далёкий** (lontano): **из далёкого го́рода**.
+
+### Parole
+ста́рший = maggiore, più grande [agg]
+мла́дший = minore, più piccolo [agg]
+бли́зкий = vicino, intimo [agg]
+далёкий = lontano [agg]
+
+### Frasi
+У ста́ршего бра́та есть маши́на. = Il fratello maggiore ha la macchina.
+Я звоню́ мла́дшему бра́ту. = Telefono al fratello minore.
+Мы говори́м о но́вом фи́льме. = Parliamo del nuovo film.
+Я живу́ в большо́м до́ме. = Abito in un palazzo grande.
+Он мой са́мый бли́зкий друг. = È il mio amico più intimo.
+Он прие́хал из далёкого го́рода. = È arrivato da una città lontana.
+
+### Esercizi
+? У ___ бра́та есть маши́на. = Il fratello maggiore ha la macchina. {ста́ршего | ста́рший | ста́ршему}
+? Я звоню́ ___ бра́ту. = Telefono al fratello minore. {мла́дшему | мла́дшего | мла́дшим}
+? Мы говори́м о ___ фи́льме. = Parliamo del nuovo film. {но́вом | но́вого | но́вым}
+? Я живу́ в ___ до́ме. = Abito in un palazzo grande. {большо́м | большо́го | большо́й}
+? Я ви́жу ___ дру́га. = Vedo il nuovo amico. {но́вого | но́вый | но́вому}
+? Он гуля́ет с ___ бра́том. = Passeggia con il fratello minore. {мла́дшим | мла́дшего | мла́дшем}
+? Come si pronuncia «но́вого»? {nòvava | nòvogo | novòga}
+~ Я звоню́ мла́дшему бра́ту. = Telefono al fratello minore.
+
+## Giorno 123 | Gli aggettivi: femminile
+obiettivo: Declinare gli aggettivi femminili.
+breve: Femminile: Nom. -ая, Acc. **-ую**, e poi quasi sempre **-ой/-ей** (gen., dat., strum., prep.).
+breve: но́вая кни́га → но́вую кни́гу → в но́вой кни́ге → с но́вой кни́гой.
+breve: Morbida: си́няя → си́нюю → си́ней.
+
+### Lezione
+#### Il femminile: facilissimo
+| Caso | Dura (но́вая) | Morbida (си́няя) |
+|---|---|---|
+| Nom. | но́в**ая** | си́н**яя** |
+| Gen. | но́в**ой** | си́н**ей** |
+| Dat. | но́в**ой** | си́н**ей** |
+| Acc. | но́в**ую** | си́н**юю** |
+| Strum. | но́в**ой** | си́н**ей** |
+| Prep. | о но́в**ой** | о си́н**ей** |
+
+Tolto l'accusativo (**-ую**), tutti gli altri casi «obliqui» finiscono in **-ой/-ей**.
+
+---
+#### La casa ideale
+- **удо́бный** — comodo: **удо́бная крова́ть**;
+- **ую́тный** — accogliente: **ую́тная кварти́ра**;
+- **ти́хий** — tranquillo, silenzioso: **ти́хая у́лица**;
+- **шу́мный** — rumoroso: **шу́мная пло́щадь**;
+- **дорого́й** — caro (costoso; e anche «caro» affettuoso): **дорога́я ма́ма**.
+
+**Мы живём в ую́тной кварти́ре на ти́хой у́лице.** — Viviamo in un appartamento accogliente in una via tranquilla.
+
+### Parole
+дорого́й = caro (costoso; affettuoso) [agg]
+удо́бный = comodo [agg]
+ую́тный = accogliente, intimo [agg]
+ти́хий = tranquillo, silenzioso [agg]
+шу́мный = rumoroso [agg]
+
+### Frasi
+Мы живём в ую́тной кварти́ре на ти́хой у́лице. = Viviamo in un appartamento accogliente in una via tranquilla.
+Я купи́л удо́бную крова́ть. = Ho comprato un letto comodo.
+У мое́й ста́ршей сестры́ два сы́на. = La mia sorella maggiore ha due figli.
+Я пишу́ письмо́ дорого́й ба́бушке. = Scrivo una lettera alla cara nonna.
+Мы гуля́ли по шу́мной пло́щади. = Abbiamo passeggiato per la piazza rumorosa.
+Она́ говори́т о свое́й но́вой рабо́те. = Parla del suo nuovo lavoro.
+
+### Esercizi
+? Я купи́л ___ крова́ть. = Ho comprato un letto comodo. {удо́бную | удо́бная | удо́бной}
+? Мы живём в ___ кварти́ре. = Viviamo in un appartamento accogliente. {ую́тной | ую́тную | ую́тная}
+? Я пишу́ ___ ба́бушке. = Scrivo alla cara nonna. {дорого́й | дорогу́ю | дорога́я}
+? Мы гуля́ли по ___ пло́щади. = Abbiamo passeggiato per la piazza rumorosa. {шу́мной | шу́мную | шу́мная}
+? У ___ сестры́ два сы́на. = La sorella maggiore ha due figli. {ста́ршей | ста́ршая | ста́ршую}
+? Она́ говори́т о ___ рабо́те. = Parla del nuovo lavoro. {но́вой | но́вую | но́вая}
+> си́няя → (accusativo) → си́нюю
+~ Мы живём в ую́тной кварти́ре на ти́хой у́лице. = Viviamo in un appartamento accogliente in una via tranquilla.
+
+## Giorno 124 | Gli aggettivi al plurale
+obiettivo: Declinare gli aggettivi al plurale.
+breve: Plurale per tutti i generi: Nom. -ые/-ие, Gen./Prep. **-ых/-их**, Dat. **-ым/-им**, Strum. **-ыми/-ими**.
+breve: Acc.: cose = nominativo (но́вые кни́ги); persone = genitivo (но́вых друзе́й).
+breve: о ра́зных стра́нах, с ру́сскими друзья́ми, для ва́жных встреч.
+
+### Lezione
+#### Un solo plurale
+Al plurale gli aggettivi non distinguono il genere:
+
+| Caso | Dura | Morbida/sibilante |
+|---|---|---|
+| Nom. | но́в**ые** | си́н**ие**, хоро́ш**ие** |
+| Gen. | но́в**ых** | си́н**их** |
+| Dat. | но́в**ым** | си́н**им** |
+| Acc. | = nom. / = gen. | |
+| Strum. | но́в**ыми** | си́н**ими** |
+| Prep. | о но́в**ых** | о си́н**их** |
+
+---
+#### Esempi
+- **Мы говори́м о ра́зных стра́нах.** — Parliamo di paesi diversi.
+- **Я гуля́ю с ру́сскими друзья́ми.** — Passeggio con amici russi.
+- **В магази́не мно́го све́жих овоще́й.**
+
+---
+#### Aggettivi utili
+- **све́жий** — fresco: **све́жий хлеб**;
+- **ва́жный** — importante: **ва́жная встре́ча**;
+- **ра́зный** — diverso, vario: **ра́зные лю́ди**;
+- **после́дний** — ultimo (morbido!): **после́дний день**, **после́дняя страни́ца**.
+
+### Parole
+све́жий = fresco [agg]
+ва́жный = importante [agg]
+ра́зный = diverso, vario [agg]
+после́дний = ultimo [agg; si declina «morbido»]
+
+### Frasi
+Мы говори́м о ра́зных стра́нах. = Parliamo di paesi diversi.
+Я гуля́ю с ру́сскими друзья́ми. = Passeggio con amici russi.
+На ры́нке мно́го све́жих фру́ктов. = Al mercato c'è molta frutta fresca.
+Э́то о́чень ва́жные вопро́сы. = Sono domande molto importanti.
+Я люблю́ ста́рые ру́сские фи́льмы. = Amo i vecchi film russi.
+Э́то после́дний день о́тпуска. = È l'ultimo giorno di ferie.
+
+### Esercizi
+? Мы говори́м о ___ стра́нах. = Parliamo di paesi diversi. {ра́зных | ра́зные | ра́зным}
+? Я гуля́ю с ___ друзья́ми. = Passeggio con amici russi. {ру́сскими | ру́сских | ру́сские}
+? мно́го ___ фру́ктов = molta frutta fresca {све́жих | све́жие | све́жим}
+? Я люблю́ ___ фи́льмы. = Amo i vecchi film. {ста́рые | ста́рых | ста́рым}
+? Я ви́жу ___ друзе́й. = Vedo i nuovi amici. {но́вых | но́вые | но́вым}
+? Э́то ___ день. = È l'ultimo giorno. {после́дний | после́дный | после́днее}
+> ва́жный + вопро́сы → … → ва́жные вопро́сы
+~ Я гуля́ю с ру́сскими друзья́ми. = Passeggio con amici russi.
+
+## Giorno 125 | Этот, мой, наш declinati
+obiettivo: Declinare dimostrativi e possessivi.
+breve: Si declinano come aggettivi: э́того, э́тому, э́тим, об э́том; моего́, моему́, мои́м, о моём.
+breve: Femminile: э́той, мое́й, на́шей (tutti i casi tranne nom. e acc.: э́ту, мою́, на́шу).
+breve: весь (tutto): весь день, вся неде́ля, всё вре́мя, все лю́ди.
+
+### Lezione
+#### Questo e mio, in tutti i casi
+| Caso | m/n | f | pl |
+|---|---|---|---|
+| Nom. | э́тот / мой | э́та / моя́ | э́ти / мои́ |
+| Gen. | э́того / моего́ | э́той / мое́й | э́тих / мои́х |
+| Dat. | э́тому / моему́ | э́той / мое́й | э́тим / мои́м |
+| Acc. | = nom./gen. | э́ту / мою́ | = nom./gen. |
+| Strum. | э́тим / мои́м | э́той / мое́й | э́тими / мои́ми |
+| Prep. | об э́том / о моём | об э́той / о мое́й | об э́тих / о мои́х |
+
+**Твой** fa come **мой**; **ваш** come **наш** (на́шего, на́шему, на́шим, о на́шем).
+
+---
+#### Tutto: весь
+| m | f | n | pl |
+|---|---|---|---|
+| весь | вся | всё | все |
+
+- **весь день** — tutto il giorno; **вся семья́** — tutta la famiglia; **всё вре́мя** — sempre; **все лю́ди** — tutte le persone.
+- **всё** (da solo) = tutto: **Я всё по́нял.** — Ho capito tutto. **все** (da solo) = tutti: **Все до́ма.** — Sono tutti a casa.
+
+> Attenzione ai puntini: **всё** (tutto) ≠ **все** (tutti).
+
+---
+#### Di qualcun altro
+**чужо́й** — altrui, di un altro, estraneo: **Э́то чужа́я су́мка.** — È la borsa di qualcun altro.
+
+### Parole
+весь = tutto [pron; вся, всё, все]
+чужо́й = altrui, di un altro, estraneo [agg]
+
+### Frasi
+Я всё по́нял! = Ho capito tutto!
+Все до́ма? = Sono tutti a casa?
+Мы рабо́тали весь день. = Abbiamo lavorato tutto il giorno.
+Вся семья́ была́ на да́че. = Tutta la famiglia era in dacia.
+Я ду́маю об э́том всё вре́мя. = Ci penso continuamente.
+Ты зна́ешь э́ту де́вушку? — Э́то сестра́ моего́ дру́га. = Conosci questa ragazza? — È la sorella del mio amico.
+
+### Esercizi
+? Я ду́маю об ___ . = Ci penso (a questo). {э́том | э́то | э́тим}
+? Ты зна́ешь ___ де́вушку? = Conosci questa ragazza? {э́ту | э́та | э́той}
+? Э́то сестра́ ___ дру́га. = È la sorella del mio amico. {моего́ | мой | моему́}
+? Я звоню́ ___ ма́ме. = Telefono a mia mamma. {мое́й | мою́ | моя́}
+? Мы рабо́тали ___ день. = Abbiamo lavorato tutto il giorno. {весь | вся | всё}
+? ___ семья́ до́ма. = Tutta la famiglia è a casa. {Вся | Весь | Все}
+? ___ лю́ди зна́ют э́то. = Tutte le persone lo sanno. {Все | Всё | Вся}
+? Я ___ по́нял. = Ho capito tutto. {всё | все | весь}
+~ Я всё по́нял! = Ho capito tutto!
+
+## Giorno 126 | Ripasso della settimana
+obiettivo: Leggere la descrizione dei vicini di casa.
+
+### Lettura | На́ши сосе́ди | I nostri vicini
+Мы живём в большо́м ста́ром до́ме в це́нтре го́рода. = Abitiamo in un grande palazzo vecchio in centro città.
+В на́шем до́ме во́семь кварти́р и мно́го интере́сных люде́й. = Nel nostro palazzo ci sono otto appartamenti e molte persone interessanti.
+На пе́рвом этаже́ живёт ста́рая учи́тельница с двумя́ ко́шками. = Al primo piano vive una vecchia insegnante con due gatte.
+Она́ всегда́ расска́зывает де́тям интере́сные исто́рии. = Racconta sempre ai bambini storie interessanti.
+Ря́дом с на́ми живёт молода́я семья́: муж, жена́ и три ма́леньких сы́на. = Accanto a noi vive una giovane famiglia: marito, moglie e tre figli piccoli.
+Де́ти игра́ют во дворе́ с соба́ками сосе́дей. = I bambini giocano nel cortile con i cani dei vicini.
+На после́днем этаже́ живёт музыка́нт. = All'ultimo piano vive un musicista.
+Ка́ждый ве́чер он игра́ет на пиани́но ра́зные мело́дии. = Ogni sera suona al pianoforte melodie diverse.
+Все лю́ди в до́ме слу́шают его́ с удово́льствием. = Tutti nel palazzo lo ascoltano con piacere.
+Я люблю́ на́ших сосе́дей. С ни́ми никогда́ не ску́чно! = Voglio bene ai nostri vicini. Con loro non ci si annoia mai!
+
+### Domande
+? Chi vive al primo piano? {una vecchia insegnante | un musicista | una giovane famiglia}
+? Quanti figli ha la giovane famiglia? {tre | due | uno}
+? Che cosa fa il musicista ogni sera? {suona il pianoforte | canta | suona la chitarra}
+? Dove giocano i bambini? {nel cortile | nel parco | a scuola}

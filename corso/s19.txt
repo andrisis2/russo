@@ -1,0 +1,327 @@
+# Settimana 19 | Inviti e appuntamenti
+
+## Giorno 127 | L'imperativo
+obiettivo: Formare l'imperativo per dare istruzioni e consigli.
+breve: Si parte dalla forma «они́» del presente, si toglie la desinenza e si aggiunge **-й** (dopo vocale) o **-и** / **-ь**.
+breve: чита́-ют → **чита́й(те)**, говор-я́т → **говори́(те)**, сяд-ут → **сядь(те)**.
+breve: **-те** si aggiunge per il вы: чита́йте, говори́те.
+
+### Lezione
+#### Come si forma
+1. Prendi la forma **они́** del presente (o del futuro perfettivo);
+2. togli la desinenza (**-ют/-ут/-ят/-ат**);
+3. aggiungi:
+   - **-й** se la radice finisce in vocale: **чита́-ют → чита́й**;
+   - **-и** se finisce in consonante e l'accento della 1ª persona è sulla desinenza: **говор-я́т → говори́**, **пиш-у́т → пиши́**;
+   - **-ь** se finisce in consonante e l'accento è sulla radice: **ся́д-ут → сядь**.
+
+Per il **вы** (e per più persone) si aggiunge **-те**: **чита́йте**, **говори́те**, **ся́дьте**.
+
+---
+#### Esempi
+| Infinito | они́ | Imperativo (ты / вы) |
+|---|---|---|
+| чита́ть | чита́ют | чита́й / чита́йте |
+| слу́шать | слу́шают | слу́шай / слу́шайте |
+| говори́ть | говоря́т | говори́ / говори́те |
+| писа́ть | пи́шут | пиши́ / пиши́те |
+| подожда́ть | подожду́т | подожди́ / подожди́те |
+| сесть | ся́дут | сядь / ся́дьте |
+
+> Irregolari da sapere: **дать → дай!**, **есть → ешь!**, **пить → пей!**, **встать → встань!**
+
+### Parole
+подожда́ть = aspettare (un po') [v pf; подожду́, подождёшь]
+сади́ться = sedersi [v impf; сажу́сь, сади́шься]
+сесть = sedersi [v pf; ся́ду, ся́дешь]
+встать = alzarsi [v pf; вста́ну, вста́нешь]
+
+### Frasi
+Чита́йте текст. = Leggete il testo.
+Говори́ гро́мче, пожа́луйста! = Parla più forte, per favore!
+Подожди́ мину́тку! = Aspetta un attimo!
+Сади́тесь, пожа́луйста. = Si sieda, prego.
+Пиши́ мне ча́ще! = Scrivimi più spesso!
+Встава́й, уже́ во́семь часо́в! = Alzati, sono già le otto!
+
+### Esercizi
+> чита́ть → (ты) → чита́й
+> чита́ть → (вы) → чита́йте
+> говори́ть → (ты) → говори́
+> писа́ть → (вы) → пиши́те
+? ___ мину́тку! = Aspetta un attimo! {Подожди́ | Подожда́й | Подожди́те бы}
+? ___ , пожа́луйста. = Si sieda, prego. {Сади́тесь | Сади́сь | Сиди́те}
+? Пиши́ мне ___ ! = Scrivimi più spesso! {ча́ще | ча́сто | ча́стый}
+? L'imperativo di «дать» (ты) è… {дай | да́йи | дади́}
+? L'imperativo di «пить» (ты) è… {пей | пий | пьи}
+~ Подожди́ мину́тку! = Aspetta un attimo!
+
+## Giorno 128 | Imperativo e aspetto
+obiettivo: Scegliere l'aspetto giusto all'imperativo.
+breve: Perfettivo = richiesta concreta, una volta: **Закро́й окно́!** — Chiudi la finestra!
+breve: Imperfettivo = invito cortese, consiglio generale, «dai!»: **Сади́тесь!** **Заходи́те!**
+breve: Con **не** (divieto) quasi sempre l'imperfettivo: **Не опа́здывай!** **Не волну́йся!**
+
+### Lezione
+#### Fai questo (una volta)
+Per una richiesta precisa con un risultato si usa il **perfettivo**:
+- **Позвони́ мне за́втра.** — Chiamami domani.
+- **Скажи́те, пожа́луйста, где метро́?** — Mi dica, dov'è la metro?
+
+#### Prego, fai pure
+L'**imperfettivo** è il più gentile per gli inviti e le formule di cortesia:
+- **Сади́тесь!** — Si sieda! **Заходи́те!** — Entri! **Бери́те!** — Prenda (si serva)!
+- e per i consigli generali: **Чита́йте ка́ждый день.** — Leggete ogni giorno.
+
+---
+#### Non fare!
+Con la negazione si usa quasi sempre l'**imperfettivo**:
+- **Не опа́здывай!** — Non arrivare in ritardo!
+- **Не волну́йся!** — Non preoccuparti!
+- **Не беспоко́йтесь.** — Non si disturbi, non si preoccupi.
+
+> **Не забу́дь!** (perfettivo) — Non dimenticare! È un'eccezione: è un avvertimento («attento a non…»).
+
+### Parole
+опа́здывать = arrivare in ritardo [v impf; опа́здываю, опа́здываешь]
+опозда́ть = arrivare in ritardo [v pf; опозда́ю, опозда́ешь]
+волнова́ться = preoccuparsi, essere agitato [v impf; волну́юсь, волну́ешься]
+беспоко́иться = preoccuparsi, disturbarsi [v impf; беспоко́юсь, беспоко́ишься]
+
+### Frasi
+Не опа́здывай, пожа́луйста! = Non fare tardi, per favore!
+Не волну́йся, всё бу́дет хорошо́. = Non preoccuparti, andrà tutto bene.
+Не забу́дь ключ! = Non dimenticare la chiave!
+Заходи́те, сади́тесь! = Entri, si sieda!
+Позвони́ мне, когда́ прие́дешь. = Chiamami quando arrivi.
+Извини́те, я опозда́л. = Mi scusi, sono in ritardo.
+
+### Esercizi
+? Не ___ ! = Non fare tardi! {опа́здывай | опозда́й | опа́здываешь}
+? Не ___ , всё бу́дет хорошо́. = Non preoccuparti. {волну́йся | волнова́йся | волну́ешься}
+? Не ___ ключ! = Non dimenticare la chiave! {забу́дь | забыва́й ли | забы́л}
+? ___ мне за́втра. = Chiamami domani. {Позвони́ | Звони́л | Звони́шь}
+? Извини́те, я ___ . = Scusi, sono in ritardo. {опозда́л | опа́здывал | опа́здываю всегда́}
+? Per un divieto si usa di solito… {l'imperfettivo | il perfettivo}
+> Scrivi «Non preoccupatevi!» → не волну́йтесь / не волну́йтесь!
+~ Не волну́йся, всё бу́дет хорошо́. = Non preoccuparti, andrà tutto bene.
+
+## Giorno 129 | Andiamo! давай, давайте
+obiettivo: Proporre di fare qualcosa insieme.
+breve: **Дава́й(те)** + infinito imperfettivo o + forma «мы» del perfettivo: **Дава́й пойдём в кино́!**
+breve: **Дава́йте познако́мимся!** — Facciamo conoscenza!
+breve: Anche da solo: **Дава́й!** — Dai! / Ciao! (al telefono: «a dopo»).
+
+### Lezione
+#### Proposte
+Per dire «facciamo…!» si usa **дава́й** (con il ты) o **дава́йте** (con il вы, o con più persone) +:
+- la forma **мы** del verbo perfettivo: **Дава́й пойдём в кино́!** — Andiamo al cinema!
+- l'infinito imperfettivo: **Дава́й говори́ть по-ру́сски.** — Parliamo in russo.
+
+Spesso **дава́й** si omette: **Пойдём в кино́!** — Andiamo al cinema!
+
+---
+#### Formule utili
+- **Дава́йте познако́мимся!** — Facciamo conoscenza! (**познако́миться** = conoscersi, fare conoscenza)
+- **Дава́й отдохнём.** — Riposiamoci un po'.
+- **Дава́й вы́пьем ча́ю.** — Beviamoci un tè.
+- **Дава́й!** — Dai! D'accordo! (e a fine telefonata: «ciao, a dopo»).
+
+> **Дава́й на «ты»!** — Diamoci del tu!
+
+### Parole
+дава́й = dai, facciamo (proposta) [part; дава́йте]
+познако́миться = fare conoscenza, conoscersi [v pf; познако́млюсь, познако́мишься]
+отдохну́ть = riposarsi [v pf; отдохну́, отдохнёшь]
+
+### Frasi
+Дава́й пойдём в кино́! = Andiamo al cinema!
+Дава́йте познако́мимся! Меня́ зову́т А́нна. = Facciamo conoscenza! Mi chiamo Anna.
+Дава́й говори́ть по-ру́сски. = Parliamo in russo.
+Дава́йте отдохнём пять мину́т. = Riposiamoci cinque minuti.
+Дава́й на «ты»! = Diamoci del tu!
+Ну, дава́й, пока́! = Va bene, ciao!
+
+### Esercizi
+? ___ пойдём в кино́! (a un amico) = Andiamo al cinema! {Дава́й | Дава́йте | Дай}
+? ___ познако́мимся! (a uno sconosciuto) = Facciamo conoscenza! {Дава́йте | Дава́й | Да́йте}
+? Дава́й ___ по-ру́сски. = Parliamo in russo. {говори́ть | говори́м | ска́жем}
+? Дава́й ___ в кино́! = Andiamo al cinema! {пойдём | идём бы | пойти́}
+? Дава́йте ___ пять мину́т. = Riposiamoci cinque minuti. {отдохнём | отдыха́ем | отдохну́ть}
+? «Дава́й на "ты"!» vuol dire… {Diamoci del tu! | Dammi il tu! | Dai a te!}
+~ Дава́й пойдём в кино́! = Andiamo al cinema!
+
+## Giorno 130 | Al telefono
+obiettivo: Fare e ricevere una telefonata.
+breve: **Алло́!** — Pronto! **Слу́шаю!** — Pronto (sto ascoltando).
+breve: **Мо́жно А́нну?** — Posso parlare con Anna? **Её нет. Что ей переда́ть?** — Non c'è. Che cosa le devo riferire?
+breve: перезвони́ть = richiamare: **Я вам перезвоню́.**
+
+### Lezione
+#### Rispondere
+- **Алло́!** — Pronto!
+- **Слу́шаю!** / **Да!** — Pronto (sono qui, la ascolto).
+
+#### Chiedere di qualcuno
+- **Мо́жно А́нну?** — Posso parlare con Anna? (alla lettera «si può Anna?», accusativo!)
+- **Позови́те, пожа́луйста, Ива́на.** — Mi passi Ivan, per favore.
+- **Э́то кто?** / **Кто говори́т?** — Chi parla?
+
+#### Se la persona non c'è
+- **Её нет до́ма.** — Non è a casa.
+- **Что ей переда́ть?** — Che cosa le devo riferire? (**переда́ть** = passare, riferire)
+- **Переда́йте, пожа́луйста, что звони́л Ма́рко.** — Le dica che ha chiamato Marco.
+- **Я перезвоню́ по́зже.** — Richiamerò più tardi.
+
+---
+#### Problemi
+- **За́нято.** — È occupato.
+- **Вас пло́хо слы́шно.** — La sento male.
+- **Вы оши́блись но́мером.** — Ha sbagliato numero.
+
+### Parole
+алло́ = pronto (al telefono) [inter]
+перезвони́ть = richiamare [v pf; перезвоню́, перезвони́шь]
+переда́ть = passare, riferire, trasmettere [v pf; переда́м, переда́шь]
+за́нято = occupato [avv]
+
+### Frasi
+Алло́! Мо́жно А́нну? = Pronto! Posso parlare con Anna?
+Её нет. Что ей переда́ть? = Non c'è. Che cosa le devo dire?
+Переда́йте, пожа́луйста, что звони́л Ма́рко. = Le dica, per favore, che ha chiamato Marco.
+Я вам перезвоню́ по́зже. = La richiamerò più tardi.
+Вас пло́хо слы́шно. = La sento male.
+Всё вре́мя за́нято! = È sempre occupato!
+
+### Esercizi
+? Rispondi al telefono: {Алло́! | Приве́т всем! | Пока́!}
+? Мо́жно ___ ? = Posso parlare con Anna? {А́нну | А́нна | А́нне}
+? Её нет. Что ей ___ ? = Non c'è. Che cosa le riferisco? {переда́ть | переда́м | переда́ла}
+? Я вам ___ по́зже. = La richiamerò più tardi. {перезвоню́ | перезвони́ть | перезвони́л}
+? Вас пло́хо ___ . = La sento male. {слы́шно | слы́шу | слы́шать}
+? «За́нято» al telefono vuol dire… {è occupato | è chiuso | non c'è}
+~ Я вам перезвоню́ по́зже. = La richiamerò più tardi.
+
+## Giorno 131 | Fissare un appuntamento
+obiettivo: Mettersi d'accordo su dove e quando vedersi.
+breve: **Где встре́тимся?** — Dove ci vediamo? **Во ско́лько?** — A che ora?
+breve: встреча́ться / встре́титься (с кем) = incontrarsi, vedersi.
+breve: договори́ться = mettersi d'accordo: **Договори́лись!** — D'accordo!
+
+### Lezione
+#### Dove e quando
+- **Когда́ встре́тимся?** — Quando ci vediamo?
+- **Во ско́лько?** — A che ora? (alla lettera «in quanto?»)
+- **Где встре́тимся?** — Dove ci vediamo?
+- **Дава́й в семь у метро́.** — Facciamo alle sette davanti alla metro.
+
+> **у** + genitivo = presso, davanti a: **у метро́**, **у вхо́да** (all'ingresso), **у па́мятника** (al monumento): i classici punti d'incontro russi!
+
+---
+#### Incontrarsi
+- **встреча́ться / встре́титься с кем** — incontrarsi con: **Я встреча́юсь с дру́гом.**
+- **встре́ча** — incontro, appuntamento (di lavoro);
+- **свида́ние** — appuntamento (romantico): **У неё сего́дня свида́ние!**
+
+---
+#### D'accordo!
+**Договори́ться** = mettersi d'accordo. Alla fine di una telefonata: **Договори́лись!** — Siamo d'accordo! Fatto!
+
+### Parole
+встре́ча = incontro, riunione, appuntamento [f]
+встреча́ться = incontrarsi, vedersi [v impf; встреча́юсь, встреча́ешься]
+встре́титься = incontrarsi, vedersi [v pf; встре́чусь, встре́тишься]
+договори́ться = mettersi d'accordo [v pf; договорю́сь, договори́шься]
+свида́ние = appuntamento (romantico) [n]
+во ско́лько? = a che ora? [espr]
+
+### Frasi
+Где встре́тимся? — У метро́. = Dove ci vediamo? — All'uscita della metro.
+Во ско́лько? — В семь часо́в. = A che ora? — Alle sette.
+Я встреча́юсь с дру́гом в кафе́. = Mi vedo con un amico al bar.
+У меня́ ва́жная встре́ча в два часа́. = Ho un incontro importante alle due.
+У неё сего́дня свида́ние! = Oggi lei ha un appuntamento!
+Хорошо́, договори́лись! = Va bene, d'accordo!
+
+### Esercizi
+? Где ___ ? = Dove ci vediamo? {встре́тимся | встре́тим | встре́ча}
+? ___ ско́лько? = A che ora? {Во | В | На}
+? Дава́й в семь у ___ . = Alle sette davanti alla metro. {метро́ | метра́ | метре́}
+? Я встреча́юсь с ___ . = Mi vedo con un amico. {дру́гом | дру́гу | дру́га}
+? Хорошо́, ___ ! = Va bene, d'accordo! {договори́лись | догова́риваемся | говори́ли}
+? «свида́ние» vuol dire… {appuntamento romantico | arrivederci | testimone}
+~ Где встре́тимся? — У метро́. = Dove ci vediamo? — All'uscita della metro.
+
+## Giorno 132 | Accettare e rifiutare
+obiettivo: Accettare o rifiutare un invito con gentilezza.
+breve: Sì: **С удово́льствием!** (con piacere), **Коне́чно!**, **Отли́чная иде́я!**
+breve: No: **К сожале́нию, я не могу́.** (purtroppo non posso) **Я за́нят / занята́.**
+breve: **Мо́жет быть, в друго́й раз.** — Forse un'altra volta.
+
+### Lezione
+#### Accettare
+| Russo | Italiano |
+|---|---|
+| С удово́льствием! | Con piacere! |
+| Коне́чно! | Certo! |
+| Отли́чная иде́я! | Ottima idea! |
+| Почему́ бы и нет? | Perché no? |
+
+#### Rifiutare
+| Russo | Italiano |
+|---|---|
+| К сожале́нию, я не могу́. | Purtroppo non posso. |
+| Я за́нят. / Я занята́. | Sono occupato/a. |
+| Мо́жет быть, в друго́й раз. | Forse un'altra volta. |
+| Спаси́бо, но… | Grazie, ma… |
+
+---
+#### Occupato
+**за́нят** (lui), **занята́** (lei), **за́няты** (loro, Lei): è un aggettivo «breve». **Ты за́нят за́втра?** — Sei occupato domani?
+
+> In Russia rifiutare un invito a casa è un po' scortese: meglio proporre un'altra data (**Дава́й в суббо́ту?**).
+
+### Parole
+с удово́льствием = con piacere [espr]
+к сожале́нию = purtroppo [espr]
+за́нят = occupato (persona) [agg; занята́, за́нято, за́няты]
+мо́жет быть = forse, può darsi [espr]
+в друго́й раз = un'altra volta [espr]
+
+### Frasi
+Пойдём в теа́тр? — С удово́льствием! = Andiamo a teatro? — Con piacere!
+К сожале́нию, я не могу́: я за́нят. = Purtroppo non posso: sono occupato.
+Мо́жет быть, в друго́й раз. = Forse un'altra volta.
+Ты занята́ в суббо́ту? = Sei occupata sabato?
+Отли́чная иде́я! Во ско́лько? = Ottima idea! A che ora?
+Спаси́бо за приглаше́ние, но у меня́ други́е пла́ны. = Grazie dell'invito, ma ho altri programmi.
+
+### Esercizi
+? Accetti: {С удово́льствием! | К сожале́нию… | В друго́й раз.}
+? Rifiuti: {К сожале́нию, я не могу́. | Отли́чная иде́я! | Коне́чно!}
+? Anna dice: «Sono occupata»: {Я занята́. | Я за́нят. | Я за́нята.}
+? Ты ___ за́втра? (a un uomo) = Sei occupato domani? {за́нят | занята́ | за́няты}
+? Мо́жет ___ , в друго́й раз. = Forse un'altra volta. {быть | бу́дет | бы}
+? «к сожале́нию» vuol dire… {purtroppo | per fortuna | con rispetto}
+~ К сожале́нию, я не могу́: я за́нят. = Purtroppo non posso: sono occupato.
+
+## Giorno 133 | Ripasso della settimana
+obiettivo: Leggere uno scambio di messaggi per organizzare una serata.
+
+### Lettura | Приглаше́ние | L'invito
+— Приве́т, Ле́на! Что де́лаешь в пя́тницу ве́чером? = — Ciao, Lena! Che fai venerdì sera?
+— Приве́т! Пока́ ничего́. А что? = — Ciao! Per ora niente. Perché?
+— Дава́й пойдём в теа́тр! У меня́ есть два биле́та. = — Andiamo a teatro! Ho due biglietti.
+— С удово́льствием! А како́й спекта́кль? = — Con piacere! E che spettacolo è?
+— «Ча́йка» Че́хова. Начина́ется в семь. = — «Il gabbiano» di Čechov. Comincia alle sette.
+— Отли́чно! Где встре́тимся? = — Ottimo! Dove ci vediamo?
+— Дава́й в полови́не седьмо́го у вхо́да. = — Facciamo alle sei e mezza all'ingresso.
+— Договори́лись. Не опа́здывай, как в про́шлый раз! = — D'accordo. Non arrivare in ritardo come l'altra volta!
+— Не волну́йся, я приду́ во́время. = — Non preoccuparti, arriverò puntuale.
+— Ну, дава́й, до пя́тницы! = — Va bene, a venerdì!
+
+### Domande
+? Che cosa propone l'amico? {andare a teatro | andare al cinema | cenare insieme}
+? A che ora comincia lo spettacolo? {alle sette | alle sei e mezza | alle otto}
+? Dove si incontrano? {all'ingresso | alla metro | al bar}
+? Che cosa chiede Lena? {di non arrivare in ritardo | di comprare i biglietti | di portare dei fiori}
