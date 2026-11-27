@@ -1,0 +1,370 @@
+# Settimana 43 | Costruire le parole
+
+## Giorno 295 | I prefissi dei verbi
+obiettivo: Capire come i prefissi cambiano il significato di un verbo.
+breve: Il prefisso cambia il significato e rende il verbo perfettivo: **писа́ть → записа́ть** (annotare), **подписа́ть** (firmare), **переписа́ть** (riscrivere).
+breve: **пере-** = di nuovo; **под-** = sotto; **до-** = fino in fondo; **о-** = intorno, su un argomento: **описа́ть** (descrivere).
+breve: Lo stesso schema vale per altri verbi: **дочита́ть** (finire di leggere), **перечита́ть** (rileggere).
+
+### Lezione
+#### Un verbo, tante sfumature
+| Prefisso | Idea | писа́ть → | Italiano |
+|---|---|---|---|
+| за- | fissare | записа́ть | annotare, registrare |
+| под- | sotto | подписа́ть | firmare («scrivere sotto») |
+| пере- | di nuovo | переписа́ть | riscrivere, ricopiare |
+| о- | intorno, su | описа́ть | descrivere |
+| до- | fino alla fine | дописа́ть | finire di scrivere |
+| вы- | fuori | вы́писать | trascrivere; prescrivere |
+
+---
+#### Lo stesso schema con altri verbi
+- **чита́ть → дочита́ть** (finire di leggere), **перечита́ть** (rileggere);
+- **де́лать → переде́лать** (rifare), **доде́лать** (finire di fare);
+- **рабо́тать → зарабо́тать** (guadagnare).
+
+---
+#### E l'imperfettivo?
+Con il prefisso il verbo diventa perfettivo. Per l'imperfettivo si aggiunge un suffisso: **записа́ть → запи́сывать**, **подписа́ть → подпи́сывать**, **переписа́ть → перепи́сывать**. Lo conosci già: **перепи́сываться**, chattare!
+
+### Parole
+записа́ть = annotare, registrare [v pf; запишу́, запи́шешь]
+подписа́ть = firmare [v pf; подпишу́, подпи́шешь]
+переписа́ть = riscrivere, ricopiare [v pf; перепишу́, перепи́шешь]
+описа́ть = descrivere [v pf; опишу́, опи́шешь]
+дописа́ть = finire di scrivere [v pf; допишу́, допи́шешь]
+перечита́ть = rileggere [v pf; перечита́ю, перечита́ешь]
+зарабо́тать = guadagnare [v pf; зарабо́таю, зарабо́таешь]
+
+### Frasi
+Запиши́ мой но́мер телефо́на. = Segnati il mio numero di telefono.
+Подпиши́те, пожа́луйста, здесь. = Firmi qui, per favore.
+Мне на́до переписа́ть сочине́ние. = Devo riscrivere il tema.
+Опиши́ своего́ лу́чшего дру́га. = Descrivi il tuo migliore amico.
+Я ещё не дописа́л письмо́. = Non ho ancora finito di scrivere la lettera.
+Э́ту кни́гу я перечита́л три ра́за. = Questo libro l'ho riletto tre volte.
+
+### Esercizi
+? ___ мой но́мер телефо́на. = Segnati il mio numero di telefono. {Запиши́ | Подпиши́ | Опиши́}
+? ___ , пожа́луйста, здесь. = Firmi qui, per favore. {Подпиши́те | Запиши́те | Перепиши́те}
+? ___ своего́ лу́чшего дру́га. = Descrivi il tuo migliore amico. {Опиши́ | Допиши́ | Подпиши́}
+? Я ещё не ___ письмо́. = Non ho ancora finito di scrivere la lettera. {дописа́л | описа́л | подписа́л}
+? Э́ту кни́гу я ___ три ра́за. = Questo libro l'ho riletto tre volte. {перечита́л | дочита́л | зачита́л}
+? Il prefisso «пере-» spesso vuol dire… {di nuovo | prima | sotto}
+> писа́ть + под- → подписа́ть
+~ Подпиши́те, пожа́луйста, здесь. = Firmi qui, per favore.
+
+## Giorno 296 | Una radice, tanti verbi
+obiettivo: Riconoscere una radice e indovinare il significato dei verbi.
+breve: La radice **-каз-**: **показа́ть** (mostrare), **рассказа́ть** (raccontare), **заказа́ть** (ordinare), **отказа́ться** (rinunciare).
+breve: La radice **-бр-/-бир-** (da **брать**): **собра́ть** (raccogliere), **убра́ть** (mettere in ordine), **вы́брать** (scegliere), **забра́ть** (ritirare).
+breve: Gli imperfettivi: **пока́зывать, расска́зывать, зака́зывать; собира́ть, убира́ть, выбира́ть, забира́ть**.
+
+### Lezione
+#### La radice -каз-
+| Perfettivo / imperfettivo | Italiano |
+|---|---|
+| показа́ть / пока́зывать | mostrare |
+| рассказа́ть / расска́зывать | raccontare |
+| заказа́ть / зака́зывать | ordinare, prenotare |
+| отказа́ться / отка́зываться | rifiutare, rinunciare (**от** + gen.) |
+
+Si coniugano tutti come **сказа́ть**: **покажу́, пока́жешь**; **расскажу́, расска́жешь**.
+
+---
+#### La radice -бр-/-бир-
+| Perfettivo / imperfettivo | Italiano |
+|---|---|
+| собра́ть / собира́ть | raccogliere, radunare |
+| убра́ть / убира́ть | mettere in ordine, togliere |
+| вы́брать / выбира́ть | scegliere |
+| забра́ть / забира́ть | portare via, ritirare |
+
+Si coniugano come **брать**: **соберу́, соберёшь**; **уберу́, уберёшь**; **вы́беру, вы́берешь**.
+
+> **Собира́ться** vuol dire anche «avere intenzione di»: **Я собира́юсь в Москву́.** — Ho intenzione di andare a Mosca.
+
+### Parole
+показа́ть = mostrare [v pf; покажу́, пока́жешь]
+рассказа́ть = raccontare [v pf; расскажу́, расска́жешь]
+заказа́ть = ordinare, prenotare [v pf; закажу́, зака́жешь]
+отказа́ться = rifiutare, rinunciare [v pf; откажу́сь, отка́жешься; от + gen.]
+собра́ть = raccogliere, radunare [v pf; соберу́, соберёшь]
+убра́ть = mettere in ordine, togliere [v pf; уберу́, уберёшь]
+вы́брать = scegliere [v pf; вы́беру, вы́берешь]
+забра́ть = portare via, ritirare [v pf; заберу́, заберёшь]
+собира́ться = avere intenzione di; prepararsi [v impf; собира́юсь, собира́ешься]
+
+### Frasi
+Покажи́ мне свои́ фотогра́фии! = Fammi vedere le tue foto!
+Расскажи́, как ты провёл о́тпуск. = Raccontami come hai passato le vacanze.
+Мы заказа́ли сто́лик на во́семь часо́в. = Abbiamo prenotato un tavolo per le otto.
+Он отказа́лся от сла́дкого. = Ha rinunciato ai dolci.
+Убери́ свою́ ко́мнату! = Metti in ordine la tua stanza!
+Я не могу́ вы́брать пода́рок. = Non riesco a scegliere il regalo.
+
+### Esercizi
+? ___ мне свои́ фотогра́фии! = Fammi vedere le tue foto! {Покажи́ | Расскажи́ | Закажи́}
+? ___ , как ты провёл о́тпуск. = Raccontami come hai passato le vacanze. {Расскажи́ | Покажи́ | Откажи́сь}
+? Мы ___ сто́лик на во́семь часо́в. = Abbiamo prenotato un tavolo per le otto. {заказа́ли | показа́ли | рассказа́ли}
+? Он отказа́лся ___ сла́дкого. = Ha rinunciato ai dolci. {от | из | с}
+? ___ свою́ ко́мнату! = Metti in ordine la tua stanza! {Убери́ | Собери́ | Забери́}
+? Я не могу́ ___ пода́рок. = Non riesco a scegliere il regalo. {вы́брать | убра́ть | забра́ть}
+> рассказа́ть (я) → расскажу́
+~ Покажи́ мне свои́ фотогра́фии! = Fammi vedere le tue foto!
+
+## Giorno 297 | Suffissi dei nomi
+obiettivo: Riconoscere i suffissi che formano i nomi.
+breve: Chi fa qualcosa: **-тель** (чита́тель, lettore), **-ник** (помо́щник, aiutante), **-чик/-щик** (перево́дчик, traduttore), **-ец** (продаве́ц).
+breve: Le idee astratte: **-ость** (ра́дость, мо́лодость), **-ота́** (красота́, доброта́), **-ство** (де́тство).
+breve: I luoghi: **-ня** (**пека́рня** = panetteria, **спа́льня** = camera da letto).
+
+### Lezione
+#### Chi fa che cosa
+| Suffisso | Esempio | Da… |
+|---|---|---|
+| -тель | чита́тель (lettore) | чита́ть |
+| -ник | помо́щник (aiutante) | по́мощь (aiuto) |
+| -чик / -щик | перево́дчик (traduttore) | переводи́ть |
+| -ец | продаве́ц (venditore) | продава́ть |
+| -ист | журнали́ст | журна́л |
+
+---
+#### Le idee astratte
+| Suffisso | Esempio | Da… |
+|---|---|---|
+| -ость | ра́дость (gioia) | ра́достный (gioioso) |
+| -ость | мо́лодость (giovinezza) | молодо́й |
+| -ота́ | красота́ (bellezza) | краси́вый |
+| -ота́ | доброта́ (bontà) | до́брый |
+| -ство | де́тство (infanzia) | дитя́ (bambino, parola antica) |
+| -ние | чте́ние (lettura) | чита́ть |
+
+---
+#### I luoghi
+**-ня**: **пека́рня** (panetteria, da **печь**, cuocere al forno), **спа́льня** (camera da letto, da **спать**), **ку́хня**.
+
+> Con i suffissi indovini parole mai viste: **бегу́н**? Da **бе́гать**: il corridore! **Учи́тельница**? La maestra!
+
+### Parole
+чита́тель = lettore [m]
+помо́щник = aiutante, assistente [m]
+перево́дчик = traduttore, interprete [m]
+ра́дость = gioia [f]
+мо́лодость = giovinezza [f]
+красота́ = bellezza [f]
+доброта́ = bontà [f]
+де́тство = infanzia [n]
+пека́рня = panetteria, forno [f]
+
+### Frasi
+В де́тстве я жил у мо́ря. = Da bambino vivevo al mare.
+Кака́я ра́дость! = Che gioia!
+Красота́ спасёт мир. = La bellezza salverà il mondo. // Una frase famosa di Dostoevskij.
+Её доброта́ всех удивля́ет. = La sua bontà stupisce tutti.
+На углу́ откры́лась но́вая пека́рня. = All'angolo ha aperto una nuova panetteria.
+Мой брат рабо́тает перево́дчиком. = Mio fratello fa il traduttore.
+
+### Esercizi
+? В ___ я жил у мо́ря. = Da bambino vivevo al mare. {де́тстве | де́тство | де́ти}
+? ___ спасёт мир. = La bellezza salverà il mondo. {Красота́ | Краси́вый | Краси́во}
+? до́брый → ___ = la bontà {доброта́ | добро́ | до́брость}
+? молодо́й → ___ = la giovinezza {мо́лодость | молоде́ц | молоде́ть}
+? чита́ть → ___ = il lettore {чита́тель | чита́льня | чте́ние}
+? Мой брат рабо́тает ___ . = Mio fratello fa il traduttore. {перево́дчиком | перево́дчик | перево́дом}
+? Una «пека́рня» è… {una panetteria | una pescheria | un parcheggio}
+> Scrivi «gioia» → ра́дость
+~ В де́тстве я жил у мо́ря. = Da bambino vivevo al mare.
+
+## Giorno 298 | Aggettivi dai nomi
+obiettivo: Formare aggettivi a partire dai nomi.
+breve: **-н-**: зима́ → **зи́мний**, ле́то → **ле́тний**, со́лнце → **со́лнечный**, кни́га → **кни́жный**.
+breve: **-ск-**: го́род → **городско́й**, Москва́ → **моско́вский**, де́ти → **де́тский**.
+breve: **-лив-**: дождь → **дождли́вый** (piovoso), сча́стье → **счастли́вый** (felice).
+
+### Lezione
+#### Il suffisso -н-
+| Nome | Aggettivo | Italiano |
+|---|---|---|
+| зима́ | зи́мний | invernale |
+| ле́то | ле́тний | estivo |
+| со́лнце | со́лнечный | soleggiato |
+| снег | сне́жный | nevoso |
+| кни́га | кни́жный | del libro |
+
+Attenzione ai cambi di consonante: **кни́га → кни́жный** (г → ж), **рука́ → ручно́й** (к → ч).
+
+---
+#### Il suffisso -ск-
+**го́род → городско́й** (cittadino, urbano), **Москва́ → моско́вский**, **Петербу́рг → петербу́ргский**, **де́ти → де́тский**.
+
+---
+#### Altri suffissi
+- **-лив-**: **дождь → дождли́вый**, **сча́стье → счастли́вый**;
+- **-ов-**: **берёза → берёзовый**, **апельси́н → апельси́новый**: **апельси́новый сок** — succo d'arancia.
+
+> **Кни́жный магази́н** = libreria. E in **со́лнце** la **л** non si pronuncia: [sònce].
+
+### Parole
+зи́мний = invernale [agg]
+ле́тний = estivo [agg]
+со́лнечный = soleggiato, di sole [agg]
+сне́жный = nevoso, di neve [agg]
+кни́жный = del libro [agg; кни́жный магази́н = libreria]
+городско́й = cittadino, urbano [agg]
+моско́вский = di Mosca, moscovita [agg]
+дождли́вый = piovoso [agg]
+
+### Frasi
+Сего́дня со́лнечный день. = Oggi è una giornata di sole.
+Я люблю́ зи́мние пра́здники. = Amo le feste invernali.
+Мы ходи́ли в кни́жный магази́н. = Siamo andati in libreria.
+О́сень в Петербу́рге дождли́вая. = L'autunno a San Pietroburgo è piovoso.
+Ле́тний о́тпуск мы провели́ на мо́ре. = Abbiamo passato le vacanze estive al mare.
+Моско́вское метро́ — одно́ из са́мых краси́вых в ми́ре. = La metro di Mosca è una delle più belle del mondo.
+
+### Esercizi
+? Сего́дня ___ день. = Oggi è una giornata di sole. {со́лнечный | со́лнце | со́лнечно}
+? Я люблю́ ___ пра́здники. = Amo le feste invernali. {зи́мние | зима́ | зимо́й}
+? Мы ходи́ли в ___ магази́н. = Siamo andati in libreria. {кни́жный | кни́гу | кни́ги}
+? О́сень в Петербу́рге ___ . = L'autunno a San Pietroburgo è piovoso. {дождли́вая | дождли́вый | дождь}
+? го́род → ___ = cittadino, urbano {городско́й | городо́к | горожа́нин}
+? «ле́тний» vuol dire… {estivo | leggero | volante}
+> Scrivi «nevoso» (aggettivo maschile) → сне́жный
+~ Сего́дня со́лнечный день. = Oggi è una giornata di sole.
+
+## Giorno 299 | Sigle e parole composte
+obiettivo: Leggere sigle e parole composte.
+breve: Sigle lette come parole: **вуз** (università), **ЗАГС** (ufficio di stato civile, dove ci si sposa).
+breve: Sigle lette lettera per lettera: **МГУ** [em-ge-ù], **РФ** [er-èf], **СССР** [es-es-es-èr].
+breve: Parole composte: **самолёт** («vola da sé»: aereo), **вертолёт** (elicottero), **пылесо́с** («succhia polvere»: aspirapolvere).
+
+### Lezione
+#### Le sigle
+| Sigla | Si legge | Vuol dire |
+|---|---|---|
+| вуз | [vus] | istituto superiore, università |
+| ЗАГС | [zaks] | ufficio di stato civile (matrimoni, nascite) |
+| МГУ | [em-ge-ù] | Università statale di Mosca |
+| РФ | [er-èf] | Federazione Russa |
+| СССР | [es-es-es-èr] | URSS |
+
+La sigla prende il genere della parola principale: **МГУ** (университе́т) è maschile.
+
+---
+#### Le parole composte
+Due radici unite da **-о-** o **-е-**:
+| Parola | Composizione | Italiano |
+|---|---|---|
+| самолёт | сам + лета́ть | aereo |
+| вертолёт | верте́ть (girare) + лета́ть | elicottero |
+| пылесо́с | пыль (polvere) + соса́ть (succhiare) | aspirapolvere |
+| землетрясе́ние | земля́ + трясти́ (scuotere) | terremoto |
+| парохо́д | пар (vapore) + ходи́ть | piroscafo |
+
+---
+#### Le parole accorciate
+**зарпла́та** = за́работная пла́та (stipendio), **соцсе́ть** = социа́льная сеть.
+
+> Sposarsi al **ЗАГС** si dice anche **расписа́ться**: «firmare il registro».
+
+### Parole
+вуз = istituto superiore, università [m]
+ЗАГС = ufficio di stato civile [m]
+вертолёт = elicottero [m]
+пылесо́с = aspirapolvere [m]
+землетрясе́ние = terremoto [n]
+парохо́д = piroscafo, nave a vapore [m]
+расписа́ться = firmare; sposarsi in comune [v pf; распишу́сь, распи́шешься]
+
+### Frasi
+Мой брат у́чится в МГУ. = Mio fratello studia all'Università di Mosca.
+По́сле шко́лы она́ хо́чет поступи́ть в вуз. = Dopo la scuola vuole entrare all'università.
+Они́ расписа́лись в ЗА́ГСе в суббо́ту. = Si sono sposati in comune sabato.
+Над го́родом лети́т вертолёт. = Sopra la città vola un elicottero.
+Включи́ пылесо́с, на́до убра́ть кварти́ру. = Accendi l'aspirapolvere, bisogna pulire casa.
+В Япо́нии ча́сто быва́ют землетрясе́ния. = In Giappone ci sono spesso terremoti.
+
+### Esercizi
+? Мой брат у́чится в ___ . = Mio fratello studia all'Università di Mosca. {МГУ | вертолёте | ЗА́ГСе}
+? Она́ хо́чет поступи́ть в ___ . = Vuole entrare all'università. {вуз | ЗАГС | парохо́д}
+? Они́ ___ в ЗА́ГСе. = Si sono sposati in comune. {расписа́лись | подписа́ли | записа́ли}
+? Над го́родом лети́т ___ . = Sopra la città vola un elicottero. {вертолёт | пылесо́с | парохо́д}
+? «пылесо́с» alla lettera è… {«succhia polvere» | «vola da sé» | «scuote la terra»}
+? «зарпла́та» è l'abbreviazione di… {за́работная пла́та | за́втрашняя пла́та | зал пла́ты}
+> Scrivi «terremoto» → землетрясе́ние
+~ Над го́родом лети́т вертолёт. = Sopra la città vola un elicottero.
+
+## Giorno 300 | Famiglie di parole
+obiettivo: Ampliare il vocabolario con le famiglie di parole.
+breve: **-уч-** (imparare): **учи́ть, учи́тель, учени́к, уче́бник** (libro di testo), **учёный**.
+breve: **-жи-** (vivere): **жить, жизнь, живо́й** (vivo), **жи́тель, живо́тное**.
+breve: **-люб-** (amare): **люби́ть, любо́вь, люби́мый, любопы́тный** (curioso), **любе́зный** (gentile).
+
+### Lezione
+#### Tre famiglie
+| -уч- | -жи- | -люб- |
+|---|---|---|
+| учи́ть | жить | люби́ть |
+| учи́тель | жизнь | любо́вь |
+| учени́к | живо́й | люби́мый |
+| уче́бник | жи́тель | любопы́тный |
+| учёный | живо́тное | любе́зный |
+
+---
+#### Il trucco della radice
+Quando incontri una parola nuova, cerca la radice: **любопы́тство** contiene **люб-**, l'«amore» di sapere: la curiosità. **Поживём — уви́дим** contiene **жи-**: «vivremo e vedremo», cioè chi vivrà vedrà.
+
+---
+#### Il giorno 300!
+Hai già incontrato più di 1600 parole: con le famiglie di parole ne capisci molte di più.
+
+> **Любе́зный** è un gentile un po' formale: **Бу́дьте любе́зны, переда́йте соль.** — Sia così gentile da passarmi il sale.
+
+### Parole
+уче́бник = libro di testo, manuale [m]
+живо́й = vivo, vivace [agg]
+любопы́тный = curioso [agg]
+любопы́тство = curiosità [n]
+любе́зный = gentile, cortese [agg]
+Бу́дьте любе́зны = sia così gentile [espr]
+Поживём — уви́дим. = Chi vivrà vedrà. [espr]
+
+### Frasi
+Откро́йте уче́бник на страни́це два́дцать. = Aprite il libro a pagina venti.
+Ры́ба ещё жива́я! = Il pesce è ancora vivo!
+Мой сын о́чень любопы́тный, он всё вре́мя задаёт вопро́сы. = Mio figlio è molto curioso, fa domande in continuazione.
+Бу́дьте любе́зны, переда́йте соль. = Sia così gentile da passarmi il sale.
+— Ты сдашь экза́мен? — Поживём — уви́дим. = Passerai l'esame? — Chi vivrà vedrà.
+Любопы́тство — не поро́к. = La curiosità non è un vizio.
+
+### Esercizi
+? Откро́йте ___ на страни́це два́дцать. = Aprite il libro a pagina venti. {уче́бник | учени́к | учёный}
+? Ры́ба ещё ___ ! = Il pesce è ancora vivo! {жива́я | живо́й | жизнь}
+? Мой сын о́чень ___ . = Mio figlio è molto curioso. {любопы́тный | люби́мый | любо́вь}
+? Бу́дьте ___ , переда́йте соль. = Sia così gentile… {любе́зны | любе́зный | любе́зно}
+? Поживём — ___ . = Chi vivrà vedrà. {уви́дим | услы́шим | узна́ем}
+? La radice di «учёный», «уче́бник», «учени́к» vuol dire… {imparare | vivere | amare}
+> Scrivi «curiosità» → любопы́тство
+~ Поживём — уви́дим. = Chi vivrà vedrà.
+
+## Giorno 301 | Ripasso della settimana
+obiettivo: Leggere un testo sulle parole che viaggiano da una lingua all'altra.
+
+### Lettura | Слова́-путеше́ственники | Parole viaggiatrici
+Слова́, как и лю́ди, лю́бят путеше́ствовать. = Le parole, come le persone, amano viaggiare.
+Ру́сский язы́к взял мно́го слов из други́х языко́в. = La lingua russa ha preso molte parole da altre lingue.
+Из италья́нского пришли́ слова́ «о́пера», «пиани́но», «макаро́ны» и «банк». = Dall'italiano sono arrivate le parole «opera», «pianoforte», «maccheroni» e «banca».
+Из францу́зского — «пальто́», «пляж» и «шофёр». = Dal francese «cappotto», «spiaggia» e «autista».
+А сло́во «вокза́л», говоря́т, пришло́ из А́нглии, от назва́ния ста́нции под Ло́ндоном. = E la parola «vokzal», si dice, è arrivata dall'Inghilterra, dal nome di una stazione vicino a Londra.
+Но и ру́сские слова́ путеше́ствуют по ми́ру. = Ma anche le parole russe viaggiano per il mondo.
+По́сле 1957 го́да весь мир узна́л сло́во «спу́тник». = Dopo il 1957 tutto il mondo ha conosciuto la parola «sputnik».
+Иностра́нцы зна́ют «во́дку», «борщ», «самова́р», «тайгу́» и «матрёшку». = Gli stranieri conoscono «vodka», «borsch», «samovar», «taiga» e «matrioska».
+Да́же сло́во «ма́монт» пришло́ в други́е языки́ из ру́сского! = Perfino la parola «mammut» è arrivata nelle altre lingue dal russo!
+Так языки́ дру́жат и меня́ются — совсе́м как лю́ди. = Così le lingue fanno amicizia e cambiano, proprio come le persone.
+
+### Domande
+? Quale di queste parole viene dall'italiano? {пиани́но | пальто́ | вокза́л}
+? Da quale lingua viene «шофёр»? {dal francese | dall'italiano | dall'inglese}
+? Quale parola russa ha conosciuto tutto il mondo dopo il 1957? {спу́тник | самова́р | тайга́}
+? Da dove viene, si dice, la parola «вокза́л»? {dall'Inghilterra | dalla Germania | dalla Francia}

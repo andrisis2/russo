@@ -272,7 +272,7 @@ E in metro: **Вы выхо́дите на сле́дующей?** — Scende al
 ## Giorno 146 | Avvicinarsi, passare, attraversare
 obiettivo: Usare gli altri prefissi dei verbi di moto.
 breve: под- (avvicinarsi a: к), от- (allontanarsi da: от), до- (arrivare fino a: до), за- (passare da, fare un salto: в/к).
-breve: пере́- (attraversare: перейти́ у́лицу), про- (passare oltre, attraverso: пройти́ ми́мо), об- (fare il giro: обойти́).
+breve: пере- (attraversare: перейти́ у́лицу), про- (passare oltre, attraverso: пройти́ ми́мо), об- (fare il giro: обойти́).
 breve: **Как пройти́ к…?** — Come si arriva a…? (pro-: «passare per arrivare»)
 
 ### Lezione
@@ -283,7 +283,7 @@ breve: **Как пройти́ к…?** — Come si arriva a…? (pro-: «passar
 | от- | allontanarsi | **Отойди́ от двери́!** |
 | до- | arrivare fino a | **Мы дошли́ до па́рка.** |
 | за- | passare da (un salto) | **Зайди́ ко мне ве́чером!** |
-| пере́- | attraversare | **Перейди́те у́лицу.** |
+| пере- | attraversare | **Перейди́те у́лицу.** |
 | про- | passare (oltre, attraverso) | **Мы прошли́ ми́мо музе́я.** |
 | об- | fare il giro | **Обойди́ дом.** |
 
@@ -318,7 +318,7 @@ Con il mezzo: **подъе́хать, отъе́хать, дое́хать, за
 ? ___ ко мне ве́чером! = Passa da me stasera! {Зайди́ | Дойди́ | Обойди́}
 ? Мы ___ ми́мо музе́я. = Siamo passati davanti al museo. {прошли́ | перешли́ | дошли́}
 ? Они́ ___ в Москву́. = Si sono trasferiti a Mosca. {перее́хали | прое́хали | зае́хали}
-? Il prefisso «пере́-» vuol dire… {attraversare | allontanarsi | avvicinarsi}
+? Il prefisso «пере-» vuol dire… {attraversare | allontanarsi | avvicinarsi}
 ~ Перейди́те у́лицу и иди́те пря́мо. = Attraversi la strada e vada dritto.
 
 ## Giorno 147 | Ripasso della settimana

@@ -558,7 +558,7 @@ def accenta_sorgenti(idx, files):
                 # frammenti di desinenza (-ешь, -ый) e pezzi di parola in grassetto (аэропорт**у́**)
                 if start > 0 and ru[start - 1] in '-–*':
                     return tok
-                if m.end() < len(ru) and ru[m.end()] == '*':
+                if m.end() < len(ru) and ru[m.end()] in '*-':
                     return tok
                 # dopo un monosillabo accentato la parola è atona (не́ был, за́ городом)
                 if dopo_proclitico(ru, start):
@@ -597,6 +597,9 @@ def controlla_testo(idx, morph, testo, f, n, dove, mancanti):
     for m in CYR_WORD.finditer(testo):
         tok = m.group(0)
         if m.start() > 0 and testo[m.start() - 1] in '-–':
+            continue
+        # prefissi e pezzi di parola (пере-, вы-)
+        if m.end() < len(testo) and testo[m.end()] == '-':
             continue
         # lettere e sillabe isolate nelle spiegazioni (з, ги, -ешь…)
         if dove == 'lezione' and len(nudo(tok)) <= 2:
