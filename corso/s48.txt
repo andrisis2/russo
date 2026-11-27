@@ -1,0 +1,362 @@
+# Settimana 48 | Frasi complesse
+
+## Giorno 330 | Le frasi impersonali
+obiettivo: Costruire frasi senza soggetto, tipiche del russo.
+breve: Con il dativo: **Мне хо́чется спать.** (Ho voglia di dormire) **Мне не спи́тся.** (Non riesco a dormire)
+breve: **Мне не хвата́ет вре́мени.** — Mi manca il tempo (**хвата́ть** + genitivo). **Мне удало́сь сдать экза́мен.** — Sono riuscito a passare l'esame.
+breve: Senza nessuno: **Темне́ет.** (Si fa buio) **Что де́лать?** (Che fare?) **Куда́ идти́?** (Dove andare?)
+
+### Lezione
+#### Il soggetto «nascosto» al dativo
+In russo molte cose «succedono» a qualcuno, che va al **dativo**:
+| Russo | Italiano |
+|---|---|
+| Мне хо́чется пить. | Ho voglia di bere. |
+| Мне не спи́тся. | Non riesco a dormire. |
+| Мне не ве́рится. | Non riesco a crederci. |
+| Мне не хвата́ет вре́мени. | Mi manca il tempo. |
+| Мне удало́сь… | Sono riuscito a… |
+
+Il verbo è alla **3ª persona singolare** (al passato, neutro): **Мне хоте́лось спать.** **Нам удало́сь.**
+
+---
+#### La natura e il tempo
+**Темне́ет.** — Si fa buio. **Света́ет.** — Si fa giorno. **Холода́ет.** — Si fa freddo.
+
+---
+#### L'infinito da solo
+- **Что де́лать?** — Che fare?
+- **Куда́ идти́?** — Dove andare?
+- **Тебе́ не поня́ть.** — Tu non puoi capire.
+- **Не опозда́ть бы!** — Speriamo di non fare tardi!
+
+> **Хвата́ть** (bastare) vuole il genitivo: **Хва́тит!** — Basta! **У меня́ не хвата́ет де́нег.** — Non mi bastano i soldi.
+
+### Parole
+хо́чется = si ha voglia di [v impf; мне хо́чется; мне хоте́лось]
+не спи́тся = non si riesce a dormire [espr; мне не спи́тся]
+хвата́ть = bastare [v impf; хвата́ет; + gen.]
+Хва́тит! = Basta! [espr]
+удало́сь = si è riusciti a [espr; мне удало́сь + inf.]
+темне́ть = farsi buio [v impf; темне́ет]
+
+### Frasi
+Мне хо́чется пить. = Ho voglia di bere.
+Мне не спи́тся, я ду́маю о за́втрашнем экза́мене. = Non riesco a dormire, penso all'esame di domani.
+Мне всегда́ не хвата́ет вре́мени. = Mi manca sempre il tempo.
+Нам удало́сь купи́ть биле́ты на конце́рт! = Siamo riusciti a comprare i biglietti per il concerto!
+Зимо́й ра́но темне́ет. = D'inverno fa buio presto.
+Хва́тит спо́рить! = Basta litigare!
+
+### Esercizi
+? ___ хо́чется пить. = Ho voglia di bere. {Мне | Я | Меня́}
+? Мне не ___ вре́мени. = Mi manca il tempo. {хвата́ет | хвата́ю | хвати́ть}
+? Нам ___ купи́ть биле́ты! = Siamo riusciti a comprare i biglietti! {удало́сь | удали́ли | уда́лись}
+? Зимо́й ра́но ___ . = D'inverno fa buio presto. {темне́ет | тёмный | темно́та}
+? ___ спо́рить! = Basta litigare! {Хва́тит | Хвата́ет | Хвата́й}
+? «Мне не спи́тся» vuol dire… {non riesco a dormire | non ho sonno perché ho dormito | non voglio dormire}
+> хоте́ться (passato, мне) → хоте́лось
+~ Мне всегда́ не хвата́ет вре́мени. = Mi manca sempre il tempo.
+
+## Giorno 331 | Il passivo al completo
+obiettivo: Riconoscere il passivo nei cartelli, nei giornali e nei documenti.
+breve: I cartelli usano il participio breve: **Закры́то** (chiuso), **Откры́то**, **За́нято** (occupato), **Сде́лано в Росси́и** (fatto in Russia).
+breve: E il passivo in **-ся**: **Продаётся** (vendesi), **Сдаётся** (affittasi).
+breve: Il passivo impersonale: **Бы́ло решено́…** (si è deciso…), **Ска́зано — сде́лано!** (detto fatto!).
+
+### Lezione
+#### I cartelli
+| Cartello | Italiano |
+|---|---|
+| Закры́то на ремо́нт | Chiuso per lavori |
+| Откры́то | Aperto |
+| За́нято | Occupato |
+| Продаётся | Vendesi |
+| Сдаётся | Affittasi |
+| Не рабо́тает | Fuori servizio |
+| Вход воспрещён | Vietato l'ingresso |
+
+---
+#### Il riassunto delle forme
+| Forma | Esempio |
+|---|---|
+| participio breve | **Магази́н закры́т.** **Рабо́та сде́лана.** |
+| participio completo | **закры́тая дверь**, **сде́ланная рабо́та** |
+| participio presente | **уважа́емый**, **люби́мый**, **изуча́емый** |
+| -ся con l'imperfettivo | **Кварти́ра сдаётся.** |
+| 3ª plurale impersonale | **Здесь продаю́т цветы́.** |
+| neutro impersonale | **Бы́ло решено́ закры́ть шко́лу.** |
+
+> **Ска́зано — сде́лано!** — «Detto, fatto!»: due participi brevi, e la frase è pronta.
+
+### Parole
+ремо́нт = lavori, ristrutturazione; riparazione [m]
+продаётся = vendesi [espr]
+сдаётся = affittasi [espr]
+решено́ = è deciso, si è deciso [espr]
+Ска́зано — сде́лано! = Detto fatto! [espr]
+изуча́емый = studiato, che si studia [agg]
+
+### Frasi
+Магази́н закры́т на ремо́нт. = Il negozio è chiuso per lavori.
+Э́та кварти́ра сдаётся. = Questo appartamento si affitta.
+Бы́ло решено́ постро́ить но́вую шко́лу. = Si è deciso di costruire una nuova scuola.
+Всё уже́ сде́лано. = È già tutto fatto.
+Ру́сский язы́к — оди́н из са́мых изуча́емых языко́в в ми́ре. = Il russo è una delle lingue più studiate al mondo.
+Ска́зано — сде́лано! = Detto fatto!
+
+### Esercizi
+? Магази́н ___ на ремо́нт. = Il negozio è chiuso per lavori. {закры́т | закры́л | закрыва́ет}
+? Э́та кварти́ра ___ . = Questo appartamento si affitta. {сдаётся | сдаёт | сдала́}
+? Бы́ло ___ постро́ить но́вую шко́лу. = Si è deciso di costruire… {решено́ | реши́л | реша́ть}
+? Всё уже́ ___ . = È già tutto fatto. {сде́лано | сде́лал | де́лает}
+? Ска́зано — ___ ! = Detto fatto! {сде́лано | де́лать | сде́лал}
+? Il cartello «Продаётся» vuol dire… {vendesi | in saldo | prodotto}
+> Scrivi «Chiuso per lavori» → Закры́то на ремо́нт
+~ Магази́н закры́т на ремо́нт. = Il negozio è chiuso per lavori.
+
+## Giorno 332 | L'ordine delle parole
+obiettivo: Usare l'ordine delle parole per mettere in evidenza l'informazione.
+breve: In russo l'informazione **nuova** va alla fine: **Кни́гу купи́ла Ма́ша.** (Il libro l'ha comprato Maša) / **Ма́ша купи́ла кни́гу.** (Maša ha comprato un libro).
+breve: **Не** va davanti alla parola che neghi: **Не я э́то сде́лал.** (Non sono stato io) / **Я э́того не де́лал.** (Non l'ho fatto).
+breve: **то́лько** e **да́же** si mettono davanti alla parola su cui cade l'accento: **Да́же ба́бушка пришла́!**
+
+### Lezione
+#### Il nuovo va in fondo
+L'ordine «normale» è soggetto – verbo – oggetto, ma il russo sposta le parole per mettere **alla fine** ciò che è nuovo o importante:
+| Domanda | Risposta |
+|---|---|
+| Что купи́ла Ма́ша? | Ма́ша купи́ла **кни́гу**. |
+| Кто купи́л кни́гу? | Кни́гу купи́ла **Ма́ша**. |
+| Что в ко́мнате? | В ко́мнате **стоя́л стол**. |
+
+---
+#### La negazione mobile
+- **Я не ви́дел Ма́шу.** — Non ho visto Maša.
+- **Не я ви́дел Ма́шу.** — Non sono stato io a vedere Maša.
+- **Я ви́дел не Ма́шу, а Ле́ну.** — Non ho visto Maša, ma Lena.
+
+---
+#### Pronomi e particelle
+- I pronomi stanno di solito prima del verbo: **Я тебя́ люблю́.** Dopo il verbo, prendono enfasi: **Я люблю́ тебя́!** (proprio te!)
+- **то́лько, да́же, и́менно** si mettono davanti alla parola evidenziata: **То́лько он знал пра́вду.** / **Он знал то́лько пра́вду.**
+
+> Nelle domande, a voce, è l'**intonazione** a cambiare il senso: **Ты пойдёшь в кино́?** — sali sulla parola che chiedi.
+
+### Parole
+да́же = perfino, anche [part]
+гла́вное = la cosa principale, l'importante [n; si declina come un aggettivo]
+поря́док = ordine [m; в поря́дке = a posto]
+поря́док слов = ordine delle parole [espr]
+интона́ция = intonazione [f]
+ударе́ние = accento (tonico) [n]
+
+### Frasi
+Кни́гу купи́ла Ма́ша. = Il libro l'ha comprato Maša.
+Не я э́то сде́лал! = Non sono stato io a farlo!
+Я ви́дел не Ма́шу, а Ле́ну. = Non ho visto Maša, ma Lena.
+Да́же ба́бушка пришла́ на конце́рт! = Perfino la nonna è venuta al concerto!
+Гла́вное — не сдава́ться. = L'importante è non arrendersi.
+В ру́сском языке́ ударе́ние о́чень ва́жно. = In russo l'accento è molto importante.
+
+### Esercizi
+? Кто купи́л кни́гу? — Кни́гу купи́ла ___ . = …l'ha comprato Maša. {Ма́ша | Ма́ше | Ма́шу}
+? ___ я э́то сде́лал! = Non sono stato io a farlo! {Не | Ни | Нет}
+? Я ви́дел не Ма́шу, ___ Ле́ну. = Non ho visto Maša, ma Lena. {а | и | но и}
+? ___ ба́бушка пришла́! = Perfino la nonna è venuta! {Да́же | То́лько бы | Уже́ не}
+? ___ — не сдава́ться. = L'importante è non arrendersi. {Гла́вное | Гла́вный | Голова́}
+? Nella frase russa, l'informazione nuova di solito va… {alla fine | all'inizio | sempre dopo il verbo}
+> Scrivi «accento (tonico)» → ударе́ние
+~ Гла́вное — не сдава́ться. = L'importante è non arrendersi.
+
+## Giorno 333 | Le virgole in russo
+obiettivo: Mettere le virgole dove le vuole il russo.
+breve: Sempre la virgola prima di **что, что́бы, когда́, е́сли, потому́ что, кото́рый**: **Я зна́ю, что ты прав.**
+breve: La virgola separa le parole introduttive (**Наве́рное, …**, **Кста́ти, …**) e il nome di chi chiami: **Ма́ша, иди́ сюда́!**
+breve: I segni: **запята́я** (virgola), **то́чка** (punto), **тире́** (trattino), **кавы́чки** (virgolette «»).
+
+### Lezione
+#### La regola d'oro
+In russo **ogni** frase secondaria è separata da una virgola, anche quando in italiano non la mettiamo:
+- **Я зна́ю, что ты прав.** — So che hai ragione.
+- **Он сказа́л, что придёт.** — Ha detto che verrà.
+- **Я хочу́, что́бы ты пришёл.**
+- **Челове́к, кото́рый звони́л, — мой брат.**
+
+---
+#### Altri casi
+- prima di **а**, **но**: **Я хоте́л пойти́, но не смог.**
+- le parole introduttive: **Наве́рное, он забы́л.** **Во-пе́рвых, …** **Коне́чно, …**
+- il vocativo: **Ма́ша, иди́ сюда́!**
+- i gerundi e i participi con i loro complementi: **Прочита́в письмо́, она́ запла́кала.**
+- **Не** si mette la virgola prima di **и** in un elenco semplice: **хлеб и молоко́**.
+
+---
+#### I segni di punteggiatura
+| Segno | Russo |
+|---|---|
+| , | запята́я |
+| . | то́чка |
+| — | тире́ |
+| « » | кавы́чки |
+| ? | вопроси́тельный знак |
+| ! | восклица́тельный знак |
+
+> Il **тире́** sostituisce il verbo «essere» tra due nomi: **Москва́ — столи́ца Росси́и.**
+
+### Parole
+запята́я = virgola [f]
+то́чка = punto [f]
+тире́ = trattino, lineetta [n; non si declina]
+кавы́чки = virgolette [pl]
+знак = segno [m]
+вопроси́тельный знак = punto interrogativo [espr]
+
+### Frasi
+Я зна́ю, что ты прав. = So che hai ragione.
+Наве́рное, он забы́л. = Probabilmente ha dimenticato.
+Ма́ша, иди́ сюда́! = Maša, vieni qui!
+Челове́к, кото́рый звони́л, — мой брат. = La persona che ha telefonato è mio fratello.
+Здесь нужна́ запята́я. = Qui serve una virgola.
+В конце́ вопро́са ста́вят вопроси́тельный знак. = Alla fine di una domanda si mette il punto interrogativo.
+
+### Esercizi
+? Я зна́ю___ что ты прав. = So che hai ragione. {, | — | .}
+? Наве́рное___ он забы́л. = Probabilmente ha dimenticato. {, | — | ?}
+? Москва́ ___ столи́ца Росси́и. = Mosca è la capitale della Russia. {— | , | .}
+? Здесь нужна́ ___ . = Qui serve una virgola. {запята́я | то́чка | кавы́чки}
+? «то́чка» è… {il punto | la virgola | il trattino}
+? Prima di «что» (che), in russo… {si mette sempre la virgola | non si mette mai la virgola | si mette solo nelle domande}
+> Scrivi «virgola» → запята́я
+~ Я зна́ю, что ты прав. = So che hai ragione.
+
+## Giorno 334 | Congiunzioni avanzate
+obiettivo: Collegare le idee con le congiunzioni del russo scritto.
+breve: Coppie: **как…, так и…** (sia… sia…), **ни…, ни…** (né… né…), **ли́бо…, ли́бо…** (o… o…), **то…, то…** (ora… ora…).
+breve: Causa: **благодаря́** + dat. (grazie a: positivo) ↔ **из-за** + gen. (a causa di: negativo).
+breve: **пре́жде чем** + infinito = prima di: **Поду́май, пре́жде чем говори́ть.** **в то вре́мя как** = mentre, invece.
+
+### Lezione
+#### Le coppie
+| Coppia | Esempio |
+|---|---|
+| как…, так и… | **Как взро́слые, так и де́ти лю́бят э́тот фильм.** |
+| ни…, ни… | **Ни я, ни он не зна́ли.** |
+| ли́бо…, ли́бо… | **Ли́бо сего́дня, ли́бо никогда́!** |
+| то…, то… | **То дождь, то снег.** |
+| не то́лько…, но и… | **Он говори́т не то́лько по-ру́сски, но и по-кита́йски.** |
+
+---
+#### Grazie a / a causa di
+- **благодаря́** + dativo (causa positiva): **Благодаря́ тебе́ я сдал экза́мен.**
+- **из-за** + genitivo (causa negativa): **Из-за дождя́ мы оста́лись до́ма.**
+
+---
+#### Il tempo e il contrasto
+- **пре́жде чем** + infinito — prima di: **Поду́май, пре́жде чем отвеча́ть.**
+- **в то вре́мя как** — mentre (contrasto): **Я рабо́таю, в то вре́мя как ты отдыха́ешь!**
+
+> Ricorda dal giorno 174: **хотя́** (sebbene), **несмотря́ на** (nonostante), **так как** (siccome).
+
+### Parole
+как…, так и… = sia… sia… [cong]
+ни…, ни… = né… né… [cong]
+ли́бо…, ли́бо… = o… o… [cong]
+то…, то… = ora… ora… [cong]
+благодаря́ = grazie a [prep; + dat.]
+из-за = a causa di; da dietro [prep; + gen.]
+пре́жде чем = prima di [cong; + inf.]
+в то вре́мя как = mentre, invece [cong]
+
+### Frasi
+Как взро́слые, так и де́ти лю́бят э́тот фильм. = Questo film piace sia agli adulti sia ai bambini.
+Ни я, ни он не зна́ли, что де́лать. = Né io né lui sapevamo che cosa fare.
+Ли́бо сего́дня, ли́бо никогда́! = O oggi o mai più!
+Благодаря́ тебе́ я сдал экза́мен. = Grazie a te ho passato l'esame.
+Из-за дождя́ мы оста́лись до́ма. = A causa della pioggia siamo rimasti a casa.
+Поду́май, пре́жде чем отвеча́ть. = Pensa prima di rispondere.
+
+### Esercizi
+? Как взро́слые, ___ и де́ти лю́бят э́тот фильм. = Sia gli adulti sia i bambini… {так | как | и}
+? ___ я, ни он не зна́ли. = Né io né lui sapevamo. {Ни | Не | И}
+? ___ тебе́ я сдал экза́мен. = Grazie a te ho passato l'esame. {Благодаря́ | Из-за | Несмотря́}
+? Из-за ___ мы оста́лись до́ма. = A causa della pioggia… {дождя́ | дождь | дождю́}
+? Поду́май, ___ чем отвеча́ть. = Pensa prima di rispondere. {пре́жде | по́сле | пока́}
+? «То дождь, то снег» vuol dire… {ora pioggia, ora neve | sia pioggia sia neve | né pioggia né neve}
+> Scrivi «grazie a» (preposizione) → благодаря́
+~ Из-за дождя́ мы оста́лись до́ма. = A causa della pioggia siamo rimasti a casa.
+
+## Giorno 335 | Il discorso indiretto avanzato
+obiettivo: Riferire domande, richieste e consigli.
+breve: Domande sì/no: **ли**: **Он спроси́л, придёшь ли ты.** — Ha chiesto se verrai.
+breve: Richieste e ordini: **что́бы** + passato: **Она́ попроси́ла, что́бы я позвони́л.** — Mi ha chiesto di chiamare.
+breve: Il tempo **non cambia**: **Он сказа́л, что живёт в Москве́.** — Ha detto che vive (viveva) a Mosca.
+
+### Lezione
+#### Tre tipi di discorso indiretto
+| Diretto | Indiretto |
+|---|---|
+| «Я живу́ в Москве́». | Он сказа́л, **что** живёт в Москве́. |
+| «Ты придёшь?» | Он спроси́л, придёшь **ли** ты. |
+| «Где ты был?» | Она́ спроси́ла, **где** я был. |
+| «Позвони́ мне!» | Она́ попроси́ла, **что́бы** я позвони́л. |
+
+---
+#### Il tempo resta quello della frase originale
+In italiano diciamo «ha detto che viveva», in russo resta il presente: **Он сказа́л, что живёт в Москве́.** Così anche il futuro: **Она́ сказа́ла, что придёт.** — Ha detto che sarebbe venuta.
+
+---
+#### I verbi per riferire
+- **сообщи́ть** — comunicare; **отве́тить** — rispondere;
+- **предложи́ть** — proporre: **Он предложи́л пойти́ в кино́.**
+- **объясни́ть** — spiegare; **напо́мнить** — ricordare (a qualcuno);
+- **пообеща́ть** — promettere; **посове́товать** — consigliare;
+- **призна́ться** — confessare, ammettere.
+
+### Parole
+предложи́ть = proporre, offrire [v pf; предложу́, предло́жишь]
+объясни́ть = spiegare [v pf; объясню́, объясни́шь]
+напо́мнить = ricordare (a qualcuno) [v pf; напо́мню, напо́мнишь]
+пообеща́ть = promettere [v pf; пообеща́ю, пообеща́ешь]
+посове́товать = consigliare [v pf; посове́тую, посове́туешь]
+призна́ться = confessare, ammettere [v pf; призна́юсь, призна́ешься]
+
+### Frasi
+Он спроси́л, придёшь ли ты за́втра. = Ha chiesto se verrai domani.
+Она́ попроси́ла, что́бы я позвони́л ве́чером. = Mi ha chiesto di chiamarla la sera.
+Друг предложи́л пойти́ в кино́. = L'amico ha proposto di andare al cinema.
+Объясни́, пожа́луйста, что случи́лось. = Spiegami, per favore, che cosa è successo.
+Напо́мни мне купи́ть хлеб. = Ricordami di comprare il pane.
+Он призна́лся, что разби́л ва́зу. = Ha confessato di aver rotto il vaso.
+
+### Esercizi
+? Он спроси́л, придёшь ___ ты. = Ha chiesto se verrai. {ли | бы | же}
+? Она́ попроси́ла, ___ я позвони́л. = Mi ha chiesto di chiamare. {что́бы | что | е́сли}
+? Он сказа́л, что ___ в Москве́. = Ha detto che vive a Mosca. {живёт | жил бы | живу́}
+? Друг ___ пойти́ в кино́. = L'amico ha proposto di andare al cinema. {предложи́л | предлага́ю | предложе́ние}
+? ___ мне купи́ть хлеб. = Ricordami di comprare il pane. {Напо́мни | Запо́мни | По́мни}
+? «призна́ться» vuol dire… {confessare | riconoscere un amico | premiare}
+> Discorso indiretto: «Ты придёшь?» → Он спроси́л, придёшь ли ты.
+~ Друг предложи́л пойти́ в кино́. = L'amico ha proposto di andare al cinema.
+
+## Giorno 336 | Ripasso e test del modulo 12
+obiettivo: Leggere una lettera formale piena di frasi complesse e fare il test del modulo.
+
+### Lettura | Письмо́ реда́ктору | Lettera al direttore
+Уважа́емый господи́н реда́ктор! = Egregio signor direttore!
+Пишу́ вам, потому́ что меня́, как и мно́гих жи́телей на́шего райо́на, о́чень беспоко́ит судьба́ ста́рого па́рка. = Le scrivo perché il destino del vecchio parco preoccupa molto me, come molti abitanti del nostro quartiere.
+Неда́вно мы узна́ли, что на ме́сте па́рка бу́дет постро́ена автостоя́нка. = Di recente abbiamo saputo che al posto del parco verrà costruito un parcheggio.
+Э́тот парк был со́здан бо́лее ста лет наза́д, и в нём расту́т дере́вья, кото́рые по́мнят на́ших пра́дедов. = Questo parco fu creato più di cento anni fa, e ci crescono alberi che ricordano i nostri bisnonni.
+Здесь гуля́ют не то́лько пожилы́е лю́ди, но и молоды́е роди́тели с детьми́. = Qui passeggiano non solo gli anziani, ma anche i giovani genitori con i bambini.
+Несмотря́ на то что маши́н в го́роде действи́тельно мно́го, мы счита́ем, что стоя́нку мо́жно постро́ить в друго́м ме́сте. = Anche se in città le macchine sono davvero tante, riteniamo che il parcheggio si possa costruire altrove.
+Ни мы, ни на́ши де́ти не хоти́м жить в го́роде без дере́вьев. = Né noi né i nostri figli vogliamo vivere in una città senza alberi.
+Мы уже́ собра́ли бо́лее двух ты́сяч по́дписей и попроси́ли администра́цию го́рода измени́ть реше́ние. = Abbiamo già raccolto più di duemila firme e chiesto all'amministrazione della città di cambiare la decisione.
+Нам отве́тили, что вопро́с ещё не решён. = Ci hanno risposto che la questione non è ancora decisa.
+Про́сим вас рассказа́ть об э́той пробле́ме в ва́шей газе́те, что́бы о ней узна́ло как мо́жно бо́льше люде́й. = Le chiediamo di parlare di questo problema nel suo giornale, perché lo venga a sapere il maggior numero possibile di persone.
+С уваже́нием, жи́тели у́лицы Ли́повой. = Distinti saluti, gli abitanti di via Lipovaja.
+
+### Domande
+? Che cosa vogliono costruire al posto del parco? {un parcheggio | un centro commerciale | una scuola}
+? Quanti anni ha il parco? {più di cento | cinquanta | duecento}
+? Quante firme hanno raccolto gli abitanti? {più di duemila | cento | diecimila}
+? Che cosa chiedono al giornale? {di parlare del problema | di pagare il parcheggio | di piantare nuovi alberi}
