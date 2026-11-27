@@ -279,6 +279,22 @@ def carica_morph():
         return None
 
 
+# parole giuste che i dizionari non conoscono (corso/parole_ok.txt, una per riga)
+# e accenti giusti che il dizionario non riporta (сре́ду «mercoledì», аэропорту́ «in aeroporto»)
+PAROLE_OK, ACCENTI_OK = set(), set()
+_pok = os.path.join(SRC, 'parole_ok.txt')
+if os.path.exists(_pok):
+    with open(_pok, encoding='utf-8') as _fh:
+        for _r in _fh.read().split('\n'):
+            _r = _r.split('#')[0].strip()
+            if not _r:
+                continue
+            for _w in _r.split():
+                PAROLE_OK.add(chiave(_w))
+                if ACC in _w:
+                    ACCENTI_OK.add(_w.lower())
+
+
 def varianti_accento(idx, tok):
     """Forme accentate note per una parola (senza distinguere ё/е)."""
     if idx is None:
@@ -304,8 +320,13 @@ def accenta_token(idx, tok):
     if not var:
         return None, 'ignota'
     low = tok.lower()
+    if low in ACCENTI_OK:
+        return None, 'ok'
     ha = ACC in low or 'ё' in low
-    var = set(var)
+    # le forme del dizionario senza accento non dicono nulla
+    var = {v for v in var if ACC in v or 'ё' in v}
+    if not var:
+        return None, 'ok'
     if ha:
         if low in var:
             return None, 'ok'
@@ -369,7 +390,7 @@ def parse_esercizio(riga, f, n):
         if len(opts) < 2:
             avviso(f, n, 'scelta multipla con meno di 2 opzioni')
             return None
-        if len(set(chiave(o) for o in opts)) != len(opts):
+        if len(set(o.lower() for o in opts)) != len(opts):
             avviso(f, n, 'opzioni ripetute')
         e = {'t': 's', 'q': m.group('q').strip(), 'ok': opts[0], 'opts': opts[1:]}
         if m.group('it'):
@@ -417,6 +438,9 @@ def leggi_settimana(path):
             sez = None
             continue
         if giorno is None:
+            continue
+        if re.match(r'^vedi:', riga.strip()):
+            giorno['vedi'] += [x.strip() for x in riga.split(':', 1)[1].split(',') if x.strip()]
             continue
         m = RE_SEZ.match(riga)
         if m and m.group(1) in SEZIONI:
@@ -509,20 +533,25 @@ def accenta_sorgenti(idx, files):
                 sez = None
                 continue
             if sez is None:
-                continue
+                # intestazione del giorno: si accentano «obiettivo:» e «breve:»
+                if not re.match(r'^(obiettivo|breve):', riga):
+                    continue
+                ru, sep, resto = riga, '', ''
             # nelle parole e nelle frasi si accenta solo la parte russa (prima di " = ")
-            if sez in ('Parole', 'Frasi', 'Lettura'):
+            elif sez in ('Parole', 'Frasi', 'Lettura'):
                 if ' = ' not in riga:
                     continue
                 ru, sep, resto = riga.partition(' = ')
-            else:
+            elif sez is not None:
                 ru, sep, resto = riga, '', ''
             def sost(m):
                 nonlocal tot_agg
                 tok = m.group(0)
                 start = m.start()
-                # frammenti di desinenza (-ешь, -ый) e lettere isolate: non si toccano
-                if start > 0 and ru[start - 1] in '-–':
+                # frammenti di desinenza (-ешь, -ый) e pezzi di parola in grassetto (аэропорт**у́**)
+                if start > 0 and ru[start - 1] in '-–*':
+                    return tok
+                if m.end() < len(ru) and ru[m.end()] == '*':
                     return tok
                 forma, stato = accenta_token(idx, tok)
                 if stato == 'aggiunto' and forma:
@@ -558,12 +587,15 @@ def controlla_testo(idx, morph, testo, f, n, dove, mancanti):
         # lettere e sillabe isolate nelle spiegazioni (з, ги, -ешь…)
         if dove == 'lezione' and len(nudo(tok)) <= 2:
             continue
+        intero_noto = '-' in tok and ((morph is not None and morph.word_is_known(nudo(tok).lower()))
+                                      or (idx is not None and chiave(tok) in idx) or chiave(tok) in PAROLE_OK)
         for parte in tok.split('-'):
             if not parte:
                 continue
-            if morph is not None:
+            if morph is not None and not intero_noto:
                 b = nudo(parte).lower()
-                if not morph.word_is_known(b) and not (idx and chiave(b) in idx) and not parte[:1].isupper():
+                if not morph.word_is_known(b) and not (idx and chiave(b) in idx) and not parte[:1].isupper() \
+                        and chiave(b) not in PAROLE_OK:
                     avviso(f, n, f'{dove}: parola sconosciuta «{parte}»')
             if idx is not None:
                 forma, stato = accenta_token(idx, parte)
@@ -657,7 +689,8 @@ def main():
         n_frasi += len(frasi)
 
         for e in g['esercizi'] + g['domande']:
-            testo = e.get('q', '') + ' ' + ' '.join([e.get('ok') if isinstance(e.get('ok'), str) else ' '.join(e.get('ok', []))] + e.get('opts', [])) + ' ' + e.get('ru', '')
+            # le opzioni sbagliate spesso sono sbagliate apposta (ребёнки): non si controllano
+            testo = e.get('q', '') + ' ' + (e.get('ok') if isinstance(e.get('ok'), str) else ' '.join(e.get('ok', []))) + ' ' + e.get('ru', '')
             controlla_testo(idx, morph, testo, f, g['_riga'], 'esercizio', mancanti)
             base = e.get('q', '') + '|' + (e['ok'] if isinstance(e.get('ok'), str) else '/'.join(e.get('ok', []))) + '|' + e.get('ru', '')
             e['id'] = 'ce' + hash36(base)
@@ -673,7 +706,7 @@ def main():
                 avviso(f, g['_riga'], f'giorno {g["g"]}: né parole né esercizi')
         if g['tipo'] in ('ripasso', 'test') and not g['lettura']:
             avviso(f, g['_riga'], f'giorno {g["g"]}: giorno di ripasso senza lettura')
-        controlla_testo(idx, morph, '\n'.join(g['lezione']), f, g['_riga'], 'lezione', mancanti)
+        controlla_testo(idx, morph, '\n'.join(g['lezione'] + g['breve'] + [g.get('obiettivo', '')]), f, g['_riga'], 'lezione', mancanti)
 
     # ---- uscita ----
     out_giorni = []
@@ -724,6 +757,8 @@ def main():
         print('(controllo delle parole saltato: pymorphy3 non installato)')
     if mancanti:
         print(f'Accenti mancanti che il dizionario conosce: {len(mancanti)} (python scripts/build_corso.py --accenta)')
+        for f, n, parte, forma in mancanti[:12]:
+            print(f'   {os.path.basename(f)}:{n}  {parte} → {forma}')
     if avvisi:
         print(f'\nAvvisi ({len(avvisi)}):')
         for f, n, msg in avvisi:

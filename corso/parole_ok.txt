@@ -1,0 +1,6 @@
+# Parole giuste che i dizionari usati per i controlli non conoscono
+# (e forme accentate giuste che il dizionario non riporta)
+по-итальянски
+сре́ду
+аэропорту́
+трина́дцать

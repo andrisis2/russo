@@ -1,0 +1,397 @@
+# Settimana 5 | Dove? Il prepositivo
+
+## Giorno 29 | Dove sei? в + prepositivo
+obiettivo: Dire dove sei, dove vivi e dove lavori.
+breve: **Где?** → **в** + caso prepositivo: в ба́нке, в Москве́, в музе́е.
+breve: Quasi sempre il prepositivo finisce in **-е**: банк → в ба́нке, Москва́ → в Москве́.
+breve: жить (vivere): живу́, живёшь, живёт, живём, живёте, живу́т.
+
+### Lezione
+#### I casi
+In russo i nomi cambiano la loro ultima parte secondo la funzione nella frase: sono i **casi**. Sono sei. Oggi il primo «nuovo»: il **prepositivo**, che si usa dopo **в** (in, a) per dire **dove** si è.
+
+**Где ты? — Я в ба́нке.** — Dove sei? — In banca.
+
+---
+#### Come si forma
+Nella grande maggioranza dei casi basta mettere **-е** al posto della vocale finale (o aggiungerla dopo la consonante):
+
+| Nome | Prepositivo |
+|---|---|
+| банк | в ба́нк**е** |
+| Москва́ | в Москв**е́** |
+| музе́й | в музе́**е** |
+| окно́ | в окн**е́** |
+| у́лица | на у́лиц**е** |
+
+> **Метро́**, **кафе́**, **кино́** non cambiano mai: в метро́, в кафе́, в кино́.
+
+---
+#### Dove vivi?
+Il verbo **жить** (vivere) è della prima coniugazione, ma con la radice **жив-**:
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| живу́ | живёшь | живёт | живём | живёте | живу́т |
+
+**Где ты живёшь? — Я живу́ в Москве́.** — Dove vivi? — A Mosca.
+
+> Davanti a parole che cominciano con due consonanti, **в** diventa spesso **во**: **во Фра́нции**, **во вто́рник**.
+
+### Parole
+в = in, a (con il prepositivo: dove) [prep]
+жить = vivere, abitare [v impf; живу́, живёшь]
+центр = centro [m]
+банк = banca [m]
+магази́н = negozio [m]
+университе́т = università [m]
+о́фис = ufficio [m]
+теа́тр = teatro [m]
+
+### Frasi
+Где ты живёшь? — Я живу́ в Москве́. = Dove vivi? — A Mosca.
+Мой брат рабо́тает в ба́нке. = Mio fratello lavora in banca.
+Мы в магази́не. = Siamo nel negozio.
+Она́ студе́нтка, она́ в университе́те. = È una studentessa, è all'università.
+Па́па в о́фисе. = Papà è in ufficio.
+Мы живём в це́нтре. = Abitiamo in centro.
+
+### Esercizi
+? Я живу́ в ___ . = Vivo a Mosca. {Москве́ | Москва́ | Москву́}
+? Он рабо́тает в ___ . = Lavora in banca. {ба́нке | банк | ба́нка}
+? Мы в ___ . = Siamo al museo. {музе́е | музе́й | музе́я}
+? Она́ в ___ . = È all'università. {университе́те | университе́т | университе́та}
+? Где ты ___ ? = Dove vivi? {живёшь | живу́ | живёт}
+? Они́ ___ в це́нтре. = Abitano in centro. {живу́т | живёт | живём}
+? Я в ___ . = Sono al bar. {кафе́ | кафе́е | кафу́}
+> магази́н → в … → в магази́не
+> теа́тр → в … → в теа́тре
+> мы (жить) → живём
+~ Где ты живёшь? = Dove vivi?
+
+## Giorno 30 | в o на?
+obiettivo: Scegliere tra «в» e «на» per dire dove sei.
+breve: **в** = dentro (edifici, stanze, città, paesi): в ба́нке, в Росси́и.
+breve: **на** = sopra, all'aperto, agli eventi: на у́лице, на пло́щади, на конце́рте, на уро́ке.
+breve: Da imparare a memoria: на рабо́те, на по́чте, на вокза́ле, на стадио́не.
+
+### Lezione
+Per dire **dove** si usano due preposizioni, entrambe col prepositivo.
+
+#### в — dentro
+Luoghi chiusi, con muri e tetto; città e paesi:
+- **в шко́ле**, **в ба́нке**, **в магази́не**, **в теа́тре**;
+- **в Москве́**, **в Ита́лии**.
+
+#### на — sopra, all'aperto, eventi
+- sopra una superficie: **на столе́** (sul tavolo);
+- spazi aperti: **на у́лице** (per strada), **на пло́щади** (in piazza), **на мо́ре** (al mare);
+- eventi e attività: **на конце́рте**, **на уро́ке** (a lezione), **на вы́ставке** (a una mostra).
+
+---
+#### Le eccezioni da sapere a memoria
+Alcuni posti vogliono **на** senza una vera ragione:
+- **на рабо́те** — al lavoro;
+- **на по́чте** — alla posta;
+- **на вокза́ле** — alla stazione;
+- **на стадио́не** — allo stadio.
+
+> Trucco: impara ogni luogo nuovo insieme alla sua preposizione: «на по́чте», non solo «по́чта».
+
+### Parole
+на = su, a (con il prepositivo: dove) [prep]
+по́чта = posta, ufficio postale [f]
+вокза́л = stazione ferroviaria [m]
+конце́рт = concerto [m]
+уро́к = lezione (a scuola) [m]
+пло́щадь = piazza [f]
+стадио́н = stadio [m]
+вы́ставка = mostra, esposizione [f]
+
+### Frasi
+Па́па на рабо́те. = Papà è al lavoro.
+Мы на конце́рте. = Siamo a un concerto.
+Он на по́чте. = È alla posta.
+Де́ти на уро́ке. = I bambini sono a lezione.
+Где ты? — Я на вокза́ле. = Dove sei? — Alla stazione.
+Кни́га на столе́. = Il libro è sul tavolo.
+
+### Esercizi
+? Па́па ___ рабо́те. = Papà è al lavoro. {на | в}
+? Мы ___ ба́нке. = Siamo in banca. {в | на}
+? Он ___ по́чте. = È alla posta. {на | в}
+? Они́ ___ Ита́лии. = Sono in Italia. {в | на}
+? Я ___ у́лице. = Sono per strada. {на | в}
+? Мы на ___ . = Siamo al concerto. {конце́рте | конце́рт | конце́рта}
+? Кни́га на ___ . = Il libro è sul tavolo. {столе́ | стол | стола́}
+> вокза́л → на … → на вокза́ле
+> пло́щадь → на … → на пло́щади
+~ Де́ти на уро́ке. = I bambini sono a lezione.
+
+## Giorno 31 | La casa
+obiettivo: Descrivere casa tua e dire dove sono le cose.
+breve: кварти́ра (appartamento), ко́мната (stanza), ку́хня (cucina), спа́льня (camera da letto), ва́нная (bagno).
+breve: Si dice **на ку́хне** (in cucina), ma **в ко́мнате**, **в спа́льне**.
+breve: на столе́, на дива́не, на крова́ти: le cose stanno «su».
+
+### Lezione
+#### Le stanze
+| Russo | Italiano |
+|---|---|
+| кварти́ра | appartamento |
+| ко́мната | stanza |
+| ку́хня | cucina |
+| спа́льня | camera da letto |
+| гости́ная | soggiorno, salotto |
+| ва́нная | bagno |
+
+> **Ва́нная** e **гости́ная** sono aggettivi usati come nomi («la [stanza] del bagno», «la [stanza] degli ospiti»).
+
+---
+#### Dov'è?
+- **Ма́ма на ку́хне.** — La mamma è in cucina. (si dice **на**!)
+- **Па́па в ко́мнате.** — Papà è nella stanza.
+- **Ко́шка на дива́не.** — La gatta è sul divano.
+- **Кни́га на столе́.** — Il libro è sul tavolo.
+
+Attenzione alle parole in **-ь** femminili: **дверь → на две́ри**, **крова́ть → на крова́ти** (prepositivo in **-и**). Ne parliamo domani.
+
+### Parole
+кварти́ра = appartamento [f]
+ко́мната = stanza [f]
+ку́хня = cucina [f]
+спа́льня = camera da letto [f]
+гости́ная = soggiorno, salotto [f; si declina come un aggettivo]
+ва́нная = bagno [f; si declina come un aggettivo]
+дверь = porta [f]
+стул = sedia [m]
+крова́ть = letto [f]
+дива́н = divano [m]
+шкаф = armadio [m]
+
+### Frasi
+Где ма́ма? — Она́ на ку́хне. = Dov'è la mamma? — In cucina.
+Ко́шка на дива́не. = La gatta è sul divano.
+Моя́ кварти́ра ма́ленькая, но краси́вая. = Il mio appartamento è piccolo, ma bello.
+Па́па в ко́мнате, а де́ти в спа́льне. = Papà è nella stanza e i bambini in camera da letto.
+Телефо́н на крова́ти. = Il telefono è sul letto.
+Ва́нная здесь, а ку́хня там. = Il bagno è qui e la cucina là.
+
+### Esercizi
+? Ма́ма на ___ . = La mamma è in cucina. {ку́хне | ку́хня | ку́хню}
+? Ко́шка на ___ . = La gatta è sul divano. {дива́не | дива́н | дива́на}
+? Па́па в ___ . = Papà è nella stanza. {ко́мнате | ко́мната | ко́мнату}
+? Телефо́н на ___ . = Il telefono è sul letto. {крова́ти | крова́те | крова́ть}
+? «спа́льня» vuol dire… {camera da letto | bagno | soggiorno}
+? «шкаф» vuol dire… {armadio | sedia | scaffale per libri}
+? Si dice… {на ку́хне | в ку́хне è l'unico modo | на ко́мнате}
+> Scrivi «porta» in russo → дверь
+> Scrivi «sedia» in russo → стул
+~ Ко́шка на дива́не. = La gatta è sul divano.
+
+## Giorno 32 | Il prepositivo in -и e in -у
+obiettivo: Conoscere le forme speciali del prepositivo.
+breve: -ия → -ии: Росси́я → в Росси́и, Ита́лия → в Ита́лии.
+breve: Femminili in -ь → -и: пло́щадь → на пло́щади, тетра́дь → в тетра́ди.
+breve: Alcuni maschili fanno -у́ (accentata): в лесу́, в саду́, на полу́, на мосту́, в аэропорту́, в шкафу́.
+
+### Lezione
+Il prepositivo in **-е** vale quasi sempre. Ma ci sono tre gruppi speciali.
+
+#### 1. Parole in -ия, -ие, -ий
+La **е** diventa **и**:
+- **Росси́я → в Росси́и**; **Ита́лия → в Ита́лии**;
+- **зда́ние** (edificio) → **в зда́нии**.
+
+#### 2. Femminili in -ь
+Anche loro fanno **-и**:
+- **пло́щадь → на пло́щади**; **тетра́дь → в тетра́ди**; **крова́ть → на крова́ти**.
+
+---
+#### 3. Il prepositivo «di luogo» in -у́
+Una trentina di nomi maschili molto comuni, quando indicano **dove**, prendono **-у́** con l'accento:
+
+| Nome | Dove |
+|---|---|
+| лес (bosco) | в лес**у́** |
+| сад (giardino) | в сад**у́** |
+| пол (pavimento) | на пол**у́** |
+| мост (ponte) | на мост**у́** |
+| шкаф (armadio) | в шкаф**у́** |
+| аэропо́рт | в аэропорт**у́** |
+| бе́рег (riva) | на берег**у́** |
+
+> Ma solo con **в/на** di luogo: «parlare del bosco» si dice **о ле́се**, con la **е**.
+
+### Parole
+лес = bosco, foresta [m; в лесу́]
+сад = giardino [m; в саду́]
+пол = pavimento [m; на полу́]
+мост = ponte [m; на мосту́]
+аэропо́рт = aeroporto [m; в аэропорту́]
+бе́рег = riva, sponda, costa [m; на берегу́]
+тетра́дь = quaderno [f]
+
+### Frasi
+Мы живём в Ита́лии. = Viviamo in Italia.
+Он рабо́тает в Росси́и. = Lavora in Russia.
+Де́ти в саду́. = I bambini sono in giardino.
+Ко́шка на полу́. = La gatta è sul pavimento.
+Я в аэропорту́. = Sono all'aeroporto.
+Мы в лесу́, на берегу́ реки́. = Siamo nel bosco, sulla riva del fiume.
+
+### Esercizi
+? Мы живём в ___ . = Viviamo in Italia. {Ита́лии | Ита́лие | Ита́лия}
+? Он в ___ . = È in Russia. {Росси́и | Росси́е | Росси́ю}
+? Де́ти в ___ . = I bambini sono in giardino. {саду́ | са́де | сад}
+? Я в ___ . = Sono all'aeroporto. {аэропорту́ | аэропо́рте | аэропо́рт}
+? Ко́шка на ___ . = La gatta è sul pavimento. {полу́ | по́ле | пол}
+? Мы на ___ . = Siamo in piazza. {пло́щади | пло́щаде | пло́щадь}
+? Мы в ___ . = Siamo nel bosco. {лесу́ | ле́се | лес}
+> тетра́дь → в … → в тетра́ди
+> мост → на … → на мосту́
+~ Де́ти в саду́. = I bambini sono in giardino.
+
+## Giorno 33 | Parlare di qualcosa: о + prepositivo
+obiettivo: Dire di che cosa parli, pensi, sogni.
+breve: о + prepositivo = di, su (argomento): говори́ть о рабо́те, ду́мать о ма́ме.
+breve: Davanti a vocale **о** diventa **об**: об Ита́лии, об о́тпуске.
+breve: о чём? (di che cosa?) · о ком? (di chi?) · обо мне́, о тебе́, о нём, о ней, о нас, о вас, о них.
+
+### Lezione
+Il prepositivo si chiama così perché si usa **sempre dopo una preposizione**. Oltre a **в** e **на**, c'è **о** (di, a proposito di):
+
+- **Мы говори́м о рабо́те.** — Parliamo del lavoro.
+- **Я ду́маю о ма́ме.** — Penso alla mamma.
+- **Я мечта́ю о мо́ре.** — Sogno il mare.
+
+Davanti a vocale diventa **об**: **об Ита́лии**, **об уро́ке**.
+
+---
+#### Di che cosa? Di chi?
+- **О чём ты ду́маешь?** — A che cosa pensi?
+- **О ком вы говори́те?** — Di chi parlate?
+
+#### I pronomi
+| io | tu | lui | lei | noi | voi | loro |
+|---|---|---|---|---|---|---|
+| обо мне | о тебе́ | о нём | о ней | о нас | о вас | о них |
+
+---
+#### Писа́ть — scrivere
+Un verbo della prima coniugazione con la **с** che diventa **ш**: **пишу́, пи́шешь, пи́шет, пи́шем, пи́шете, пи́шут**.
+
+### Parole
+о = di, su, a proposito di (con il prepositivo) [prep; об davanti a vocale]
+о чём = di che cosa [espr]
+расска́зывать = raccontare [v impf; расска́зываю, расска́зываешь]
+мечта́ть = sognare (a occhi aperti), desiderare [v impf; мечта́ю, мечта́ешь]
+писа́ть = scrivere [v impf; пишу́, пи́шешь]
+жизнь = vita [f]
+исто́рия = storia [f]
+
+### Frasi
+О чём ты ду́маешь? — О рабо́те. = A cosa pensi? — Al lavoro.
+Он расска́зывает о Росси́и. = Racconta della Russia.
+Я мечта́ю о мо́ре. = Sogno il mare.
+Мы говори́м о нём. = Parliamo di lui.
+Она́ пи́шет письмо́ о жи́зни в Москве́. = Scrive una lettera sulla vita a Mosca.
+Э́то интере́сная исто́рия. = È una storia interessante.
+
+### Esercizi
+? Мы говори́м о ___ . = Parliamo del lavoro. {рабо́те | рабо́та | рабо́ту}
+? Я ду́маю о ___ . = Penso alla mamma. {ма́ме | ма́ма | ма́му}
+? Он расска́зывает ___ Ита́лии. = Racconta dell'Italia. {об | о | в}
+? О ___ ты ду́маешь? = A cosa pensi? {чём | что | ком}
+? Мы говори́м о ___ . = Parliamo di lui. {нём | он | его́}
+? Я ___ письмо́. = Scrivo una lettera. {пишу́ | пи́шет | писа́ю}
+? Они́ ___ о мо́ре. = Sognano il mare. {мечта́ют | мечта́ет | мечта́ем}
+> ты (писа́ть) → пи́шешь
+~ Я мечта́ю о мо́ре. = Sogno il mare.
+
+## Giorno 34 | In città
+obiettivo: Chiedere dov'è un posto in città.
+breve: **Скажи́те, пожа́луйста, где здесь апте́ка?** — Scusi, dov'è una farmacia qui?
+breve: **Здесь есть ры́нок?** — Qui c'è un mercato? (есть = c'è, ci sono)
+breve: апте́ка, больни́ца, гости́ница, библиоте́ка, це́рковь, ры́нок, остано́вка.
+
+### Lezione
+#### Chiedere la strada
+Per fermare qualcuno si comincia con **Скажи́те, пожа́луйста…** — «Mi dica, per favore…»: è il modo più educato.
+
+- **Скажи́те, пожа́луйста, где здесь апте́ка?** — Scusi, dov'è una farmacia qui?
+- **Апте́ка там, на пло́щади.** — La farmacia è là, in piazza.
+
+---
+#### C'è? — есть
+Per chiedere se un posto **esiste** si usa **есть** (c'è, ci sono):
+- **Здесь есть ры́нок?** — Qui c'è un mercato?
+- **Да, есть.** — Sì, c'è.
+
+> **Есть** è la forma del verbo «essere» che vuol dire «esistere, esserci». Non si usa per dire «è» (Он врач).
+
+---
+#### I posti della città
+| Russo | Italiano |
+|---|---|
+| апте́ка | farmacia |
+| больни́ца | ospedale |
+| гости́ница | albergo |
+| библиоте́ка | biblioteca |
+| це́рковь | chiesa |
+| ры́нок | mercato |
+| остано́вка | fermata |
+
+Ricordati le preposizioni: **в апте́ке**, **в больни́це**, **в гости́нице**, **в це́ркви**, **на ры́нке**, **на остано́вке**.
+
+### Parole
+скажи́те = mi dica, dica (per fermare qualcuno) [inter; скажи́те, пожа́луйста…]
+здесь есть = qui c'è, ci sono [espr]
+апте́ка = farmacia [f]
+больни́ца = ospedale [f]
+гости́ница = albergo [f]
+библиоте́ка = biblioteca [f]
+це́рковь = chiesa [f; prepositivo в це́ркви]
+ры́нок = mercato [m; на ры́нке]
+остано́вка = fermata [f]
+
+### Frasi
+Скажи́те, пожа́луйста, где здесь апте́ка? = Scusi, dov'è una farmacia qui?
+Апте́ка там, на пло́щади. = La farmacia è là, in piazza.
+Здесь есть ры́нок? — Да, есть. = Qui c'è un mercato? — Sì, c'è.
+Мы живём в гости́нице в це́нтре. = Stiamo in un albergo in centro.
+Она́ рабо́тает в больни́це. = Lavora in ospedale.
+Где остано́вка? — Вот она́. = Dov'è la fermata? — Eccola.
+
+### Esercizi
+? ___ , пожа́луйста, где здесь апте́ка? {Скажи́те | Повтори́те | Помоги́те}
+? Здесь ___ ры́нок? = Qui c'è un mercato? {есть | быть | э́то}
+? Она́ рабо́тает в ___ . = Lavora in ospedale. {больни́це | больни́ца | больни́цу}
+? Мы на ___ . = Siamo alla fermata. {остано́вке | остано́вка | остано́вку}
+? Я в ___ . = Sono in biblioteca. {библиоте́ке | библиоте́ка | библиоте́ки}
+? «гости́ница» vuol dire… {albergo | ospite | soggiorno}
+? «апте́ка» vuol dire… {farmacia | biblioteca | panetteria}
+> ры́нок → на … → на ры́нке
+~ Скажи́те, пожа́луйста, где здесь апте́ка? = Scusi, dov'è una farmacia qui?
+
+## Giorno 35 | Ripasso della settimana
+obiettivo: Leggere la descrizione di una città e di una vita.
+
+### Lettura | Мой го́род | La mia città
+Меня́ зову́т А́нна. Я живу́ в Москве́. = Mi chiamo Anna. Vivo a Mosca.
+Москва́ — большо́й и краси́вый го́род. = Mosca è una città grande e bella.
+Я живу́ в це́нтре, на у́лице Пу́шкина. = Abito in centro, in via Puškin.
+Моя́ кварти́ра ма́ленькая, но краси́вая. = Il mio appartamento è piccolo, ma bello.
+Я рабо́таю в ба́нке. Мой банк то́же в це́нтре. = Lavoro in banca. Anche la mia banca è in centro.
+Мой брат живёт в Петербу́рге. = Mio fratello vive a San Pietroburgo.
+Он рабо́тает в музе́е, в Эрмита́же. = Lavora in un museo, all'Ermitage.
+Мои́ роди́тели живу́т на ю́ге, на мо́ре. = I miei genitori vivono al sud, al mare.
+Я ча́сто ду́маю о них. = Penso spesso a loro.
+Иногда́ я мечта́ю о до́ме на берегу́ мо́ря. = A volte sogno una casa in riva al mare.
+А где живёшь ты? = E tu dove abiti?
+
+### Domande
+? Dove lavora Anna? {in banca | in un museo | all'università}
+? Dove vive suo fratello? {a San Pietroburgo | a Mosca | al sud}
+? Dove vivono i suoi genitori? {al sud, al mare | in centro a Mosca | in Italia}
+? Che cosa sogna a volte Anna? {una casa in riva al mare | un appartamento grande | un lavoro nuovo}

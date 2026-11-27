@@ -85,10 +85,10 @@ Oggi le lettere più insidiose: **sembrano** lettere latine, ma si leggono in un
 
 ---
 #### Un trucco per ricordarle
-- **Р** è la «r»: pensa a **р**есторан, «ristorante».
-- **Н** è la «n»: **н**ет, «no».
-- **С** è sempre «s»: **с**ок, «succo».
-- **В** è la «v»: **в**от, «ecco».
+- **Р** è la «r»: pensa a рестора́н, «ristorante».
+- **Н** è la «n»: нет, «no».
+- **С** è sempre «s»: сок, «succo».
+- **В** è la «v»: вот, «ecco».
 
 > La Х non esiste in italiano: è un'aspirata che si sente in gola, come in «Bach» in tedesco o in «jota» in spagnolo.
 
@@ -131,7 +131,7 @@ E due parole utilissime: **нет** (no) e **вот** (ecco): **Вот метр�
 ~ Вот рестора́н. = Ecco il ristorante.
 
 ## Giorno 3 | Lettere nuove: Б, Г, Д, З, И, Й, Л, П, Ф
-obiettivo: Imparare nove lettere nuove e leggere parole come «привет» e «парк».
+obiettivo: Imparare nove lettere nuove e leggere parole come «приве́т» e «парк».
 breve: Б = b, Г = g dura, Д = d, З = z sonora, И = i, Й = i breve (j), Л = l, П = p, Ф = f.
 breve: Г è sempre dura: «га, го, гу», ma anche «ги» = «ghi».
 vedi: cyr
@@ -155,7 +155,7 @@ Oggi arrivano nove lettere **nuove**: non le hai mai viste, ma i suoni sono tutt
 #### Attenzione a tre lettere
 - **П** è la «p» (la «П» greca), non la «n».
 - **Г** è sempre una «g» dura: **ги** si legge «ghi», mai «gi».
-- **З** è una «s» sonora, come in «rosa» o «sbaglio»: **з**ал, **з**вук. Non è mai «z» di «pizza».
+- **З** è una «s» sonora, come in «rosa» o «sbaglio»: зал, звук. Non è mai la «z» di «pizza».
 
 ---
 #### La parola più importante
