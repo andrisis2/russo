@@ -1,0 +1,369 @@
+# Settimana 45 | I numeri al completo
+
+## Giorno 309 | Declinare uno, due, tre, quattro
+obiettivo: Declinare 1, 2, 3 e 4 in tutti i casi.
+breve: **оди́н** si declina come **э́тот**: **одного́, одному́, одни́м, об одно́м**; femminile **одна́ → одно́й, одну́**.
+breve: **два, три, четы́ре**: gen. e prep. **двух, трёх, четырёх**; dat. **двум, трём, четырём**; strum. **двумя́, тремя́, четырьмя́**.
+breve: All'accusativo, con i nomi animati si usa il genitivo: **Я ви́жу двух дете́й**; con gli inanimati il nominativo: **Я ви́жу два до́ма**.
+
+### Lezione
+#### Оди́н
+| Caso | m / n | f | pl |
+|---|---|---|---|
+| Nom. | оди́н / одно́ | одна́ | одни́ |
+| Gen. | одного́ | одно́й | одни́х |
+| Dat. | одному́ | одно́й | одни́м |
+| Acc. | = nom. o gen. | одну́ | = nom. o gen. |
+| Strum. | одни́м | одно́й | одни́ми |
+| Prep. | об одно́м | об одно́й | об одни́х |
+
+**Одни́** (plurale) vuol dire «soli» o «alcuni»: **Мы бы́ли одни́.** — Eravamo soli.
+
+---
+#### Два, три, четы́ре
+| Caso | 2 | 3 | 4 |
+|---|---|---|---|
+| Nom. | два / две | три | четы́ре |
+| Gen. / Prep. | двух | трёх | четырёх |
+| Dat. | двум | трём | четырём |
+| Strum. | двумя́ | тремя́ | четырьмя́ |
+
+Nei casi obliqui il nome va al **plurale** nello stesso caso: **с двумя́ сосе́дями**, **к трём часа́м**, **о четырёх дня́х**.
+
+---
+#### Espressioni utili
+- **ни одного́** — neanche uno: **У меня́ нет ни одного́ рубля́.**
+- **по одному́** — uno alla volta: **Входи́те по одному́!**
+- **вдвоём, втроём** — in due, in tre: **Мы пое́хали вдвоём.**
+
+### Parole
+ни одного́ = neanche uno, nessuno [espr]
+по одному́ = uno alla volta [espr]
+вдвоём = in due [avv]
+втроём = in tre [avv]
+одина́ковый = uguale, identico [agg]
+слу́чай = caso, occasione; episodio [m]
+
+### Frasi
+У меня́ нет ни одного́ рубля́. = Non ho neanche un rublo.
+Я живу́ с двумя́ сосе́дями. = Vivo con due coinquilini.
+Мы пое́хали в Петербу́рг вдвоём. = Siamo andati a San Pietroburgo in due.
+Он рассказа́л об одно́м интере́сном слу́чае. = Ha raccontato un episodio interessante.
+Я ви́жу трёх ко́шек. = Vedo tre gatte.
+Входи́те по одному́! = Entrate uno alla volta!
+
+### Esercizi
+? Я живу́ с ___ сосе́дями. = Vivo con due coinquilini. {двумя́ | двух | два}
+? Он рассказа́л об ___ слу́чае. = Ha raccontato un episodio. {одно́м | оди́н | одного́}
+? У меня́ нет ни ___ рубля́. = Non ho neanche un rublo. {одного́ | оди́н | одному́}
+? Я ви́жу ___ дете́й. = Vedo tre bambini. {трёх | три | тремя́}
+? Мы да́ли пода́рки ___ де́вочкам. = Abbiamo dato i regali a quattro bambine. {четырём | четырёх | четы́ре}
+? Мы пое́хали ___ . = Siamo andati in due. {вдвоём | два | две}
+? У нас ___ телефо́ны. = Abbiamo telefoni identici. {одина́ковые | одни́ | одино́кие}
+> три (strumentale) → тремя́
+~ Мы пое́хали в Петербу́рг вдвоём. = Siamo andati a San Pietroburgo in due.
+
+## Giorno 310 | Declinare i numeri dal cinque in su
+obiettivo: Declinare i numeri grandi nei casi più frequenti.
+breve: Da 5 a 20 e il 30 si declinano come **ночь**: **пять → пяти́, пятью́**; **во́семь → восьми́, восемью́**.
+breve: 40, 90 e 100 hanno solo due forme: **со́рок → сорока́**, **девяно́сто → девяно́ста**, **сто → ста**.
+breve: 50-80 e le centinaia cambiano in entrambe le parti: **пятьдеся́т → пяти́десяти**, **две́сти → двухсо́т**.
+
+### Lezione
+#### Da 5 a 30
+| Caso | 5 | 8 | 20 |
+|---|---|---|---|
+| Nom. / Acc. | пять | во́семь | два́дцать |
+| Gen. / Dat. / Prep. | пяти́ | восьми́ | двадцати́ |
+| Strum. | пятью́ | восемью́ | двадцатью́ |
+
+---
+#### Le forme speciali
+| Nom. / Acc. | Tutti gli altri casi |
+|---|---|
+| со́рок | сорока́ |
+| девяно́сто | девяно́ста |
+| сто | ста |
+
+50-80 cambiano in entrambe le parti: **пятьдеся́т → пяти́десяти** (strum. **пятью́десятью**). Le centinaia anche: **две́сти → двухсо́т**, **три́ста → трёхсо́т**, **пятьсо́т → пятисо́т**.
+
+---
+#### I numeri composti
+Nella lingua scritta si declina **ogni** parte: **с двадцатью́ пятью́ студе́нтами**. A voce, nei numeri lunghi, molti russi semplificano: non preoccuparti se non ci riesci sempre!
+
+> **Ты́сяча** e **миллио́н** si declinano come nomi: **с ты́сячей рубле́й**, **о миллио́не**. E per le quantità approssimative: **деся́ток** (una decina), **со́тня** (un centinaio).
+
+### Parole
+деся́ток = decina [m; деся́тка]
+со́тня = centinaio [f; pl. со́тни]
+ци́фра = cifra [f]
+посчита́ть = contare, calcolare [v pf; посчита́ю, посчита́ешь]
+
+### Frasi
+Магази́н рабо́тает с девяти́ до восьми́. = Il negozio è aperto dalle nove alle otto.
+Мы до́лго говори́ли о пяти́ гла́вных пробле́мах. = Abbiamo parlato a lungo dei cinque problemi principali.
+Он прие́хал с сорока́ рубля́ми в карма́не. = È arrivato con quaranta rubli in tasca.
+В за́ле бы́ло о́коло двухсо́т челове́к. = Nella sala c'erano circa duecento persone.
+Я купи́л деся́ток яи́ц. = Ho comprato una decina di uova.
+Со́тни тури́стов прие́хали на фестива́ль. = Centinaia di turisti sono venuti al festival.
+
+### Esercizi
+? Магази́н рабо́тает с девяти́ до ___ . = …dalle nove alle otto. {восьми́ | во́семь | восемью́}
+? Мы говори́ли о ___ пробле́мах. = Abbiamo parlato di cinque problemi. {пяти́ | пять | пятью́}
+? Он прие́хал с ___ рубля́ми. = È arrivato con quaranta rubli. {сорока́ | со́рок | сорокью́}
+? В за́ле бы́ло о́коло ___ челове́к. = …circa duecento persone. {двухсо́т | две́сти | двумста́м}
+? Я купи́л ___ яи́ц. = Ho comprato una decina di uova. {деся́ток | де́сять | деся́тый}
+? «со́тни тури́стов» vuol dire… {centinaia di turisti | cento turisti | un turista su cento}
+> пять (strumentale) → пятью́
+~ Магази́н рабо́тает с девяти́ до восьми́. = Il negozio è aperto dalle nove alle otto.
+
+## Giorno 311 | Collettivi e frazioni
+obiettivo: Usare i numeri collettivi, le frazioni e i decimali.
+breve: I collettivi **дво́е, тро́е, че́тверо** si usano per le persone (**дво́е дете́й**), con i nomi solo plurali (**дво́е су́ток**) e da soli: **Нас бы́ло тро́е.**
+breve: Frazioni: **полови́на** (1/2), **треть** (1/3), **че́тверть** (1/4), **три че́тверти** (3/4).
+breve: **полтора́ часа́** (un'ora e mezza); **два с полови́ной** (due e mezzo).
+
+### Lezione
+#### I numeri collettivi
+| Numero | Collettivo | Esempio |
+|---|---|---|
+| 2 | дво́е | дво́е дете́й |
+| 3 | тро́е | тро́е друзе́й |
+| 4 | че́тверо | че́тверо су́ток |
+| 5 | пя́теро | пя́теро студе́нтов |
+
+Si usano: con i bambini e gli uomini (**У нас дво́е дете́й**), con i nomi solo plurali (**дво́е су́ток** — due giorni interi), e da soli per dire «in quanti»: **Нас бы́ло тро́е.** — Eravamo in tre.
+
+---
+#### Le frazioni
+| Frazione | In russo |
+|---|---|
+| 1/2 | одна́ втора́я = полови́на |
+| 1/3 | одна́ тре́тья = треть |
+| 2/3 | две тре́ти |
+| 1/4 | одна́ четвёртая = че́тверть |
+| 3/4 | три че́тверти |
+
+I decimali: **2,5** = **две це́лых пять деся́тых** (nel parlato: **два с полови́ной**).
+
+---
+#### Uno e mezzo
+**полтора́** (m, n) / **полторы́** (f) + genitivo singolare: **полтора́ часа́**, **полторы́ неде́ли**. Nei casi obliqui: **полу́тора**: **о́коло полу́тора часо́в**.
+
+### Parole
+дво́е = due (collettivo) [num]
+тро́е = tre (collettivo) [num]
+че́тверо = quattro (collettivo) [num]
+су́тки = giorno e notte, 24 ore [pl; gen. су́ток]
+дробь = frazione [f]
+с полови́ной = e mezzo [espr]
+
+### Frasi
+У нас дво́е дете́й: сын и дочь. = Abbiamo due figli: un maschio e una femmina.
+Нас бы́ло тро́е. = Eravamo in tre.
+Я не спал дво́е су́ток! = Non dormo da due giorni interi!
+Три че́тверти студе́нтов сда́ли экза́мен. = Tre quarti degli studenti hanno passato l'esame.
+По́езд идёт два с полови́ной часа́. = Il treno impiega due ore e mezza.
+Мы жда́ли полтора́ часа́. = Abbiamo aspettato un'ora e mezza.
+
+### Esercizi
+? У нас ___ дете́й. = Abbiamo due figli. {дво́е | два | две}
+? Нас бы́ло ___ . = Eravamo in tre. {тро́е | три | тре́тий}
+? Я не спал дво́е ___ ! = …da due giorni interi! {су́ток | су́тки | су́тками}
+? Три ___ студе́нтов сда́ли экза́мен. = Tre quarti degli studenti… {че́тверти | че́тверть | четвёртый}
+? По́езд идёт два с ___ часа́. = …due ore e mezza. {полови́ной | полови́на | полови́ну}
+? Мы жда́ли ___ часа́. = Abbiamo aspettato un'ora e mezza. {полтора́ | полторы́ | полу́тора}
+> Scrivi «la metà» → полови́на
+~ Нас бы́ло тро́е. = Eravamo in tre.
+
+## Giorno 312 | Date e secoli
+obiettivo: Dire date complete, periodi e secoli.
+breve: Solo l'anno: **в** + prepositivo: **в две ты́сячи пя́том году́** (nel 2005).
+breve: Giorno, mese e anno: tutto al genitivo: **пя́того ма́я две ты́сячи пя́того го́да** (il 5 maggio 2005).
+breve: Periodi: **с 2010 по 2015 год** (dal 2010 al 2015 compreso); **в нача́ле / в середи́не / в конце́ ве́ка**.
+
+### Lezione
+#### L'anno
+Il numero dell'anno è un **ordinale**: si declina solo l'ultima parte.
+| Domanda | Forma | Esempio |
+|---|---|---|
+| Che anno? | nominativo | **Сейча́с две ты́сячи два́дцать шесто́й год.** |
+| In che anno? | **в** + prepositivo | **в ты́сяча девятьсо́т шестьдеся́т пе́рвом году́** |
+| Che data? | tutto al genitivo | **двена́дцатого апре́ля ты́сяча девятьсо́т шестьдеся́т пе́рвого го́да** |
+
+---
+#### Periodi e scadenze
+- **с… по…** — da… a… (compreso): **с 2010 по 2015 год**;
+- **к** + dativo — entro: **к 2030 году**;
+- **в нача́ле / в середи́не / в конце́ ве́ка** — all'inizio, a metà, alla fine del secolo;
+- **до на́шей э́ры** — avanti Cristo; **тысячеле́тие** — millennio.
+
+---
+#### Che giorno è?
+- **Како́е сего́дня число́? — Сего́дня пе́рвое сентября́.** (nominativo)
+- **Како́го числа́ твой день рожде́ния? — Двадца́того ию́ня.** (genitivo)
+
+> Ricorda: **в XX ве́ке** si legge **в двадца́том ве́ке**. I secoli si scrivono con i numeri romani.
+
+### Parole
+тысячеле́тие = millennio [n]
+до на́шей э́ры = avanti Cristo [espr]
+середи́на = metà, mezzo [f]
+да́та = data [f]
+Како́го числа́? = In che giorno? [espr]
+
+### Frasi
+Я роди́лся пя́того ма́я ты́сяча девятьсо́т девяно́сто пе́рвого го́да. = Sono nato il 5 maggio 1991.
+Мы жи́ли в Москве́ с две ты́сячи деся́того по две ты́сячи пятна́дцатый год. = Abbiamo vissuto a Mosca dal 2010 al 2015.
+Петербу́рг основа́ли в нача́ле восемна́дцатого ве́ка. = San Pietroburgo fu fondata all'inizio del XVIII secolo.
+Э́тот го́род появи́лся ещё до на́шей э́ры. = Questa città è nata già prima di Cristo.
+К две ты́сячи тридца́тому го́ду мы хоти́м постро́ить дом. = Entro il 2030 vogliamo costruire una casa.
+Како́го числа́ твой день рожде́ния? — Двадца́того ию́ня. = Che giorno è il tuo compleanno? — Il 20 giugno.
+
+### Esercizi
+? Я роди́лся пя́того ма́я ты́сяча девятьсо́т девяно́сто пе́рвого ___ . = …il 5 maggio 1991. {го́да | год | году́}
+? Он роди́лся в ты́сяча девятьсо́т восьмидеся́том ___ . = È nato nel 1980. {году́ | го́да | год}
+? Мы жи́ли там ___ 2010 по 2015 год. = …dal 2010 al 2015. {с | от | из}
+? Петербу́рг основа́ли в ___ восемна́дцатого ве́ка. = …all'inizio del XVIII secolo. {нача́ле | нача́ло | нача́ла}
+? Како́го ___ твой день рожде́ния? = Che giorno è il tuo compleanno? {числа́ | число́ | чи́сел}
+? «до на́шей э́ры» vuol dire… {avanti Cristo | dopo Cristo | nel nostro secolo}
+> Scrivi «millennio» → тысячеле́тие
+~ Како́го числа́ твой день рожде́ния? = Che giorno è il tuo compleanno?
+
+## Giorno 313 | Misure e distanze
+obiettivo: Parlare di misure, pesi e distanze.
+breve: **метр, сантиме́тр, киломе́тр**; **грамм, килогра́мм**; **литр**. **Расстоя́ние от… до…** = la distanza da… a…
+breve: Dimensioni: **длина́** (lunghezza), **ширина́** (larghezza), **высота́** (altezza), **вес** (peso).
+breve: **ве́сить** = pesare (avere un peso): **Чемода́н ве́сит два́дцать килогра́ммов.** **Како́й длины́ мост?** — Quanto è lungo il ponte?
+
+### Lezione
+#### Le misure
+| Misura | Russo |
+|---|---|
+| lunghezza | метр, сантиме́тр, киломе́тр |
+| peso | грамм, килогра́мм, то́нна |
+| volume | литр |
+
+---
+#### Le dimensioni
+- **Длина́ моста́ — пятьсо́т ме́тров.** — Il ponte è lungo cinquecento metri.
+- **Ширина́ реки́ — сто ме́тров.** — Il fiume è largo cento metri.
+- **Высота́ до́ма — три́дцать ме́тров.**
+- Per chiedere: **Како́й длины́…? Како́й высоты́…?** (genitivo).
+- L'altezza di una persona: **Ско́лько у тебя́ рост?** — **Метр во́семьдесят.**
+
+---
+#### Peso e distanza
+- **ве́сить** — avere un peso: **Ско́лько ты ве́сишь?** (non confonderlo con **взве́сить**, pesare qualcosa: giorno 242);
+- **расстоя́ние от** + gen. **до** + gen.: **Расстоя́ние от Москвы́ до Петербу́рга — семьсо́т киломе́тров.**
+- **в двух шага́х** — a due passi.
+
+> Al mercato si dice spesso **две́сти грамм** invece di **две́сти гра́ммов**: il libro vuole **гра́ммов**, la vita quotidiana spesso no.
+
+### Parole
+метр = metro [m]
+сантиме́тр = centimetro [m]
+киломе́тр = chilometro [m]
+грамм = grammo [m]
+длина́ = lunghezza [f]
+ширина́ = larghezza [f]
+высота́ = altezza [f]
+вес = peso [m]
+ве́сить = pesare (avere un peso) [v impf; ве́шу, ве́сишь]
+расстоя́ние = distanza [n]
+
+### Frasi
+Расстоя́ние от Москвы́ до Петербу́рга — семьсо́т киломе́тров. = La distanza da Mosca a San Pietroburgo è di settecento chilometri.
+Эльбру́с — са́мая высо́кая гора́ Евро́пы: бо́лее пяти́ ты́сяч ме́тров. = L'Elbrus è la montagna più alta d'Europa: oltre cinquemila metri.
+Мой чемода́н ве́сит два́дцать три килогра́мма. = La mia valigia pesa ventitré chili.
+Да́йте две́сти гра́ммов сы́ра. = Mi dia duecento grammi di formaggio.
+Магази́н в двух шага́х от до́ма. = Il negozio è a due passi da casa.
+Како́й длины́ э́тот мост? = Quanto è lungo questo ponte?
+
+### Esercizi
+? Расстоя́ние от Москвы́ ___ Петербу́рга — семьсо́т киломе́тров. {до | к | на}
+? Мой чемода́н ___ два́дцать килогра́ммов. = La mia valigia pesa venti chili. {ве́сит | взве́сит | ве́шает}
+? Како́й ___ э́тот мост? = Quanto è lungo questo ponte? {длины́ | длина́ | дли́нный}
+? Магази́н в двух ___ от до́ма. = …a due passi da casa. {шага́х | шага́ | шаг}
+? семьсо́т ___ = settecento chilometri {киломе́тров | киломе́тра | киломе́тр}
+? «ширина́» vuol dire… {larghezza | altezza | profondità}
+> Scrivi «distanza» → расстоя́ние
+~ Магази́н в двух шага́х от до́ма. = Il negozio è a due passi da casa.
+
+## Giorno 314 | Conti e sconti
+obiettivo: Fare i conti e parlare di prezzi, sconti e risparmi.
+breve: **ски́дка** = sconto: **ски́дка два́дцать проце́нтов**; **распрода́жа** = saldi.
+breve: Le operazioni: **плюс, ми́нус, умно́жить на** (×), **раздели́ть на** (÷): **Два плюс три — пять.**
+breve: **сэконо́мить** = risparmiare; **копи́ть на** + accusativo = mettere da parte per: **Я коплю́ на маши́ну.**
+
+### Lezione
+#### Le operazioni
+| Operazione | In russo |
+|---|---|
+| 2 + 3 = 5 | два плюс три — пять |
+| 7 − 4 = 3 | семь ми́нус четы́ре — три |
+| 3 × 4 = 12 | три умно́жить на четы́ре — двена́дцать |
+| 10 : 2 = 5 | де́сять раздели́ть на два — пять |
+
+---
+#### In negozio
+- **ски́дка** — sconto: **Мо́жно со ски́дкой?** — Si può avere uno sconto?
+- **распрода́жа** — i saldi: **На распрода́же всё в два ра́за деше́вле.**
+- **сто́имость** — il costo: **сто́имость биле́та**;
+- **Ско́лько с меня́?** — Quanto le devo?
+- **переплати́ть** — pagare troppo: **Я переплати́л!**
+
+---
+#### Risparmiare
+- **эконо́мить** (impf, giorno 263) / **сэконо́мить** (pf): **Я сэконо́мил ты́сячу рубле́й.**
+- **копи́ть** — mettere da parte: **Я коплю́ на о́тпуск.**
+
+### Parole
+ски́дка = sconto [f]
+распрода́жа = saldi, svendita [f]
+сто́имость = costo, prezzo [f]
+умно́жить = moltiplicare [v pf; умно́жу, умно́жишь]
+раздели́ть = dividere [v pf; разделю́, разде́лишь]
+сэконо́мить = risparmiare [v pf; сэконо́млю, сэконо́мишь]
+переплати́ть = pagare troppo [v pf; переплачу́, перепла́тишь]
+копи́ть = mettere da parte [v impf; коплю́, ко́пишь; на + acc.]
+Ско́лько с меня́? = Quanto le devo? [espr]
+
+### Frasi
+Два плюс три — пять. = Due più tre fa cinque.
+Сего́дня на всё ски́дка два́дцать проце́нтов. = Oggi su tutto c'è il venti per cento di sconto.
+Я купи́ла пальто́ на распрода́же. = Ho comprato il cappotto ai saldi.
+Ско́лько с меня́? = Quanto le devo?
+Я коплю́ на но́вый телефо́н. = Sto mettendo da parte i soldi per un telefono nuovo.
+Мы сэконо́мили ты́сячу рубле́й. = Abbiamo risparmiato mille rubli.
+
+### Esercizi
+? Сего́дня на всё ___ два́дцать проце́нтов. = …il venti per cento di sconto. {ски́дка | ски́дки | ски́дку}
+? Я купи́ла пальто́ на ___ . = …ai saldi. {распрода́же | распрода́жа | распрода́жу}
+? Ско́лько ___ меня́? = Quanto le devo? {с | у | от}
+? Я коплю́ ___ но́вый телефо́н. = Metto da parte i soldi per un telefono nuovo. {на | для | за}
+? Три умно́жить на четы́ре — ___ . {двена́дцать | семь | оди́ннадцать}
+? Де́сять раздели́ть на два — ___ . {пять | двена́дцать | во́семь}
+> Scrivi «sconto» → ски́дка
+~ Я коплю́ на но́вый телефо́н. = Sto mettendo da parte i soldi per un telefono nuovo.
+
+## Giorno 315 | Ripasso della settimana
+obiettivo: Leggere una storia piena di numeri e di conti.
+
+### Lettura | Ско́лько сто́ит мечта́? | Quanto costa un sogno?
+И́ра давно́ мечта́ет пое́хать на Байка́л. = Ira sogna da tempo di andare sul Bajkal.
+Она́ посчита́ла: биле́ты на по́езд сто́ят о́коло сорока́ ты́сяч рубле́й. = Ha fatto i conti: i biglietti del treno costano circa quarantamila rubli.
+Ещё ну́жно бо́лее двадцати́ ты́сяч на гости́ницу и пять ты́сяч на еду́. = Servono anche più di ventimila per l'albergo e cinquemila per il cibo.
+Всего́ — приме́рно шестьдеся́т пять ты́сяч. = In tutto, circa sessantacinquemila.
+И́ра получа́ет пятьдеся́т ты́сяч в ме́сяц, поэ́тому реши́ла копи́ть. = Ira guadagna cinquantamila al mese, perciò ha deciso di mettere da parte i soldi.
+Ка́ждый ме́сяц она́ откла́дывала по пять ты́сяч рубле́й. = Ogni mese metteva da parte cinquemila rubli.
+Она́ переста́ла покупа́ть ко́фе в кафе́ и сэконо́мила ещё полторы́ ты́сячи. = Ha smesso di comprare il caffè al bar e ha risparmiato altri millecinquecento.
+А в ма́е на биле́ты была́ ски́дка три́дцать проце́нтов! = E a maggio c'era uno sconto del trenta per cento sui biglietti!
+Че́рез де́сять ме́сяцев у И́ры бы́ли все де́ньги. = Dopo dieci mesi Ira aveva tutti i soldi.
+Тепе́рь она́ зна́ет, ско́лько сто́ит мечта́: немно́го терпе́ния и чуть-чу́ть уда́чи. = Ora sa quanto costa un sogno: un po' di pazienza e un pizzico di fortuna.
+
+### Domande
+? Dove sogna di andare Ira? {sul Bajkal | a Mosca | in Italia}
+? Quanto metteva da parte ogni mese? {cinquemila rubli | cinquantamila rubli | millecinquecento rubli}
+? Che sconto c'era a maggio sui biglietti? {il 30% | il 10% | il 50%}
+? Dopo quanti mesi Ira ha avuto tutti i soldi? {dieci | sei | dodici}
