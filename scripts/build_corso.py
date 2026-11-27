@@ -375,6 +375,7 @@ RE_FRASE = re.compile(r'^(?P<ru>.+?)\s+=\s+(?P<it>.+?)(?:\s+//\s*(?P<n>.*))?\s*$
 RE_SCELTA = re.compile(r'^\?\s*(?P<q>.*?)\s*\{(?P<o>[^}]+)\}\s*(?:=\s*(?P<it>.*?))?\s*(?:\s//\s*(?P<n>.*))?\s*$')
 RE_SCRIVI = re.compile(r'^>\s*(?P<q>.*?)\s*→\s*(?P<a>[^=]+?)\s*(?:=\s*(?P<it>.*?))?\s*(?:\s//\s*(?P<n>.*))?\s*$')
 RE_COMPONI = re.compile(r'^~\s*(?P<ru>.+?)\s+=\s+(?P<it>.+?)(?:\s+//\s*(?P<n>.*))?\s*$')
+RE_ASCOLTO = re.compile(r'^@\s*(?P<ru>.+?)\s*(?:→\s*(?P<q>[^{]*?))?\s*\{(?P<o>[^}]+)\}\s*(?:=\s*(?P<it>.*?))?\s*(?:\s//\s*(?P<n>.*))?\s*$')
 
 
 def leggi_moduli():
@@ -417,6 +418,21 @@ def parse_esercizio(riga, f, n):
     m = RE_COMPONI.match(riga)
     if riga.startswith('~') and m:
         e = {'t': 'c', 'ru': m.group('ru').strip(), 'it': m.group('it').strip()}
+        if m.group('n'):
+            e['nota'] = m.group('n').strip()
+        return e
+    # ascolto: la frase russa si sente ma non si legge, poi si sceglie la risposta
+    m = RE_ASCOLTO.match(riga)
+    if riga.startswith('@') and m:
+        opts = [o.strip() for o in m.group('o').split('|') if o.strip()]
+        if len(opts) < 2:
+            avviso(f, n, 'ascolto con meno di 2 opzioni')
+            return None
+        if len(set(o.lower() for o in opts)) != len(opts):
+            avviso(f, n, 'opzioni ripetute')
+        e = {'t': 'a', 'ru': m.group('ru').strip(), 'q': (m.group('q') or '').strip(), 'ok': opts[0], 'opts': opts[1:]}
+        if m.group('it'):
+            e['it'] = m.group('it').strip()
         if m.group('n'):
             e['nota'] = m.group('n').strip()
         return e

@@ -8956,6 +8956,7 @@ const CORSO_RENDER = {
         dopo:ok=>{ grade(e.id, ok); if(!ok) logErrore(senzaAccento(intera || e.ok[0]), e.it || e.q, 'Corso'); }});
     }
     if(e.t === 'c') return esComponi({id:e.id, ru:e.ru, it:e.it, nota:e.nota}, ctx);
+    if(e.t === 'a') return esAscolto(e, ctx);
     return false;
   },
   // frase da ricomporre
@@ -9004,6 +9005,27 @@ function esScelta(e, ctx){
     if(intera && haCirillico(intera)) card.appendChild(azioniTesto(senzaAccento(intera), e.it || ''));
     ctx.fatto(ok?1:0, 1);
   });
+}
+
+// Ascolto: la frase russa si sente (non si legge) e si risponde a una domanda
+function esAscolto(e, ctx){
+  ctx.kick.querySelector('span').textContent = '🎧 Ascolta';
+  const card = $(`<div class="qcard"><div class="kick"></div>
+    <button class="big-play" type="button" aria-label="Ascolta di nuovo">${ic('vol')}</button>
+    <div class="qsub">Tocca per riascoltare</div></div>`);
+  card.querySelector('.kick').textContent = e.q || 'Che cosa hai sentito?';
+  card.querySelector('.big-play').onclick = ()=>speak(e.ru);
+  ctx.wrap.appendChild(card);
+  rpOpzioni(ctx, shuffle([e.ok, ...e.opts]), e.ok, ok=>{
+    grade(e.id, ok); speak(e.ru);
+    if(!ok) logErrore(senzaAccento(e.ru), e.it || e.ok, 'Corso');
+    const r = $(`<div class="q" lang="ru" style="font-size:20px"></div>`); r.textContent = e.ru;
+    card.appendChild(r);
+    if(e.nota) rpNota(card, e.nota);
+    card.appendChild(azioniTesto(senzaAccento(e.ru), e.it || ''));
+    ctx.fatto(ok?1:0, 1);
+  });
+  setTimeout(()=>speak(e.ru), 250);
 }
 
 // Risposta da scrivere (con la tastiera cirillica dell'app o quella del telefono)

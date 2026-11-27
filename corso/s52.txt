@@ -1,0 +1,444 @@
+# Settimana 52 | Il traguardo
+
+## Giorno 358 | Ripasso: i casi
+obiettivo: Ripassare i sei casi in un colpo d'occhio, con dieci nomi che si usano ogni giorno.
+breve: Sei casi, sei domande: **кто? что?** (nom.) · **кого́? чего́?** (gen.) · **кому́? чему́?** (dat.) · **кого́? что?** (acc.) · **кем? чем?** (strum.) · **о ком? о чём?** (prep.)
+breve: Moto → accusativo (**в Москву́**); stato → prepositivo (**в Москве́**); provenienza → genitivo (**из Москвы́**).
+breve: Dieci nomi fondamentali: **же́нщина, мужчи́на, вещь, часть, го́лос, си́ла, разгово́р, стена́, те́ло, стари́к**.
+
+### Lezione
+#### I sei casi
+| Caso | Domanda | Quando si usa | Preposizioni |
+|---|---|---|---|
+| Nominativo | кто? что? | il soggetto | — |
+| Genitivo | кого́? чего́? | «di», negazione, quantità | у, без, из, от, до, по́сле, для |
+| Dativo | кому́? чему́? | a chi; età; piacere | к, по |
+| Accusativo | кого́? что? | l'oggetto; il moto | в, на, за, че́рез |
+| Strumentale | кем? чем? | con; mezzo; diventare | с, ме́жду, над, под, пе́ред |
+| Prepositivo | о ком? о чём? | luogo; argomento | в, на, о |
+
+---
+#### Le desinenze al singolare
+| Caso | m (стол) | n (окно́) | f (кни́га) | f in -ь (ночь) |
+|---|---|---|---|---|
+| Nom. | стол | окно́ | кни́га | ночь |
+| Gen. | стола́ | окна́ | кни́ги | но́чи |
+| Dat. | столу́ | окну́ | кни́ге | но́чи |
+| Acc. | стол | окно́ | кни́гу | ночь |
+| Strum. | столо́м | окно́м | кни́гой | но́чью |
+| Prep. | о столе́ | об окне́ | о кни́ге | о но́чи |
+
+---
+#### Le desinenze al plurale
+| Caso | m | n | f |
+|---|---|---|---|
+| Nom. | столы́ | о́кна | кни́ги |
+| Gen. | столо́в | о́кон | книг |
+| Dat. | стола́м | о́кнам | кни́гам |
+| Strum. | стола́ми | о́кнами | кни́гами |
+| Prep. | о стола́х | об о́кнах | о кни́гах |
+
+> Al plurale dativo, strumentale e prepositivo sono uguali per tutti i generi: **-ам, -ами, -ах**. Un bel regalo!
+
+### Parole
+же́нщина = donna [f]
+мужчи́на = uomo [m; si declina come un femminile in -а]
+вещь = cosa, oggetto [f; pl. ве́щи, веще́й]
+часть = parte [f]
+го́лос = voce; voto [m; pl. голоса́]
+си́ла = forza [f]
+разгово́р = conversazione [m]
+стена́ = muro, parete [f; acc. сте́ну]
+те́ло = corpo [n]
+стари́к = vecchio, anziano [m]
+
+### Frasi
+Э́та же́нщина — моя́ учи́тельница. = Questa donna è la mia insegnante.
+У э́того мужчи́ны о́чень краси́вый го́лос. = Quell'uomo ha una voce molto bella.
+Я подари́л старику́ кни́гу. = Ho regalato un libro al vecchio.
+Пове́сь карти́ну на сте́ну. = Appendi il quadro alla parete.
+Он говори́л ти́хим го́лосом. = Parlava a bassa voce.
+В мое́й су́мке сли́шком мно́го веще́й. = Nella mia borsa ci sono troppe cose.
+
+### Esercizi
+? У э́того ___ краси́вый го́лос. = Quell'uomo ha una bella voce. {мужчи́ны | мужчи́на | мужчи́ну} // Dopo «у»: genitivo.
+? Я подари́л ___ кни́гу. = Ho regalato un libro al vecchio. {старику́ | старика́ | стари́к} // A chi? Dativo.
+? Пове́сь карти́ну на ___ . = Appendi il quadro alla parete. {сте́ну | стене́ | стена́} // Moto: accusativo.
+? Карти́на виси́т на ___ . = Il quadro è appeso alla parete. {стене́ | сте́ну | стена́} // Stato: prepositivo.
+? Он говори́л ти́хим ___ . = Parlava a bassa voce. {го́лосом | го́лос | го́лоса} // Con che cosa? Strumentale.
+? В су́мке мно́го ___ . = Nella borsa ci sono molte cose. {веще́й | ве́щи | вещь} // Dopo «мно́го»: genitivo plurale.
+? Я ду́маю о на́шем ___ . = Penso alla nostra conversazione. {разгово́ре | разгово́р | разгово́ром}
+? Il dativo plurale di tutti i generi finisce in… {-ам / -ям | -ов / -ей | -ах / -ях}
+> же́нщина (dativo plurale) → же́нщинам
+~ Пове́сь карти́ну на сте́ну. = Appendi il quadro alla parete.
+
+## Giorno 359 | Ripasso: i verbi
+obiettivo: Ripassare coniugazioni, tempi e aspetto, con dodici verbi frequentissimi.
+breve: Due coniugazioni: **-ешь** (**чита́ть: чита́ю, чита́ешь**) e **-ишь** (**говори́ть: говорю́, говори́шь**).
+breve: Il passato: **-л, -ла, -ло, -ли**. Il futuro: **бу́ду** + imperfettivo, oppure il presente del perfettivo: **я прочита́ю**.
+breve: Dodici verbi da non dimenticare: **уви́деть, услы́шать, узна́ть, помо́чь, оста́ться, каза́ться, появи́ться, вспо́мнить, пыта́ться, переста́ть, оста́вить, заме́тить**.
+
+### Lezione
+#### Le due coniugazioni
+| Persona | чита́ть (I) | говори́ть (II) |
+|---|---|---|
+| я | чита́ю | говорю́ |
+| ты | чита́ешь | говори́шь |
+| он / она́ | чита́ет | говори́т |
+| мы | чита́ем | говори́м |
+| вы | чита́ете | говори́те |
+| они́ | чита́ют | говоря́т |
+
+---
+#### Tempi e modi in una tabella
+| Forma | Imperfettivo | Perfettivo |
+|---|---|---|
+| presente | я пишу́ | — |
+| passato | я писа́л | я написа́л |
+| futuro | я бу́ду писа́ть | я напишу́ |
+| imperativo | пиши́! | напиши́! |
+| condizionale | я писа́л бы | я написа́л бы |
+
+---
+#### Dodici coppie da sapere
+| Imperfettivo | Perfettivo | Italiano |
+|---|---|---|
+| ви́деть | уви́деть | vedere |
+| слы́шать | услы́шать | sentire |
+| узнава́ть | узна́ть | venire a sapere; riconoscere |
+| помога́ть | помо́чь | aiutare |
+| остава́ться | оста́ться | restare |
+| появля́ться | появи́ться | comparire |
+| вспомина́ть | вспо́мнить | ricordare |
+| перестава́ть | переста́ть | smettere |
+| оставля́ть | оста́вить | lasciare |
+| замеча́ть | заме́тить | notare |
+
+**Каза́ться** (sembrare) e **пыта́ться** (cercare di, provare a) si usano soprattutto all'imperfettivo: **Мне ка́жется…**, **Я пыта́юсь поня́ть.**
+
+### Parole
+уви́деть = vedere [v pf; уви́жу, уви́дишь]
+услы́шать = sentire, udire [v pf; услы́шу, услы́шишь]
+узна́ть = venire a sapere; riconoscere [v pf; узна́ю, узна́ешь]
+помо́чь = aiutare [v pf; помогу́, помо́жешь; помо́г, помогла́]
+оста́ться = restare, rimanere [v pf; оста́нусь, оста́нешься]
+каза́ться = sembrare [v impf; кажу́сь, ка́жешься]
+появи́ться = comparire, apparire [v pf; появлю́сь, поя́вишься]
+вспо́мнить = ricordare, ricordarsi [v pf; вспо́мню, вспо́мнишь]
+пыта́ться = cercare di, provare a [v impf; пыта́юсь, пыта́ешься]
+переста́ть = smettere [v pf; переста́ну, переста́нешь]
+оста́вить = lasciare [v pf; оста́влю, оста́вишь]
+заме́тить = notare, accorgersi [v pf; заме́чу, заме́тишь]
+
+### Frasi
+Я уви́дел её на у́лице и сра́зу узна́л. = L'ho vista per strada e l'ho riconosciuta subito.
+Я услы́шал э́ту но́вость по ра́дио. = Ho sentito questa notizia alla radio.
+Помоги́ мне, пожа́луйста! = Aiutami, per favore!
+Мне ка́жется, что ско́ро пойдёт дождь. = Mi sembra che presto pioverà.
+Я пыта́юсь вспо́мнить его́ и́мя. = Cerco di ricordare il suo nome.
+Переста́нь, пожа́луйста, и оста́вь меня́ в поко́е! = Smettila, per favore, e lasciami in pace!
+
+### Esercizi
+? Я ___ её и сра́зу узна́л. = L'ho vista e l'ho riconosciuta subito. {уви́дел | ви́жу | уви́жу}
+? ___ мне, пожа́луйста! = Aiutami, per favore! {Помоги́ | Помо́чь | Помогу́}
+? Мне ___ , что ско́ро пойдёт дождь. = Mi sembra che presto pioverà. {ка́жется | кажу́сь | каза́лся}
+? Я ___ вспо́мнить его́ и́мя. = Cerco di ricordare il suo nome. {пыта́юсь | пыта́ется | пыта́ться}
+? Ты ___ , что он уе́хал? = Hai notato che è partito? {заме́тил | замеча́ть | заме́чу}
+? Мы ___ до́ма из-за дождя́. = Siamo rimasti a casa a causa della pioggia. {оста́лись | оста́вили | остаёмся}
+? Il perfettivo di «слы́шать» è… {услы́шать | послу́шать | слу́шать}
+> помо́чь (passato, она́) → помогла́
+~ Я пыта́юсь вспо́мнить его́ и́мя. = Cerco di ricordare il suo nome.
+
+## Giorno 360 | Le parole che contano
+obiettivo: Fissare gli aggettivi più usati del russo, in coppie di contrari.
+breve: Le coppie: **тёплый / холо́дный**, **дли́нный / коро́ткий**, **тяжёлый / лёгкий**, **си́льный / сла́бый**.
+breve: **просто́й / сло́жный** (semplice / complicato), **бы́стрый / ме́дленный** (veloce / lento).
+breve: Dall'aggettivo all'avverbio: **-о**: **тёплый → тепло́**, **бы́стрый → бы́стро**, **лёгкий → легко́**.
+
+### Lezione
+#### Le coppie di contrari
+| Aggettivo | Contrario | Italiano |
+|---|---|---|
+| тёплый | холо́дный | caldo (tiepido) / freddo |
+| дли́нный | коро́ткий | lungo / corto |
+| тяжёлый | лёгкий | pesante, difficile / leggero, facile |
+| си́льный | сла́бый | forte / debole |
+| просто́й | сло́жный | semplice / complicato |
+| бы́стрый | ме́дленный | veloce / lento |
+| широ́кий | у́зкий | largo / stretto |
+| тёмный | све́тлый | scuro / chiaro |
+
+---
+#### Dall'aggettivo all'avverbio
+Togli la desinenza e aggiungi **-о**: **тёплый → тепло́**, **холо́дный → хо́лодно**, **бы́стрый → бы́стро**, **лёгкий → легко́**, **тяжёлый → тяжело́**, **просто́й → про́сто**.
+
+---
+#### Due significati in più
+- **тяжёлый** = pesante, ma anche difficile: **тяжёлый день** — una giornata dura;
+- **лёгкий** = leggero, ma anche facile: **лёгкий экза́мен** — un esame facile.
+
+> Questi aggettivi sono tra i più frequenti della lingua russa: li incontrerai in ogni testo e in ogni conversazione.
+
+### Parole
+тёплый = caldo, tiepido [agg]
+холо́дный = freddo [agg]
+дли́нный = lungo [agg]
+коро́ткий = corto, breve [agg]
+тяжёлый = pesante; difficile [agg]
+лёгкий = leggero; facile [agg]
+си́льный = forte [agg]
+сла́бый = debole [agg]
+просто́й = semplice [agg]
+сло́жный = complicato, difficile [agg]
+бы́стрый = veloce, rapido [agg]
+ме́дленный = lento [agg]
+
+### Frasi
+Сего́дня тёплый со́лнечный день. = Oggi è una giornata calda e soleggiata.
+Зимо́й в Москве́ о́чень холо́дный ве́тер. = D'inverno a Mosca c'è un vento molto freddo.
+У меня́ был тяжёлый день. = Ho avuto una giornata dura.
+Экза́мен был лёгкий! = L'esame era facile!
+Э́то не так про́сто, как ка́жется. = Non è così semplice come sembra.
+Ру́сская грамма́тика сло́жная, но интере́сная. = La grammatica russa è complicata, ma interessante.
+
+### Esercizi
+? Сего́дня ___ день. = Oggi è una giornata calda. {тёплый | тепло́ | теплота́}
+? У меня́ был ___ день. = Ho avuto una giornata dura. {тяжёлый | тяжело́ | тя́жесть}
+? Экза́мен был ___ ! = L'esame era facile! {лёгкий | легко́ | лёгкая}
+? Ру́сская грамма́тика ___ . = La grammatica russa è complicata. {сло́жная | сло́жный | сло́жно}
+? Il contrario di «си́льный» è… {сла́бый | ме́дленный | коро́ткий}
+? Il contrario di «дли́нный» è… {коро́ткий | у́зкий | лёгкий}
+? Il contrario di «бы́стрый» è… {ме́дленный | сла́бый | тёмный}
+> бы́стрый (avverbio) → бы́стро
+~ Э́то не так про́сто, как ка́жется. = Non è così semplice come sembra.
+
+## Giorno 361 | Prova di lettura
+obiettivo: Leggere un testo nuovo e rispondere alle domande, come in un esame.
+breve: Strategia: leggi prima le domande, poi il testo; cerca le parole chiave; non serve capire ogni parola.
+breve: Il contesto ti aiuta: se non conosci una parola, guarda la radice e la frase intorno.
+breve: Parole del testo: **причи́на** (motivo), **возмо́жность** (possibilità), **реше́ние** (decisione), **чу́вство** (sentimento), **наде́жда** (speranza), **смысл** (senso).
+
+### Lezione
+#### Come affrontare una prova di lettura
+1. Leggi le **domande** prima del testo: sai già che cosa cercare.
+2. Leggi il testo una prima volta **senza fermarti**.
+3. Rileggi cercando le **parole chiave** delle domande.
+4. Attenzione alle **negazioni** (**не, нет, никогда́**) e ai **numeri**.
+
+---
+#### Il testo: Почему́ мы путеше́ствуем?
+У ка́ждого своя́ причи́на. Одни́ и́щут но́вые впечатле́ния, други́е хотя́т отдохну́ть от рабо́ты и от го́рода.
+
+Путеше́ствие даёт нам возмо́жность уви́деть мир други́ми глаза́ми. Иногда́ по́сле пое́здки мы принима́ем ва́жные реше́ния: меня́ем рабо́ту и́ли начина́ем учи́ть но́вый язы́к.
+
+Учёные говоря́т, что да́же плани́ровать пое́здку поле́зно: э́то даёт чу́вство ра́дости и наде́жды. В результа́те путеше́ствие меня́ет не то́лько наш взгляд на мир, но и нас сами́х.
+
+Мо́жет быть, в э́том и есть гла́вный смысл путеше́ствий.
+
+### Parole
+причи́на = causa, motivo [f]
+возмо́жность = possibilità, occasione [f]
+реше́ние = decisione; soluzione [n]
+результа́т = risultato [m]
+чу́вство = sentimento, sensazione [n]
+наде́жда = speranza [f]
+смысл = senso, significato [m]
+
+### Frasi
+У ка́ждого своя́ причи́на. = Ognuno ha il suo motivo.
+Путеше́ствие даёт возмо́жность уви́деть мир други́ми глаза́ми. = Il viaggio dà la possibilità di vedere il mondo con altri occhi.
+По́сле пое́здки я при́нял ва́жное реше́ние. = Dopo il viaggio ho preso una decisione importante.
+Э́то даёт чу́вство ра́дости и наде́жды. = Questo dà un senso di gioia e di speranza.
+Каки́е у тебя́ результа́ты экза́мена? = Quali sono i risultati del tuo esame?
+В чём смысл жи́зни? = Qual è il senso della vita?
+
+### Esercizi
+? Secondo il testo, perché la gente viaggia? {ognuno ha il suo motivo | solo per lavoro | per comprare souvenir}
+? Che cosa dà il viaggio, secondo il testo? {la possibilità di vedere il mondo con altri occhi | molti soldi | un lavoro nuovo garantito}
+? Che cosa fanno alcuni dopo un viaggio? {prendono decisioni importanti | smettono di viaggiare | vendono la casa}
+? Secondo gli scienziati, pianificare un viaggio… {dà gioia e speranza | è una perdita di tempo | stanca molto}
+? По́сле пое́здки я при́нял ва́жное ___ . = …una decisione importante. {реше́ние | реши́ть | реше́ния}
+? В чём ___ жи́зни? = Qual è il senso della vita? {смысл | мысль | сло́во}
+> Scrivi «speranza» → наде́жда
+~ У ка́ждого своя́ причи́на. = Ognuno ha il suo motivo.
+
+## Giorno 362 | Prova di grammatica
+obiettivo: Mettere alla prova la grammatica di tutto l'anno.
+breve: Oggi un test misto: casi, aspetto, verbi di moto, numeri, frasi complesse.
+breve: Prima di rispondere chiediti: **che caso vuole la preposizione? è un'azione ripetuta o unica? c'è movimento?**
+breve: Sette verbi per finire in bellezza: **приня́ть, назва́ть, улыбну́ться, почу́вствовать, ожида́ть, испо́льзовать, существова́ть**.
+
+### Lezione
+#### Le domande da farsi
+| Dubbio | Domanda | Esempio |
+|---|---|---|
+| il caso | che cosa vuole la preposizione o il verbo? | **без** + gen., **помога́ть** + dat. |
+| l'aspetto | processo/abitudine o risultato? | **чита́л** / **прочита́л** |
+| il moto | una direzione o avanti e indietro? | **иду́** / **хожу́** |
+| il numero | 1, 2-4 o 5+? | **оди́н год, два го́да, пять лет** |
+| la frase | serve **что** o **что́бы**? | **Хочу́, что́бы ты пришёл.** |
+
+---
+#### Sette verbi utilissimi
+- **приня́ть** — prendere, accettare: **приня́ть реше́ние** (prendere una decisione), **приня́ть душ**;
+- **назва́ть** — chiamare, dare un nome: **Сы́на назва́ли Ива́ном.**
+- **улыбну́ться** — sorridere (una volta): **Она́ улыбну́лась мне.**
+- **почу́вствовать** — sentire, provare: **Я почу́вствовал боль.**
+- **ожида́ть** — aspettarsi: **Я не ожида́л тебя́ уви́деть!**
+- **испо́льзовать** — usare, utilizzare;
+- **существова́ть** — esistere.
+
+### Parole
+приня́ть = prendere, accettare [v pf; приму́, при́мешь; при́нял, приняла́]
+назва́ть = chiamare, dare un nome [v pf; назову́, назовёшь]
+улыбну́ться = sorridere [v pf; улыбну́сь, улыбнёшься]
+почу́вствовать = sentire, provare [v pf; почу́вствую, почу́вствуешь]
+ожида́ть = aspettarsi, attendere [v impf; ожида́ю, ожида́ешь]
+испо́льзовать = usare, utilizzare [v impf/pf; испо́льзую, испо́льзуешь]
+существова́ть = esistere [v impf; существу́ю, существу́ешь]
+
+### Frasi
+Мы при́няли ва́жное реше́ние. = Abbiamo preso una decisione importante.
+Сы́на назва́ли Ива́ном в честь де́душки. = Hanno chiamato il figlio Ivan in onore del nonno.
+Она́ улыбну́лась и сказа́ла: «Спаси́бо!» = Ha sorriso e ha detto: «Grazie!»
+Я не ожида́л тебя́ здесь уви́деть! = Non mi aspettavo di vederti qui!
+Мы испо́льзуем э́то приложе́ние ка́ждый день. = Usiamo questa app ogni giorno.
+Тако́го сло́ва не существу́ет. = Una parola così non esiste.
+
+### Esercizi
+? Я живу́ здесь уже́ пять ___ . = Vivo qui già da cinque anni. {лет | го́да | год}
+? Мне не хвата́ет ___ . = Mi manca il tempo. {вре́мени | вре́мя | вре́менем}
+? Вчера́ я ___ э́ту кни́гу до конца́. = Ieri ho finito questo libro. {прочита́л | чита́л | чита́ю}
+? Ка́ждый ве́чер я ___ в парк. = Ogni sera vado al parco. {хожу́ | иду́ | пойду́}
+? Я хочу́, ___ ты пришёл. = Voglio che tu venga. {что́бы | что | е́сли}
+? Е́сли бы я знал, я бы ___ тебе́. = Se l'avessi saputo, ti avrei chiamato. {позвони́л | позвоню́ | звоню́}
+? Кни́га, ___ я чита́ю, о́чень интере́сная. = Il libro che sto leggendo è molto interessante. {кото́рую | кото́рая | кото́рой}
+? Мы ___ ва́жное реше́ние. = Abbiamo preso una decisione importante. {при́няли | при́мем | принима́ть}
+> назва́ть (passato, они́) → назва́ли
+~ Я не ожида́л тебя́ здесь уви́деть! = Non mi aspettavo di vederti qui!
+
+## Giorno 363 | Prova di ascolto
+obiettivo: Capire frasi parlate senza leggerle.
+breve: Oggi ascolti: la frase si sente ma non si vede. Puoi riascoltarla quante volte vuoi.
+breve: Ascolta le parole chiave: **chi, dove, quando, quanto**. Attento ai numeri e alla negazione **не**.
+breve: Dieci aggettivi frequenti: **гла́вный, обы́чный, стра́нный, стра́шный, похо́жий, огро́мный, родно́й, совреме́нный, ну́жный, возмо́жный**.
+
+### Lezione
+#### Come ascoltare
+1. **Non tradurre parola per parola**: cerca il senso generale.
+2. **Parole chiave**: chi? dove? quando? quanto?
+3. **I numeri**: ascoltali due volte, sono la parte più difficile.
+4. **La negazione**: un piccolo **не** cambia tutto.
+5. **Riascolta**: tocca il pulsante quante volte vuoi.
+
+---
+#### Dieci aggettivi frequentissimi
+| Russo | Italiano |
+|---|---|
+| гла́вный | principale |
+| обы́чный | solito, normale |
+| стра́нный | strano |
+| стра́шный | spaventoso, terribile |
+| похо́жий (на + acc.) | simile (a) |
+| огро́мный | enorme |
+| родно́й | natale, proprio caro: **родно́й язы́к** (lingua madre) |
+| совреме́нный | moderno, contemporaneo |
+| ну́жный | necessario |
+| возмо́жный | possibile |
+
+> **Он похо́ж на отца́.** — Somiglia al padre (forma breve + **на** + accusativo).
+
+### Parole
+гла́вный = principale [agg]
+обы́чный = solito, normale [agg]
+стра́нный = strano [agg]
+стра́шный = spaventoso, terribile [agg]
+похо́жий = simile [agg; breve: похо́ж на + acc.]
+огро́мный = enorme [agg]
+родно́й = natale; caro, del cuore [agg; родно́й язы́к = lingua madre]
+совреме́нный = moderno, contemporaneo [agg]
+ну́жный = necessario [agg]
+возмо́жный = possibile [agg]
+
+### Frasi
+Мой родно́й язы́к — италья́нский. = La mia lingua madre è l'italiano.
+Он о́чень похо́ж на отца́. = Somiglia molto al padre.
+Вчера́ был са́мый обы́чный день. = Ieri è stata una giornata normalissima.
+Како́й стра́нный сон мне присни́лся! = Che sogno strano ho fatto!
+Москва́ — огро́мный совреме́нный го́род. = Mosca è un'enorme città moderna.
+Всё возмо́жно! = Tutto è possibile!
+
+### Esercizi
+@ Магази́н рабо́тает с девяти́ утра́ до восьми́ ве́чера. → Quando è aperto il negozio? {dalle 9 alle 20 | dalle 8 alle 21 | dalle 9 alle 18} = Il negozio è aperto dalle nove di mattina alle otto di sera.
+@ Мы встре́тимся за́втра в семь у метро́. → Dove e quando ci si incontra? {domani alle 7 vicino alla metro | oggi alle 7 al bar | domani alle 11 alla stazione} = Ci vediamo domani alle sette vicino alla metro.
+@ Биле́т сто́ит две ты́сячи пятьсо́т рубле́й. → Quanto costa il biglietto? {2500 rubli | 2050 rubli | 1500 rubli} = Il biglietto costa duemilacinquecento rubli.
+@ Я не пойду́ на рабо́ту, потому́ что заболе́л. → Perché non va al lavoro? {perché si è ammalato | perché è domenica | perché è in vacanza} = Non vado al lavoro perché mi sono ammalato.
+@ По́езд на Петербу́рг отправля́ется с тре́тьего пути́. → Da quale binario parte il treno? {dal terzo | dal secondo | dal tredicesimo} = Il treno per San Pietroburgo parte dal terzo binario.
+@ Ле́на похо́жа на ма́му, а её брат — на па́пу. → A chi somiglia Lena? {alla mamma | al papà | al fratello} = Lena somiglia alla mamma, e suo fratello al papà.
+@ Мой родно́й язы́к — ру́сский, но я хорошо́ говорю́ по-италья́нски. → Qual è la sua lingua madre? {il russo | l'italiano | l'inglese} = La mia lingua madre è il russo, ma parlo bene l'italiano.
+@ За́втра бу́дет хо́лодно, ми́нус пятна́дцать, и пойдёт снег. → Che tempo farà domani? {freddo, -15, neve | caldo e sole | pioggia, +15} = Domani farà freddo, meno quindici, e nevicherà.
+? Мой ___ язы́к — италья́нский. = La mia lingua madre è l'italiano. {родно́й | ро́дина | родно́е}
+? Он о́чень похо́ж ___ отца́. = Somiglia molto al padre. {на | с | к}
+> Scrivi «strano» → стра́нный
+~ Всё возмо́жно! = Tutto è possibile!
+
+## Giorno 364 | Ripasso finale
+obiettivo: Guardare indietro a tutto l'anno con un ultimo testo, e fare il test del modulo 13.
+
+### Lettura | Год с ру́сским языко́м | Un anno con il russo
+Ро́вно год наза́д я на́чал учи́ть ру́сский язы́к. = Esattamente un anno fa ho cominciato a studiare il russo.
+Я по́мню свой пе́рвый день: стра́нные бу́квы, кото́рые бы́ли похо́жи на лати́нские, но чита́лись ина́че. = Ricordo il mio primo giorno: lettere strane, che somigliavano a quelle latine ma si leggevano diversamente.
+Пото́м пришли́ падежи́, и мне каза́лось, что я никогда́ их не вы́учу. = Poi sono arrivati i casi, e mi sembrava che non li avrei mai imparati.
+Глаго́лы движе́ния бы́ли настоя́щим испыта́нием: идти́ и́ли ходи́ть, е́хать и́ли е́здить? = I verbi di moto sono stati una vera prova: идти o ходить, ехать o ездить?
+Но ка́ждый день я учи́л немно́го, повторя́л ста́рые слова́ и узнава́л но́вые. = Ma ogni giorno studiavo un po', ripassavo le parole vecchie e ne imparavo di nuove.
+Постепе́нно я на́чал понима́ть пе́сни, фи́льмы и да́же расска́зы Че́хова. = A poco a poco ho cominciato a capire canzoni, film e perfino i racconti di Čechov.
+Тепе́рь я могу́ рассказа́ть о себе́, поспо́рить о поли́тике и пошути́ть с друзья́ми. = Ora so raccontare di me, discutere di politica e scherzare con gli amici.
+Коне́чно, я ещё де́лаю оши́бки, но я бо́льше не бою́сь говори́ть. = Certo, faccio ancora degli errori, ma non ho più paura di parlare.
+Ру́сский язы́к стал для меня́ не то́лько предме́том, но и окно́м в но́вый мир. = Il russo per me è diventato non solo una materia, ma una finestra su un mondo nuovo.
+За́втра — после́дний экза́мен, а пото́м… путеше́ствие продолжа́ется! = Domani c'è l'ultimo esame, e poi… il viaggio continua!
+
+### Domande
+? Che cosa ricorda il narratore del primo giorno? {le lettere strane | la grammatica dei casi | un viaggio a Mosca}
+? Che cosa è stata «una vera prova»? {i verbi di moto | l'alfabeto | i numeri}
+? Che cosa faceva ogni giorno? {studiava un po' e ripassava | studiava otto ore | guardava solo film}
+? Che cosa è diventato il russo per lui? {una finestra su un mondo nuovo | solo una materia | un lavoro}
+
+## Giorno 365 | Esame finale e diploma
+obiettivo: Fare l'esame finale su tutto il corso e ottenere il diploma.
+breve: Ce l'hai fatta: 365 giorni di russo! L'esame mescola parole, frasi ed esercizi di tutto l'anno.
+breve: Con il 60% superi l'esame e ricevi il diploma. Puoi ripeterlo quante volte vuoi.
+breve: E dopo? Ripasso quotidiano, libri, film, conversazioni: il russo si mantiene usandolo.
+
+### Lezione
+#### Поздравля́ем!
+Un anno fa non sapevi leggere **А, Б, В**. Oggi leggi Čechov, scrivi lettere, racconti la tua vita e discuti di politica. È un risultato enorme: **Ты молоде́ц!**
+
+---
+#### L'esame
+- domande da **tutti i moduli**, dall'alfabeto alle frasi complesse;
+- parole, frasi da ricomporre, ascolti, esercizi di grammatica;
+- con il **60%** superi l'esame e ricevi il **diploma**: puoi rifarlo per migliorare il risultato.
+
+---
+#### E adesso?
+1. **Continua il ripasso**: la scheda «Ripasso» ti propone ogni giorno le parole che stanno per sfuggire.
+2. **Leggi**: notizie, racconti, fumetti. Anche dieci minuti al giorno.
+3. **Ascolta**: film e serie russe con i sottotitoli russi.
+4. **Parla**: trova qualcuno con cui fare conversazione, anche online.
+5. **Punta al B2**: il prossimo traguardo.
+
+> **Ти́ше е́дешь — да́льше бу́дешь.** Hai camminato piano, ogni giorno, e sei arrivato lontano. **Уда́чи!**
+
+### Lettura | Что да́льше? | E adesso?
+Поздравля́ем! Вы прошли́ весь курс ру́сского языка́. = Congratulazioni! Ha completato tutto il corso di russo.
+Ка́ждый день вы учи́ли но́вые слова́ и повторя́ли ста́рые. = Ogni giorno ha imparato parole nuove e ripassato quelle vecchie.
+Но изуче́ние языка́ — э́то не коне́ц, а нача́ло. = Ma lo studio di una lingua non è una fine, è un inizio.
+Чита́йте кни́ги, смотри́те фи́льмы, слу́шайте пе́сни. = Legga libri, guardi film, ascolti canzoni.
+Говори́те по-ру́сски при ка́ждой возмо́жности. = Parli russo a ogni occasione.
+И по́мните: не боя́тся оши́бок то́лько те, кто ничего́ не де́лает. = E ricordi: non hanno paura di sbagliare solo quelli che non fanno niente.
+Уда́чи! Мы в вас ве́рим! = Buona fortuna! Crediamo in lei!
+
+### Domande
+? Che cosa è lo studio di una lingua, secondo il testo? {un inizio, non una fine | una fine | un esame}
+? Che cosa consiglia il testo? {leggere, guardare film, parlare | smettere di studiare | studiare solo la grammatica}
+? Che cosa vuol dire «Уда́чи!»? {Buona fortuna! | Arrivederci! | Complimenti!}
