@@ -1,0 +1,330 @@
+# Settimana 25 | Studiare
+
+## Giorno 169 | All'università
+obiettivo: Parlare di università, esami e voti.
+breve: поступа́ть / поступи́ть в университе́т = iscriversi (dopo l'esame d'ammissione).
+breve: сдава́ть экза́мен = dare l'esame · сдать экза́мен = superarlo.
+breve: факульте́т (facoltà), курс (anno di corso), преподава́тель (docente), оце́нка (voto).
+
+### Lezione
+#### L'università
+- **поступа́ть / поступи́ть в университе́т** — entrare all'università (superando l'ammissione);
+- **факульте́т** — facoltà: **экономи́ческий факульте́т**;
+- **курс** — anno di corso: **Я на тре́тьем ку́рсе.** — Sono al terzo anno;
+- **преподава́тель** — docente universitario (**учи́тель** è a scuola);
+- **ле́кция** (lezione frontale), **семина́р** (seminario, esercitazione).
+
+---
+#### Gli esami: attenzione all'aspetto!
+- **сдава́ть экза́мен** (impf) — **dare** l'esame, sostenerlo (il risultato non si sa!);
+- **сдать экза́мен** (pf) — **superarlo**: **Я сдал экза́мен!** — Ho passato l'esame!
+- **не сдать** — essere bocciato.
+
+---
+#### I voti
+In Russia si va da 2 a 5: **пятёрка** (5, ottimo), **четвёрка** (4), **тро́йка** (3, sufficiente), **дво́йка** (2, insufficiente). **Оце́нка** — voto: **Кака́я у тебя́ оце́нка? — Пять!**
+
+### Parole
+факульте́т = facoltà [m]
+курс = anno di corso; corso; cambio (valuta) [m]
+семина́р = seminario, esercitazione [m]
+экза́мен = esame [m]
+сдать = superare (un esame); consegnare [v pf; сдам, сдашь]
+поступи́ть = iscriversi, entrare (all'università) [v pf; поступлю́, посту́пишь]
+преподава́тель = docente, professore [m]
+оце́нка = voto, valutazione [f]
+
+### Frasi
+Я учу́сь на экономи́ческом факульте́те. = Studio alla facoltà di economia.
+Она́ на тре́тьем ку́рсе. = È al terzo anno.
+За́втра я сдаю́ экза́мен по исто́рии. = Domani do l'esame di storia.
+Ура́! Я сдал экза́мен! = Evviva! Ho passato l'esame!
+Мой брат поступи́л в МГУ. = Mio fratello è entrato all'Università di Mosca.
+Преподава́тель поста́вил мне пятёрку. = Il professore mi ha dato cinque.
+
+### Esercizi
+? За́втра я ___ экза́мен. = Domani do l'esame. {сдаю́ | сдал | сдала́}
+? Ура́! Я ___ экза́мен! = Evviva! Ho passato l'esame! {сдал | сдава́л | сдаю́}
+? Он ___ в университе́т. = È entrato all'università. {поступи́л | поступа́л | вошёл}
+? Она́ на тре́тьем ___ . = È al terzo anno. {ку́рсе | кла́ссе | эта́же}
+? Il docente universitario è… {преподава́тель | учи́тель | профе́ссия}
+? «пятёрка» come voto è… {il massimo, ottimo | insufficiente | la sufficienza}
+> Scrivi «esame» in russo → экза́мен
+~ Ура́! Я сдал экза́мен! = Evviva! Ho passato l'esame!
+
+## Giorno 170 | Imparare una lingua
+obiettivo: Parlare di come impari il russo.
+breve: повторя́ть (ripassare, ripetere), запомина́ть (memorizzare), переводи́ть (tradurre).
+breve: оши́бка (errore), произноше́ние (pronuncia), грамма́тика.
+breve: **Как э́то перево́дится?** — Come si traduce?
+
+### Lezione
+#### Studiare una lingua
+| Russo | Italiano |
+|---|---|
+| повторя́ть / повтори́ть | ripassare, ripetere |
+| запомина́ть / запо́мнить | memorizzare, ricordarsi |
+| переводи́ть / перевести́ | tradurre |
+| перево́д | traduzione |
+| учи́ть наизу́сть | imparare a memoria |
+
+---
+#### Errori e difficoltà
+- **оши́бка** — errore: **сде́лать оши́бку** (fare un errore);
+- **произноше́ние** — pronuncia: **У тебя́ хоро́шее произноше́ние!**
+- **грамма́тика** — grammatica: **Ру́сская грамма́тика сло́жная, но интере́сная.**
+
+---
+#### Domande da studente
+- **Как э́то перево́дится?** — Come si traduce?
+- **Как пра́вильно сказа́ть?** — Come si dice correttamente?
+- **Испра́вьте меня́, пожа́луйста.** — Mi corregga, per favore.
+
+> Il segreto per ricordare le parole è quello di questa app: **повторя́ть** spesso all'inizio e poi sempre più di rado.
+
+### Parole
+повторя́ть = ripassare, ripetere [v impf; повторя́ю, повторя́ешь]
+запомина́ть = memorizzare [v impf; запомина́ю, запомина́ешь]
+переводи́ть = tradurre [v impf; перевожу́, перево́дишь]
+перево́д = traduzione; bonifico [m]
+оши́бка = errore [f]
+произноше́ние = pronuncia [n]
+грамма́тика = grammatica [f]
+наизу́сть = a memoria [avv]
+
+### Frasi
+Ка́ждый ве́чер я повторя́ю но́вые слова́. = Ogni sera ripasso le parole nuove.
+Я ника́к не могу́ запо́мнить э́то сло́во! = Non riesco proprio a memorizzare questa parola!
+Как э́то перево́дится на италья́нский? = Come si traduce in italiano?
+Испра́вьте меня́, е́сли я де́лаю оши́бки. = Mi corregga se faccio errori.
+У тебя́ отли́чное произноше́ние! = Hai un'ottima pronuncia!
+Мы у́чим стихи́ наизу́сть. = Impariamo le poesie a memoria.
+
+### Esercizi
+? Ка́ждый ве́чер я ___ слова́. = Ogni sera ripasso le parole. {повторя́ю | переводи́ю | запо́мню}
+? Я не могу́ ___ э́то сло́во. = Non riesco a memorizzare questa parola. {запо́мнить | вспо́мнить | забы́ть}
+? Как э́то ___ ? = Come si traduce? {перево́дится | перево́дит | перево́д}
+? Испра́вьте меня́, е́сли я де́лаю ___ . = Mi corregga se faccio errori. {оши́бки | оши́бку | оши́бок}
+? У тебя́ хоро́шее ___ ! = Hai una buona pronuncia! {произноше́ние | произноси́ть | произно́с}
+? «наизу́сть» vuol dire… {a memoria | a voce alta | in silenzio}
+> я (переводи́ть) → перевожу́
+~ Как э́то перево́дится на италья́нский? = Come si traduce in italiano?
+
+## Giorno 171 | Il ragazzo che…: который
+obiettivo: Unire due frasi con «che» (кото́рый).
+breve: **кото́рый** = che, il quale: si accorda **in genere e numero** con la parola a cui si riferisce.
+breve: Il **caso** dipende dalla sua funzione nella seconda frase: **Э́то друг, кото́рый живёт в Москве́.** / **Э́то друг, кото́рого я жду.**
+breve: Prima di кото́рый c'è sempre la **virgola**.
+
+### Lezione
+#### Il pronome relativo
+**кото́рый** si declina come un aggettivo (**но́вый**):
+- **Э́то па́рень, кото́рый живёт ря́дом.** — È il ragazzo che abita qui accanto.
+- **Э́то де́вушка, кото́рая живёт ря́дом.**
+- **Э́то окно́, кото́рое выхо́дит в сад.**
+- **Э́то лю́ди, кото́рые живу́т ря́дом.**
+
+**Genere e numero** = quelli della parola a cui si riferisce (па́рень → кото́рый, де́вушка → кото́рая).
+
+---
+#### Il caso: dipende dalla seconda frase
+Nella frase relativa **кото́рый** può essere soggetto, oggetto ecc.:
+- soggetto: **Э́то кни́га, кото́рая мне нра́вится.** (la quale mi piace)
+- oggetto: **Э́то кни́га, кото́рую я чита́ю.** (che io leggo → accusativo)
+
+> Trucco: sostituisci **кото́рый** con il nome e guarda che caso ci vuole: «я чита́ю **кни́гу**» → **кото́рую**.
+
+---
+#### La virgola
+In russo prima di **кото́рый** la virgola è **obbligatoria**, e la frase relativa si chiude con un'altra virgola se la frase continua.
+
+### Parole
+кото́рый = che, il quale [pron; кото́рая, кото́рое, кото́рые]
+страни́ца = pagina [f]
+текст = testo [m]
+
+### Frasi
+Э́то па́рень, кото́рый живёт ря́дом. = È il ragazzo che abita qui accanto.
+Как зову́т де́вушку, кото́рая поёт? = Come si chiama la ragazza che canta?
+Э́то кни́га, кото́рую я чита́ю сейча́с. = È il libro che sto leggendo adesso.
+Фильм, кото́рый мы смотре́ли, был о́чень интере́сный. = Il film che abbiamo visto era molto interessante.
+Где текст, кото́рый ты перевёл? = Dov'è il testo che hai tradotto?
+Прочита́йте страни́цу, кото́рая начина́ется сло́вом «Одна́жды». = Leggete la pagina che comincia con la parola «Однажды».
+
+### Esercizi
+? Э́то па́рень, ___ живёт ря́дом. = È il ragazzo che abita qui accanto. {кото́рый | кото́рая | кото́рого}
+? Э́то де́вушка, ___ поёт. = È la ragazza che canta. {кото́рая | кото́рый | кото́рую}
+? Э́то кни́га, ___ я чита́ю. = È il libro che leggo. {кото́рую | кото́рая | кото́рой}
+? Э́то лю́ди, ___ живу́т ря́дом. = Sono le persone che abitano qui. {кото́рые | кото́рый | кото́рых}
+? Фильм, ___ мы смотре́ли, был интере́сный. {кото́рый | кото́рого | кото́рое}
+? Э́то окно́, ___ выхо́дит в сад. = È la finestra che dà sul giardino. {кото́рое | кото́рый | кото́рая}
+~ Э́то кни́га, кото́рую я чита́ю сейча́с. = È il libro che sto leggendo adesso.
+
+## Giorno 172 | Который in tutti i casi
+obiettivo: Usare кото́рый con preposizioni e casi diversi.
+breve: кото́рый si declina come un aggettivo: кото́рого, кото́рому, кото́рым, о кото́ром…
+breve: La preposizione va **prima** di кото́рый: **Э́то друг, с кото́рым я рабо́таю.**
+breve: «Il cui» = **чей** o **кото́рого** dopo il nome: **писа́тель, кни́ги кото́рого я люблю́**.
+
+### Lezione
+#### Tutti i casi
+| Caso | Esempio |
+|---|---|
+| Gen. | Э́то друг, **у кото́рого** есть да́ча. (che ha la dacia) |
+| Dat. | Э́то друг, **кото́рому** я звони́л. (a cui ho telefonato) |
+| Acc. | Э́то друг, **кото́рого** я жду. (che aspetto) |
+| Strum. | Э́то друг, **с кото́рым** я рабо́таю. (con cui lavoro) |
+| Prep. | Э́то друг, **о кото́ром** я тебе́ говори́л. (di cui ti ho parlato) |
+
+Femminile: **кото́рой** (gen., dat., strum., prep.), **кото́рую** (acc.). Plurale: **кото́рых, кото́рым, кото́рыми**.
+
+---
+#### La preposizione davanti
+In italiano «con cui», «di cui»: in russo la preposizione si mette **prima** di кото́рый, come in italiano:
+- **го́род, в кото́ром я роди́лся** — la città in cui sono nato;
+- **лю́ди, с кото́рыми я рабо́таю** — le persone con cui lavoro.
+
+---
+#### Il cui
+«Lo scrittore i cui libri amo» → **писа́тель, кни́ги кото́рого я люблю́** (**кото́рого** dopo il nome posseduto, al genitivo).
+
+### Parole
+зада́ние = compito, incarico [n]
+упражне́ние = esercizio [n]
+приме́р = esempio [m]
+
+### Frasi
+Э́то друг, о кото́ром я тебе́ говори́л. = È l'amico di cui ti ho parlato.
+Го́род, в кото́ром я роди́лся, о́чень ма́ленький. = La città in cui sono nato è molto piccola.
+Лю́ди, с кото́рыми я рабо́таю, о́чень у́мные. = Le persone con cui lavoro sono molto intelligenti.
+Вот де́вушка, кото́рой я подари́л цветы́. = Ecco la ragazza a cui ho regalato i fiori.
+Сде́лайте упражне́ние, кото́рое на страни́це пять. = Fate l'esercizio che è a pagina cinque.
+Приведи́те приме́р. = Fate un esempio.
+
+### Esercizi
+? Э́то друг, о ___ я говори́л. = È l'amico di cui ho parlato. {кото́ром | кото́рый | кото́рого}
+? Го́род, в ___ я роди́лся. = La città in cui sono nato. {кото́ром | кото́рый | кото́рую}
+? Лю́ди, с ___ я рабо́таю. = Le persone con cui lavoro. {кото́рыми | кото́рые | кото́рым}
+? Де́вушка, ___ я подари́л цветы́. = La ragazza a cui ho regalato i fiori. {кото́рой | кото́рую | кото́рая}
+? Друг, у ___ есть да́ча. = L'amico che ha la dacia. {кото́рого | кото́рый | кото́рому}
+? писа́тель, кни́ги ___ я люблю́ = lo scrittore i cui libri amo {кото́рого | кото́рый | кото́рому}
+~ Э́то друг, о кото́ром я тебе́ говори́л. = È l'amico di cui ti ho parlato.
+
+## Giorno 173 | Ha detto che…: il discorso indiretto
+obiettivo: Riferire quello che gli altri dicono e chiedono.
+breve: Affermazioni: **что** — **Он сказа́л, что придёт.** (il tempo resta quello della frase originale!)
+breve: Domande sì/no: **ли** dopo la parola chiave — **Он спроси́л, приду́ ли я.** (se verrò)
+breve: Ordini e richieste: **что́бы** + passato — **Он попроси́л, что́бы я пришёл.**
+
+### Lezione
+#### Il tempo non cambia
+In russo il tempo del discorso indiretto resta **quello della frase originale**:
+- «**Я приду́**» → **Он сказа́л, что придёт.** — Ha detto che sarebbe venuto. (in russo: «che verrà»!)
+- «**Я уста́ла**» → **Она́ сказа́ла, что уста́ла.**
+
+---
+#### Domande con ли
+Per le domande senza parola interrogativa si usa **ли** dopo la parola su cui cade la domanda:
+- «**Ты придёшь?**» → **Он спроси́л, приду́ ли я.** — Mi ha chiesto se sarei venuto.
+- **Я не зна́ю, до́ма ли он.** — Non so se è a casa.
+
+Con le parole interrogative si ripetono così come sono:
+- «**Где ты живёшь?**» → **Она́ спроси́ла, где я живу́.**
+
+---
+#### Richieste
+«**Позвони́!**» → **Ма́ма попроси́ла, что́бы я позвони́л.** — La mamma mi ha chiesto di chiamare.
+
+> **Обеща́ть** — promettere: **Он обеща́л, что помо́жет.** — Ha promesso che avrebbe aiutato.
+
+### Parole
+ли = se (nelle domande indirette); forse [part]
+спроси́ть = chiedere, domandare [v pf; спрошу́, спро́сишь]
+сообщи́ть = comunicare, informare [v pf; сообщу́, сообщи́шь]
+обеща́ть = promettere [v; обеща́ю, обеща́ешь]
+
+### Frasi
+Он сказа́л, что придёт в семь. = Ha detto che sarebbe venuto alle sette.
+Она́ спроси́ла, где я живу́. = Mi ha chiesto dove abito.
+Я не зна́ю, до́ма ли он. = Non so se è a casa.
+Он спроси́л, приду́ ли я на вечери́нку. = Mi ha chiesto se sarei andato alla festa.
+Ма́ма попроси́ла, что́бы я позвони́л. = La mamma mi ha chiesto di chiamare.
+Ты обеща́л, что помо́жешь мне! = Avevi promesso che mi avresti aiutato!
+
+### Esercizi
+? «Я приду́» → Он сказа́л, что ___ . {придёт | пришёл бы | прийти́}
+? «Ты придёшь?» → Он спроси́л, приду́ ___ я. {ли | е́сли | что}
+? Я не зна́ю, до́ма ___ он. = Non so se è a casa. {ли | е́сли | бы}
+? «Где ты живёшь?» → Она́ спроси́ла, где я ___ . {живу́ | живёшь | живёт}
+? «Позвони́!» → Ма́ма попроси́ла, ___ я позвони́л. {что́бы | что | ли}
+? Он ___ , что помо́жет. = Ha promesso che avrebbe aiutato. {обеща́л | обеща́ние | обеща́ть}
+~ Он сказа́л, что придёт в семь. = Ha detto che sarebbe venuto alle sette.
+
+## Giorno 174 | Perché e quindi
+obiettivo: Dare spiegazioni e trarre conseguenze.
+breve: **почему́?** (perché?) → **потому́ что** (perché, causa) · **поэ́тому** (perciò, quindi).
+breve: **так как** = poiché (spesso a inizio frase) · **хотя́** = sebbene, anche se.
+breve: **несмотря́ на** + accusativo = nonostante: несмотря́ на дождь.
+
+### Lezione
+#### Causa ed effetto
+| Russo | Italiano | Esempio |
+|---|---|---|
+| почему́? | perché? | **Почему́ ты не пришёл?** |
+| потому́ что | perché (causa) | **…потому́ что я был бо́лен.** |
+| поэ́тому | perciò, quindi | **Я был бо́лен, поэ́тому не пришёл.** |
+| так как | poiché, siccome | **Так как шёл дождь, мы оста́лись до́ма.** |
+
+> Attenzione: **потому́ что** spiega la causa, **поэ́тому** dà la conseguenza. Gli italiani li confondono spesso!
+
+---
+#### Anche se, nonostante
+- **хотя́** — sebbene, anche se: **Хотя́ бы́ло хо́лодно, мы пошли́ гуля́ть.**
+- **несмотря́ на** + accusativo — nonostante: **Несмотря́ на дождь, мы пошли́ гуля́ть.**
+- **несмотря́ на то что** — nonostante il fatto che: **Несмотря́ на то что он уста́л, он помо́г мне.**
+
+### Parole
+почему́ = perché? [avv]
+потому́ что = perché (causa) [cong]
+поэ́тому = perciò, quindi [avv]
+так как = poiché, siccome [cong]
+хотя́ = sebbene, anche se [cong]
+несмотря́ на = nonostante [prep; + accusativo]
+
+### Frasi
+Почему́ ты не пришёл? — Потому́ что я был бо́лен. = Perché non sei venuto? — Perché ero malato.
+Я был бо́лен, поэ́тому не пришёл. = Ero malato, quindi non sono venuto.
+Так как шёл дождь, мы оста́лись до́ма. = Siccome pioveva, siamo rimasti a casa.
+Хотя́ бы́ло хо́лодно, мы пошли́ гуля́ть. = Anche se faceva freddo, siamo andati a passeggiare.
+Несмотря́ на дождь, матч не отмени́ли. = Nonostante la pioggia, la partita non è stata annullata.
+Я учу́ ру́сский, потому́ что люблю́ ру́сскую литерату́ру. = Studio il russo perché amo la letteratura russa.
+
+### Esercizi
+? Я не пришёл, ___ был бо́лен. = Non sono venuto perché ero malato. {потому́ что | поэ́тому | хотя́}
+? Я был бо́лен, ___ не пришёл. = Ero malato, quindi non sono venuto. {поэ́тому | потому́ что | так как}
+? ___ бы́ло хо́лодно, мы пошли́ гуля́ть. = Anche se faceva freddo… {Хотя́ | Потому́ что | Поэ́тому}
+? Несмотря́ на ___ , мы пошли́ гуля́ть. = Nonostante la pioggia… {дождь | дождя́ | дождём}
+? ___ ты смеёшься? = Perché ridi? {Почему́ | Потому́ | Поэ́тому}
+? ___ шёл дождь, мы оста́лись до́ма. = Siccome pioveva, siamo rimasti a casa. {Так как | Поэ́тому | Хотя́}
+~ Я был бо́лен, поэ́тому не пришёл. = Ero malato, quindi non sono venuto.
+
+## Giorno 175 | Ripasso della settimana
+obiettivo: Leggere la vita di uno studente universitario.
+
+### Lettura | Студе́нческая жизнь | Vita da studente
+Меня́ зову́т Ди́ма, я учу́сь на тре́тьем ку́рсе экономи́ческого факульте́та. = Mi chiamo Dima, sono al terzo anno della facoltà di economia.
+Я поступи́л в университе́т три го́да наза́д, хотя́ экза́мены бы́ли о́чень тру́дные. = Sono entrato all'università tre anni fa, anche se gli esami erano molto difficili.
+Ка́ждый день у нас две и́ли три ле́кции и семина́р. = Ogni giorno abbiamo due o tre lezioni e un'esercitazione.
+Преподава́тель, кото́рый чита́ет нам ле́кции по эконо́мике, о́чень стро́гий. = Il professore che ci tiene le lezioni di economia è molto severo.
+Но я люблю́ его́ предме́т, поэ́тому всегда́ хожу́ на его́ ле́кции. = Ma mi piace la sua materia, quindi vado sempre alle sue lezioni.
+Ещё я изуча́ю италья́нский язы́к, потому́ что хочу́ рабо́тать в Ита́лии. = Studio anche l'italiano, perché voglio lavorare in Italia.
+Ве́чером я повторя́ю слова́ и перевожу́ те́ксты. = La sera ripasso le parole e traduco testi.
+На про́шлой неде́ле я сдал тру́дный экза́мен по матема́тике. = La settimana scorsa ho passato un esame difficile di matematica.
+Мой друг спроси́л, не устаю́ ли я. = Il mio amico mi ha chiesto se non mi stanco.
+Я отве́тил, что студе́нческая жизнь — э́то тру́дно, но интере́сно! = Ho risposto che la vita da studente è dura, ma interessante!
+
+### Domande
+? In che anno di corso è Dima? {al terzo | al primo | al quinto}
+? Com'è il professore di economia? {molto severo | molto simpatico | sempre in ritardo}
+? Perché Dima studia l'italiano? {vuole lavorare in Italia | ha una ragazza italiana | è obbligatorio}
+? Quale esame ha passato la settimana scorsa? {matematica | economia | italiano}
