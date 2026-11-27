@@ -1,0 +1,346 @@
+# Settimana 51 | Testi veri
+
+## Giorno 351 | Una notizia
+obiettivo: Leggere e capire una breve notizia di cronaca.
+breve: I titoli spesso non hanno verbo: **Пожа́р в це́нтре Москвы́.** **Но́вый мост че́рез Неву́.**
+breve: Le fonti: **как сообща́ет…** (come riferisce…), **по слова́м…** (secondo…), **по да́нным…** (secondo i dati di…).
+breve: Le parole dei giornali: **строи́тельство** (costruzione), **откры́тие** (apertura, inaugurazione; scoperta), **губерна́тор**.
+
+### Lezione
+#### Com'è fatta una notizia
+1. **il titolo**: breve, spesso senza verbo;
+2. **l'attacco**: chi, che cosa, dove, quando;
+3. **la fonte**: **как сообща́ет пресс-слу́жба**, **по слова́м губерна́тора**;
+4. **i dettagli**: numeri, date, citazioni.
+
+---
+#### Leggiamo
+**В Петербу́рге откры́ли но́вый мост**
+
+Вчера́ в Санкт-Петербу́рге состоя́лось откры́тие но́вого моста́ че́рез Неву́. Как сообща́ет администра́ция го́рода, строи́тельство продолжа́лось три го́да. По слова́м губерна́тора, мост помо́жет реши́ть пробле́му про́бок. Длина́ моста́ — бо́лее восьмисо́т ме́тров. Пе́рвые маши́ны прое́хали по нему́ в де́сять часо́в утра́.
+
+---
+#### Lo stile dei giornali
+- molti nomi in **-ние, -тие, -ство**: **откры́тие, строи́тельство, реше́ние**;
+- verbi formali: **состоя́ться** (aver luogo), **сообща́ть** (riferire), **заяви́ть** (dichiarare);
+- il passivo: **Мост был постро́ен за три го́да.**
+
+### Parole
+строи́тельство = costruzione, edilizia [n]
+откры́тие = apertura, inaugurazione; scoperta [n]
+губерна́тор = governatore [m]
+как сообща́ет = come riferisce [espr; + nom.]
+заголо́вок = titolo (di un articolo) [m]
+
+### Frasi
+Вчера́ состоя́лось откры́тие но́вого моста́. = Ieri c'è stata l'inaugurazione del nuovo ponte.
+Строи́тельство продолжа́лось три го́да. = La costruzione è durata tre anni.
+Как сообща́ет администра́ция го́рода, мост уже́ откры́т. = Come riferisce l'amministrazione della città, il ponte è già aperto.
+По слова́м губерна́тора, мост помо́жет реши́ть пробле́му про́бок. = Secondo il governatore, il ponte aiuterà a risolvere il problema del traffico.
+Длина́ моста́ — бо́лее восьмисо́т ме́тров. = Il ponte è lungo più di ottocento metri.
+Я чита́ю то́лько заголо́вки. = Leggo solo i titoli.
+
+### Esercizi
+? Вчера́ состоя́лось ___ но́вого моста́. = Ieri c'è stata l'inaugurazione del nuovo ponte. {откры́тие | откры́т | открыва́ть}
+? ___ продолжа́лось три го́да. = La costruzione è durata tre anni. {Строи́тельство | Стро́ить | Строи́тель}
+? По ___ губерна́тора, … = Secondo il governatore… {слова́м | слова́ | сло́во}
+? Длина́ моста́ — бо́лее ___ ме́тров. = …più di ottocento metri. {восьмисо́т | восемьсо́т | восьмиста́м}
+? Il titolo «Пожа́р в це́нтре Москвы́» è… {una frase senza verbo | una domanda | un ordine}
+? Quante ore? Le prime macchine sono passate alle… {dieci di mattina | otto di sera | mezzanotte}
+> Scrivi «costruzione» → строи́тельство
+~ Строи́тельство продолжа́лось три го́да. = La costruzione è durata tre anni.
+
+## Giorno 352 | Annunci e pubblicità
+obiettivo: Capire annunci, offerte e pubblicità.
+breve: Annunci: **Сдаю́ кварти́ру** (affitto appartamento), **Продаю́ велосипе́д**, **Тре́буется продаве́ц** (cercasi commesso).
+breve: Pubblicità: **А́кция!** (Promozione!) **Ски́дки до 50%!** **Беспла́тно!** (Gratis!) **Спеши́те!** (Affrettatevi!)
+breve: **в хоро́шем состоя́нии** (in buono stato), **недо́рого** (a buon prezzo), **вознагражде́ние** (ricompensa).
+
+### Lezione
+#### Gli annunci
+> **Сдаю́ кварти́ру** в це́нтре. Две ко́мнаты, но́вый ремо́нт. Недо́рого.
+
+> **Продаю́ велосипе́д** в хоро́шем состоя́нии. Цена́ — пять ты́сяч рубле́й.
+
+> **Тре́буется продаве́ц.** О́пыт рабо́ты не обяза́телен.
+
+> **Потеря́лась соба́ка!** Бе́лый пёс, зову́т Ша́рик. Вознагражде́ние гаранти́руется!
+
+---
+#### La pubblicità
+- **А́кция!** — Promozione!
+- **Ски́дки до пяти́десяти проце́нтов!** — Sconti fino al 50%!
+- **Беспла́тная доста́вка.** — Consegna gratuita.
+- **Спеши́те!** — Affrettatevi!
+- **Вы э́того заслу́живаете.** — Ve lo meritate.
+
+> **Тре́буется** (alla lettera «è richiesto») è la parola degli annunci di lavoro: **Тре́буются води́тели.** — Cercasi autisti.
+
+### Parole
+объявле́ние = annuncio, avviso [n]
+тре́буется = cercasi, si richiede [espr]
+а́кция = promozione; azione (in borsa) [f]
+беспла́тно = gratis [avv]
+недо́рого = a buon prezzo [avv]
+в хоро́шем состоя́нии = in buono stato [espr]
+вознагражде́ние = ricompensa [n]
+Спеши́те! = Affrettatevi! [espr]
+
+### Frasi
+Сдаю́ кварти́ру в це́нтре, недо́рого. = Affitto appartamento in centro, a buon prezzo.
+Продаю́ велосипе́д в хоро́шем состоя́нии. = Vendo bicicletta in buono stato.
+Тре́буется продаве́ц, о́пыт рабо́ты не обяза́телен. = Cercasi commesso, esperienza non necessaria.
+Потеря́лась соба́ка! Вознагражде́ние гаранти́руется. = Smarrito cane! Ricompensa garantita.
+А́кция! Вход беспла́тно. = Promozione! Ingresso gratuito.
+Я прочита́л объявле́ние в интерне́те. = Ho letto l'annuncio su internet.
+
+### Esercizi
+? ___ кварти́ру в це́нтре. = Affitto appartamento in centro. {Сдаю́ | Сдаётся бы | Снима́ю}
+? ___ продаве́ц. = Cercasi commesso. {Тре́буется | Тре́бую | Тре́бование}
+? Продаю́ велосипе́д в хоро́шем ___ . = …in buono stato. {состоя́нии | состоя́ние | состоя́ть}
+? Вход ___ . = Ingresso gratuito. {беспла́тно | беспла́тный | без пла́ты бы}
+? Я прочита́л ___ в интерне́те. = Ho letto l'annuncio su internet. {объявле́ние | объяви́ть | объявле́нием}
+? «Спеши́те!» in una pubblicità vuol dire… {Affrettatevi! | Rallentate! | Spedite!}
+> Scrivi «gratis» → беспла́тно
+~ Продаю́ велосипе́д в хоро́шем состоя́нии. = Vendo bicicletta in buono stato.
+
+## Giorno 353 | Un racconto di Čechov (semplificato)
+obiettivo: Leggere un racconto di Čechov in una versione semplificata.
+breve: **Анто́н Че́хов** (1860-1904): medico e scrittore, maestro del racconto breve.
+breve: «**Смерть чино́вника**» (La morte di un impiegato, 1883): un impiegato starnutisce a teatro sulla testa di un generale…
+breve: Parole chiave: **чино́вник** (impiegato statale), **генера́л**, **лы́сина** (testa calva), **извиня́ться** (scusarsi), **Вон!** (Fuori!)
+
+### Lezione
+#### Il racconto
+**Одна́жды ве́чером чино́вник Червяко́в сиде́л в теа́тре и смотре́л о́перу.** Вдруг он чихну́л. Пе́ред ним сиде́л ста́рый генера́л и вытира́л лы́сину перча́ткой. Червяко́в испуга́лся: он чихну́л на генера́ла!
+
+---
+Он извини́лся. Генера́л отве́тил: «Ничего́, ничего́…». Но Червяко́в не успоко́ился. В антра́кте он сно́ва извини́лся. Генера́л сказа́л: «Я уже́ забы́л».
+
+---
+На сле́дующий день Червяко́в пошёл к генера́лу и опя́ть на́чал извиня́ться. Генера́л рассерди́лся: «Вы про́сто смеётесь на́до мной!» Червяко́в пришёл ещё раз. Генера́л закрича́л: «Пошёл вон!!»
+
+---
+Червяко́в пришёл домо́й, лёг на дива́н и… у́мер.
+
+> Il cognome **Червяко́в** viene da **червя́к**, il verme: Čechov sceglieva i nomi con ironia. Ridiamo, ma il racconto parla della paura del potere.
+
+### Parole
+чино́вник = impiegato statale, funzionario [m]
+генера́л = generale [m]
+лы́сина = calvizie, testa calva [f]
+извиня́ться = scusarsi [v impf; извиня́юсь, извиня́ешься]
+испуга́ться = spaventarsi [v pf; испуга́юсь, испуга́ешься]
+Вон! = Fuori! Via! [inter]
+
+### Frasi
+Чино́вник сиде́л в теа́тре и смотре́л о́перу. = L'impiegato era seduto a teatro e guardava l'opera.
+Вдруг он чихну́л на лы́сину генера́ла. = All'improvviso starnutì sulla testa calva del generale.
+Червяко́в испуга́лся и извини́лся. = Červjakov si spaventò e chiese scusa.
+На сле́дующий день он опя́ть на́чал извиня́ться. = Il giorno dopo ricominciò a scusarsi.
+Генера́л закрича́л: «Пошёл вон!» = Il generale gridò: «Fuori!»
+Че́хов написа́л бо́лее пятисо́т расска́зов. = Čechov ha scritto più di cinquecento racconti.
+
+### Esercizi
+? Чино́вник сиде́л в теа́тре и ___ о́перу. = …e guardava l'opera. {смотре́л | посмотре́л | смо́трит}
+? Вдруг он ___ . = All'improvviso starnutì. {чихну́л | чиха́л | чиха́ет}
+? Червяко́в ___ и извини́лся. = Červjakov si spaventò e chiese scusa. {испуга́лся | пуга́ет | испуга́л}
+? На сле́дующий день он опя́ть на́чал ___ . = …ricominciò a scusarsi. {извиня́ться | извини́лся | извини́ться}
+? Che cosa gridò alla fine il generale? {«Fuori!» | «Grazie!» | «Salute!»}
+? Come finisce il racconto? {Червяко́в muore | il generale lo perdona | diventano amici}
+> Scrivi «impiegato statale» → чино́вник
+~ Червяко́в испуга́лся и извини́лся. = Červjakov si spaventò e chiese scusa.
+
+## Giorno 354 | Un'intervista
+obiettivo: Leggere un'intervista e saper fare domande a qualcuno.
+breve: Le domande dell'intervistatore: **Расскажи́те, пожа́луйста…**, **Как вы ста́ли…?**, **Что вас бо́льше всего́ удиви́ло?**
+breve: **В чём секре́т ва́шего успе́ха?** — Qual è il segreto del suo successo? **Каки́е у вас пла́ны на бу́дущее?**
+breve: **вдохнове́ние** = ispirazione: **Где вы берёте вдохнове́ние?** — Dove trova l'ispirazione?
+
+### Lezione
+#### Intervista a uno chef italiano a Mosca
+**— Лу́ка, как вы ста́ли по́варом?**
+— С де́тства я люби́л гото́вить с ба́бушкой. Она́ научи́ла меня́ всему́.
+
+**— Что вас бо́льше всего́ удиви́ло в Москве́?**
+— Ру́сские обожа́ют италья́нскую ку́хню! И ещё — моро́з ми́нус три́дцать.
+
+**— В чём секре́т ва́шего успе́ха?**
+— Све́жие проду́кты, мно́го рабо́ты и немно́го любви́.
+
+**— Каки́е у вас пла́ны на бу́дущее?**
+— Хочу́ откры́ть ещё оди́н рестора́н, в Петербу́рге.
+
+---
+#### Le domande da intervistatore
+| Russo | Italiano |
+|---|---|
+| Расскажи́те, пожа́луйста, о себе́. | Ci parli di sé. |
+| Как вы ста́ли…? | Come è diventato…? |
+| Что вас удиви́ло? | Che cosa l'ha stupita? |
+| В чём секре́т…? | Qual è il segreto…? |
+| Где вы берёте вдохнове́ние? | Dove trova l'ispirazione? |
+| Что бы вы посове́товали…? | Che cosa consiglierebbe…? |
+
+### Parole
+по́вар = cuoco [m]
+удиви́ть = stupire, sorprendere [v pf; удивлю́, удиви́шь]
+секре́т = segreto [m]
+вдохнове́ние = ispirazione [n]
+пла́ны на бу́дущее = progetti per il futuro [espr]
+
+### Frasi
+Как вы ста́ли по́варом? = Come è diventato cuoco?
+Что вас бо́льше всего́ удиви́ло в Москве́? = Che cosa l'ha stupita di più a Mosca?
+В чём секре́т ва́шего успе́ха? = Qual è il segreto del suo successo?
+Где вы берёте вдохнове́ние? = Dove trova l'ispirazione?
+Каки́е у вас пла́ны на бу́дущее? = Quali sono i suoi progetti per il futuro?
+Спаси́бо за интервью́! = Grazie per l'intervista!
+
+### Esercizi
+? Как вы ___ по́варом? = Come è diventato cuoco? {ста́ли | ста́ть | стои́те}
+? Что вас бо́льше всего́ ___ ? = Che cosa l'ha stupita di più? {удиви́ло | удиви́лся | удивле́ние}
+? В чём ___ ва́шего успе́ха? = Qual è il segreto del suo successo? {секре́т | секре́та | секре́тный}
+? Где вы берёте ___ ? = Dove trova l'ispirazione? {вдохнове́ние | вдохнове́ния | вдохнови́ть}
+? Каки́е у вас пла́ны на ___ ? = Quali sono i suoi progetti per il futuro? {бу́дущее | бу́дущем | бу́дет}
+? Secondo Luca, il segreto del successo è… {prodotti freschi, lavoro e un po' d'amore | la fortuna | i soldi}
+> Scrivi «cuoco» → по́вар
+~ Каки́е у вас пла́ны на бу́дущее? = Quali sono i suoi progetti per il futuro?
+
+## Giorno 355 | Una poesia
+obiettivo: Leggere e capire una delle poesie d'amore più famose della lingua russa.
+breve: **Алекса́ндр Пу́шкин**, «**Я вас люби́л…**» (1829): otto versi che ogni russo conosce a memoria.
+breve: Il poeta dà del **вы** alla donna amata: rispetto e distanza.
+breve: Parole chiave: **душа́** (anima), **не́жно** (teneramente), **и́скренно** (sinceramente), **ре́вность** (gelosia), **ро́бость** (timidezza).
+
+### Lezione
+#### Я вас люби́л…
+> Я вас люби́л: любо́вь ещё, быть мо́жет,
+> В душе́ мое́й уга́сла не совсе́м;
+> Но пусть она́ вас бо́льше не трево́жит;
+> Я не хочу́ печа́лить вас ниче́м.
+> Я вас люби́л безмо́лвно, безнаде́жно,
+> То ро́бостью, то ре́вностью томи́м;
+> Я вас люби́л так и́скренно, так не́жно,
+> Как дай вам Бог люби́мой быть други́м.
+
+---
+#### Il senso
+Il poeta ha amato una donna che non lo ricambiava. Forse l'amore non è ancora spento (**уга́сла не совсе́м**), ma lui non vuole più turbarla (**трево́жить**) né rattristarla (**печа́лить**). L'ultimo verso è il più famoso: le augura di essere amata da un altro **così sinceramente e teneramente** come l'ha amata lui.
+
+---
+#### Il lessico
+| Russo | Italiano |
+|---|---|
+| душа́ | anima |
+| уга́снуть | spegnersi |
+| трево́жить | turbare, inquietare |
+| печа́лить | rattristare |
+| безмо́лвно | in silenzio |
+| безнаде́жно | senza speranza |
+| ро́бость / ре́вность | timidezza / gelosia |
+| то…, то… | ora…, ora… (giorno 334) |
+| дай Бог | Dio voglia |
+
+### Parole
+душа́ = anima [f]
+не́жно = teneramente [avv]
+и́скренно = sinceramente [avv]
+ре́вность = gelosia [f]
+ро́бость = timidezza [f]
+трево́жить = turbare, inquietare [v impf; трево́жу, трево́жишь]
+печа́лить = rattristare [v impf; печа́лю, печа́лишь]
+дай Бог = Dio voglia [espr]
+
+### Frasi
+Я вас люби́л: любо́вь ещё, быть мо́жет, в душе́ мое́й уга́сла не совсе́м. = Vi ho amata: l'amore, forse, nella mia anima non si è ancora spento del tutto.
+Но пусть она́ вас бо́льше не трево́жит; я не хочу́ печа́лить вас ниче́м. = Ma che non vi turbi più; non voglio rattristarvi in alcun modo.
+Я вас люби́л безмо́лвно, безнаде́жно, то ро́бостью, то ре́вностью томи́м. = Vi ho amata in silenzio, senza speranza, tormentato ora dalla timidezza, ora dalla gelosia.
+Я вас люби́л так и́скренно, так не́жно, как дай вам Бог люби́мой быть други́м. = Vi ho amata così sinceramente, così teneramente, come Dio vi conceda di essere amata da un altro.
+Э́то стихотворе́ние зна́ет ка́ждый ру́сский. = Questa poesia la conosce ogni russo.
+Дай Бог тебе́ сча́стья! = Che Dio ti dia felicità!
+
+### Esercizi
+? Я вас люби́л так и́скренно, так ___ … = …così sinceramente, così teneramente… {не́жно | не́жный | не́жность}
+? …то ро́бостью, то ___ томи́м. = …ora dalla timidezza, ora dalla gelosia. {ре́вностью | ре́вность | ре́вности}
+? В ___ мое́й… = Nella mia anima… {душе́ | душа́ | ду́шу}
+? Я не хочу́ ___ вас ниче́м. = Non voglio rattristarvi in alcun modo. {печа́лить | печа́ль | печа́льный}
+? ___ тебе́ сча́стья! = Che Dio ti dia felicità! {Дай Бог | Дай бы | Бо́же мой}
+? Che cosa augura il poeta alla donna nell'ultimo verso? {di essere amata da un altro come l'ha amata lui | di dimenticarlo | di tornare da lui}
+> Scrivi «anima» → душа́
+~ Я вас люби́л так и́скренно, так не́жно. = Vi ho amata così sinceramente, così teneramente.
+
+## Giorno 356 | Blog e recensioni
+obiettivo: Leggere e scrivere una recensione.
+breve: **о́тзыв** = recensione, opinione: **оста́вить о́тзыв** (lasciare una recensione).
+breve: **Рекоменду́ю!** — Lo consiglio! **Не сове́тую.** — Non lo consiglio. **Сто́ит посети́ть.** — Vale la pena di visitarlo.
+breve: **обслу́живание** (servizio), **ка́чество** (qualità), **разочарова́ние** (delusione), **однозна́чно** (decisamente).
+
+### Lezione
+#### Una recensione
+**О́тзыв о кафе́ «У ба́бушки»** ★★★★☆
+
+Вчера́ мы с друзья́ми бы́ли в э́том кафе́. Атмосфе́ра о́чень ую́тная, как до́ма у ба́бушки. Борщ и пельме́ни — однозна́чно лу́чшие в го́роде! Ка́чество проду́ктов отли́чное. Ми́нус — обслу́живание: официа́нта мы жда́ли два́дцать мину́т. Но в це́лом рекоменду́ю, сто́ит посети́ть!
+
+---
+#### Le formule
+| Positivo | Negativo |
+|---|---|
+| Рекоменду́ю! | Не сове́тую. |
+| Сто́ит посети́ть. | Не сто́ит свои́х де́нег. |
+| Отли́чное ка́чество. | Ужа́сное обслу́живание. |
+| Однозна́чно лу́чший! | По́лное разочарова́ние. |
+
+- **в це́лом** — nel complesso;
+- **ую́тный** — accogliente;
+- **оце́нка** (giorno 169) — il voto: **Моя́ оце́нка — четы́ре из пяти́.**
+
+### Parole
+о́тзыв = recensione, opinione [m]
+рекомендова́ть = raccomandare, consigliare [v impf; рекоменду́ю, рекоменду́ешь]
+обслу́живание = servizio (in un locale) [n]
+ка́чество = qualità [n]
+разочарова́ние = delusione [n]
+однозна́чно = decisamente, senza dubbio [avv]
+посети́ть = visitare [v pf; посещу́, посети́шь]
+в це́лом = nel complesso [espr]
+
+### Frasi
+Я всегда́ чита́ю о́тзывы пе́ред пое́здкой. = Leggo sempre le recensioni prima di un viaggio.
+Рекоменду́ю э́тот рестора́н всем! = Consiglio questo ristorante a tutti!
+Обслу́живание бы́ло ужа́сным. = Il servizio è stato terribile.
+Ка́чество проду́ктов отли́чное. = La qualità dei prodotti è ottima.
+Э́тот музе́й однозна́чно сто́ит посети́ть. = Questo museo vale decisamente la pena di essere visitato.
+В це́лом фильм мне понра́вился. = Nel complesso il film mi è piaciuto.
+
+### Esercizi
+? Я всегда́ чита́ю ___ пе́ред пое́здкой. = Leggo sempre le recensioni… {о́тзывы | о́тзыв | отзыва́ть}
+? ___ э́тот рестора́н всем! = Consiglio questo ristorante a tutti! {Рекоменду́ю | Рекомендова́ть | Рекоменда́ция}
+? ___ бы́ло ужа́сным. = Il servizio è stato terribile. {Обслу́живание | Обслу́живать | Обслу́жит}
+? Э́тот музе́й сто́ит ___ . = Questo museo vale la pena di visitarlo. {посети́ть | посеще́ние | посети́л}
+? В ___ фильм мне понра́вился. = Nel complesso il film mi è piaciuto. {це́лом | це́лый | це́ль}
+? «По́лное разочарова́ние» vuol dire… {una delusione totale | un grande entusiasmo | un servizio completo}
+> Scrivi «qualità» → ка́чество
+~ Рекоменду́ю э́тот рестора́н всем! = Consiglio questo ristorante a tutti!
+
+## Giorno 357 | Ripasso della settimana
+obiettivo: Leggere una versione semplificata di un altro racconto di Čechov.
+
+### Lettura | Че́хов: То́лстый и то́нкий | Čechov: Il grasso e il magro
+На вокза́ле встре́тились два ста́рых дру́га: то́лстый и то́нкий. = Alla stazione si incontrarono due vecchi amici: uno grasso e uno magro.
+То́лстый то́лько что пообе́дал, а то́нкий то́лько что вы́шел из ваго́на с чемода́нами. = Il grasso aveva appena pranzato, il magro era appena sceso dal vagone con le valigie.
+— Ми́ша! Друг де́тства! Ско́лько лет, ско́лько зим! — закрича́л то́лстый. = «Miša! Amico d'infanzia! Da quanto tempo!» gridò il grasso.
+Друзья́ ра́достно обня́лись. = Gli amici si abbracciarono felici.
+То́нкий с ра́достью рассказа́л о себе́: он жена́т, у него́ сын, а сам он рабо́тает ме́лким чино́вником. = Il magro raccontò con gioia di sé: è sposato, ha un figlio e lui fa il piccolo impiegato.
+— А ты как? Где слу́жишь? — спроси́л он. = «E tu? Dove lavori?» chiese.
+— Я уже́ та́йный сове́тник, — отве́тил то́лстый. = «Io sono già consigliere segreto», rispose il grasso.
+То́нкий вдруг побледне́л: э́то был о́чень высо́кий чин. = Il magro all'improvviso impallidì: era un grado altissimo.
+Он съёжился и заговори́л с дру́гом на «вы»: «Ва́ше превосходи́тельство… О́чень прия́тно!» = Si fece piccolo piccolo e cominciò a dare del voi all'amico: «Vostra Eccellenza… Lietissimo!»
+То́лстому ста́ло неприя́тно, он отверну́лся и на проща́ние пода́л то́нкому ру́ку. = Il grasso si sentì a disagio, si voltò e, per salutarlo, gli porse la mano.
+Так ста́рая дру́жба ко́нчилась из-за чи́на. = Così una vecchia amicizia finì a causa di un grado.
+
+### Domande
+? Dove si incontrano i due amici? {alla stazione | a teatro | in ufficio}
+? Che lavoro fa il magro? {il piccolo impiegato | il generale | il cuoco}
+? Perché il magro cambia comportamento? {l'amico ha un grado altissimo | l'amico lo offende | ha fretta}
+? Come finisce la loro amicizia? {a causa del grado | con un litigio | non finisce}
