@@ -1,0 +1,355 @@
+# Settimana 13 | Lo strumentale
+
+## Giorno 85 | Con chi? с + strumentale
+obiettivo: Dire con chi o con che cosa fai qualcosa.
+breve: **с** + strumentale = con: с дру́гом, с ма́мой, чай с лимо́ном.
+breve: Maschile e neutro: **-ом/-ем** (друг → с дру́гом). Femminile: **-ой/-ей** (ма́ма → с ма́мой), -ь → **-ью** (дочь → с до́черью).
+breve: Domande: **с кем?** (con chi?) · **с чем?** (con che cosa?).
+
+### Lezione
+#### Il sesto caso
+Lo **strumentale** risponde a **кем? чем?** (da chi? con che cosa?). Oggi lo usiamo con **с** (con):
+- **Я гуля́ю с дру́гом.** — Passeggio con un amico.
+- **Я пью чай с лимо́ном.** — Bevo il tè col limone.
+
+---
+#### Le desinenze (singolare)
+| Nominativo | Strumentale |
+|---|---|
+| друг, брат | с дру́г**ом**, с бра́т**ом** |
+| музе́й, учи́тель | с музе́**ем**, с учи́тел**ем** |
+| молоко́, мо́ре | с молок**о́м**, с мо́р**ем** |
+| ма́ма, сестра́ | с ма́м**ой**, с сестр**о́й** |
+| Та́ня, семья́ | с Та́н**ей**, с семь**ёй** |
+| дочь, мать | с до́черь**ю**, с ма́терь**ю** |
+
+> Dopo **ж ш щ ч ц** la desinenza non accentata si scrive **-ем/-ей** (с му́жем, с Са́шей); quella accentata resta **-о́м/-о́й** (с врачо́м).
+
+---
+#### Mangiare con
+Lo strumentale è perfetto in cucina: **ко́фе с молоко́м**, **чай с са́харом**, **хлеб с ма́слом**, **бутербро́д с сы́ром** (panino col formaggio).
+
+**Вме́сте** — insieme: **Мы рабо́таем вме́сте.**
+
+### Parole
+с = con (+ strumentale) [prep]
+вме́сте = insieme [avv]
+са́хар = zucchero [m]
+лимо́н = limone [m]
+ма́сло = burro, olio [n]
+бутербро́д = panino imbottito, tartina [m]
+
+### Frasi
+Я гуля́ю с дру́гом. = Passeggio con un amico.
+С кем ты живёшь? — С ма́мой и бра́том. = Con chi vivi? — Con la mamma e mio fratello.
+Я пью чай с лимо́ном и с са́харом. = Bevo il tè con limone e zucchero.
+Хо́чешь бутербро́д с сы́ром? = Vuoi un panino col formaggio?
+Мы рабо́таем вме́сте. = Lavoriamo insieme.
+Ко́фе с молоко́м, пожа́луйста. = Un caffè con latte, per favore.
+
+### Esercizi
+? Я гуля́ю с ___ . = Passeggio con un amico. {дру́гом | дру́га | дру́гу}
+? Я живу́ с ___ . = Vivo con la mamma. {ма́мой | ма́мы | ма́ме}
+? чай с ___ = tè col limone {лимо́ном | лимо́на | лимо́н}
+? ко́фе с ___ = caffè col latte {молоко́м | молока́ | молоко́}
+? Он говори́т с ___ . = Parla con la sorella. {сестро́й | сестры́ | сестре́}
+? Я рабо́таю с ___ . = Lavoro con mia figlia. {до́черью | до́черей | до́чью}
+? С ___ ты живёшь? = Con chi vivi? {кем | кто | кого́}
+> хлеб с … (ма́сло) → ма́слом
+> бутербро́д с … (сыр) → сы́ром
+~ Я пью чай с лимо́ном. = Bevo il tè col limone.
+
+## Giorno 86 | Cosa fai nella vita? Lavorare come…
+obiettivo: Dire che lavoro fai e che cosa vuoi diventare.
+breve: рабо́тать + strumentale = lavorare come: **Я рабо́таю врачо́м.**
+breve: стать (diventare) + strumentale: **Я хочу́ стать актёром.**
+breve: быть + strumentale al passato e al futuro: **Он был студе́нтом. Я бу́ду врачо́м.**
+
+### Lezione
+#### Lavorare come
+Lo strumentale **senza preposizione** indica il ruolo, la funzione:
+- **Я рабо́таю врачо́м.** — Lavoro come medico.
+- **Кем ты рабо́таешь?** — Che lavoro fai? (alla lettera «come chi lavori?»)
+- **Она́ рабо́тает учи́тельницей.**
+
+---
+#### Diventare: стать
+**стать** (diventare) è perfettivo: il presente ha valore di futuro.
+- **Я хочу́ стать актёром.** — Voglio diventare attore.
+- **Кем ты хо́чешь стать?** — Che cosa vuoi diventare?
+- **Он стал музыка́нтом.** — È diventato musicista.
+
+---
+#### Essere al passato e al futuro
+Al presente si dice **Он врач**. Ma al passato e al futuro, con **быть**, spesso si usa lo strumentale:
+- **Ра́ньше он был студе́нтом.** — Prima era uno studente.
+- **Я бу́ду врачо́м.** — Sarò medico.
+
+> **Мечта́** — sogno (desiderio): **Моя́ мечта́ — стать певи́цей.** — Il mio sogno è diventare cantante.
+
+### Parole
+стать = diventare [v pf; ста́ну, ста́нешь]
+мечта́ = sogno (desiderio) [f]
+актёр = attore [m]
+актри́са = attrice [f]
+музыка́нт = musicista [m]
+певе́ц = cantante (uomo) [m]
+певи́ца = cantante (donna) [f]
+
+### Frasi
+Кем ты рабо́таешь? — Я рабо́таю врачо́м. = Che lavoro fai? — Faccio il medico.
+Кем ты хо́чешь стать? = Che cosa vuoi diventare?
+В де́тстве я хоте́л стать актёром. = Da bambino volevo diventare attore.
+Ра́ньше он был студе́нтом, а тепе́рь он инжене́р. = Prima era uno studente, ora è ingegnere.
+Моя́ мечта́ — стать певи́цей. = Il mio sogno è diventare cantante.
+Её брат стал музыка́нтом. = Suo fratello è diventato musicista.
+
+### Esercizi
+? Я рабо́таю ___ . = Faccio il medico. {врачо́м | врач | врача́}
+? ___ ты рабо́таешь? = Che lavoro fai? {Кем | Кто | Кого́}
+? Я хочу́ стать ___ . = Voglio diventare attore. {актёром | актёр | актёра}
+? Она́ рабо́тает ___ . = Fa l'insegnante. {учи́тельницей | учи́тельница | учи́тельницу}
+? Ра́ньше он был ___ . = Prima era uno studente. {студе́нтом | студе́нт | студе́нта}
+? Он ___ музыка́нтом. = È diventato musicista. {стал | ста́нет | стать}
+? «мечта́» vuol dire… {sogno, desiderio | sonno | idea}
+> инжене́р → рабо́тать … → инжене́ром
+~ Кем ты хо́чешь стать? = Che cosa vuoi diventare?
+
+## Giorno 87 | Hobby: заниматься
+obiettivo: Parlare dei tuoi interessi e del tuo tempo libero.
+breve: **занима́ться** + strumentale = praticare, occuparsi di: занима́ться спо́ртом, му́зыкой, йо́гой.
+breve: **интересова́ться** + strumentale = interessarsi di: интересова́ться исто́рией.
+breve: I verbi in **-ся**: занима́юсь, занима́ешься… (-сь dopo vocale, -ся dopo consonante).
+
+### Lezione
+#### Занима́ться
+Uno dei verbi più usati: «fare, praticare, occuparsi di, studiare». Vuole lo **strumentale**:
+- **Я занима́юсь спо́ртом.** — Faccio sport.
+- **Она́ занима́ется му́зыкой.** — Studia musica.
+- **Чем ты занима́ешься?** — Che cosa fai? (nella vita, adesso)
+
+---
+#### I verbi in -ся
+Alla fine del verbo c'è **-ся**: si coniuga normalmente e si aggiunge **-ся** (dopo consonante) o **-сь** (dopo vocale):
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| занима́юсь | занима́ешься | занима́ется | занима́емся | занима́етесь | занима́ются |
+
+> **-ться** e **-тся** si pronunciano «-tsa»: **занима́ться** = «zanimàtsa».
+
+---
+#### Interessarsi
+**интересова́ться** + strumentale (-ова- → -у-):
+**Я интересу́юсь исто́рией.** — Mi interesso di storia.
+
+E poi: **хо́бби** (hobby, non si declina), **те́ннис**, **йо́га**, **иностра́нные языки́** (lingue straniere).
+
+### Parole
+занима́ться = occuparsi di, praticare, studiare [v impf; занима́юсь, занима́ешься]
+интересова́ться = interessarsi di [v impf; интересу́юсь, интересу́ешься]
+хо́бби = hobby [n; non si declina]
+те́ннис = tennis [m]
+йо́га = yoga [f]
+иностра́нный = straniero [agg]
+
+### Frasi
+Чем ты занима́ешься в свобо́дное вре́мя? = Che cosa fai nel tempo libero?
+Я занима́юсь спо́ртом три ра́за в неде́лю. = Faccio sport tre volte a settimana.
+Она́ занима́ется йо́гой. = Fa yoga.
+Мой брат интересу́ется исто́рией. = Mio fratello si interessa di storia.
+Моё хо́бби — иностра́нные языки́. = Il mio hobby sono le lingue straniere.
+Вы игра́ете в те́ннис? = Gioca a tennis?
+
+### Esercizi
+? Я занима́юсь ___ . = Faccio sport. {спо́ртом | спорт | спо́рта}
+? Она́ занима́ется ___ . = Studia musica. {му́зыкой | му́зыку | му́зыка}
+? ___ ты занима́ешься? = Che cosa fai? {Чем | Что | Кем}
+? Он интересу́ется ___ . = Si interessa di storia. {исто́рией | исто́рию | исто́рия}
+? Мы ___ йо́гой. = Facciamo yoga. {занима́емся | занима́ется | занима́юсь}
+? Они́ ___ те́ннисом. = Giocano a tennis (lo praticano). {занима́ются | занима́етесь | занима́ться}
+> я (интересова́ться) → интересу́юсь
+> ты (занима́ться) → занима́ешься
+~ Я занима́юсь спо́ртом три ра́за в неде́лю. = Faccio sport tre volte a settimana.
+
+## Giorno 88 | Sopra, sotto, davanti
+obiettivo: Descrivere la posizione delle cose.
+breve: над (sopra), под (sotto), пе́ред (davanti a), за (dietro), ме́жду (tra), ря́дом с (accanto a): tutte + strumentale.
+breve: **Ко́шка под столо́м.** — La gatta è sotto il tavolo.
+breve: **пе́ред** vuol dire anche «prima di»: пе́ред обе́дом.
+
+### Lezione
+#### Dove? Con lo strumentale
+| Preposizione | Significato | Esempio |
+|---|---|---|
+| над | sopra (senza toccare) | Ла́мпа над столо́м. |
+| под | sotto | Ко́шка под столо́м. |
+| пе́ред | davanti a | Маши́на пе́ред до́мом. |
+| за | dietro | Сад за до́мом. |
+| ме́жду | tra | Ме́жду ба́нком и апте́кой. |
+| ря́дом с | accanto a | Ря́дом с метро́. |
+
+> **На** (sopra, appoggiato) vuole il prepositivo: **на столе́**. **Над** (sopra, sospeso) vuole lo strumentale: **над столо́м**.
+
+---
+#### Anche il tempo
+- **пе́ред** = poco prima di: **пе́ред обе́дом**, **пе́ред рабо́той**;
+- **за** = a (tavola), **за столо́м**: **Мы сиди́м за столо́м.** — Siamo seduti a tavola.
+
+### Parole
+над = sopra (+ strumentale) [prep]
+под = sotto [prep]
+пе́ред = davanti a, prima di (+ strumentale) [prep]
+за = dietro (+ strumentale); per (+ accusativo) [prep]
+ме́жду = tra, fra (+ strumentale) [prep]
+карти́на = quadro, dipinto [f]
+ла́мпа = lampada [f]
+по́лка = mensola, scaffale [f]
+
+### Frasi
+Ко́шка под столо́м. = La gatta è sotto il tavolo.
+Над крова́тью виси́т карти́на. = Sopra il letto c'è appeso un quadro.
+Маши́на стои́т пе́ред до́мом. = La macchina è davanti a casa.
+За до́мом большо́й сад. = Dietro la casa c'è un grande giardino.
+Апте́ка ме́жду ба́нком и по́чтой. = La farmacia è tra la banca e la posta.
+Пе́ред обе́дом я мо́ю ру́ки. = Prima di pranzo mi lavo le mani.
+
+### Esercizi
+? Ко́шка под ___ . = La gatta è sotto il tavolo. {столо́м | столе́ | стол}
+? Маши́на пе́ред ___ . = La macchina è davanti a casa. {до́мом | до́ме | дом}
+? Ла́мпа над ___ . = La lampada è sopra il tavolo. {столо́м | столе́ | стола́}
+? Банк ме́жду ___ и по́чтой. = La banca è tra la farmacia e la posta. {апте́кой | апте́ка | апте́ке}
+? Кни́га ___ по́лке. = Il libro è sulla mensola. {на | над | под}
+? ___ обе́дом я мо́ю ру́ки. = Prima di pranzo mi lavo le mani. {Пе́ред | По́сле | За}
+? «за до́мом» vuol dire… {dietro la casa | davanti alla casa | per la casa}
+> Scrivi «tra» in russo → ме́жду
+~ Ко́шка под столо́м. = La gatta è sotto il tavolo.
+
+## Giorno 89 | Con me, con te: i pronomi
+obiettivo: Usare i pronomi allo strumentale.
+breve: мной, тобо́й, им, ей, на́ми, ва́ми, и́ми = (con) me, te, lui, lei, noi, voi, loro.
+breve: Con **с**: со мной, с тобо́й, с ним, с ней, с на́ми, с ва́ми, с ни́ми.
+breve: **Пойдём со мной!** — Vieni con me!
+
+### Lezione
+#### I pronomi allo strumentale
+| Nominativo | Strumentale | Con «с» |
+|---|---|---|
+| я | мной | **со** мной |
+| ты | тобо́й | с тобо́й |
+| он | им | с **н**им |
+| она́ | ей | с **н**ей |
+| мы | на́ми | с на́ми |
+| вы | ва́ми | с ва́ми |
+| они́ | и́ми | с **н**и́ми |
+
+> Dopo una preposizione, **он/она́/они́** prendono la **н-**: **с ним**, **с ней**, **с ни́ми** (come **у него́**).
+
+---
+#### Frasi da sapere
+- **Пойдём со мной!** — Vieni con me!
+- **Мо́жно с ва́ми?** — Posso venire con voi?
+- **Я с тобо́й согла́сен.** — Sono d'accordo con te.
+- **Что с тобо́й?** — Che cos'hai? Che ti succede?
+
+---
+#### Verbi «con qualcuno»
+- **разгова́ривать с** — parlare, chiacchierare con;
+- **спо́рить с** — discutere, litigare a parole con;
+- **ссо́риться с** — litigare con;
+- **знако́м с** — conoscere (qualcuno): **Вы знако́мы?** — Vi conoscete?
+
+### Parole
+разгова́ривать = parlare, chiacchierare (con qualcuno) [v impf; разгова́риваю, разгова́риваешь]
+спо́рить = discutere, litigare a parole [v impf; спо́рю, спо́ришь]
+ссо́риться = litigare [v impf; ссо́рюсь, ссо́ришься]
+знако́м = conosce, è conosciuto (con qualcuno) [agg; знако́ма, знако́мы]
+
+### Frasi
+Пойдём со мной! = Vieni con me!
+Мо́жно с ва́ми? = Posso venire con voi?
+Я ча́сто разгова́риваю с ним по телефо́ну. = Parlo spesso con lui al telefono.
+Мы никогда́ не ссо́римся. = Non litighiamo mai.
+Что с тобо́й? = Che cos'hai?
+Вы знако́мы? — Да, мы знако́мы. = Vi conoscete? — Sì, ci conosciamo.
+
+### Esercizi
+? Пойдём со ___ ! = Vieni con me! {мной | меня́ | мне}
+? Мо́жно с ___ ? = Posso venire con voi? {ва́ми | вас | вам}
+? Я разгова́ривал с ___ . = Ho parlato con lui. {ним | им | его́}
+? Она́ не хо́чет говори́ть с ___ . = Non vuole parlare con loro. {ни́ми | и́ми | их}
+? Я с ___ согла́сен. = Sono d'accordo con te. {тобо́й | тебя́ | тебе́}
+? Что с ___ ? = Che cos'ha lei? {ней | ей | неё}
+? Мы ча́сто ___ . = Litighiamo spesso. {ссо́римся | ссо́рим | ссо́ритесь}
+> мы → с … → на́ми
+~ Пойдём со мной! = Vieni con me!
+
+## Giorno 90 | Il tempo libero
+obiettivo: Parlare di sport e musica.
+breve: игра́ть **в** + accusativo (sport, giochi): игра́ть в футбо́л, в ша́хматы.
+breve: игра́ть **на** + prepositivo (strumenti): игра́ть на гита́ре, на пиани́но.
+breve: ката́ться на лы́жах / на велосипе́де = andare in sci / in bicicletta (per divertimento).
+
+### Lezione
+#### Giocare o suonare?
+In russo **игра́ть** vuol dire sia «giocare» sia «suonare»: cambia la preposizione.
+- sport e giochi: **игра́ть в** + accusativo: **в футбо́л**, **в те́ннис**, **в ша́хматы**, **в ка́рты**;
+- strumenti: **игра́ть на** + prepositivo: **на гита́ре**, **на пиани́но**.
+
+**Я игра́ю в футбо́л, а мой брат игра́ет на гита́ре.**
+
+---
+#### Altri passatempi
+- **рисова́ть** (disegnare, dipingere): **рису́ю, рису́ешь** (-ова- → -у-);
+- **ката́ться** (andare per divertimento): **ката́ться на лы́жах** (sciare), **на конька́х** (pattinare), **на велосипе́де**;
+- **свобо́дное вре́мя** — tempo libero.
+
+> **Лы́жи** (sci) è plurale: **Зимо́й мы ката́емся на лы́жах.**
+
+### Parole
+игра́ть = giocare, suonare [v impf; игра́ю, игра́ешь]
+гита́ра = chitarra [f]
+пиани́но = pianoforte [n; non si declina]
+рисова́ть = disegnare, dipingere [v impf; рису́ю, рису́ешь]
+ката́ться = andare (in bici, sugli sci…) per divertimento [v impf; ката́юсь, ката́ешься]
+лы́жи = sci [pl]
+свобо́дное вре́мя = tempo libero [espr]
+
+### Frasi
+Ты игра́ешь в футбо́л? = Giochi a calcio?
+Мой брат игра́ет на гита́ре. = Mio fratello suona la chitarra.
+Она́ хорошо́ игра́ет на пиани́но. = Suona bene il pianoforte.
+Зимо́й мы ката́емся на лы́жах. = D'inverno andiamo a sciare.
+В свобо́дное вре́мя я рису́ю. = Nel tempo libero dipingo.
+Вы игра́ете в ша́хматы? = Gioca a scacchi?
+
+### Esercizi
+? Я игра́ю ___ футбо́л. = Gioco a calcio. {в | на | с}
+? Он игра́ет ___ гита́ре. = Suona la chitarra. {на | в | с}
+? Мы игра́ем в ___ . = Giochiamo a tennis. {те́ннис | те́ннисе | те́ннисом}
+? Она́ игра́ет на ___ . = Suona la chitarra. {гита́ре | гита́ру | гита́ра}
+? Зимо́й мы ката́емся на ___ . = D'inverno sciamo. {лы́жах | лы́жи | лы́жами}
+? В свобо́дное вре́мя я ___ . = Nel tempo libero disegno. {рису́ю | рисова́ю | рисова́ть}
+> я (рисова́ть) → рису́ю
+~ Мой брат игра́ет на гита́ре. = Mio fratello suona la chitarra.
+
+## Giorno 91 | Ripasso della settimana
+obiettivo: Leggere un racconto sul tempo libero.
+
+### Lettura | Мои́ выходны́е | Il mio fine settimana
+Меня́ зову́т Серге́й. Я рабо́таю программи́стом. = Mi chiamo Sergej. Faccio il programmatore.
+В свобо́дное вре́мя я занима́юсь спо́ртом. = Nel tempo libero faccio sport.
+В суббо́ту у́тром я игра́ю в футбо́л с друзья́ми. = Il sabato mattina gioco a calcio con gli amici.
+Пото́м мы пьём ко́фе с молоко́м в кафе́ ря́дом со стадио́ном. = Poi beviamo un caffellatte al bar accanto allo stadio.
+Днём я гуля́ю с соба́кой. = Nel pomeriggio porto a spasso il cane.
+Ве́чером я игра́ю на гита́ре. = La sera suono la chitarra.
+Моя́ жена́ Ната́ша занима́ется йо́гой и интересу́ется исто́рией. = Mia moglie Nataša fa yoga e si interessa di storia.
+В воскресе́нье мы вме́сте хо́дим в музе́й и́ли в теа́тр. = La domenica andiamo insieme al museo o a teatro.
+Зимо́й мы ката́емся на лы́жах. = D'inverno andiamo a sciare.
+Ната́ша говори́т: «С тобо́й никогда́ не ску́чно!» = Nataša dice: «Con te non ci si annoia mai!»
+
+### Domande
+? Che lavoro fa Sergej? {programmatore | musicista | insegnante}
+? Con chi gioca a calcio? {con gli amici | con la moglie | con il cane}
+? Che cosa fa la sera? {suona la chitarra | fa yoga | guarda un film}
+? Di che cosa si interessa Nataša? {di storia | di sport | di musica}
