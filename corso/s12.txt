@@ -1,0 +1,369 @@
+# Settimana 12 | Corpo, salute e dativo
+
+## Giorno 78 | Il corpo
+obiettivo: Nominare le parti del corpo.
+breve: голова́, лицо́, глаз (pl. глаза́), у́хо (pl. у́ши), нос, рот, зуб, рука́, нога́, спина́, живо́т, се́рдце.
+breve: рука́ = mano **e** braccio; нога́ = piede **e** gamba.
+breve: Plurali irregolari: глаз → глаза́, у́хо → у́ши.
+
+### Lezione
+#### La testa
+| Russo | Italiano |
+|---|---|
+| голова́ | testa |
+| лицо́ | viso |
+| глаз (pl. глаза́) | occhio |
+| у́хо (pl. у́ши) | orecchio |
+| нос | naso |
+| рот | bocca |
+| зуб | dente |
+| во́лосы (pl.) | capelli |
+
+#### Il resto del corpo
+| Russo | Italiano |
+|---|---|
+| рука́ | mano, braccio |
+| нога́ | piede, gamba |
+| спина́ | schiena |
+| живо́т | pancia |
+| се́рдце | cuore (si pronuncia «sèrce») |
+
+---
+#### Una parola, due parti
+In russo **рука́** è tutto il braccio con la mano, **нога́** tutta la gamba con il piede. Se serve essere precisi: **кисть** (mano), **ступня́** (piede), ma nella vita di tutti i giorni nessuno li usa.
+
+> **Во́лосы** (capelli) è plurale: **У неё дли́нные во́лосы.** — Ha i capelli lunghi.
+
+### Parole
+голова́ = testa [f]
+лицо́ = viso, faccia [n]
+глаз = occhio [m; plurale глаза́]
+у́хо = orecchio [n; plurale у́ши]
+рот = bocca [m; genitivo рта]
+зуб = dente [m]
+нога́ = gamba, piede [f]
+спина́ = schiena [f]
+живо́т = pancia, stomaco [m]
+се́рдце = cuore [n; si pronuncia «sèrce»]
+во́лосы = capelli [pl]
+
+### Frasi
+У меня́ боли́т голова́. = Ho mal di testa.
+У неё краси́вые глаза́. = Ha degli occhi bellissimi.
+Ребёнок мо́ет ру́ки. = Il bambino si lava le mani.
+У него́ дли́нные но́ги. = Ha le gambe lunghe.
+Я чи́щу зу́бы у́тром и ве́чером. = Mi lavo i denti la mattina e la sera.
+У ба́бушки до́брое се́рдце. = La nonna ha un cuore buono.
+
+### Esercizi
+? «голова́» vuol dire… {testa | gola | spalla}
+? «рука́» vuol dire… {mano e braccio | solo mano | gamba}
+? «нога́» vuol dire… {gamba e piede | solo piede | ginocchio}
+? Il plurale di «глаз» è… {глаза́ | гла́зы | глазы́}
+? Il plurale di «у́хо» è… {у́ши | у́хи | уха́}
+? У неё краси́вые ___ . = Ha dei bei capelli. {во́лосы | во́лос | во́лоса}
+? Come si pronuncia «се́рдце»? {sèrce | sèrdce | serdzè}
+> Scrivi «testa» in russo → голова́
+> Scrivi «dente» in russo → зуб
+~ У неё краси́вые глаза́. = Ha degli occhi bellissimi.
+
+## Giorno 79 | Come ti senti?
+obiettivo: Dire come stai e dove ti fa male.
+breve: **У меня́ боли́т голова́.** — Ho mal di testa. **У меня́ боля́т зу́бы.** — Mi fanno male i denti.
+breve: **Как вы себя́ чу́вствуете?** — Come si sente? **Я пло́хо себя́ чу́вствую.** — Mi sento male.
+breve: **Я уста́л / уста́ла.** — Sono stanco / stanca.
+
+### Lezione
+#### Fa male: боле́ть
+Per dire che qualcosa fa male: **у меня́ боли́т** + la parte del corpo (soggetto).
+- **У меня́ боли́т голова́.** — Ho mal di testa.
+- **У меня́ боли́т живо́т.** — Ho mal di pancia.
+- **У меня́ боля́т зу́бы.** — Mi fanno male i denti. (plurale: **боля́т**)
+
+---
+#### Come ti senti?
+**чу́вствовать себя́** — sentirsi (alla lettera «sentire se stesso»). Si legge «čùstvovat'»: la prima **в** non si pronuncia.
+- **Как вы себя́ чу́вствуете?** — Come si sente?
+- **Я хорошо́ себя́ чу́вствую.** — Mi sento bene.
+- **Я пло́хо себя́ чу́вствую.** — Mi sento male.
+
+---
+#### Stanco, sano, malato
+- **Я уста́л.** (uomo) / **Я уста́ла.** (donna) — Sono stanco/a. È il passato di **уста́ть**: «mi sono stancato».
+- **Я здоро́в / здоро́ва.** — Sto bene (sono sano/a).
+- **Я бо́лен / больна́.** — Sono malato/a.
+
+### Parole
+боле́ть = fare male (una parte del corpo) [v impf; боли́т, боля́т]
+чу́вствовать себя́ = sentirsi [v impf; чу́вствую, чу́вствуешь]
+уста́ть = stancarsi [v pf; я уста́л, я уста́ла]
+здоро́вый = sano [agg; breve: здоро́в, здоро́ва]
+
+### Frasi
+Как вы себя́ чу́вствуете? = Come si sente?
+Я пло́хо себя́ чу́вствую. = Mi sento male.
+У меня́ боли́т голова́. = Ho mal di testa.
+У ребёнка боли́т живо́т. = Il bambino ha mal di pancia.
+Я о́чень уста́ла. = Sono molto stanca.
+Тепе́рь я здоро́в! = Adesso sto bene!
+
+### Esercizi
+? У меня́ ___ голова́. = Ho mal di testa. {боли́т | боля́т | боле́ть}
+? У меня́ ___ зу́бы. = Mi fanno male i denti. {боля́т | боли́т | бо́лен}
+? Как вы себя́ ___ ? = Come si sente? {чу́вствуете | чу́вствуешь | чу́вствует}
+? Я пло́хо ___ чу́вствую. = Mi sento male. {себя́ | меня́ | мне}
+? Anna dice: «Sono stanca» → {Я уста́ла. | Я уста́л. | Я уста́ть.}
+? «здоро́вый» vuol dire… {sano | grande | forte}
+> Come si dice «mi sento bene»? → я хорошо́ себя́ чу́вствую
+~ У меня́ боли́т голова́. = Ho mal di testa.
+
+## Giorno 80 | Dal medico
+obiettivo: Spiegare al medico che cosa hai e capire le sue istruzioni.
+breve: просту́да (raffreddore), ка́шель (tosse), на́сморк (naso chiuso), температу́ра (febbre).
+breve: лека́рство (medicina), табле́тка (pastiglia), реце́пт (ricetta).
+breve: **Принима́йте э́то лека́рство три ра́за в день.** — Prenda questa medicina tre volte al giorno.
+
+### Lezione
+#### Dal medico
+- **Что у вас боли́т?** — Che cosa le fa male?
+- **У меня́ температу́ра и ка́шель.** — Ho la febbre e la tosse.
+- **У меня́ на́сморк.** — Ho il naso chiuso (che cola).
+- **Э́то просту́да.** — È un raffreddore.
+
+> **Температу́ра** da sola vuol dire «febbre»: **У меня́ температу́ра** = ho la febbre.
+
+---
+#### In farmacia
+- **лека́рство** — medicina; **табле́тка** — pastiglia, compressa;
+- **реце́пт** — ricetta medica;
+- **Да́йте, пожа́луйста, что́-нибудь от ка́шля.** — Mi dia qualcosa per la tosse. (**от** + genitivo: «contro»)
+
+---
+#### Le istruzioni
+**Принима́йте** (prenda) è l'imperativo di **принима́ть** (prendere medicine):
+**Принима́йте по одно́й табле́тке три ра́за в день.** — Prenda una pastiglia tre volte al giorno.
+
+> Curiosità: in Russia il medico di base si chiama **терапе́вт**.
+
+### Parole
+лека́рство = medicina, farmaco [n]
+табле́тка = pastiglia, compressa [f]
+температу́ра = temperatura, febbre [f]
+просту́да = raffreddore [f]
+ка́шель = tosse [m; genitivo ка́шля]
+на́сморк = raffreddore (naso che cola) [m]
+реце́пт = ricetta [m]
+принима́ть = prendere (medicine), ricevere [v impf; принима́ю, принима́ешь]
+
+### Frasi
+Что у вас боли́т? = Che cosa le fa male?
+У меня́ температу́ра и ка́шель. = Ho la febbre e la tosse.
+Э́то просту́да. Вам на́до отдыха́ть. = È un raffreddore. Deve riposarsi.
+Принима́йте э́то лека́рство три ра́за в день. = Prenda questa medicina tre volte al giorno.
+Да́йте, пожа́луйста, что́-нибудь от на́сморка. = Mi dia qualcosa per il naso chiuso, per favore.
+Вот ваш реце́пт. = Ecco la sua ricetta.
+
+### Esercizi
+? У меня́ ___ . = Ho la febbre. {температу́ра | температу́ру | температу́ры}
+? «ка́шель» vuol dire… {tosse | gola | febbre}
+? «лека́рство» vuol dire… {medicina | medico | farmacia}
+? Принима́йте ___ табле́тке три ра́за в день. {по одно́й | одна́ | одну́}
+? Да́йте что́-нибудь от ___ . = Qualcosa per la tosse. {ка́шля | ка́шель | ка́шлю}
+? Il medico dice «Принима́йте…»: vuol dire… {Prenda… | Riceva gli ospiti… | Si riposi…}
+> Scrivi «ricetta» (del medico) in russo → реце́пт
+~ У меня́ температу́ра и ка́шель. = Ho la febbre e la tosse.
+
+## Giorno 81 | A me, a te: il dativo dei pronomi
+obiettivo: Usare i pronomi al dativo nelle frasi più comuni.
+breve: мне, тебе́, ему́, ей, нам, вам, им = a me, a te, a lui, a lei, a noi, a voi, a loro.
+breve: **Мне хо́лодно / ску́чно / интере́сно / тру́дно.** — Ho freddo / mi annoio / mi interessa / è difficile per me.
+breve: Al passato: **Мне бы́ло ве́село.** — Mi sono divertito.
+
+### Lezione
+#### Il dativo: «a chi?»
+Hai già incontrato il dativo in **мне нра́вится**, **мне ну́жно**, **мне два́дцать лет**. Ecco tutti i pronomi:
+
+| Nominativo | Dativo |
+|---|---|
+| я | мне |
+| ты | тебе́ |
+| он | ему́ |
+| она́ | ей |
+| мы | нам |
+| вы | вам |
+| они́ | им |
+
+---
+#### Come mi sento: dativo + avverbio
+In russo molte sensazioni si dicono «impersonali»: **a me** è freddo.
+- **Мне хо́лодно.** — Ho freddo.
+- **Тебе́ ску́чно?** — Ti annoi?
+- **Ей интере́сно.** — Le interessa.
+- **Нам ве́село.** — Ci divertiamo.
+- **Ему́ тру́дно.** — È difficile per lui.
+- **Мне легко́.** — Per me è facile.
+
+> Confronta: **Здесь хо́лодно.** (Qui fa freddo: il tempo) / **Мне хо́лодно.** (Ho freddo io).
+
+Al passato si aggiunge **бы́ло**: **Нам бы́ло ве́село.** — Ci siamo divertiti.
+
+### Parole
+ску́чно = noioso, (mi) annoio [avv]
+интере́сно = interessante, (mi) interessa [avv]
+ве́село = allegro, (ci) si diverte [avv]
+тру́дно = difficile [avv]
+легко́ = facile, leggero [avv; si pronuncia «lihkò»]
+
+### Frasi
+Мне хо́лодно. = Ho freddo.
+Тебе́ ску́чно? — Нет, мне интере́сно. = Ti annoi? — No, mi interessa.
+Ему́ тру́дно говори́ть по-ру́сски. = Per lui è difficile parlare russo.
+Нам бы́ло о́чень ве́село. = Ci siamo divertiti molto.
+Ей жа́рко. = Lei ha caldo.
+Э́то легко́! = È facile!
+
+### Esercizi
+? ___ хо́лодно. = Ho freddo. {Мне | Я | Меня́}
+? ___ ску́чно? = Ti annoi? {Тебе́ | Ты | Тебя́}
+? ___ тру́дно. = Per lui è difficile. {Ему́ | Его́ | Он}
+? ___ интере́сно. = A lei interessa. {Ей | Её | Она́}
+? ___ бы́ло ве́село. = Ci siamo divertiti. {Нам | Нас | Мы}
+? ___ жа́рко? = Avete caldo? {Вам | Вас | Вы}
+? Il contrario di «тру́дно» è… {легко́ | ве́село | ску́чно}
+> они́ → dativo → им
+~ Нам бы́ло о́чень ве́село. = Ci siamo divertiti molto.
+
+## Giorno 82 | Il dativo dei nomi
+obiettivo: Dire a chi dai, telefoni, scrivi.
+breve: Maschile e neutro: **-у/-ю** (брат → бра́ту). Femminile: **-е** (ма́ма → ма́ме); -ия, -ь → **-и** (Мари́и, до́чери).
+breve: Verbi col dativo: дава́ть, звони́ть, писа́ть, помога́ть, отвеча́ть, объясня́ть (кому́? a chi?).
+breve: дава́ть: даю́, даёшь, даёт…
+
+### Lezione
+#### Le desinenze del dativo singolare
+| Nominativo | Dativo |
+|---|---|
+| брат, музе́й | бра́т**у**, музе́**ю** |
+| окно́, мо́ре | окн**у́**, мо́р**ю** |
+| ма́ма, Та́ня | ма́м**е**, Та́н**е** |
+| Мари́я, ночь | Мари́**и**, но́ч**и** |
+| мать, дочь | ма́тер**и**, до́чер**и** |
+
+---
+#### A chi?
+Il dativo risponde a **кому́?** (a chi?). Lo vogliono tanti verbi:
+- **дава́ть** (dare): **Я даю́ бра́ту кни́гу.** — Do il libro al fratello.
+- **звони́ть** (telefonare): **Я звоню́ ма́ме.** — Telefono alla mamma.
+- **писа́ть** (scrivere a): **Я пишу́ дру́гу.**
+- **помога́ть** (aiutare!): **Я помога́ю сестре́.** — Aiuto mia sorella.
+- **отвеча́ть** (rispondere): **Она́ отвеча́ет учи́телю.**
+- **объясня́ть** (spiegare): **Он объясня́ет студе́нтам.**
+
+> Attenzione: **помога́ть** vuole il **dativo** (aiutare **a** qualcuno), non l'accusativo come in italiano.
+
+---
+#### Дава́ть
+Come **встава́ть**, perde **-ва-** al presente: **даю́, даёшь, даёт, даём, даёте, даю́т**.
+
+### Parole
+дава́ть = dare [v impf; даю́, даёшь]
+звони́ть = telefonare (a qualcuno) [v impf; звоню́, звони́шь]
+помога́ть = aiutare (a qualcuno) [v impf; помога́ю, помога́ешь]
+отвеча́ть = rispondere [v impf; отвеча́ю, отвеча́ешь]
+объясня́ть = spiegare [v impf; объясня́ю, объясня́ешь]
+
+### Frasi
+Я звоню́ ма́ме ка́ждый день. = Telefono alla mamma ogni giorno.
+Он помога́ет бра́ту. = Aiuta suo fratello.
+Учи́тельница объясня́ет пра́вило студе́нту. = L'insegnante spiega la regola allo studente.
+Я даю́ сестре́ кни́гу. = Do il libro a mia sorella.
+Почему́ ты не отвеча́ешь Ива́ну? = Perché non rispondi a Ivan?
+Ма́ша пи́шет письмо́ ба́бушке. = Maša scrive una lettera alla nonna.
+
+### Esercizi
+? Я звоню́ ___ . = Telefono alla mamma. {ма́ме | ма́му | ма́мы}
+? Он помога́ет ___ . = Aiuta il fratello. {бра́ту | бра́та | брат}
+? Я даю́ ___ кни́гу. = Do il libro a mia sorella. {сестре́ | сестру́ | сестры́}
+? Она́ пи́шет ___ . = Scrive alla nonna. {ба́бушке | ба́бушку | ба́бушка}
+? Мы помога́ем ___ . = Aiutiamo Marija. {Мари́и | Мари́е | Мари́ю}
+? Он отвеча́ет ___ . = Risponde all'insegnante. {учи́телю | учи́теля | учи́тель}
+> я (дава́ть) → даю́
+> они́ (дава́ть) → даю́т
+~ Я звоню́ ма́ме ка́ждый день. = Telefono alla mamma ogni giorno.
+
+## Giorno 83 | Regalare e telefonare
+obiettivo: Fare un regalo, mandare un messaggio, telefonare.
+breve: дари́ть (regalare): дарю́, да́ришь… **Что ты да́ришь ма́ме?**
+breve: пода́рок (regalo), цветы́ (fiori), откры́тка (biglietto d'auguri).
+breve: сообще́ние = messaggio: **Напиши́ мне сообще́ние!**
+
+### Lezione
+#### Regalare: дари́ть
+**Дари́ть** (кому́? что?): dativo per la persona, accusativo per la cosa.
+**Я дарю́ ма́ме цветы́.** — Regalo dei fiori alla mamma.
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| дарю́ | да́ришь | да́рит | да́рим | да́рите | да́рят |
+
+---
+#### I regali
+- **пода́рок** — regalo; **для** + genitivo: **пода́рок для бра́та**;
+- **цветы́** — fiori (al singolare **цвето́к**);
+- **откры́тка** — cartolina, biglietto d'auguri.
+
+> In Russia si regala un numero **dispari** di fiori: il numero pari si porta ai funerali!
+
+---
+#### Messaggi e telefonate
+- **звони́ть** + dativo: **Позвони́ мне!** — Chiamami!
+- **писа́ть сообще́ние** — scrivere un messaggio: **Я пишу́ тебе́ сообще́ние.**
+- **Спаси́бо за пода́рок!** — Grazie del regalo! (**за** + accusativo: «per»)
+
+### Parole
+пода́рок = regalo [m]
+дари́ть = regalare [v impf; дарю́, да́ришь]
+цветы́ = fiori [pl; singolare цвето́к]
+откры́тка = cartolina, biglietto d'auguri [f]
+сообще́ние = messaggio [n]
+
+### Frasi
+Что ты да́ришь ма́ме на день рожде́ния? = Che cosa regali alla mamma per il compleanno?
+Я дарю́ ей цветы́ и откры́тку. = Le regalo dei fiori e un biglietto.
+Спаси́бо за пода́рок! = Grazie del regalo!
+Позвони́ мне ве́чером. = Chiamami stasera.
+Я пишу́ тебе́ сообще́ние. = Ti sto scrivendo un messaggio.
+Э́то пода́рок для тебя́. = È un regalo per te.
+
+### Esercizi
+? Я ___ ма́ме цветы́. = Regalo i fiori alla mamma. {дарю́ | да́рит | дари́ть}
+? Что ты ___ бра́ту? = Che cosa regali al fratello? {да́ришь | дарю́ | да́рим}
+? Спаси́бо ___ пода́рок! = Grazie del regalo! {за | для | на}
+? Позвони́ ___ ! = Chiamami! {мне | меня́ | я}
+? Э́то пода́рок для ___ . = È un regalo per te. {тебя́ | тебе́ | ты}
+? In Russia si regalano… {fiori in numero dispari | fiori in numero pari | solo rose}
+> Scrivi «regalo» in russo → пода́рок
+~ Спаси́бо за пода́рок! = Grazie del regalo!
+
+## Giorno 84 | Ripasso e test del modulo 3
+obiettivo: Leggere una visita dal medico e fare il test del modulo.
+
+### Lettura | У врача́ | Dal medico
+Ве́чером Ма́рко пло́хо себя́ чу́вствует. = La sera Marco si sente male.
+У него́ боли́т голова́, и у него́ температу́ра. = Ha mal di testa e ha la febbre.
+У́тром он звони́т врачу́. = La mattina telefona al medico.
+— До́ктор, мне о́чень пло́хо. = — Dottore, sto molto male.
+— Что у вас боли́т? = — Che cosa le fa male?
+— Голова́ и го́рло. И ещё ка́шель. = — La testa e la gola. E poi la tosse.
+— Э́то просту́да. Вам на́до отдыха́ть и пить чай. = — È un raffreddore. Deve riposarsi e bere tè.
+— А лека́рство мне ну́жно? = — E mi serve una medicina?
+— Да, вот реце́пт. Принима́йте табле́тки три ра́за в день. = — Sì, ecco la ricetta. Prenda le pastiglie tre volte al giorno.
+Ма́рко идёт в апте́ку и покупа́ет лека́рство. = Marco va in farmacia e compra la medicina.
+Его́ подру́га А́нна звони́т ему́ и прино́сит апельси́ны. = La sua amica Anna gli telefona e gli porta delle arance.
+Че́рез три дня Ма́рко здоро́в! = Dopo tre giorni Marco sta bene!
+
+### Domande
+? Che cosa fa male a Marco? {la testa e la gola | la schiena | la pancia}
+? Che cosa ha secondo il medico? {un raffreddore | un'influenza grave | niente}
+? Quante volte al giorno deve prendere le pastiglie? {tre | due | una}
+? Che cosa porta Anna? {delle arance | dei fiori | una torta}

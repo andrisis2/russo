@@ -1,0 +1,373 @@
+# Settimana 11 | Fare la spesa
+
+## Giorno 71 | Al negozio
+obiettivo: Comprare la spesa con le quantità giuste.
+breve: Dopo le quantità il nome va al **genitivo**: буты́лка воды́, килогра́мм сы́ра, па́чка ча́я.
+breve: **Да́йте, пожа́луйста…** — Mi dia, per favore…
+breve: проду́кты = generi alimentari; суперма́ркет = supermercato.
+
+### Lezione
+#### Quanto?
+Dopo una parola di quantità la cosa va al **genitivo** (come in italiano «di»):
+
+| Quantità | Esempio |
+|---|---|
+| буты́лка (bottiglia) | буты́лка воды́, буты́лка вина́ |
+| килогра́мм (chilo) | килогра́мм сы́ра, килогра́мм мя́са |
+| литр (litro) | литр молока́ |
+| па́чка (pacchetto) | па́чка ча́я, па́чка ма́сла |
+| кусо́к (pezzo, fetta) | кусо́к то́рта |
+
+> **Килогра́мм** si dice spesso **кило́**: **кило́ я́блок** (un chilo di mele).
+
+---
+#### Chiedere
+**Да́йте, пожа́луйста, буты́лку воды́ и хлеб.** — Mi dia una bottiglia d'acqua e il pane, per favore.
+Dopo **да́йте** (mi dia) la cosa va all'**accusativo** (буты́лк**у**), e la sostanza al genitivo (вод**ы́**).
+
+---
+#### Dove si compra
+- **суперма́ркет** — supermercato;
+- **магази́н** — negozio; **проду́кты** — generi alimentari (e anche il negozio di alimentari: **магази́н «Проду́кты»**);
+- **ры́нок** — mercato.
+
+### Parole
+проду́кты = generi alimentari, spesa [pl]
+суперма́ркет = supermercato [m]
+килогра́мм = chilogrammo [m]
+литр = litro [m]
+буты́лка = bottiglia [f]
+па́чка = pacchetto, confezione [f]
+кусо́к = pezzo, fetta [m; genitivo куска́]
+да́йте = mi dia, date [inter; a un amico: дай]
+
+### Frasi
+Да́йте, пожа́луйста, буты́лку воды́. = Mi dia una bottiglia d'acqua, per favore.
+Я покупа́ю литр молока́ и хлеб. = Compro un litro di latte e il pane.
+Килогра́мм сы́ра, пожа́луйста. = Un chilo di formaggio, per favore.
+Хо́чешь кусо́к то́рта? = Vuoi una fetta di torta?
+Ма́ма в суперма́ркете, она́ покупа́ет проду́кты. = La mamma è al supermercato, fa la spesa.
+Па́чка ча́я и буты́лка вина́. = Un pacco di tè e una bottiglia di vino.
+
+### Esercizi
+? буты́лка ___ = una bottiglia d'acqua {воды́ | вода́ | во́ду}
+? литр ___ = un litro di latte {молока́ | молоко́ | молоке́}
+? килогра́мм ___ = un chilo di formaggio {сы́ра | сыр | сы́ре}
+? кусо́к ___ = una fetta di torta {то́рта | торт | то́рту}
+? па́чка ___ = un pacco di tè {ча́я | чай | ча́ю}
+? Да́йте, пожа́луйста, ___ воды́. = Mi dia una bottiglia d'acqua. {буты́лку | буты́лка | буты́лки}
+? «проду́кты» vuol dire… {generi alimentari | prodotti chimici | prezzi}
+> Scrivi «bottiglia» in russo → буты́лка
+~ Да́йте, пожа́луйста, буты́лку воды́. = Mi dia una bottiglia d'acqua, per favore.
+
+## Giorno 72 | Quanto costa?
+obiettivo: Chiedere i prezzi e capire le risposte.
+breve: **Ско́лько сто́ит?** (una cosa) · **Ско́лько сто́ят?** (più cose).
+breve: 1 рубль · 2-4 рубля́ · 5+ рубле́й (21 рубль, 22 рубля́, 25 рубле́й).
+breve: до́рого (caro) · дёшево (economico) · цена́ (prezzo).
+
+### Lezione
+#### Costare
+**Сто́ить** (costare) è della seconda coniugazione e si usa quasi solo alla terza persona:
+- **Ско́лько сто́ит сыр?** — Quanto costa il formaggio?
+- **Ско́лько сто́ят я́блоки?** — Quanto costano le mele?
+
+---
+#### Rubli e copechi
+| | рубль | копе́йка |
+|---|---|---|
+| 1, 21, 31… | рубль | копе́йка |
+| 2-4, 22-24… | рубля́ | копе́йки |
+| 5-20, 25-30… | рубле́й | копе́ек |
+
+**Сыр сто́ит пятьсо́т рубле́й.** — Il formaggio costa cinquecento rubli.
+
+> I numeri delle centinaia: **сто** (100), **две́сти** (200), **три́ста** (300), **четы́реста** (400), **пятьсо́т** (500)… **ты́сяча** (1000).
+
+---
+#### Caro o economico?
+- **Э́то до́рого!** — È caro! **Э́то дёшево.** — È economico.
+- **Кака́я цена́?** — Che prezzo ha?
+- **Хоро́шая цена́!** — Un buon prezzo!
+
+> Nella sezione **Numeri e ore** c'è l'esercizio «Quanto costa?» con rubli veri.
+
+### Parole
+рубль = rublo [m; 2-4 рубля́, 5+ рубле́й]
+копе́йка = copeco [f]
+сто́ить = costare [v impf; сто́ит, сто́ят]
+цена́ = prezzo [f]
+до́рого = caro (costa molto) [avv]
+дёшево = a buon mercato, economico [avv]
+ты́сяча = mille [num]
+
+### Frasi
+Ско́лько сто́ит э́тот сыр? — Пятьсо́т рубле́й. = Quanto costa questo formaggio? — Cinquecento rubli.
+Ско́лько сто́ят я́блоки? = Quanto costano le mele?
+Э́то сто́ит два рубля́. = Costa due rubli.
+Как до́рого! = Che caro!
+На ры́нке дёшево. = Al mercato costa poco.
+Кака́я цена́? — Ты́сяча рубле́й. = Che prezzo ha? — Mille rubli.
+
+### Esercizi
+? Ско́лько ___ я́блоки? = Quanto costano le mele? {сто́ят | сто́ит | сто́ить}
+? Ско́лько ___ хлеб? = Quanto costa il pane? {сто́ит | сто́ят | сто́ишь}
+? Пять ___ = cinque rubli {рубле́й | рубля́ | рубль}
+? Три ___ = tre rubli {рубля́ | рубле́й | рубль}
+? Два́дцать оди́н ___ = ventuno rubli {рубль | рубля́ | рубле́й}
+? Э́то не до́рого, э́то ___ . = Non è caro, è economico. {дёшево | до́рого | пло́хо}
+? «цена́» vuol dire… {prezzo | cena | conto}
+> Scrivi «mille» in russo → ты́сяча
+vedi: numeri
+~ Ско́лько сто́ит э́тот сыр? = Quanto costa questo formaggio?
+
+## Giorno 73 | I vestiti
+obiettivo: Nominare i vestiti e chiedere la taglia.
+breve: оде́жда = abbigliamento; о́бувь = scarpe (le calzature).
+breve: брю́ки e джи́нсы sono **solo plurali**: мои́ брю́ки, но́вые джи́нсы.
+breve: **Како́й у вас разме́р?** — Che taglia porta?
+
+### Lezione
+#### I vestiti
+| Russo | Italiano |
+|---|---|
+| руба́шка | camicia |
+| футбо́лка | maglietta |
+| брю́ки | pantaloni (plurale!) |
+| джи́нсы | jeans (plurale) |
+| пла́тье | vestito, abito da donna |
+| ю́бка | gonna |
+| ку́ртка | giacca, giubbotto |
+| пальто́ | cappotto (non si declina) |
+| о́бувь | scarpe, calzature (singolare!) |
+
+---
+#### Singolare o plurale?
+Come in italiano «pantaloni», **брю́ки** e **джи́нсы** sono sempre plurali: **Где мои́ брю́ки? Вот они́.**
+Al contrario, **о́бувь** (calzature) è un singolare collettivo femminile: **Кака́я краси́вая о́бувь!**
+
+---
+#### La taglia
+- **Како́й у вас разме́р?** — Che taglia porta?
+- **У меня́ со́рок восьмо́й разме́р.** — Porto la 48.
+- **Мо́жно поме́рить?** — Posso provarlo?
+
+> In Russia le taglie sono come quelle italiane: la 44 russa è la 44 italiana.
+
+### Parole
+оде́жда = vestiti, abbigliamento [f]
+руба́шка = camicia [f]
+футбо́лка = maglietta [f]
+брю́ки = pantaloni [pl]
+джи́нсы = jeans [pl]
+пла́тье = vestito (da donna), abito [n]
+ю́бка = gonna [f]
+ку́ртка = giacca, giubbotto [f]
+пальто́ = cappotto [n; non si declina]
+о́бувь = scarpe, calzature [f]
+разме́р = taglia, misura [m]
+
+### Frasi
+Мне нра́вится э́та руба́шка. = Mi piace questa camicia.
+Где мои́ брю́ки? = Dove sono i miei pantaloni?
+Како́й у вас разме́р? = Che taglia porta?
+Мо́жно поме́рить э́то пла́тье? = Posso provare questo vestito?
+Зимо́й я ношу́ тёплое пальто́. = D'inverno porto un cappotto pesante.
+Э́та ку́ртка о́чень дорога́я. = Questa giacca è molto cara.
+
+### Esercizi
+? Где мои́ ___ ? = Dove sono i miei pantaloni? {брю́ки | брю́ка | брюк}
+? Э́то ___ пла́тье. = È un bel vestito. {краси́вое | краси́вая | краси́вый}
+? Мне нра́вится э́та ___ . = Mi piace questa camicia. {руба́шка | руба́шку | руба́шки}
+? Како́й у вас ___ ? = Che taglia porta? {разме́р | цвет | рост}
+? «ку́ртка» vuol dire… {giacca, giubbotto | cappello | borsa}
+? «о́бувь» vuol dire… {scarpe | abiti | borse}
+? «пальто́» è… {neutro, non si declina | femminile | maschile}
+> Scrivi «gonna» in russo → ю́бка
+~ Мо́жно поме́рить э́то пла́тье? = Posso provare questo vestito?
+
+## Giorno 74 | Questo o quello?
+obiettivo: Indicare le cose con «questo» e «quello».
+breve: э́тот (m), э́та (f), э́то (n), э́ти (pl) = questo/a/i/e: э́тот дом, э́та кни́га.
+breve: тот, та, то, те = quello/a/i/e: тот дом, та кни́га.
+breve: **Э́то кни́га** (questo è un libro) ≠ **э́та кни́га** (questo libro).
+
+### Lezione
+#### Questo
+| m | f | n | pl |
+|---|---|---|---|
+| э́тот | э́та | э́то | э́ти |
+
+**э́тот дом**, **э́та маши́на**, **э́то окно́**, **э́ти лю́ди**.
+
+#### Quello
+| m | f | n | pl |
+|---|---|---|---|
+| тот | та | то | те |
+
+**Не э́тот, а тот!** — Non questo, quello!
+
+---
+#### Attenzione: э́то e э́то
+- **Э́то кни́га.** — Questo è un libro. (**э́то** invariabile = «questo è», «ecco»)
+- **Э́та кни́га интере́сная.** — Questo libro è interessante. (**э́та** si accorda con кни́га)
+
+---
+#### Troppo, così, un altro
+- **сли́шком** — troppo: **Э́тот сви́тер сли́шком большо́й.**
+- **тако́й** — così, tale: **Он тако́й краси́вый!** — È così bello!
+- **друго́й** — altro: **Да́йте, пожа́луйста, друго́й разме́р.** — Mi dia un'altra taglia.
+
+### Parole
+э́тот = questo [pron; э́та, э́то, э́ти]
+тако́й = tale, così [pron; така́я, тако́е, таки́е]
+друго́й = altro, diverso [agg]
+сли́шком = troppo [avv]
+
+### Frasi
+Э́тот дом о́чень ста́рый. = Questa casa è molto vecchia.
+Мне нра́вится э́та ку́ртка, а не та. = Mi piace questa giacca, non quella.
+Э́ти брю́ки сли́шком больши́е. = Questi pantaloni sono troppo grandi.
+Да́йте, пожа́луйста, друго́й разме́р. = Mi dia un'altra taglia, per favore.
+Ты тако́й у́мный! = Sei così intelligente!
+Не э́то пла́тье, а то, кра́сное. = Non questo vestito, quello rosso.
+
+### Esercizi
+? ___ дом ста́рый. = Questa casa è vecchia. {Э́тот | Э́та | Э́то}
+? ___ кни́га интере́сная. = Questo libro è interessante. {Э́та | Э́тот | Э́то}
+? ___ брю́ки больши́е. = Questi pantaloni sono grandi. {Э́ти | Э́то | Э́та}
+? Мне нра́вится не э́та ку́ртка, а ___ . = Non questa giacca, ma quella. {та | тот | те}
+? Э́тот сви́тер ___ большо́й. = Questo maglione è troppo grande. {сли́шком | о́чень мно́го | тако́й}
+? Да́йте ___ разме́р. = Mi dia un'altra taglia. {друго́й | другу́ю | друга́я}
+? «Э́то кни́га» vuol dire… {Questo è un libro | Questo libro | Quel libro}
+> э́тот + маши́на → … → э́та маши́на
+~ Э́ти брю́ки сли́шком больши́е. = Questi pantaloni sono troppo grandi.
+
+## Giorno 75 | Comprare e pagare
+obiettivo: Comprare, pagare in contanti o con la carta, chiedere lo scontrino.
+breve: покупа́ть (comprare, in generale) · купи́ть (comprare, una volta: «ho comprato», «comprerò»).
+breve: плати́ть (pagare): плачу́, пла́тишь… **Мо́жно плати́ть ка́ртой?**
+breve: ка́сса (cassa), нали́чные (contanti), сда́ча (resto), чек (scontrino).
+
+### Lezione
+#### Due verbi per «comprare»
+In russo molti verbi vanno **in coppia**: uno per l'azione in generale o ripetuta, uno per l'azione **unica e conclusa**. È l'**aspetto** del verbo, che studieremo bene nel modulo 4. Primo esempio:
+- **покупа́ть** — comprare (in generale, spesso): **Я покупа́ю хлеб ка́ждый день.**
+- **купи́ть** — comprare (una volta, con risultato): **Вчера́ я купи́л ку́ртку.** — Ieri ho comprato una giacca.
+
+Il presente di **купи́ть** ha valore di futuro: **За́втра я куплю́ пода́рок.** — Domani comprerò un regalo.
+
+---
+#### Pagare
+**плати́ть**: **плачу́, пла́тишь, пла́тит, пла́тим, пла́тите, пла́тят** (т → ч in prima persona).
+- **Мо́жно плати́ть ка́ртой?** — Si può pagare con la carta?
+- **Я плачу́ нали́чными.** — Pago in contanti.
+
+---
+#### Alla cassa
+- **ка́сса** — cassa: **Плати́те в ка́ссу.** — Paghi alla cassa.
+- **сда́ча** — resto: **Вот ва́ша сда́ча.**
+- **чек** — scontrino: **Вам ну́жен чек?** — Le serve lo scontrino?
+
+### Parole
+покупа́ть = comprare (in generale) [v impf; покупа́ю, покупа́ешь]
+купи́ть = comprare (una volta) [v pf; куплю́, ку́пишь]
+плати́ть = pagare [v impf; плачу́, пла́тишь]
+ка́сса = cassa [f]
+нали́чные = contanti [pl]
+сда́ча = resto [f]
+чек = scontrino [m]
+
+### Frasi
+Я покупа́ю хлеб ка́ждый день. = Compro il pane ogni giorno.
+Вчера́ я купи́л но́вую ку́ртку. = Ieri ho comprato una giacca nuova.
+За́втра я куплю́ пода́рок для ма́мы. = Domani comprerò un regalo per la mamma.
+Мо́жно плати́ть ка́ртой? = Si può pagare con la carta?
+Я плачу́ нали́чными. = Pago in contanti.
+Вот ваш чек и сда́ча. = Ecco lo scontrino e il resto.
+
+### Esercizi
+? Я ___ хлеб ка́ждый день. = Compro il pane ogni giorno. {покупа́ю | куплю́ | купи́л}
+? Вчера́ она́ ___ пла́тье. = Ieri ha comprato un vestito. {купи́ла | покупа́ет | ку́пит}
+? За́втра я ___ пода́рок. = Domani comprerò un regalo. {куплю́ | покупа́ю | купи́л}
+? Мо́жно ___ ка́ртой? = Si può pagare con la carta? {плати́ть | плачу́ | пла́тит}
+? Я ___ нали́чными. = Pago in contanti. {плачу́ | плати́т | пла́чу}
+? «сда́ча» vuol dire… {resto | consegna | cassa}
+? «нали́чные» vuol dire… {contanti | carta | sconto}
+> я (плати́ть) → плачу́
+~ Мо́жно плати́ть ка́ртой? = Si può pagare con la carta?
+
+## Giorno 76 | Mi serve: нужен, нужна, нужно
+obiettivo: Dire di che cosa hai bisogno.
+breve: **Мне ну́жен** (m), **нужна́** (f), **ну́жно** (n), **нужны́** (pl) + la cosa: Мне нужна́ ку́ртка.
+breve: **Мне на́до / ну́жно** + infinito: Мне на́до рабо́тать. — Devo lavorare.
+breve: La persona va al dativo: мне, тебе́, ему́… ма́ме, бра́ту.
+
+### Lezione
+#### Mi serve una cosa
+«Mi serve X» si costruisce come **нра́виться**: la persona al **dativo**, la cosa al **nominativo**. **Ну́жен** si accorda con la cosa:
+
+| La cosa | Russo |
+|---|---|
+| maschile | Мне **ну́жен** зонт. |
+| femminile | Мне **нужна́** ку́ртка. |
+| neutro | Мне **ну́жно** пальто́. |
+| plurale | Мне **нужны́** де́ньги. |
+
+---
+#### Devo fare
+Con un **verbo** si usa **на́до** o **ну́жно** (invariabili):
+- **Мне на́до рабо́тать.** — Devo lavorare.
+- **Тебе́ ну́жно отдыха́ть.** — Hai bisogno di riposarti.
+
+---
+#### Al passato
+- **Мне был ну́жен зонт**, **была́ нужна́ ку́ртка**, **бы́ли нужны́ де́ньги**.
+- **Мне на́до бы́ло рабо́тать.** — Dovevo lavorare.
+
+> **Сро́чно** — urgente: **Мне сро́чно нужны́ де́ньги!**
+
+### Parole
+ну́жен = necessario, serve [agg; нужна́, ну́жно, нужны́]
+на́до = bisogna, occorre (+ infinito) [avv]
+сро́чно = urgentemente, con urgenza [avv]
+
+### Frasi
+Мне ну́жен зонт. = Mi serve un ombrello.
+Мне нужна́ но́вая ку́ртка. = Mi serve una giacca nuova.
+Тебе́ нужны́ де́ньги? = Ti servono soldi?
+Мне на́до рабо́тать. = Devo lavorare.
+Ма́ме ну́жно отдыха́ть. = La mamma ha bisogno di riposarsi.
+Нам сро́чно ну́жен врач! = Abbiamo urgentemente bisogno di un medico!
+
+### Esercizi
+? Мне ___ зонт. = Mi serve un ombrello. {ну́жен | нужна́ | нужны́}
+? Мне ___ ку́ртка. = Mi serve una giacca. {нужна́ | ну́жен | ну́жно}
+? Тебе́ ___ де́ньги? = Ti servono i soldi? {нужны́ | нужна́ | ну́жен}
+? ___ на́до рабо́тать. = Devo lavorare. {Мне | Я | Меня́}
+? ___ ну́жно отдыха́ть. = Il papà deve riposarsi. {Па́пе | Па́па | Па́пу}
+? Нам ___ врач. = Ci serve un medico. {ну́жен | нужна́ | ну́жно}
+> Scrivi «bisogna» in russo → на́до
+~ Мне нужна́ но́вая ку́ртка. = Mi serve una giacca nuova.
+
+## Giorno 77 | Ripasso della settimana
+obiettivo: Leggere una scena in un negozio di abbigliamento.
+
+### Lettura | В магази́не | In negozio
+У О́льги ско́ро день рожде́ния, и ей нужна́ но́вая оде́жда. = Ol'ga ha presto il compleanno e le servono vestiti nuovi.
+В суббо́ту она́ идёт в магази́н. = Sabato va in un negozio.
+— Здра́вствуйте! Мне нра́вится э́то пла́тье. Мо́жно поме́рить? = — Buongiorno! Mi piace questo vestito. Posso provarlo?
+— Коне́чно. Како́й у вас разме́р? = — Certo. Che taglia porta?
+— Со́рок четвёртый. = — La quarantaquattro.
+Пла́тье сли́шком большо́е. = Il vestito è troppo grande.
+— Да́йте, пожа́луйста, друго́й разме́р. = — Mi dia un'altra taglia, per favore.
+Тепе́рь пла́тье хоро́шее, но о́чень дорого́е. = Adesso il vestito va bene, ma è molto caro.
+— Ско́лько оно́ сто́ит? — Пять ты́сяч рубле́й. = — Quanto costa? — Cinquemila rubli.
+О́льга ду́мает, пото́м покупа́ет пла́тье и ю́бку. = Ol'ga ci pensa, poi compra il vestito e una gonna.
+— Мо́жно плати́ть ка́ртой? — Да, коне́чно. Вот ваш чек. = — Si può pagare con la carta? — Sì, certo. Ecco lo scontrino.
+
+### Domande
+? Perché Ol'ga va a fare shopping? {ha presto il compleanno | ha un colloquio | parte per un viaggio}
+? Che problema c'è con il primo vestito? {è troppo grande | è troppo piccolo | è rotto}
+? Quanto costa il vestito? {cinquemila rubli | cinquecento rubli | mille rubli}
+? Come paga Ol'ga? {con la carta | in contanti | non paga}

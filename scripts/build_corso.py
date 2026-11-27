@@ -553,6 +553,9 @@ def accenta_sorgenti(idx, files):
                     return tok
                 if m.end() < len(ru) and ru[m.end()] == '*':
                     return tok
+                # dopo «не́» la parola è atona (не́ был, не́ было)
+                if ru[max(0, start - 4):start].lower() == 'не́ ':
+                    return tok
                 forma, stato = accenta_token(idx, tok)
                 if stato == 'aggiunto' and forma:
                     tot_agg += 1
@@ -586,6 +589,9 @@ def controlla_testo(idx, morph, testo, f, n, dove, mancanti):
             continue
         # lettere e sillabe isolate nelle spiegazioni (з, ги, -ешь…)
         if dove == 'lezione' and len(nudo(tok)) <= 2:
+            continue
+        # dopo «не́» la parola è atona (не́ был, не́ было)
+        if testo[max(0, m.start() - 4):m.start()].lower() == 'не́ ':
             continue
         intero_noto = '-' in tok and ((morph is not None and morph.word_is_known(nudo(tok).lower()))
                                       or (idx is not None and chiave(tok) in idx) or chiave(tok) in PAROLE_OK)
