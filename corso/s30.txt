@@ -1,0 +1,326 @@
+# Settimana 30 | I participi
+
+## Giorno 204 | Il participio attivo presente
+obiettivo: Riconoscere e formare il participio attivo presente (che fa, che sta facendo).
+breve: Dalla forma «они́» del presente: tolta **-т**, si aggiunge **-щий**: чита́ю-т → чита́ю**щий** (che legge).
+breve: Si declina come un aggettivo: чита́ющий, чита́ющая, чита́ющее, чита́ющие.
+breve: È tipico della lingua scritta; nel parlato si usa **кото́рый**: челове́к, кото́рый чита́ет.
+
+### Lezione
+#### Che cos'è
+Il participio è un **aggettivo fatto da un verbo**: «la ragazza **che legge**» = **чита́ющая де́вушка**.
+
+---
+#### Come si forma
+Si prende la forma **они́** del presente, si toglie **-т** e si aggiunge **-щий**:
+
+| они́ | Participio | Significato |
+|---|---|---|
+| чита́ю-т | чита́ющий | che legge |
+| говоря́-т | говоря́щий | che parla |
+| живу́-т | живу́щий | che vive |
+| иду́-т | иду́щий | che va |
+| у́чат-ся | уча́щийся | che studia (studente) |
+
+I verbi in **-ся** aggiungono **-ся** sempre (anche dopo vocale): **занима́ющийся**.
+
+---
+#### Dove lo trovi
+Soprattutto nei testi scritti, nei giornali, nei libri:
+- **Лю́ди, живу́щие в Москве́, мно́го рабо́тают.** = Лю́ди, кото́рые живу́т в Москве́…
+- **Мужчи́на, сидя́щий у окна́, — мой брат.**
+
+Alcuni sono diventati aggettivi o nomi comuni: **бу́дущий** (futuro), **настоя́щий** (vero, attuale), **веду́щий** (conduttore tv; principale), **уча́щийся** (studente).
+
+### Parole
+настоя́щий = vero, autentico; presente, attuale [agg]
+веду́щий = conduttore (tv, radio); principale [agg; anche come nome]
+уча́щийся = studente, allievo [m; si declina come un aggettivo]
+
+### Frasi
+Де́вушка, чита́ющая кни́гу, — моя́ сестра́. = La ragazza che legge un libro è mia sorella.
+Лю́ди, живу́щие в це́нтре, жа́луются на шум. = Le persone che abitano in centro si lamentano del rumore.
+Мужчи́на, сидя́щий у окна́, — мой брат. = L'uomo seduto alla finestra è mio fratello.
+Он настоя́щий друг. = È un vero amico.
+Веду́щий програ́ммы задаёт вопро́сы. = Il conduttore del programma fa le domande.
+В шко́ле пятьсо́т уча́щихся. = Nella scuola ci sono cinquecento studenti.
+
+### Esercizi
+? чита́ть → «che legge» (m) → {чита́ющий | чита́вший | чита́емый}
+? говори́ть → «che parla» (f) → {говоря́щая | говоря́щий | говори́вшая}
+? Лю́ди, ___ в Москве́… = Le persone che vivono a Mosca… {живу́щие | живу́щий | живу́т}
+? Де́вушка, ___ кни́гу… = La ragazza che legge un libro… {чита́ющая | чита́ющий | чита́ет}
+? Он ___ друг. = È un vero amico. {настоя́щий | настоя́щая | на́стоящий}
+? «Лю́ди, живу́щие в це́нтре» = {Лю́ди, кото́рые живу́т в це́нтре | Лю́ди, кото́рые жи́ли | Лю́ди в це́нтре живу́т}
+> ду́мать → (они́ ду́мают) → ду́мающий
+~ Он настоя́щий друг. = È un vero amico.
+
+## Giorno 205 | Il participio attivo passato
+obiettivo: Riconoscere il participio attivo passato (che ha fatto, che faceva).
+breve: Dal passato: tolta **-л**, si aggiunge **-вший**: чита́-л → чита́**вший** (che leggeva, che ha letto).
+breve: Se il passato non finisce in -л: **-ший**: нёс → нёс**ший**, пришёл → прише́д**ший**.
+breve: бы́вший = ex: **мой бы́вший муж** (il mio ex marito).
+
+### Lezione
+#### Come si forma
+Si prende il passato (forma maschile), si toglie **-л** e si aggiunge **-вший**:
+
+| Passato | Participio | Significato |
+|---|---|---|
+| чита́-л | чита́вший | che leggeva / che ha letto |
+| написа́-л | написа́вший | che ha scritto |
+| жи-л | жи́вший | che viveva |
+| верну́-л-ся | верну́вшийся | che è tornato |
+
+Eccezioni con **-ший**: **пришёл → прише́дший**, **нёс → нёсший**, **вы́рос → вы́росший**, **у́мер → уме́рший**.
+
+---
+#### Esempi
+- **Студе́нт, написа́вший э́ту рабо́ту, получи́л пятёрку.** — Lo studente che ha scritto questo lavoro ha preso cinque.
+- **Писа́тель, жи́вший в XIX ве́ке…** — Lo scrittore vissuto nel XIX secolo…
+
+---
+#### Due parole d'uso comune
+- **бы́вший** — ex, precedente: **бы́вший муж**, **бы́вший Сове́тский Сою́з**;
+- **проше́дший** — passato, scorso: **в проше́дшем году́** (nell'anno passato).
+
+### Parole
+бы́вший = ex, precedente [agg]
+проше́дший = passato, scorso [agg]
+
+### Frasi
+Студе́нт, написа́вший э́ту рабо́ту, получи́л пятёрку. = Lo studente che ha scritto questo lavoro ha preso il massimo.
+Писа́тель, жи́вший в девятна́дцатом ве́ке, писа́л о любви́. = Lo scrittore, vissuto nel XIX secolo, scriveva d'amore.
+Э́то мой бы́вший нача́льник. = È il mio ex capo.
+Тури́сты, прие́хавшие вчера́, живу́т в гости́нице. = I turisti arrivati ieri alloggiano in albergo.
+В проше́дшем году́ мы мно́го путеше́ствовали. = L'anno scorso abbiamo viaggiato molto.
+Челове́к, позвони́вший у́тром, не сказа́л своё и́мя. = La persona che ha telefonato stamattina non ha detto il suo nome.
+
+### Esercizi
+? чита́ть → «che leggeva» (m) → {чита́вший | чита́ющий | чита́нный}
+? написа́ть → «che ha scritto» (m) → {написа́вший | напи́санный | пи́шущий}
+? Тури́сты, ___ вчера́, живу́т в гости́нице. = I turisti arrivati ieri… {прие́хавшие | приезжа́ющие | прие́хали}
+? Э́то мой ___ нача́льник. = È il mio ex capo. {бы́вший | бу́дущий | быва́ющий}
+? прийти́ → «che è arrivato» (m) → {прише́дший | прише́лший | прийти́вший}
+? «Челове́к, позвони́вший у́тром» = {Челове́к, кото́рый позвони́л у́тром | Челове́к, кото́рому позвони́ли | Челове́к, кото́рый позвони́т}
+~ Э́то мой бы́вший нача́льник. = È il mio ex capo.
+
+## Giorno 206 | Il participio passivo passato
+obiettivo: Usare il participio passivo passato (fatto, scritto, chiuso).
+breve: Verbi perfettivi: **-нный / -тый**: написа́ть → напи́санный (scritto), закры́ть → закры́тый (chiuso).
+breve: Forma breve (come predicato): **напи́сан, напи́сана, напи́сано, напи́саны**: **Магази́н закры́т.**
+breve: Chi ha fatto l'azione va allo **strumentale**: **кни́га, напи́санная Толсты́м**.
+
+### Lezione
+#### Come si forma
+Dai verbi **perfettivi**:
+- **-ать/-ять → -анный/-янный**: написа́ть → **напи́санный**, сде́лать → **сде́ланный**;
+- **-ить/-еть → -енный** (spesso con cambi di consonante): купи́ть → **ку́пленный**, реши́ть → **решённый**;
+- **-ыть, -уть, -ять (corti) → -тый**: закры́ть → **закры́тый**, откры́ть → **откры́тый**, забы́ть → **забы́тый**.
+
+---
+#### Forma lunga e forma breve
+- forma **lunga** (aggettivo, prima del nome): **закры́тая дверь** — la porta chiusa;
+- forma **breve** (dopo il nome, come «è…»): **Дверь закры́та.** — La porta è chiusa.
+
+| m | f | n | pl |
+|---|---|---|---|
+| закры́т | закры́та | закры́то | закры́ты |
+| напи́сан | напи́сана | напи́сано | напи́саны |
+
+Nei forme brevi in **-нный** resta una sola **н**: **напи́сан**.
+
+---
+#### Cartelli e notizie
+- **Закры́то.** — Chiuso. **Откры́то.** — Aperto.
+- **Магази́н закры́т на ремо́нт.** — Il negozio è chiuso per lavori.
+- **Рома́н был напи́сан в 1869 году́.** — Il romanzo fu scritto nel 1869.
+- **Кто написа́л?** → **кни́га, напи́санная Толсты́м** (strumentale per l'autore).
+
+### Parole
+закры́тый = chiuso [agg; breve: закры́т, закры́та]
+откры́тый = aperto [agg; breve: откры́т, откры́та]
+изве́стный = famoso, noto [agg]
+
+### Frasi
+Магази́н закры́т на ремо́нт. = Il negozio è chiuso per lavori.
+Музе́й откры́т с десяти́ до шести́. = Il museo è aperto dalle dieci alle sei.
+«Война́ и мир» была́ напи́сана Толсты́м. = «Guerra e pace» fu scritta da Tolstoj.
+Э́то изве́стная карти́на, напи́санная Ре́пиным. = È un quadro famoso, dipinto da Repin.
+Всё сде́лано! = È tutto fatto!
+Дом был постро́ен в про́шлом ве́ке. = La casa è stata costruita nel secolo scorso.
+
+### Esercizi
+? Магази́н ___ . = Il negozio è chiuso. {закры́т | закры́тый | закры́л}
+? Дверь ___ . = La porta è aperta. {откры́та | откры́т | откры́ла}
+? Рома́н был ___ в 1869 году́. = Il romanzo fu scritto nel 1869. {напи́сан | написа́л | напи́санный}
+? кни́га, напи́санная ___ = un libro scritto da Tolstoj {Толсты́м | Толсто́го | Толсто́й}
+? Всё ___ ! = È tutto fatto! {сде́лано | сде́лан | сде́лала}
+? сде́лать → «fatto» (forma lunga, m) → {сде́ланный | сде́лавший | де́лающий}
+? «изве́стный» vuol dire… {famoso | informato | estraneo}
+~ Магази́н закры́т на ремо́нт. = Il negozio è chiuso per lavori.
+
+## Giorno 207 | Il participio passivo presente
+obiettivo: Riconoscere il participio passivo presente.
+breve: Dalla forma «мы» dei verbi imperfettivi + **-ый**: лю́бим → **люби́мый** (amato), уважа́ем → **уважа́емый** (stimato).
+breve: È raro nel parlato, ma molti sono diventati aggettivi comuni.
+breve: необходи́мый (necessario), незави́симый (indipendente), ви́димый (visibile).
+
+### Lezione
+#### Come si forma
+Dalla forma **мы** del presente di un verbo imperfettivo, aggiungendo **-ый**:
+- **лю́бим → люби́мый** — amato, preferito;
+- **уважа́ем → уважа́емый** — stimato, egregio;
+- **чита́ем → чита́емый** — (che viene) letto.
+
+---
+#### Li conosci già!
+Molti sono ormai aggettivi normali:
+| Participio | Uso comune |
+|---|---|
+| люби́мый | preferito: **мой люби́мый фильм** |
+| уважа́емый | egregio (lettere): **Уважа́емый Ива́н Петро́вич!** |
+| необходи́мый | necessario: **необходи́мые докуме́нты** |
+| незави́симый | indipendente: **незави́симая страна́** |
+
+---
+#### Riconoscere il passivo
+Nei testi scientifici e giornalistici: **Вопро́сы, обсужда́емые на конфере́нции…** — Le questioni discusse alla conferenza… Basta riconoscerlo: per parlare userai **кото́рый**.
+
+### Parole
+необходи́мый = necessario, indispensabile [agg]
+незави́симый = indipendente [agg]
+
+### Frasi
+Э́то мой люби́мый фильм. = È il mio film preferito.
+Уважа́емые колле́ги! = Egregi colleghi!
+Для ви́зы необходи́мы э́ти докуме́нты. = Per il visto sono necessari questi documenti.
+Он незави́симый журнали́ст. = È un giornalista indipendente.
+Вопро́сы, обсужда́емые на совеща́нии, о́чень ва́жные. = Le questioni discusse alla riunione sono molto importanti.
+Э́то са́мая чита́емая кни́га го́да. = È il libro più letto dell'anno.
+
+### Esercizi
+? Э́то мой ___ фильм. = È il mio film preferito. {люби́мый | лю́бящий | люби́вший}
+? ___ колле́ги! = Egregi colleghi! {Уважа́емые | Уважа́ющие | Уважа́вшие}
+? Для ви́зы ___ э́ти докуме́нты. = Per il visto servono questi documenti. {необходи́мы | необходи́мый | необходи́мо}
+? Он ___ журнали́ст. = È un giornalista indipendente. {незави́симый | зави́симый | зави́сящий}
+? Il participio passivo presente si forma dalla forma… {мы | они́ | я}
+? «са́мая чита́емая кни́га» = {il libro più letto | il libro che legge di più | il libro letto ieri}
+~ Э́то мой люби́мый фильм. = È il mio film preferito.
+
+## Giorno 208 | Participio o который?
+obiettivo: Trasformare un participio in una frase con кото́рый (e viceversa).
+breve: Participio attivo = кото́рый (soggetto): чита́ющий студе́нт = студе́нт, кото́рый чита́ет.
+breve: Participio passivo = кото́рый (oggetto): напи́санная кни́га = кни́га, кото́рую написа́ли.
+breve: Nel parlato vince quasi sempre **кото́рый**; nello scritto si trovano tutti e due.
+
+### Lezione
+#### Da participio a кото́рый
+| Participio | Con кото́рый |
+|---|---|
+| студе́нт, чита́ющий кни́гу | студе́нт, кото́рый чита́ет кни́гу |
+| студе́нт, прочита́вший кни́гу | студе́нт, кото́рый прочита́л кни́гу |
+| кни́га, прочи́танная студе́нтом | кни́га, кото́рую прочита́л студе́нт |
+| кни́га, чита́емая все́ми | кни́га, кото́рую чита́ют все |
+
+- **attivo presente** → кото́рый + **presente**;
+- **attivo passato** → кото́рый + **passato**;
+- **passivo** → кото́рую/кото́рый (oggetto) + verbo attivo.
+
+---
+#### Formale: явля́ться
+Nello stile ufficiale «essere» si dice spesso **явля́ться** + strumentale: **Москва́ явля́ется столи́цей Росси́и.** — Mosca è la capitale della Russia. Al presente, dove «essere» non si dice, **явля́ться** lo sostituisce nei testi formali.
+
+### Parole
+явля́ться = essere (formale); presentarsi [v impf; явля́юсь, явля́ешься]
+
+### Frasi
+Студе́нт, кото́рый чита́ет кни́гу, — мой друг. = Lo studente che legge un libro è mio amico.
+Кни́га, кото́рую написа́л мой оте́ц, вы́шла в про́шлом году́. = Il libro che ha scritto mio padre è uscito l'anno scorso.
+Москва́ явля́ется столи́цей Росси́и. = Mosca è la capitale della Russia.
+Лю́ди, сидя́щие в за́ле, слу́шают конце́рт. = Le persone sedute in sala ascoltano il concerto.
+Фильм, сня́тый в Петербу́рге, получи́л приз. = Il film girato a San Pietroburgo ha vinto un premio.
+Госте́й, прие́хавших из Ита́лии, встре́тили на вокза́ле. = Gli ospiti arrivati dall'Italia sono stati accolti alla stazione.
+
+### Esercizi
+? студе́нт, чита́ющий кни́гу = студе́нт, кото́рый ___ кни́гу {чита́ет | чита́л | прочита́ет}
+? студе́нт, прочита́вший кни́гу = студе́нт, кото́рый ___ кни́гу {прочита́л | чита́ет | прочита́ет}
+? кни́га, прочи́танная студе́нтом = кни́га, ___ прочита́л студе́нт {кото́рую | кото́рая | кото́рой}
+? Москва́ явля́ется ___ Росси́и. = Mosca è la capitale della Russia. {столи́цей | столи́ца | столи́цу}
+? Nel parlato di tutti i giorni si preferisce… {кото́рый | il participio}
+? «лю́ди, сидя́щие в за́ле» = {le persone sedute in sala | le persone che si sono sedute ieri | le persone sedute dalla sala}
+~ Москва́ явля́ется столи́цей Росси́и. = Mosca è la capitale della Russia.
+
+## Giorno 209 | Il gerundio imperfettivo
+obiettivo: Usare il gerundio per due azioni contemporanee.
+breve: Gerundio imperfettivo: dalla forma «они́» del presente + **-я** (o **-а** dopo ж ш щ ч): чита́-ют → **чита́я** (leggendo).
+breve: Indica un'azione **contemporanea** a quella principale, dello **stesso soggetto**.
+breve: Verbi in -ся: занима́ясь, улыба́ясь (con **-сь**).
+
+### Lezione
+#### Leggendo, ascoltando
+Il gerundio (**дееприча́стие**) indica un'azione che accompagna quella principale, fatta dalla **stessa persona**:
+**Чита́я кни́гу, он пил чай.** — Leggendo un libro, beveva il tè.
+
+---
+#### Come si forma
+Dalla forma **они́** del presente, togliendo la desinenza e aggiungendo **-я** (o **-а** dopo ж ш щ ч):
+
+| они́ | Gerundio |
+|---|---|
+| чита́-ют | чита́я |
+| говор-я́т | говоря́ |
+| слу́ша-ют | слу́шая |
+| слы́ш-ат | слы́ша |
+| занима́-ют-ся | занима́ясь |
+
+> **Быть** → **бу́дучи** (essendo); **дава́ть** → **дава́я**; **встава́ть** → **встава́я**.
+
+---
+#### Esempi
+- **Гуля́я по па́рку, я ду́мал о рабо́те.** — Passeggiando nel parco, pensavo al lavoro.
+- **Он говори́л, улыба́ясь.** — Parlava sorridendo.
+- **Не зна́я языка́, тру́дно жить за грани́цей.** — Senza sapere la lingua è difficile vivere all'estero.
+
+**одновре́менно** — contemporaneamente: **Я не могу́ одновре́менно чита́ть и слу́шать.**
+
+### Parole
+одновре́менно = contemporaneamente [avv]
+
+### Frasi
+Чита́я кни́гу, он пил чай. = Leggendo un libro, beveva il tè.
+Гуля́я по па́рку, я ду́мал о рабо́те. = Passeggiando nel parco, pensavo al lavoro.
+Он всегда́ говори́т, улыба́ясь. = Parla sempre sorridendo.
+Не зна́я языка́, тру́дно рабо́тать за грани́цей. = Senza sapere la lingua è difficile lavorare all'estero.
+Слу́шая му́зыку, она́ гото́вила у́жин. = Ascoltando la musica, preparava la cena.
+Я не могу́ одновре́менно чита́ть и слу́шать. = Non posso leggere e ascoltare contemporaneamente.
+
+### Esercizi
+? чита́ть → gerundio → {чита́я | чита́в | чита́ющий}
+? говори́ть → gerundio → {говоря́ | говори́в | говорю́щий}
+? ___ по па́рку, я ду́мал. = Passeggiando nel parco, pensavo. {Гуля́я | Гуля́в | Гуля́ющий}
+? Он говори́т, ___ . = Parla sorridendo. {улыба́ясь | улыба́я | улыба́ется}
+? Не ___ языка́, тру́дно. = Senza sapere la lingua è difficile. {зна́я | знав | зна́ющий}
+? Il gerundio imperfettivo indica un'azione… {contemporanea | precedente | futura}
+> слу́шать → gerundio → слу́шая
+~ Он всегда́ говори́т, улыба́ясь. = Parla sempre sorridendo.
+
+## Giorno 210 | Ripasso della settimana
+obiettivo: Leggere un testo scritto in stile «da libro», pieno di participi.
+
+### Lettura | Письмо́ из про́шлого | Una lettera dal passato
+Неда́вно, убира́я ста́рый шкаф, я нашла́ письмо́. = Poco tempo fa, mettendo in ordine un vecchio armadio, ho trovato una lettera.
+Письмо́, напи́санное мое́й ба́бушкой в 1965 году́, бы́ло адресо́вано де́душке. = La lettera, scritta da mia nonna nel 1965, era indirizzata al nonno.
+В то вре́мя ба́бушка, учи́вшаяся в Ленингра́де, была́ студе́нткой. = A quel tempo la nonna, che studiava a Leningrado, era una studentessa.
+Де́душка, служи́вший в а́рмии, был далеко́, на Да́льнем Восто́ке. = Il nonno, che prestava servizio militare, era lontano, nell'Estremo Oriente.
+Ба́бушка писа́ла о го́роде, о друзья́х, о кни́гах, кото́рые чита́ла. = La nonna scriveva della città, degli amici, dei libri che leggeva.
+«Сижу́ у окна́, я смотрю́ на ре́ку и ду́маю о тебе́», — писа́ла она́. = «Sono seduta alla finestra, guardo il fiume e penso a te», scriveva.
+Чита́я э́то письмо́, я пла́кала и улыба́лась одновре́менно. = Leggendo questa lettera piangevo e sorridevo contemporaneamente.
+Ба́бушка и де́душка, про́жившие вме́сте пятьдеся́т лет, бы́ли о́чень сча́стливы. = La nonna e il nonno, che sono vissuti insieme cinquant'anni, erano molto felici.
+Тепе́рь э́то письмо́ лежи́т в мое́й кни́ге — как настоя́щее сокро́вище. = Ora questa lettera è dentro un mio libro, come un vero tesoro.
+
+### Domande
+? Dove ha trovato la lettera chi racconta? {in un vecchio armadio | in biblioteca | in un libro}
+? Chi ha scritto la lettera? {la nonna | il nonno | la mamma}
+? Dove si trovava il nonno? {nell'Estremo Oriente, nell'esercito | a Leningrado | all'estero per lavoro}
+? Per quanti anni hanno vissuto insieme i nonni? {cinquanta | trenta | sessantacinque}

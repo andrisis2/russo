@@ -602,6 +602,9 @@ def controlla_testo(idx, morph, testo, f, n, dove, mancanti):
         # nelle spiegazioni, radice-desinenza (говор-я́т, пиш-у́т) sono pezzi, non parole
         if dove == 'lezione' and '-' in tok and not intero_noto:
             continue
+        # parola composta riconosciuta per intero (по-мо́ему): i pezzi non si controllano
+        if intero_noto and chiave(tok) in PAROLE_OK:
+            continue
         for parte in tok.split('-'):
             if not parte:
                 continue
