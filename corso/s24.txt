@@ -1,0 +1,311 @@
+# Settimana 24 | Quando, se, perché
+
+## Giorno 162 | Fra una settimana, una settimana fa
+obiettivo: Esprimere il tempo con че́рез, наза́д, за e на.
+breve: **че́рез** + accusativo = fra (nel futuro): че́рез неде́лю, че́рез час.
+breve: … **наза́д** = fa: неде́лю наза́д, два го́да наза́д.
+breve: **за** + accusativo = in (tempo impiegato) · **на** + accusativo = per (durata prevista): прие́хал на неде́лю.
+
+### Lezione
+#### Fra e fa
+- **че́рез** + accusativo — fra, tra (nel futuro): **Я верну́сь че́рез час.** — Torno fra un'ora. **Че́рез неде́лю бу́дет экза́мен.**
+- accusativo + **наза́д** — fa: **Я прие́хал неде́лю наза́д.** — Sono arrivato una settimana fa.
+
+---
+#### In quanto tempo? Per quanto tempo?
+- **за** + accusativo — in (quanto tempo ci vuole): **Я прочита́л кни́гу за два дня.** — Ho letto il libro in due giorni. (con il perfettivo)
+- **на** + accusativo — per (la durata prevista, dopo un verbo di moto o «prendere»): **Он прие́хал на неде́лю.** — È venuto per una settimana. **Я взял кни́гу на ме́сяц.**
+- senza preposizione — per (quanto è durato): **Я жил в Москве́ год.** — Ho vissuto a Mosca un anno.
+
+---
+#### Riassunto
+| Russo | Italiano |
+|---|---|
+| че́рез час | fra un'ora |
+| час наза́д | un'ora fa |
+| за час | in un'ora |
+| на час | per un'ora (previsto) |
+| час | per un'ora (durata) |
+
+### Parole
+че́рез = fra (tempo); attraverso [prep; + accusativo]
+наза́д = fa; indietro [avv]
+
+### Frasi
+Я верну́сь че́рез час. = Torno fra un'ora.
+Он прие́хал неде́лю наза́д. = È arrivato una settimana fa.
+Я прочита́л кни́гу за два дня. = Ho letto il libro in due giorni.
+Мы е́дем на мо́ре на две неде́ли. = Andiamo al mare per due settimane.
+Я жил в Москве́ год. = Ho vissuto a Mosca un anno.
+Че́рез ме́сяц у меня́ о́тпуск! = Fra un mese ho le ferie!
+
+### Esercizi
+? Я верну́сь ___ час. = Torno fra un'ora. {че́рез | за | на}
+? Он прие́хал неде́лю ___ . = È arrivato una settimana fa. {наза́д | че́рез | пе́ред}
+? Я прочита́л кни́гу ___ два дня. = Ho letto il libro in due giorni. {за | че́рез | на}
+? Мы е́дем на мо́ре ___ две неде́ли. = Andiamo al mare per due settimane. {на | за | че́рез}
+? Я жил в Москве́ ___ . = Ho vissuto a Mosca un anno. {год | на год | за год}
+? Che cosa vuol dire «два го́да наза́д»? {due anni fa | fra due anni | per due anni}
+~ Я верну́сь че́рез час. = Torno fra un'ora.
+
+## Giorno 163 | Quante volte? Da quando?
+obiettivo: Esprimere frequenza, durata e inizio di un'azione.
+breve: **раз в** + accusativo = … volte a/al: раз в неде́лю, два ра́за в день.
+breve: **с** + genitivo … **до** + genitivo = da … a: с девяти́ до шести́.
+breve: **уже́ не / бо́льше не** = non più · **всё ещё** = ancora (continua).
+
+### Lezione
+#### Quante volte?
+**раз в** + accusativo:
+- **раз в неде́лю** — una volta a settimana;
+- **два ра́за в день** — due volte al giorno;
+- **пять раз в ме́сяц** — cinque volte al mese.
+
+#### Da… a…
+**с** + genitivo **до** + genitivo:
+- **Я рабо́таю с девяти́ до шести́.** — Lavoro dalle nove alle sei.
+- **Магази́н рабо́тает с утра́ до ве́чера.**
+
+---
+#### Ancora, non più
+- **всё ещё** — ancora (la cosa continua): **Он всё ещё спит.** — Dorme ancora.
+- **бо́льше не** / **уже́ не** — non più: **Я бо́льше не курю́.** — Non fumo più.
+- **с тех пор** — da allora: **С тех пор мы друзья́.**
+
+> «Da quanto tempo?» si dice **Как давно́?** o **Ско́лько вре́мени?**: **Как давно́ ты у́чишь ру́сский? — Уже́ полго́да.** (da sei mesi). Il verbo resta al **presente**!
+
+### Parole
+раз в неде́лю = una volta a settimana [espr]
+всё ещё = ancora (continua) [espr]
+бо́льше не = non più [espr]
+с тех пор = da allora [espr]
+
+### Frasi
+Я хожу́ в бассе́йн раз в неде́лю. = Vado in piscina una volta a settimana.
+Принима́й лека́рство два ра́за в день. = Prendi la medicina due volte al giorno.
+Я рабо́таю с девяти́ до шести́. = Lavoro dalle nove alle sei.
+Он всё ещё спит. = Dorme ancora.
+Я бо́льше не курю́. = Non fumo più.
+Как давно́ ты у́чишь ру́сский? — Уже́ полго́да. = Da quanto tempo studi il russo? — Da sei mesi.
+
+### Esercizi
+? Я хожу́ в бассе́йн раз в ___ . = Vado in piscina una volta a settimana. {неде́лю | неде́ля | неде́ли}
+? два ___ в день = due volte al giorno {ра́за | раз | разо́в}
+? Я рабо́таю с девяти́ ___ шести́. = Lavoro dalle nove alle sei. {до | на | по}
+? Он ___ спит. = Dorme ancora. {всё ещё | уже́ не | бо́льше}
+? Я ___ не курю́. = Non fumo più. {бо́льше | ещё | всё}
+? Как давно́ ты ___ ру́сский? = Da quanto studi il russo? {у́чишь | учи́л | бу́дешь учи́ть}
+~ Я бо́льше не курю́. = Non fumo più.
+
+## Giorno 164 | Quando, mentre, prima che
+obiettivo: Collegare due azioni nel tempo.
+breve: **когда́** = quando · **пока́** = mentre · **как то́лько** = appena.
+breve: **по́сле того́ как** = dopo che · **пе́ред тем как** = prima di (+ infinito se il soggetto è lo stesso).
+breve: Nel futuro, dopo когда́ si usa il futuro: **Когда́ я прие́ду, я позвоню́.**
+
+### Lezione
+#### Le congiunzioni del tempo
+| Russo | Italiano | Esempio |
+|---|---|---|
+| когда́ | quando | **Когда́ я был ма́леньким, я жил в Ри́ме.** |
+| пока́ | mentre | **Пока́ ма́ма гото́вила, па́па чита́л.** |
+| как то́лько | appena | **Как то́лько он пришёл, мы се́ли за стол.** |
+| по́сле того́ как | dopo che | **По́сле того́ как он ушёл, я легла́ спать.** |
+| пе́ред тем как | prima di/che | **Пе́ред тем как вы́йти, я вы́ключил свет.** |
+
+---
+#### Il futuro dopo «quando»
+In italiano diciamo «quando arrivo, ti chiamo». In russo si usa il **futuro** in tutte e due le parti:
+**Когда́ я прие́ду, я тебе́ позвоню́.** — Quando arriverò, ti chiamerò.
+
+---
+#### Prima di
+Con lo stesso soggetto si usa l'infinito: **Пе́ред тем как есть, мо́йте ру́ки.** — Prima di mangiare, lavatevi le mani. Con un nome basta **пе́ред** + strumentale: **пе́ред едо́й**.
+
+> **Пока́** significa anche «ciao» e «per ora» (**пока́ ничего́** — per ora niente). E **пока́ не** = finché non: **Жди, пока́ я не приду́.**
+
+### Parole
+когда́ = quando [avv]
+как то́лько = appena [espr]
+по́сле того́ как = dopo che [espr]
+пе́ред тем как = prima di, prima che [espr]
+
+### Frasi
+Когда́ я был ма́леньким, я жил в Ри́ме. = Quando ero piccolo vivevo a Roma.
+Пока́ ма́ма гото́вила у́жин, па́па чита́л газе́ту. = Mentre la mamma preparava la cena, papà leggeva il giornale.
+Как то́лько он пришёл, мы се́ли за стол. = Appena è arrivato, ci siamo seduti a tavola.
+Когда́ я прие́ду, я тебе́ позвоню́. = Quando arriverò, ti chiamerò.
+Пе́ред тем как вы́йти, вы́ключи свет. = Prima di uscire, spegni la luce.
+По́сле того́ как фильм ко́нчился, мы пошли́ в кафе́. = Dopo che il film è finito, siamo andati al bar.
+
+### Esercizi
+? ___ я прие́ду, я тебе́ позвоню́. = Quando arriverò, ti chiamerò. {Когда́ | Пока́ | Как}
+? Когда́ я ___ , я тебе́ позвоню́. = Quando arriverò… {прие́ду | приезжа́ю | прие́хал}
+? ___ ма́ма гото́вила, па́па чита́л. = Mentre la mamma cucinava, papà leggeva. {Пока́ | Как то́лько | По́сле того́ как}
+? ___ он пришёл, мы се́ли за стол. = Appena è arrivato… {Как то́лько | Пока́ | Пе́ред тем как}
+? Пе́ред тем как ___ , вы́ключи свет. = Prima di uscire, spegni la luce. {вы́йти | вы́йдешь | вы́шел}
+? Жди, пока́ я ___ приду́. = Aspetta finché non arrivo. {не | ни | уже́}
+~ Когда́ я прие́ду, я тебе́ позвоню́. = Quando arriverò, ti chiamerò.
+
+## Giorno 165 | Se: если
+obiettivo: Fare frasi ipotetiche reali (se… allora…).
+breve: **е́сли** = se (condizione reale): **Е́сли бу́дет хоро́шая пого́да, мы пойдём гуля́ть.**
+breve: Come con когда́, nel futuro si usa il **futuro** anche dopo е́сли.
+breve: **е́сли…, то…** = se…, allora… · **тогда́** = allora, in quel caso.
+
+### Lezione
+#### Se succede…
+**Е́сли** introduce una condizione **possibile**. Se riguarda il futuro, il verbo va al **futuro** (in italiano spesso usiamo il presente):
+- **Е́сли бу́дет хоро́шая пого́да, мы пойдём гуля́ть.** — Se farà bel tempo, andremo a passeggio.
+- **Е́сли ты придёшь, я бу́ду ра́д.** — Se verrai, sarò contento.
+
+Al presente, per le verità generali:
+- **Е́сли вода́ кипи́т, мо́жно вари́ть макаро́ны.**
+
+---
+#### Se…, allora…
+Nella seconda parte si può aggiungere **то** (allora): **Е́сли ты не мо́жешь, то я пойду́ оди́н.** — Se non puoi, allora vado da solo.
+**Тогда́** — allora, in quel caso: **Тогда́ уви́димся за́втра.** — Allora ci vediamo domani.
+
+---
+#### Attenzione: «se» = «se» o «whether»?
+**Е́сли** è solo il «se» delle condizioni. Il «se» delle domande indirette («non so se viene») si dice **ли**: **Я не зна́ю, придёт ли он.** (lo vedremo nel modulo 7).
+
+### Parole
+е́сли = se (condizione) [cong]
+тогда́ = allora, in quel caso; a quel tempo [avv]
+
+### Frasi
+Е́сли бу́дет хоро́шая пого́да, мы пойдём гуля́ть. = Se farà bel tempo, andremo a fare una passeggiata.
+Е́сли ты придёшь, я бу́ду о́чень ра́да. = Se verrai, sarò molto contenta.
+Е́сли у тебя́ есть вре́мя, помоги́ мне. = Se hai tempo, aiutami.
+Е́сли ты не мо́жешь, то я пойду́ оди́н. = Se non puoi, allora vado da solo.
+Тогда́ уви́димся за́втра! = Allora ci vediamo domani!
+Что ты бу́дешь де́лать, е́сли пойдёт дождь? = Che cosa farai se pioverà?
+
+### Esercizi
+? ___ бу́дет хоро́шая пого́да, мы пойдём гуля́ть. {Е́сли | Когда́ бы | Ли}
+? Е́сли ты ___ , я бу́ду ра́да. = Se verrai, sarò contenta. {придёшь | прихо́дишь | пришёл}
+? Е́сли ___ дождь, мы оста́немся до́ма. = Se pioverà, resteremo a casa. {пойдёт | идёт | шёл}
+? Е́сли ты не мо́жешь, ___ я пойду́ оди́н. = Se non puoi, allora vado da solo. {то | что | как}
+? ___ уви́димся за́втра! = Allora ci vediamo domani! {Тогда́ | Когда́ | Пото́м}
+? «Non so se viene» si dice con… {ли | е́сли | бы}
+~ Е́сли бу́дет хоро́шая пого́да, мы пойдём гуля́ть. = Se farà bel tempo, andremo a fare una passeggiata.
+
+## Giorno 166 | Se fossi: если бы
+obiettivo: Esprimere ipotesi irreali e desideri.
+breve: Condizionale = verbo al **passato** + **бы**: **я бы пошёл** (andrei / sarei andato).
+breve: **Е́сли бы** + passato…, passato + **бы**: **Е́сли бы у меня́ бы́ло вре́мя, я бы пое́хал.**
+breve: Un solo condizionale per presente e passato: il senso lo dà il contesto.
+
+### Lezione
+#### Un condizionale facilissimo
+Il condizionale russo = **passato** + **бы**:
+- **я бы пошёл** — andrei / sarei andato;
+- **она́ бы купи́ла** — comprerebbe / avrebbe comprato;
+- **мы бы хоте́ли** — vorremmo.
+
+Non cambia per il presente o il passato: **Я бы пошёл** = «andrei» o «sarei andato».
+
+---
+#### Se fosse…
+Nelle ipotesi irreali **бы** compare in **tutte e due** le parti:
+- **Е́сли бы у меня́ бы́ло вре́мя, я бы пое́хал в Москву́.** — Se avessi tempo, andrei a Mosca. / Se avessi avuto tempo, sarei andato a Mosca.
+- **Е́сли бы я знал, я бы тебе́ сказа́л.** — Se l'avessi saputo, te l'avrei detto.
+
+---
+#### Desideri e consigli
+- **Я бы хоте́л…** — Vorrei… (lo conosci già!)
+- **Я бы на твоём ме́сте…** — Io al tuo posto…
+- **Жаль, что…** — Peccato che…: **Жаль, что ты не пришёл.**
+
+> **бы** di solito va dopo la prima parola importante: **Я бы пошёл**, **Он бы помо́г**.
+
+### Parole
+бы = particella del condizionale [part]
+жаль = peccato, mi dispiace [avv]
+
+### Frasi
+Е́сли бы у меня́ бы́ло вре́мя, я бы пое́хал в Москву́. = Se avessi tempo, andrei a Mosca.
+Е́сли бы я знал, я бы тебе́ сказа́л. = Se l'avessi saputo, te l'avrei detto.
+Я бы хоте́ла жить у мо́ря. = Vorrei vivere al mare.
+Я бы на твоём ме́сте не покупа́л э́ту маши́ну. = Io al tuo posto non comprerei quella macchina.
+Жаль, что ты не пришёл. = Peccato che tu non sia venuto.
+Что бы ты сде́лал, е́сли бы вы́играл миллио́н? = Che cosa faresti se vincessi un milione?
+
+### Esercizi
+? Е́сли бы у меня́ ___ вре́мя, я бы пое́хал. = Se avessi tempo, andrei. {бы́ло | есть | бу́дет}
+? Е́сли бы я знал, я ___ сказа́л. = Se l'avessi saputo, te l'avrei detto. {бы тебе́ | тебе́ бу́ду | тебе́ ска́жу}
+? Я бы ___ жить у мо́ря. = Vorrei vivere al mare (dice Anna). {хоте́ла | хочу́ | хоте́ть}
+? ___ , что ты не пришёл. = Peccato che tu non sia venuto. {Жаль | Ра́ньше | Ла́дно}
+? Il condizionale si forma con… {passato + бы | futuro + бы | infinito + бы}
+? «Я бы пошёл» può voler dire… {andrei e sarei andato | sono andato | andrò}
+~ Е́сли бы я знал, я бы тебе́ сказа́л. = Se l'avessi saputo, te l'avrei detto.
+
+## Giorno 167 | Perché tu…: чтобы
+obiettivo: Esprimere lo scopo e i desideri sugli altri.
+breve: **что́бы** + infinito = per (scopo, stesso soggetto): **Я учу́ ру́сский, что́бы чита́ть Толсто́го.**
+breve: **что́бы** + passato = perché qualcun altro…: **Я хочу́, что́бы ты пришёл.** — Voglio che tu venga.
+breve: Dopo хоте́ть, проси́ть, сказа́ть (ordinare) + un'altra persona → что́бы + passato.
+
+### Lezione
+#### Per fare qualcosa (scopo)
+Quando il soggetto è lo stesso: **что́бы** + **infinito**.
+- **Я учу́ ру́сский, что́бы чита́ть Толсто́го в оригина́ле.** — Studio il russo per leggere Tolstoj in originale.
+- **Он пришёл, что́бы помо́чь.** — È venuto per aiutare.
+
+Con i verbi di moto spesso basta l'infinito: **Я пришёл помо́чь.**
+
+---
+#### Che qualcun altro faccia
+Quando il soggetto cambia: **что́бы** + **passato** (è il «congiuntivo» russo!):
+- **Я хочу́, что́бы ты пришёл.** — Voglio che tu venga.
+- **Ма́ма про́сит, что́бы мы не опа́здывали.** — La mamma chiede che non facciamo tardi.
+- **Скажи́ ему́, что́бы он позвони́л.** — Digli di chiamare.
+
+> Confronta: **Я хочу́ пойти́.** (voglio andare io) / **Я хочу́, что́бы ты пошёл.** (voglio che vada tu).
+
+---
+#### Per… (con un nome)
+Con un nome si usa **для** + genitivo: **Э́то для тебя́.** — È per te.
+
+### Parole
+что́бы = per, affinché, che (+ congiuntivo) [cong]
+
+### Frasi
+Я учу́ ру́сский, что́бы чита́ть Толсто́го в оригина́ле. = Studio il russo per leggere Tolstoj in originale.
+Он пришёл, что́бы помо́чь нам. = È venuto per aiutarci.
+Я хочу́, что́бы ты пришёл. = Voglio che tu venga.
+Ма́ма про́сит, что́бы мы не опа́здывали. = La mamma chiede che non facciamo tardi.
+Скажи́ ему́, что́бы он мне позвони́л. = Digli di chiamarmi.
+Что́бы хорошо́ говори́ть, ну́жно мно́го практикова́ться. = Per parlare bene bisogna fare molta pratica.
+
+### Esercizi
+? Я учу́ ру́сский, ___ чита́ть Толсто́го. = Studio il russo per leggere Tolstoj. {что́бы | что | потому́ что}
+? Я хочу́, что́бы ты ___ . = Voglio che tu venga. {пришёл | придёшь | прийти́}
+? Он пришёл, что́бы ___ . = È venuto per aiutare. {помо́чь | помо́г | помога́ет}
+? Скажи́ ему́, что́бы он ___ . = Digli di chiamare. {позвони́л | позвони́т | позвони́ть}
+? Я хочу́ ___ . = Voglio andare (io). {пойти́ | что́бы пошёл | пошёл}
+? Ма́ма про́сит, что́бы мы не ___ . = La mamma chiede che non facciamo tardi. {опа́здывали | опа́здываем | опа́здывать}
+~ Я хочу́, что́бы ты пришёл. = Voglio che tu venga.
+
+## Giorno 168 | Ripasso e test del modulo 6
+obiettivo: Leggere un testo pieno di ipotesi e fare il test del modulo.
+
+### Lettura | Е́сли бы я жил в Москве́ | Se vivessi a Mosca
+Я живу́ в Ри́ме, но ча́сто мечта́ю о Москве́. = Vivo a Roma, ma sogno spesso Mosca.
+Е́сли бы я жил в Москве́, я бы снима́л кварти́ру в ста́ром це́нтре. = Se vivessi a Mosca, prenderei in affitto un appartamento nel centro storico.
+Ка́ждое у́тро я бы е́здил на рабо́ту на метро́. = Ogni mattina andrei al lavoro in metro.
+По выходны́м я бы ходи́л в теа́тры и музе́и. = Nei fine settimana andrei a teatro e nei musei.
+Ле́том я бы е́здил на да́чу к друзья́м, что́бы собира́ть грибы́. = D'estate andrei in dacia dagli amici a raccogliere funghi.
+Зимо́й я бы ката́лся на конька́х на Кра́сной пло́щади. = D'inverno pattinerei sulla Piazza Rossa.
+Пока́ э́то то́лько мечта́. = Per ora è solo un sogno.
+Но че́рез год я хочу́ пое́хать туда́ на ме́сяц, что́бы практикова́ть язы́к. = Ma fra un anno voglio andarci per un mese, per fare pratica con la lingua.
+Е́сли всё бу́дет хорошо́, я прие́ду в Москву́ в декабре́. = Se andrà tutto bene, arriverò a Mosca a dicembre.
+Когда́ я прие́ду, я обяза́тельно напишу́ вам! = Quando arriverò, vi scriverò senz'altro!
+
+### Domande
+? Dove vive chi scrive? {a Roma | a Mosca | a Milano}
+? Che cosa farebbe d'inverno a Mosca? {pattinerebbe sulla Piazza Rossa | andrebbe a sciare | resterebbe a casa}
+? Per quanto tempo vuole andare a Mosca fra un anno? {per un mese | per un anno | per una settimana}
+? Perché vuole andarci? {per fare pratica con la lingua | per lavoro | per vedere un amico}
