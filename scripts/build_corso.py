@@ -58,6 +58,13 @@ def chiave(s):
 def n_vocali(w):
     return sum(1 for c in nudo(w).lower() if c in VOCALI)
 
+_PRIMA = re.compile(r"([А-Яа-яЁё́]+) $")
+def dopo_proclitico(testo, start):
+    """Vero se la parola che comincia in «start» segue un monosillabo accentato
+    (не́ был, за́ городом, на́ дом): in quel caso è atona e non va accentata."""
+    m = _PRIMA.search(testo[max(0, start - 8):start])
+    return bool(m) and ACC in m.group(1) and n_vocali(m.group(1)) == 1
+
 def hash36(s):
     h = 5381
     for ch in s:
@@ -553,8 +560,8 @@ def accenta_sorgenti(idx, files):
                     return tok
                 if m.end() < len(ru) and ru[m.end()] == '*':
                     return tok
-                # dopo «не́» la parola è atona (не́ был, не́ было)
-                if ru[max(0, start - 4):start].lower() == 'не́ ':
+                # dopo un monosillabo accentato la parola è atona (не́ был, за́ городом)
+                if dopo_proclitico(ru, start):
                     return tok
                 forma, stato = accenta_token(idx, tok)
                 if stato == 'aggiunto' and forma:
@@ -594,8 +601,8 @@ def controlla_testo(idx, morph, testo, f, n, dove, mancanti):
         # lettere e sillabe isolate nelle spiegazioni (з, ги, -ешь…)
         if dove == 'lezione' and len(nudo(tok)) <= 2:
             continue
-        # dopo «не́» la parola è atona (не́ был, не́ было)
-        if testo[max(0, m.start() - 4):m.start()].lower() == 'не́ ':
+        # dopo un monosillabo accentato la parola è atona (не́ был, за́ городом)
+        if dopo_proclitico(testo, m.start()):
             continue
         intero_noto = '-' in tok and ((morph is not None and morph.word_is_known(nudo(tok).lower()))
                                       or (idx is not None and chiave(tok) in idx) or chiave(tok) in PAROLE_OK)

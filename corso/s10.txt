@@ -64,7 +64,7 @@ Si mette **dopo** la parola principale, senza preposizione.
 obiettivo: Dire che qualcosa non c'è o che non ce l'hai.
 breve: **нет** + genitivo = non c'è, non ci sono: **Здесь нет метро́. В го́роде нет теа́тра.**
 breve: «Non ho»: **у меня́ нет** + genitivo: **У меня́ нет маши́ны.**
-breve: Al passato: **не́ было** + genitivo: **Вчера́ не́ бы́ло интерне́та.**
+breve: Al passato: **не́ было** + genitivo: **Вчера́ не́ было интерне́та.**
 
 ### Lezione
 #### Esserci o non esserci
@@ -84,7 +84,7 @@ Anche le persone: **Ма́мы нет до́ма.** — La mamma non è a casa. 
 
 ---
 #### Al passato e al futuro
-- passato: **не́ было** + genitivo: **Вчера́ не́ бы́ло све́та.** — Ieri non c'era la luce.
+- passato: **не́ было** + genitivo: **Вчера́ не́ было све́та.** — Ieri non c'era la luce.
 - futuro: **не бу́дет** + genitivo: **За́втра не бу́дет уро́ка.** — Domani non ci sarà lezione.
 
 ### Parole
@@ -100,7 +100,7 @@ Anche le persone: **Ма́мы нет до́ма.** — La mamma non è a casa. 
 Ма́мы нет до́ма. = La mamma non è a casa.
 Сего́дня нет о́череди! = Oggi non c'è la fila!
 У меня́ нет вре́мени. = Non ho tempo.
-Вчера́ не́ бы́ло све́та. = Ieri non c'era la luce.
+Вчера́ не́ было све́та. = Ieri non c'era la luce.
 
 ### Esercizi
 ? У меня́ нет ___ . = Non ho la macchina. {маши́ны | маши́на | маши́ну}
