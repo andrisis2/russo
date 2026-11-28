@@ -41,6 +41,7 @@ Le parole russe nel testo si toccano per ascoltarle.
 > Он (чита́ть) → чита́ет = Lui legge.
 > Scrivi «gatto» → кот / ко́шка
 ~ Я живу́ в Москве́. = Vivo a Mosca.
+@ Магази́н рабо́тает до восьми́. → Fino a quando è aperto? {fino alle 8 | fino alle 18 | tutto il giorno} = Il negozio è aperto fino alle otto.
 ```
 
 - **Parole**: `russo = italiano [tipo; nota]`. Tipi: `m f n pl mf` (nomi),
@@ -49,7 +50,10 @@ Le parole russe nel testo si toccano per ascoltarle.
   Una parola si introduce **una volta sola** in tutto il corso (lo script avvisa).
 - **Esercizi**: `?` scelta multipla (la prima opzione è quella giusta: l'app
   le mescola; `___` nella domanda viene riempito con la risposta), `>` risposta
-  da scrivere (alternative separate da ` / `), `~` frase da ricomporre.
+  da scrivere (alternative separate da ` / `), `~` frase da ricomporre,
+  `@` **ascolto**: la frase russa si sente ma non si legge (si vede dopo la
+  risposta); dopo `→` la domanda in italiano (senza, «Che cosa hai sentito?»),
+  tra graffe le risposte (la prima è quella giusta), dopo `=` la traduzione.
 - Il **7° giorno** di ogni settimana è il ripasso: ha una `### Lettura | Titolo russo | Titolo italiano`
   (righe `russo = italiano`) e `### Domande` (righe `?`). Riepilogo e test si
   generano da soli; il 28°, 56°… giorno aggiungono il test del modulo, il 365°
@@ -57,3 +61,17 @@ Le parole russe nel testo si toccano per ascoltarle.
 
 Gli id di parole, frasi ed esercizi nascono dal testo russo: cambiando una frase
 cambia anche il suo id (e il suo ripasso riparte da zero).
+
+## Controlli dello script
+
+- **Accenti**: con il dizionario di OpenRussian lo script segnala gli accenti
+  che mancano o che sembrano sbagliati; `--accenta` aggiunge quelli certi. Le
+  parole giuste che il dizionario non conosce (nomi propri, forme rare, parole
+  nuove come `гу́глить`) vanno in `corso/parole_ok.txt`.
+- Dopo un monosillabo accentato la parola è atona e non si accenta
+  (`не́ было`, `за́ городом`, `на́ уши`); i prefissi (`пере-`, `вы-`) non si
+  accentano.
+- Avvisa anche di: parole già introdotte in un altro giorno, opzioni ripetute,
+  lettere latine dentro parole russe, giorni senza lezione o (al 7° giorno)
+  senza lettura.
+

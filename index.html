@@ -205,6 +205,9 @@
   @keyframes shimmer{to{transform:translateX(100%)}}
   @keyframes ringIn{from{transform:scale(.6) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}
   @keyframes confetti{0%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(var(--dx),var(--dy)) rotate(var(--rot));opacity:0}}
+  /* le animazioni di scorrimento (e qualunque cosa sporga) non devono allargare la pagina:
+     sul telefono la vista si rimpicciolirebbe. clip non crea uno scorrimento, i sticky restano */
+  #app{overflow-x:clip}
   .slide-left{animation:slideInLeft .24s cubic-bezier(.22,.68,0,1.1) both}
   .slide-right{animation:slideInRight .24s cubic-bezier(.22,.68,0,1.1) both}
 
@@ -1564,8 +1567,10 @@
   .lz-card p{margin:0 0 12px}
   .lz-card p:last-child{margin-bottom:0}
   .lz-card .tbl-wrap{margin:4px 0 14px}
-  .lz-card table.ref{font-size:14.5px}
-  .lz-card table.ref td,.lz-card table.ref th{white-space:normal;min-width:64px}
+  .lz-card table.ref{font-size:14.5px;min-width:100%}
+  .lz-card table.ref td,.lz-card table.ref th{white-space:normal;min-width:58px;padding:9px 10px}
+  .lz-card table.ref.fitta{font-size:13px}
+  .lz-card table.ref.fitta td,.lz-card table.ref.fitta th{min-width:0;padding:8px 7px}
   .lz-card table.ref tbody td:first-child{color:var(--text);font-weight:700}
   .lz-h{margin:2px 0 10px;font-size:18px;font-weight:800;letter-spacing:-.3px;line-height:1.3}
   .lz-ul{margin:0 0 12px;padding-left:22px}
@@ -9021,6 +9026,7 @@ function esAscolto(e, ctx){
     if(!ok) logErrore(senzaAccento(e.ru), e.it || e.ok, 'Corso');
     const r = $(`<div class="q" lang="ru" style="font-size:20px"></div>`); r.textContent = e.ru;
     card.appendChild(r);
+    if(e.it){ const t = $(`<div class="qsub"></div>`); t.textContent = e.it; card.appendChild(t); }
     if(e.nota) rpNota(card, e.nota);
     card.appendChild(azioniTesto(senzaAccento(e.ru), e.it || ''));
     ctx.fatto(ok?1:0, 1);
@@ -9263,7 +9269,10 @@ function mdTabella(rows){
   const celle = r => r.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c=>c.trim());
   const testa = celle(rows[0]);
   const corpo = rows.slice(1).filter(r=>!/^\|\s*:?-{2,}/.test(r.trim())).map(celle);
-  return `<div class="tbl-wrap"><table class="ref lz-tab"><thead><tr>${testa.map(h=>`<th>${mdInline(h)}</th>`).join('')}</tr></thead>`+
+  // coniugazione scritta in orizzontale (я | ты | … e una riga di forme): sul telefono sta meglio in verticale
+  if(testa.length === 6 && senzaAccento(testa[0]).trim().toLowerCase() === 'я' && corpo.length === 1)
+    return `<div class="tbl-wrap"><table class="ref lz-tab"><tbody>${testa.map((h,i)=>`<tr><td>${mdInline(h)}</td><td>${mdInline(corpo[0][i] || '')}</td></tr>`).join('')}</tbody></table></div>`;
+  return `<div class="tbl-wrap"><table class="ref lz-tab${testa.length >= 4 ? ' fitta' : ''}"><thead><tr>${testa.map(h=>`<th>${mdInline(h)}</th>`).join('')}</tr></thead>`+
          `<tbody>${corpo.map(r=>`<tr>${r.map(c=>`<td>${mdInline(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 function mdHtml(src){

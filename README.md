@@ -1,13 +1,33 @@
 # Русский — app per imparare il russo
 
-App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e si installa sul telefono come un'app.
+App web personale (PWA) per studiare il russo, dall'alfabeto al B1 con un corso di 365 giorni. Funziona offline e si installa sul telefono come un'app.
+
+## 📚 Il corso in 365 giorni
+Il cuore dell'app: un percorso già preparato che porta **dall'alfabeto al livello B1** in un anno, un giorno alla volta.
+
+- **13 moduli, 52 settimane, 365 giorni**: si parte da Primi passi (A1) e si arriva a Verso il B1, passando per casi,
+  verbi di moto, aspetto, lavoro, viaggi, la Russia da vicino (geografia, feste, cucina, cultura), il mondo di oggi,
+  il russo parlato e i modi di dire, la grammatica avanzata. Programma completo in [`corso/PROGRAMMA.md`](corso/PROGRAMMA.md).
+- **Ogni giorno**: una lezione breve (con tabelle, esempi e curiosità; tocchi una parola russa e la senti), le parole
+  nuove con la pronuncia, le frasi da ascoltare, gli esercizi (scelta, scrittura in cirillico, frasi da ricomporre,
+  ascolto) e il **ripasso** delle cose vecchie quando tocca a loro (ripetizione dilazionata: dopo un giorno, tre, una
+  settimana, un mese…).
+- **Il 7° giorno** di ogni settimana: riepilogo, una lettura con le domande e il test della settimana; ogni 4 settimane
+  il **test del modulo**; il giorno 365 l'**esame finale** con il diploma.
+- **Mai bloccati**: si può andare avanti e indietro tra i giorni, segnare come già noto un giorno o un modulo intero
+  («Lo so già»), scegliere da dove partire (da zero, dall'alfabeto già noto, da un modulo qualsiasi) o ricominciare.
+- I contenuti si scrivono in `corso/` (una settimana per file, formato in [`corso/FORMATO.md`](corso/FORMATO.md)) e
+  `scripts/build_corso.py` li trasforma in `corso.json`, controllando accenti, doppioni e refusi.
 
 ## Come funziona
 - **`knowledge.json`** — la base di conoscenza: vocaboli, frasi, alfabeto e regole. È la fonte unica di verità che alimenta tutti gli esercizi. Quando studio nuovo materiale, le voci vengono aggiunte qui.
 - **`note.md`** — spiegazioni grammaticali discorsive (lettura, non esercizi).
-- **`index.html`** — l'app. In cima alla home il saluto in russo (tocca per ascoltarlo), la card del
-  **Ripasso del giorno** con l'anello di avanzamento e la serie di giorni di fila, **I miei esercizi** e la
-  🗺️ **Percorso A1** (12 tappe che si sbloccano una dopo l'altra, dall'alfabeto alle feste), il tuo **livello**
+- **`corso.json`** — il corso in 365 giorni, generato da `scripts/build_corso.py` a partire dai sorgenti in `corso/`
+  (non si modifica a mano).
+- **`index.html`** — l'app. In cima alla home il saluto in russo (tocca per ascoltarlo), la card del **Corso**
+  (il giorno di oggi con i passi da fare, l'anello di avanzamento e la serie di giorni di fila), il **Ripasso misto**
+  sulle cose già studiate, **I miei esercizi** (il vecchio 🗺️ **Percorso A1** a 12 tappe resta raggiungibile dalla
+  pagina del corso), il tuo **livello**
   (punti per ogni risposta, da Новичок a Легенда) e la fascia **«Oggi per te»**: ✨ Parola del giorno,
   proverbio del giorno e pillola di cultura. In cima, la Piazza Rossa (San Basilio e la torre Spasskaja fra le mura):
   di sera il Cremlino accende le finestre, d'inverno nevica. In fondo alla home le matrioske (toccale: ballano e dicono
@@ -20,7 +40,7 @@ App web personale (PWA) per studiare il russo, livello A1+. Funziona offline e s
   **＋ Salva** mette la parola o la frase negli esercizi, e 🎤 **Pronuncia** ti ascolta.
 
   **Pratica**
-  - 📅 **Ripasso del giorno** — 10 attività miste ogni giorno (15 o 20 dalle Impostazioni), non solo flashcard:
+  - 🔁 **Ripasso misto** — 10 attività miste ogni giorno (15 o 20 dalle Impostazioni), non solo flashcard:
     parole (da girare o con la traduzione da scegliere), un **verbo del giorno** da studiare in tutte le sue forme e
     poi da riconoscere, frasi da comporre o completare, casi, verbi di moto, regole, numeri, battute dei dialoghi,
     proverbi. Le parole le sceglie la ripetizione dilazionata; il tipo di grammatica e di «varie» cambia ogni giorno.

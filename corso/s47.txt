@@ -168,20 +168,20 @@ breve: Con **е́хать** davanti a **е** si scrive **ъ**: **въе́хат�
 
 ### Lezione
 #### La grande tabella
-| Prefisso | Idea | A piedi | Con un mezzo | Preposizione |
-|---|---|---|---|---|
-| в- | entrare | войти́ | въе́хать | в + acc. |
-| вы- | uscire | вы́йти | вы́ехать | из + gen. |
-| при- | arrivare | прийти́ | прие́хать | в / на + acc. |
-| у- | andarsene | уйти́ | уе́хать | из / от + gen. |
-| под- | avvicinarsi | подойти́ | подъе́хать | к + dat. |
-| от- | allontanarsi | отойти́ | отъе́хать | от + gen. |
-| за- | passare da | зайти́ | зае́хать | в / к |
-| до- | arrivare fino a | дойти́ | дое́хать | до + gen. |
-| пере- | attraversare | перейти́ | перее́хать | че́рез + acc. |
-| про- | passare oltre | пройти́ | прое́хать | ми́мо + gen. |
-| об- | fare il giro | обойти́ | объе́хать | вокру́г + gen. |
-| с- | scendere | сойти́ | съе́хать | с + gen. |
+| Prefisso | Idea | A piedi · con un mezzo |
+|---|---|---|
+| в- | entrare (в + acc.) | войти́ · въе́хать |
+| вы- | uscire (из + gen.) | вы́йти · вы́ехать |
+| при- | arrivare (в / на + acc.) | прийти́ · прие́хать |
+| у- | andarsene (из / от + gen.) | уйти́ · уе́хать |
+| под- | avvicinarsi (к + dat.) | подойти́ · подъе́хать |
+| от- | allontanarsi (от + gen.) | отойти́ · отъе́хать |
+| за- | passare da (в / к) | зайти́ · зае́хать |
+| до- | arrivare fino a (до + gen.) | дойти́ · дое́хать |
+| пере- | attraversare (че́рез + acc.) | перейти́ · перее́хать |
+| про- | passare oltre (ми́мо + gen.) | пройти́ · прое́хать |
+| об- | fare il giro (вокру́г + gen.) | обойти́ · объе́хать |
+| с- | scendere (с + gen.) | сойти́ · съе́хать |
 
 ---
 #### L'imperfettivo
