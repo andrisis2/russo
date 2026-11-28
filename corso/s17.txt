@@ -1,0 +1,350 @@
+# Settimana 17 | Il genitivo plurale
+
+## Giorno 113 | Il genitivo plurale maschile
+obiettivo: Formare il genitivo plurale dei nomi maschili.
+breve: Consonante dura → **-ов**: стол → столо́в, биле́т → биле́тов.
+breve: -й → **-ев**: музе́й → музе́ев; dopo ц non accentata → -ев: ме́сяц → ме́сяцев.
+breve: -ь e ж ш щ ч → **-ей**: рубль → рубле́й, врач → враче́й, каранда́ш → карандаше́й.
+
+### Lezione
+Il **genitivo plurale** serve dopo i numeri da 5 in su, dopo **мно́го** (molti), **ско́лько** (quanti), **нет** al plurale. È il caso più «difficile», ma ha regole chiare. Oggi i maschili.
+
+| Il nome finisce in… | Genitivo plurale | Esempi |
+|---|---|---|
+| consonante dura | **-ов** | стол → столо́в, биле́т → биле́тов |
+| -й | **-ев** | музе́й → музе́ев, трамва́й → трамва́ев |
+| -ь | **-ей** | рубль → рубле́й, слова́рь → словаре́й |
+| ж, ш, щ, ч | **-ей** | врач → враче́й, каранда́ш → карандаше́й, гара́ж → гараже́й |
+
+---
+#### Eccezioni importanti
+- **челове́к** → (5) **челове́к**: пять челове́к;
+- **раз** → пять **раз**; **глаз** → **глаз**; **солда́т** → **солда́т**;
+- **друг** → **друзе́й**; **брат** → **бра́тьев**; **сын** → **сынове́й**;
+- **год** → **лет** (пять лет).
+
+---
+#### Esempi
+- **пять биле́тов**, **шесть столо́в**, **мно́го музе́ев**;
+- **ско́лько рубле́й?**, **у меня́ нет карандаше́й**.
+
+### Parole
+каранда́ш = matita [m]
+слова́рь = dizionario, vocabolario [m]
+гара́ж = garage [m]
+костю́м = abito (da uomo), costume [m]
+пиро́г = torta salata o dolce, «pirog» [m]
+
+### Frasi
+У меня́ пять биле́тов в теа́тр. = Ho cinque biglietti per il teatro.
+В Москве́ мно́го музе́ев. = A Mosca ci sono molti musei.
+Ско́лько у тебя́ карандаше́й? = Quante matite hai?
+В на́шей больни́це де́сять враче́й. = Nel nostro ospedale ci sono dieci medici.
+У меня́ мно́го друзе́й. = Ho molti amici.
+Ба́бушка пекла́ шесть пирого́в. = La nonna ha fatto sei torte.
+
+### Esercizi
+? пять ___ = cinque biglietti {биле́тов | биле́та | биле́ты}
+? мно́го ___ = molti musei {музе́ев | музе́ов | музе́и}
+? шесть ___ = sei rubli {рубле́й | рубле́в | рубля́}
+? де́сять ___ = dieci medici {враче́й | врачо́в | врача́}
+? У меня́ мно́го ___ . = Ho molti amici. {друзе́й | дру́гов | друзья́}
+? пять ___ = cinque persone {челове́к | челове́ков | лю́дей}
+? Ско́лько ___ ? = Quanti dizionari? {словаре́й | слова́рев | словари́}
+> стол → пять … → столо́в
+> каранда́ш → мно́го … → карандаше́й
+~ В Москве́ мно́го музе́ев. = A Mosca ci sono molti musei.
+
+## Giorno 114 | Il genitivo plurale femminile e neutro
+obiettivo: Formare il genitivo plurale dei nomi femminili e neutri.
+breve: -а e -о **perdono la vocale** (desinenza zero): кни́га → книг, сло́во → слов.
+breve: Se restano due consonanti, spesso spunta una vocale: ру́чка → ру́чек, окно́ → о́кон, сестра́ → сестёр.
+breve: -ь e -е → **-ей**: ночь → ноче́й, мо́ре → море́й; -ия, -ие → **-ий**: ста́нция → ста́нций, зда́ние → зда́ний.
+
+### Lezione
+#### La desinenza zero
+Femminili in **-а** e neutri in **-о** al genitivo plurale **perdono** l'ultima vocale:
+- **кни́га → книг**: пять книг;
+- **маши́на → маши́н**; **ко́мната → ко́мнат**;
+- **сло́во → слов**; **ме́сто → мест**.
+
+---
+#### La vocale che compare
+Se alla fine restano due consonanti attaccate, in mezzo spunta una **о** o una **е** (vocale mobile):
+
+| Nome | Genitivo plurale |
+|---|---|
+| ру́чка | ру́ч**е**к |
+| су́мка | су́м**о**к |
+| окно́ | о́к**о**н |
+| де́вушка | де́вуш**е**к |
+| сестра́ | сест**ё**р |
+| кре́сло | кре́с**е**л |
+
+---
+#### Gli altri
+| Nominativo | Genitivo plurale |
+|---|---|
+| -ь (f) | **-ей**: ночь → ноче́й, пло́щадь → площаде́й |
+| -е (n) | **-ей**: мо́ре → море́й, по́ле → поле́й |
+| -ия, -ие | **-ий**: ста́нция → ста́нций, зда́ние → зда́ний |
+| -я | **-ь**: неде́ля → неде́ль, пе́сня → пе́сен |
+
+> Eccezione: **полоте́нце → полоте́нец**, **де́ньги → де́нег**.
+
+### Parole
+кре́сло = poltrona [n]
+ва́за = vaso [f]
+ма́рка = francobollo; marca [f]
+су́мка = borsa [f]
+полоте́нце = asciugamano [n]
+
+### Frasi
+У меня́ пять книг. = Ho cinque libri.
+В кварти́ре четы́ре ко́мнаты, но мно́го о́кон. = Nell'appartamento ci sono quattro stanze, ma molte finestre.
+Ско́лько у тебя́ сестёр? = Quante sorelle hai?
+В шко́ле мно́го де́вушек. = A scuola ci sono molte ragazze.
+У меня́ нет де́нег. = Non ho soldi.
+Он собира́ет ма́рки: у него́ ты́сяча ма́рок! = Colleziona francobolli: ne ha mille!
+
+### Esercizi
+? пять ___ = cinque libri {книг | кни́ги | кни́гов}
+? мно́го ___ = molte parole {слов | слова́ | сло́вов}
+? шесть ___ = sei penne {ру́чек | ру́чки | ру́чков}
+? Ско́лько у тебя́ ___ ? = Quante sorelle hai? {сестёр | сестры́ | сестро́в}
+? У меня́ нет ___ . = Non ho soldi. {де́нег | де́ньги | де́ньгов}
+? мно́го ___ = molte notti {ноче́й | ночь | но́чи}
+? пять ___ = cinque stazioni {ста́нций | ста́нцией | ста́нциев}
+> маши́на → пять … → маши́н
+> окно́ → мно́го … → о́кон
+~ У меня́ нет де́нег. = Non ho soldi.
+
+## Giorno 115 | Molti, pochi, alcuni
+obiettivo: Esprimere le quantità con мно́го, ма́ло, не́сколько, ско́лько.
+breve: мно́го, ма́ло, не́сколько, ско́лько + **genitivo plurale** (cose contabili): мно́го книг.
+breve: Con le cose non contabili + **genitivo singolare**: мно́го воды́, ма́ло вре́мени.
+breve: доста́точно = abbastanza: доста́точно де́нег.
+
+### Lezione
+#### Quanto? Quanti?
+| Parola | Significato |
+|---|---|
+| мно́го | molto, molti |
+| ма́ло | poco, pochi |
+| не́сколько | alcuni, qualche |
+| ско́лько? | quanto? quanti? |
+| доста́точно | abbastanza |
+
+Tutte vogliono il **genitivo**:
+- cose che si contano → **genitivo plurale**: **мно́го друзе́й**, **ма́ло книг**, **не́сколько дней**;
+- cose che non si contano → **genitivo singolare**: **мно́го воды́**, **ма́ло вре́мени**, **доста́точно де́нег**.
+
+---
+#### Con il verbo
+Dopo queste parole il verbo va al **singolare neutro** (al passato) :
+- **Пришло́ мно́го госте́й.** — Sono arrivati molti ospiti.
+- **Бы́ло ма́ло люде́й.** — C'era poca gente.
+
+> **Лю́ди** al genitivo plurale fa **люде́й** (мно́го люде́й), ma dopo i numeri si usa **челове́к**: пять челове́к.
+
+### Parole
+мно́го = molto, molti [avv]
+ма́ло = poco, pochi [avv]
+не́сколько = alcuni, qualche [num]
+доста́точно = abbastanza [avv]
+
+### Frasi
+В Москве́ мно́го люде́й. = A Mosca c'è molta gente.
+У меня́ ма́ло вре́мени. = Ho poco tempo.
+Я был в Ри́ме не́сколько дней. = Sono stato a Roma qualche giorno.
+Ско́лько у вас дете́й? = Quanti figli avete?
+У нас доста́точно де́нег? = Abbiamo abbastanza soldi?
+Вчера́ на конце́рте бы́ло ма́ло люде́й. = Ieri al concerto c'era poca gente.
+
+### Esercizi
+? В го́роде мно́го ___ . = In città ci sono molti teatri. {теа́тров | теа́тры | теа́тра}
+? У меня́ ма́ло ___ . = Ho poco tempo. {вре́мени | вре́мя | времён}
+? не́сколько ___ = qualche giorno {дней | дни | дня}
+? Ско́лько у вас ___ ? = Quanti figli avete? {дете́й | де́ти | дете́}
+? мно́го ___ = molta acqua {воды́ | вод | вода́}
+? Вчера́ ___ мно́го люде́й. = Ieri c'era molta gente. {бы́ло | бы́ли | был}
+? В за́ле мно́го ___ . = In sala c'è molta gente. {люде́й | лю́ди | челове́к}
+> Scrivi «abbastanza» in russo → доста́точно
+~ У меня́ ма́ло вре́мени. = Ho poco tempo.
+
+## Giorno 116 | I numeri con i nomi: il quadro completo
+obiettivo: Mettere insieme la regola dei numeri.
+breve: 1 → nominativo singolare · 2-4 → genitivo singolare · 5-20 → genitivo plurale.
+breve: Conta l'ultima parola del numero: 21 → come 1, 22-24 → come 2-4, 25-30 → come 5.
+breve: Gli aggettivi con 2-4 vanno al genitivo plurale: два больши́х до́ма.
+
+### Lezione
+#### La regola d'oro
+| Numero | Nome | Esempio |
+|---|---|---|
+| 1, 21, 31, 101… | nominativo sg. | оди́н биле́т, два́дцать оди́н биле́т |
+| 2-4, 22-24… | genitivo sg. | два биле́та, три кни́ги |
+| 5-20, 25-30, 100… | genitivo pl. | пять биле́тов, двена́дцать книг |
+| 11-14 | genitivo pl. | оди́ннадцать биле́тов (non «come 1»!) |
+
+> Attenzione: **11, 12, 13, 14** vogliono il genitivo plurale, anche se finiscono con 1, 2, 3, 4.
+
+---
+#### Due, tre, quattro con gli aggettivi
+Con **2-4** l'aggettivo va al **genitivo plurale** (maschili/neutri) o al **nominativo plurale** (femminili):
+- **два больши́х до́ма**;
+- **две но́вые кни́ги** (al femminile anche **но́вых**).
+
+---
+#### Uno e mezzo, entrambi
+- **полтора́** (1,5) + genitivo singolare: **полтора́ часа́**, **полторы́ мину́ты**;
+- **о́ба** (m, n) / **о́бе** (f) — entrambi: **о́ба бра́та**, **о́бе сестры́**.
+
+### Parole
+полтора́ = uno e mezzo [num; полторы́ col femminile]
+о́ба = entrambi [num; о́бе col femminile]
+
+### Frasi
+У меня́ два́дцать оди́н год о́пыта. = Ho ventun anni di esperienza.
+В гру́ппе двена́дцать студе́нтов. = Nel gruppo ci sono dodici studenti.
+Мы купи́ли два больши́х чемода́на. = Abbiamo comprato due valigie grandi.
+Фильм идёт полтора́ часа́. = Il film dura un'ora e mezza.
+О́ба бра́та живу́т в Москве́. = Entrambi i fratelli vivono a Mosca.
+Здесь два́дцать пять челове́к. = Qui ci sono venticinque persone.
+
+### Esercizi
+? два́дцать оди́н ___ = ventuno studenti {студе́нт | студе́нта | студе́нтов}
+? два́дцать два ___ = ventidue studenti {студе́нта | студе́нт | студе́нтов}
+? оди́ннадцать ___ = undici studenti {студе́нтов | студе́нт | студе́нта}
+? три ___ = tre libri {кни́ги | книг | кни́га}
+? сто ___ = cento rubli {рубле́й | рубля́ | рубль}
+? полтора́ ___ = un'ora e mezza {часа́ | часо́в | час}
+? ___ сестры́ = entrambe le sorelle {О́бе | О́ба | Оба́}
+? два ___ до́ма = due case grandi {больши́х | больши́е | большо́й}
+~ Фильм идёт полтора́ часа́. = Il film dura un'ora e mezza.
+
+## Giorno 117 | Quantità in cucina
+obiettivo: Parlare di quantità a tavola e in cucina.
+breve: ча́шка ча́я, стака́н молока́, таре́лка су́па, ло́жка са́хара: contenitore + genitivo.
+breve: ло́жка (cucchiaio), ви́лка (forchetta), нож (coltello), таре́лка (piatto).
+breve: **Ещё ча́шку ча́я?** — Un'altra tazza di tè?
+
+### Lezione
+#### Contenitore + genitivo
+| Contenitore | Esempio |
+|---|---|
+| ча́шка (tazza) | ча́шка ча́я, ча́шка ко́фе |
+| стака́н (bicchiere) | стака́н воды́, стака́н молока́ |
+| таре́лка (piatto) | таре́лка су́па |
+| ло́жка (cucchiaio) | ло́жка са́хара |
+
+> Il tè al genitivo ha anche la forma **ча́ю**: **ча́шка ча́ю** (più colloquiale, «un po' di tè»).
+
+---
+#### Le posate
+**ло́жка** (cucchiaio), **ви́лка** (forchetta), **нож** (coltello), **таре́лка** (piatto), **стака́н** (bicchiere), **ча́шка** (tazza).
+Si mangia **ло́жкой**, **ви́лкой** (strumentale: «con»): **Суп едя́т ло́жкой.**
+
+---
+#### Offrire ancora
+- **Ещё ча́шку ча́я?** — Un'altra tazza di tè?
+- **Ещё немно́го?** — Ancora un po'?
+- **Спаси́бо, бо́льше не на́до.** — Grazie, non ne voglio più.
+
+### Parole
+ло́жка = cucchiaio [f]
+ча́шка = tazza [f]
+стака́н = bicchiere [m]
+таре́лка = piatto [f]
+ви́лка = forchetta [f]
+нож = coltello [m]
+
+### Frasi
+Да́йте, пожа́луйста, стака́н воды́. = Mi dia un bicchiere d'acqua, per favore.
+Я пью ча́шку ко́фе ка́ждое у́тро. = Bevo una tazza di caffè ogni mattina.
+Положи́ ло́жку са́хара. = Metti un cucchiaio di zucchero.
+Ещё таре́лку су́па? = Un altro piatto di minestra?
+Где ви́лки и ножи́? = Dove sono le forchette e i coltelli?
+Спаси́бо, бо́льше не на́до. = Grazie, non ne voglio più.
+
+### Esercizi
+? стака́н ___ = un bicchiere d'acqua {воды́ | вода́ | во́ду}
+? ча́шка ___ = una tazza di tè {ча́я | чай | ча́ем}
+? таре́лка ___ = un piatto di minestra {су́па | суп | су́пом}
+? ло́жка ___ = un cucchiaio di zucchero {са́хара | са́хар | са́харе}
+? Суп едя́т ___ . = La minestra si mangia col cucchiaio. {ло́жкой | ло́жка | ло́жку}
+? «ви́лка» vuol dire… {forchetta | coltello | villa}
+? Il genitivo plurale di «ло́жка» è… {ло́жек | ло́жков | ло́жки}
+> Scrivi «coltello» in russo → нож
+~ Да́йте, пожа́луйста, стака́н воды́. = Mi dia un bicchiere d'acqua, per favore.
+
+## Giorno 118 | Anni e secoli
+obiettivo: Parlare di anni, decenni e secoli.
+breve: **в про́шлом году́** (l'anno scorso), **в э́том году́** (quest'anno), **в сле́дующем году́** (l'anno prossimo).
+breve: **век** = secolo: в двадца́том ве́ке (nel XX secolo), in cifre romane: в XX ве́ке.
+breve: «Negli anni '90»: **в девяно́стые го́ды**.
+
+### Lezione
+#### L'anno
+- **в э́том году́** — quest'anno;
+- **в про́шлом году́** — l'anno scorso;
+- **в сле́дующем году́** — l'anno prossimo.
+
+Allo stesso modo: **на э́той неде́ле**, **на про́шлой неде́ле**, **на сле́дующей неде́ле** (questa/la scorsa/la prossima settimana; con **неде́ля** si usa **на**!).
+
+---
+#### Il secolo
+**век** — secolo (anche «età, epoca»). Si scrive con le cifre romane e si legge con l'ordinale:
+- **XXI век** — два́дцать пе́рвый век;
+- **в XIX ве́ке** — nel diciannovesimo secolo (в девятна́дцатом ве́ке).
+
+---
+#### I decenni
+**в девяно́стые го́ды** — negli anni Novanta; **в шестидеся́тые го́ды** — negli anni Sessanta.
+
+> **Эпо́ха** — epoca: **эпо́ха Петра́ Пе́рвого** — l'epoca di Pietro il Grande.
+
+### Parole
+век = secolo [m]
+эпо́ха = epoca [f]
+про́шлый = scorso, passato [agg]
+сле́дующий = prossimo, successivo [agg]
+
+### Frasi
+В про́шлом году́ я был в Москве́. = L'anno scorso sono stato a Mosca.
+В сле́дующем году́ мы пое́дем в Сиби́рь. = L'anno prossimo andremo in Siberia.
+На про́шлой неде́ле я мно́го рабо́тал. = La settimana scorsa ho lavorato molto.
+Пу́шкин жил в девятна́дцатом ве́ке. = Puškin visse nel XIX secolo.
+Мы живём в два́дцать пе́рвом ве́ке. = Viviamo nel XXI secolo.
+В девяно́стые го́ды всё бы́ло по-друго́му. = Negli anni Novanta era tutto diverso.
+
+### Esercizi
+? В ___ году́ я был в Москве́. = L'anno scorso sono stato a Mosca. {про́шлом | про́шлый | про́шлого}
+? В ___ году́ мы пое́дем в Сиби́рь. = L'anno prossimo andremo in Siberia. {сле́дующем | сле́дующий | сле́дующего}
+? На ___ неде́ле я рабо́тал. = La settimana scorsa ho lavorato. {про́шлой | про́шлом | про́шлая}
+? Пу́шкин жил в девятна́дцатом ___ . = Puškin visse nel XIX secolo. {ве́ке | век | ве́ка}
+? «эпо́ха» vuol dire… {epoca | epopea | età di una persona}
+? «в э́том году́» vuol dire… {quest'anno | ogni anno | in quell'anno}
+> Scrivi «secolo» in russo → век
+~ В про́шлом году́ я был в Москве́. = L'anno scorso sono stato a Mosca.
+
+## Giorno 119 | Ripasso della settimana
+obiettivo: Leggere una ricetta della nonna.
+
+### Lettura | Реце́пт ба́бушки | La ricetta della nonna
+Моя́ ба́бушка гото́вит са́мые вку́сные пироги́. = Mia nonna prepara le torte più buone.
+Вот её реце́пт. = Ecco la sua ricetta.
+Нам ну́жно три стака́на муки́, два яйца́ и стака́н молока́. = Ci servono tre bicchieri di farina, due uova e un bicchiere di latte.
+Ещё на́до сто гра́ммов ма́сла и две ло́жки са́хара. = Servono anche cento grammi di burro e due cucchiai di zucchero.
+Для начи́нки ну́жно килогра́мм я́блок. = Per il ripieno serve un chilo di mele.
+Ба́бушка гото́вит пиро́г час, иногда́ полтора́ часа́. = La nonna prepara la torta in un'ora, a volte un'ora e mezza.
+Когда́ пиро́г гото́в, вся семья́ пьёт чай. = Quando la torta è pronta, tutta la famiglia beve il tè.
+Ка́ждый выпива́ет не́сколько ча́шек ча́я! = Ognuno beve parecchie tazze di tè!
+В про́шлом году́ ба́бушка научи́ла меня́ гото́вить э́тот пиро́г. = L'anno scorso la nonna mi ha insegnato a preparare questa torta.
+Но у меня́ пиро́г не тако́й вку́сный, как у неё! = Ma la mia torta non è buona come la sua!
+
+### Domande
+? Quante uova servono? {due | tre | una}
+? Che cosa serve per il ripieno? {un chilo di mele | un chilo di formaggio | due cucchiai di zucchero}
+? Quanto tempo ci vuole a preparare la torta? {un'ora, a volte un'ora e mezza | mezz'ora | tre ore}
+? Com'è la torta di chi scrive? {meno buona di quella della nonna | più buona | uguale}

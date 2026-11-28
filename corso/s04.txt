@@ -1,0 +1,388 @@
+# Settimana 4 | Il presente
+
+## Giorno 22 | Paesi, città, nazionalità
+obiettivo: Dire da dove vieni e di che nazionalità sei.
+breve: **Отку́да вы? — Я из Ита́лии.** — Da dove viene? — Dall'Italia.
+breve: italiano: италья́нец (lui), италья́нка (lei); russo: ру́сский, ру́сская.
+breve: «из» + paese cambia la fine della parola: из Ита́лии, из Росси́и, из Ри́ма.
+
+### Lezione
+#### Da dove vieni?
+- **Отку́да ты?** / **Отку́да вы?** — Da dove vieni? / Da dove viene?
+- **Я из Ита́лии.** — Vengo dall'Italia.
+- **Я из Ри́ма.** — Sono di Roma.
+
+Dopo **из** (da) il nome cambia la sua ultima lettera: **Ита́лия → из Ита́лии**, **Росси́я → из Росси́и**, **Рим → из Ри́ма**, **Москва́ → из Москвы́**. È il **genitivo**: lo studierai bene più avanti. Per ora impara queste frasi così come sono.
+
+---
+#### Nazionalità
+| Paese | Lui | Lei |
+|---|---|---|
+| Ита́лия | италья́нец | италья́нка |
+| Росси́я | ру́сский | ру́сская |
+
+> **Ру́сский** è un aggettivo che si usa anche come nome: **он ру́сский**, **она́ ру́сская**, **ру́сский язы́к** (la lingua russa).
+
+---
+#### Paesi e città
+**страна́** — paese, nazione; **го́род** — città.
+**Рим — го́род, Ита́лия — страна́.**
+
+### Parole
+страна́ = paese, nazione [f]
+Ита́лия = Italia [nome]
+Рим = Roma [nome]
+италья́нец = italiano (uomo) [m]
+италья́нка = italiana [f]
+ру́сский = russo (anche come nome: un russo) [agg; ру́сская, ру́сское]
+отку́да = da dove [avv]
+из = da (provenienza) [prep; + genitivo]
+
+### Frasi
+Отку́да вы? — Я из Ита́лии. = Da dove viene? — Dall'Italia.
+Я италья́нец, а она́ ру́сская. = Io sono italiano, e lei è russa.
+Ты из Росси́и? — Нет, я из Ита́лии. = Vieni dalla Russia? — No, dall'Italia.
+Рим — краси́вый го́род. = Roma è una bella città.
+Ита́лия — ма́ленькая страна́, а Росси́я — больша́я. = L'Italia è un paese piccolo, la Russia è grande.
+Отку́да твой друг? — Он из Москвы́. = Di dove è il tuo amico? — È di Mosca.
+
+### Esercizi
+? ___ вы? — Я из Ита́лии. {Отку́да | Где | Кто}
+? Я из ___ . = Vengo dall'Italia. {Ита́лии | Ита́лия | Ита́лию}
+? Lei è italiana: {Она́ италья́нка. | Она́ италья́нец. | Она́ италья́нская.}
+? Lui è russo: {Он ру́сский. | Он ру́сская. | Он Росси́я.}
+? Я из ___ . = Sono di Roma. {Ри́ма | Рим | Ри́му}
+? «страна́» vuol dire… {paese, nazione | città | via}
+> Scrivi «da dove?» in russo → отку́да / отку́да?
+> Scrivi «italiana» in russo → италья́нка
+~ Я италья́нец, а она́ ру́сская. = Io sono italiano, e lei è russa.
+
+## Giorno 23 | Il presente: la prima coniugazione
+obiettivo: Coniugare al presente i verbi come «чита́ть» (leggere).
+breve: Tolto -ть all'infinito, si aggiungono: -ю, -ешь, -ет, -ем, -ете, -ют.
+breve: я чита́ю, ты чита́ешь, он чита́ет, мы чита́ем, вы чита́ете, они́ чита́ют.
+breve: Il presente russo vale anche per «sto leggendo»: **Я чита́ю.**
+
+### Lezione
+I verbi russi all'infinito finiscono quasi tutti in **-ть**: **чита́ть** (leggere), **знать** (sapere). Il presente ha **due coniugazioni**. Oggi la prima, la più facile.
+
+---
+#### Чита́ть — leggere
+Si toglie **-ть** e si aggiungono le desinenze:
+
+| Persona | Forma | Desinenza |
+|---|---|---|
+| я | чита́ю | -ю |
+| ты | чита́ешь | -ешь |
+| он, она́ | чита́ет | -ет |
+| мы | чита́ем | -ем |
+| вы | чита́ете | -ете |
+| они́ | чита́ют | -ют |
+
+Allo stesso modo: **знать → зна́ю**, **де́лать → де́лаю**, **рабо́тать → рабо́таю**, **понима́ть → понима́ю**.
+
+---
+#### Un solo presente
+Il russo ha un solo presente: **Я чита́ю** vuol dire «leggo» e anche «sto leggendo».
+
+**Что ты де́лаешь? — Я чита́ю.** — Che fai? — Sto leggendo.
+
+> Per negare: **не** davanti al verbo. **Я не зна́ю.** — Non lo so.
+
+### Parole
+чита́ть = leggere [v impf; чита́ю, чита́ешь]
+знать = sapere, conoscere [v impf; зна́ю, зна́ешь]
+понима́ть = capire [v impf; понима́ю, понима́ешь]
+де́лать = fare [v impf; де́лаю, де́лаешь]
+рабо́тать = lavorare [v impf; рабо́таю, рабо́таешь]
+ду́мать = pensare [v impf; ду́маю, ду́маешь]
+слу́шать = ascoltare [v impf; слу́шаю, слу́шаешь]
+отдыха́ть = riposarsi, essere in vacanza [v impf; отдыха́ю, отдыха́ешь]
+
+### Frasi
+Что ты де́лаешь? — Я чита́ю. = Che fai? — Sto leggendo.
+Мы рабо́таем, а они́ отдыха́ют. = Noi lavoriamo e loro si riposano.
+Я не зна́ю. = Non lo so.
+Ты понима́ешь? — Да, понима́ю. = Capisci? — Sì, capisco.
+Что вы ду́маете? = Che cosa ne pensa?
+Па́па чита́ет газе́ту, а ма́ма слу́шает ра́дио. = Papà legge il giornale e la mamma ascolta la radio.
+
+### Esercizi
+> я (чита́ть) → чита́ю
+> ты (знать) → зна́ешь
+> он (рабо́тать) → рабо́тает
+> мы (де́лать) → де́лаем
+> вы (понима́ть) → понима́ете
+> они́ (отдыха́ть) → отдыха́ют
+? Что ты ___ ? = Che fai? {де́лаешь | де́лает | де́лаю}
+? Мы ___ . = Lavoriamo. {рабо́таем | рабо́тают | рабо́таете}
+? Я не ___ . = Non lo so. {зна́ю | зна́ет | знать}
+? Они́ ___ му́зыку. = Ascoltano la musica. {слу́шают | слу́шаем | слу́шает}
+~ Мы рабо́таем, а они́ отдыха́ют. = Noi lavoriamo e loro si riposano.
+
+## Giorno 24 | Parli russo?
+obiettivo: Dire quali lingue parli e quanto bene.
+breve: **Вы говори́те по-ру́сски? — Да, немно́го.** — Parla russo? — Sì, un po'.
+breve: по-ру́сски, по-италья́нски, по-англи́йски = (parlare) in russo, in italiano, in inglese.
+breve: ру́сский язы́к = la lingua russa (язы́к = lingua, anche quella in bocca).
+
+### Lezione
+#### Il verbo говори́ть
+**Говори́ть** (parlare) appartiene alla **seconda coniugazione**: le desinenze hanno la **и**.
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| говорю́ | говори́шь | говори́т | говори́м | говори́те | говоря́т |
+
+---
+#### In che lingua?
+Per dire «parlo in russo» si usa una parola speciale con **по-**:
+- **говори́ть по-ру́сски** — parlare russo;
+- **по-италья́нски**, **по-англи́йски**.
+
+Per dire «la lingua russa» invece: **ру́сский язы́к**, **италья́нский язы́к**.
+
+> **Язы́к** vuol dire sia «lingua» (che si parla) sia «lingua» (in bocca), proprio come in italiano.
+
+---
+#### Quanto bene?
+- **хорошо́** — bene; **пло́хо** — male; **немно́го** — un po';
+- **бы́стро** — velocemente; **ме́дленно** — lentamente.
+
+**Я говорю́ по-ру́сски немно́го.** — Parlo un po' di russo.
+
+### Parole
+говори́ть = parlare, dire [v impf; говорю́, говори́шь]
+язы́к = lingua [m]
+по-ру́сски = in russo [avv]
+по-италья́нски = in italiano [avv]
+по-англи́йски = in inglese [avv]
+немно́го = un po' [avv]
+пло́хо = male [avv]
+ме́дленно = lentamente, piano [avv]
+бы́стро = velocemente, in fretta [avv]
+
+### Frasi
+Вы говори́те по-ру́сски? — Да, немно́го. = Parla russo? — Sì, un po'.
+Я говорю́ по-италья́нски и по-англи́йски. = Parlo italiano e inglese.
+Ру́сский язы́к — краси́вый язы́к. = Il russo è una bella lingua.
+Он говори́т бы́стро. = Lui parla velocemente.
+Я понима́ю, но говорю́ пло́хо. = Capisco, ma parlo male.
+Они́ говоря́т по-ру́сски? = Loro parlano russo?
+
+### Esercizi
+> я (говори́ть) → говорю́
+> ты (говори́ть) → говори́шь
+> они́ (говори́ть) → говоря́т
+? Вы говори́те ___ ? = Parla russo? {по-ру́сски | ру́сский | по-ру́сский}
+? Мы ___ по-италья́нски. = Parliamo italiano. {говори́м | говори́те | говоря́т}
+? Он говори́т ___ . = Parla lentamente. {ме́дленно | бы́стро | пло́хо}
+? «ру́сский язы́к» vuol dire… {la lingua russa | il popolo russo | parlare russo}
+? «немно́го» vuol dire… {un po' | molto | male}
+> Scrivi «in russo» → по-ру́сски
+~ Я говорю́ по-италья́нски и по-англи́йски. = Parlo italiano e inglese.
+
+## Giorno 25 | La seconda coniugazione
+obiettivo: Coniugare i verbi come «люби́ть» e «смотре́ть».
+breve: Seconda coniugazione: -ю/-у, -ишь, -ит, -им, -ите, -ят/-ат.
+breve: Alla prima persona spesso cambia la consonante: люби́ть → люблю́, ви́деть → ви́жу.
+breve: L'accento può spostarsi: люблю́, но лю́бишь; смотрю́, но смо́тришь.
+
+### Lezione
+#### Le desinenze
+| | смотре́ть (guardare) | люби́ть (amare) |
+|---|---|---|
+| я | смотрю́ | **люблю́** |
+| ты | смо́тришь | лю́бишь |
+| он, она́ | смо́трит | лю́бит |
+| мы | смо́трим | лю́бим |
+| вы | смо́трите | лю́бите |
+| они́ | смо́трят | лю́бят |
+
+La regola: **-ю (-у), -ишь, -ит, -им, -ите, -ят (-ат)**.
+
+---
+#### La consonante che cambia
+In molti verbi della seconda coniugazione la **prima persona** (я) cambia la consonante finale della radice:
+- **б → бл**: люби́ть → **люблю́** (ma ты лю́бишь);
+- **д → ж**: ви́деть → **ви́жу**;
+- **т → ч**, **с → ш**: lo vedrai più avanti.
+
+---
+#### L'accento che salta
+Spesso l'accento è sulla desinenza solo in **я**, e poi torna indietro: **люблю́, лю́бишь**; **смотрю́, смо́тришь**; **учу́, у́чишь**. Ascolta bene gli esempi.
+
+> **Учи́ть** vuol dire «studiare, imparare a memoria» (учи́ть слова́) e anche «insegnare».
+
+### Parole
+люби́ть = amare, voler bene, piacere molto [v impf; люблю́, лю́бишь]
+смотре́ть = guardare [v impf; смотрю́, смо́тришь]
+ви́деть = vedere [v impf; ви́жу, ви́дишь]
+учи́ть = studiare, imparare; insegnare [v impf; учу́, у́чишь]
+слы́шать = sentire, udire [v impf; слы́шу, слы́шишь]
+по́мнить = ricordare [v impf; по́мню, по́мнишь]
+фильм = film [m]
+му́зыка = musica [f]
+телеви́зор = televisore [m]
+
+### Frasi
+Я люблю́ чай. = Mi piace molto il tè.
+Ты смо́тришь телеви́зор? — Нет, я смотрю́ фильм. = Guardi la tv? — No, guardo un film.
+Я тебя́ ви́жу! = Ti vedo!
+Мы у́чим ру́сский язы́к. = Studiamo la lingua russa.
+Я тебя́ не слы́шу. = Non ti sento.
+Ты по́мнишь? — Коне́чно, по́мню! = Ti ricordi? — Certo che mi ricordo!
+
+### Esercizi
+> я (люби́ть) → люблю́
+> ты (люби́ть) → лю́бишь
+> я (ви́деть) → ви́жу
+> мы (смотре́ть) → смо́трим
+> они́ (учи́ть) → у́чат
+? Я ___ фильм. = Guardo un film. {смотрю́ | смо́трит | смо́трят}
+? Ты меня́ ___ ? = Mi senti? {слы́шишь | слы́шу | слы́шит}
+? Мы ___ ру́сский язы́к. = Studiamo il russo. {у́чим | учу́ | у́чат}
+? Я не ___ . = Non mi ricordo. {по́мню | по́мнит | по́мним}
+? Quale verbo è della seconda coniugazione? {говори́ть | чита́ть | знать}
+~ Мы у́чим ру́сский язы́к. = Studiamo la lingua russa.
+
+## Giorno 26 | Sempre, spesso, mai
+obiettivo: Dire quanto spesso fai qualcosa.
+breve: всегда́, ча́сто, иногда́, ре́дко, никогда́: sempre, spesso, a volte, raramente, mai.
+breve: «Mai» vuole anche il **не**: **Я никогда́ не отдыха́ю.** (doppia negazione)
+breve: сейча́с = adesso; сего́дня = oggi; ка́ждый день = ogni giorno.
+
+### Lezione
+#### Quanto spesso?
+| Russo | Italiano |
+|---|---|
+| всегда́ | sempre |
+| ча́сто | spesso |
+| иногда́ | a volte |
+| ре́дко | raramente |
+| никогда́ не | mai |
+
+Di solito vanno **prima del verbo**: **Я ча́сто чита́ю.** — Leggo spesso.
+
+---
+#### La doppia negazione
+Con **никогда́** (mai) il verbo vuole **anche** il **не**:
+**Он никогда́ не отдыха́ет.** — Non si riposa mai. (alla lettera: «mai non si riposa»)
+
+> In russo le negazioni si sommano: più «no» ci sono, più la frase è negativa.
+
+---
+#### Quando?
+- **сейча́с** — adesso: **Сейча́с я рабо́таю.**
+- **сего́дня** — oggi (si pronuncia «sivòdnja»: la **г** suona **v**);
+- **ка́ждый день** — ogni giorno.
+
+### Parole
+всегда́ = sempre [avv]
+ча́сто = spesso [avv]
+иногда́ = a volte, qualche volta [avv]
+ре́дко = raramente [avv]
+никогда́ = mai [avv; vuole il «не» col verbo]
+сейча́с = adesso, ora [avv]
+сего́дня = oggi [avv; si pronuncia «sivòdnja»]
+ка́ждый = ogni [agg]
+
+### Frasi
+Я всегда́ чита́ю ве́чером. = Leggo sempre la sera.
+Он никогда́ не отдыха́ет. = Non si riposa mai.
+Иногда́ я смотрю́ телеви́зор. = A volte guardo la tv.
+Сейча́с я рабо́таю. = Adesso sto lavorando.
+Сего́дня мы отдыха́ем. = Oggi ci riposiamo.
+Ка́ждый день я учу́ ру́сский язы́к. = Ogni giorno studio il russo.
+
+### Esercizi
+? Он ___ не отдыха́ет. = Non si riposa mai. {никогда́ | всегда́ | иногда́}
+? Я ___ чита́ю. = Leggo spesso. {ча́сто | ре́дко | никогда́}
+? ___ я рабо́таю. = Adesso lavoro. {Сейча́с | Сего́дня | Всегда́}
+? Я никогда́ ___ слу́шаю ра́дио. = Non ascolto mai la radio. {не | нет | ни}
+? «ре́дко» vuol dire… {raramente | rosso | spesso}
+? «иногда́» vuol dire… {a volte | mai | sempre}
+? Come si pronuncia «сего́дня»? {sivòdnja | segòdnja | sigòdnja}
+> Scrivi «sempre» in russo → всегда́
+> Scrivi «oggi» in russo → сего́дня
+~ Он никогда́ не отдыха́ет. = Non si riposa mai.
+
+## Giorno 27 | Frasi di sopravvivenza
+obiettivo: Cavartela quando non capisci.
+breve: **Я не понима́ю.** — Non capisco. **Повтори́те, пожа́луйста.** — Ripeta, per favore.
+breve: **Говори́те ме́дленнее!** — Parli più lentamente!
+breve: **Как сказа́ть по-ру́сски…?** — Come si dice in russo…? **Что зна́чит…?** — Che cosa vuol dire…?
+
+### Lezione
+Le frasi più utili per un principiante: chiedere aiuto quando non si capisce.
+
+| Russo | Italiano |
+|---|---|
+| Извини́те! | Mi scusi! |
+| Я не понима́ю. | Non capisco. |
+| Повтори́те, пожа́луйста. | Ripeta, per favore. |
+| Ещё раз, пожа́луйста. | Ancora una volta, per favore. |
+| Говори́те ме́дленнее, пожа́луйста. | Parli più lentamente, per favore. |
+| Как сказа́ть по-ру́сски «…»? | Come si dice in russo «…»? |
+| Что зна́чит «…»? | Che cosa vuol dire «…»? |
+| Мо́жно? | Posso? / Si può? |
+| Помоги́те! | Aiuto! / Mi aiuti! |
+
+---
+#### Il segreto del -те
+**Извини́те, повтори́те, говори́те, помоги́те**: tutte finiscono in **-те**, come **здра́вствуйте**. È il segno del **вы**. A un amico si dice senza: **Извини́!** **Повтори́!**
+
+---
+#### Мо́жно: una parola, mille usi
+**Мо́жно?** vuol dire «posso?», «si può?», «è permesso?». Lo dici entrando in una stanza, prendendo una sedia, chiedendo il conto… Lo vedremo spesso.
+
+### Parole
+извини́те = mi scusi, scusate [inter; a un amico: извини́]
+повтори́те = ripeta, ripetete [inter; a un amico: повтори́]
+ещё раз = ancora una volta [espr]
+ме́дленнее = più lentamente [avv]
+как сказа́ть = come si dice [espr]
+что зна́чит = che cosa vuol dire [espr]
+мо́жно = si può, posso [avv]
+помоги́те = aiuto!, mi aiuti [inter]
+
+### Frasi
+Извини́те, я не понима́ю. = Mi scusi, non capisco.
+Повтори́те, пожа́луйста. = Ripeta, per favore.
+Говори́те ме́дленнее, пожа́луйста. = Parli più lentamente, per favore.
+Как сказа́ть по-ру́сски «gatto»? — Кот. = Come si dice in russo «gatto»? — Кот.
+Что зна́чит «ёлка»? = Che cosa vuol dire «ёлка»?
+Мо́жно? — Да, коне́чно! = Posso? — Sì, certo!
+
+### Esercizi
+? Non hai capito. Dici… {Я не понима́ю. | Я не зна́ю. | Я не по́мню.}
+? Vuoi che l'altro ripeta. Dici… {Повтори́те, пожа́луйста. | Помоги́те! | Извини́те!}
+? Il russo parla troppo veloce. Dici… {Говори́те ме́дленнее! | Говори́те бы́стро! | Ещё раз!}
+? Vuoi sapere cosa vuol dire una parola. Dici… {Что зна́чит…? | Как сказа́ть…? | Кто э́то?}
+? «Мо́жно?» vuol dire… {Posso? | Dove? | Come?}
+? A un amico dici: «Scusa!» {Извини́! | Извини́те! | Здра́вствуй!}
+> Scrivi «aiuto!» in russo → помоги́те / помоги́те!
+~ Извини́те, я не понима́ю. = Mi scusi, non capisco.
+~ Говори́те ме́дленнее, пожа́луйста. = Parli più lentamente, per favore.
+
+## Giorno 28 | Ripasso e test del modulo 1
+obiettivo: Leggere un testo su una persona che studia il russo e fare il test del modulo.
+
+### Lettura | Приве́т, я Ма́рко | Ciao, sono Marco
+Приве́т! Меня́ зову́т Ма́рко. = Ciao! Mi chiamo Marco.
+Я италья́нец, я из Ри́ма. = Sono italiano, di Roma.
+Я студе́нт. Я учу́ ру́сский язы́к. = Sono uno studente. Studio il russo.
+Ру́сский язы́к о́чень краси́вый и интере́сный. = Il russo è molto bello e interessante.
+Ка́ждый день я чита́ю и слу́шаю по-ру́сски. = Ogni giorno leggo e ascolto in russo.
+Я говорю́ ме́дленно, но я понима́ю! = Parlo lentamente, ma capisco!
+Моя́ сестра́ то́же у́чит ру́сский. = Anche mia sorella studia il russo.
+Её зову́т Джу́лия. = Si chiama Giulia.
+Мы ча́сто говори́м по-ру́сски до́ма. = Parliamo spesso russo a casa.
+Ма́ма и па́па не понима́ют, но они́ слу́шают и улыба́ются. = Mamma e papà non capiscono, ma ascoltano e sorridono.
+Пока́! = Ciao!
+
+### Domande
+? Di dov'è Marco? {di Roma | di Mosca | di Milano}
+? Come parla russo Marco? {lentamente | velocemente | non lo parla}
+? Chi studia russo con Marco? {la sorella | la mamma | il papà}
+? Che cosa fanno mamma e papà? {ascoltano e sorridono | parlano russo | leggono}

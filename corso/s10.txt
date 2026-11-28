@@ -1,0 +1,347 @@
+# Settimana 10 | Il genitivo
+
+## Giorno 64 | Di chi? Il genitivo
+obiettivo: Dire «di chi» e «di che cosa» con il genitivo.
+breve: Il genitivo singolare: maschile e neutro **-а/-я** (брат → бра́та), femminile **-ы/-и** (ма́ма → ма́мы).
+breve: Si mette **dopo** la cosa posseduta: маши́на бра́та = la macchina del fratello.
+breve: Domande: **кого́?** (di chi?) · **чего́?** (di che cosa?).
+
+### Lezione
+Il **genitivo** è il caso del «**di**»: possesso, appartenenza, parte di qualcosa.
+
+**маши́на бра́та** — la macchina del fratello; **центр го́рода** — il centro della città.
+
+Si mette **dopo** la parola principale, senza preposizione.
+
+---
+#### Le desinenze (singolare)
+| Nominativo | Genitivo | Esempio |
+|---|---|---|
+| consonante (m) | **-а** | брат → маши́на бра́т**а** |
+| -й, -ь (m) | **-я** | музе́й → музе́**я**, учи́тель → учи́тел**я** |
+| -о (n) | **-а** | окно́ → окн**а́** |
+| -е (n) | **-я** | мо́ре → мо́р**я** |
+| -а (f) | **-ы** / **-и** | ма́ма → ма́м**ы**, кни́га → кни́г**и** |
+| -я, -ь (f) | **-и** | семья́ → семь**и́**, ночь → но́ч**и** |
+
+> Ricordi la regola delle sette lettere? Dopo **г к х ж ш щ ч** si scrive **-и**: кни́г**и**, ру́чк**и**.
+
+---
+#### Esempi
+- **дом ба́бушки** — la casa della nonna;
+- **нача́ло фи́льма** — l'inizio del film;
+- **ключ от до́ма** — la chiave di casa;
+- **а́дрес гости́ницы** — l'indirizzo dell'albergo.
+
+### Parole
+ключ = chiave [m]
+а́дрес = indirizzo [m]
+назва́ние = nome (di una cosa), titolo [n]
+нача́ло = inizio [n]
+коне́ц = fine [m]
+
+### Frasi
+Э́то маши́на бра́та. = È la macchina del fratello.
+Мы живём в це́нтре го́рода. = Abitiamo in centro città.
+Как назва́ние фи́льма? = Come si chiama il film?
+Э́то дом ба́бушки. = È la casa della nonna.
+Где ключ от ко́мнаты? = Dov'è la chiave della stanza?
+Како́й а́дрес гости́ницы? = Qual è l'indirizzo dell'albergo?
+
+### Esercizi
+? Э́то маши́на ___ . = È la macchina del fratello. {бра́та | брат | бра́ту}
+? Э́то дом ___ . = È la casa della nonna. {ба́бушки | ба́бушка | ба́бушку}
+? центр ___ = il centro della città {го́рода | го́род | го́роде}
+? кни́га ___ = il libro della sorella {сестры́ | сестра́ | сестре́}
+? нача́ло ___ = l'inizio del film {фи́льма | фильм | фи́льме}
+? а́дрес ___ = l'indirizzo dell'albergo {гости́ницы | гости́ница | гости́нице}
+? коне́ц ___ = la fine della settimana {неде́ли | неде́ля | неде́лю}
+> па́па → маши́на … → па́пы
+> музе́й → назва́ние … → музе́я
+~ Мы живём в це́нтре го́рода. = Abitiamo in centro città.
+
+## Giorno 65 | Non c'è: нет + genitivo
+obiettivo: Dire che qualcosa non c'è o che non ce l'hai.
+breve: **нет** + genitivo = non c'è, non ci sono: **Здесь нет метро́. В го́роде нет теа́тра.**
+breve: «Non ho»: **у меня́ нет** + genitivo: **У меня́ нет маши́ны.**
+breve: Al passato: **не́ было** + genitivo: **Вчера́ не́ было интерне́та.**
+
+### Lezione
+#### Esserci o non esserci
+| C'è (nominativo) | Non c'è (genitivo) |
+|---|---|
+| Здесь есть банк. | Здесь **нет** ба́нк**а**. |
+| У меня́ есть маши́на. | У меня́ **нет** маши́н**ы**. |
+| У него́ есть вре́мя. | У него́ **нет** вре́мен**и**. |
+
+Con **нет** la cosa che manca va **sempre al genitivo**.
+
+> **Вре́мя** fa **вре́мени** (genitivo, dativo, prepositivo): **У меня́ нет вре́мени.** — Non ho tempo. È una frase che userai spesso!
+
+---
+#### Nessuno qui
+Anche le persone: **Ма́мы нет до́ма.** — La mamma non è a casa. **Бра́та нет.** — Il fratello non c'è.
+
+---
+#### Al passato e al futuro
+- passato: **не́ было** + genitivo: **Вчера́ не́ было све́та.** — Ieri non c'era la luce.
+- futuro: **не бу́дет** + genitivo: **За́втра не бу́дет уро́ка.** — Domani non ci sarà lezione.
+
+### Parole
+интерне́т = internet [m]
+зонт = ombrello [m]
+о́чередь = fila, coda [f]
+свет = luce [m]
+
+### Frasi
+У меня́ нет маши́ны. = Non ho la macchina.
+Здесь нет интерне́та. = Qui non c'è internet.
+У тебя́ нет зонта́? = Non hai l'ombrello?
+Ма́мы нет до́ма. = La mamma non è a casa.
+Сего́дня нет о́череди! = Oggi non c'è la fila!
+У меня́ нет вре́мени. = Non ho tempo.
+Вчера́ не́ было све́та. = Ieri non c'era la luce.
+
+### Esercizi
+? У меня́ нет ___ . = Non ho la macchina. {маши́ны | маши́на | маши́ну}
+? Здесь нет ___ . = Qui non c'è internet. {интерне́та | интерне́т | интерне́те}
+? У меня́ нет ___ . = Non ho tempo. {вре́мени | вре́мя | вре́мена}
+? ___ нет до́ма. = La mamma non è a casa. {Ма́мы | Ма́ма | Ма́му}
+? Вчера́ не́ ___ све́та. = Ieri non c'era la luce. {бы́ло | был | была́}
+? Здесь нет ___ . = Qui non c'è la banca. {ба́нка | банк | ба́нке}
+? У него́ нет ___ . = Non ha l'ombrello. {зонта́ | зонт | зонте́}
+> о́чередь → нет … → о́череди
+~ У меня́ нет вре́мени. = Non ho tempo.
+
+## Giorno 66 | Avere: у + genitivo
+obiettivo: Dire che cosa hanno le altre persone.
+breve: «Il fratello ha…»: **у бра́та есть…** (у + genitivo della persona).
+breve: «Da qualcuno»: **у дру́га** = a casa dell'amico, dall'amico.
+breve: колле́га, сосе́д: collega, vicino di casa.
+
+### Lezione
+Conosci già **у меня́ есть** (io ho). Con i nomi funziona allo stesso modo: **у** + **genitivo** della persona.
+
+- **У бра́та есть маши́на.** — Mio fratello ha la macchina.
+- **У ма́мы есть кот.** — La mamma ha un gatto.
+- **У сосе́да нет соба́ки.** — Il vicino non ha il cane.
+
+---
+#### Да qualcuno
+**у** + genitivo vuol dire anche «da qualcuno, a casa di»:
+- **Я был у дру́га.** — Sono stato dal mio amico.
+- **Мы живём у ба́бушки.** — Viviamo dalla nonna.
+
+---
+#### Le parole di oggi
+**сосе́д** (vicino di casa) ha il plurale irregolare **сосе́ди**. **Колле́га** è maschile **e** femminile, secondo la persona: **мой колле́га** (un uomo), **моя́ колле́га** (una donna). **Гость** (ospite): **у нас го́сти** — abbiamo ospiti.
+
+### Parole
+сосе́д = vicino di casa [m; plurale сосе́ди]
+сосе́дка = vicina di casa [f]
+колле́га = collega [mf]
+гость = ospite [m; plurale го́сти]
+
+### Frasi
+У бра́та есть маши́на. = Mio fratello ha la macchina.
+У ма́мы нет вре́мени. = La mamma non ha tempo.
+У сосе́да больша́я соба́ка. = Il vicino ha un cane grande.
+Вчера́ я был у дру́га. = Ieri sono stato dal mio amico.
+У на́шей сосе́дки три ко́шки. = La nostra vicina ha tre gatti.
+Сего́дня у нас го́сти. = Oggi abbiamo ospiti.
+
+### Esercizi
+? У ___ есть маши́на. = Il fratello ha la macchina. {бра́та | брат | бра́ту}
+? У ___ нет вре́мени. = La mamma non ha tempo. {ма́мы | ма́ма | ма́ме}
+? У ___ есть соба́ка. = Il vicino ha un cane. {сосе́да | сосе́д | сосе́ду}
+? У ___ есть кот. = La sorella ha un gatto. {сестры́ | сестра́ | сестру́}
+? Я был у ___ . = Sono stato dal mio amico. {дру́га | друг | дру́гу}
+? «моя́ колле́га» è… {una donna | un uomo | un gruppo}
+? Сего́дня у нас ___ . = Oggi abbiamo ospiti. {го́сти | гость | госте́й}
+> колле́га → у … есть → колле́ги
+~ Вчера́ я был у дру́га. = Ieri sono stato dal mio amico.
+
+## Giorno 67 | Da, fino a, senza: preposizioni col genitivo
+obiettivo: Usare le preposizioni che vogliono il genitivo.
+breve: из (da, fuori da) · от (da, da parte di) · до (fino a) · без (senza) · для (per).
+breve: о́коло (vicino a, circa) · по́сле (dopo).
+breve: **от** + persona: **письмо́ от ма́мы** · **из** + luogo: **из Москвы́**.
+
+### Lezione
+Molte preposizioni vogliono il **genitivo**. Ecco le più comuni:
+
+| Preposizione | Significato | Esempio |
+|---|---|---|
+| из | da (fuori da un luogo) | из Москвы́, из до́ма |
+| от | da (una persona, un punto) | письмо́ от ма́мы |
+| до | fino a | до це́нтра, до ве́чера |
+| без | senza | ко́фе без са́хара |
+| для | per (a favore di) | пода́рок для бра́та |
+| о́коло | vicino a; circa | о́коло до́ма |
+| по́сле | dopo | по́сле обе́да |
+
+---
+#### Из o от?
+- **из** — da un luogo «dentro» (da cui si esce): **из Ита́лии**, **из шко́лы**;
+- **от** — da una persona: **пода́рок от дру́га** (un regalo da un amico); e da un punto: **от до́ма до рабо́ты** (da casa al lavoro).
+
+---
+#### Espressioni utili
+- **Ско́лько от до́ма до це́нтра?** — Quanto c'è da casa al centro?
+- **до свида́ния** — «fino al rivederci»: ecco perché c'è **до**!
+- **без пробле́м** — senza problemi.
+
+### Parole
+от = da (persona, punto di partenza) [prep; + genitivo]
+до = fino a, prima di [prep; + genitivo]
+без = senza [prep; + genitivo]
+для = per [prep; + genitivo]
+о́коло = vicino a, circa [prep; + genitivo]
+по́сле = dopo [prep; + genitivo]
+
+### Frasi
+Э́то письмо́ от ма́мы. = È una lettera della mamma.
+Я пью ко́фе без молока́. = Bevo il caffè senza latte.
+Э́то пода́рок для сестры́. = È un regalo per mia sorella.
+По́сле обе́да мы гуля́ем. = Dopo pranzo andiamo a passeggio.
+Банк о́коло до́ма. = La banca è vicino a casa.
+Я рабо́таю до ве́чера. = Lavoro fino a sera.
+От до́ма до рабо́ты де́сять мину́т. = Da casa al lavoro ci sono dieci minuti.
+
+### Esercizi
+? Я пью чай без ___ . = Bevo il tè senza zucchero. {са́хара | са́хар | са́харе}
+? Э́то письмо́ ___ ма́мы. = È una lettera della mamma. {от | из | у}
+? Я ___ Ита́лии. = Vengo dall'Italia. {из | от | с}
+? ___ обе́да мы гуля́ем. = Dopo pranzo passeggiamo. {По́сле | До | Без}
+? Э́то пода́рок для ___ . = È un regalo per il fratello. {бра́та | брат | бра́ту}
+? Я рабо́таю до ___ . = Lavoro fino a sera. {ве́чера | ве́чер | ве́чером}
+? Банк о́коло ___ . = La banca è vicino a casa. {до́ма | дом | до́му}
+> Scrivi «senza» in russo → без
+~ Я пью ко́фе без молока́. = Bevo il caffè senza latte.
+
+## Giorno 68 | Due fratelli, cinque libri
+obiettivo: Usare i numeri con i nomi.
+breve: 1 → nominativo: оди́н брат, одна́ сестра́, одно́ окно́.
+breve: 2, 3, 4 → genitivo **singolare**: два бра́та, три сестры́, четы́ре окна́.
+breve: 5-20 → genitivo **plurale**: пять бра́тьев, шесть книг (lo studieremo meglio; per ora: часо́в, лет, рубле́й).
+
+### Lezione
+Hai già visto la regola con le ore (**час, часа́, часо́в**). Vale per **tutti** i nomi.
+
+#### 1 — uno, una
+**Оди́н** si accorda come un aggettivo: **оди́н** брат, **одна́** сестра́, **одно́** окно́.
+
+#### 2, 3, 4 — genitivo singolare
+- **два** (maschile e neutro) / **две** (femminile): **два бра́та**, **две сестры́**, **два окна́**;
+- **три**, **четы́ре**: **три кни́ги**, **четы́ре стола́**.
+
+#### 5 e oltre — genitivo plurale
+**пять**, **шесть**, … **два́дцать**: il nome va al genitivo plurale. Ne vedremo le regole nel modulo 5. Intanto impara questi:
+
+| Nome | 1 | 2-4 | 5+ |
+|---|---|---|---|
+| час | час | часа́ | часо́в |
+| год | год | го́да | лет |
+| рубль | рубль | рубля́ | рубле́й |
+| раз (volta) | раз | ра́за | раз |
+| челове́к | челове́к | челове́ка | челове́к |
+
+> Si conta l'**ultima** cifra: **два́дцать оди́н год**, **два́дцать два го́да**, **два́дцать пять лет**.
+
+### Parole
+раз = volta [m; 2-4 ра́за, 5+ раз]
+шту́ка = pezzo [f]
+па́ра = paio, coppia [f]
+
+### Frasi
+У меня́ два бра́та и одна́ сестра́. = Ho due fratelli e una sorella.
+Я был в Москве́ три ра́за. = Sono stato a Mosca tre volte.
+Да́йте, пожа́луйста, две шту́ки. = Me ne dia due, per favore.
+Здесь четы́ре ко́мнаты. = Qui ci sono quattro stanze.
+Там пять челове́к. = Là ci sono cinque persone.
+Э́то сто́ит три́ста рубле́й. = Costa trecento rubli.
+
+### Esercizi
+? У меня́ два ___ . = Ho due fratelli. {бра́та | брат | бра́тьев}
+? У неё ___ сестры́. = Lei ha due sorelle. {две | два | двух}
+? Здесь три ___ . = Qui ci sono tre stanze. {ко́мнаты | ко́мнат | ко́мната}
+? Я был там пять ___ . = Ci sono stato cinque volte. {раз | ра́за | разо́в}
+? У меня́ ___ сестра́. = Ho una sorella. {одна́ | оди́н | одно́}
+? Сейча́с четы́ре ___ . = Sono le quattro. {часа́ | часо́в | час}
+? Там два́дцать оди́н ___ . = Là ci sono ventun… anni. {год | го́да | лет}
+> 2 + стол → два … → стола́
+~ У меня́ два бра́та и одна́ сестра́. = Ho due fratelli e una sorella.
+
+## Giorno 69 | Quanti anni hai?
+obiettivo: Chiedere e dire l'età.
+breve: **Ско́лько тебе́ лет? — Мне два́дцать пять лет.** (alla lettera «a me venticinque anni»).
+breve: La persona va al **dativo**: мне, тебе́, ему́, ей; ма́ме, бра́ту.
+breve: 1 год · 2-4 го́да · 5-20 лет (21 год, 22 го́да, 25 лет).
+
+### Lezione
+#### La domanda e la risposta
+- **Ско́лько тебе́ лет?** — Quanti anni hai?
+- **Ско́лько вам лет?** — Quanti anni ha? (da usare con delicatezza!)
+- **Мне два́дцать пять лет.** — Ho venticinque anni.
+
+La persona va al **dativo** («a me», «a te»): **мне, тебе́, ему́, ей, нам, вам, им**.
+
+---
+#### Год, го́да, лет
+| | |
+|---|---|
+| 1, 21, 31… | **год**: Ему́ два́дцать оди́н год. |
+| 2-4, 22-24… | **го́да**: Ей три́дцать три го́да. |
+| 5-20, 25-30… | **лет**: Мне со́рок лет. |
+
+---
+#### L'età di un altro
+Con un nome, anche lui al dativo: **Бра́ту де́сять лет.** — Il fratello ha dieci anni. **Ма́ме пятьдеся́т лет.**
+
+> **Взро́слый** — adulto: **Он уже́ взро́слый.** E il compleanno è **день рожде́ния**: **С днём рожде́ния!** — Buon compleanno!
+
+### Parole
+во́зраст = età [m]
+взро́слый = adulto [agg; anche come nome: un adulto]
+день рожде́ния = compleanno [espr]
+
+### Frasi
+Ско́лько тебе́ лет? — Мне два́дцать пять лет. = Quanti anni hai? — Venticinque.
+Ему́ два́дцать оди́н год. = Ha ventun anni.
+Ей три́дцать три го́да. = Lei ha trentatré anni.
+Ма́ме пятьдеся́т лет. = La mamma ha cinquant'anni.
+Он уже́ взро́слый. = È già adulto.
+За́втра у меня́ день рожде́ния! = Domani è il mio compleanno!
+
+### Esercizi
+? Ско́лько тебе́ ___ ? = Quanti anni hai? {лет | год | го́да}
+? ___ два́дцать лет. = Ho vent'anni. {Мне | Я | Меня́}
+? Ему́ два́дцать оди́н ___ . = Ha ventun anni. {год | лет | го́да}
+? Ей три́дцать два ___ . = Ha trentadue anni. {го́да | год | лет}
+? Мне со́рок ___ . = Ho quarant'anni. {лет | го́да | год}
+? ___ де́сять лет. = Il fratello ha dieci anni. {Бра́ту | Брат | Бра́та}
+? «день рожде́ния» vuol dire… {compleanno | giorno di festa | nascita}
+> Scrivi «età» in russo → во́зраст
+~ Ско́лько тебе́ лет? = Quanti anni hai?
+
+## Giorno 70 | Ripasso della settimana
+obiettivo: Leggere la descrizione di un amico.
+
+### Lettura | Мой друг Ива́н | Il mio amico Ivan
+У меня́ есть друг. Его́ зову́т Ива́н. = Ho un amico. Si chiama Ivan.
+Ему́ три́дцать два го́да. = Ha trentadue anni.
+Ива́н из Новосиби́рска, но тепе́рь он живёт в Москве́. = Ivan è di Novosibirsk, ma ora vive a Mosca.
+Он живёт о́коло це́нтра, у бра́та. = Vive vicino al centro, da suo fratello.
+У Ива́на нет маши́ны, он е́здит на метро́. = Ivan non ha la macchina, va in metro.
+От до́ма до рабо́ты два́дцать мину́т. = Da casa al lavoro ci sono venti minuti.
+Ива́н рабо́тает в ба́нке до шести́ часо́в. = Ivan lavora in banca fino alle sei.
+По́сле рабо́ты он хо́дит в спортза́л три ра́за в неде́лю. = Dopo il lavoro va in palestra tre volte a settimana.
+У него́ есть сестра́ и два бра́та. = Ha una sorella e due fratelli.
+Ива́н пьёт ко́фе без са́хара и никогда́ не ест мя́со. = Ivan beve il caffè senza zucchero e non mangia mai carne.
+В суббо́ту у него́ день рожде́ния! = Sabato è il suo compleanno!
+
+### Domande
+? Quanti anni ha Ivan? {32 | 23 | 42}
+? Da chi vive Ivan? {da suo fratello | dai genitori | da solo}
+? Come va al lavoro? {in metro | in macchina | a piedi}
+? Quante volte a settimana va in palestra? {tre | due | cinque}

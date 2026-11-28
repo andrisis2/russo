@@ -1,0 +1,339 @@
+# Settimana 23 | A casa
+
+## Giorno 155 | Cercare casa
+obiettivo: Cercare un appartamento in affitto e descriverlo.
+breve: снима́ть кварти́ру = prendere in affitto · сдава́ть кварти́ру = dare in affitto.
+breve: хозя́ин / хозя́йка = padrone/a di casa, proprietario/a.
+breve: эта́ж (piano), лифт, балко́н, райо́н (quartiere).
+
+### Lezione
+#### Affittare
+Due verbi «opposti»:
+- **снима́ть** (impf) / **снять** (pf) — prendere in affitto: **Я снима́ю кварти́ру в це́нтре.**
+- **сдава́ть** (impf) / **сдать** (pf) — dare in affitto: **Сдаю́ ко́мнату.** (annuncio: «Affittasi stanza»)
+
+E chi la dà: **хозя́ин** / **хозя́йка** (anche «padrone di casa» che ti ospita).
+
+---
+#### Com'è l'appartamento?
+- **одноко́мнатная / двухко́мнатная кварти́ра** — monolocale / bilocale (in Russia si contano le stanze, la cucina esclusa);
+- **На како́м этаже́?** — A che piano? **На пя́том.** — Al quinto.
+- **В до́ме есть лифт?** — C'è l'ascensore?
+- **Есть балко́н?** — C'è il balcone?
+- **Како́й э́то райо́н?** — Che quartiere è? **Ти́хий, зелёный.**
+
+---
+#### Il prezzo
+**Ско́лько сто́ит аре́нда?** — Quanto costa l'affitto? **Аре́нда — со́рок ты́сяч в ме́сяц.**
+
+### Parole
+снима́ть = prendere in affitto; togliere [v impf; снима́ю, снима́ешь]
+сдава́ть = dare in affitto; consegnare [v impf; сдаю́, сдаёшь]
+хозя́ин = padrone, proprietario, padrone di casa [m; plurale хозя́ева]
+эта́ж = piano (di un edificio) [m]
+лифт = ascensore [m]
+балко́н = balcone [m]
+райо́н = quartiere, zona [m]
+
+### Frasi
+Я снима́ю кварти́ру в це́нтре. = Ho in affitto un appartamento in centro.
+Сдаю́ ко́мнату недо́рого. = Affittasi stanza a poco prezzo.
+На како́м этаже́ вы живёте? — На пя́том. = A che piano abita? — Al quinto.
+В до́ме нет ли́фта! = Nel palazzo non c'è l'ascensore!
+Хозя́йка кварти́ры о́чень до́брая. = La padrona di casa è molto gentile.
+Э́то ти́хий и зелёный райо́н. = È un quartiere tranquillo e verde.
+
+### Esercizi
+? Я ___ кварти́ру в це́нтре. = Ho in affitto un appartamento in centro. {снима́ю | сдаю́ | покупа́ю}
+? ___ ко́мнату. = Affittasi stanza. {Сдаю́ | Снима́ю | Беру́}
+? На како́м ___ вы живёте? = A che piano abita? {этаже́ | этажу́ | эта́ж}
+? В до́ме нет ___ . = Nel palazzo non c'è l'ascensore. {ли́фта | лифт | ли́фте}
+? Э́то ти́хий ___ . = È un quartiere tranquillo. {райо́н | ра́йон | регио́н}
+? Il plurale di «хозя́ин» è… {хозя́ева | хозя́ины | хозя́ина}
+> Scrivi «balcone» in russo → балко́н
+~ Я снима́ю кварти́ру в це́нтре. = Ho in affitto un appartamento in centro.
+
+## Giorno 156 | Dov'è? стоять, лежать, висеть
+obiettivo: Dire dove si trovano le cose in casa.
+breve: Il russo dice **come** sta una cosa: стои́т (in piedi), лежи́т (sdraiata), виси́т (appesa), сиди́т (seduta).
+breve: **Ла́мпа стои́т на столе́. Кни́га лежи́т на столе́. Карти́на виси́т на стене́.**
+breve: Domanda: **Где лежи́т…? / Где стои́т…?**
+
+### Lezione
+#### Tre verbi per «essere» in un posto
+Dove l'italiano dice «è», il russo spesso dice **come** è messa la cosa:
+
+| Verbo | Quando | Esempio |
+|---|---|---|
+| стоя́ть (стою́, стои́шь) | in verticale, «in piedi» | **Ва́за стои́т на столе́.** |
+| лежа́ть (лежу́, лежи́шь) | in orizzontale, appoggiato | **Кни́га лежи́т на столе́.** |
+| висе́ть (вишу́, виси́шь) | appeso | **Карти́на виси́т на стене́.** |
+| сиде́ть (сижу́, сиди́шь) | seduto | **Ко́шка сиди́т на окне́.** |
+
+---
+#### Come si sceglie
+- bottiglie, vasi, mobili, macchine → **стоя́ть**: **Маши́на стои́т у до́ма.**
+- libri, telefoni, chiavi, documenti, persone a letto → **лежа́ть**: **Ключи́ лежа́т в су́мке.**
+- quadri, vestiti nell'armadio, lampadari → **висе́ть**: **Пальто́ виси́т в шкафу́.**
+
+> Anche le città «stanno»: **Москва́ стои́т на реке́ Москве́.**
+
+### Parole
+стоя́ть = stare in piedi, trovarsi (in verticale) [v impf; стою́, стои́шь]
+лежа́ть = stare sdraiato, trovarsi (in orizzontale) [v impf; лежу́, лежи́шь]
+висе́ть = essere appeso [v impf; вишу́, виси́шь]
+сиде́ть = stare seduto [v impf; сижу́, сиди́шь]
+
+### Frasi
+Ва́за стои́т на столе́. = Il vaso è sul tavolo.
+Кни́га лежи́т на крова́ти. = Il libro è sul letto.
+Карти́на виси́т на стене́. = Il quadro è appeso alla parete.
+Ко́шка сиди́т на окне́. = La gatta è (seduta) sulla finestra.
+Где мои́ ключи́? — Они́ лежа́т в су́мке. = Dove sono le mie chiavi? — Sono nella borsa.
+Маши́на стои́т у до́ма. = La macchina è davanti a casa.
+
+### Esercizi
+? Ва́за ___ на столе́. = Il vaso è sul tavolo. {стои́т | лежи́т | виси́т}
+? Кни́га ___ на крова́ти. = Il libro è sul letto. {лежи́т | стои́т | виси́т}
+? Карти́на ___ на стене́. = Il quadro è appeso alla parete. {виси́т | стои́т | лежи́т}
+? Ко́шка ___ на окне́. = La gatta è (seduta) sulla finestra. {сиди́т | стои́т | лежи́т}
+? Ключи́ ___ в су́мке. = Le chiavi sono nella borsa. {лежа́т | стоя́т | вися́т}
+? Пальто́ ___ в шкафу́. = Il cappotto è (appeso) nell'armadio. {виси́т | лежи́т | сиди́т}
+> я (сиде́ть) → сижу́
+~ Карти́на виси́т на стене́. = Il quadro è appeso alla parete.
+
+## Giorno 157 | Metti qui: ставить, класть, вешать
+obiettivo: Dire dove metti le cose.
+breve: Mettere in piedi: ста́вить / поста́вить · sdraiato: класть / положи́ть · appendere: ве́шать / пове́сить.
+breve: Si mette **куда́?** → **на / в + accusativo**: Положи́ кни́гу на стол.
+breve: **Поста́вь ча́йник!** — Metti su il bollitore (per il tè)!
+
+### Lezione
+#### Le coppie dell'azione
+| Stato (где?) | Azione (куда́?) impf / pf |
+|---|---|
+| стоя́ть (stare in piedi) | ста́вить / поста́вить (mettere in piedi) |
+| лежа́ть (stare sdraiato) | класть / положи́ть (mettere, posare) |
+| висе́ть (essere appeso) | ве́шать / пове́сить (appendere) |
+
+L'azione è un moto: **куда́?** → **в/на** + **accusativo**:
+- **Поста́вь ва́зу на стол.** — Metti il vaso sul tavolo.
+- **Положи́ кни́гу на по́лку.** — Metti il libro sulla mensola.
+- **Пове́сь пальто́ в шкаф.** — Appendi il cappotto nell'armadio.
+
+---
+#### Attenzione alle forme
+- **класть**: **кладу́, кладёшь**; passato **клал, кла́ла**;
+- **положи́ть**: **положу́, поло́жишь**;
+- **ста́вить**: **ста́влю, ста́вишь** (la **л**!).
+
+> In cucina: **Поста́вь ча́йник!** — Metti su l'acqua per il tè! **Положи́ мне сала́т.** — Servimi l'insalata.
+
+### Parole
+ста́вить = mettere (in piedi) [v impf; ста́влю, ста́вишь]
+поста́вить = mettere (in piedi) [v pf; поста́влю, поста́вишь]
+класть = mettere, posare (sdraiato) [v impf; кладу́, кладёшь]
+положи́ть = mettere, posare [v pf; положу́, поло́жишь]
+ве́шать = appendere [v impf; ве́шаю, ве́шаешь]
+пове́сить = appendere [v pf; пове́шу, пове́сишь]
+
+### Frasi
+Поста́вь ва́зу на стол. = Metti il vaso sul tavolo.
+Куда́ ты положи́л ключи́? = Dove hai messo le chiavi?
+Положи́ кни́гу на по́лку. = Metti il libro sulla mensola.
+Я пове́сил карти́ну на сте́ну. = Ho appeso il quadro alla parete.
+Поста́вь ча́йник, пожа́луйста! = Metti su l'acqua per il tè, per favore!
+Не клади́ телефо́н на крова́ть! = Non mettere il telefono sul letto!
+
+### Esercizi
+? ___ ва́зу на стол. = Metti il vaso sul tavolo. {Поста́вь | Положи́ | Пове́сь}
+? ___ кни́гу на по́лку. = Metti il libro sulla mensola. {Положи́ | Поста́вь | Пове́сь}
+? Я ___ карти́ну на сте́ну. = Ho appeso il quadro. {пове́сил | положи́л | поста́вил}
+? Куда́ ты ___ ключи́? = Dove hai messo le chiavi? {положи́л | поста́вил | пове́сил}
+? Положи́ кни́гу на ___ . = Metti il libro sul tavolo. {стол | столе́ | столо́м}
+? Кни́га ___ на столе́. = Il libro è sul tavolo. {лежи́т | кладёт | положи́л}
+> я (класть) → кладу́
+~ Куда́ ты положи́л ключи́? = Dove hai messo le chiavi?
+
+## Giorno 158 | Le faccende di casa
+obiettivo: Parlare delle faccende domestiche.
+breve: убира́ть / убра́ть (кварти́ру) = mettere in ordine, pulire.
+breve: мыть / помы́ть (посу́ду, пол) = lavare (i piatti, il pavimento) · стира́ть = lavare (i panni).
+breve: гла́дить (stirare), пылесо́сить (passare l'aspirapolvere), гото́вить (cucinare).
+
+### Lezione
+#### Chi fa che cosa?
+| Russo | Italiano |
+|---|---|
+| убира́ть кварти́ру | pulire, mettere in ordine la casa |
+| мыть посу́ду | lavare i piatti |
+| мыть пол | lavare il pavimento |
+| стира́ть бельё | fare il bucato |
+| гла́дить | stirare |
+| пылесо́сить | passare l'aspirapolvere |
+| выноси́ть му́сор | portare fuori la spazzatura |
+
+---
+#### Lavare: мыть o стира́ть?
+- **мыть** (мо́ю, мо́ешь) — lavare con acqua: piatti, mani, pavimento, auto;
+- **стира́ть** — lavare i vestiti (il bucato); **стира́льная маши́на** — lavatrice.
+
+---
+#### Chi lo fa?
+**У нас все помога́ют по до́му.** — Da noi tutti aiutano in casa.
+**Сего́дня твоя́ о́чередь мыть посу́ду!** — Oggi tocca a te lavare i piatti! (**о́чередь** = turno)
+
+### Parole
+убира́ть = mettere in ordine, pulire [v impf; убира́ю, убира́ешь]
+мыть = lavare [v impf; мо́ю, мо́ешь]
+стира́ть = lavare (il bucato) [v impf; стира́ю, стира́ешь]
+гла́дить = stirare; accarezzare [v impf; гла́жу, гла́дишь]
+пылесо́сить = passare l'aspirapolvere [v impf; пылесо́шу, пылесо́сишь]
+посу́да = stoviglie, piatti [f]
+бельё = biancheria, bucato [n]
+
+### Frasi
+В суббо́ту мы убира́ем кварти́ру. = Il sabato facciamo le pulizie di casa.
+Сего́дня твоя́ о́чередь мыть посу́ду! = Oggi tocca a te lavare i piatti!
+Ма́ма стира́ет бельё, а па́па гла́дит. = La mamma fa il bucato e papà stira.
+Я не люблю́ пылесо́сить. = Non mi piace passare l'aspirapolvere.
+Кто вы́несет му́сор? = Chi porta fuori la spazzatura?
+У нас все помога́ют по до́му. = Da noi tutti aiutano in casa.
+
+### Esercizi
+? В суббо́ту мы ___ кварти́ру. = Il sabato puliamo la casa. {убира́ем | стира́ем | гла́дим}
+? Сего́дня твоя́ о́чередь ___ посу́ду. = Oggi tocca a te lavare i piatti. {мыть | стира́ть | гла́дить}
+? Ма́ма ___ бельё. = La mamma fa il bucato. {стира́ет | мо́ет | гла́дит}
+? Па́па ___ руба́шки. = Papà stira le camicie. {гла́дит | стира́ет | пылесо́сит}
+? Я ___ ру́ки. = Mi lavo le mani. {мо́ю | стира́ю | мыва́ю}
+? «посу́да» vuol dire… {stoviglie | posate | pulizia}
+> я (мыть) → мо́ю
+~ Сего́дня твоя́ о́чередь мыть посу́ду! = Oggi tocca a te lavare i piatti!
+
+## Giorno 159 | In cucina
+obiettivo: Leggere e capire una ricetta semplice.
+breve: ре́зать (tagliare), вари́ть (bollire, cuocere), жа́рить (friggere, arrostire), добавля́ть (aggiungere), меша́ть (mescolare).
+breve: кастрю́ля (pentola), сковорода́ (padella), плита́ (fornello), холоди́льник (frigorifero).
+breve: Nelle ricette si usa l'imperativo «вы»: **Наре́жьте лук.** — Tagliate la cipolla.
+
+### Lezione
+#### I verbi della cucina
+| Russo | Italiano |
+|---|---|
+| ре́зать (ре́жу, ре́жешь) | tagliare |
+| вари́ть | bollire, cuocere (in acqua) |
+| жа́рить | friggere, cuocere in padella, arrostire |
+| добавля́ть / доба́вить | aggiungere |
+| меша́ть | mescolare (e anche «disturbare»!) |
+| печь (пеку́, печёшь) | cuocere al forno |
+
+---
+#### Gli oggetti
+**кастрю́ля** (pentola), **сковорода́** (padella), **плита́** (fornello, cucina), **духо́вка** (forno), **холоди́льник** (frigorifero).
+
+---
+#### Una ricetta
+**Свари́те карто́шку. Наре́жьте лук и пожа́рьте его́ на сковороде́. Доба́вьте соль и пе́рец. Всё перемеша́йте.**
+— Bollite le patate. Tagliate la cipolla e fatela soffriggere in padella. Aggiungete sale e pepe. Mescolate tutto.
+
+> **Карто́шка** (patate) è la parola di tutti i giorni; **карто́фель** è più formale.
+
+### Parole
+ре́зать = tagliare [v impf; ре́жу, ре́жешь]
+вари́ть = bollire, cuocere (in acqua) [v impf; варю́, ва́ришь]
+жа́рить = friggere, cuocere in padella [v impf; жа́рю, жа́ришь]
+добавля́ть = aggiungere [v impf; добавля́ю, добавля́ешь]
+меша́ть = mescolare; disturbare [v impf; меша́ю, меша́ешь]
+кастрю́ля = pentola [f]
+сковорода́ = padella [f]
+плита́ = fornello, cucina (elettrica, a gas) [f]
+холоди́льник = frigorifero [m]
+
+### Frasi
+Наре́жьте лук и пожа́рьте его́. = Tagliate la cipolla e fatela soffriggere.
+Ма́ма ва́рит суп в большо́й кастрю́ле. = La mamma cuoce la minestra in una pentola grande.
+Доба́вь немно́го со́ли. = Aggiungi un po' di sale.
+Молоко́ в холоди́льнике. = Il latte è in frigorifero.
+Не меша́й мне, я гото́влю! = Non disturbarmi, sto cucinando!
+Мы жа́рим ры́бу на сковороде́. = Friggiamo il pesce in padella.
+
+### Esercizi
+? Ма́ма ___ суп. = La mamma cuoce la minestra. {ва́рит | жа́рит | ре́жет}
+? Мы ___ ры́бу на сковороде́. = Friggiamo il pesce in padella. {жа́рим | ва́рим | печём}
+? ___ немно́го со́ли. = Aggiungi un po' di sale. {Доба́вь | Меша́й | Режь}
+? Я ___ хлеб. = Taglio il pane. {ре́жу | ре́зу | ре́заю}
+? Молоко́ в ___ . = Il latte è in frigorifero. {холоди́льнике | холоди́льник | холоди́льника}
+? «меша́ть» vuol dire… {mescolare, disturbare | mangiare | misurare}
+> Scrivi «pentola» in russo → кастрю́ля
+~ Не меша́й мне, я гото́влю! = Non disturbarmi, sto cucinando!
+
+## Giorno 160 | La dacia
+obiettivo: Parlare della vita in campagna, nella dacia.
+breve: огоро́д (orto), сажа́ть (piantare), собира́ть (raccogliere): грибы́, я́годы.
+breve: о́зеро (lago), река́ (fiume), по́ле (campo).
+breve: «Andare per funghi»: **ходи́ть за гриба́ми** (за + strumentale = a prendere).
+
+### Lezione
+#### La dacia
+La **да́ча** è la casa di campagna dei russi: d'estate milioni di persone ci passano i fine settimana. Lì c'è quasi sempre un **огоро́д** (orto) dove si **coltivano** verdure: **карто́шка**, **огурцы́** (cetrioli), **помидо́ры** (pomodori).
+
+---
+#### Raccogliere
+- **сажа́ть** — piantare: **Весно́й мы сажа́ем карто́шку.**
+- **собира́ть** — raccogliere: **собира́ть грибы́ и я́годы** (funghi e bacche).
+- **ходи́ть в лес за гриба́ми** — andare nel bosco a funghi (**за** + strumentale = «a prendere»).
+
+---
+#### Il paesaggio
+**о́зеро** (lago), **река́** (fiume), **по́ле** (campo), **лес** (bosco): **Ря́дом с на́шей да́чей есть о́зеро и лес.**
+
+> Altre espressioni con **за** + strumentale: **идти́ в магази́н за хле́бом** — andare a comprare il pane.
+
+### Parole
+огоро́д = orto [m]
+гриб = fungo [m]
+я́года = bacca, frutto di bosco [f]
+о́зеро = lago [n]
+река́ = fiume [f]
+по́ле = campo [n]
+сажа́ть = piantare [v impf; сажа́ю, сажа́ешь]
+собира́ть = raccogliere, collezionare [v impf; собира́ю, собира́ешь]
+
+### Frasi
+Ка́ждое ле́то мы живём на да́че. = Ogni estate abitiamo in dacia.
+Весно́й ба́бушка сажа́ет карто́шку. = In primavera la nonna pianta le patate.
+Мы ходи́ли в лес за гриба́ми. = Siamo andati nel bosco a funghi.
+В а́вгусте мы собира́ем я́годы. = Ad agosto raccogliamo i frutti di bosco.
+Ря́дом с да́чей есть о́зеро и река́. = Vicino alla dacia ci sono un lago e un fiume.
+Я иду́ в магази́н за хле́бом. = Vado a comprare il pane.
+
+### Esercizi
+? Весно́й мы ___ карто́шку. = In primavera piantiamo le patate. {сажа́ем | собира́ем | сади́мся}
+? Мы ходи́ли в лес за ___ . = Siamo andati a funghi. {гриба́ми | грибы́ | грибо́в}
+? Мы ___ я́годы. = Raccogliamo i frutti di bosco. {собира́ем | сажа́ем | ва́рим}
+? Я иду́ в магази́н за ___ . = Vado a comprare il pane. {хле́бом | хлеб | хле́ба}
+? Ря́дом с да́чей есть ___ . = Vicino alla dacia c'è un lago. {о́зеро | о́зера | о́зере}
+? «огоро́д» vuol dire… {orto | recinto | città}
+> Scrivi «fiume» in russo → река́
+~ Мы ходи́ли в лес за гриба́ми. = Siamo andati nel bosco a funghi.
+
+## Giorno 161 | Ripasso della settimana
+obiettivo: Leggere un fine settimana in dacia.
+
+### Lettura | На да́че | In dacia
+В пя́тницу ве́чером мы пое́хали на да́чу. = Venerdì sera siamo partiti per la dacia.
+На́ша да́ча нахо́дится в ста киломе́трах от Москвы́, на берегу́ реки́. = La nostra dacia si trova a cento chilometri da Mosca, in riva a un fiume.
+В суббо́ту у́тром па́па пошёл в лес за гриба́ми. = Sabato mattina papà è andato nel bosco a funghi.
+Ма́ма и ба́бушка рабо́тали в огоро́де: они́ сажа́ли помидо́ры. = La mamma e la nonna hanno lavorato nell'orto: hanno piantato i pomodori.
+Я убира́л дом, мыл о́кна и пол. = Io ho messo in ordine la casa, ho lavato le finestre e il pavimento.
+Пото́м мы с бра́том пла́вали в реке́. = Poi io e mio fratello abbiamo nuotato nel fiume.
+Ве́чером па́па верну́лся с по́лной корзи́ной грибо́в! = La sera papà è tornato con un cesto pieno di funghi!
+Ба́бушка пожа́рила их с карто́шкой и лу́ком. = La nonna li ha fatti in padella con patate e cipolla.
+Мы поста́вили стол в саду́ и у́жинали на све́жем во́здухе. = Abbiamo messo il tavolo in giardino e abbiamo cenato all'aria aperta.
+Э́то бы́ло о́чень вку́сно! = Era buonissimo!
+
+### Domande
+? Dove si trova la dacia? {in riva a un fiume | in riva a un lago | in montagna}
+? Che cosa hanno fatto la mamma e la nonna? {hanno piantato i pomodori | hanno raccolto funghi | hanno pulito la casa}
+? Con che cosa è tornato il papà? {con un cesto di funghi | con del pesce | con dei frutti di bosco}
+? Dove hanno cenato? {in giardino, all'aria aperta | in cucina | al ristorante}

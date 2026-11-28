@@ -1,0 +1,354 @@
+# Settimana 14 | Persone e pronomi
+
+## Giorno 92 | Vedo mio fratello: l'accusativo animato
+obiettivo: Usare l'accusativo con persone e animali maschili.
+breve: I maschili **animati** (persone, animali) all'accusativo prendono **-а/-я**, come il genitivo: Я ви́жу бра́та.
+breve: I maschili inanimati restano uguali: Я ви́жу дом.
+breve: I femminili fanno sempre -у/-ю, animati o no: Я ви́жу сестру́.
+
+### Lezione
+#### Animato o inanimato?
+In russo conta se un nome maschile indica qualcosa di **vivo** (persona, animale) o no. All'accusativo:
+
+| | Inanimato | Animato |
+|---|---|---|
+| maschile | Я ви́жу **дом**. (uguale) | Я ви́жу **бра́та**. (-а) |
+| maschile in -й/-ь | Я ви́жу **музе́й**. | Я ви́жу **учи́теля**. (-я) |
+| femminile | Я ви́жу **маши́ну**. | Я ви́жу **сестру́**. (sempre -у) |
+
+> Per i maschili animati l'accusativo è **uguale al genitivo**: бра́та, дру́га, учи́теля, кота́.
+
+---
+#### Esempi
+- **Я люблю́ бра́та.** — Voglio bene a mio fratello.
+- **Ты зна́ешь Ива́на?** — Conosci Ivan?
+- **Я жду дру́га.** — Aspetto un amico.
+- **Мы ви́дим кота́.** — Vediamo il gatto.
+
+---
+#### La famiglia allargata
+**внук** (nipote, di nonni), **вну́чка**; **племя́нник** (nipote, di zii), **племя́нница**; **двою́родный брат** (cugino), **двою́родная сестра́** (cugina); **жени́х** (fidanzato, sposo), **неве́ста** (fidanzata, sposa).
+
+### Parole
+внук = nipote (figlio del figlio) [m]
+вну́чка = nipote (figlia del figlio) [f]
+племя́нник = nipote (figlio del fratello o della sorella) [m]
+племя́нница = nipote (figlia del fratello o della sorella) [f]
+двою́родный брат = cugino [espr]
+жени́х = fidanzato, sposo [m]
+неве́ста = fidanzata, sposa [f]
+
+### Frasi
+Я ви́жу бра́та. = Vedo mio fratello.
+Ты зна́ешь Ива́на? = Conosci Ivan?
+Ба́бушка о́чень лю́бит вну́ка. = La nonna vuole molto bene al nipote.
+Я жду двою́родного бра́та. = Aspetto mio cugino.
+Вчера́ я ви́дел твоего́ дру́га. = Ieri ho visto il tuo amico.
+Она́ лю́бит своего́ жениха́. = Ama il suo fidanzato.
+
+### Esercizi
+? Я ви́жу ___ . = Vedo il fratello. {бра́та | брат | бра́ту}
+? Я ви́жу ___ . = Vedo la casa. {дом | до́ма | до́му}
+? Ты зна́ешь ___ ? = Conosci Ivan? {Ива́на | Ива́н | Ива́ну}
+? Мы лю́бим ___ . = Amiamo la nonna. {ба́бушку | ба́бушки | ба́бушка}
+? Я жду ___ . = Aspetto l'insegnante. {учи́теля | учи́тель | учи́телю}
+? Ба́бушка лю́бит ___ . = La nonna vuole bene al nipote. {вну́ка | внук | вну́ку}
+? Я ви́жу ___ . = Vedo il gatto. {кота́ | кот | коту́}
+> друг → я жду … → дру́га
+~ Я ви́жу бра́та. = Vedo mio fratello.
+
+## Giorno 93 | Ti amo: i pronomi all'accusativo
+obiettivo: Usare i pronomi complemento (mi, ti, lo, la…).
+breve: меня́, тебя́, его́, её, нас, вас, их = mi, ti, lo, la, ci, vi, li.
+breve: **Я тебя́ люблю́.** — Ti amo. Il pronome di solito va prima del verbo.
+breve: Dopo una preposizione: на него́, про неё, за них (con la н-).
+
+### Lezione
+#### I pronomi all'accusativo
+| Nominativo | Accusativo |
+|---|---|
+| я | меня́ |
+| ты | тебя́ |
+| он | его́ |
+| она́ | её |
+| мы | нас |
+| вы | вас |
+| они́ | их |
+
+Sono uguali al genitivo! Li conosci già da **меня́ зову́т**, **у тебя́ есть**.
+
+---
+#### Dove si mettono
+Di solito **prima del verbo**, come in italiano:
+- **Я тебя́ люблю́.** — Ti amo.
+- **Ты меня́ понима́ешь?** — Mi capisci?
+- **Я его́ не зна́ю.** — Non lo conosco.
+
+Dopo una preposizione la terza persona prende **н-**: **на него́**, **на неё**, **на них**.
+
+---
+#### Verbi del cuore
+- **целова́ть** (baciare): **целу́ю, целу́ешь**;
+- **обнима́ть** (abbracciare): **Обнима́ю тебя́!** — Ti abbraccio! (alla fine dei messaggi);
+- **уважа́ть** (rispettare, stimare);
+- **ненави́деть** (odiare): **ненави́жу** (д → ж).
+
+> In fondo a una lettera a un amico: **Обнима́ю, целу́ю!** — Un abbraccio, un bacio!
+
+### Parole
+целова́ть = baciare [v impf; целу́ю, целу́ешь]
+обнима́ть = abbracciare [v impf; обнима́ю, обнима́ешь]
+уважа́ть = rispettare, stimare [v impf; уважа́ю, уважа́ешь]
+ненави́деть = odiare [v impf; ненави́жу, ненави́дишь]
+
+### Frasi
+Я тебя́ люблю́. = Ti amo.
+Ты меня́ понима́ешь? = Mi capisci?
+Я его́ не зна́ю. = Non lo conosco.
+Мы вас ждём! = Vi aspettiamo!
+Ма́ма целу́ет ребёнка. = La mamma bacia il bambino.
+Обнима́ю тебя́! = Ti abbraccio!
+
+### Esercizi
+? Я ___ люблю́. = Ti amo. {тебя́ | тебе́ | ты}
+? Ты ___ понима́ешь? = Mi capisci? {меня́ | мне | я}
+? Я ___ не зна́ю. = Non lo conosco. {его́ | ему́ | он}
+? Мы ___ ждём. = Vi aspettiamo. {вас | вам | вы}
+? Я ___ ви́жу. = La vedo. {её | ей | она́}
+? Они́ ___ уважа́ют. = Ci rispettano. {нас | нам | мы}
+> я (ненави́деть) → ненави́жу
+> я (целова́ть) → целу́ю
+~ Я тебя́ люблю́. = Ti amo.
+
+## Giorno 94 | Verbi con l'accusativo
+obiettivo: Usare i verbi più comuni che reggono l'accusativo.
+breve: ждать (aspettare): жду, ждёшь… · проси́ть (chiedere, pregare): прошу́, про́сишь…
+breve: спра́шивать (chiedere, domandare) ≠ проси́ть (chiedere qualcosa, pregare).
+breve: встреча́ть (incontrare, andare a prendere) · провожа́ть (accompagnare) · приглаша́ть (invitare).
+
+### Lezione
+#### Ждать — aspettare
+Senza preposizione, con l'accusativo: **Я жду дру́га.** — Aspetto un amico.
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| жду | ждёшь | ждёт | ждём | ждёте | ждут |
+
+---
+#### Chiedere: спра́шивать o проси́ть?
+- **спра́шивать** — chiedere un'informazione, fare una domanda: **Я спра́шиваю учи́теля.**
+- **проси́ть** — chiedere un favore, pregare: **Я прошу́ тебя́ помо́чь.** — Ti chiedo di aiutarmi. (**с → ш**: **прошу́, про́сишь**)
+
+> **Прошу́!** — Prego! Si accomodi! (offrendo qualcosa).
+
+---
+#### Incontrare, accompagnare, invitare
+- **встреча́ть** — incontrare; andare a prendere: **Я встреча́ю ма́му на вокза́ле.**
+- **провожа́ть** — accompagnare (alla partenza): **Мы провожа́ем дру́га в аэропо́рт.**
+- **приглаша́ть** — invitare: **Я приглаша́ю тебя́ в кино́!**
+
+### Parole
+ждать = aspettare [v impf; жду, ждёшь]
+встреча́ть = incontrare, andare a prendere [v impf; встреча́ю, встреча́ешь]
+провожа́ть = accompagnare (chi parte) [v impf; провожа́ю, провожа́ешь]
+приглаша́ть = invitare [v impf; приглаша́ю, приглаша́ешь]
+спра́шивать = chiedere, domandare [v impf; спра́шиваю, спра́шиваешь]
+проси́ть = chiedere (un favore), pregare [v impf; прошу́, про́сишь]
+
+### Frasi
+Я жду тебя́ в кафе́. = Ti aspetto al bar.
+За́втра я встреча́ю ма́му на вокза́ле. = Domani vado a prendere la mamma alla stazione.
+Мы провожа́ем дру́га в аэропо́рт. = Accompagniamo un amico all'aeroporto.
+Я приглаша́ю тебя́ в теа́тр! = Ti invito a teatro!
+Студе́нт спра́шивает учи́теля. = Lo studente fa una domanda all'insegnante.
+Я прошу́ вас говори́ть ме́дленнее. = Vi prego di parlare più lentamente.
+
+### Esercizi
+? Я ___ дру́га. = Aspetto un amico. {жду | ждёт | ждать}
+? Они́ ___ нас. = Ci aspettano. {ждут | ждёт | ждём}
+? Я ___ тебя́ помо́чь. = Ti chiedo di aiutarmi. {прошу́ | спра́шиваю | про́сит}
+? Студе́нт ___ учи́теля. = Lo studente fa una domanda all'insegnante. {спра́шивает | про́сит | отвеча́ет}
+? Я ___ тебя́ в кино́. = Ti invito al cinema. {приглаша́ю | провожа́ю | встреча́ю}
+? Мы ___ ма́му на вокза́ле. = Andiamo a prendere la mamma alla stazione. {встреча́ем | провожа́ем | ждут}
+> ты (ждать) → ждёшь
+> я (проси́ть) → прошу́
+~ Я жду тебя́ в кафе́. = Ti aspetto al bar.
+
+## Giorno 95 | I sei casi al singolare
+obiettivo: Mettere in ordine tutti i casi che hai imparato.
+breve: Nominativo (chi?), genitivo (di chi? senza), dativo (a chi?), accusativo (chi? che cosa? — oggetto), strumentale (con chi?), prepositivo (dove? di che cosa?).
+breve: Ogni caso ha le sue preposizioni: из, у, без (gen.); к, по (dat.); в, на (acc. e prep.); с, под (strum.); о (prep.).
+breve: Non serve imparare le tabelle a memoria: le frasi modello bastano.
+
+### Lezione
+#### I sei casi in una tabella
+| Caso | Domanda | Uso | брат | ма́ма |
+|---|---|---|---|---|
+| Nominativo | кто? что? | soggetto | брат | ма́ма |
+| Genitivo | кого́? чего́? | di, senza, нет | бра́та | ма́мы |
+| Dativo | кому́? чему́? | a, к, по | бра́ту | ма́ме |
+| Accusativo | кого́? что? | oggetto, куда́ | бра́та | ма́му |
+| Strumentale | кем? чем? | con, come | бра́том | ма́мой |
+| Prepositivo | о ком? о чём? | dove, di (argomento) | о бра́те | о ма́ме |
+
+---
+#### Una frase per caso
+- **Брат** до́ма. (N)
+- У **бра́та** есть маши́на. (G)
+- Я звоню́ **бра́ту**. (D)
+- Я жду **бра́та**. (A)
+- Я гуля́ю с **бра́том**. (S)
+- Я ду́маю о **бра́те**. (P)
+
+> Nella sezione **Regole grammaticali** c'è la scheda completa dei casi; nella **Palestra di grammatica** puoi allenarti con i «Casi al volo».
+
+### Parole
+паде́ж = caso (grammaticale) [m]
+оконча́ние = desinenza [n]
+предло́г = preposizione [m]
+пра́вило = regola [n]
+
+### Frasi
+Ско́лько в ру́сском языке́ падеже́й? — Шесть. = Quanti casi ci sono in russo? — Sei.
+Э́то пра́вило о́чень ва́жное. = Questa regola è molto importante.
+Како́е тут оконча́ние? = Che desinenza c'è qui?
+Э́тот предло́г тре́бует роди́тельного падежа́. = Questa preposizione vuole il genitivo.
+Я ду́маю о бра́те и звоню́ ему́. = Penso a mio fratello e gli telefono.
+
+### Esercizi
+? У ___ есть маши́на. = Il fratello ha la macchina. {бра́та | брат | бра́ту}
+? Я звоню́ ___ . = Telefono alla mamma. {ма́ме | ма́му | ма́мы}
+? Я гуля́ю с ___ . = Passeggio con il fratello. {бра́том | бра́та | бра́ту}
+? Я ду́маю о ___ . = Penso alla mamma. {ма́ме | ма́му | ма́мой}
+? Я жду ___ . = Aspetto la mamma. {ма́му | ма́ме | ма́мы}
+? Il caso dopo «без» è… {genitivo | dativo | strumentale}
+? Il caso dopo «с» (con) è… {strumentale | genitivo | accusativo}
+? Il caso per il complemento oggetto è… {accusativo | dativo | nominativo}
+vedi: ref, casi
+
+## Giorno 96 | к e по + dativo
+obiettivo: Usare le preposizioni che vogliono il dativo.
+breve: **к** + dativo = verso, da (una persona): иду́ к врачу́, е́ду к ба́бушке.
+breve: **по** + dativo = per, lungo, attraverso: гуля́ть по го́роду; говори́ть по телефо́ну.
+breve: «Andare **dal** medico»: **к врачу́** (non «у врача́», che è «presso il medico, stare»).
+
+### Lezione
+#### к — verso, da qualcuno
+- **Я иду́ к врачу́.** — Vado dal medico.
+- **Мы е́дем к ба́бушке.** — Andiamo dalla nonna.
+- **Как пройти́ к метро́?** — Come si arriva alla metro?
+
+Confronta i tre «da» con le persone:
+
+| | Russo |
+|---|---|
+| vado da… (moto) | **к** + dativo: к дру́гу |
+| sono da… (stato) | **у** + genitivo: у дру́га |
+| torno da… (provenienza) | **от** + genitivo: от дру́га |
+
+---
+#### по — lungo, attraverso, per mezzo di
+- **гуля́ть по го́роду** — passeggiare per la città;
+- **по у́лице** — per strada;
+- **говори́ть по телефо́ну** — parlare al telefono;
+- **по-ру́сски** — in russo (sì, è la stessa **по**!);
+- **ходи́ть по магази́нам** — andare per negozi.
+
+> **Зубно́й врач** — dentista: **Я бою́сь идти́ к зубно́му врачу́!** — Ho paura di andare dal dentista!
+
+### Parole
+к = verso, da (qualcuno), per (un'ora) [prep; + dativo]
+по = per, lungo, attraverso [prep; + dativo]
+по телефо́ну = al telefono [espr]
+зубно́й врач = dentista [espr]
+
+### Frasi
+Я иду́ к врачу́. = Vado dal medico.
+В суббо́ту мы е́дем к ба́бушке. = Sabato andiamo dalla nonna.
+Мы гуля́ем по го́роду. = Passeggiamo per la città.
+Он говори́т по телефо́ну. = Sta parlando al telefono.
+Она́ лю́бит ходи́ть по магази́нам. = Le piace andare per negozi.
+Приходи́ к нам в го́сти! = Vieni a trovarci!
+
+### Esercizi
+? Я иду́ к ___ . = Vado dal medico. {врачу́ | врача́ | врачо́м}
+? Мы е́дем к ___ . = Andiamo dalla nonna. {ба́бушке | ба́бушку | ба́бушки}
+? Мы гуля́ем по ___ . = Passeggiamo per la città. {го́роду | го́рода | го́роде}
+? Он говори́т по ___ . = Parla al telefono. {телефо́ну | телефо́не | телефо́н}
+? Я был ___ дру́га. = Sono stato dall'amico. {у | к | по}
+? Я иду́ ___ дру́гу. = Vado dall'amico. {к | у | от}
+? Я иду́ ___ дру́га. = Torno dall'amico. {от | к | у}
+> Scrivi «al telefono» in russo → по телефо́ну
+~ Я иду́ к врачу́. = Vado dal medico.
+
+## Giorno 97 | Mi è piaciuto: нравиться e понравиться
+obiettivo: Dire che cosa ti è piaciuto (un film, una città, una persona).
+breve: **понра́виться** = piacere (una volta, come impressione): **Мне понра́вился фильм.**
+breve: Il passato si accorda con la cosa: понра́вился (m), понра́вилась (f), понра́вилось (n), понра́вились (pl).
+breve: **Как тебе́…?** — Che te ne pare di…? **Как тебе́ фильм?**
+
+### Lezione
+#### Ti è piaciuto?
+Per un'impressione su qualcosa di concreto (un film, un viaggio, un piatto) si usa **понра́виться** al passato:
+- **Мне понра́вился фильм.** — Il film mi è piaciuto.
+- **Тебе́ понра́вилась Москва́?** — Ti è piaciuta Mosca?
+- **Нам понра́вилось ме́сто.** — Il posto ci è piaciuto.
+- **Им понра́вились пода́рки.** — I regali sono piaciuti loro.
+
+Il verbo si accorda con la **cosa che piace** (il soggetto), non con la persona.
+
+---
+#### Che te ne pare?
+**Как тебе́…?** — Che te ne pare di…? (alla lettera «come a te…?»)
+- **Как тебе́ фильм? — О́чень понра́вился!**
+- **Как вам спекта́кль?** — Come le è sembrato lo spettacolo?
+
+---
+#### L'impressione
+- **впечатле́ние** — impressione: **Како́е впечатле́ние?** — Che impressione ti ha fatto?
+- **вкус** — gusto, sapore: **У него́ хоро́ший вкус.** — Ha buon gusto.
+- **спекта́кль** — spettacolo (teatrale).
+
+### Parole
+понра́виться = piacere (una volta, impressione) [v pf; понра́вился, понра́вилась]
+впечатле́ние = impressione [n]
+спекта́кль = spettacolo (teatrale) [m]
+вкус = gusto, sapore [m]
+
+### Frasi
+Мне о́чень понра́вился фильм. = Il film mi è piaciuto molto.
+Тебе́ понра́вилась Москва́? = Ti è piaciuta Mosca?
+Как вам спекта́кль? — Понра́вился! = Come le è sembrato lo spettacolo? — Mi è piaciuto!
+Нам понра́вились твои́ друзья́. = Ci sono piaciuti i tuoi amici.
+Э́то бы́ло си́льное впечатле́ние. = È stata un'impressione forte.
+У тебя́ хоро́ший вкус! = Hai buon gusto!
+
+### Esercizi
+? Мне ___ фильм. = Il film mi è piaciuto. {понра́вился | понра́вилась | понра́вились}
+? Тебе́ ___ Москва́? = Ti è piaciuta Mosca? {понра́вилась | понра́вился | понра́вилось}
+? Нам ___ пода́рки. = I regali ci sono piaciuti. {понра́вились | понра́вился | понра́вилась}
+? ___ понра́вилось ме́сто. = Il posto è piaciuto a lei. {Ей | Её | Она́}
+? Как ___ спекта́кль? = Come ti è sembrato lo spettacolo? {тебе́ | ты | тебя́}
+? «впечатле́ние» vuol dire… {impressione | stampa | emozione}
+~ Мне о́чень понра́вился фильм. = Il film mi è piaciuto molto.
+
+## Giorno 98 | Ripasso della settimana
+obiettivo: Leggere un racconto su un nuovo vicino.
+
+### Lettura | Но́вый сосе́д | Il nuovo vicino
+Вчера́ в на́шем до́ме был но́вый сосе́д. = Ieri nel nostro palazzo è arrivato un nuovo vicino.
+Я ви́дела его́ у́тром о́коло ли́фта. = L'ho visto la mattina vicino all'ascensore.
+Его́ зову́т Макси́м, он рабо́тает журнали́стом. = Si chiama Maksim, fa il giornalista.
+Макси́м живёт с соба́кой. Соба́ку зову́т Рекс. = Maksim vive con un cane. Il cane si chiama Reks.
+Я спроси́ла его́: «Вам нра́вится наш райо́н?» = Gli ho chiesto: «Le piace il nostro quartiere?»
+«О́чень! — отве́тил он. — Мне понра́вился парк ря́дом с до́мом». = «Molto! — ha risposto. — Mi è piaciuto il parco accanto a casa».
+Ве́чером я пригласи́ла его́ на чай. = La sera l'ho invitato a prendere un tè.
+Мы до́лго разгова́ривали о кни́гах и о путеше́ствиях. = Abbiamo parlato a lungo di libri e di viaggi.
+Тепе́рь мы друзья́. = Adesso siamo amici.
+Иногда́ я гуля́ю с Ре́ксом, когда́ Макси́м на рабо́те. = A volte porto a spasso Reks, quando Maksim è al lavoro.
+
+### Domande
+? Che lavoro fa Maksim? {il giornalista | il medico | il programmatore}
+? Con chi vive Maksim? {con un cane | con la moglie | con un gatto}
+? Che cosa gli è piaciuto del quartiere? {il parco vicino a casa | il supermercato | la metro}
+? Di che cosa hanno parlato? {di libri e di viaggi | di lavoro | di sport}

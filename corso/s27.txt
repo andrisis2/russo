@@ -1,0 +1,349 @@
+# Settimana 27 | Denaro ed economia
+
+## Giorno 183 | In banca
+obiettivo: Fare le operazioni più comuni in banca.
+breve: банкома́т (bancomat), креди́т (prestito), валю́та (valuta).
+breve: **снять де́ньги** (prelevare) · **положи́ть де́ньги на счёт** (versare sul conto) · **перевести́ де́ньги** (fare un bonifico).
+breve: **Како́й сего́дня курс до́ллара?** — Qual è oggi il cambio del dollaro?
+
+### Lezione
+#### Il conto
+**счёт** vuol dire «conto» al ristorante, ma anche **conto in banca**: **откры́ть счёт** (aprire un conto), **у меня́ на счету́…** (sul conto ho…).
+
+---
+#### Le operazioni
+| Russo | Italiano |
+|---|---|
+| снять де́ньги (в банкома́те) | prelevare (al bancomat) |
+| положи́ть де́ньги на счёт | versare sul conto |
+| перевести́ де́ньги | trasferire denaro, fare un bonifico |
+| обменя́ть валю́ту | cambiare valuta |
+| взять креди́т | prendere un prestito |
+
+---
+#### Il cambio
+- **курс валю́т** — tasso di cambio: **Како́й сего́дня курс е́вро?**
+- **Я хочу́ обменя́ть е́вро на рубли́.** — Voglio cambiare euro in rubli (**на** + accusativo).
+
+> **Банкома́т не рабо́тает!** — Il bancomat non funziona! Frase utile in ogni paese…
+
+### Parole
+банкома́т = bancomat, sportello automatico [m]
+креди́т = prestito, credito [m]
+валю́та = valuta [f]
+обменя́ть = cambiare (valuta), scambiare [v pf; обменя́ю, обменя́ешь]
+курс валю́т = tasso di cambio [espr]
+снять де́ньги = prelevare (soldi) [espr]
+
+### Frasi
+Где здесь банкома́т? = Dov'è un bancomat qui?
+Я хочу́ обменя́ть е́вро на рубли́. = Voglio cambiare euro in rubli.
+Како́й сего́дня курс до́ллара? = Qual è oggi il cambio del dollaro?
+Мне ну́жно снять де́ньги. = Devo prelevare.
+Я перевёл тебе́ де́ньги на ка́рту. = Ti ho mandato i soldi sulla carta.
+Они́ взя́ли креди́т на кварти́ру. = Hanno preso un mutuo per l'appartamento.
+
+### Esercizi
+? Я хочу́ обменя́ть е́вро ___ рубли́. = Voglio cambiare euro in rubli. {на | в | за}
+? Мне ну́жно ___ де́ньги. = Devo prelevare. {снять | дать | откры́ть}
+? Како́й сего́дня ___ до́ллара? = Qual è oggi il cambio del dollaro? {курс | цена́ | счёт}
+? Я ___ тебе́ де́ньги на ка́рту. = Ti ho mandato i soldi sulla carta. {перевёл | перево́д | переводи́ть}
+? Они́ взя́ли ___ на кварти́ру. = Hanno preso un prestito per l'appartamento. {креди́т | креди́та | дебе́т}
+? «банкома́т» vuol dire… {bancomat | impiegato di banca | banconota}
+~ Я хочу́ обменя́ть е́вро на рубли́. = Voglio cambiare euro in rubli.
+
+## Giorno 184 | L'economia
+obiettivo: Il lessico dell'economia per capire le notizie.
+breve: эконо́мика, инфля́ция, рост (crescita), кри́зис, бюдже́т, нало́г (tassa), при́быль (profitto).
+breve: **Це́ны расту́т.** — I prezzi aumentano. **Эконо́мика растёт.** — L'economia cresce.
+breve: ры́нок = mercato (anche in senso economico): **ры́нок труда́** (mercato del lavoro).
+
+### Lezione
+#### Le parole delle notizie
+| Russo | Italiano |
+|---|---|
+| эконо́мика | economia |
+| ры́нок | mercato |
+| инфля́ция | inflazione |
+| рост | crescita |
+| кри́зис | crisi |
+| бюдже́т | bilancio, budget |
+| нало́г | tassa, imposta |
+| при́быль | profitto, utile |
+| расхо́ды / дохо́ды | spese / entrate |
+
+---
+#### Frasi tipiche dei giornali
+- **Эконо́мика растёт.** — L'economia cresce.
+- **Це́ны расту́т.** — I prezzi aumentano.
+- **Инфля́ция соста́вила пять проце́нтов.** — L'inflazione è stata del cinque per cento.
+- **Прави́тельство повы́сило нало́ги.** — Il governo ha aumentato le tasse.
+
+> **Расти́** (crescere): **расту́, растёшь**; passato **рос, росла́, росли́**. Lo vedremo bene il giorno 186.
+
+### Parole
+эконо́мика = economia [f]
+инфля́ция = inflazione [f]
+кри́зис = crisi [m]
+бюдже́т = bilancio, budget [m]
+нало́г = tassa, imposta [m]
+при́быль = profitto, guadagno [f]
+
+### Frasi
+Эконо́мика страны́ растёт. = L'economia del paese cresce.
+Це́ны расту́т ка́ждый ме́сяц. = I prezzi aumentano ogni mese.
+В э́том году́ инфля́ция высо́кая. = Quest'anno l'inflazione è alta.
+Компа́ния получи́ла большу́ю при́быль. = L'azienda ha avuto un grosso profitto.
+Нало́ги пла́тят все. = Le tasse le pagano tutti.
+Кри́зис зако́нчился, начался́ рост. = La crisi è finita, è cominciata la crescita.
+
+### Esercizi
+? Це́ны ___ ка́ждый ме́сяц. = I prezzi aumentano ogni mese. {расту́т | растёт | расти́}
+? Эконо́мика страны́ ___ . = L'economia del paese cresce. {растёт | расту́т | ро́сла}
+? Компа́ния получи́ла большу́ю ___ . = L'azienda ha avuto un grosso profitto. {при́быль | прибы́тие | при́были}
+? «нало́г» vuol dire… {tassa | analogia | debito}
+? «рост» in economia vuol dire… {crescita | ruggine | arrosto}
+? В э́том году́ инфля́ция ___ . = Quest'anno l'inflazione è alta. {высо́кая | высоко́ | высо́кий}
+> Scrivi «crisi» in russo → кри́зис
+~ Це́ны расту́т ка́ждый ме́сяц. = I prezzi aumentano ogni mese.
+
+## Giorno 185 | Numeri grandi e percentuali
+obiettivo: Leggere numeri grandi e percentuali.
+breve: ты́сяча (f): две ты́сячи, пять ты́сяч · миллио́н, миллиа́рд (m): два миллио́на, пять миллио́нов.
+breve: проце́нт: оди́н проце́нт, два проце́нта, пять проце́нтов.
+breve: полови́на (metà), че́тверть (un quarto).
+
+### Lezione
+#### Migliaia e milioni
+Anche questi seguono la regola dei numeri (1 / 2-4 / 5+):
+
+| | 1 | 2-4 | 5+ |
+|---|---|---|---|
+| ты́сяча | ты́сяча | две ты́сячи | пять ты́сяч |
+| миллио́н | миллио́н | два миллио́на | пять миллио́нов |
+| миллиа́рд | миллиа́рд | три миллиа́рда | де́сять миллиа́рдов |
+
+**В Москве́ живёт двена́дцать миллио́нов челове́к.** — A Mosca vivono dodici milioni di persone.
+
+> **Ты́сяча** è femminile: **две ты́сячи** (non «два»).
+
+---
+#### Le percentuali
+- **проце́нт**: **оди́н проце́нт**, **два проце́нта**, **пять проце́нтов**;
+- con i decimali si usa il genitivo singolare: **два и пять деся́тых проце́нта** (2,5%).
+- **Це́ны вы́росли на де́сять проце́нтов.** — I prezzi sono aumentati del 10% (**на** + accusativo = di quanto).
+
+---
+#### Frazioni semplici
+**полови́на** (metà), **че́тверть** (un quarto), **треть** (un terzo): **полови́на студе́нтов** — metà degli studenti.
+
+### Parole
+миллио́н = milione [m]
+миллиа́рд = miliardo [m]
+проце́нт = percento, percentuale; interesse [m]
+полови́на = metà [f]
+че́тверть = quarto [f]
+
+### Frasi
+В Москве́ живёт двена́дцать миллио́нов челове́к. = A Mosca vivono dodici milioni di persone.
+Кварти́ра сто́ит де́сять миллио́нов рубле́й. = L'appartamento costa dieci milioni di rubli.
+Це́ны вы́росли на пять проце́нтов. = I prezzi sono aumentati del cinque per cento.
+Полови́на студе́нтов сдала́ экза́мен. = Metà degli studenti ha passato l'esame.
+Че́тверть часа́ — э́то пятна́дцать мину́т. = Un quarto d'ora sono quindici minuti.
+Э́то сто́ит две ты́сячи рубле́й. = Costa duemila rubli.
+
+### Esercizi
+? две ___ рубле́й = duemila rubli {ты́сячи | ты́сяча | ты́сяч}
+? пять ___ рубле́й = cinquemila rubli {ты́сяч | ты́сячи | ты́сяча}
+? два ___ = due milioni {миллио́на | миллио́нов | миллио́н}
+? де́сять ___ = dieci milioni {миллио́нов | миллио́на | миллио́н}
+? Це́ны вы́росли на пять ___ . = I prezzi sono aumentati del cinque per cento. {проце́нтов | проце́нта | проце́нт}
+? ___ студе́нтов сдала́ экза́мен. = Metà degli studenti ha passato l'esame. {Полови́на | Полови́ну | Пол}
+? Це́ны вы́росли ___ де́сять проце́нтов. = Sono aumentati del dieci per cento. {на | в | за}
+~ Це́ны вы́росли на пять проце́нтов. = I prezzi sono aumentati del cinque per cento.
+
+## Giorno 186 | Salire e scendere
+obiettivo: Descrivere aumenti e diminuzioni.
+breve: расти́ / вы́расти (crescere), па́дать / упа́сть (cadere, scendere).
+breve: увели́чиваться / увели́читься (aumentare) · уменьша́ться / уме́ньшиться (diminuire).
+breve: повыша́ться / повы́ситься (salire) · снижа́ться / сни́зиться (scendere, calare).
+
+### Lezione
+#### I verbi del cambiamento
+| Su ↑ | Giù ↓ |
+|---|---|
+| расти́ / вы́расти (crescere) | па́дать / упа́сть (cadere) |
+| увели́чиваться / увели́читься (aumentare) | уменьша́ться / уме́ньшиться (diminuire) |
+| повыша́ться / повы́ситься (salire) | снижа́ться / сни́зиться (scendere, calare) |
+
+I verbi in **-ся** si usano quando la cosa cambia da sola: **Це́ны повы́сились.** Senza **-ся** quando qualcuno la cambia: **Прави́тельство повы́сило нало́ги.**
+
+---
+#### Di quanto, da… a…
+- **на** + accusativo — di quanto: **Це́ны вы́росли на 10%.**
+- **с** + genitivo **до** + genitivo — da… a…: **Зарпла́та вы́росла с пяти́десяти до шести́десяти ты́сяч.**
+
+---
+#### Forme da ricordare
+- **расти́**: **расту́, растёшь**; **рос, росла́, росли́**;
+- **упа́сть**: **упаду́, упадёшь**; **упа́л, упа́ла**.
+
+> **Ку́рс рубля́ упа́л.** — Il cambio del rublo è sceso. **Безрабо́тица сни́зилась.** — La disoccupazione è calata.
+
+### Parole
+расти́ = crescere [v impf; расту́, растёшь; рос, росла́]
+вы́расти = crescere [v pf; вы́расту, вы́растешь]
+па́дать = cadere, scendere [v impf; па́даю, па́даешь]
+упа́сть = cadere, scendere [v pf; упаду́, упадёшь]
+увели́чиваться = aumentare [v impf; увели́чивается]
+уменьша́ться = diminuire [v impf; уменьша́ется]
+повыша́ться = salire, aumentare [v impf; повыша́ется]
+снижа́ться = scendere, calare [v impf; снижа́ется]
+
+### Frasi
+Це́ны вы́росли на де́сять проце́нтов. = I prezzi sono aumentati del dieci per cento.
+Курс рубля́ упа́л. = Il cambio del rublo è sceso.
+Число́ тури́стов увели́чилось. = Il numero dei turisti è aumentato.
+Безрабо́тица сни́зилась до трёх проце́нтов. = La disoccupazione è scesa al tre per cento.
+Зарпла́ты повы́сились, но це́ны то́же. = Gli stipendi sono saliti, ma anche i prezzi.
+Мой сын о́чень вы́рос! = Mio figlio è cresciuto tantissimo!
+
+### Esercizi
+? Це́ны ___ на де́сять проце́нтов. = I prezzi sono aumentati del 10%. {вы́росли | упа́ли | сни́зились}
+? Курс рубля́ ___ . = Il cambio del rublo è sceso. {упа́л | вы́рос | повы́сился}
+? Число́ тури́стов ___ . = Il numero dei turisti è aumentato. {увели́чилось | уме́ньшилось | упа́ло}
+? Прави́тельство ___ нало́ги. = Il governo ha aumentato le tasse. {повы́сило | повы́силось | вы́росло}
+? Безрабо́тица сни́зилась ___ трёх проце́нтов. = …è scesa al 3%. {до | на | в}
+? Il contrario di «расти́» è… {па́дать | увели́чиваться | повыша́ться}
+~ Це́ны вы́росли на де́сять проце́нтов. = I prezzi sono aumentati del dieci per cento.
+
+## Giorno 187 | I numeri nei casi
+obiettivo: Riconoscere i numeri declinati più comuni.
+breve: I numeri si declinano: от двух до пяти́, с тремя́ друзья́ми, о́коло ста челове́к.
+breve: Genitivo: двух, трёх, четырёх, пяти́… де́сяти, двадцати́… ста.
+breve: **о́коло** + genitivo = circa: о́коло десяти́ мину́т. Anche **приме́рно** (circa) e **бо́лее / ме́нее** (più / meno di).
+
+### Lezione
+#### Perché ci servono
+Le notizie e gli orari sono pieni di numeri declinati:
+- **Магази́н рабо́тает с десяти́ до восьми́.** — Il negozio è aperto dalle dieci alle otto.
+- **О́коло ста челове́к пришли́ на конце́рт.** — Circa cento persone sono venute al concerto.
+- **Я был там с тремя́ друзья́ми.**
+
+---
+#### Le forme principali
+| Nom. | Gen. / Prep. | Dat. | Strum. |
+|---|---|---|---|
+| два / две | двух | двум | двумя́ |
+| три | трёх | трём | тремя́ |
+| четы́ре | четырёх | четырём | четырьмя́ |
+| пять | пяти́ | пяти́ | пятью́ |
+| де́сять | десяти́ | десяти́ | десятью́ |
+| сто | ста | ста | ста |
+
+I numeri da 5 a 30 si declinano come **ночь**: **пяти́, пятью́**.
+
+---
+#### Circa, più di, meno di
+- **о́коло** + genitivo / **приме́рно** + nominativo — circa: **о́коло десяти́ мину́т**, **приме́рно де́сять мину́т**;
+- **бо́лее / ме́нее** + genitivo — più / meno di: **бо́лее ста челове́к**.
+
+> Approfondiremo tutte le forme nel modulo 12: per ora basta riconoscerle.
+
+### Parole
+приме́рно = circa, approssimativamente [avv]
+бо́лее = più (di), oltre [avv]
+ме́нее = meno (di) [avv]
+
+### Frasi
+Магази́н рабо́тает с десяти́ до восьми́. = Il negozio è aperto dalle dieci alle otto.
+О́коло ста челове́к пришли́ на конце́рт. = Circa cento persone sono venute al concerto.
+Я был в Москве́ с тремя́ друзья́ми. = Sono stato a Mosca con tre amici.
+До це́нтра приме́рно два́дцать мину́т. = Fino al centro ci sono circa venti minuti.
+В го́роде живёт бо́лее миллио́на челове́к. = In città vivono più di un milione di persone.
+У меня́ нет двух ты́сяч рубле́й. = Non ho duemila rubli.
+
+### Esercizi
+? с десяти́ ___ восьми́ = dalle dieci alle otto {до | по | на}
+? о́коло ___ челове́к = circa cento persone {ста | сто | со́тен}
+? Я был там с ___ друзья́ми. = C'ero con tre amici. {тремя́ | три | трёх}
+? Он прие́хал в пять ___ . = È arrivato alle cinque. {часо́в | часа́ | часу́}
+? бо́лее ___ челове́к = più di un milione di persone {миллио́на | миллио́н | миллио́нов}
+? «приме́рно» vuol dire… {circa | per esempio | esattamente}
+~ О́коло ста челове́к пришли́ на конце́рт. = Circa cento persone sono venute al concerto.
+
+## Giorno 188 | Online
+obiettivo: Il lessico di internet: siti, app, password.
+breve: сайт (sito), приложе́ние (app; anche «allegato»), ссы́лка (link).
+breve: скача́ть (scaricare), зарегистри́роваться (registrarsi), паро́ль (password).
+breve: электро́нная по́чта = email: **Како́й у вас а́дрес электро́нной по́чты?**
+
+### Lezione
+#### Le parole di internet
+| Russo | Italiano |
+|---|---|
+| сайт | sito |
+| приложе́ние | app; allegato |
+| ссы́лка | link, collegamento |
+| электро́нная по́чта | posta elettronica, email |
+| паро́ль | password |
+| ло́гин | nome utente |
+
+---
+#### I verbi
+- **скача́ть** (pf) / **ска́чивать** — scaricare: **Скача́й приложе́ние!**
+- **зарегистри́роваться** — registrarsi: **На́до зарегистри́роваться на са́йте.**
+- **войти́** — entrare, fare il login: **Я не могу́ войти́ в аккаунт.**
+- **отпра́вить ссы́лку** — mandare il link.
+
+---
+#### Dire l'indirizzo email
+**@** si dice **соба́ка** («cane», per la sua forma!) o **эт**; il punto **то́чка**: **ivan соба́ка mail то́чка ru**.
+
+> «Email» nel parlato si dice anche **и́мейл** o **по́чта**: **Пришли́ мне на по́чту.** — Mandamelo per email.
+
+### Parole
+сайт = sito [m]
+приложе́ние = app, applicazione; allegato [n]
+ссы́лка = link, collegamento [f]
+скача́ть = scaricare [v pf; скача́ю, скача́ешь]
+паро́ль = password [m]
+электро́нная по́чта = posta elettronica, email [espr]
+зарегистри́роваться = registrarsi [v pf; зарегистри́руюсь, зарегистри́руешься]
+
+### Frasi
+Скача́й э́то приложе́ние, оно́ о́чень удо́бное. = Scarica questa app, è comodissima.
+Пришли́ мне ссы́лку на сайт. = Mandami il link del sito.
+На́до зарегистри́роваться на са́йте. = Bisogna registrarsi sul sito.
+Я забы́л паро́ль! = Ho dimenticato la password!
+Како́й у вас а́дрес электро́нной по́чты? = Qual è il suo indirizzo email?
+Я не могу́ войти́ в аккаунт. = Non riesco ad accedere all'account.
+
+### Esercizi
+? ___ э́то приложе́ние! = Scarica questa app! {Скача́й | Скача́ть | Ска́чивал}
+? Пришли́ мне ___ на сайт. = Mandami il link del sito. {ссы́лку | ссы́лка | ссы́лке}
+? На́до ___ на са́йте. = Bisogna registrarsi sul sito. {зарегистри́роваться | зарегистри́ровать | регистра́ция}
+? Я забы́л ___ ! = Ho dimenticato la password! {паро́ль | паро́ля | паро́лем}
+? Come si legge «@» in russo? {соба́ка | ко́шка | у́лица}
+? «приложе́ние» vuol dire… {app; allegato | applauso | prolungamento}
+~ Я забы́л паро́ль! = Ho dimenticato la password!
+
+## Giorno 189 | Ripasso della settimana
+obiettivo: Leggere una breve notizia economica.
+
+### Lettura | Но́вости эконо́мики | Notizie di economia
+По да́нным Росста́та, в э́том году́ эконо́мика страны́ вы́росла на два проце́нта. = Secondo i dati dell'Istituto di statistica, quest'anno l'economia del paese è cresciuta del due per cento.
+Инфля́ция сни́зилась с восьми́ до шести́ проце́нтов. = L'inflazione è scesa dall'otto al sei per cento.
+Но це́ны на проду́кты всё ещё расту́т. = Ma i prezzi degli alimentari continuano ad aumentare.
+Осо́бенно подорожа́ли о́вощи и фру́кты. = Sono aumentate soprattutto la verdura e la frutta.
+Сре́дняя зарпла́та увели́чилась на де́сять проце́нтов. = Lo stipendio medio è aumentato del dieci per cento.
+Безрабо́тица упа́ла до трёх проце́нтов. = La disoccupazione è scesa al tre per cento.
+Курс рубля́ в э́том ме́сяце почти́ не измени́лся. = Il cambio del rublo questo mese non è quasi cambiato.
+Экспе́рты счита́ют, что в сле́дующем году́ рост бу́дет ме́ньше. = Gli esperti ritengono che l'anno prossimo la crescita sarà minore.
+Прави́тельство обеща́ет не повыша́ть нало́ги. = Il governo promette di non aumentare le tasse.
+
+### Domande
+? Di quanto è cresciuta l'economia? {del 2% | del 6% | del 10%}
+? Che cosa è successo all'inflazione? {è scesa | è salita | non è cambiata}
+? Che cosa è aumentato soprattutto? {verdura e frutta | gli affitti | la benzina}
+? Che cosa promette il governo? {di non aumentare le tasse | di abbassare i prezzi | di aumentare gli stipendi}

@@ -1,0 +1,360 @@
+# Settimana 44 | Formale e informale
+
+## Giorno 302 | Ты o вы?
+obiettivo: Scegliere tra «ты» e «вы» e passare al «tu» nel modo giusto.
+breve: **вы** con sconosciuti, persone più anziane, al lavoro, con l'insegnante; **ты** con amici, famiglia, bambini.
+breve: Passare al tu: **Дава́й на «ты»!** — Diamoci del tu! (di solito lo propone la persona più anziana o importante).
+breve: **ве́жливый** = cortese, educato ↔ **гру́бый** = sgarbato. **обраща́ться к** + dativo = rivolgersi a.
+
+### Lezione
+#### Quando «вы», quando «ты»
+| вы | ты |
+|---|---|
+| sconosciuti, negozi, uffici | amici, famiglia |
+| persone più anziane | bambini, animali |
+| capo, colleghi nuovi | coetanei giovani |
+| insegnanti | Dio, nelle preghiere! |
+
+In Russia il **вы** dura più a lungo che in Italia: i colleghi possono darsi del **вы** per anni, chiamandosi per **и́мя и о́тчество**.
+
+---
+#### Passare al «ты»
+- **Дава́й на «ты»!** / **Дава́йте перейдём на «ты»!** — Diamoci del tu!
+- **Мо́жно на «ты»?** — Possiamo darci del tu?
+- **обраща́ться к кому́-то на «вы»** — dare del lei a qualcuno.
+
+> Con **вы** il verbo e l'aggettivo breve vanno al plurale anche se parli a una persona sola: **Вы гото́вы?** — È pronto/a? **Вы бы́ли пра́вы.** — Aveva ragione.
+
+### Parole
+ве́жливый = cortese, educato [agg]
+ве́жливость = cortesia, buona educazione [f]
+гру́бый = sgarbato, maleducato; rozzo [agg]
+обраща́ться = rivolgersi [v impf; обраща́юсь, обраща́ешься; к + dat.]
+Дава́й на «ты»! = Diamoci del tu! [espr]
+перейти́ на «ты» = passare al tu [espr]
+незнако́мый = sconosciuto [agg]
+
+### Frasi
+Дава́й на «ты»! = Diamoci del tu!
+Мо́жно к вам обрати́ться? = Posso rivolgermi a lei?
+К учи́телю на́до обраща́ться на «вы». = All'insegnante bisogna dare del lei.
+Он всегда́ о́чень ве́жливый. = È sempre molto cortese.
+Не будь таки́м гру́бым! = Non essere così sgarbato!
+Вы бы́ли пра́вы. = Aveva ragione.
+
+### Esercizi
+? Дава́й на «___ »! = Diamoci del tu! {ты | вы | тебя́}
+? К учи́телю на́до обраща́ться на «___ ». = All'insegnante bisogna dare del lei. {вы | ты | вас}
+? Он всегда́ о́чень ___ . = È sempre molto cortese. {ве́жливый | ве́жливость | ве́жливо}
+? Не будь таки́м ___ ! = Non essere così sgarbato! {гру́бым | гру́бый | гру́бо}
+? Вы бы́ли ___ . = Aveva ragione (a una persona, con il «вы»). {пра́вы | прав | права́}
+? A un professore universitario che non conosci dai del… {вы | ты | lo chiami per cognome senza titolo}
+> Scrivi «cortesia» → ве́жливость
+~ Дава́йте перейдём на «ты»! = Passiamo al tu!
+
+## Giorno 303 | Il russo dei documenti
+obiettivo: Compilare un modulo e capire il russo burocratico.
+breve: **анке́та** (questionario, modulo), **заявле́ние** (domanda scritta), **запо́лнить** (compilare), **по́дпись** (firma).
+breve: Nei moduli: **гражда́нство** (cittadinanza), **пол** (sesso), **семе́йное положе́ние** (stato civile).
+breve: Lo stile burocratico: **Прошу́** + infinito / sostantivo = chiedo: **Прошу́ предоста́вить мне о́тпуск.**
+
+### Lezione
+#### Il modulo
+| Campo | Italiano |
+|---|---|
+| Фами́лия, и́мя, о́тчество (ФИО́) | Cognome, nome, patronimico |
+| Да́та рожде́ния | Data di nascita |
+| Ме́сто рожде́ния | Luogo di nascita |
+| Гражда́нство | Cittadinanza |
+| Пол: мужско́й / же́нский | Sesso: M / F |
+| Семе́йное положе́ние | Stato civile |
+| По́дпись | Firma |
+
+Lo stato civile: **жена́т** (lui sposato), **за́мужем** (lei sposata), **хо́лост** (celibe), **не за́мужем** (nubile).
+
+> **Пол** vuol dire sesso, ma anche… pavimento (giorno 32)!
+
+---
+#### Documenti da chiedere
+- **спра́вка** — certificato: **спра́вка с рабо́ты**, **медици́нская спра́вка**;
+- **печа́ть** — timbro: **Без печа́ти недействи́тельно.** — Senza timbro non è valido;
+- **ко́пия** — fotocopia: **ко́пия па́спорта**.
+
+---
+#### La domanda scritta (заявле́ние)
+Comincia con **Прошу́…** (chiedo):
+- **Прошу́ предоста́вить мне о́тпуск с 1 по 14 ию́ля.** — Chiedo di concedermi le ferie dal 1 al 14 luglio.
+- in fondo **да́та** e **по́дпись**.
+
+### Parole
+анке́та = questionario, modulo [f]
+заявле́ние = domanda scritta, richiesta; dichiarazione [n]
+запо́лнить = compilare, riempire [v pf; запо́лню, запо́лнишь]
+по́дпись = firma [f]
+гражда́нство = cittadinanza [n]
+семе́йное положе́ние = stato civile [espr]
+спра́вка = certificato [f]
+печа́ть = timbro; stampa [f]
+
+### Frasi
+Запо́лните, пожа́луйста, анке́ту. = Compili il modulo, per favore.
+Здесь нужна́ ва́ша по́дпись. = Qui serve la sua firma.
+Како́е у вас гражда́нство? — Италья́нское. = Che cittadinanza ha? — Italiana.
+Мне нужна́ спра́вка с рабо́ты. = Mi serve un certificato del datore di lavoro.
+Без печа́ти докуме́нт недействи́телен. = Senza timbro il documento non è valido.
+Напиши́те заявле́ние на о́тпуск. = Scriva la domanda per le ferie.
+
+### Esercizi
+? ___ , пожа́луйста, анке́ту. = Compili il modulo, per favore. {Запо́лните | Запо́лнить | Запо́лню}
+? Здесь нужна́ ва́ша ___ . = Qui serve la sua firma. {по́дпись | по́дписи | подписа́ть}
+? Како́е у вас ___ ? = Che cittadinanza ha? {гражда́нство | граждани́н | гражда́нка}
+? Мне нужна́ ___ с рабо́ты. = Mi serve un certificato del datore di lavoro. {спра́вка | спра́вку | спра́вки}
+? Он ___ , у него́ жена́ и дво́е дете́й. = È sposato, ha moglie e due figli. {жена́т | за́мужем | хо́лост}
+? Nello stato civile, «не за́мужем» vuol dire… {nubile | sposata | divorziata}
+> Scrivi «firma» → по́дпись
+~ Запо́лните, пожа́луйста, анке́ту. = Compili il modulo, per favore.
+
+## Giorno 304 | Chiedere con gentilezza
+obiettivo: Fare richieste cortesi a sconosciuti e in ufficio.
+breve: **Не могли́ бы вы…?** = Potrebbe…? **Вы не подска́жете…?** = Mi saprebbe dire…?
+breve: **Бу́дьте добры́…** = Sia gentile… **Извини́те за беспоко́йство.** = Scusi il disturbo.
+breve: **У меня́ к вам про́сьба.** = Ho un favore da chiederle. **Я бу́ду вам о́чень благода́рен.** = Le sarò molto grato.
+
+### Lezione
+#### Dal più semplice al più cortese
+| Russo | Italiano |
+|---|---|
+| Да́йте, пожа́луйста… | Mi dia, per favore… |
+| Мо́жно…? | Posso…? Si può…? |
+| Бу́дьте добры́… | Sia gentile… |
+| Вы не подска́жете…? | Mi saprebbe dire…? |
+| Не могли́ бы вы…? | Potrebbe…? |
+| Е́сли вас не затрудни́т… | Se non le è di disturbo… |
+
+- **Вы не подска́жете, как пройти́ к вокза́лу?** — Mi saprebbe dire come arrivare alla stazione? (**подсказа́ть** = suggerire, dare un'indicazione)
+- **Не могли́ бы вы говори́ть поме́дленнее?** — Potrebbe parlare più lentamente?
+
+---
+#### Prima e dopo la richiesta
+- **Извини́те за беспоко́йство.** — Scusi il disturbo.
+- **У меня́ к вам про́сьба.** — Ho un favore da chiederle.
+- **Мо́жно вас попроси́ть…?** — Posso chiederle di…?
+- **Я бу́ду вам о́чень благода́рен / благода́рна.** — Le sarò molto grato / grata.
+
+> La forma negativa **Вы не подска́жете…?** (alla lettera «non mi direbbe…?») è più cortese di quella affermativa: suona come «se non le dispiace».
+
+### Parole
+Не могли́ бы вы…? = Potrebbe…? [espr]
+подсказа́ть = suggerire, dare un'indicazione [v pf; подскажу́, подска́жешь]
+Бу́дьте добры́ = sia gentile [espr]
+беспоко́йство = disturbo; preoccupazione [n]
+про́сьба = richiesta, favore [f]
+попроси́ть = chiedere (un favore) [v pf; попрошу́, попро́сишь]
+благода́рный = grato, riconoscente [agg; breve: благода́рен, благода́рна]
+
+### Frasi
+Вы не подска́жете, как пройти́ к вокза́лу? = Mi saprebbe dire come arrivare alla stazione?
+Не могли́ бы вы говори́ть поме́дленнее? = Potrebbe parlare più lentamente?
+Бу́дьте добры́, оди́н биле́т до Ту́лы. = Sia gentile, un biglietto per Tula.
+Извини́те за беспоко́йство. = Scusi il disturbo.
+У меня́ к вам про́сьба. = Ho un favore da chiederle.
+Я бу́ду вам о́чень благода́рен. = Le sarò molto grato.
+
+### Esercizi
+? Вы не ___ , как пройти́ к вокза́лу? = Mi saprebbe dire come arrivare alla stazione? {подска́жете | подсказа́ть | подска́зываю}
+? Не ___ бы вы говори́ть поме́дленнее? = Potrebbe parlare più lentamente? {могли́ | мо́жете | мог}
+? Извини́те за ___ . = Scusi il disturbo. {беспоко́йство | беспоко́йства | беспоко́ить}
+? У меня́ к вам ___ . = Ho un favore da chiederle. {про́сьба | про́сьбу | проси́ть}
+? Я бу́ду вам о́чень ___ . (dice Anna) = Le sarò molto grata. {благода́рна | благода́рен | благода́рны}
+? La richiesta più cortese è… {Не могли́ бы вы…? | Да́йте! | Хочу́…}
+> Scrivi «Sia gentile…» → Бу́дьте добры́
+~ Извини́те за беспоко́йство. = Scusi il disturbo.
+
+## Giorno 305 | Lamentarsi e scusarsi
+obiettivo: Fare un reclamo e chiedere scusa.
+breve: **жа́ловаться на** + accusativo = lamentarsi di: **Я хочу́ пожа́ловаться.** — Voglio fare un reclamo. **жа́лоба** = reclamo.
+breve: Scusarsi: **Извини́(те)**, **Прости́(те)**, **Прошу́ проще́ния** (formale). **Я винова́т(а).** — È colpa mia.
+breve: Rispondere a una scusa: **Ничего́ стра́шного.** (Niente di grave) **Не беспоко́йтесь.** (Non si preoccupi) **Быва́ет!** (Succede!)
+
+### Lezione
+#### Il reclamo
+- **жа́ловаться / пожа́ловаться на** + accusativo: **Сосе́ди жа́луются на шум.** — I vicini si lamentano del rumore.
+- **жа́лоба** — reclamo: **написа́ть жа́лобу**;
+- **Я хочу́ пожа́ловаться.** — Voglio fare un reclamo.
+- **Э́то недопусти́мо!** — È inammissibile!
+- **Верни́те, пожа́луйста, де́ньги.** — Mi restituisca i soldi, per favore.
+
+---
+#### Chiedere scusa
+| Russo | Quando |
+|---|---|
+| Извини́ / Извини́те | la scusa di tutti i giorni |
+| Прости́ / Прости́те | più personale, più sentita |
+| Прошу́ проще́ния | formale |
+| Я винова́т / винова́та | è colpa mia |
+| Э́то моя́ вина́ | è colpa mia (più forte) |
+
+**извиня́ться / извини́ться** — scusarsi: **Он извини́лся за опозда́ние.** — Si è scusato per il ritardo (**за** + accusativo).
+
+---
+#### Accettare le scuse
+**Ничего́ стра́шного.** — Niente di grave. **Не беспоко́йтесь.** — Non si preoccupi. **Быва́ет!** — Succede! **Всё в поря́дке.** — Va tutto bene.
+
+### Parole
+жа́ловаться = lamentarsi [v impf; жа́луюсь, жа́луешься; на + acc.]
+жа́лоба = reclamo, lamentela [f]
+извини́ться = scusarsi [v pf; извиню́сь, извини́шься; за + acc.]
+проще́ние = perdono [n]
+винова́т = colpevole, in colpa [agg; f винова́та, pl винова́ты]
+вина́ = colpa [f]
+Быва́ет! = Succede! Capita! [espr]
+Не беспоко́йтесь! = Non si preoccupi! [espr]
+
+### Frasi
+Я хочу́ пожа́ловаться на обслу́живание. = Voglio fare un reclamo sul servizio.
+Сосе́ди жа́луются на шум. = I vicini si lamentano del rumore.
+Прошу́ проще́ния за опозда́ние. = Chiedo scusa per il ritardo.
+Извини́, я винова́т. = Scusa, è colpa mia.
+— Я разби́л ча́шку! — Ничего́ стра́шного, быва́ет. = Ho rotto la tazza! — Niente di grave, capita.
+Не беспоко́йтесь, всё в поря́дке. = Non si preoccupi, va tutto bene.
+
+### Esercizi
+? Сосе́ди жа́луются ___ шум. = I vicini si lamentano del rumore. {на | о | за}
+? Прошу́ ___ за опозда́ние. = Chiedo scusa per il ritardo. {проще́ния | проще́ние | прости́ть}
+? Он извини́лся ___ опозда́ние. = Si è scusato per il ritardo. {за | на | от}
+? Извини́, я ___ . = Scusa, è colpa mia. (dice Marco) {винова́т | винова́та | вина́}
+? — Я разби́л ча́шку! — Ничего́ ___ . = Niente di grave. {стра́шного | стра́шный | стра́шно}
+? «Быва́ет!» vuol dire… {Succede! | Basta! | Dov'è?}
+> Scrivi «reclamo» → жа́лоба
+~ Не беспоко́йтесь, всё в поря́дке. = Non si preoccupi, va tutto bene.
+
+## Giorno 306 | Errori tipici degli italiani
+obiettivo: Evitare gli errori che fanno quasi tutti gli italiani.
+breve: «Ho una macchina» non è **Я име́ю маши́ну** ma **У меня́ есть маши́на**. «Ho 30 anni» = **Мне три́дцать лет**.
+breve: «Mi piace la pizza» = **Мне нра́вится пи́цца** (la pizza è il soggetto!). «Telefono a mia madre» = **Я звоню́ ма́ме** (dativo).
+breve: «Fare una domanda» = **зада́ть вопро́с** (non «спроси́ть вопро́с»); «fare la doccia» = **принима́ть душ**.
+
+### Lezione
+#### Gli errori più comuni
+| Sbagliato ✗ | Giusto ✓ | Perché |
+|---|---|---|
+| Я име́ю маши́ну. | У меня́ есть маши́на. | «avere» = **у** + genitivo |
+| Я три́дцать лет. | Мне три́дцать лет. | l'età vuole il dativo |
+| Я люблю́ пи́ццу? Я нра́вится… | Мне нра́вится пи́цца. | chi piace è il soggetto |
+| Я иду́ в Москве́. | Я иду́ в Москву́. | moto = accusativo |
+| Я был в Москву́. | Я был в Москве́. | stato = prepositivo |
+| Я звоню́ мою́ ма́му. | Я звоню́ ма́ме. | **звони́ть** + dativo |
+| Я помога́ю его́. | Я помога́ю ему́. | **помога́ть** + dativo |
+| Я жду для тебя́. | Я жду тебя́. | **ждать** + accusativo |
+| Я хочу́, что ты пришёл. | Я хочу́, что́бы ты пришёл. | volere che = **что́бы** + passato |
+| пять кни́га | пять книг | 5+ = genitivo plurale |
+
+---
+#### Le espressioni fisse
+- **зада́ть вопро́с** — fare una domanda (non «спроси́ть вопро́с»);
+- **принима́ть душ** — fare la doccia (non «де́лать душ»);
+- **сде́лать фо́то** / **сфотографи́ровать** — fare una foto;
+- **по оши́бке** — per sbaglio.
+
+> **Мне хо́лодно** = ho freddo. **Я холо́дный** vuol dire… «sono una persona fredda»!
+
+### Parole
+зада́ть вопро́с = fare una domanda [espr]
+принима́ть душ = fare la doccia [espr]
+по оши́бке = per sbaglio [espr]
+пра́вильно = correttamente, giusto [avv]
+непра́вильно = in modo sbagliato, sbagliato [avv]
+типи́чный = tipico [agg]
+
+### Frasi
+Мо́жно зада́ть вопро́с? = Posso fare una domanda?
+У меня́ есть маши́на. = Ho una macchina.
+Мне три́дцать лет. = Ho trent'anni.
+Я звоню́ ма́ме ка́ждый день. = Telefono alla mamma ogni giorno.
+Я хочу́, что́бы ты пришёл. = Voglio che tu venga.
+Я по оши́бке сел не на тот авто́бус. = Per sbaglio sono salito sull'autobus sbagliato.
+
+### Esercizi
+? ___ есть маши́на. = Ho una macchina. {У меня́ | Я | Мне}
+? ___ три́дцать лет. = Ho trent'anni. {Мне | Я | У меня́}
+? Мне нра́вится ___ . = Mi piace la pizza. {пи́цца | пи́ццу | пи́ццей}
+? Я звоню́ ___ . = Telefono alla mamma. {ма́ме | ма́му | ма́мы}
+? Я хочу́, ___ ты пришёл. = Voglio che tu venga. {что́бы | что | как}
+? Мо́жно ___ вопро́с? = Posso fare una domanda? {зада́ть | спроси́ть | сде́лать}
+? Я ___ душ ка́ждое у́тро. = Faccio la doccia ogni mattina. {принима́ю | де́лаю | беру́}
+> Correggi: «Я помога́ю его́» → Я помога́ю ему́
+~ Я хочу́, что́бы ты пришёл. = Voglio che tu venga.
+
+## Giorno 307 | Prestiti: dal mondo al russo e ritorno
+obiettivo: Riconoscere le parole straniere nel russo di oggi.
+breve: Dall'inglese: **ме́неджер, о́фис, дедла́йн, уике́нд, бло́гер**. Diventano verbi russi: **гу́глить** (cercare su Google), **ла́йкать**.
+breve: Dal tedesco: **бутербро́д** (panino!), **бухга́лтер** (contabile), **шлагба́ум** (sbarra).
+breve: Dall'olandese, ai tempi di Pietro il Grande: **флаг**, **флот**, **руль** (volante), **зонт**.
+
+### Lezione
+#### Le ondate di parole straniere
+| Da… | Quando | Esempi |
+|---|---|---|
+| olandese | Pietro il Grande (1700) | флаг, флот, руль, зонт |
+| tedesco | XVIII-XIX secolo | бутербро́д, бухга́лтер, шлагба́ум |
+| francese | XIX secolo, l'aristocrazia | пальто́, пляж, шофёр, макия́ж |
+| italiano | musica e banche | о́пера, пиани́но, ба́нк, ка́сса |
+| inglese | oggi | ме́неджер, о́фис, дедла́йн, уике́нд |
+
+---
+#### Parole straniere con la grammatica russa
+Le parole nuove si declinano come quelle russe: **в о́фисе**, **с ме́неджером**, **к дедла́йну**.
+E i verbi prendono i suffissi russi:
+- **гу́глить** — cercare su Google: **Погугли́, как туда́ дое́хать!**
+- **ла́йкать** — mettere «mi piace»;
+- **кли́кнуть** — cliccare.
+
+> **Бутербро́д** in tedesco è «pane e burro» (Butterbrot), ma in russo è qualsiasi panino aperto: **бутербро́д с сы́ром**, **с колбасо́й**, **с икро́й**!
+
+### Parole
+ме́неджер = manager, impiegato [m]
+дедла́йн = scadenza [m]
+уике́нд = fine settimana (weekend) [m]
+гу́глить = cercare su Google [v impf; гу́глю, гу́глишь; pf погу́глить]
+бухга́лтер = contabile, ragioniere [m]
+руль = volante, timone [m]
+флаг = bandiera [m]
+
+### Frasi
+Мой брат рабо́тает ме́неджером в ба́нке. = Mio fratello fa il manager in una banca.
+У меня́ дедла́йн в пя́тницу! = Ho la scadenza venerdì!
+Что ты де́лаешь на уике́нд? = Che cosa fai nel weekend?
+Не зна́ешь? Погу́гли! = Non lo sai? Cercalo su Google!
+Бухга́лтер счита́ет зарпла́ту. = Il contabile calcola gli stipendi.
+За рулём сиди́т мой оте́ц. = Al volante c'è mio padre.
+
+### Esercizi
+? Мой брат рабо́тает ___ . = Mio fratello fa il manager. {ме́неджером | ме́неджер | ме́неджера}
+? У меня́ ___ в пя́тницу! = Ho la scadenza venerdì! {дедла́йн | уике́нд | о́фис}
+? Не зна́ешь? ___ ! = Non lo sai? Cercalo su Google! {Погу́гли | Гугл | Гу́глить}
+? За ___ сиди́т мой оте́ц. = Al volante c'è mio padre. {рулём | руль | руля́}
+? «бутербро́д» in russo è… {un panino aperto | pane e burro e basta | un dolce}
+? La parola «флаг» è arrivata in russo… {dall'olandese | dall'italiano | dall'inglese}
+> Scrivi «contabile» → бухга́лтер
+~ Что ты де́лаешь на уике́нд? = Che cosa fai nel weekend?
+
+## Giorno 308 | Ripasso e test del modulo 11
+obiettivo: Leggere un testo sulla cortesia russa e fare il test del modulo.
+
+### Lettura | Ве́жливость | La cortesia
+Когда́ Ма́рко прие́хал в Москву́, ему́ показа́лось, что ру́сские ре́дко улыба́ются. = Quando Marco arrivò a Mosca, gli sembrò che i russi sorridessero raramente.
+В магази́нах и в метро́ лю́ди бы́ли серьёзными и молчали́выми. = Nei negozi e in metro la gente era seria e silenziosa.
+Но ско́ро он по́нял: в Росси́и не при́нято улыба́ться незнако́мым лю́дям без причи́ны. = Ma presto capì: in Russia non si usa sorridere agli sconosciuti senza un motivo.
+Зато́ с друзья́ми ру́сские о́чень тёплые и откры́тые. = In compenso con gli amici i russi sono molto calorosi e aperti.
+Ма́рко узна́л, что к нача́льнику и к пожилы́м лю́дям на́до обраща́ться на «вы» и по и́мени-о́тчеству. = Marco imparò che al capo e alle persone anziane bisogna dare del lei e chiamarli per nome e patronimico.
+В авто́бусе молоды́е уступа́ют ме́сто пожилы́м. = Sull'autobus i giovani cedono il posto agli anziani.
+А пе́ред остано́вкой спра́шивают: «Извини́те, вы выхо́дите?» = E prima della fermata chiedono: «Scusi, scende?»
+Одна́жды Ма́рко спроси́л у прохо́жего: «Вы не подска́жете, где здесь апте́ка?» = Un giorno Marco chiese a un passante: «Mi saprebbe dire dov'è una farmacia?»
+Прохо́жий не то́лько показа́л доро́гу, но и проводи́л его́ до са́мой две́ри. = Il passante non solo gli indicò la strada, ma lo accompagnò fino alla porta.
+Тепе́рь Ма́рко зна́ет: ру́сская ве́жливость — не в улы́бке, а в посту́пках. = Ora Marco sa che la cortesia russa non sta nel sorriso, ma nei fatti.
+
+### Domande
+? Che cosa sembrò a Marco all'inizio? {che i russi sorridessero poco | che i russi fossero maleducati | che i russi parlassero troppo}
+? Come ci si rivolge a un capo? {con il «вы» e nome e patronimico | con il «ты» | solo con il cognome}
+? Che cosa si chiede sull'autobus prima della fermata? {«Scusi, scende?» | «Che ore sono?» | «Posso sedermi?»}
+? Dove sta, secondo Marco, la cortesia russa? {nei fatti | nel sorriso | nelle parole}

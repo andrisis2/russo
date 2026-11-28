@@ -1,0 +1,412 @@
+# Settimana 6 | Numeri, ore, giorni
+
+## Giorno 36 | I numeri da 11 a 100
+obiettivo: Contare fino a cento.
+breve: 11-19: numero + **-надцать** (un'antica «sopra dieci»): оди́ннадцать, двена́дцать…
+breve: Le decine: два́дцать, три́дцать, **со́рок**, пятьдеся́т… **девяно́сто**, **сто**.
+breve: I numeri composti si dicono come in italiano: два́дцать оди́н, со́рок пять.
+
+### Lezione
+#### Da 11 a 19
+Si prende il numero e si aggiunge **-надцать** («sopra il dieci»):
+
+| | | | |
+|---|---|---|---|
+| 11 оди́ннадцать | 12 двена́дцать | 13 трина́дцать | 14 четы́рнадцать |
+| 15 пятна́дцать | 16 шестна́дцать | 17 семна́дцать | 18 восемна́дцать |
+| 19 девятна́дцать | | | |
+
+> L'accento cade sempre sulla sillaba **-на́-**, tranne in **оди́ннадцать** e **четы́рнадцать**.
+
+---
+#### Le decine
+| | | | |
+|---|---|---|---|
+| 20 два́дцать | 30 три́дцать | 40 **со́рок** | 50 пятьдеся́т |
+| 60 шестьдеся́т | 70 се́мьдесят | 80 во́семьдесят | 90 **девяно́сто** |
+| 100 **сто** | | | |
+
+Le eccezioni sono **со́рок** (40), **девяно́сто** (90) e **сто** (100): vanno imparate così.
+
+---
+#### I numeri composti
+Come in italiano, decina + unità: **два́дцать оди́н** (21), **три́дцать пять** (35), **девяно́сто де́вять** (99).
+
+> In **пятьдеся́т**, **шестьдеся́т** ecc. il segno **ь** sta in mezzo, non alla fine.
+
+### Parole
+оди́ннадцать = undici [num]
+двена́дцать = dodici [num]
+пятна́дцать = quindici [num]
+два́дцать = venti [num]
+три́дцать = trenta [num]
+со́рок = quaranta [num]
+пятьдеся́т = cinquanta [num]
+девяно́сто = novanta [num]
+сто = cento [num]
+
+### Frasi
+Два́дцать оди́н, два́дцать два, два́дцать три. = Ventuno, ventidue, ventitré.
+Но́мер со́рок пять. = Il numero quarantacinque.
+Мне два́дцать пять. = Ho venticinque anni.
+Сто — э́то мно́го! = Cento è tanto!
+Пятна́дцать и пятна́дцать — три́дцать. = Quindici più quindici fa trenta.
+
+### Esercizi
+? Quale numero è «со́рок»? {40 | 14 | 4}
+? Quale numero è «девяно́сто»? {90 | 19 | 9}
+? Quale numero è «двена́дцать»? {12 | 20 | 2}
+? Come si dice 50? {пятьдеся́т | пятна́дцать | пять}
+? Come si dice 100? {сто | со́рок | сот}
+? Come si dice 33? {три́дцать три | трина́дцать три | три три}
+? Quale numero è «восемна́дцать»? {18 | 80 | 8}
+> 15 in russo → пятна́дцать
+> 20 in russo → два́дцать
+> 40 in russo → со́рок
+vedi: numeri
+
+## Giorno 37 | Che ore sono?
+obiettivo: Chiedere e dire l'ora.
+breve: **Ско́лько сейча́с вре́мени?** / **Кото́рый час?** — Che ore sono?
+breve: 1 час · 2, 3, 4 часа́ · 5-20 часо́в (lo stesso per мину́та: мину́та, мину́ты, мину́т).
+breve: «Alle tre»: **в три часа́**.
+
+### Lezione
+#### La domanda
+- **Ско́лько сейча́с вре́мени?** — Che ore sono? (alla lettera «quanto tempo è adesso?»)
+- **Кото́рый час?** — Che ora è? (un po' più formale)
+
+---
+#### Uno, due, cinque
+Dopo i numeri la parola **час** (ora) cambia forma. È una regola che vale per **tutti** i nomi:
+
+| Numero | Forma | Esempio |
+|---|---|---|
+| 1 (21, 31…) | час | **час**, два́дцать оди́н час |
+| 2, 3, 4 | часа́ | два **часа́**, три **часа́** |
+| 5-20 | часо́в | пять **часо́в**, двена́дцать **часо́в** |
+
+Per i minuti è lo stesso: **одна́ мину́та**, **две мину́ты**, **пять мину́т**.
+
+> Con «una» ora non si dice il numero: **Сейча́с час.** — È l'una.
+
+---
+#### Esempi
+- **Сейча́с три часа́ два́дцать мину́т.** — Sono le tre e venti.
+- **Ро́вно семь.** — Le sette in punto.
+- A che ora? **в** + l'ora: **в два часа́** (alle due), **в по́лдень** (a mezzogiorno), **в по́лночь** (a mezzanotte).
+
+> Nella sezione **Numeri e ore** dell'app c'è l'orologio con cui allenarti.
+
+### Parole
+час = ora, l'una [m; 2-4 часа́, 5+ часо́в]
+мину́та = minuto [f; 2-4 мину́ты, 5+ мину́т]
+вре́мя = tempo, ora [n]
+ско́лько = quanto, quanti [avv]
+ско́лько вре́мени? = che ore sono? [espr]
+ро́вно = in punto, esattamente [avv]
+по́лдень = mezzogiorno [m]
+по́лночь = mezzanotte [f]
+
+### Frasi
+Ско́лько сейча́с вре́мени? — Три часа́. = Che ore sono? — Le tre.
+Сейча́с час. = È l'una.
+Сейча́с пять часо́в два́дцать мину́т. = Sono le cinque e venti.
+Конце́рт в семь часо́в. = Il concerto è alle sette.
+Уро́к в два часа́. = La lezione è alle due.
+Ро́вно по́лдень. = È mezzogiorno in punto.
+
+### Esercizi
+? Сейча́с два ___ . = Sono le due. {часа́ | час | часо́в}
+? Сейча́с пять ___ . = Sono le cinque. {часо́в | часа́ | час}
+? Сейча́с ___ . = È l'una. {час | оди́н часа́ | одна́ часо́в}
+? Сейча́с де́сять ___ . = Sono le dieci. {часо́в | часа́ | час}
+? Три ___ . = Tre minuti. {мину́ты | мину́т | мину́та}
+? Два́дцать ___ . = Venti minuti. {мину́т | мину́ты | мину́та}
+? Конце́рт ___ семь часо́в. = Il concerto è alle sette. {в | на | о}
+? «по́лночь» vuol dire… {mezzanotte | mezzogiorno | notte fonda}
+> Che ore sono? (in russo) → ско́лько вре́мени / ско́лько сейча́с вре́мени / кото́рый час
+vedi: numeri
+
+## Giorno 38 | I giorni della settimana
+obiettivo: Dire i giorni della settimana e quando fai qualcosa.
+breve: понеде́льник, вто́рник, среда́, четве́рг, пя́тница, суббо́та, воскресе́нье.
+breve: «Il lunedì, di lunedì»: **в** + accusativo: в понеде́льник, во вто́рник, в сре́ду, в пя́тницу.
+breve: вчера́ (ieri), сего́дня (oggi), за́втра (domani); неде́ля = settimana.
+
+### Lezione
+#### La settimana russa
+| Giorno | Russo | Curiosità |
+|---|---|---|
+| lunedì | понеде́льник | «dopo la domenica» |
+| martedì | вто́рник | «il secondo» (второ́й) |
+| mercoledì | среда́ | «il centro» della settimana |
+| giovedì | четве́рг | «il quarto» |
+| venerdì | пя́тница | «il quinto» |
+| sabato | суббо́та | dal sabato ebraico |
+| domenica | воскресе́нье | «resurrezione» |
+
+> I giorni si scrivono con la lettera **minuscola**, come in italiano.
+
+---
+#### Quando? — в + accusativo
+Per dire **in che giorno** si usa **в** con l'**accusativo** (un nuovo caso: lo vedremo bene tra poco). Per i giorni basta sapere:
+
+| | |
+|---|---|
+| в понеде́льник | в пя́тниц**у** |
+| **во** вто́рник | в суббо́т**у** |
+| в сре́д**у** | в воскресе́нье |
+| в четве́рг | |
+
+I maschili e il neutro non cambiano; i femminili in **-а** fanno **-у**. E davanti a **вт-** si dice **во**.
+
+---
+#### Ieri, oggi, domani
+**вчера́** — ieri; **сего́дня** — oggi; **за́втра** — domani.
+**Сего́дня пя́тница, а за́втра суббо́та!** — Oggi è venerdì, e domani è sabato!
+
+### Parole
+понеде́льник = lunedì [m]
+вто́рник = martedì [m]
+среда́ = mercoledì [f; в сре́ду]
+четве́рг = giovedì [m]
+пя́тница = venerdì [f]
+суббо́та = sabato [f]
+воскресе́нье = domenica [n]
+неде́ля = settimana [f]
+вчера́ = ieri [avv]
+за́втра = domani [avv]
+
+### Frasi
+Сего́дня пя́тница, а за́втра суббо́та! = Oggi è venerdì, e domani è sabato!
+В понеде́льник я рабо́таю. = Il lunedì lavoro.
+Во вто́рник у меня́ уро́к. = Martedì ho lezione.
+В сре́ду мы в теа́тре. = Mercoledì siamo a teatro.
+В суббо́ту и в воскресе́нье мы отдыха́ем. = Sabato e domenica ci riposiamo.
+Како́й сего́дня день? — Четве́рг. = Che giorno è oggi? — Giovedì.
+
+### Esercizi
+? Quale giorno è «среда́»? {mercoledì | martedì | giovedì}
+? Quale giorno è «пя́тница»? {venerdì | sabato | giovedì}
+? Quale giorno è «воскресе́нье»? {domenica | sabato | lunedì}
+? ___ вто́рник = martedì (quando?) {во | в | на}
+? В ___ мы отдыха́ем. = Il sabato ci riposiamo. {суббо́ту | суббо́та | суббо́те}
+? В ___ я рабо́таю. = Il mercoledì lavoro. {сре́ду | среда́ | среде́}
+? «за́втра» vuol dire… {domani | ieri | oggi}
+? «неде́ля» vuol dire… {settimana | domenica | giorno}
+> Scrivi «lunedì» in russo → понеде́льник
+> Scrivi «ieri» in russo → вчера́
+~ В суббо́ту и в воскресе́нье мы отдыха́ем. = Sabato e domenica ci riposiamo.
+
+## Giorno 39 | Mattina, pomeriggio, sera
+obiettivo: Dire in che momento del giorno succede qualcosa.
+breve: у́тром (di mattina), днём (di pomeriggio), ве́чером (di sera), но́чью (di notte).
+breve: снача́ла (prima), пото́м (poi), ра́но (presto), по́здно (tardi).
+breve: выходны́е = il fine settimana.
+
+### Lezione
+#### Le parti del giorno
+| Nome | Quando? |
+|---|---|
+| у́тро (mattina) | **у́тром** — di mattina |
+| день (giorno) | **днём** — di giorno, nel pomeriggio |
+| ве́чер (sera) | **ве́чером** — di sera |
+| ночь (notte) | **но́чью** — di notte |
+
+Queste forme in **-ом/-ём/-ью** rispondono a **когда́?** (quando?). Sono lo **strumentale**, un altro caso che conoscerai: per ora imparale come avverbi.
+
+> Attenzione: **сего́дня у́тром** (stamattina), **вчера́ ве́чером** (ieri sera), **за́втра днём** (domani pomeriggio).
+
+---
+#### Prima, poi
+- **снача́ла** — prima, all'inizio; **пото́м** — poi, dopo.
+- **ра́но** — presto; **по́здно** — tardi.
+
+**Снача́ла я рабо́таю, пото́м отдыха́ю.** — Prima lavoro, poi mi riposo.
+
+---
+#### Il fine settimana
+**выходны́е** (plurale) — il weekend, i giorni liberi. **Что ты де́лаешь в выходны́е?** — Che fai nel fine settimana?
+
+### Parole
+у́тром = di mattina [avv]
+днём = di giorno, nel pomeriggio [avv]
+ве́чером = di sera [avv]
+но́чью = di notte [avv]
+ра́но = presto [avv]
+по́здно = tardi [avv]
+снача́ла = prima, all'inizio [avv]
+пото́м = poi, dopo [avv]
+выходны́е = fine settimana, giorni liberi [pl]
+
+### Frasi
+У́тром я рабо́таю, а ве́чером отдыха́ю. = La mattina lavoro e la sera mi riposo.
+Сего́дня ве́чером мы в теа́тре. = Stasera siamo a teatro.
+Снача́ла я чита́ю, пото́м смотрю́ фильм. = Prima leggo, poi guardo un film.
+Уже́ по́здно! = È già tardi!
+Что ты де́лаешь в выходны́е? = Che fai nel fine settimana?
+Но́чью я сплю. = Di notte dormo.
+
+### Esercizi
+? ___ я рабо́таю. = La mattina lavoro. {У́тром | У́тро | Ве́чер}
+? Сего́дня ___ мы в теа́тре. = Stasera siamo a teatro. {ве́чером | ве́чер | но́чью}
+? ___ я чита́ю, пото́м смотрю́ фильм. = Prima leggo, poi guardo un film. {Снача́ла | Пото́м | По́здно}
+? «по́здно» vuol dire… {tardi | presto | poi}
+? «выходны́е» vuol dire… {fine settimana | uscita | giorni feriali}
+? «вчера́ ве́чером» vuol dire… {ieri sera | stasera | domani sera}
+? Di notte: {но́чью | ночь | ночно́й}
+> Scrivi «di sera» in russo → ве́чером
+~ Снача́ла я рабо́таю, пото́м отдыха́ю. = Prima lavoro, poi mi riposo.
+
+## Giorno 40 | La mia giornata
+obiettivo: Raccontare una giornata tipo.
+breve: встава́ть (alzarsi): встаю́, встаёшь… · спать (dormire): сплю, спишь…
+breve: за́втракать, обе́дать, у́жинать: fare colazione, pranzare, cenare.
+breve: гуля́ть = passeggiare, andare a spasso.
+
+### Lezione
+#### Due verbi da guardare bene
+**Встава́ть** (alzarsi) perde **-ва-** al presente:
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| встаю́ | встаёшь | встаёт | встаём | встаёте | встаю́т |
+
+**Спать** (dormire) è della seconda coniugazione, con la **л** in prima persona:
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| сплю | спишь | спит | спим | спи́те | спят |
+
+---
+#### I pasti
+| Il pasto | Il verbo |
+|---|---|
+| за́втрак (colazione) | за́втракать (fare colazione) |
+| обе́д (pranzo) | обе́дать (pranzare) |
+| у́жин (cena) | у́жинать (cenare) |
+
+I tre verbi sono regolari, come **чита́ть**: **я за́втракаю, ты обе́даешь, мы у́жинаем**.
+
+> In Russia il **обе́д** è il pasto principale e si fa tra l'una e le tre.
+
+---
+#### Una giornata
+**Я встаю́ в семь часо́в. Снача́ла я за́втракаю, пото́м рабо́таю. В час я обе́даю. Ве́чером я гуля́ю, у́жинаю и сплю.**
+
+### Parole
+встава́ть = alzarsi [v impf; встаю́, встаёшь]
+спать = dormire [v impf; сплю, спишь]
+за́втракать = fare colazione [v impf; за́втракаю, за́втракаешь]
+обе́дать = pranzare [v impf; обе́даю, обе́даешь]
+у́жинать = cenare [v impf; у́жинаю, у́жинаешь]
+гуля́ть = passeggiare, andare a spasso [v impf; гуля́ю, гуля́ешь]
+за́втрак = colazione [m]
+обе́д = pranzo [m]
+у́жин = cena [m]
+
+### Frasi
+Я встаю́ в семь часо́в. = Mi alzo alle sette.
+Снача́ла я за́втракаю, пото́м рабо́таю. = Prima faccio colazione, poi lavoro.
+Мы обе́даем в час. = Pranziamo all'una.
+Ве́чером мы гуля́ем в па́рке. = La sera passeggiamo nel parco.
+Ты ещё спишь? = Dormi ancora?
+Где вы у́жинаете? — В рестора́не. = Dove cenate? — Al ristorante.
+
+### Esercizi
+> я (встава́ть) → встаю́
+> он (встава́ть) → встаёт
+> я (спать) → сплю
+> ты (спать) → спишь
+? Мы ___ в час. = Pranziamo all'una. {обе́даем | обе́д | обе́дают}
+? Ве́чером они́ ___ в па́рке. = La sera passeggiano nel parco. {гуля́ют | гуля́ем | гуля́ет}
+? «у́жин» vuol dire… {cena | pranzo | colazione}
+? «за́втракать» vuol dire… {fare colazione | domani | pranzare}
+? Ты ещё ___ ? = Dormi ancora? {спишь | спит | сплю}
+~ Я встаю́ в семь часо́в. = Mi alzo alle sette.
+
+## Giorno 41 | Ho un fratello: у меня есть
+obiettivo: Dire che cosa hai (e chiedere agli altri).
+breve: «Avere» si dice **у меня́ есть** (alla lettera «presso di me c'è»).
+breve: у меня́, у тебя́, у него́, у неё, у нас, у вас, у них + **есть** + la cosa (al nominativo).
+breve: **У тебя́ есть вре́мя? — Да, есть.** — Hai tempo? — Sì.
+
+### Lezione
+Il russo non ha un verbo «avere» di uso comune. Si dice invece **«presso di me c'è»**:
+
+**У меня́ есть брат.** — Ho un fratello.
+
+---
+#### Le persone
+| Avere | Russo |
+|---|---|
+| io ho | у меня́ есть |
+| tu hai | у тебя́ есть |
+| lui ha | у него́ есть |
+| lei ha | у неё есть |
+| noi abbiamo | у нас есть |
+| voi avete, Lei ha | у вас есть |
+| loro hanno | у них есть |
+
+> Dopo **у** i pronomi di terza persona prendono una **н-** davanti: **у него́**, **у неё**, **у них** (non «у его́»).
+
+---
+#### Domandare e rispondere
+- **У тебя́ есть маши́на? — Да, есть.** — Hai la macchina? — Sì.
+- **У вас есть вопро́с?** — Ha una domanda?
+
+La cosa posseduta resta al **nominativo** (la forma del dizionario).
+
+> Quando si descrive una cosa che si ha, **есть** spesso sparisce: **У меня́ ма́ленькая кварти́ра.** — Ho un appartamento piccolo.
+
+### Parole
+у = presso, da (+ genitivo) [prep]
+у меня́ есть = io ho [espr]
+вопро́с = domanda [m]
+отве́т = risposta [m]
+де́ньги = soldi [pl]
+пробле́ма = problema [f]
+иде́я = idea [f]
+пра́здник = festa [m]
+
+### Frasi
+У меня́ есть брат и сестра́. = Ho un fratello e una sorella.
+У тебя́ есть вре́мя? — Да, есть. = Hai tempo? — Sì.
+У него́ есть маши́на. = Lui ha la macchina.
+У вас есть вопро́с? = Ha una domanda?
+У меня́ есть иде́я! = Ho un'idea!
+У нас пробле́ма. = Abbiamo un problema.
+
+### Esercizi
+? У ___ есть брат. = Ho un fratello. {меня́ | я | мне}
+? У ___ есть вре́мя? = Hai tempo? {тебя́ | ты | тебе́}
+? У ___ есть маши́на. = Lui ha la macchina. {него́ | его́ | он}
+? У ___ есть де́ти. = Lei ha dei figli. {неё | её | она́}
+? У ___ есть вопро́с. = Abbiamo una domanda. {нас | мы | нам}
+? У них ___ де́ньги. = Loro hanno i soldi. {есть | быть | э́то}
+? «отве́т» vuol dire… {risposta | domanda | soldi}
+> Scrivi «io ho» in russo → у меня́ есть
+~ У меня́ есть иде́я! = Ho un'idea!
+
+## Giorno 42 | Ripasso della settimana
+obiettivo: Leggere il racconto di una giornata.
+
+### Lettura | Мой день | La mia giornata
+Меня́ зову́т Ива́н. Я инжене́р. = Mi chiamo Ivan. Sono ingegnere.
+Ка́ждый день я встаю́ в шесть часо́в. = Ogni giorno mi alzo alle sei.
+Снача́ла я за́втракаю: чай и хлеб. = Prima faccio colazione: tè e pane.
+Пото́м я рабо́таю. Мой о́фис в це́нтре. = Poi lavoro. Il mio ufficio è in centro.
+В час я обе́даю в кафе́. = All'una pranzo al bar.
+Ве́чером я гуля́ю в па́рке. = La sera passeggio nel parco.
+У меня́ есть соба́ка, её зову́т Ша́рик. = Ho un cane, si chiama Šarik.
+В семь часо́в мы у́жинаем до́ма. = Alle sette ceniamo a casa.
+Пото́м я чита́ю и́ли смотрю́ фильм. = Poi leggo o guardo un film.
+Я сплю в оди́ннадцать часо́в. = Vado a dormire alle undici.
+А в суббо́ту и в воскресе́нье я встаю́ по́здно! = Ma il sabato e la domenica mi alzo tardi!
+
+### Domande
+? A che ora si alza Ivan? {alle sei | alle sette | alle undici}
+? Dove pranza? {al bar | a casa | in ufficio}
+? Chi è Šarik? {il suo cane | suo fratello | un collega}
+? Che cosa fa nel fine settimana? {si alza tardi | lavora | si alza alle sei}

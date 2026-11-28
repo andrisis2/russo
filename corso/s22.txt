@@ -1,0 +1,333 @@
+# Settimana 22 | Portare e viaggiare
+
+## Giorno 148 | Portare: нести, везти, вести
+obiettivo: Distinguere i tre verbi russi per «portare».
+breve: нести́ / носи́ть = portare **in mano, addosso** (a piedi): несу́ су́мку.
+breve: везти́ / вози́ть = portare **con un mezzo**: везу́ дете́й на маши́не.
+breve: вести́ / води́ть = **accompagnare, condurre** (persone, animali): веду́ сы́на в шко́лу; води́ть маши́ну = guidare.
+
+### Lezione
+#### Tre «portare»
+Come per «andare», il russo distingue **come** si porta qualcosa:
+
+| Una direzione | In generale | Significato |
+|---|---|---|
+| нести́ (несу́, несёшь) | носи́ть (ношу́, но́сишь) | portare in mano, a piedi |
+| везти́ (везу́, везёшь) | вози́ть (вожу́, во́зишь) | portare con un mezzo, trasportare |
+| вести́ (веду́, ведёшь) | води́ть (вожу́, во́дишь) | condurre, accompagnare a piedi |
+
+---
+#### Esempi
+- **Я несу́ тяжёлую су́мку.** — Porto una borsa pesante.
+- **Па́па везёт дете́й на да́чу.** — Papà porta i bambini in dacia (in macchina).
+- **Ма́ма ведёт сы́на в шко́лу.** — La mamma accompagna il figlio a scuola.
+
+---
+#### Significati speciali
+- **носи́ть** = anche **indossare**: **Она́ но́сит очки́.** — Porta gli occhiali.
+- **води́ть маши́ну** = **guidare**: **Ты уме́ешь води́ть маши́ну?** — Sai guidare?
+
+### Parole
+нести́ = portare (in mano, a piedi, in una direzione) [v impf; несу́, несёшь; нёс, несла́]
+носи́ть = portare (in generale); indossare [v impf; ношу́, но́сишь]
+везти́ = portare con un mezzo, trasportare [v impf; везу́, везёшь; вёз, везла́]
+вози́ть = portare con un mezzo (in generale) [v impf; вожу́, во́зишь]
+вести́ = condurre, accompagnare [v impf; веду́, ведёшь; вёл, вела́]
+води́ть = condurre (in generale); guidare (un'auto) [v impf; вожу́, во́дишь]
+
+### Frasi
+Я несу́ тяжёлую су́мку. = Porto una borsa pesante.
+Па́па везёт дете́й на да́чу. = Papà porta i bambini in dacia.
+Ма́ма ведёт сы́на в шко́лу. = La mamma accompagna il figlio a scuola.
+Она́ всегда́ но́сит с собо́й зонт. = Porta sempre con sé l'ombrello.
+Ты уме́ешь води́ть маши́ну? = Sai guidare la macchina?
+Ка́ждый день я вожу́ соба́ку в парк. = Ogni giorno porto il cane al parco.
+
+### Esercizi
+? Я ___ су́мку. = Porto una borsa (in mano, adesso). {несу́ | везу́ | веду́}
+? Па́па ___ дете́й на да́чу. = Papà porta i bambini in dacia (in macchina). {везёт | несёт | ведёт}
+? Ма́ма ___ сы́на в шко́лу. = La mamma accompagna il figlio a scuola. {ведёт | несёт | везёт}
+? Ты уме́ешь ___ маши́ну? = Sai guidare la macchina? {води́ть | вози́ть | вести́}
+? Она́ ___ очки́. = Porta gli occhiali. {но́сит | несёт | во́зит}
+? Il passato di «нести́» (lui) è… {нёс | нести́л | несл}
+> я (вести́) → веду́
+> я (носи́ть) → ношу́
+~ Ма́ма ведёт сы́на в шко́лу. = La mamma accompagna il figlio a scuola.
+
+## Giorno 149 | Portare con i prefissi
+obiettivo: Usare i verbi «portare» con i prefissi.
+breve: при- = portare qui: принести́ (in mano), привезти́ (col mezzo), привести́ (accompagnare qui).
+breve: от- = portare via, riportare: отнести́ кни́гу в библиоте́ку.
+breve: **Принеси́те, пожа́луйста, меню́!** — Mi porti il menù!
+
+### Lezione
+I prefissi funzionano esattamente come con **идти́**:
+
+| | нести́ (a mano) | везти́ (mezzo) | вести́ (persone) |
+|---|---|---|---|
+| при- (portare qui) | принести́ | привезти́ | привести́ |
+| у- (portare via) | унести́ | увезти́ | увести́ |
+| от- (portare a…, riportare) | отнести́ | отвезти́ | отвести́ |
+
+Gli imperfettivi: **приноси́ть**, **привози́ть**, **приводи́ть**, **относи́ть**…
+
+---
+#### Esempi
+- **Принеси́ мне, пожа́луйста, во́ду.** — Portami dell'acqua, per favore.
+- **Я привёз пода́рки из Ита́лии.** — Ho portato dei regali dall'Italia.
+- **Приводи́ дете́й в го́сти!** — Porta i bambini quando vieni a trovarci!
+- **На́до отнести́ кни́ги в библиоте́ку.** — Bisogna riportare i libri in biblioteca.
+- **Я отвезу́ тебя́ в аэропо́рт.** — Ti accompagno io all'aeroporto (in macchina).
+
+### Parole
+принести́ = portare (qui, a mano) [v pf; принесу́, принесёшь]
+привезти́ = portare (qui, con un mezzo) [v pf; привезу́, привезёшь]
+привести́ = portare, accompagnare (qui una persona) [v pf; приведу́, приведёшь]
+отнести́ = portare (a un posto), riportare [v pf; отнесу́, отнесёшь]
+
+### Frasi
+Принеси́ мне, пожа́луйста, во́ду. = Portami dell'acqua, per favore.
+Я привёз пода́рки из Ита́лии. = Ho portato dei regali dall'Italia.
+Приводи́ дете́й в го́сти! = Porta i bambini quando vieni a trovarci!
+На́до отнести́ кни́ги в библиоте́ку. = Bisogna riportare i libri in biblioteca.
+Я отвезу́ тебя́ в аэропо́рт. = Ti accompagno io all'aeroporto.
+Что тебе́ привезти́ из Москвы́? = Che cosa ti porto da Mosca?
+
+### Esercizi
+? ___ мне, пожа́луйста, во́ду. = Portami dell'acqua. {Принеси́ | Привези́ | Приведи́}
+? Я ___ пода́рки из Ита́лии. = Ho portato dei regali dall'Italia (in aereo). {привёз | принёс | привёл}
+? ___ дете́й в го́сти! = Porta i bambini (accompagnali) da noi! {Приводи́ | Приноси́ | Привози́}
+? На́до ___ кни́ги в библиоте́ку. = Bisogna riportare i libri in biblioteca. {отнести́ | принести́ | унести́}
+? Я ___ тебя́ в аэропо́рт. = Ti accompagno all'aeroporto (in macchina). {отвезу́ | отнесу́ | отведу́}
+? Что тебе́ ___ из Москвы́? = Che cosa ti porto da Mosca? {привезти́ | принести́ | привести́}
+~ Что тебе́ привезти́ из Москвы́? = Che cosa ti porto da Mosca?
+
+## Giorno 150 | In metro e in autobus
+obiettivo: Muoverti in città con i mezzi pubblici.
+breve: ста́нция (stazione della metro), ли́ния (linea), переса́дка (cambio): **сде́лать переса́дку**.
+breve: **Вы выхо́дите на сле́дующей (остано́вке)?** — Scende alla prossima?
+breve: проездно́й = abbonamento; води́тель = autista.
+
+### Lezione
+#### La metro
+- **ста́нция** — stazione della metro: **на ста́нции «Пу́шкинская»**;
+- **ли́ния** — linea: **кра́сная ли́ния**;
+- **переса́дка** — cambio: **Где переса́дка на кольцеву́ю ли́нию?** — Dov'è il cambio per la linea circolare?
+- **сде́лать переса́дку** — cambiare (linea).
+
+> La metro di Mosca è famosa per le stazioni-palazzo: vale una visita anche senza dover andare da nessuna parte!
+
+---
+#### L'autobus
+- **Э́тот авто́бус идёт до вокза́ла?** — Questo autobus va alla stazione? (per i mezzi pubblici si usa **идти́**!)
+- **Ско́лько остано́вок до це́нтра?** — Quante fermate ci sono fino al centro?
+- **Вы выхо́дите на сле́дующей?** — Scende alla prossima?
+
+---
+#### Biglietti
+**биле́т** — biglietto; **проездно́й** — abbonamento; **ка́рта «Тро́йка»** — la tessera dei trasporti di Mosca. **води́тель** — autista.
+
+### Parole
+ста́нция = stazione (della metro, del treno) [f]
+ли́ния = linea [f]
+переса́дка = cambio (di linea, di mezzo) [f]
+проездно́й = abbonamento (ai trasporti) [m; si declina come un aggettivo]
+води́тель = autista, conducente [m]
+
+### Frasi
+Где переса́дка на кра́сную ли́нию? = Dov'è il cambio per la linea rossa?
+На како́й ста́нции на́до вы́йти? = A quale stazione bisogna scendere?
+Э́тот авто́бус идёт до вокза́ла? = Questo autobus va alla stazione?
+Ско́лько остано́вок до це́нтра? = Quante fermate ci sono fino al centro?
+Вы выхо́дите на сле́дующей? = Scende alla prossima?
+У меня́ есть проездно́й на ме́сяц. = Ho un abbonamento mensile.
+
+### Esercizi
+? Где ___ на кра́сную ли́нию? = Dov'è il cambio per la linea rossa? {переса́дка | переса́дку | вы́ход}
+? На како́й ___ на́до вы́йти? = A quale stazione bisogna scendere? {ста́нции | ста́нция | ста́нцию}
+? Э́тот авто́бус ___ до вокза́ла? = Questo autobus va alla stazione? {идёт | е́дет | везёт}
+? Ско́лько ___ до це́нтра? = Quante fermate fino al centro? {остано́вок | остано́вки | остано́вка}
+? Вы ___ на сле́дующей? = Scende alla prossima? {выхо́дите | вы́йдите | вхо́дите}
+? «води́тель» vuol dire… {autista | viaggiatore | controllore}
+~ Вы выхо́дите на сле́дующей? = Scende alla prossima?
+
+## Giorno 151 | In aeroporto e in stazione
+obiettivo: Cavartela in aeroporto e alla stazione.
+breve: рейс (volo), регистра́ция (check-in), поса́дка (imbarco), бага́ж (bagaglio).
+breve: вы́лет / прилёт (partenza / arrivo di un aereo); отправле́ние / прибы́тие (del treno).
+breve: **Рейс заде́рживается.** — Il volo è in ritardo.
+
+### Lezione
+#### In aeroporto
+| Russo | Italiano |
+|---|---|
+| рейс | volo |
+| регистра́ция | check-in |
+| поса́дка | imbarco |
+| вы́лет | partenza (aereo) |
+| прилёт | arrivo (aereo) |
+| бага́ж | bagaglio |
+| ручна́я кладь | bagaglio a mano |
+
+- **Где регистра́ция на рейс в Рим?** — Dov'è il check-in per il volo per Roma?
+- **Поса́дка начина́ется в 10:30.** — L'imbarco inizia alle 10:30.
+- **Рейс заде́рживается на час.** — Il volo è in ritardo di un'ora.
+
+---
+#### In stazione
+- **ваго́н** — carrozza; **ме́сто** — posto: **ваго́н пять, ме́сто двена́дцать**;
+- **расписа́ние** — orario (dei treni, delle lezioni);
+- **По́езд отправля́ется с пе́рвого пути́.** — Il treno parte dal binario uno (**путь** = binario!).
+
+### Parole
+рейс = volo, corsa [m]
+регистра́ция = check-in, registrazione [f]
+поса́дка = imbarco [f]
+бага́ж = bagaglio [m]
+вы́лет = partenza (di un aereo) [m]
+прилёт = arrivo (di un aereo) [m]
+расписа́ние = orario [n]
+ваго́н = carrozza, vagone [m]
+ме́сто = posto, luogo [n]
+
+### Frasi
+Где регистра́ция на рейс в Рим? = Dov'è il check-in per il volo per Roma?
+Поса́дка начина́ется в де́сять три́дцать. = L'imbarco inizia alle dieci e trenta.
+Наш рейс заде́рживается на час. = Il nostro volo è in ritardo di un'ora.
+Где мо́жно получи́ть бага́ж? = Dove si ritira il bagaglio?
+У меня́ пя́тый ваго́н, двена́дцатое ме́сто. = Ho la carrozza cinque, posto dodici.
+Посмотри́ расписа́ние поездо́в. = Guarda l'orario dei treni.
+
+### Esercizi
+? Где ___ на рейс в Рим? = Dov'è il check-in per il volo per Roma? {регистра́ция | поса́дка | вы́лет}
+? ___ начина́ется в де́сять. = L'imbarco inizia alle dieci. {Поса́дка | Посади́ть | Сади́тесь}
+? Наш ___ заде́рживается. = Il nostro volo è in ritardo. {рейс | ре́йса | ваго́н}
+? Где мо́жно получи́ть ___ ? = Dove si ritira il bagaglio? {бага́ж | бага́жа | бага́же}
+? У меня́ пя́тый ___ . = Ho la carrozza cinque. {ваго́н | ме́сто | путь}
+? «прилёт» vuol dire… {arrivo (aereo) | partenza (aereo) | volo}
+> Scrivi «orario» (dei treni) in russo → расписа́ние
+~ Наш рейс заде́рживается на час. = Il nostro volo è in ritardo di un'ora.
+
+## Giorno 152 | Da dove? откуда
+obiettivo: Mettere in tabella dove, verso dove e da dove.
+breve: где? (в/на + prep.) · куда́? (в/на + acc.) · отку́да? (из/с + gen.).
+breve: в → из (в шко́ле → из шко́лы); на → **с** (на рабо́те → с рабо́ты); у + persona → **от** (у врача́ → от врача́).
+breve: за грани́цей = all'estero · за грани́цу = (andare) all'estero.
+
+### Lezione
+#### La grande tabella
+| | Где? (stato) | Куда́? (moto a) | Отку́да? (moto da) |
+|---|---|---|---|
+| в | в шко́ле | в шко́лу | **из** шко́лы |
+| на | на рабо́те | на рабо́ту | **с** рабо́ты |
+| persona | у врача́ | к врачу́ | **от** врача́ |
+| casa | до́ма | домо́й | из до́ма |
+| qui | здесь | сюда́ | отсю́да |
+| là | там | туда́ | отту́да |
+
+La regola: **в → из**, **на → с**, **у / к → от**.
+
+---
+#### Esempi
+- **Я иду́ с рабо́ты.** — Torno dal lavoro.
+- **Он прие́хал из Ита́лии.** — È arrivato dall'Italia.
+- **Мы идём от врача́.** — Torniamo dal medico.
+- **Я пришёл с конце́рта.** — Sono tornato dal concerto.
+
+> **с** + genitivo (da) e **с** + strumentale (con) sono la stessa preposizione con due casi diversi.
+
+---
+#### All'estero
+**грани́ца** — confine. **за грани́цей** — all'estero (dove); **за грани́цу** — all'estero (moto); **из-за грани́цы** — dall'estero.
+
+### Parole
+грани́ца = confine, frontiera [f]
+за грани́цей = all'estero [espr]
+отсю́да = da qui [avv]
+отту́да = da là [avv]
+
+### Frasi
+Я иду́ с рабо́ты. = Torno dal lavoro.
+Он прие́хал из Ита́лии вчера́. = È arrivato dall'Italia ieri.
+Мы идём от врача́. = Torniamo dal medico.
+Отсю́да до це́нтра далеко́? = Da qui al centro è lontano?
+Мой брат живёт за грани́цей. = Mio fratello vive all'estero.
+Ле́том мы е́дем за грани́цу. = D'estate andiamo all'estero.
+
+### Esercizi
+? Я иду́ ___ рабо́ты. = Torno dal lavoro. {с | из | от}
+? Он прие́хал ___ Ита́лии. = È arrivato dall'Italia. {из | с | от}
+? Мы идём ___ врача́. = Torniamo dal medico. {от | из | с}
+? Я пришёл ___ конце́рта. = Sono tornato dal concerto. {с | из | от}
+? Она́ вы́шла ___ магази́на. = È uscita dal negozio. {из | с | от}
+? ___ до це́нтра далеко́? = Da qui al centro è lontano? {Отсю́да | Сюда́ | Здесь}
+? Мой брат живёт ___ . = Mio fratello vive all'estero. {за грани́цей | за грани́цу | из-за грани́цы}
+~ Я иду́ с рабо́ты. = Torno dal lavoro.
+
+## Giorno 153 | Raccontare un viaggio
+obiettivo: Raccontare un viaggio dall'inizio alla fine.
+breve: Racconto: пое́хали → прие́хали → жи́ли → ходи́ли / е́здили → верну́лись.
+breve: пое́здка = viaggio (breve), gita · о́стров (isola), гора́ (montagna), пляж (spiaggia).
+breve: **Как съе́здили?** — Com'è andato il viaggio?
+
+### Lezione
+#### Le tappe di un viaggio
+1. **la partenza**: **В ию́ле мы пое́хали на юг.** — A luglio siamo partiti per il sud.
+2. **l'arrivo**: **Мы прие́хали ве́чером.** — Siamo arrivati la sera.
+3. **la vita là** (imperfettivo): **Мы жи́ли в гости́нице на берегу́ мо́ря.**
+4. **le gite** (andata e ritorno): **Мы е́здили на о́стров, ходи́ли в го́ры.**
+5. **il ritorno**: **Че́рез две неде́ли мы верну́лись домо́й.**
+
+---
+#### Le domande degli amici
+- **Как съе́здили?** — Com'è andato il viaggio? (**съе́здить** = fare un salto, un viaggio andata e ritorno)
+- **Где вы бы́ли?** — Dove siete stati?
+- **Что вам бо́льше всего́ понра́вилось?** — Che cosa vi è piaciuto di più?
+
+---
+#### La natura
+**пляж** (spiaggia), **о́стров** (isola), **гора́** (montagna; plurale **го́ры**: **в гора́х** = in montagna).
+
+### Parole
+пое́здка = viaggio, gita [f]
+о́стров = isola [m; plurale острова́]
+гора́ = montagna [f; plurale го́ры]
+пляж = spiaggia [m]
+
+### Frasi
+В ию́ле мы пое́хали на юг. = A luglio siamo partiti per il sud.
+Мы жи́ли в гости́нице на берегу́ мо́ря. = Abitavamo in un albergo in riva al mare.
+Ка́ждый день мы ходи́ли на пляж. = Ogni giorno andavamo in spiaggia.
+Одна́жды мы е́здили на о́стров. = Una volta siamo andati su un'isola.
+Как съе́здили? — Отли́чно! = Com'è andato il viaggio? — Benissimo!
+Мне бо́льше всего́ понра́вились го́ры. = Mi sono piaciute di più le montagne.
+
+### Esercizi
+? В ию́ле мы ___ на юг. = A luglio siamo partiti per il sud. {пое́хали | е́здили | е́хали}
+? Ка́ждый день мы ___ на пляж. = Ogni giorno andavamo in spiaggia. {ходи́ли | пошли́ | шли}
+? Мы ___ ве́чером. = Siamo arrivati la sera. {прие́хали | уе́хали | пое́хали}
+? Как ___ ? = Com'è andato il viaggio? {съе́здили | е́здили | е́хали}
+? Мы отдыха́ли в ___ . = Abbiamo fatto vacanza in montagna. {гора́х | гора́ | го́ры}
+? «о́стров» vuol dire… {isola | ostrica | lago}
+~ Как съе́здили? — Отли́чно! = Com'è andato il viaggio? — Benissimo!
+
+## Giorno 154 | Ripasso della settimana
+obiettivo: Leggere il racconto di un viaggio sul lago Bajkal.
+
+### Lettura | Путеше́ствие на Байка́л | Viaggio sul Bajkal
+Про́шлым ле́том мы с му́жем е́здили на Байка́л. = L'estate scorsa io e mio marito siamo stati sul Bajkal.
+Мы лете́ли из Москвы́ в Ирку́тск шесть часо́в. = Abbiamo volato da Mosca a Irkutsk per sei ore.
+В аэропорту́ нас встре́тил наш друг Андре́й. = All'aeroporto ci è venuto a prendere il nostro amico Andrej.
+Он отвёз нас на маши́не к о́зеру. = Ci ha portati in macchina fino al lago.
+Мы жи́ли в ма́леньком до́ме на берегу́. = Abbiamo abitato in una casetta sulla riva.
+Ка́ждый день мы ходи́ли в го́ры и́ли пла́вали на ло́дке. = Ogni giorno andavamo in montagna o in barca.
+Вода́ в Байка́ле о́чень чи́стая и холо́дная. = L'acqua del Bajkal è molto pulita e fredda.
+Одна́жды мы съе́здили на о́стров Ольхо́н. = Una volta siamo stati sull'isola di Ol'chon.
+Мы привезли́ домо́й мно́го фотогра́фий и копчёного о́муля, ме́стную ры́бу. = Abbiamo portato a casa molte foto e omul' affumicato, il pesce del posto.
+Э́то была́ са́мая краси́вая пое́здка в на́шей жи́зни! = È stato il viaggio più bello della nostra vita!
+
+### Domande
+? Come sono arrivati a Irkutsk? {in aereo | in treno | in macchina}
+? Chi li ha portati al lago? {il loro amico Andrej | un tassista | nessuno, ci sono andati a piedi}
+? Com'è l'acqua del Bajkal? {pulita e fredda | calda e torbida | salata}
+? Che cosa hanno portato a casa? {foto e pesce affumicato | dei souvenir | dell'acqua del lago}

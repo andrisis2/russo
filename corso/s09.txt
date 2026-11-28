@@ -1,0 +1,369 @@
+# Settimana 9 | Andare
+
+## Giorno 57 | Vado: идти e ехать
+obiettivo: Dire dove stai andando, a piedi o con un mezzo.
+breve: идти́ = andare **a piedi**; е́хать = andare **con un mezzo** (macchina, autobus, treno).
+breve: идти́: иду́, идёшь, идёт, идём, идёте, иду́т · е́хать: е́ду, е́дешь, е́дет, е́дем, е́дете, е́дут.
+breve: **Куда́ ты идёшь?** — Dove stai andando? (куда́ = verso dove)
+
+### Lezione
+#### A piedi o con un mezzo?
+L'italiano «andare» in russo è **due** verbi diversi:
+- **идти́** — andare **a piedi**: **Я иду́ в парк.**
+- **е́хать** — andare **con un mezzo**: **Я е́ду в Москву́.**
+
+> Se vai in un'altra città, quasi sempre **е́дешь**: non ci vai a piedi!
+
+---
+#### Il presente
+| | идти́ (a piedi) | е́хать (con un mezzo) |
+|---|---|---|
+| я | иду́ | е́ду |
+| ты | идёшь | е́дешь |
+| он, она́ | идёт | е́дет |
+| мы | идём | е́дем |
+| вы | идёте | е́дете |
+| они́ | иду́т | е́дут |
+
+Questi verbi indicano un movimento **in corso, in una direzione**: «sto andando, adesso, là».
+
+---
+#### Где o куда́?
+- **где?** — dove (si è): **Где ты? — Я в па́рке.**
+- **куда́?** — dove (si va): **Куда́ ты идёшь? — В парк.**
+
+Domani vedremo che dopo **куда́** il nome va all'**accusativo**.
+
+### Parole
+идти́ = andare (a piedi), camminare [v impf; иду́, идёшь]
+е́хать = andare (con un mezzo), viaggiare [v impf; е́ду, е́дешь]
+куда́ = dove (verso dove) [avv]
+
+### Frasi
+Куда́ ты идёшь? — Я иду́ в парк. = Dove vai? — Vado al parco.
+Мы е́дем в Москву́. = Andiamo a Mosca.
+Она́ идёт домо́й. = Sta andando a casa.
+Куда́ вы е́дете? — На вокза́л. = Dove sta andando? — Alla stazione.
+Они́ иду́т в кино́. = Vanno al cinema.
+Я е́ду на рабо́ту на авто́бусе. = Vado al lavoro in autobus.
+
+### Esercizi
+? Я ___ в парк. (a piedi) = Vado al parco. {иду́ | е́ду | идёт}
+? Мы ___ в Москву́. (in treno) = Andiamo a Mosca. {е́дем | идём | е́дут}
+? ___ ты идёшь? = Dove vai? {Куда́ | Где | Отку́да}
+? Она́ ___ домо́й. (a piedi) = Va a casa. {идёт | е́дет | иду́т}
+? Они́ ___ в Рим. (in aereo) = Vanno a Roma. {е́дут | иду́т | е́дет}
+? Вы ___ на рабо́ту? (in macchina) = Va al lavoro? {е́дете | идёте | е́дешь}
+? ___ ты? — В па́рке. = Dove sei? — Al parco. {Где | Куда́ | Отку́да}
+> я (идти́) → иду́
+> мы (е́хать) → е́дем
+~ Куда́ ты идёшь? = Dove vai?
+
+## Giorno 58 | Dove vai? куда + accusativo
+obiettivo: Distinguere «dove sei» e «dove vai».
+breve: **Где?** в/на + **prepositivo**: в па́рке, на рабо́те. **Куда́?** в/на + **accusativo**: в парк, на рабо́ту.
+breve: «A casa»: **до́ма** (dove si è) · **домо́й** (dove si va).
+breve: «Qui/là»: здесь, там (dove si è) · сюда́, туда́ (dove si va).
+
+### Lezione
+#### Due domande, due casi
+| | Где? (stato) | Куда́? (moto) |
+|---|---|---|
+| parco | в па́рк**е** | в парк |
+| scuola | в шко́л**е** | в шко́л**у** |
+| lavoro | на рабо́т**е** | на рабо́т**у** |
+| posta | на по́чт**е** | на по́чт**у** |
+| Mosca | в Москв**е́** | в Москв**у́** |
+
+Le preposizioni sono le stesse (**в** o **на**), cambia il **caso**: col movimento si usa l'**accusativo**.
+
+---
+#### Casa, qui, là
+Alcune parole hanno due forme, una per lo stato e una per il moto:
+
+| Stato (где?) | Moto (куда́?) |
+|---|---|
+| до́ма (a casa) | домо́й (a casa) |
+| здесь (qui) | сюда́ (qui) |
+| там (là) | туда́ (là) |
+
+- **Я до́ма.** — Sono a casa. / **Я иду́ домо́й.** — Vado a casa.
+- **Иди́ сюда́!** — Vieni qui!
+
+### Parole
+домо́й = a casa (moto) [avv]
+сюда́ = qui (moto) [avv]
+туда́ = là (moto) [avv]
+спортза́л = palestra [m]
+бассе́йн = piscina [m]
+
+### Frasi
+Я в па́рке. — Я иду́ в парк. = Sono al parco. — Vado al parco.
+Па́па на рабо́те. — Па́па е́дет на рабо́ту. = Papà è al lavoro. — Papà va al lavoro.
+Уже́ по́здно, я иду́ домо́й. = È già tardi, vado a casa.
+Иди́ сюда́! = Vieni qui!
+Ве́чером мы идём в бассе́йн. = Stasera andiamo in piscina.
+Куда́ ты е́дешь? — В спортза́л. = Dove vai? — In palestra.
+
+### Esercizi
+? Я иду́ в ___ . = Vado a scuola. {шко́лу | шко́ле | шко́ла}
+? Я в ___ . = Sono a scuola. {шко́ле | шко́лу | шко́ла}
+? Мы е́дем на ___ . = Andiamo al lavoro. {рабо́ту | рабо́те | рабо́та}
+? Она́ на ___ . = È alla posta. {по́чте | по́чту | по́чта}
+? Я иду́ ___ . = Vado a casa. {домо́й | до́ма | дом}
+? Я ___ . = Sono a casa. {до́ма | домо́й | в дом}
+? Иди́ ___ ! = Vieni qui! {сюда́ | здесь | тут}
+? Они́ е́дут в ___ . = Vanno a Mosca. {Москву́ | Москве́ | Москва́}
+> бассе́йн → иду́ в … → бассе́йн
+~ Уже́ по́здно, я иду́ домо́й. = È già tardi, vado a casa.
+
+## Giorno 59 | I mezzi di trasporto
+obiettivo: Dire con che mezzo ti sposti.
+breve: «In autobus»: **на** + prepositivo: на авто́бусе, на метро́, на по́езде, на самолёте.
+breve: «A piedi»: **пешко́м**.
+breve: такси́ e метро́ non si declinano: на такси́, на метро́.
+
+### Lezione
+#### Con che cosa?
+Per dire **con che mezzo** si usa **на** + prepositivo:
+
+| Mezzo | Con… |
+|---|---|
+| авто́бус | на авто́бусе |
+| трамва́й | на трамва́е |
+| по́езд | на по́езде |
+| самолёт | на самолёте |
+| маши́на | на маши́не |
+| велосипе́д | на велосипе́де |
+| метро́, такси́ | на метро́, на такси́ |
+
+**Я е́ду на рабо́ту на метро́.** — Vado al lavoro in metro.
+
+---
+#### A piedi
+**пешко́м** — a piedi: **Я иду́ пешко́м.** Con **пешко́м** il verbo è sempre **идти́**.
+
+> Con la bicicletta si dice **е́хать на велосипе́де**: anche lei è «un mezzo».
+
+---
+#### Il russo dei trasporti
+In città i russi usano tantissimo **метро́**, **авто́бус** e **трамва́й**. Tra città si va **на по́езде** (in treno) o **на самолёте** (in aereo): la Russia è grande!
+
+### Parole
+авто́бус = autobus [m]
+трамва́й = tram [m]
+такси́ = taxi [n; non si declina]
+по́езд = treno [m; plurale поезда́]
+самолёт = aereo [m]
+велосипе́д = bicicletta [m]
+пешко́м = a piedi [avv]
+
+### Frasi
+Я е́ду на рабо́ту на метро́. = Vado al lavoro in metro.
+Мы е́дем в Петербу́рг на по́езде. = Andiamo a San Pietroburgo in treno.
+Ты идёшь пешко́м? — Да, э́то бли́зко. = Vai a piedi? — Sì, è vicino.
+Она́ е́дет на велосипе́де. = Va in bicicletta.
+Мы лети́м в Рим на самолёте. = Voliamo a Roma in aereo.
+Здесь есть трамва́й? = Qui c'è il tram?
+
+### Esercizi
+? Я е́ду на ___ . = Vado in autobus. {авто́бусе | авто́бус | авто́буса}
+? Мы е́дем на ___ . = Andiamo in metro. {метро́ | метре́ | метра́}
+? Она́ е́дет на ___ . = Va in treno. {по́езде | по́езд | по́езду}
+? Я иду́ ___ . = Vado a piedi. {пешко́м | на нога́х | пешка́}
+? Он лети́т на ___ . = Vola in aereo. {самолёте | самолёт | самолёта}
+? «велосипе́д» vuol dire… {bicicletta | motorino | velocità}
+? Con «пешко́м» si usa… {идти́ | е́хать}
+> Scrivi «tram» in russo → трамва́й
+~ Я е́ду на рабо́ту на метро́. = Vado al lavoro in metro.
+
+## Giorno 60 | Ci vado spesso: ходить e ездить
+obiettivo: Parlare di spostamenti abituali e di andata e ritorno.
+breve: идти́/е́хать = un viaggio in corso, in una direzione. ходи́ть/е́здить = andare **abitualmente** o **andata e ritorno**.
+breve: ходи́ть: хожу́, хо́дишь… · е́здить: е́зжу, е́здишь…
+breve: Al passato: **Я ходи́л в кино́.** = Sono andato (e tornato) al cinema.
+
+### Lezione
+#### Due coppie
+| | una direzione, adesso | spesso, avanti e indietro |
+|---|---|---|
+| a piedi | идти́ | ходи́ть |
+| con un mezzo | е́хать | е́здить |
+
+- **Я иду́ в шко́лу.** — Sto andando a scuola (adesso).
+- **Я хожу́ в шко́лу.** — Vado a scuola (abitualmente, ogni giorno).
+
+---
+#### Il presente
+| | ходи́ть | е́здить |
+|---|---|---|
+| я | хожу́ | е́зжу |
+| ты | хо́дишь | е́здишь |
+| он, она́ | хо́дит | е́здит |
+| мы | хо́дим | е́здим |
+| вы | хо́дите | е́здите |
+| они́ | хо́дят | е́здят |
+
+Sono della seconda coniugazione: **д → ж** in prima persona (**хожу́**, **е́зжу**).
+
+---
+#### Andata e ritorno
+Al passato **ходи́ть/е́здить** indicano un viaggio **andata e ritorno**, concluso:
+- **Вчера́ я ходи́л в кино́.** — Ieri sono andato al cinema (e sono tornato).
+- **Ле́том мы е́здили на мо́ре.** — D'estate siamo andati al mare.
+
+### Parole
+ходи́ть = andare (a piedi, abitualmente) [v impf; хожу́, хо́дишь]
+е́здить = andare (con un mezzo, abitualmente) [v impf; е́зжу, е́здишь]
+да́ча = dacia, casa di campagna [f]
+ле́кция = lezione (all'università) [f]
+
+### Frasi
+Я ка́ждый день хожу́ в спортза́л. = Vado in palestra ogni giorno.
+Сейча́с я иду́ в спортза́л. = Adesso sto andando in palestra.
+Ле́том мы е́здим на да́чу. = D'estate andiamo in dacia.
+Вчера́ я ходи́л в кино́. = Ieri sono andato al cinema.
+Ты ча́сто е́здишь в Москву́? = Vai spesso a Mosca?
+Студе́нты хо́дят на ле́кции. = Gli studenti vanno a lezione.
+
+### Esercizi
+? Я ка́ждый день ___ в спортза́л. = Vado in palestra ogni giorno. {хожу́ | иду́ | хо́дит}
+? Сейча́с я ___ домо́й. = Adesso vado a casa. {иду́ | хожу́ | е́зжу}
+? Ле́том мы ___ на да́чу. = D'estate andiamo in dacia (di solito). {е́здим | е́дем | хо́дим}
+? Вчера́ я ___ в кино́. = Ieri sono andato al cinema. {ходи́л | шёл | хожу́}
+? Ты ча́сто ___ в Москву́? = Vai spesso a Mosca? {е́здишь | е́дешь | хо́дишь}
+? Смотри́, вот он ___ ! = Guarda, eccolo che arriva (a piedi)! {идёт | хо́дит | е́здит}
+> я (ходи́ть) → хожу́
+> я (е́здить) → е́зжу
+~ Ле́том мы е́здим на да́чу. = D'estate andiamo in dacia.
+
+## Giorno 61 | Come si arriva a…?
+obiettivo: Chiedere e capire indicazioni stradali.
+breve: **Как пройти́ к…?** — Come si arriva a… (a piedi)?
+breve: напра́во (a destra), нале́во (a sinistra), пря́мо (dritto).
+breve: далеко́ (lontano), бли́зко (vicino), ря́дом (accanto), напро́тив (di fronte).
+
+### Lezione
+#### Chiedere
+- **Извини́те, как пройти́ к метро́?** — Scusi, come si arriva alla metro?
+- **Скажи́те, пожа́луйста, где здесь вокза́л?**
+- **Э́то далеко́?** — È lontano?
+
+> **к** + dativo vuol dire «verso, fino a»: **к метро́**, **к вокза́лу**, **к теа́тру**. Il dativo lo vedremo bene più avanti.
+
+---
+#### Le risposte
+| Russo | Italiano |
+|---|---|
+| Иди́те пря́мо. | Vada dritto. |
+| Пото́м напра́во. | Poi a destra. |
+| Пото́м нале́во. | Poi a sinistra. |
+| Э́то бли́зко / далеко́. | È vicino / lontano. |
+| Э́то ря́дом. | È qui accanto. |
+| Напро́тив ба́нка. | Di fronte alla banca. |
+
+> **Иди́те** è l'imperativo di **идти́** (vada!): ancora una volta **-те** per il **вы**.
+
+### Parole
+напра́во = a destra [avv]
+нале́во = a sinistra [avv]
+пря́мо = dritto [avv]
+далеко́ = lontano [avv]
+бли́зко = vicino [avv]
+ря́дом = accanto, qui vicino [avv]
+напро́тив = di fronte [avv]
+как пройти́? = come si arriva (a piedi)? [espr]
+
+### Frasi
+Извини́те, как пройти́ к метро́? = Scusi, come si arriva alla metro?
+Иди́те пря́мо, пото́м напра́во. = Vada dritto, poi a destra.
+Э́то далеко́? — Нет, э́то бли́зко. = È lontano? — No, è vicino.
+Апте́ка ря́дом, нале́во. = La farmacia è qui accanto, a sinistra.
+Банк напро́тив. = La banca è di fronte.
+Музе́й далеко́, лу́чше е́хать на авто́бусе. = Il museo è lontano, meglio prendere l'autobus.
+
+### Esercizi
+? «напра́во» vuol dire… {a destra | a sinistra | dritto}
+? «нале́во» vuol dire… {a sinistra | a destra | indietro}
+? Иди́те ___ . = Vada dritto. {пря́мо | ря́дом | бли́зко}
+? Э́то ___ ? — Нет, бли́зко. = È lontano? — No, vicino. {далеко́ | ря́дом | напро́тив}
+? Как ___ к метро́? = Come si arriva alla metro? {пройти́ | идёт | е́хать}
+? «ря́дом» vuol dire… {qui accanto | lontano | di fronte}
+> Scrivi «a destra» in russo → напра́во
+~ Иди́те пря́мо, пото́м напра́во. = Vada dritto, poi a destra.
+
+## Giorno 62 | In viaggio
+obiettivo: Le parole per viaggiare: biglietto, passaporto, valigia.
+breve: биле́т, па́спорт, чемода́н: biglietto, passaporto, valigia.
+breve: путеше́ствовать (viaggiare): путеше́ствую, путеше́ствуешь (-ова- → -у-).
+breve: фотографи́ровать (fotografare): фотографи́рую, фотографи́руешь.
+
+### Lezione
+#### Il viaggio
+- **путеше́ствие** — viaggio; **путеше́ствовать** — viaggiare (per piacere);
+- **биле́т** — biglietto: **биле́т на по́езд**, **биле́т в теа́тр**;
+- **па́спорт** — passaporto; **чемода́н** — valigia;
+- **сувени́р** — souvenir.
+
+---
+#### I verbi in -овать
+I verbi in **-овать/-евать** perdono il suffisso al presente e prendono **-у-**:
+
+| путеше́ствовать | фотографи́ровать |
+|---|---|
+| я путеше́ствую | я фотографи́рую |
+| ты путеше́ствуешь | ты фотографи́руешь |
+| они́ путеше́ствуют | они́ фотографи́руют |
+
+È lo stesso schema di **танцева́ть → танцу́ю**.
+
+> Al passato invece il suffisso resta: **я путеше́ствовал**, **она́ фотографи́ровала**.
+
+### Parole
+биле́т = biglietto [m]
+па́спорт = passaporto [m]
+чемода́н = valigia [m]
+путеше́ствие = viaggio [n]
+путеше́ствовать = viaggiare [v impf; путеше́ствую, путеше́ствуешь]
+сувени́р = souvenir, ricordo [m]
+фотографи́ровать = fotografare [v impf; фотографи́рую, фотографи́руешь]
+
+### Frasi
+У тебя́ есть па́спорт и биле́т? = Hai il passaporto e il biglietto?
+Мы лю́бим путеше́ствовать. = Ci piace viaggiare.
+Где мой чемода́н? = Dov'è la mia valigia?
+Я фотографи́рую Кремль. = Fotografo il Cremlino.
+Э́то сувени́р из Москвы́. = È un souvenir di Mosca.
+Путеше́ствие бы́ло о́чень интере́сное. = Il viaggio è stato molto interessante.
+
+### Esercizi
+? Мы лю́бим ___ . = Ci piace viaggiare. {путеше́ствовать | путеше́ствие | путеше́ствуем}
+? Я ___ Кремль. = Fotografo il Cremlino. {фотографи́рую | фотографи́ровать | фотографи́рует}
+? Они́ ча́сто ___ . = Viaggiano spesso. {путеше́ствуют | путеше́ствовают | путеше́ствует}
+? «чемода́н» vuol dire… {valigia | cammino | borsa}
+? Где мой ___ ? = Dov'è il mio passaporto? {па́спорт | биле́т | сувени́р}
+> мы (путеше́ствовать) → путеше́ствуем
+> Scrivi «biglietto» in russo → биле́т
+~ Мы лю́бим путеше́ствовать. = Ci piace viaggiare.
+
+## Giorno 63 | Ripasso della settimana
+obiettivo: Leggere il racconto di un viaggio.
+
+### Lettura | Пое́здка в Петербу́рг | Una gita a San Pietroburgo
+В суббо́ту Ма́рко и А́нна е́дут в Петербу́рг. = Sabato Marco e Anna vanno a San Pietroburgo.
+Они́ е́дут на по́езде, э́то бы́стро и удо́бно. = Vanno in treno, è veloce e comodo.
+У них есть биле́ты, паспорта́ и ма́ленький чемода́н. = Hanno i biglietti, i passaporti e una piccola valigia.
+В Петербу́рге они́ живу́т в гости́нице в це́нтре. = A San Pietroburgo stanno in un albergo in centro.
+Снача́ла они́ иду́т в Эрмита́ж. = Prima vanno all'Ermitage.
+— Извини́те, как пройти́ к Эрмита́жу? = — Scusi, come si arriva all'Ermitage?
+— Иди́те пря́мо, пото́м нале́во. Э́то бли́зко. = — Vada dritto, poi a sinistra. È vicino.
+Пото́м они́ гуля́ют по го́роду и фотографи́руют мосты́. = Poi passeggiano per la città e fotografano i ponti.
+Ве́чером они́ у́жинают в рестора́не. = La sera cenano al ristorante.
+В воскресе́нье они́ е́дут домо́й. = Domenica tornano a casa.
+Ма́рко ду́мает: «Я хочу́ е́здить в Петербу́рг ча́сто!» = Marco pensa: «Voglio venire spesso a San Pietroburgo!»
+
+### Domande
+? Come vanno a San Pietroburgo? {in treno | in aereo | in macchina}
+? Dove alloggiano? {in un albergo in centro | da amici | in dacia}
+? Dove vanno prima? {all'Ermitage | al ristorante | alla stazione}
+? Che cosa fotografano? {i ponti | il Cremlino | il mare}

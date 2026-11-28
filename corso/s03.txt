@@ -1,0 +1,403 @@
+# Settimana 3 | Famiglia e descrizioni
+
+## Giorno 15 | La famiglia
+obiettivo: Presentare i membri della famiglia.
+breve: ма́ма / мать, па́па / оте́ц: le prime affettuose, le seconde più formali.
+breve: муж — жена́, сын — дочь, брат — сестра́, де́душка — ба́бушка.
+breve: роди́тели = genitori; де́ти = figli, bambini.
+
+### Lezione
+#### Chi è chi
+| Uomo | Donna |
+|---|---|
+| оте́ц, па́па (padre, papà) | мать, ма́ма (madre, mamma) |
+| сын (figlio) | дочь (figlia) |
+| брат (fratello) | сестра́ (sorella) |
+| муж (marito) | жена́ (moglie) |
+| де́душка (nonno) | ба́бушка (nonna) |
+| дя́дя (zio) | тётя (zia) |
+
+E due parole che valgono per tutti: **роди́тели** (genitori) e **де́ти** (figli, bambini).
+
+---
+#### Mamma o madre?
+- **Ма́ма** e **па́па** sono le parole di tutti i giorni, anche tra adulti.
+- **Мать** e **оте́ц** sono più formali, o si usano parlando dei genitori di altri.
+
+> **Де́душка** e **дя́дя** finiscono in **-а/-я**, ma sono maschili: lo dice il significato.
+
+---
+#### Presentare la famiglia
+Con **э́то** e **вот** sai già farlo:
+- **Э́то оте́ц, а э́то мать.** — Questo è il padre e questa è la madre.
+- **Вот ба́бушка и де́душка.** — Ecco la nonna e il nonno.
+
+### Parole
+оте́ц = padre [m]
+мать = madre [f]
+ба́бушка = nonna [f]
+де́душка = nonno [m; si declina come i femminili in -а]
+сын = figlio [m]
+дочь = figlia [f]
+муж = marito [m]
+жена́ = moglie [f]
+роди́тели = genitori [pl]
+де́ти = figli, bambini [pl; il singolare è ребёнок]
+
+### Frasi
+Э́то оте́ц, а э́то мать. = Questo è il padre e questa è la madre.
+Вот ба́бушка и де́душка. = Ecco la nonna e il nonno.
+Кто э́то? — Э́то сын и дочь. = Chi sono? — Il figlio e la figlia.
+Он муж, а она́ жена́. = Lui è il marito e lei la moglie.
+Где роди́тели? — Они́ до́ма. = Dove sono i genitori? — Sono a casa.
+Де́ти здесь? — Да, они́ здесь. = I bambini sono qui? — Sì, sono qui.
+
+### Esercizi
+? брат — ___ = fratello — sorella {сестра́ | дочь | жена́}
+? сын — ___ = figlio — figlia {дочь | мать | ба́бушка}
+? муж — ___ = marito — moglie {жена́ | сестра́ | тётя}
+? де́душка — ___ = nonno — nonna {ба́бушка | мать | дочь}
+? оте́ц — ___ = padre — madre {мать | жена́ | сестра́}
+? «роди́тели» vuol dire… {genitori | parenti | bambini}
+? «де́ти» vuol dire… {figli, bambini | nonni | fratelli}
+? «де́душка» è… {maschile | femminile | neutro}
+> Scrivi «figlio» in russo → сын
+> Scrivi «nonna» in russo → ба́бушка
+~ Вот ба́бушка и де́душка. = Ecco la nonna e il nonno.
+
+## Giorno 16 | Mio, tuo, nostro: i possessivi
+obiettivo: Dire di chi è qualcosa.
+breve: мой брат, моя́ сестра́, моё окно́, мои́ роди́тели: il possessivo si accorda col nome.
+breve: твой (tuo), наш (nostro), ваш (vostro, Suo) fanno come мой.
+breve: его́ (di lui), её (di lei), их (di loro) non cambiano mai.
+
+### Lezione
+Il possessivo prende il **genere** e il **numero** della cosa posseduta (non del possessore!).
+
+| | maschile | femminile | neutro | plurale |
+|---|---|---|---|---|
+| mio | мой | моя́ | моё | мои́ |
+| tuo | твой | твоя́ | твоё | твои́ |
+| nostro | наш | на́ша | на́ше | на́ши |
+| vostro, Suo | ваш | ва́ша | ва́ше | ва́ши |
+
+- **мой брат** — mio fratello; **моя́ сестра́** — mia sorella;
+- **моё окно́** — la mia finestra; **мои́ роди́тели** — i miei genitori.
+
+> Niente articolo: «la mia casa» è solo **мой дом**.
+
+---
+#### Di lui, di lei, di loro
+Questi tre non cambiano mai:
+- **его́** — suo (di lui): **его́ сестра́**, **его́ брат**;
+- **её** — suo (di lei): **её муж**, **её де́ти**;
+- **их** — loro: **их дом**, **их ма́ма**.
+
+---
+#### Di chi è?
+**Чей?** — di chi? Anche lui si accorda: **чей** (m), **чья** (f), **чьё** (n), **чьи** (pl).
+- **Чей э́то телефо́н? — Мой.** — Di chi è questo telefono? — Mio.
+- **Чья э́то кни́га? — Твоя́.** — Di chi è questo libro? — Tuo.
+
+### Parole
+мой = mio [pron; моя́, моё, мои́]
+твой = tuo [pron; твоя́, твоё, твои́]
+наш = nostro [pron; на́ша, на́ше, на́ши]
+ваш = vostro, Suo [pron; ва́ша, ва́ше, ва́ши]
+их = loro, di loro [pron; invariabile]
+чей = di chi [pron; чья, чьё, чьи]
+
+### Frasi
+Э́то мой брат. = Questo è mio fratello.
+Э́то моя́ сестра́. Её зову́т А́нна. = Questa è mia sorella. Si chiama Anna.
+Где твоя́ ма́ма? — Она́ до́ма. = Dov'è tua mamma? — È a casa.
+Э́то на́ши роди́тели. = Questi sono i nostri genitori.
+Чей э́то телефо́н? — Мой. = Di chi è questo telefono? — Mio.
+Чья э́то кни́га? — Его́. = Di chi è questo libro? — Suo (di lui).
+
+### Esercizi
+? Э́то ___ сестра́. = Questa è mia sorella. {моя́ | мой | моё}
+? Э́то ___ окно́. = Questa è la mia finestra. {моё | моя́ | мой}
+? Где ___ брат? = Dov'è tuo fratello? {твой | твоя́ | твоё}
+? Э́то ___ роди́тели. = Questi sono i nostri genitori. {на́ши | наш | на́ша}
+? Э́то ___ маши́на? = È la vostra macchina? {ва́ша | ваш | ва́ше}
+? ___ э́то кни́га? = Di chi è questo libro? {Чья | Чей | Чьё}
+? Э́то А́нна. Э́то ___ муж. = Questo è suo (di lei) marito. {её | его́ | их}
+? «их дом» vuol dire… {la loro casa | la sua casa | la nostra casa}
+> мой + кни́га → моя́ кни́га
+> наш + окно́ → на́ше окно́
+~ Э́то моя́ сестра́. = Questa è mia sorella.
+
+## Giorno 17 | Il plurale
+obiettivo: Formare il plurale dei nomi.
+breve: Maschile e femminile: -ы (стол → столы́, кни́га → кни́ги… ma dopo г к х ж ш щ ч si scrive -и).
+breve: -я, -ь, -й → -и: семья́ → се́мьи, ночь → но́чи, музе́й → музе́и. Neutri: -о → -а, -е → -я.
+breve: Irregolari da imparare: друг → друзья́, брат → бра́тья, ребёнок → де́ти, челове́к → лю́ди.
+
+### Lezione
+#### Il plurale regolare
+| Singolare | Plurale | Esempio |
+|---|---|---|
+| consonante | **-ы** | стол → столы́ |
+| -а | **-ы** | маши́на → маши́ны |
+| -я, -ь, -й | **-и** | семья́ → се́мьи, ночь → но́чи, музе́й → музе́и |
+| -о | **-а** | окно́ → о́кна, письмо́ → пи́сьма |
+| -е | **-я** | мо́ре → моря́ |
+
+---
+#### La regola delle sette lettere
+Dopo **г, к, х, ж, ш, щ, ч** non si scrive mai **ы**, ma **и**:
+- кни́га → кни́ги; ру́чка → ру́чки; ма́льчик → ма́льчики.
+
+> Questa regola vale in tutto il russo: la ritroverai negli aggettivi (ма́ленький) e nei verbi.
+
+---
+#### L'accento si sposta
+Spesso al plurale l'accento cambia posto: окно́ → **о́кна**, мо́ре → **моря́**, стол → **столы́**, сестра́ → **сёстры**. Ascolta sempre la parola nuova.
+
+---
+#### Irregolari (pochi ma frequentissimi)
+- друг → **друзья́**; брат → **бра́тья**; сын → **сыновья́**;
+- ребёнок → **де́ти**; челове́к → **лю́ди**;
+- дом → **дома́**; го́род → **города́**.
+
+### Parole
+челове́к = persona, uomo [m; plurale лю́ди]
+лю́ди = persone, gente [pl]
+ребёнок = bambino, bambina, figlio piccolo [m; plurale де́ти]
+ма́льчик = bambino, ragazzino [m]
+де́вочка = bambina, ragazzina [f]
+де́вушка = ragazza [f]
+па́рень = ragazzo [m]
+газе́та = giornale [f]
+
+### Frasi
+Э́то мои́ де́ти. = Questi sono i miei figli.
+Там лю́ди. = Là c'è gente.
+Где кни́ги? — Вот они́. = Dove sono i libri? — Eccoli.
+Мои́ бра́тья здесь. = I miei fratelli sono qui.
+Э́то на́ши друзья́. = Questi sono i nostri amici.
+Там ма́льчики и де́вочки. = Là ci sono bambini e bambine.
+
+### Esercizi
+> стол → plurale → столы́
+> кни́га → plurale → кни́ги
+> маши́на → plurale → маши́ны
+> ру́чка → plurale → ру́чки
+> музе́й → plurale → музе́и
+> окно́ → plurale → о́кна
+? Il plurale di «друг» è… {друзья́ | дру́ги | друга́}
+? Il plurale di «ребёнок» è… {де́ти | ребёнки | ребёнка}
+? Il plurale di «челове́к» è… {лю́ди | челове́ки | челове́ка}
+? Il plurale di «мо́ре» è… {моря́ | мо́ри | мо́ры}
+? Il plurale di «ма́льчик» è… {ма́льчики | ма́льчикы | ма́льчика}
+~ Э́то на́ши друзья́. = Questi sono i nostri amici.
+
+## Giorno 18 | I mestieri
+obiettivo: Dire che lavoro fai tu e che lavoro fanno gli altri.
+breve: **Кто вы по профе́ссии?** — Che lavoro fa? **Я экономи́ст.**
+breve: Molti mestieri hanno una sola forma per uomini e donne: **Она́ врач.**
+breve: Alcuni hanno la forma femminile: учи́тель → учи́тельница.
+
+### Lezione
+#### Che lavoro fai?
+- **Кто вы по профе́ссии?** — Che lavoro fa? (alla lettera: «chi è Lei di professione?»)
+- **Кто ты по профе́ссии?** — Che lavoro fai?
+- **Я врач.** — Sono medico. Come sempre, niente «sono» e niente articolo.
+
+---
+#### Lui o lei?
+Molti mestieri hanno **una sola forma**, maschile, che vale anche per le donne:
+- **Он врач. Она́ то́же врач.** — Lui è medico. Anche lei è medico.
+- **Она́ инжене́р, юри́ст, экономи́ст.**
+
+Alcuni hanno anche la forma femminile:
+- **учи́тель** → **учи́тельница** (insegnante);
+- **студе́нт** → **студе́нтка**.
+
+---
+#### Parole internazionali
+Molti mestieri moderni sono parole che conosci già: **журнали́ст**, **инжене́р**, **экономи́ст**, **программи́ст**, **ме́неджер**. Attenzione solo all'**accento**: журнали́ст, экономи́ст, программи́ст.
+
+### Parole
+рабо́та = lavoro [f]
+профе́ссия = professione, mestiere [f]
+врач = medico [m]
+учи́тель = insegnante (uomo) [m]
+учи́тельница = insegnante (donna), maestra [f]
+инжене́р = ingegnere [m]
+журнали́ст = giornalista [m]
+юри́ст = giurista, avvocato [m]
+экономи́ст = economista [m]
+программи́ст = programmatore [m]
+
+### Frasi
+Кто вы по профе́ссии? — Я экономи́ст. = Che lavoro fa? — Sono economista.
+Мой па́па врач, а ма́ма учи́тельница. = Mio padre è medico e mia madre è insegnante.
+Она́ то́же врач. = Anche lei è medico.
+Твой брат программи́ст? — Нет, он инжене́р. = Tuo fratello è programmatore? — No, è ingegnere.
+Моя́ сестра́ — журнали́ст. = Mia sorella è giornalista.
+Где твоя́ рабо́та? — Здесь. = Dov'è il tuo lavoro? — Qui.
+
+### Esercizi
+? Кто вы по ___? = Che lavoro fa? {профе́ссии | рабо́та | профе́ссия}
+? учи́тель — ___ = insegnante (uomo) — insegnante (donna) {учи́тельница | учи́телька | учи́теля}
+? Lei è medico: {Она́ врач. | Она́ врача́. | Она́ есть врач.}
+? «юри́ст» vuol dire… {giurista, avvocato | giudice | poliziotto}
+? Dove cade l'accento in «экономи́ст»? {sull'ultima sillaba | sulla prima | sulla seconda}
+? Мой брат — ___ . = Mio fratello è programmatore. {программи́ст | програ́ммист | програ́мма}
+> Scrivi «medico» in russo → врач
+> Scrivi «lavoro» in russo → рабо́та
+~ Мой па́па врач, а ма́ма учи́тельница. = Mio padre è medico e mia madre è insegnante.
+
+## Giorno 19 | Com'è? Gli aggettivi
+obiettivo: Descrivere persone e cose con gli aggettivi.
+breve: Gli aggettivi si accordano: но́вый дом, но́вая маши́на, но́вое окно́, но́вые кни́ги.
+breve: Dopo г к х ж ш щ ч si scrive -ий/-ие: ма́ленький, хоро́ший, хоро́шие.
+breve: Se l'accento è sulla desinenza, il maschile fa -ой: большо́й, молодо́й, плохо́й.
+
+### Lezione
+L'aggettivo prende genere e numero del nome, come i possessivi. **Како́й?** (quale? che tipo di?) si accorda anche lui.
+
+| | maschile | femminile | neutro | plurale |
+|---|---|---|---|---|
+| domanda | како́й? | кака́я? | како́е? | каки́е? |
+| nuovo | но́вый | но́вая | но́вое | но́вые |
+| grande | большо́й | больша́я | большо́е | больши́е |
+| piccolo | ма́ленький | ма́ленькая | ма́ленькое | ма́ленькие |
+
+---
+#### Tre regole per le desinenze
+1. Normalmente: **-ый, -ая, -ое, -ые** (но́вый).
+2. Dopo **г к х ж ш щ ч**: **-ий** e **-ие** (ма́ленький, хоро́ший → хоро́шие). È la regola delle sette lettere!
+3. Se l'accento cade sulla desinenza, il maschile fa **-о́й**: большо́й, молодо́й, плохо́й.
+
+---
+#### Ma…
+**но** vuol dire «ma»: **Дом ста́рый, но краси́вый.** — La casa è vecchia, ma bella.
+
+E **како́й** serve anche per esclamare: **Кака́я краси́вая маши́на!** — Che bella macchina!
+
+### Parole
+како́й = quale, che tipo di, che [pron; кака́я, како́е, каки́е]
+но́вый = nuovo [agg]
+ста́рый = vecchio [agg]
+большо́й = grande [agg]
+ма́ленький = piccolo [agg]
+хоро́ший = buono, bravo, bello [agg]
+плохо́й = cattivo, brutto, scadente [agg]
+краси́вый = bello [agg]
+молодо́й = giovane [agg]
+интере́сный = interessante [agg]
+но = ma [cong]
+
+### Frasi
+Э́то но́вый дом. = Questa è una casa nuova.
+Како́й э́то го́род? — Большо́й и краси́вый. = Che città è? — Grande e bella.
+Моя́ ба́бушка ста́рая, но краси́вая. = Mia nonna è anziana, ma bella.
+Э́то интере́сная кни́га. = Questo è un libro interessante.
+Мой па́па молодо́й. = Mio papà è giovane.
+Кака́я краси́вая маши́на! = Che bella macchina!
+
+### Esercizi
+? Э́то ___ маши́на. = È una macchina nuova. {но́вая | но́вый | но́вое}
+? Э́то ___ окно́. = È una finestra grande. {большо́е | большо́й | больша́я}
+? Э́то ___ де́ти. = Sono bravi bambini. {хоро́шие | хоро́шая | хоро́шый}
+? Мой дом ___ . = La mia casa è piccola. {ма́ленький | ма́ленькая | ма́ленькое}
+? ___ э́то кни́га? = Che libro è? {Кака́я | Како́й | Како́е}
+? Il contrario di «ста́рый» è… {но́вый | большо́й | плохо́й}
+? Il contrario di «большо́й» è… {ма́ленький | молодо́й | хоро́ший}
+? Дом ста́рый, ___ краси́вый. = La casa è vecchia, ma bella. {но | и́ли | то́же}
+> но́вый + кни́га → но́вая кни́га
+> хоро́ший + де́ти → хоро́шие де́ти
+~ Э́то интере́сная кни́га. = Questo è un libro interessante.
+
+## Giorno 20 | I colori
+obiettivo: Dire di che colore sono le cose.
+breve: I colori sono aggettivi: кра́сный дом, кра́сная маши́на.
+breve: си́ний (blu scuro) e голубо́й (azzurro) sono due colori diversi per un russo.
+breve: си́ний è «morbido»: си́няя, си́нее, си́ние.
+
+### Lezione
+I colori sono **aggettivi**: si accordano col nome.
+
+| Colore | maschile | femminile |
+|---|---|---|
+| rosso | кра́сный | кра́сная |
+| blu scuro | си́ний | си́няя |
+| azzurro | голубо́й | голуба́я |
+| verde | зелёный | зелёная |
+| giallo | жёлтый | жёлтая |
+| bianco | бе́лый | бе́лая |
+| nero | чёрный | чёрная |
+| grigio | се́рый | се́рая |
+| rosa | ро́зовый | ро́зовая |
+
+---
+#### Blu o azzurro?
+Per un russo **си́ний** (blu scuro, come il mare profondo) e **голубо́й** (azzurro, come il cielo) sono due colori diversi, come per noi «rosso» e «rosa».
+
+#### Un aggettivo «morbido»
+**Си́ний** ha le desinenze morbide: **си́няя** маши́на, **си́нее** мо́ре, **си́ние** ру́чки.
+
+---
+#### Di che colore è?
+**Како́й цвет?** — Che colore? E per descrivere: **Кака́я э́то маши́на? — Кра́сная.**
+
+> **Кра́сный** in russo antico voleva dire anche «bello»: per questo la Piazza Rossa si chiama **Кра́сная пло́щадь**.
+
+### Parole
+цвет = colore [m]
+кра́сный = rosso [agg]
+си́ний = blu (scuro) [agg; si declina «morbido»: си́няя, си́нее]
+голубо́й = azzurro [agg]
+зелёный = verde [agg]
+жёлтый = giallo [agg]
+бе́лый = bianco [agg]
+чёрный = nero [agg]
+се́рый = grigio [agg]
+ро́зовый = rosa [agg]
+
+### Frasi
+Кака́я э́то маши́на? — Кра́сная. = Che macchina è? — Rossa.
+Мо́ре си́нее. = Il mare è blu.
+Э́то бе́лый дом. = Questa è una casa bianca.
+Моя́ ко́шка чёрная. = La mia gatta è nera.
+Како́й э́то цвет? — Э́то зелёный. = Che colore è? — È verde.
+Её маши́на жёлтая, а моя́ се́рая. = La sua macchina è gialla, e la mia grigia.
+
+### Esercizi
+? «кра́сный» vuol dire… {rosso | rosa | marrone}
+? «голубо́й» vuol dire… {azzurro | blu scuro | verde}
+? Моя́ маши́на ___ . = La mia macchina è nera. {чёрная | чёрный | чёрное}
+? Мо́ре ___ . = Il mare è blu. {си́нее | си́ний | си́няя}
+? Э́то ___ дом. = È una casa bianca. {бе́лый | бе́лая | бе́лое}
+? Кака́я э́то ру́чка? — ___ . = Che penna è? — Verde. {Зелёная | Зелёный | Зелёное}
+? Il «colore» in russo è… {цвет | свет | кра́ска}
+> Scrivi «giallo» in russo → жёлтый
+> Scrivi «bianco» in russo → бе́лый
+~ Моя́ ко́шка чёрная. = La mia gatta è nera.
+
+## Giorno 21 | Ripasso della settimana
+obiettivo: Leggere la presentazione di una famiglia.
+
+### Lettura | Моя́ семья́ | La mia famiglia
+Приве́т! Меня́ зову́т Ма́рко. = Ciao! Mi chiamo Marco.
+Э́то моя́ семья́. = Questa è la mia famiglia.
+Э́то мой па́па. Его́ зову́т Джузе́ппе. = Questo è mio papà. Si chiama Giuseppe.
+Он врач. = È medico.
+Э́то моя́ ма́ма. Её зову́т Ла́ура. = Questa è mia mamma. Si chiama Laura.
+Она́ учи́тельница. = È insegnante.
+А э́то моя́ сестра́ Джу́лия. = E questa è mia sorella Giulia.
+Она́ студе́нтка. = È una studentessa.
+Мы не бога́тые, но мы о́чень счастли́вые. = Non siamo ricchi, ma siamo molto felici.
+А э́то на́ша соба́ка. Её зову́т Бе́лла. = E questo è il nostro cane. Si chiama Bella.
+Она́ ма́ленькая и бе́лая. = È piccola e bianca.
+Наш дом не большо́й, но краси́вый. = La nostra casa non è grande, ma è bella.
+А где наш кот? Вот он! = E dov'è il nostro gatto? Eccolo!
+
+### Domande
+? Che lavoro fa il papà di Marco? {il medico | l'insegnante | l'ingegnere}
+? Chi è Giulia? {la sorella | la mamma | la nonna}
+? Com'è Bella? {piccola e bianca | grande e nera | piccola e nera}
+? Com'è la loro casa? {non grande, ma bella | grande e nuova | vecchia e brutta}

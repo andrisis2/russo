@@ -15,6 +15,7 @@ Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura 
 ## ⚠️ PRIMA DI TUTTO
 **Leggi `STATO.md`**: dice a che punto siamo col video e come proseguire la trascrizione. È la fonte di verità sull'avanzamento.
 **Le lezioni di Yula sono in pausa per scelta dell'utente (26/09/2026)**: non riprendere la pipeline video se l'utente non la richiede; si lavora su contenuti e funzioni dell'app.
+Dal 27/11/2026 il percorso principale dell'app è il **Corso in 365 giorni** (sorgenti in `corso/`, vedi sotto): i contenuti nuovi vanno lì.
 
 ## Dove vive tutto (è TUTTO su GitHub)
 - **Repo:** https://github.com/andrisis2/russo (account `andrisis2`)
@@ -27,6 +28,15 @@ Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura 
 - `note.md` — spiegazioni grammaticali discorsive
 - `lezioni/` — un riassunto `lezione-XX.md` per lezione + trascrizioni `*_transcript.txt` + il VTT del corso
 - `scripts/extract_lesson.py` — taglia/pulisce una porzione del VTT per timestamp
+- `corso/` — i sorgenti del **Corso in 365 giorni** (il cuore dell'app): `PROGRAMMA.md` (i 13 moduli e i titoli dei 365 giorni), `FORMATO.md` (come si scrive un giorno), `moduli.txt`, `s01.txt` … `s52.txt` (una settimana per file), `parole_ok.txt` (parole giuste che il dizionario non conosce)
+- `corso.json` — **generato** da `scripts/build_corso.py` a partire da `corso/`: non modificarlo a mano
+
+## Corso in 365 giorni: come si modifica
+1. Si cambia il sorgente della settimana (`corso/sNN.txt`), seguendo `corso/FORMATO.md`.
+2. Si ricostruisce: `python scripts/build_corso.py --accenta` (accenti e controlli: servono pymorphy3 e il dizionario di OpenRussian indicato da `OPENRUSSIAN_DIR`, altrimenti i controlli si saltano e il corso si costruisce lo stesso).
+3. Si sistemano gli avvisi (accenti dubbi, parole già introdotte in un altro giorno, opzioni ripetute…) e si fa commit **sia** dei sorgenti **sia** di `corso.json`.
+- Una parola si introduce una sola volta in tutto il corso; gli id nascono dal testo russo (cambiare una frase ne azzera il ripasso).
+- Nell'app: `integraCorso` unisce il corso alle voci, stato in `russo_corso_v1` (giorno corrente, passi fatti, risultati dei test) e `russo_corso_sess_v1` (sessioni in corso).
 
 ### Traslocata: l'app *Articoli*
 La sottocartella `articoli/` non c'è più: l'app *Articoli* (interfaccia al repo

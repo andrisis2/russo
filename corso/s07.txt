@@ -1,0 +1,378 @@
+# Settimana 7 | L'accusativo e la tavola
+
+## Giorno 43 | L'accusativo: leggo un libro
+obiettivo: Usare l'accusativo per il complemento oggetto (chi o che cosa).
+breve: Femminili: -а → **-у**, -я → **-ю**: кни́га → чита́ю кни́гу, пе́сня → слу́шаю пе́сню.
+breve: Maschili (cose) e neutri non cambiano: смотрю́ фильм, пишу́ письмо́.
+breve: Femminili in -ь non cambiano: люблю́ жизнь.
+
+### Lezione
+#### Chi? Che cosa?
+L'**accusativo** è il caso del **complemento oggetto**: la cosa che leggi, guardi, ami, cerchi.
+
+**Я чита́ю кни́гу.** — Leggo un libro. (кни́га → кни́г**у**)
+
+---
+#### Come si forma (singolare)
+| Genere | Nominativo | Accusativo |
+|---|---|---|
+| femminile -а | кни́га, Москва́ | кни́г**у**, Москв**у́** |
+| femminile -я | пе́сня, семья́ | пе́сн**ю**, семь**ю́** |
+| femminile -ь | жизнь | жизнь (uguale) |
+| maschile (cosa) | фильм, чай | фильм, чай (uguale) |
+| neutro | письмо́, мо́ре | письмо́, мо́ре (uguale) |
+
+> Per i maschili che indicano **persone o animali** l'accusativo è diverso (люблю́ бра́т**а**): lo vedremo nel modulo 4. Per ora attenzione solo ai femminili.
+
+---
+#### I verbi che lo vogliono
+Quasi tutti i verbi «transitivi»: **чита́ть, писа́ть, слу́шать, смотре́ть, люби́ть, знать, ви́деть, иска́ть, де́лать…**
+
+- **Я слу́шаю му́зыку.** — Ascolto la musica.
+- **Я ищу́ ка́рту.** — Cerco la mappa.
+- **Мы лю́бим Москву́.** — Amiamo Mosca.
+
+**Иска́ть** (cercare) cambia la **ск** in **щ**: **ищу́, и́щешь, и́щет, и́щем, и́щете, и́щут**.
+
+### Parole
+пе́сня = canzone [f]
+ка́рта = mappa, carta (anche di credito) [f]
+подру́га = amica [f]
+иска́ть = cercare [v impf; ищу́, и́щешь]
+люби́мый = preferito, amato [agg]
+литерату́ра = letteratura [f]
+
+### Frasi
+Я чита́ю кни́гу. = Leggo un libro.
+Ты слу́шаешь му́зыку? = Ascolti la musica?
+Я ищу́ ка́рту Москвы́. = Cerco la cartina di Mosca.
+Мы лю́бим ру́сскую литерату́ру. = Amiamo la letteratura russa.
+Э́то моя́ люби́мая пе́сня. = È la mia canzone preferita.
+Он пи́шет письмо́, а она́ смо́трит фильм. = Lui scrive una lettera, e lei guarda un film.
+
+### Esercizi
+? Я чита́ю ___ . = Leggo un libro. {кни́гу | кни́га | кни́ге}
+? Ты слу́шаешь ___ ? = Ascolti la musica? {му́зыку | му́зыка | му́зыке}
+? Мы лю́бим ___ . = Amiamo Mosca. {Москву́ | Москва́ | Москве́}
+? Он смо́трит ___ . = Guarda un film. {фильм | фи́льму | фи́льма}
+? Она́ пи́шет ___ . = Scrive una lettera. {письмо́ | письму́ | пи́сьма}
+? Я слу́шаю ___ . = Ascolto una canzone. {пе́сню | пе́сня | пе́сну}
+? Я ___ ка́рту. = Cerco la mappa. {ищу́ | иска́ю | и́щет}
+> газе́та → чита́ю … → газе́ту
+> ру́чка → ищу́ … → ру́чку
+~ Я ищу́ ка́рту Москвы́. = Cerco la cartina di Mosca.
+
+## Giorno 44 | Mangiare e bere
+obiettivo: Dire che cosa mangi e bevi.
+breve: есть (mangiare) è irregolare: ем, ешь, ест, еди́м, еди́те, едя́т.
+breve: пить (bere): пью, пьёшь, пьёт, пьём, пьёте, пьют.
+breve: Cibo: хлеб, сыр, мя́со, ры́ба, суп, сала́т, яйцо́; bevande: вода́, сок, чай, ко́фе, вино́.
+
+### Lezione
+#### Mangiare: есть
+Uno dei pochissimi verbi davvero irregolari:
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| ем | ешь | ест | еди́м | еди́те | едя́т |
+
+> **Есть** vuol dire anche «c'è» (**здесь есть ры́нок**). Il contesto toglie ogni dubbio.
+
+#### Bere: пить
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| пью | пьёшь | пьёт | пьём | пьёте | пьют |
+
+---
+#### Che cosa? — l'accusativo
+Il cibo è il complemento oggetto: **ем ры́бу**, **пью во́ду**, **ем суп**, **пью ко́фе**.
+
+> **Ко́фе** è **maschile** anche se finisce in **-е**, e non si declina: **чёрный ко́фе**.
+
+---
+#### Сло́ва utili
+- **за́втрак**: хлеб, сыр, яйцо́, ко́фе, чай;
+- **обе́д**: суп, мя́со и́ли ры́ба, сала́т;
+- **у́жин**: e qui decidi tu!
+
+### Parole
+есть = mangiare [v impf; ем, ешь, ест, еди́м, еди́те, едя́т]
+пить = bere [v impf; пью, пьёшь]
+сыр = formaggio [m]
+мя́со = carne [n]
+суп = minestra, zuppa [m]
+сала́т = insalata [m]
+яйцо́ = uovo [n; plurale я́йца]
+ко́фе = caffè (bevanda) [m; non si declina]
+вино́ = vino [n]
+
+### Frasi
+Что ты ешь на за́втрак? — Хлеб и сыр. = Che cosa mangi a colazione? — Pane e formaggio.
+Я не ем мя́со. = Non mangio carne.
+Мы пьём чай. = Beviamo il tè.
+Он пьёт ко́фе ка́ждое у́тро. = Beve il caffè ogni mattina.
+На обе́д у нас суп и сала́т. = A pranzo abbiamo minestra e insalata.
+Вы пьёте вино́? — Иногда́. = Lei beve vino? — A volte.
+
+### Esercizi
+> я (есть) → ем
+> мы (есть) → еди́м
+> они́ (есть) → едя́т
+> ты (пить) → пьёшь
+> они́ (пить) → пьют
+? Я не ___ мя́со. = Non mangio carne. {ем | ест | есть}
+? Он ___ ко́фе. = Beve il caffè. {пьёт | пьют | пью}
+? Мы пьём ___ . = Beviamo acqua. {во́ду | вода́ | воде́}
+? Я ем ___ . = Mangio il pesce. {ры́бу | ры́ба | ры́бе}
+? «ко́фе» è… {maschile | neutro | femminile}
+~ Я не ем мя́со. = Non mangio carne.
+
+## Giorno 45 | Voglio: хотеть
+obiettivo: Dire che cosa vuoi (mangiare, fare, comprare).
+breve: хоте́ть: хочу́, хо́чешь, хо́чет, хоти́м, хоти́те, хотя́т (singolare come la 1ª, plurale come la 2ª coniugazione).
+breve: хоте́ть + infinito: **Я хочу́ спать.** · хоте́ть + accusativo: **Я хочу́ ко́фе.**
+breve: Più gentile: **Я хоте́л бы…** / **Я хоте́ла бы…** — Vorrei…
+
+### Lezione
+#### Un verbo «misto»
+**Хоте́ть** (volere) al singolare segue la prima coniugazione (con **т → ч**), al plurale la seconda:
+
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| хочу́ | хо́чешь | хо́чет | хоти́м | хоти́те | хотя́т |
+
+---
+#### Che cosa vuoi?
+- con un verbo: **Я хочу́ спать.** — Voglio dormire. **Мы хоти́м гуля́ть.**
+- con una cosa (accusativo): **Я хочу́ моро́женое.** **Ты хо́чешь ко́фе?**
+
+---
+#### Vorrei
+«Voglio» può sembrare brusco. Con gli sconosciuti è meglio il condizionale:
+- **Я хоте́л бы ко́фе.** — Vorrei un caffè. (detto da un uomo)
+- **Я хоте́ла бы ко́фе.** — Vorrei un caffè. (detto da una donna)
+
+> Il passato (**хоте́л / хоте́ла**) lo studierai tra poco: per ora usa queste due frasi così come sono.
+
+### Parole
+хоте́ть = volere [v impf; хочу́, хо́чешь, хо́чет, хоти́м, хоти́те, хотя́т]
+моро́женое = gelato [n; si declina come un aggettivo]
+шокола́д = cioccolato [m]
+торт = torta [m]
+конфе́та = caramella, cioccolatino [f]
+я хоте́л бы = vorrei (detto da un uomo) [espr; una donna dice я хоте́ла бы]
+
+### Frasi
+Я хочу́ спать. = Ho sonno. (Voglio dormire.)
+Ты хо́чешь моро́женое? — Да, хочу́! = Vuoi un gelato? — Sì!
+Мы хоти́м гуля́ть. = Vogliamo andare a fare una passeggiata.
+Что вы хоти́те? = Che cosa desidera?
+Я хоте́ла бы ко́фе и торт. = Vorrei un caffè e una torta.
+Де́ти хотя́т шокола́д. = I bambini vogliono il cioccolato.
+
+### Esercizi
+? Я ___ спать. = Voglio dormire. {хочу́ | хо́чет | хоти́м}
+? Ты ___ ко́фе? = Vuoi un caffè? {хо́чешь | хочу́ | хоти́те}
+? Мы ___ гуля́ть. = Vogliamo passeggiare. {хоти́м | хо́чем | хотя́т}
+? Они́ ___ моро́женое. = Vogliono il gelato. {хотя́т | хо́чут | хоти́м}
+? Что вы ___ ? = Che cosa desidera? {хоти́те | хо́чете | хочу́}
+? Я хочу́ ___ . = Voglio una caramella. {конфе́ту | конфе́та | конфе́те}
+? Una donna dice: «Vorrei un caffè» {Я хоте́ла бы ко́фе. | Я хоте́л бы ко́фе. | Я хочу́ бы ко́фе.}
+> он (хоте́ть) → хо́чет
+~ Ты хо́чешь моро́женое? = Vuoi un gelato?
+
+## Giorno 46 | Posso? мочь e уметь
+obiettivo: Dire che cosa puoi fare e che cosa sai fare.
+breve: мочь (potere): могу́, мо́жешь, мо́жет, мо́жем, мо́жете, мо́гут.
+breve: уме́ть (saper fare, abilità imparata): **Я уме́ю пла́вать.** — So nuotare.
+breve: мо́жно = si può · нельзя́ = non si può, è vietato.
+
+### Lezione
+#### Мочь — potere
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| могу́ | мо́жешь | мо́жет | мо́жем | мо́жете | мо́гут |
+
+La **г** diventa **ж**, tranne che in **я** e **они́**. Si usa con l'infinito: **Я могу́ помо́чь.** — Posso aiutare. **Ты мо́жешь говори́ть ме́дленнее?**
+
+---
+#### Уме́ть — saper fare
+Per le **abilità imparate** (nuotare, cucinare, guidare, ballare) il russo usa **уме́ть**, non **мочь**:
+- **Я уме́ю пла́вать.** — So nuotare.
+- **Она́ уме́ет гото́вить.** — Sa cucinare.
+
+> «Non so nuotare» → **Я не уме́ю пла́вать.** «Oggi non posso nuotare (ho il raffreddore)» → **Сего́дня я не могу́ пла́вать.**
+
+---
+#### Мо́жно e нельзя́
+- **мо́жно** — si può, è permesso: **Здесь мо́жно кури́ть?**
+- **нельзя́** — non si può, è vietato: **Здесь нельзя́ кури́ть.**
+
+---
+#### Tre verbi da guardare
+- **танцева́ть** → **танцу́ю, танцу́ешь** (-ева- diventa -у-);
+- **петь** → **пою́, поёшь**;
+- **гото́вить** → **гото́влю, гото́вишь** (la **л** in prima persona, come **люблю́**).
+
+### Parole
+мочь = potere [v impf; могу́, мо́жешь, мо́гут]
+уме́ть = saper fare [v impf; уме́ю, уме́ешь]
+нельзя́ = non si può, è vietato [avv]
+пла́вать = nuotare [v impf; пла́ваю, пла́ваешь]
+танцева́ть = ballare [v impf; танцу́ю, танцу́ешь]
+петь = cantare [v impf; пою́, поёшь]
+гото́вить = cucinare, preparare [v impf; гото́влю, гото́вишь]
+
+### Frasi
+Я могу́ помо́чь? = Posso aiutare?
+Ты мо́жешь говори́ть ме́дленнее? = Puoi parlare più lentamente?
+Я уме́ю пла́вать, но пло́хо. = So nuotare, ma male.
+Ма́ма хорошо́ гото́вит. = La mamma cucina bene.
+Здесь нельзя́ кури́ть. = Qui è vietato fumare.
+Мы лю́бим петь и танцева́ть. = Ci piace cantare e ballare.
+
+### Esercizi
+? Я ___ помо́чь. = Posso aiutare. {могу́ | мо́жет | мочь}
+? Ты ___ говори́ть ме́дленнее? = Puoi parlare più piano? {мо́жешь | могу́ | мо́гут}
+? Они́ не ___ . = Non possono. {мо́гут | мо́жут | мо́жем}
+? Я ___ пла́вать. = So nuotare. {уме́ю | могу́ | зна́ю}
+? Здесь ___ кури́ть. = Qui è vietato fumare. {нельзя́ | мо́жно | не мо́жно}
+? Она́ хорошо́ ___ . = Lei cucina bene. {гото́вит | гото́влю | гото́вит есть}
+> я (танцева́ть) → танцу́ю
+> я (петь) → пою́
+> я (гото́вить) → гото́влю
+~ Я уме́ю пла́вать, но пло́хо. = So nuotare, ma male.
+
+## Giorno 47 | Mi piace: любить e нравиться
+obiettivo: Dire che cosa ti piace (e che cosa ami).
+breve: **Мне нра́вится** + singolare, **мне нра́вятся** + plurale: alla lettera «a me piace / piacciono».
+breve: мне, тебе́, ему́, ей, нам, вам, им: a me, a te, a lui, a lei…
+breve: люби́ть = amare, piacere molto (gusti stabili): **Я люблю́ спорт.**
+
+### Lezione
+#### Нра́виться — piacere
+Funziona come in italiano «piacere»: la cosa che piace è il **soggetto**, la persona a cui piace va al **dativo** (a me, a te).
+
+- **Мне нра́вится Москва́.** — Mi piace Mosca.
+- **Мне нра́вятся фру́кты.** — Mi piace la frutta. (plurale!)
+
+| a chi? | |
+|---|---|
+| a me | мне |
+| a te | тебе́ |
+| a lui | ему́ |
+| a lei | ей |
+| a noi | нам |
+| a voi, a Lei | вам |
+| a loro | им |
+
+---
+#### Люби́ть o нра́виться?
+- **люби́ть** — amare, piacere molto, gusti stabili: **Я люблю́ спорт.** **Я люблю́ чита́ть.**
+- **нра́виться** — piacere, spesso come impressione: **Мне нра́вится твоя́ ку́ртка.** — Mi piace la tua giacca.
+
+> Con un verbo si usa quasi sempre **люби́ть**: **Я люблю́ гото́вить.** — Mi piace cucinare.
+
+### Parole
+нра́виться = piacere [v impf; мне нра́вится, мне нра́вятся]
+спорт = sport [m]
+футбо́л = calcio [m]
+фру́кты = frutta [pl]
+о́вощи = verdura [pl]
+
+### Frasi
+Мне нра́вится Москва́. = Mi piace Mosca.
+Тебе́ нра́вится э́та пе́сня? = Ti piace questa canzone?
+Ему́ нра́вятся фру́кты, а ей — о́вощи. = A lui piace la frutta, e a lei la verdura.
+Я люблю́ спорт, осо́бенно футбо́л. = Amo lo sport, soprattutto il calcio.
+Нам нра́вится ру́сская литерату́ра. = Ci piace la letteratura russa.
+Им не нра́вится хо́лод. = A loro non piace il freddo.
+
+### Esercizi
+? ___ нра́вится Москва́. = Mi piace Mosca. {Мне | Я | Меня́}
+? Тебе́ ___ фру́кты? = Ti piace la frutta? {нра́вятся | нра́вится | нра́виться}
+? ___ нра́вится му́зыка. = A lui piace la musica. {Ему́ | Его́ | Он}
+? ___ нра́вится спорт. = A lei piace lo sport. {Ей | Её | Она́}
+? ___ нра́вятся о́вощи. = Ci piace la verdura. {Нам | Нас | Мы}
+? Я ___ чита́ть. = Mi piace leggere. {люблю́ | нра́вится | нра́влюсь}
+? Мне нра́вится э́та ___ . = Mi piace questa canzone. {пе́сня | пе́сню | пе́сни}
+> Scrivi «calcio» in russo → футбо́л
+~ Мне нра́вится Москва́. = Mi piace Mosca.
+
+## Giorno 48 | Al ristorante
+obiettivo: Ordinare, chiedere il conto, dire che è buono.
+breve: **Мо́жно меню́?** — Posso avere il menù? **Я бу́ду…** — Prendo… (alla lettera «sarò…»).
+breve: **Принеси́те, пожа́луйста, счёт.** — Mi porti il conto, per favore.
+breve: **Ско́лько сто́ит?** — Quanto costa? **О́чень вку́сно!** — Buonissimo!
+
+### Lezione
+#### Al tavolo
+- **Мо́жно меню́?** — Posso avere il menù?
+- **Что вы бу́дете?** — Che cosa prende? (detto dal cameriere)
+- **Я бу́ду суп и ры́бу.** — Prendo la minestra e il pesce.
+
+> **Я бу́ду** + accusativo (alla lettera «sarò…») è il modo più naturale di ordinare: **Я бу́ду ко́фе.**
+
+---
+#### Chiedere
+- **Принеси́те, пожа́луйста, во́ду.** — Mi porti dell'acqua, per favore.
+- **Принеси́те, пожа́луйста, счёт.** — Il conto, per favore.
+- **Ско́лько сто́ит сала́т?** — Quanto costa l'insalata?
+
+---
+#### Dire che ti è piaciuto
+**Вку́сно!** — Buono! **О́чень вку́сно!** — Buonissimo! E al cameriere: **Спаси́бо, всё бы́ло о́чень вку́сно.** — Grazie, era tutto buonissimo.
+
+> Il cameriere si chiama con **Извини́те!** oppure **Молодо́й челове́к!** (giovanotto!) / **Де́вушка!** (signorina!): è normale.
+
+### Parole
+меню́ = menù [n; non si declina]
+официа́нт = cameriere [m]
+счёт = conto [m]
+сто́лик = tavolino (al bar, al ristorante) [m]
+вку́сно = buono, gustoso (avverbio) [avv]
+принеси́те = porti, portate [inter; a un amico: принеси́]
+я бу́ду = prendo (ordinando), sarò [espr]
+ско́лько сто́ит? = quanto costa? [espr]
+
+### Frasi
+Мо́жно меню́, пожа́луйста? = Posso avere il menù, per favore?
+Что вы бу́дете? — Я бу́ду суп и ры́бу. = Che cosa prende? — La minestra e il pesce.
+Принеси́те, пожа́луйста, во́ду. = Mi porti dell'acqua, per favore.
+Ско́лько сто́ит торт? = Quanto costa la torta?
+О́чень вку́сно! = Buonissimo!
+Принеси́те, пожа́луйста, счёт. = Il conto, per favore.
+
+### Esercizi
+? Vuoi il menù: {Мо́жно меню́? | Мо́жно счёт? | Ско́лько сто́ит?}
+? Vuoi il conto: {Принеси́те, пожа́луйста, счёт. | Принеси́те, пожа́луйста, меню́. | Я бу́ду счёт.}
+? Я бу́ду ___ . = Prendo il pesce. {ры́бу | ры́ба | ры́бе}
+? Принеси́те, пожа́луйста, ___ . = Mi porti l'acqua. {во́ду | вода́ | воде́}
+? Ско́лько ___ сала́т? = Quanto costa l'insalata? {сто́ит | сто́ят | сто́ить}
+? «официа́нт» vuol dire… {cameriere | ufficiale | cuoco}
+? «Вку́сно!» vuol dire… {Buono! | Bello! | Basta!}
+> Scrivi «conto» in russo → счёт
+~ Принеси́те, пожа́луйста, счёт. = Il conto, per favore.
+
+## Giorno 49 | Ripasso della settimana
+obiettivo: Leggere una scena al bar.
+
+### Lettura | В кафе́ | Al bar
+Суббо́та. А́нна и Ма́рко в кафе́. = Sabato. Anna e Marco sono al bar.
+— Здра́вствуйте! Вот меню́. = — Buongiorno! Ecco il menù.
+— Спаси́бо. Что ты хо́чешь, Ма́рко? = — Grazie. Che cosa vuoi, Marco?
+— Я хочу́ есть! Я бу́ду суп и мя́со. = — Ho fame! Prendo la minestra e la carne.
+— А я не ем мя́со. Я бу́ду ры́бу и сала́т. = — Io invece non mangio carne. Prendo il pesce e l'insalata.
+— Что вы бу́дете пить? = — Che cosa beve?
+— Во́ду, пожа́луйста. И ко́фе. = — Acqua, per favore. E un caffè.
+— А я хоте́ла бы чай. = — E io vorrei un tè.
+Пото́м Ма́рко ест торт, а А́нна — моро́женое. = Poi Marco mangia una torta, e Anna un gelato.
+— О́чень вку́сно! Принеси́те, пожа́луйста, счёт. = — Buonissimo! Ci porti il conto, per favore.
+— Ско́лько сто́ит? = — Quanto costa?
+— Ты́сяча рубле́й. = — Mille rubli.
+
+### Domande
+? Che cosa prende Marco? {minestra e carne | pesce e insalata | solo un caffè}
+? Perché Anna non prende la carne? {non mangia carne | è troppo cara | ha già mangiato}
+? Che cosa beve Anna? {un tè | un caffè | del vino}
+? Quanto costa tutto? {mille rubli | cento rubli | diecimila rubli}

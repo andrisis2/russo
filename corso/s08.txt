@@ -1,0 +1,378 @@
+# Settimana 8 | Ieri e domani
+
+## Giorno 50 | Il passato
+obiettivo: Raccontare che cosa hai fatto.
+breve: Il passato si fa dall'infinito: tolto **-ть**, si aggiunge **-л** (lui), **-ла** (lei), **-ло** (neutro), **-ли** (plurale).
+breve: Il passato cambia secondo il **genere**, non la persona: я чита́л (uomo), я чита́ла (donna).
+breve: уже́ = già · ещё = ancora · ра́ньше = prima, una volta.
+
+### Lezione
+#### Facilissimo
+Il passato russo ha **una sola forma** (niente «ho letto / lessi / leggevo») e si forma così:
+
+| | чита́ть | говори́ть |
+|---|---|---|
+| lui (я, ты, он) | чита́**л** | говори́**л** |
+| lei (я, ты, она́) | чита́**ла** | говори́**ла** |
+| neutro (оно́) | чита́**ло** | говори́**ло** |
+| plurale (мы, вы, они́) | чита́**ли** | говори́**ли** |
+
+---
+#### Il genere conta
+Il passato non cambia secondo la persona (io, tu, lui), ma secondo il **genere** di chi fa l'azione:
+- Marco dice: **Я рабо́тал.** — Anna dice: **Я рабо́тала.**
+- **Вы** (anche di cortesia, a una sola persona) vuole sempre il plurale: **Вы рабо́тали?**
+
+> Attenzione all'accento in alcuni verbi: **жил, жила́, жи́ли**; **спал, спала́, спа́ли**.
+
+---
+#### Già, ancora, prima
+- **уже́** — già: **Я уже́ обе́дал.** — Ho già pranzato.
+- **ещё не** — non ancora: **Я ещё не обе́дал.**
+- **ра́ньше** — prima, una volta: **Ра́ньше я жил в Ри́ме.** — Prima vivevo a Roma.
+- **давно́** — da tanto tempo, tanto tempo fa; **неда́вно** — da poco, poco tempo fa.
+
+### Parole
+уже́ = già [avv]
+ещё = ancora [avv]
+ра́ньше = prima, una volta, in passato [avv]
+давно́ = da tanto, tanto tempo fa [avv]
+неда́вно = poco tempo fa, di recente [avv]
+
+### Frasi
+Что ты де́лал вчера́? — Я рабо́тал. = Che hai fatto ieri? — Ho lavorato.
+Вчера́ А́нна чита́ла, а Ма́рко смотре́л фильм. = Ieri Anna leggeva e Marco guardava un film.
+Мы гуля́ли в па́рке. = Abbiamo passeggiato nel parco.
+Ра́ньше я жил в Ри́ме. = Prima vivevo a Roma.
+Ты уже́ обе́дала? — Нет, ещё нет. = Hai già pranzato? — No, non ancora.
+Я давно́ не ви́дел бра́та. = Non vedo mio fratello da tanto tempo.
+
+### Esercizi
+> он (чита́ть) → чита́л
+> она́ (чита́ть) → чита́ла
+> мы (рабо́тать) → рабо́тали
+> она́ (говори́ть) → говори́ла
+? Вчера́ я ___ . = Ieri ho lavorato. (dice Anna) {рабо́тала | рабо́тал | рабо́тали}
+? Мы ___ в па́рке. = Abbiamo passeggiato nel parco. {гуля́ли | гуля́л | гуля́ла}
+? Что вы ___ ? = Che cosa avete fatto? {де́лали | де́лал | де́лала}
+? Ты ___ обе́дал? = Hai già pranzato? {уже́ | ещё | ра́ньше}
+? ___ я жил в Ри́ме. = Prima vivevo a Roma. {Ра́ньше | Уже́ | Пото́м}
+? Il passato russo cambia secondo… {il genere e il numero | la persona | il tempo}
+~ Что ты де́лал вчера́? = Che cosa hai fatto ieri?
+
+## Giorno 51 | Был, была, было, были
+obiettivo: Dire dove sei stato e com'era.
+breve: быть (essere) al passato: был, была́, бы́ло, бы́ли.
+breve: **Где ты был вчера́?** — Dove sei stato ieri?
+breve: Per le frasi senza soggetto si usa **бы́ло**: **Бы́ло интере́сно.** — È stato interessante.
+
+### Lezione
+#### Essere al passato
+Al presente «essere» non si dice. Al passato invece sì:
+
+| lui | lei | neutro | plurale |
+|---|---|---|---|
+| был | была́ | бы́ло | бы́ли |
+
+- **Я был в Москве́.** — Sono stato a Mosca.
+- **Она́ была́ до́ма.** — Era a casa.
+- **Мы бы́ли на конце́рте.** — Siamo stati a un concerto.
+
+> **Не был** si legge come una parola sola, con l'accento su **не**: **я не́ был**, **она́ не была́**, **они́ не́ были**.
+
+---
+#### Com'era?
+Quando non c'è un soggetto, si usa il neutro **бы́ло**:
+- **Бы́ло интере́сно.** — È stato interessante.
+- **Бы́ло хо́лодно.** — Faceva freddo.
+- **Как бы́ло на вечери́нке? — Ве́село!** — Com'è stata la festa? — Divertente!
+
+---
+#### Avevo: у меня́ был…
+«Avere» al passato: **у меня́ был** (m), **была́** (f), **бы́ло** (n), **бы́ли** (pl), secondo la cosa posseduta:
+**У меня́ была́ соба́ка.** — Avevo un cane.
+
+### Parole
+быть = essere [v impf; был, была́, бы́ло, бы́ли]
+вечери́нка = festa (tra amici) [f]
+в гостя́х = in visita, ospite da qualcuno [espr]
+дере́вня = villaggio, campagna [f]
+о́тпуск = ferie (dal lavoro) [m]
+кани́кулы = vacanze (scolastiche, universitarie) [pl]
+
+### Frasi
+Где ты был вчера́? — Я был в гостя́х. = Dove sei stato ieri? — Ero ospite da amici.
+Она́ была́ в дере́вне. = Era in campagna.
+Мы бы́ли на вечери́нке. Бы́ло ве́село! = Siamo stati a una festa. È stato divertente!
+Я не́ был в Москве́. = Non sono stato a Mosca.
+В о́тпуске мы бы́ли на мо́ре. = In ferie siamo stati al mare.
+У меня́ была́ соба́ка. = Avevo un cane.
+
+### Esercizi
+? Где ты ___ вчера́? (a Marco) = Dove sei stato ieri? {был | была́ | бы́ли}
+? Она́ ___ до́ма. = Era a casa. {была́ | был | бы́ло}
+? Мы ___ на конце́рте. = Siamo stati a un concerto. {бы́ли | был | была́}
+? ___ интере́сно. = È stato interessante. {Бы́ло | Был | Была́}
+? У меня́ ___ соба́ка. = Avevo un cane. {была́ | был | бы́ло}
+? «в гостя́х» vuol dire… {in visita da qualcuno | in albergo | a casa propria}
+? «кани́кулы» vuol dire… {vacanze di scuola | ferie dal lavoro | canali}
+> Scrivi «ferie» (dal lavoro) in russo → о́тпуск
+~ Мы бы́ли на вечери́нке. = Siamo stati a una festa.
+
+## Giorno 52 | Che tempo fa?
+obiettivo: Parlare del tempo.
+breve: **Кака́я сего́дня пого́да?** — Che tempo fa oggi?
+breve: тепло́, хо́лодно, жа́рко = fa caldo (piacevole), freddo, molto caldo.
+breve: **Идёт дождь / снег.** — Piove / Nevica (alla lettera «la pioggia va»).
+
+### Lezione
+#### Fa caldo, fa freddo
+Per il tempo si usano parole in **-о** senza soggetto, come **бы́ло** di ieri:
+- **тепло́** — fa caldo (piacevole, tiepido);
+- **жа́рко** — fa molto caldo, afa;
+- **хо́лодно** — fa freddo.
+
+Al passato con **бы́ло**: **Вчера́ бы́ло хо́лодно.** — Ieri faceva freddo.
+
+---
+#### Pioggia, neve, sole
+- **Идёт дождь.** — Piove. (la pioggia «va»)
+- **Идёт снег.** — Nevica.
+- **Све́тит со́лнце.** — C'è il sole (il sole splende).
+- **Ду́ет ве́тер.** — Tira vento.
+
+> **Со́лнце** si pronuncia «sònce»: la **л** non si sente.
+
+---
+#### Domandare
+**Кака́я сего́дня пого́да?** — Che tempo fa oggi?
+**Сего́дня хоро́шая пого́да: тепло́, све́тит со́лнце.** — Oggi è bel tempo: fa caldo e c'è il sole.
+
+### Parole
+пого́да = tempo (atmosferico) [f]
+тепло́ = fa caldo, è tiepido [avv]
+хо́лодно = fa freddo [avv]
+жа́рко = fa molto caldo [avv]
+дождь = pioggia [m]
+снег = neve [m]
+со́лнце = sole [n; si pronuncia «sònce»]
+ве́тер = vento [m]
+идёт дождь = piove [espr]
+
+### Frasi
+Кака́я сего́дня пого́да? = Che tempo fa oggi?
+Сего́дня тепло́, све́тит со́лнце. = Oggi fa caldo, c'è il sole.
+Идёт дождь. = Piove.
+В Москве́ идёт снег. = A Mosca nevica.
+Вчера́ бы́ло о́чень хо́лодно. = Ieri faceva molto freddo.
+Ле́том в Ри́ме жа́рко. = D'estate a Roma fa molto caldo.
+
+### Esercizi
+? Кака́я сего́дня ___ ? = Che tempo fa oggi? {пого́да | вре́мя | день}
+? Идёт ___ . = Piove. {дождь | снег | ве́тер}
+? Идёт ___ . = Nevica. {снег | дождь | со́лнце}
+? Сего́дня ___ . = Oggi fa freddo. {хо́лодно | тепло́ | жа́рко}
+? Вчера́ ___ жа́рко. = Ieri faceva molto caldo. {бы́ло | был | была́}
+? Come si pronuncia «со́лнце»? {sònce | sòlnce | solnzè}
+? «ве́тер» vuol dire… {vento | sera | vetro}
+> Scrivi «neve» in russo → снег
+~ Сего́дня тепло́, све́тит со́лнце. = Oggi fa caldo, c'è il sole.
+
+## Giorno 53 | Stagioni e mesi
+obiettivo: Dire le stagioni e i mesi e quando succede qualcosa.
+breve: зима́, весна́, ле́то, о́сень → зимо́й, весно́й, ле́том, о́сенью (d'inverno, in primavera…).
+breve: I mesi sono maschili e somigliano ai nostri: янва́рь, февра́ль, март…
+breve: «In gennaio»: **в** + prepositivo: в январе́, в ма́рте, в ма́е.
+
+### Lezione
+#### Le stagioni
+| Stagione | Quando? |
+|---|---|
+| зима́ (inverno) | зимо́й |
+| весна́ (primavera) | весно́й |
+| ле́то (estate) | ле́том |
+| о́сень (autunno) | о́сенью |
+
+**Зимо́й в Москве́ хо́лодно, а ле́том тепло́.**
+
+---
+#### I mesi
+Sono tutti **maschili** e si scrivono con la **minuscola**:
+
+| | | | |
+|---|---|---|---|
+| янва́рь | февра́ль | март | апре́ль |
+| май | ию́нь | ию́ль | а́вгуст |
+| сентя́брь | октя́брь | ноя́брь | дека́брь |
+
+---
+#### In che mese?
+**в** + prepositivo: **в январе́**, **в феврале́**, **в ма́рте**, **в ма́е**, **в ию́не**, **в а́вгусте**, **в декабре́**.
+
+> I mesi in **-рь** e **-ль** spostano l'accento sulla desinenza: **в январе́**, **в сентябре́**. Ma **в а́вгусте**, **в ма́рте**.
+
+---
+#### Mese e anno
+**ме́сяц** — mese; **год** — anno. **Ка́ждый год мы отдыха́ем в ию́ле.** — Ogni anno andiamo in vacanza a luglio.
+
+### Parole
+зима́ = inverno [f]
+весна́ = primavera [f]
+ле́то = estate [n]
+о́сень = autunno [f]
+зимо́й = d'inverno [avv]
+весно́й = in primavera [avv]
+ле́том = d'estate [avv]
+о́сенью = d'autunno [avv]
+ме́сяц = mese [m]
+год = anno [m]
+
+### Frasi
+Зимо́й в Москве́ хо́лодно, а ле́том тепло́. = D'inverno a Mosca fa freddo, e d'estate caldo.
+Я люблю́ о́сень. = Amo l'autunno.
+Весно́й идёт дождь. = In primavera piove.
+У меня́ о́тпуск в ию́ле. = Ho le ferie a luglio.
+В декабре́ идёт снег. = A dicembre nevica.
+Год — э́то двена́дцать ме́сяцев. = Un anno sono dodici mesi.
+
+### Esercizi
+? ___ в Москве́ хо́лодно. = D'inverno a Mosca fa freddo. {Зимо́й | Зима́ | Зи́му}
+? Я люблю́ ___ . = Amo l'estate. {ле́то | ле́том | ле́та}
+? ___ идёт дождь. = In autunno piove. {О́сенью | О́сень | О́сени}
+? У меня́ о́тпуск в ___ . = Ho le ferie a luglio. {ию́ле | ию́ль | ию́ля}
+? В ___ идёт снег. = A dicembre nevica. {декабре́ | дека́брь | декабря́}
+? Quale mese è «октя́брь»? {ottobre | agosto | dicembre}
+? Quale mese è «ию́нь»? {giugno | luglio | gennaio}
+> Scrivi «primavera» in russo → весна́
+~ Зимо́й в Москве́ хо́лодно, а ле́том тепло́. = D'inverno a Mosca fa freddo, e d'estate caldo.
+
+## Giorno 54 | Il futuro: буду + infinito
+obiettivo: Dire che cosa farai.
+breve: Futuro composto: **бу́ду, бу́дешь, бу́дет, бу́дем, бу́дете, бу́дут** + infinito.
+breve: **За́втра я бу́ду рабо́тать.** — Domani lavorerò.
+breve: Da solo, бу́ду vuol dire «sarò»: **За́втра я бу́ду до́ма.**
+
+### Lezione
+#### Il futuro di «essere»
+| я | ты | он, она́ | мы | вы | они́ |
+|---|---|---|---|---|---|
+| бу́ду | бу́дешь | бу́дет | бу́дем | бу́дете | бу́дут |
+
+Da solo vuol dire «sarò, sarai…»: **За́втра я бу́ду до́ма.** — Domani sarò a casa.
+
+---
+#### Il futuro composto
+**бу́ду** + **infinito** = futuro di un'azione (in corso, ripetuta, senza un risultato preciso):
+- **За́втра я бу́ду рабо́тать.** — Domani lavorerò.
+- **Ве́чером мы бу́дем смотре́ть фильм.** — Stasera guarderemo un film.
+- **Что ты бу́дешь де́лать в выходны́е?** — Che farai nel weekend?
+
+> Esiste anche un altro futuro, «semplice», per le azioni concluse (**сде́лаю** — farò e finirò): lo vedremo con l'aspetto dei verbi nel modulo 4.
+
+---
+#### Parole per il futuro
+- **послеза́втра** — dopodomani;
+- **ско́ро** — presto, fra poco;
+- **обяза́тельно** — senz'altro, sicuramente;
+- **наве́рное** — probabilmente.
+
+### Parole
+послеза́втра = dopodomani [avv]
+ско́ро = presto, fra poco [avv]
+обяза́тельно = senz'altro, assolutamente [avv]
+наве́рное = probabilmente, forse [avv]
+план = piano, programma [m]
+бу́дущий = futuro, prossimo [agg]
+
+### Frasi
+За́втра я бу́ду рабо́тать. = Domani lavorerò.
+Что ты бу́дешь де́лать в выходны́е? = Che farai nel fine settimana?
+Ве́чером мы бу́дем смотре́ть фильм. = Stasera guarderemo un film.
+Послеза́втра я бу́ду в Москве́. = Dopodomani sarò a Mosca.
+Ско́ро бу́дет ле́то! = Presto sarà estate!
+Я обяза́тельно бу́ду учи́ть ру́сский ка́ждый день. = Studierò senz'altro il russo ogni giorno.
+
+### Esercizi
+? За́втра я ___ рабо́тать. = Domani lavorerò. {бу́ду | бу́дет | был}
+? Что ты ___ де́лать? = Che farai? {бу́дешь | бу́ду | бу́дете}
+? Ве́чером мы ___ смотре́ть фильм. = Stasera guarderemo un film. {бу́дем | бу́дут | бу́ду}
+? Они́ бу́дут ___ . = Si riposeranno. {отдыха́ть | отдыха́ют | отдыха́ли}
+? За́втра она́ ___ до́ма. = Domani sarà a casa. {бу́дет | была́ | бу́ду}
+? «послеза́втра» vuol dire… {dopodomani | l'altro ieri | domani mattina}
+? «наве́рное» vuol dire… {probabilmente | sicuramente | mai}
+> они́ (быть, futuro) → бу́дут
+~ За́втра я бу́ду рабо́тать. = Domani lavorerò.
+
+## Giorno 55 | Passato, presente e futuro insieme
+obiettivo: Usare i tre tempi nella stessa conversazione.
+breve: Passato: я чита́л(а) · presente: я чита́ю · futuro: я бу́ду чита́ть.
+breve: Essere: был / — / бу́ду. Avere: у меня́ был / у меня́ есть / у меня́ бу́дет.
+breve: обы́чно = di solito · тепе́рь = adesso, ora (rispetto a prima).
+
+### Lezione
+#### I tre tempi, in una tabella
+| | Passato | Presente | Futuro |
+|---|---|---|---|
+| leggere | чита́л(а) | чита́ю | бу́ду чита́ть |
+| lavorare | рабо́тал(а) | рабо́таю | бу́ду рабо́тать |
+| essere | был(а́) | — | бу́ду |
+| avere | у меня́ был(а́) | у меня́ есть | у меня́ бу́дет |
+
+---
+#### Ieri, oggi, domani
+- **Вчера́ я рабо́тал.** — Ieri ho lavorato.
+- **Сего́дня я рабо́таю.** — Oggi lavoro.
+- **За́втра я бу́ду рабо́тать.** — Domani lavorerò.
+
+---
+#### Prima e adesso
+**обы́чно** — di solito; **тепе́рь** — adesso (in contrasto con prima):
+**Ра́ньше я жил в Ри́ме, а тепе́рь живу́ в Москве́.** — Prima vivevo a Roma, adesso vivo a Mosca.
+
+> **сейча́с** = in questo momento; **тепе́рь** = adesso, da ora in poi, rispetto a prima.
+
+### Parole
+обы́чно = di solito [avv]
+тепе́рь = adesso, ora (rispetto a prima) [avv]
+позавчера́ = l'altro ieri [avv]
+всё вре́мя = sempre, continuamente [espr]
+
+### Frasi
+Ра́ньше я жил в Ри́ме, а тепе́рь живу́ в Москве́. = Prima vivevo a Roma, adesso vivo a Mosca.
+Обы́чно я встаю́ в семь, но вчера́ я встал по́здно. = Di solito mi alzo alle sette, ma ieri mi sono alzato tardi.
+Вчера́ у нас был уро́к, а за́втра бу́дет экза́мен. = Ieri avevamo lezione, e domani ci sarà l'esame.
+Позавчера́ бы́ло хо́лодно, а сего́дня тепло́. = L'altro ieri faceva freddo, oggi fa caldo.
+Он всё вре́мя рабо́тает. = Lavora sempre.
+Что ты де́лал вчера́ и что бу́дешь де́лать за́втра? = Che hai fatto ieri e che farai domani?
+
+### Esercizi
+? Вчера́ я ___ . = Ieri ho letto. {чита́л | чита́ю | бу́ду чита́ть}
+? Сего́дня я ___ . = Oggi lavoro. {рабо́таю | рабо́тал | бу́ду рабо́тать}
+? За́втра мы ___ . = Domani ci riposeremo. {бу́дем отдыха́ть | отдыха́ли | отдыха́ем}
+? За́втра у нас ___ экза́мен. = Domani avremo l'esame. {бу́дет | был | есть}
+? Вчера́ у нас ___ уро́к. = Ieri avevamo lezione. {был | была́ | бу́дет}
+? ___ я жил в Ри́ме, а тепе́рь в Москве́. {Ра́ньше | Тепе́рь | Обы́чно}
+? «позавчера́» vuol dire… {l'altro ieri | dopodomani | ieri sera}
+? «обы́чно» vuol dire… {di solito | ovviamente | raramente}
+~ Ра́ньше я жил в Ри́ме, а тепе́рь живу́ в Москве́. = Prima vivevo a Roma, adesso vivo a Mosca.
+
+## Giorno 56 | Ripasso e test del modulo 2
+obiettivo: Leggere un racconto al passato e fare il test del modulo.
+
+### Lettura | Выходны́е | Il fine settimana
+В пя́тницу ве́чером Ма́ша была́ на вечери́нке. = Venerdì sera Maša è stata a una festa.
+Бы́ло о́чень ве́село: друзья́ пе́ли и танцева́ли. = È stato molto divertente: gli amici cantavano e ballavano.
+В суббо́ту она́ вста́ла по́здно, в оди́ннадцать часо́в. = Sabato si è alzata tardi, alle undici.
+Шёл дождь, бы́ло хо́лодно. = Pioveva, faceva freddo.
+Ма́ша была́ до́ма: чита́ла кни́гу и смотре́ла фильм. = Maša è rimasta a casa: ha letto un libro e guardato un film.
+В воскресе́нье бы́ло тепло́ и свети́ло со́лнце. = Domenica faceva caldo e c'era il sole.
+Ма́ша и её подру́га гуля́ли в па́рке. = Maša e la sua amica hanno passeggiato nel parco.
+Пото́м они́ обе́дали в кафе́. = Poi hanno pranzato al bar.
+Сего́дня понеде́льник, и Ма́ша рабо́тает. = Oggi è lunedì, e Maša lavora.
+А в суббо́ту она́ бу́дет отдыха́ть на да́че. = E sabato si riposerà in dacia.
+
+### Domande
+? Dove è stata Maša venerdì sera? {a una festa | al cinema | al lavoro}
+? Che tempo faceva sabato? {pioveva, faceva freddo | c'era il sole | nevicava}
+? Che cosa ha fatto domenica? {ha passeggiato con un'amica | è rimasta a casa | ha lavorato}
+? Che cosa farà sabato prossimo? {si riposerà in dacia | andrà a una festa | lavorerà}

@@ -1,0 +1,352 @@
+# Settimana 20 | Descrivere le persone
+
+## Giorno 134 | L'aspetto fisico
+obiettivo: Descrivere com'è fatta una persona.
+breve: высо́кий / ни́зкий (alto / basso), худо́й / по́лный (magro / robusto).
+breve: **У неё дли́нные во́лосы и голубы́е глаза́.** — Ha i capelli lunghi e gli occhi azzurri. (у + genitivo)
+breve: **Он похо́ж на отца́.** — Somiglia al padre. (похо́ж на + accusativo)
+
+### Lezione
+#### Com'è?
+| Russo | Italiano |
+|---|---|
+| высо́кий / ни́зкий | alto / basso |
+| худо́й / по́лный | magro / robusto (in carne) |
+| краси́вый | bello |
+| молодо́й / пожило́й | giovane / anziano |
+| рост | statura: **высо́кого ро́ста** (di alta statura) |
+
+---
+#### Capelli, occhi e il resto
+Si usa **у** + genitivo (avere):
+- **У неё дли́нные во́лосы.** — Ha i capelli lunghi. (**дли́нный** lungo, **коро́ткий** corto)
+- **У него́ голубы́е глаза́ и борода́.** — Ha gli occhi azzurri e la barba.
+- **Он но́сит очки́.** — Porta gli occhiali.
+
+Capelli: **све́тлые** (chiari, biondi), **тёмные** (scuri), **ры́жие** (rossi), **седы́е** (grigi).
+
+---
+#### Somigliare
+**похо́ж** (m) / **похо́жа** (f) / **похо́жи** (pl) **на** + accusativo:
+- **Он похо́ж на отца́.** — Somiglia al padre.
+- **Она́ похо́жа на ма́му.**
+- **Они́ похо́жи.** — Si somigliano.
+
+### Parole
+высо́кий = alto [agg]
+ни́зкий = basso [agg]
+худо́й = magro [agg]
+по́лный = robusto, grasso; pieno [agg]
+рост = statura, altezza [m]
+борода́ = barba [f]
+очки́ = occhiali [pl]
+похо́ж = somigliante, simile [agg; похо́жа, похо́жи; + на + accusativo]
+
+### Frasi
+Мой брат высо́кий и худо́й. = Mio fratello è alto e magro.
+У неё дли́нные све́тлые во́лосы. = Ha i capelli lunghi e biondi.
+У де́душки бе́лая борода́. = Il nonno ha la barba bianca.
+Она́ но́сит очки́. = Porta gli occhiali.
+Ты о́чень похо́жа на ма́му! = Somigli tantissimo alla mamma!
+Како́го он ро́ста? — Высо́кого. = Quanto è alto? — È alto.
+
+### Esercizi
+? Il contrario di «высо́кий» è… {ни́зкий | худо́й | у́зкий}
+? Il contrario di «худо́й» è… {по́лный | высо́кий | молодо́й}
+? У ___ дли́нные во́лосы. = Lei ha i capelli lunghi. {неё | её | ней}
+? Он похо́ж ___ отца́. = Somiglia al padre. {на | с | к}
+? Она́ ___ на ма́му. = Somiglia alla mamma. {похо́жа | похо́ж | похо́жи}
+? Он но́сит ___ . = Porta gli occhiali. {очки́ | очко́ | очка́}
+? «борода́» vuol dire… {barba | baffi | bordo}
+> Scrivi «alto» in russo → высо́кий
+~ Ты о́чень похо́жа на ма́му! = Somigli tantissimo alla mamma!
+
+## Giorno 135 | Il carattere
+obiettivo: Descrivere il carattere delle persone.
+breve: до́брый (buono), у́мный (intelligente), весёлый (allegro), серьёзный (serio), споко́йный (calmo).
+breve: лени́вый (pigro), че́стный (onesto), ще́дрый (generoso), скро́мный (modesto).
+breve: **Како́й у него́ хара́ктер?** — Che carattere ha?
+
+### Lezione
+#### Qualità
+| Russo | Italiano |
+|---|---|
+| до́брый | buono, gentile d'animo |
+| у́мный | intelligente |
+| весёлый | allegro |
+| серьёзный | serio |
+| споко́йный | calmo, tranquillo |
+| че́стный | onesto |
+| ще́дрый | generoso |
+| скро́мный | modesto |
+
+#### Difetti
+**лени́вый** (pigro), **глу́пый** (stupido), **злой** (cattivo, arrabbiato), **жа́дный** (avaro).
+
+---
+#### Parlare del carattere
+- **Како́й у него́ хара́ктер?** — Che carattere ha?
+- **У неё лёгкий хара́ктер.** — Ha un carattere facile.
+- **У него́ тру́дный хара́ктер.** — Ha un carattere difficile.
+
+> Per «è una persona buona» si dice spesso **Он до́брый челове́к** (anche per una donna: **Она́ до́брый челове́к**).
+
+### Parole
+хара́ктер = carattere [m]
+до́брый = buono (d'animo), gentile [agg]
+у́мный = intelligente [agg]
+весёлый = allegro [agg]
+серьёзный = serio [agg]
+споко́йный = calmo, tranquillo [agg]
+лени́вый = pigro [agg]
+че́стный = onesto [agg; si pronuncia «čèsnyj»]
+ще́дрый = generoso [agg]
+скро́мный = modesto [agg]
+
+### Frasi
+Моя́ ба́бушка о́чень до́брая. = Mia nonna è molto buona.
+Он у́мный, но лени́вый. = È intelligente, ma pigro.
+Како́й у неё хара́ктер? — Весёлый и споко́йный. = Che carattere ha? — Allegro e calmo.
+Он че́стный и ще́дрый челове́к. = È una persona onesta e generosa.
+Не будь тако́й серьёзной! = Non essere così seria!
+У моего́ дру́га лёгкий хара́ктер. = Il mio amico ha un carattere facile.
+
+### Esercizi
+? «у́мный» vuol dire… {intelligente | ricco | umile}
+? «лени́вый» vuol dire… {pigro | lento | leggero}
+? «ще́дрый» vuol dire… {generoso | onesto | geloso}
+? Моя́ ба́бушка о́чень ___ . = Mia nonna è molto buona. {до́брая | до́брый | до́брое}
+? Како́й у неё ___ ? = Che carattere ha? {хара́ктер | хара́ктера | хара́ктеры}
+? Il contrario di «весёлый» (allegro) può essere… {гру́стный | глу́пый | ще́дрый}
+> Scrivi «onesto» in russo → че́стный
+~ Он у́мный, но лени́вый. = È intelligente, ma pigro.
+
+## Giorno 136 | Il comparativo
+obiettivo: Confrontare persone e cose.
+breve: Comparativo «breve»: aggettivo/avverbio + **-ее**: быстре́е, интере́снее, краси́вее.
+breve: «Di» nel confronto: **чем** (Он вы́ше, чем я) oppure il genitivo (Он вы́ше меня́).
+breve: Irregolari: бо́льше, ме́ньше, лу́чше, ху́же, вы́ше, ни́же, ста́рше, моло́же, доро́же, деше́вле.
+
+### Lezione
+#### Più…
+Il comparativo più comune si forma con **-ее** (accento spesso su **-е́е** se la parola è corta):
+- **бы́стрый → быстре́е**, **интере́сный → интере́снее**, **краси́вый → краси́вее**, **тёплый → тепле́е**.
+
+È invariabile: **Э́та кни́га интере́снее.** **Э́тот фильм интере́снее.**
+
+---
+#### Più di…
+Due modi:
+1. **чем** + nominativo: **Москва́ бо́льше, чем Рим.**
+2. **genitivo** senza preposizione: **Москва́ бо́льше Ри́ма.**
+
+---
+#### Gli irregolari (frequentissimi)
+| Aggettivo | Comparativo |
+|---|---|
+| большо́й | бо́льше |
+| ма́ленький | ме́ньше |
+| хоро́ший | лу́чше |
+| плохо́й | ху́же |
+| высо́кий | вы́ше |
+| ни́зкий | ни́же |
+| ста́рый (età) | ста́рше |
+| молодо́й | моло́же |
+| дорого́й | доро́же |
+| дешёвый | деше́вле |
+
+> **Гора́здо** = molto (davanti al comparativo): **гора́здо лу́чше** — molto meglio.
+
+### Parole
+бо́льше = più, più grande [avv]
+ме́ньше = meno, più piccolo [avv]
+лу́чше = meglio, migliore [avv]
+ху́же = peggio, peggiore [avv]
+чем = di, che (nei confronti) [cong]
+гора́здо = molto (davanti al comparativo) [avv]
+
+### Frasi
+Москва́ бо́льше, чем Рим. = Mosca è più grande di Roma.
+Мой брат ста́рше меня́. = Mio fratello è più grande di me.
+Сего́дня тепле́е, чем вчера́. = Oggi fa più caldo di ieri.
+Э́тот фильм гора́здо интере́снее. = Questo film è molto più interessante.
+Говори́ ме́дленнее, пожа́луйста! = Parla più lentamente, per favore!
+Лу́чше по́здно, чем никогда́. = Meglio tardi che mai.
+
+### Esercizi
+? Москва́ ___ , чем Рим. = Mosca è più grande di Roma. {бо́льше | бо́льший | ме́ньше}
+? Мой брат ста́рше ___ . = Mio fratello è più grande di me. {меня́ | я | мне}
+? Сего́дня ___ , чем вчера́. = Oggi fa più caldo di ieri. {тепле́е | тёплый | тепло́}
+? Э́тот фильм ___ интере́снее. = Questo film è molto più interessante. {гора́здо | о́чень | са́мый}
+? Il comparativo di «хоро́ший» è… {лу́чше | хоро́шее | хороше́е}
+? Il comparativo di «плохо́й» è… {ху́же | плохе́е | пло́хо}
+? Лу́чше по́здно, ___ никогда́. = Meglio tardi che mai. {чем | как | что}
+> бы́стрый → (comparativo) → быстре́е
+~ Москва́ бо́льше, чем Рим. = Mosca è più grande di Roma.
+
+## Giorno 137 | Il superlativo
+obiettivo: Dire «il più…» di tutti.
+breve: са́мый + aggettivo: **са́мый большо́й го́род** (la città più grande); са́мый si accorda.
+breve: «Il migliore / il peggiore»: **лу́чший / ху́дший** (o са́мый хоро́ший / са́мый плохо́й).
+breve: «…del mondo»: **в ми́ре** · comparativo + **всех / всего́**: Он лу́чше всех.
+
+### Lezione
+#### Il più…
+**са́мый** + aggettivo (si declinano tutti e due):
+- **Москва́ — са́мый большо́й го́род Росси́и.** — Mosca è la città più grande della Russia.
+- **Э́то са́мая краси́вая у́лица.**
+- **Я живу́ в са́мом це́нтре.** — Abito proprio in centro (**са́мый** = «proprio, il più»).
+
+---
+#### Il migliore, il peggiore
+- **лу́чший** — il migliore: **мой лу́чший друг** (il mio migliore amico);
+- **ху́дший** — il peggiore: **ху́дший день** (il giorno peggiore).
+
+---
+#### Meglio di tutti
+Comparativo + **всех** (di tutti) / **всего́** (di tutto):
+- **Она́ поёт лу́чше всех.** — Canta meglio di tutti.
+- **Бо́льше всего́ я люблю́ чай.** — Più di tutto amo il tè.
+
+> **мир** vuol dire «mondo» (e anche «pace»): **са́мый высо́кий челове́к в ми́ре**.
+
+### Parole
+са́мый = il più (superlativo); proprio [pron]
+лу́чший = il migliore [agg]
+ху́дший = il peggiore [agg]
+мир = mondo; pace [m]
+
+### Frasi
+Москва́ — са́мый большо́й го́род Росси́и. = Mosca è la città più grande della Russia.
+Он мой лу́чший друг. = È il mio migliore amico.
+Э́то был са́мый счастли́вый день в мое́й жи́зни. = È stato il giorno più felice della mia vita.
+Она́ поёт лу́чше всех. = Canta meglio di tutti.
+Бо́льше всего́ я люблю́ ле́то. = Più di tutto amo l'estate.
+Байка́л — са́мое глубо́кое о́зеро в ми́ре. = Il Bajkal è il lago più profondo del mondo.
+
+### Esercizi
+? Москва́ — ___ большо́й го́род Росси́и. {са́мый | бо́льше | о́чень}
+? Э́то ___ краси́вая у́лица. = È la via più bella. {са́мая | са́мый | са́мое}
+? Он мой ___ друг. = È il mio migliore amico. {лу́чший | лу́чше | хоро́ший са́мый}
+? Она́ поёт лу́чше ___ . = Canta meglio di tutti. {всех | все | всё}
+? Бо́льше ___ я люблю́ ле́то. = Più di tutto amo l'estate. {всего́ | всех | весь}
+? Байка́л — са́мое глубо́кое о́зеро в ___ . = …del mondo. {ми́ре | мир | ми́ра}
+~ Он мой лу́чший друг. = È il mio migliore amico.
+
+## Giorno 138 | Amici e relazioni
+obiettivo: Parlare di amicizia, amore e matrimonio.
+breve: друг / подру́га (amico/a stretto/a), знако́мый (conoscente), дружи́ть (essere amici).
+breve: Sposarsi: lui **же́нится на** + prepositivo; lei **выхо́дит / вы́шла за́муж за** + accusativo.
+breve: сва́дьба = matrimonio (la festa); влюби́ться в + accusativo = innamorarsi di.
+
+### Lezione
+#### Amici e conoscenti
+- **друг**, **подру́га** — amico/a vero/a;
+- **знако́мый**, **знако́мая** — conoscente (si declina come un aggettivo);
+- **дружи́ть с** + strumentale — essere amici: **Мы дру́жим с де́тства.** — Siamo amici dall'infanzia.
+
+> Un russo usa **друг** solo per gli amici veri: per gli altri dice **знако́мый** o **прия́тель**.
+
+---
+#### Amore e matrimonio
+- **влюби́ться в** + accusativo — innamorarsi di: **Он влюби́лся в неё.**
+- per un uomo: **жени́ться на** + prepositivo: **Он жени́лся на А́нне.** — Ha sposato Anna.
+- per una donna: **вы́йти за́муж за** + accusativo: **Она́ вы́шла за́муж за Ива́на.** — Ha sposato Ivan.
+- **Они́ пожени́лись.** — Si sono sposati.
+- **сва́дьба** — matrimonio, nozze (la festa).
+
+> Stato civile: **Он жена́т.** (è sposato) / **Она́ за́мужем.** (è sposata).
+
+### Parole
+знако́мый = conoscente [agg; si declina come un aggettivo]
+дружи́ть = essere amici [v impf; дружу́, дру́жишь]
+влюби́ться = innamorarsi [v pf; влюблю́сь, влю́бишься]
+жени́ться = sposarsi (detto di un uomo) [v; женю́сь, же́нишься]
+вы́йти за́муж = sposarsi (detto di una donna) [espr]
+сва́дьба = matrimonio, nozze [f]
+
+### Frasi
+Мы дру́жим с де́тства. = Siamo amici dall'infanzia.
+Э́то не друг, а про́сто знако́мый. = Non è un amico, solo un conoscente.
+Он влюби́лся в неё с пе́рвого взгля́да. = Si è innamorato di lei a prima vista.
+Ива́н жени́лся на О́льге. = Ivan ha sposato Ol'ga.
+Ма́ша вы́шла за́муж за италья́нца. = Maša ha sposato un italiano.
+Сва́дьба была́ в ию́не. = Il matrimonio è stato a giugno.
+
+### Esercizi
+? Он жени́лся ___ А́нне. = Ha sposato Anna. {на | за | с}
+? Она́ вы́шла за́муж ___ Ива́на. = Ha sposato Ivan. {за | на | с}
+? Он влюби́лся ___ неё. = Si è innamorato di lei. {в | на | за}
+? Мы ___ с де́тства. = Siamo amici dall'infanzia. {дру́жим | дружи́м | друзья́}
+? Lei è sposata: {Она́ за́мужем. | Она́ жена́та. | Она́ жени́лась.}
+? «сва́дьба» vuol dire… {matrimonio (festa) | fidanzamento | svago}
+~ Ма́ша вы́шла за́муж за италья́нца. = Maša ha sposato un italiano.
+
+## Giorno 139 | Свой: il possessivo riflessivo
+obiettivo: Usare «свой» quando il possessore è il soggetto.
+breve: **свой** = il proprio, il suo (del soggetto): **Он лю́бит свою́ жену́.** (la sua, di lui stesso).
+breve: **его́ / её** = di un'altra persona: **Он лю́бит его́ жену́.** (la moglie di un altro!)
+breve: свой si declina come мой: своего́, своему́, свои́м, о своём; свою́, свое́й; свои́.
+
+### Lezione
+#### Il problema
+In italiano «Marco ama sua moglie» è ambiguo? No, perché si capisce. In russo bisogna scegliere:
+- **Ма́рко лю́бит свою́ жену́.** — Marco ama sua moglie (la propria).
+- **Ма́рко лю́бит его́ жену́.** — Marco ama la moglie di lui (di un altro uomo!).
+
+---
+#### La regola
+Quando il possessore è **il soggetto della stessa frase**, si usa **свой**, per tutte le persone:
+- **Я люблю́ свою́ рабо́ту.** (anche **мою́** va bene con я, ты, мы, вы)
+- **Она́ звони́т своему́ бра́ту.** — Telefona a suo fratello (di lei).
+- **Они́ продаю́т свой дом.** — Vendono la loro casa.
+
+Con **он, она́, они́** la differenza è obbligatoria.
+
+---
+#### Ma non nel soggetto
+**Свой** non si usa nel soggetto: **Его́ жена́ врач.** (non «своя́ жена́»).
+
+> **Со́бственный** — proprio, personale: **со́бственный дом** (una casa di proprietà).
+
+### Parole
+свой = il proprio, suo (del soggetto) [pron; своя́, своё, свои́]
+со́бственный = proprio, di proprietà [agg]
+
+### Frasi
+Ма́рко лю́бит свою́ жену́. = Marco ama sua moglie.
+Она́ звони́т своему́ бра́ту. = Telefona a suo fratello.
+Они́ продаю́т свой дом. = Vendono la loro casa.
+Он рассказа́л о свое́й рабо́те. = Ha raccontato del suo lavoro.
+Его́ жена́ рабо́тает врачо́м. = Sua moglie fa il medico.
+У нас есть со́бственная кварти́ра. = Abbiamo un appartamento di proprietà.
+
+### Esercizi
+? Он лю́бит ___ жену́. = Ama sua moglie (la propria). {свою́ | его́ | своя́}
+? Она́ звони́т ___ бра́ту. = Telefona a suo fratello. {своему́ | её | своего́}
+? ___ жена́ врач. = Sua moglie (di lui) è medico. {Его́ | Своя́ | Свою́}
+? Они́ продаю́т ___ дом. = Vendono la loro casa. {свой | их сам | своего́}
+? Он рассказа́л о ___ рабо́те. = Ha raccontato del suo lavoro. {свое́й | свою́ | своя́}
+? «Ива́н ви́дит его́ сестру́» vuol dire… {Ivan vede la sorella di un altro | Ivan vede sua sorella | Ivan vede le sorelle}
+~ Ма́рко лю́бит свою́ жену́. = Marco ama sua moglie.
+
+## Giorno 140 | Ripasso e test del modulo 5
+obiettivo: Leggere la descrizione di un amico e fare il test del modulo.
+
+### Lettura | Мой лу́чший друг | Il mio migliore amico
+Моего́ лу́чшего дру́га зову́т Ди́ма. = Il mio migliore amico si chiama Dima.
+Мы дру́жим с де́тства: мы жи́ли в одно́м до́ме. = Siamo amici dall'infanzia: abitavamo nello stesso palazzo.
+Ди́ма высо́кий и худо́й, у него́ тёмные во́лосы и се́рые глаза́. = Dima è alto e magro, ha i capelli scuri e gli occhi grigi.
+Он похо́ж на своего́ отца́. = Somiglia a suo padre.
+Ди́ма о́чень у́мный и весёлый челове́к. = Dima è una persona molto intelligente e allegra.
+Он ста́рше меня́ на год, но вы́глядит моло́же. = Ha un anno più di me, ma sembra più giovane.
+Он лу́чше всех игра́ет в ша́хматы, а я лу́чше игра́ю в футбо́л. = Gioca a scacchi meglio di tutti, mentre io gioco meglio a calcio.
+В про́шлом году́ Ди́ма жени́лся на Ка́те. = L'anno scorso Dima ha sposato Katja.
+Сва́дьба была́ са́мым весёлым пра́здником го́да! = Il matrimonio è stato la festa più allegra dell'anno!
+Тепе́рь они́ живу́т в свое́й кварти́ре, и я ча́сто хожу́ к ним в го́сти. = Ora vivono nel loro appartamento, e vado spesso a trovarli.
+
+### Domande
+? Da quando sono amici? {dall'infanzia | dall'università | dall'anno scorso}
+? Com'è Dima fisicamente? {alto e magro | basso e robusto | alto e robusto}
+? In che cosa è il migliore Dima? {negli scacchi | nel calcio | nella musica}
+? Chi ha sposato Dima? {Katja | Maša | Anna}

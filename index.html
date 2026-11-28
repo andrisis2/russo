@@ -205,6 +205,9 @@
   @keyframes shimmer{to{transform:translateX(100%)}}
   @keyframes ringIn{from{transform:scale(.6) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}
   @keyframes confetti{0%{transform:translate(0,0) rotate(0);opacity:1}100%{transform:translate(var(--dx),var(--dy)) rotate(var(--rot));opacity:0}}
+  /* le animazioni di scorrimento (e qualunque cosa sporga) non devono allargare la pagina:
+     sul telefono la vista si rimpicciolirebbe. clip non crea uno scorrimento, i sticky restano */
+  #app{overflow-x:clip}
   .slide-left{animation:slideInLeft .24s cubic-bezier(.22,.68,0,1.1) both}
   .slide-right{animation:slideInRight .24s cubic-bezier(.22,.68,0,1.1) both}
 
@@ -1546,6 +1549,112 @@
     *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
     .confetti{display:none}
   }
+
+  /* ============================ CORSO IN 365 GIORNI ============================ */
+  /* vocale con l'accento tonico: col carattere di sistema l'accento sta al suo posto */
+  .acc{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif}
+  /* parole russe toccabili dentro le spiegazioni */
+  .ru-tap{color:var(--accent2-ink);font-weight:650;cursor:pointer;border-radius:5px;transition:background .15s;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .ru-tap.on,.ru-tap:active{background:var(--accent2-soft)}
+  @media (hover:hover){ .ru-tap:hover{background:var(--accent2-soft)} }
+  /* pagine della lezione */
+  .lz-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 2px}
+  .lz-tit{font-size:13px;font-weight:700;color:var(--muted);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .lz-dots{display:flex;gap:5px;flex:0 0 auto}
+  .lz-dots i{width:7px;height:7px;border-radius:50%;background:var(--line2);transition:width .2s,background .2s}
+  .lz-dots i.on{width:20px;border-radius:4px;background:var(--accent2)}
+  .lz-card{padding:20px 18px;font-size:15.5px;line-height:1.65;color:var(--text)}
+  .lz-card p{margin:0 0 12px}
+  .lz-card p:last-child{margin-bottom:0}
+  .lz-card .tbl-wrap{margin:4px 0 14px}
+  .lz-card table.ref{font-size:14.5px;min-width:100%}
+  .lz-card table.ref td,.lz-card table.ref th{white-space:normal;min-width:58px;padding:9px 10px}
+  .lz-card table.ref.fitta{font-size:13px}
+  .lz-card table.ref.fitta td,.lz-card table.ref.fitta th{min-width:0;padding:8px 7px}
+  .lz-card table.ref tbody td:first-child{color:var(--text);font-weight:700}
+  .lz-h{margin:2px 0 10px;font-size:18px;font-weight:800;letter-spacing:-.3px;line-height:1.3}
+  .lz-ul{margin:0 0 12px;padding-left:22px}
+  .lz-ul li{margin:4px 0}
+  .lz-box{display:flex;gap:10px;align-items:flex-start;background:var(--gold-soft);border-radius:14px;padding:12px 14px;margin:4px 0 12px;font-size:14.5px;line-height:1.55;color:var(--text2)}
+  .lz-obj{background:var(--accent2-soft);color:var(--text2);border-radius:14px;padding:10px 13px;margin:0 0 14px;font-size:14px;line-height:1.5}
+  /* parola nuova */
+  .nw-card{gap:6px;padding:20px 18px 18px;position:relative}
+  .nw-top{display:flex;align-items:center;gap:8px;min-height:22px}
+  .nw-top .gtag{position:static}
+  .nw-tipo{font-size:11.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--accent2)}
+  .nw-ru{border:0;background:none;color:var(--text);font-weight:800;letter-spacing:-.6px;line-height:1.15;display:inline-flex;align-items:center;gap:10px;padding:4px 6px;border-radius:12px;font-family:inherit}
+  .nw-ru .i{width:22px;height:22px;color:var(--accent2);flex:0 0 auto}
+  .nw-ru:active{background:var(--accent2-soft)}
+  .nw-tr{font-size:15px;color:var(--muted);font-style:italic}
+  .nw-it{font-size:22px;font-weight:700;letter-spacing:-.2px;margin-top:4px}
+  .nw-nota{font-size:13.5px;color:var(--text2);background:var(--card2);border-radius:10px;padding:6px 10px;line-height:1.45}
+  .nw-es{margin-top:8px;border:1px dashed var(--line2);background:var(--card2);border-radius:14px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;text-align:center;width:100%;color:var(--text);font-family:inherit}
+  .nw-es .ru{font-size:16.5px;font-weight:700}
+  .nw-es .it{font-size:13px;color:var(--muted)}
+  .lt-nota{font-size:13px;color:var(--text2);margin-top:4px;line-height:1.45}
+  /* il giorno */
+  .gd-head{display:flex;flex-direction:column;gap:6px;padding:4px 2px 2px}
+  .gd-kick{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .gd-title{margin:0;font-size:24px;font-weight:800;letter-spacing:-.5px;line-height:1.2}
+  .gd-obj{margin:0;font-size:14.5px;color:var(--text2);line-height:1.5}
+  .gd-stato{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+  .gd-nav{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;width:100%;margin-top:4px}
+  .gd-nav .btn{min-height:46px;font-size:14px;padding:8px 12px}
+  .gd-nav .btn .i{width:17px;height:17px}
+  .gd-chev{display:inline-flex;transform:scaleX(-1)}
+  .gd-az{display:flex;flex-wrap:wrap;gap:2px 10px;justify-content:flex-start;width:100%}
+  /* panoramica del corso */
+  .corso-sum{width:100%;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:12px}
+  .corso-sum .sett{margin-top:0}
+  .cs-top{display:flex;align-items:center;gap:12px}
+  .cs-ico{font-size:26px;width:50px;height:50px;border-radius:15px;background:var(--card2);display:grid;place-items:center;flex:0 0 auto}
+  .cs-k{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .cs-t{font-size:18px;font-weight:800;letter-spacing:-.3px}
+  .corso-sum .pbar{height:10px}
+  .tile.corso-rip{--tc:#18a086}
+  .tile.corso-rip .ico{background:linear-gradient(135deg,#34cfa2,#178a86)}
+  .tile[data-mode="daily"]{--tc:#e0364b}
+  .tile[data-mode="daily"] .ico{background:linear-gradient(135deg,#f5727f,#d6334a)}
+  .mod-card{width:100%;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-sm);overflow:hidden}
+  .mod-card.cur{border-color:var(--accent2);box-shadow:0 0 0 3px var(--accent2-soft)}
+  .mod-card summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:13px 14px}
+  .mod-card summary::-webkit-details-marker{display:none}
+  .mc-ico{font-size:22px;width:44px;height:44px;border-radius:13px;background:var(--card2);display:grid;place-items:center;flex:0 0 auto}
+  .mc-txt{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+  .mc-k{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .mc-txt b{font-size:15.5px;letter-spacing:-.1px}
+  .mc-bar{height:5px;border-radius:99px;background:var(--card3);overflow:hidden;margin-top:3px}
+  .mc-bar i{display:block;height:100%;background:var(--grad-prog)}
+  .mc-n{font-size:12.5px;font-weight:700;color:var(--muted);flex:0 0 auto}
+  .mc-body{padding:0 10px 10px;display:flex;flex-direction:column;gap:2px}
+  .mc-desc{margin:0 4px 6px;font-size:13.5px;color:var(--muted);line-height:1.5}
+  .mc-week{font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent2);margin:10px 4px 4px}
+  .mc-vuoto{font-size:13px;color:var(--muted);padding:6px 4px}
+  .mod-card .textbtn{align-self:flex-start;margin-top:6px}
+  .gd-row{display:flex;align-items:center;gap:10px;border:0;background:none;color:var(--text);font:inherit;text-align:left;padding:7px 6px;border-radius:12px;width:100%}
+  .gd-row:active{background:var(--card2)}
+  @media (hover:hover){ .gd-row:hover{background:var(--card2)} }
+  .gr-dot{width:30px;height:30px;border-radius:50%;border:2px solid var(--line2);display:grid;place-items:center;font-size:11.5px;font-weight:800;color:var(--muted);flex:0 0 auto}
+  .gr-dot .i{width:16px;height:16px;stroke-width:3}
+  .gr-t{flex:1;min-width:0;font-size:14px;line-height:1.35}
+  .gd-row.ok .gr-dot{background:var(--good);border-color:var(--good);color:#fff}
+  .gd-row.noto .gr-dot{background:var(--gold-soft);border-color:var(--gold);font-size:13px}
+  .gd-row.via .gr-dot{border-color:var(--accent2);color:var(--accent2)}
+  .gd-row.cur .gr-dot{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+  .gd-row.cur .gr-t{font-weight:700}
+  .rie-card{display:flex;flex-direction:column;gap:6px}
+  .rie-h{display:flex;align-items:center;gap:10px;border:0;background:none;padding:0;color:var(--text);font:inherit;text-align:left}
+  .rie-n{width:28px;height:28px;border-radius:9px;background:var(--accent2-soft);color:var(--accent2);font-size:12.5px;font-weight:800;display:grid;place-items:center;flex:0 0 auto}
+  .rie-h b{font-size:15px}
+  .rie-card .lz-ul{margin:0;font-size:14px;line-height:1.5;color:var(--text2)}
+  .corso-come{display:flex;flex-direction:column;gap:12px}
+  .corso-come>div{display:flex;gap:12px;align-items:flex-start}
+  .corso-come span{font-size:22px;line-height:1.2;flex:0 0 auto}
+  .corso-come p{margin:0;font-size:14px;line-height:1.5;color:var(--text2)}
+  .diploma{text-align:center;border:2px solid var(--gold);background:linear-gradient(135deg,var(--card) 55%,var(--gold-soft));display:flex;flex-direction:column;gap:4px;padding:20px}
+  .dp-k{font-size:28px;font-weight:800;letter-spacing:.06em;color:var(--gold)}
+  .dp-t{font-size:16px;font-weight:800}
+  .dp-s{font-size:13px;color:var(--muted)}
 </style>
 </head>
 <body class="is-home">
@@ -2255,8 +2364,8 @@ function dailyStreak(){
 function recordDailyDone(){
   const s=dailyState(), t=todayStr();
   s.streak = (s.last===yesterdayStr()) ? (s.streak||0)+1 : (s.last===t ? (s.streak||1) : 1);
-  const primaOggi = s.last !== t;
-  s.last=t; s.completed=true;
+  const primaOggi = s.ripasso !== t;
+  s.last=t; s.ripasso=t; s.completed=true;
   localStorage.setItem(DAILY_KEY, JSON.stringify(s));
   if(primaOggi) addXP(50);
 }
@@ -2313,7 +2422,7 @@ function componiRipasso(n){
 
   // Frasi: prima quelle da ripassare, a turno da comporre e da completare
   const nW = f => paroleFrase(f.ru).length;
-  const frasi = shuffle((DB.frasi||[]).filter(f=>f.ru && f.it && nW(f)>=3 && nW(f)<=8))
+  const frasi = shuffle(frasiPerRipassoMisto().filter(f=>f.ru && f.it && nW(f)>=3 && nW(f)<=8))
     .sort((a,b)=>(isDue(b.id)?1:0)-(isDue(a.id)?1:0)).slice(0, nFrasi);
   const primo = giorno % 2;
   frasi.forEach((f,k)=>out.push({t:(k+primo)%2 ? 'completa' : 'componi', id:f.id}));
@@ -2352,7 +2461,7 @@ function componiRipasso(n){
   riempi(ruota(['numero','dialogo','proverbio']), nVarie);
 
   // Parole: tutto il resto, le più urgenti per prime; a turno carta e scelta
-  const voci = (DB.voci||[]).filter(v=>v.ru && v.it);
+  const voci = vociPerRipassoMisto();
   const due = voci.filter(v=>isDue(v.id)).sort((a,b)=>dueScore(b.id)-dueScore(a.id));
   const notDue = shuffle(voci.filter(v=>!isDue(v.id)));
   // le urgenti a pari merito (mai viste) si mescolano, così non escono sempre le stesse
@@ -2453,7 +2562,7 @@ window.addEventListener("popstate", e=>{
 const RIPRENDI_KEY = 'russo_riprendi_v1';
 const RIPRENDI_MAX = 10*60*1000;
 const SEZ_RIPRENDIBILI = ['daily','flash','cyr','conj','gram','phrase','vocab','ref','frasigram','verbi','esercizi','write',
-  'stats','settings','dialoghi','frasario','compose','numeri','percorso','letture','cultura','proverbi','palestra','frasi','giochi'];
+  'stats','settings','dialoghi','frasario','compose','numeri','percorso','letture','cultura','proverbi','palestra','frasi','giochi','corso'];
 let _vocabQ = '';                 // ricerca in corso nel Vocabolario
 function annotaSezione(){
   if(_vaVia) return;                // la nota l'ha già lasciata la pagina di prima
@@ -2538,6 +2647,47 @@ function fitSize(text, max, min){
 // vibrazione di feedback (dove supportata): tocco breve se giusto, doppio se sbagliato
 function haptic(ok){ try{ navigator.vibrate && navigator.vibrate(ok?18:[0,35,30,35]); }catch(e){} }
 
+// ---------- Accento tonico (ма́ма) ----------
+// Con il carattere dell'app (Inter, che Google Fonts scarica a pezzi) l'accento
+// combinante finisce spostato a destra, fra due lettere. La vocale accentata,
+// col suo accento, si disegna allora col carattere di sistema, che lo mette al
+// posto giusto. Vale per tutto ciò che compare nella pagina (anche i pannelli).
+const ACC_SEQ = /[^\ś]́/g;
+function avvolgiAccenti(root){
+  if(!root || !root.nodeType) return;
+  if(root.nodeType === 3) root = root.parentNode;
+  if(!root || root.nodeType !== 1) return;
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {acceptNode: n=>{
+    const p = n.parentNode;
+    if(n.nodeValue.indexOf('́') < 0 || !p || (p.classList && p.classList.contains('acc')) || /^(SCRIPT|STYLE|TEXTAREA|OPTION|TITLE)$/.test(p.nodeName)) return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT;
+  }});
+  const nodi = []; while(w.nextNode()) nodi.push(w.currentNode);
+  nodi.forEach(n=>{
+    const t = n.nodeValue, frag = document.createDocumentFragment();
+    let last = 0, m; ACC_SEQ.lastIndex = 0;
+    while((m = ACC_SEQ.exec(t))){
+      if(m.index > last) frag.appendChild(document.createTextNode(t.slice(last, m.index)));
+      const sp = document.createElement('span'); sp.className = 'acc'; sp.textContent = m[0];
+      frag.appendChild(sp); last = m.index + m[0].length;
+    }
+    if(last < t.length) frag.appendChild(document.createTextNode(t.slice(last)));
+    if(n.parentNode) n.parentNode.replaceChild(frag, n);
+  });
+}
+if('MutationObserver' in window){
+  let _accDa = new Set(), _accProg = false;
+  new MutationObserver(muts=>{
+    muts.forEach(m=>{
+      if(m.type === 'characterData') _accDa.add(m.target);
+      else m.addedNodes.forEach(n=>{ if(n.nodeType === 1 || n.nodeType === 3) _accDa.add(n); });
+    });
+    if(_accProg || !_accDa.size) return;
+    _accProg = true;
+    queueMicrotask(()=>{ const da = [..._accDa]; _accDa = new Set(); _accProg = false; da.forEach(n=>{ if(n.isConnected) avvolgiAccenti(n); }); });
+  }).observe(document.body, {childList:true, subtree:true, characterData:true});
+}
+
 // Text-to-speech russo e italiano
 let ruVoice = null, itVoice = null, ruVoices = [];
 let _ttsGen = 0;       // ogni nuova lettura annulla le callback di quella prima (dialoghi)
@@ -2552,7 +2702,7 @@ function speak(text){
   _ttsGen++;
   if(!('speechSynthesis' in window)) return;
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
+  const u = new SpeechSynthesisUtterance(String(text==null?'':text).replace(/\u0301/g,''));
   u.lang = "ru-RU"; if(ruVoice) u.voice = ruVoice; u.rate = settings().ttsRate;
   speechSynthesis.speak(u);
 }
@@ -2723,9 +2873,14 @@ function renderHome(){
 
   // --- Ripasso del giorno + esercizi salvati ---
   const top = $(`<div class="home-top list" style="gap:12px"></div>`);
-  top.appendChild(makeDailyHero());
-  const perc = makePercorsoCard();
-  if(perc) top.appendChild(perc);
+  if(CORSO){
+    top.appendChild(makeCorsoHero());
+    top.appendChild(makeAllenamentoTile());
+  } else {
+    top.appendChild(makeDailyHero());
+    const perc = makePercorsoCard();
+    if(perc) top.appendChild(perc);
+  }
   const ese = esesStore();
   const nVerbi = (ese.verbi||[]).filter(id=>(DB.verbi||[]).some(v=>v.id===id)).length;
   const eseParts = [];
@@ -2907,6 +3062,7 @@ function start(mode){
     if(mode==="lampo") return runLampo();
     if(mode==="frasi") return runFrasiHub();
     if(mode==="giochi") return runGiochi();
+    if(mode==="corso") return runCorso();
   }, mode);
 }
 
@@ -4742,6 +4898,18 @@ function pickFlashTopic(){
     stage.appendChild(mine);
   }
 
+  // ----- Dal corso: le parole già incontrate -----
+  if(corsoAvviato()){
+    const intro = introdottiCorso().parole;
+    const pool = allPool.filter(v=>intro.has(v.id));
+    if(pool.length){
+      stage.appendChild($(`<div class="sec-h">Dal corso</div>`));
+      const l = $(`<div class="list"></div>`);
+      l.appendChild(mkRow('🎓', 'Parole del corso', `${plur(pool.length,'parola incontrata','parole incontrate')} finora`, pool));
+      stage.appendChild(l);
+    }
+  }
+
   // ----- Per livello -----
   stage.appendChild($(`<div class="sec-h">Per livello</div>`));
   const levels = [
@@ -6399,7 +6567,7 @@ function segnaSezioneVista(mode){
 // Ogni personaggio parla con una voce sua: se il telefono ha due voci russe
 // le usa entrambe, altrimenti alza il tono della seconda.
 function utterRu(text, who){
-  const u = new SpeechSynthesisUtterance(text);
+  const u = new SpeechSynthesisUtterance(String(text==null?'':text).replace(/\u0301/g,''));
   u.lang = "ru-RU"; u.rate = settings().ttsRate;
   const altra = who === "B" && ruVoices.length > 1 ? ruVoices.find(v=>v !== ruVoice) : null;
   if(altra) u.voice = altra;
@@ -7395,6 +7563,11 @@ function traguardi(){
     ['🗺️','Esploratore','3 tappe del percorso', (DB.percorso||[]).filter(t=>tappaCompleta(t)).length, 3],
     ['⚡','Fulmine','20 parole nella sfida lampo', ex.lampo||0, 20],
     ['🎓','Studente','Livello 3 raggiunto', livelloDi(xpTotale()).n, 3],
+    ['🌅','Primo giorno','Il primo giorno del corso completato', CORSO ? nGiorniFatti(true) : 0, 1],
+    ['📆','Una settimana di corso','7 giorni del corso completati', CORSO ? nGiorniFatti(true) : 0, 7],
+    ['🏅','Un modulo','28 giorni del corso completati', CORSO ? nGiorniFatti(true) : 0, 28],
+    ['💯','Cento giorni','100 giorni del corso completati', CORSO ? nGiorniFatti(true) : 0, 100],
+    ['🎓','Diploma','L\'esame finale del corso superato', CORSO && (corsoStato().test['esame:365']||0) >= 60 ? 1 : 0, 1],
   ];
 }
 function makeTraguardiCard(){
@@ -8397,6 +8570,1447 @@ function makePercorsoCard(){
   el.querySelector('.d').textContent = d;
   el.onclick = ()=>start('percorso');
   return el;
+}
+
+// ================= CORSO IN 365 GIORNI =================
+// Un percorso guidato dall'alfabeto al livello B1: 13 moduli, 52 settimane,
+// ogni giorno una lezione già pronta (spiegazione, parole nuove, frasi,
+// esercizi) più il ripasso delle cose vecchie con la ripetizione dilazionata.
+// Il 7° giorno di ogni settimana: riepilogo, lettura e test; ogni 4 settimane
+// il test del modulo; il giorno 365 l'esame finale.
+// Niente blocchi: ogni giorno si apre, si salta avanti, si torna indietro, si
+// segna un giorno (o un modulo) come «già noto» — le sue parole entrano lo
+// stesso nel ripasso, a piccole dosi. I contenuti arrivano da corso.json,
+// costruito da scripts/build_corso.py con i sorgenti in corso/.
+let CORSO = null;
+const CORSO_KEY = 'russo_corso_v1';             // {avviato, cur, g:{n:{p:[passi], f:data, n:data}}, test:{chiave:%}}
+const CORSO_SESS_KEY = 'russo_corso_sess_v1';   // esercizi a metà: si riprendono da dove si era
+const senzaAccento = s => String(s==null?'':s).replace(/́/g, '');
+const TIPO_CORSO = {m:'sostantivo (m.)', f:'sostantivo (f.)', n:'sostantivo (n.)', pl:'sostantivo (pl.)', mf:'sostantivo (m./f.)',
+  v:'verbo', agg:'aggettivo', avv:'avverbio', pron:'pronome', num:'numero', prep:'preposizione', cong:'congiunzione',
+  part:'particella', inter:'interiezione', espr:'espressione', nome:'nome proprio'};
+const TIPO_BREVE = {m:'nome maschile', f:'nome femminile', n:'nome neutro', pl:'nome plurale', mf:'nome maschile e femminile',
+  v:'verbo', agg:'aggettivo', avv:'avverbio', pron:'pronome', num:'numerale', prep:'preposizione', cong:'congiunzione',
+  part:'particella', inter:'esclamazione', espr:'espressione', nome:'nome proprio'};
+const ASP_IT = {impf:'imperfettivo', pf:'perfettivo'};
+const settimanaDi = g => Math.max(1, Math.min(52, Math.ceil(g/7)));
+const moduloDi = g => Math.min(13, Math.floor((settimanaDi(g)-1)/4) + 1);
+const giornoC = g => (CORSO && CORSO.byG[g]) || null;
+const modInfo = m => (CORSO && CORSO.moduli.find(x=>x.n===m)) || {n:m, titolo:'', livello:'', icona:'📘', desc:''};
+const settInfo = s => (CORSO && CORSO.settimane.find(x=>x.n===s)) || {n:s, titolo:''};
+const giorniSettimana = s => { const out = []; for(let g=(s-1)*7+1; g<=s*7+(s===52?1:0); g++){ const d = giornoC(g); if(d) out.push(d); } return out; };
+const giorniModulo = m => { const out = []; for(let s=(m-1)*4+1; s<=m*4; s++) out.push(...giorniSettimana(s)); return out; };
+
+// Indici e innesto nel resto dell'app: le parole del corso entrano nel
+// Vocabolario, in «Spiega», nelle flashcard; le frasi negli esempi.
+function integraCorso(db, c){
+  c.byG = {}; c.parole = {}; c.frasi = {}; c.esercizi = {}; c.domande = {};
+  c.giorni.forEach(d=>{
+    c.byG[d.g] = d;
+    (d.parole||[]).forEach(p=>{ if(!c.parole[p.id]) c.parole[p.id] = Object.assign({g:d.g}, p); });
+    (d.frasi||[]).forEach(f=>{ if(!c.frasi[f.id]) c.frasi[f.id] = Object.assign({g:d.g}, f); });
+    (d.esercizi||[]).forEach(e=>{ c.esercizi[e.id] = Object.assign({g:d.g}, e); });
+    ((d.lettura && d.lettura.domande)||[]).forEach(e=>{ c.domande[e.id] = Object.assign({g:d.g}, e); });
+  });
+  c.listaParole = Object.values(c.parole).sort((a,b)=>a.g-b.g);
+  c.listaFrasi = Object.values(c.frasi).sort((a,b)=>a.g-b.g);
+  const voci = new Map((db.voci||[]).map(v=>[v.id, v]));
+  c.listaParole.forEach(p=>{
+    const v = voci.get(p.id);
+    if(v){ if(!v.acc) v.acc = p.ru; return; }
+    const m = moduloDi(p.g);
+    const nv = {id:p.id, tipo:TIPO_CORSO[p.t] || 'vocabolo', ru:senzaAccento(p.ru), acc:p.ru, translit:p.tr||'', it:p.it,
+                tag:['corso', 'corso-m'+m], difficolta: m<=3 ? 1 : m<=6 ? 2 : 3, corso:p.g};
+    db.voci.push(nv); voci.set(nv.id, nv);
+  });
+  const frasi = new Set((db.frasi||[]).map(f=>f.id));
+  c.listaFrasi.forEach(f=>{
+    if(frasi.has(f.id)) return;
+    db.frasi.push({id:f.id, ru:senzaAccento(f.ru), acc:f.ru, it:f.it, tag:['corso'], corso:f.g});
+  });
+  CORSO = c;
+  // le sessioni di ripasso dei giorni passati non servono più
+  try{ const s = sessCorso(); let cambiato = false;
+    Object.keys(s).forEach(k=>{ if(k.startsWith('rip:') && k !== 'rip:'+todayStr()){ delete s[k]; cambiato = true; } });
+    if(cambiato) localStorage.setItem(CORSO_SESS_KEY, JSON.stringify(s));
+  }catch(e){}
+}
+
+// ---------- Stato ----------
+function corsoStato(){
+  try{
+    const s = JSON.parse(localStorage.getItem(CORSO_KEY)||'{}');
+    if(s && typeof s === 'object'){ s.g = s.g || {}; s.test = s.test || {}; return s; }
+  }catch(e){}
+  return {g:{}, test:{}};
+}
+function updCorso(fn){ const s = corsoStato(); fn(s); try{ localStorage.setItem(CORSO_KEY, JSON.stringify(s)); }catch(e){} return s; }
+const infoG = g => corsoStato().g[g] || null;
+const fattoIn = (s, g) => { const i = s.g[g]; return !!(i && (i.f || i.n)); };
+const fattoG = g => fattoIn(corsoStato(), g);
+const corsoAvviato = () => !!(CORSO && corsoStato().cur);
+function nGiorniFatti(soloCompletati){
+  return Object.values(corsoStato().g).filter(i=>soloCompletati ? i.f : (i.f || i.n)).length;
+}
+function sessCorso(){ try{ return JSON.parse(localStorage.getItem(CORSO_SESS_KEY)||'{}') || {}; }catch(e){ return {}; } }
+function sessGet(k){ return sessCorso()[k] || null; }
+function sessSet(k, v){
+  const s = sessCorso();
+  if(v) s[k] = v; else delete s[k];
+  try{ localStorage.setItem(CORSO_SESS_KEY, JSON.stringify(s)); }catch(e){}
+}
+
+// I passi di ogni giorno. Il ripasso non serve per «completare» il giorno.
+const PASSI_INFO = {
+  lezione:  ['📖', 'Lezione'],
+  parole:   ['🆕', 'Parole nuove'],
+  frasi:    ['💬', 'Frasi'],
+  esercizi: ['✏️', 'Esercizi'],
+  ripasso:  ['🔁', 'Ripasso'],
+  riepilogo:['📋', 'Riepilogo della settimana'],
+  lettura:  ['📰', 'Lettura'],
+  test:     ['🧪', 'Test della settimana'],
+  modulo:   ['🏅', 'Test del modulo'],
+  esame:    ['🎓', 'Esame finale'],
+};
+function passiDi(d){
+  if(!d) return [];
+  if(d.tipo === 'esame') return [d.lezione ? 'lezione' : null, d.lettura ? 'lettura' : null, 'esame'].filter(Boolean);
+  if(d.tipo === 'ripasso' || d.tipo === 'test'){
+    const p = ['riepilogo'];
+    if(d.lettura) p.push('lettura');
+    p.push('test');
+    if(d.tipo === 'test') p.push('modulo');
+    p.push('ripasso');
+    return p;
+  }
+  const p = [];
+  if(d.lezione) p.push('lezione');
+  if((d.parole||[]).length) p.push('parole');
+  if((d.frasi||[]).length) p.push('frasi');
+  if((d.esercizi||[]).length || (d.parole||[]).length) p.push('esercizi');
+  p.push('ripasso');
+  return p;
+}
+const passoFacoltativo = p => p === 'ripasso';
+const passiCore = d => passiDi(d).filter(p=>!passoFacoltativo(p));
+const passiFattiG = g => new Set(((infoG(g)||{}).p)||[]);
+function prossimoPasso(g, dopo){
+  const d = giornoC(g); if(!d) return null;
+  const fatti = passiFattiG(g), passi = passiDi(d);
+  const da = dopo ? passi.indexOf(dopo) + 1 : 0;
+  for(let k=da; k<passi.length; k++) if(!fatti.has(passi[k])) return passi[k];
+  return null;
+}
+function descrizioneGiorno(d){
+  if(d.tipo === 'esame') return 'Il grande esame finale su tutto il corso.';
+  if(d.tipo === 'ripasso' || d.tipo === 'test'){
+    const parti = ['riepilogo', d.lettura ? 'una lettura' : null, 'il test della settimana', d.tipo==='test' ? 'il test del modulo' : null].filter(Boolean);
+    return parti.slice(0,-1).join(', ') + ' e ' + parti[parti.length-1] + '.';
+  }
+  const parti = ['lezione'];
+  if((d.parole||[]).length) parti.push(plur(d.parole.length, 'parola nuova', 'parole nuove'));
+  if((d.frasi||[]).length) parti.push('frasi');
+  parti.push('esercizi');
+  return parti.slice(0,-1).join(', ') + ' ed ' + parti[parti.length-1] + ' · ~20 min';
+}
+
+// Un giorno di studio (per la serie «giorni di fila», condivisa col ripasso misto)
+function segnaGiornoDiStudio(){
+  const s = dailyState(), t = todayStr();
+  if(s.last === t) return;
+  s.streak = s.last === yesterdayStr() ? (s.streak||0) + 1 : 1;
+  s.last = t;
+  try{ localStorage.setItem(DAILY_KEY, JSON.stringify(s)); }catch(e){}
+}
+function segnaPassoCorso(g, passo){
+  const d = giornoC(g); if(!d) return false;
+  let completato = false;
+  updCorso(s=>{
+    const i = s.g[g] = s.g[g] || {};
+    i.p = i.p || [];
+    if(!i.p.includes(passo)) i.p.push(passo);
+    if(!i.f && passiCore(d).every(p=>i.p.includes(p))){ i.f = todayStr(); completato = true; }
+    if(!s.cur) s.cur = g;
+    s.avviato = s.avviato || todayStr();
+  });
+  segnaGiornoDiStudio();
+  if(completato){
+    addXP(60);
+    setTimeout(()=>toast(`🎉 Giorno ${g} completato! <b>+60 punti</b>`, 'gold'), 350);
+  }
+  return completato;
+}
+// «Lo so già»: il giorno conta come fatto e le sue parole entrano nel ripasso
+// a piccole dosi (circa 15 al giorno), non tutte insieme.
+function segnaNoti(giorni, on){
+  const nuove = [];
+  updCorso(s=>{
+    giorni.forEach(g=>{
+      const d = giornoC(g); if(!d) return;
+      if(on){
+        const i = s.g[g] = s.g[g] || {};
+        if(!i.f && !i.n){ i.n = todayStr(); (d.parole||[]).forEach(p=>nuove.push(p.id)); }
+      } else if(s.g[g]){ delete s.g[g].n; if(!s.g[g].f) delete s.g[g]; }
+    });
+    if(on && s.cur && giorni.includes(s.cur)){
+      let k = s.cur; while(k <= 365 && fattoIn(s, k)) k++;
+      s.cur = Math.min(365, k);
+    }
+  });
+  if(nuove.length){
+    const daSeminare = nuove.filter(id=>!srs[id]);
+    const giorniSpalmati = Math.max(4, Math.ceil(daSeminare.length / 15));
+    shuffle(daSeminare).forEach((id, k)=>{
+      srs[id] = {box:2, seen:0, correct:0, due: Date.now() + (1 + Math.floor(k * giorniSpalmati / Math.max(1, daSeminare.length))) * DAY_MS};
+    });
+    saveSrs();
+  }
+}
+// Il giorno «di oggi». Se quello corrente è stato finito in un giorno passato,
+// oggi tocca al primo successivo non ancora fatto.
+function giornoCorrente(){
+  if(!CORSO) return null;
+  const s = corsoStato();
+  if(!s.cur) return null;
+  let g = Math.max(1, Math.min(365, s.cur));
+  const i = s.g[g];
+  const quando = i && (i.f || i.n);
+  if(quando && quando < todayStr()){
+    let k = g + 1; while(k <= 365 && fattoIn(s, k)) k++;
+    if(k <= 365){ updCorso(x=>{ x.cur = k; }); g = k; }
+  }
+  return g;
+}
+function impostaCorrente(g){ updCorso(s=>{ s.cur = g; s.avviato = s.avviato || todayStr(); }); }
+
+// Ciò che è già entrato nello studio: le parole dei giorni fatti (o iniziati)
+function introdottiCorso(){
+  const out = {parole:new Set(), frasi:new Set(), esercizi:new Set()};
+  if(!CORSO) return out;
+  const s = corsoStato();
+  Object.keys(s.g).forEach(k=>{
+    const i = s.g[k], d = giornoC(+k); if(!d) return;
+    const tutto = !!(i.f || i.n), p = new Set(i.p||[]);
+    if(tutto || p.has('parole') || p.has('esercizi')) (d.parole||[]).forEach(x=>out.parole.add(x.id));
+    if(tutto || p.has('frasi') || p.has('esercizi')) (d.frasi||[]).forEach(x=>out.frasi.add(x.id));
+    if(tutto || p.has('esercizi')) (d.esercizi||[]).forEach(x=>out.esercizi.add(x.id));
+  });
+  return out;
+}
+// Da ripassare adesso: le parole mai viste o in scadenza; frasi ed esercizi
+// solo se già incontrati negli esercizi (e in scadenza).
+function dovutiCorso(){
+  const I = introdottiCorso();
+  const ord = a => a.sort((x,y)=>dueScore(y)-dueScore(x));
+  return {
+    parole: ord([...I.parole].filter(id=>!srs[id] || isDue(id))),
+    frasi: ord([...I.frasi].filter(id=>srs[id] && isDue(id))),
+    esercizi: ord([...I.esercizi].filter(id=>srs[id] && isDue(id))),
+  };
+}
+function nDovutiCorso(){ const d = dovutiCorso(); return d.parole.length + d.frasi.length + d.esercizi.length; }
+
+// ---------- Scelta degli esercizi ----------
+function paroleVicine(p){
+  const lim = p.g + 6, sw = settimanaDi(p.g);
+  const cand = CORSO.listaParole.filter(x=>x.id!==p.id && x.g<=lim && x.it!==p.it);
+  const stesso = x => (x.t||'') === (p.t||'');
+  const tiers = [
+    cand.filter(x=>settimanaDi(x.g)===sw && stesso(x)),
+    cand.filter(x=>settimanaDi(x.g)===sw),
+    cand.filter(x=>Math.abs(settimanaDi(x.g)-sw)<=4 && stesso(x)),
+    cand.filter(x=>Math.abs(settimanaDi(x.g)-sw)<=4),
+    cand,
+  ];
+  const out = [], visti = new Set();
+  tiers.forEach(t=>shuffle(t).forEach(x=>{ if(!visti.has(x.id)){ visti.add(x.id); out.push(x); } }));
+  return out;
+}
+function distrattoriParola(p, campo, n){
+  const out = [], visti = new Set([campo==='ru' ? senzaAccento(p.ru) : p.it]);
+  for(const x of paroleVicine(p)){
+    if(out.length >= n) break;
+    const v = campo==='ru' ? x.ru : x.it, k = campo==='ru' ? senzaAccento(v) : v;
+    if(!visti.has(k)){ visti.add(k); out.push(v); }
+  }
+  return out;
+}
+function frasiVicine(f){
+  const sw = settimanaDi(f.g);
+  const cand = CORSO.listaFrasi.filter(x=>x.id!==f.id && x.g<=f.g+6 && x.it!==f.it);
+  return [...shuffle(cand.filter(x=>settimanaDi(x.g)===sw)), ...shuffle(cand.filter(x=>settimanaDi(x.g)!==sw && Math.abs(settimanaDi(x.g)-sw)<=4)), ...shuffle(cand)];
+}
+const nParoleRu = s => paroleFrase(senzaAccento(s)).length;
+const scrivibile = p => !/[\s]/.test(senzaAccento(p.ru).trim()) && senzaAccento(p.ru).length <= 12 && p.t !== 'nome';
+// Esercizi di un giorno: le parole al contrario (dall'italiano), l'ascolto,
+// la scrittura, gli esercizi di grammatica del giorno, le frasi da comporre.
+function componiEserciziGiorno(d){
+  const P = d.parole || [], E = d.esercizi || [], F = d.frasi || [];
+  const items = [];
+  shuffle(P).slice(0, Math.max(2, Math.ceil(P.length/2))).forEach(p=>items.push({t:'pi', id:p.id}));
+  shuffle(P).slice(0, 2).forEach(p=>items.push({t:'pa', id:p.id}));
+  E.forEach(e=>items.push({t:'ex', id:e.id}));
+  const comp = shuffle(F.filter(f=>nParoleRu(f.ru)>=2 && nParoleRu(f.ru)<=9));
+  comp.slice(0, 2).forEach(f=>items.push({t:'fc', id:f.id}));
+  if(F.length && CORSO.listaFrasi.filter(x=>x.g<=d.g+6).length >= 4) items.push({t:'fa', id:shuffle(F)[0].id});
+  const pw = shuffle(P.filter(scrivibile)).slice(0, d.g >= 8 ? 2 : 1).map(p=>({t:'pw', id:p.id}));
+  return [...shuffle(items), ...pw];
+}
+function itemParolaRipasso(id){
+  const b = box(id), p = CORSO.parole[id];
+  let tipi = b <= 1 ? ['pr','pa','pr'] : b === 2 ? ['pi','pr','pa'] : ['pi','pw','pa','pi'];
+  if(p && !scrivibile(p)) tipi = tipi.filter(t=>t!=='pw');
+  return {t:tipi[rnd(0, tipi.length-1)], id};
+}
+function componiRipassoCorso(max){
+  const D = dovutiCorso();
+  let nE = Math.min(D.esercizi.length, Math.round(max*0.3));
+  let nF = Math.min(D.frasi.length, Math.round(max*0.15));
+  let nP = Math.min(D.parole.length, max - nE - nF);
+  // se mancano parole, più esercizi e frasi (e viceversa)
+  let resto = max - nP - nE - nF;
+  if(resto > 0){ const x = Math.min(resto, D.esercizi.length - nE); nE += x; resto -= x; }
+  if(resto > 0){ const x = Math.min(resto, D.frasi.length - nF); nF += x; }
+  const items = [];
+  D.parole.slice(0, nP).forEach(id=>items.push(itemParolaRipasso(id)));
+  D.esercizi.slice(0, nE).forEach(id=>items.push({t:'ex', id}));
+  D.frasi.slice(0, nF).forEach(id=>items.push({t: Math.random()<.5 ? 'fc' : 'fa', id}));
+  return shuffle(items);
+}
+function componiTest(giorni, n){
+  const lez = giorni.filter(d=>d.tipo==='lezione');
+  const P = lez.flatMap(d=>d.parole||[]), E = lez.flatMap(d=>d.esercizi||[]), F = lez.flatMap(d=>d.frasi||[]);
+  let nE = Math.min(E.length, Math.round(n*0.4)), nF = Math.min(F.length, Math.round(n*0.15));
+  let nP = Math.min(P.length, n - nE - nF);
+  if(nP + nE + nF < n) nE = Math.min(E.length, n - nP - nF);
+  const items = [];
+  sample(P, nP).forEach(p=>{ const t = ['pr','pi','pa', scrivibile(p) ? 'pw' : 'pi']; items.push({t:t[rnd(0,3)], id:p.id}); });
+  sample(E, nE).forEach(e=>items.push({t:'ex', id:e.id}));
+  sample(F, nF).forEach(f=>items.push({t: nParoleRu(f.ru)>=2 && nParoleRu(f.ru)<=9 && Math.random()<.6 ? 'fc' : 'fa', id:f.id}));
+  return shuffle(items);
+}
+
+// ---------- Le attività (una alla volta, come nel ripasso misto) ----------
+const notaParola = p => [TIPO_BREVE[p.t] ? TIPO_BREVE[p.t] + (p.asp ? ' ' + (ASP_IT[p.asp]||p.asp) : '') : '', p.nota||''].filter(Boolean).join(' · ');
+const haCirillico = s => /[а-яё]/i.test(String(s||''));
+function qSize(el, testo){ el.style.fontSize = Math.max(19, 30 - Math.max(0, String(testo).length-14)*0.6) + 'px'; }
+function frasiCompleta(e){ return e.q.includes('___') ? e.q.replace('___', Array.isArray(e.ok) ? e.ok[0] : e.ok) : null; }
+
+const CORSO_RENDER = {
+  // parola: dal russo all'italiano
+  pr(it, ctx){
+    const p = CORSO.parole[it.id]; if(!p) return false;
+    ctx.kick.querySelector('span').textContent = '🃏 Cosa vuol dire?';
+    const card = rpCard(ctx, p.ru, p.tr || '', p.ru);
+    card.querySelector('.q').setAttribute('lang', 'ru');
+    rpOpzioni(ctx, shuffle([p.it, ...distrattoriParola(p, 'it', 3)]), p.it, ok=>{
+      grade(p.id, ok); speak(p.ru);
+      rpNota(card, notaParola(p));
+      card.appendChild(azioniTesto(senzaAccento(p.ru), p.it, {translit:p.tr, tipo:TIPO_CORSO[p.t]}));
+      ctx.fatto(ok?1:0, 1);
+    });
+    setTimeout(()=>speak(p.ru), 200);
+  },
+  // parola: dall'italiano al russo
+  pi(it, ctx){
+    const p = CORSO.parole[it.id]; if(!p) return false;
+    ctx.kick.querySelector('span').textContent = '🔁 Come si dice in russo?';
+    const card = rpCard(ctx, p.it, notaParola(p));
+    rpOpzioni(ctx, shuffle([p.ru, ...distrattoriParola(p, 'ru', 3)]), p.ru, ok=>{
+      grade(p.id, ok); speak(p.ru);
+      if(p.tr) rpNota(card, p.tr);
+      card.appendChild(azioniTesto(senzaAccento(p.ru), p.it, {translit:p.tr, tipo:TIPO_CORSO[p.t]}));
+      ctx.fatto(ok?1:0, 1);
+    });
+  },
+  // ascolto: si sente la parola, si sceglie il significato
+  pa(it, ctx){
+    const p = CORSO.parole[it.id]; if(!p) return false;
+    ctx.kick.querySelector('span').textContent = '🎧 Cosa senti?';
+    const card = $(`<div class="qcard"><div class="kick">Ascolta e scegli il significato</div>
+      <button class="big-play" type="button" aria-label="Ascolta di nuovo">${ic('vol')}</button>
+      <div class="qsub">Tocca per riascoltare</div></div>`);
+    card.querySelector('.big-play').onclick = ()=>speak(p.ru);
+    ctx.wrap.appendChild(card);
+    rpOpzioni(ctx, shuffle([p.it, ...distrattoriParola(p, 'it', 3)]), p.it, ok=>{
+      grade(p.id, ok); speak(p.ru);
+      const r = $(`<div class="q" lang="ru" style="font-size:30px"></div>`); r.textContent = p.ru;
+      card.appendChild(r);
+      rpNota(card, p.tr || '');
+      card.appendChild(azioniTesto(senzaAccento(p.ru), p.it, {translit:p.tr, tipo:TIPO_CORSO[p.t]}));
+      ctx.fatto(ok?1:0, 1);
+    });
+    setTimeout(()=>speak(p.ru), 250);
+  },
+  // scrittura: dall'italiano si scrive la parola russa
+  pw(it, ctx){
+    const p = CORSO.parole[it.id]; if(!p) return false;
+    ctx.kick.querySelector('span').textContent = '✍️ Scrivi in russo';
+    return scriviRisposta(ctx, {prompt:p.it, sub:notaParola(p) || 'Scrivi la parola in russo', risposte:[p.ru], mostra:p.ru, tr:p.tr,
+      dopo:ok=>{ grade(p.id, ok); }});
+  },
+  // esercizio di grammatica del giorno
+  ex(it, ctx){
+    const e = CORSO.esercizi[it.id] || CORSO.domande[it.id]; if(!e) return false;
+    if(e.t === 's') return esScelta(e, ctx);
+    if(e.t === 'w'){
+      ctx.kick.querySelector('span').textContent = '✏️ Completa';
+      const intera = frasiCompleta(e);
+      return scriviRisposta(ctx, {prompt:e.q, sub:e.it || 'Scrivi la risposta', risposte:e.ok, mostra:e.ok[0], nota:e.nota, intera,
+        dopo:ok=>{ grade(e.id, ok); if(!ok) logErrore(senzaAccento(intera || e.ok[0]), e.it || e.q, 'Corso'); }});
+    }
+    if(e.t === 'c') return esComponi({id:e.id, ru:e.ru, it:e.it, nota:e.nota}, ctx);
+    if(e.t === 'a') return esAscolto(e, ctx);
+    return false;
+  },
+  // frase da ricomporre
+  fc(it, ctx){ const f = CORSO.frasi[it.id]; return f ? esComponi(f, ctx) : false; },
+  // frase da ascoltare: quale traduzione?
+  fa(it, ctx){
+    const f = CORSO.frasi[it.id]; if(!f) return false;
+    const altre = [...new Set(frasiVicine(f).map(x=>x.it))].slice(0, 3);
+    if(altre.length < 2) return esComponi(f, ctx);
+    ctx.kick.querySelector('span').textContent = '🎧 Ascolta la frase';
+    const card = $(`<div class="qcard"><div class="kick">Cosa vuol dire?</div>
+      <button class="big-play" type="button" aria-label="Ascolta di nuovo">${ic('vol')}</button>
+      <div class="qsub">Tocca per riascoltare</div></div>`);
+    card.querySelector('.big-play').onclick = ()=>speak(f.ru);
+    ctx.wrap.appendChild(card);
+    rpOpzioni(ctx, shuffle([f.it, ...altre]), f.it, ok=>{
+      grade(f.id, ok); speak(f.ru);
+      if(!ok) logErrore(senzaAccento(f.ru), f.it, 'Corso');
+      const r = $(`<div class="q" lang="ru" style="font-size:22px"></div>`); r.textContent = f.ru;
+      card.appendChild(r);
+      card.appendChild(azioniTesto(senzaAccento(f.ru), f.it));
+      ctx.fatto(ok?1:0, 1);
+    });
+    setTimeout(()=>speak(f.ru), 250);
+  },
+};
+
+// Scelta multipla di grammatica: «Я ___ в Москве́. {живу́ | …}»
+function esScelta(e, ctx){
+  const intera = frasiCompleta(e);
+  ctx.kick.querySelector('span').textContent = intera ? '✏️ Completa la frase' : '❓ Scegli la risposta';
+  const card = $(`<div class="qcard"><div class="q"></div>${e.it ? '<div class="qsub"></div>' : ''}</div>`);
+  const qEl = card.querySelector('.q');
+  const q = intera ? e.q.replace('___', '____') : e.q;
+  qEl.textContent = q; qSize(qEl, q);
+  if(haCirillico(q) && !/[a-zà-ù]{3}/i.test(q.replace(/[«»]/g,''))) qEl.setAttribute('lang', 'ru');
+  if(e.it) card.querySelector('.qsub').textContent = e.it;
+  ctx.wrap.appendChild(card);
+  rpOpzioni(ctx, shuffle([e.ok, ...e.opts]), e.ok, ok=>{
+    grade(e.id, ok);
+    if(!ok) logErrore(senzaAccento(intera || `${e.q} — ${e.ok}`), e.it || '', 'Corso');
+    if(intera){ qEl.textContent = intera; qSize(qEl, intera); }
+    const daLeggere = intera || (haCirillico(e.ok) ? e.ok : '');
+    if(daLeggere && haCirillico(daLeggere)) speak(daLeggere);
+    if(e.nota) rpNota(card, e.nota);
+    if(intera && haCirillico(intera)) card.appendChild(azioniTesto(senzaAccento(intera), e.it || ''));
+    ctx.fatto(ok?1:0, 1);
+  });
+}
+
+// Ascolto: la frase russa si sente (non si legge) e si risponde a una domanda
+function esAscolto(e, ctx){
+  ctx.kick.querySelector('span').textContent = '🎧 Ascolta';
+  const card = $(`<div class="qcard"><div class="kick"></div>
+    <button class="big-play" type="button" aria-label="Ascolta di nuovo">${ic('vol')}</button>
+    <div class="qsub">Tocca per riascoltare</div></div>`);
+  card.querySelector('.kick').textContent = e.q || 'Che cosa hai sentito?';
+  card.querySelector('.big-play').onclick = ()=>speak(e.ru);
+  ctx.wrap.appendChild(card);
+  rpOpzioni(ctx, shuffle([e.ok, ...e.opts]), e.ok, ok=>{
+    grade(e.id, ok); speak(e.ru);
+    if(!ok) logErrore(senzaAccento(e.ru), e.it || e.ok, 'Corso');
+    const r = $(`<div class="q" lang="ru" style="font-size:20px"></div>`); r.textContent = e.ru;
+    card.appendChild(r);
+    if(e.it){ const t = $(`<div class="qsub"></div>`); t.textContent = e.it; card.appendChild(t); }
+    if(e.nota) rpNota(card, e.nota);
+    card.appendChild(azioniTesto(senzaAccento(e.ru), e.it || ''));
+    ctx.fatto(ok?1:0, 1);
+  });
+  setTimeout(()=>speak(e.ru), 250);
+}
+
+// Risposta da scrivere (con la tastiera cirillica dell'app o quella del telefono)
+function scriviRisposta(ctx, o){
+  const cir = o.risposte.some(haCirillico);
+  const wbox = $(`<div class="wbox"><div class="prompt"></div><div class="sub"></div></div>`);
+  wbox.querySelector('.prompt').textContent = o.prompt;
+  if(haCirillico(o.prompt)) wbox.querySelector('.prompt').setAttribute('lang', 'ru');
+  wbox.querySelector('.sub').textContent = o.sub || '';
+  const inp = $(`<input class="winput" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"${cir ? ' lang="ru"' : ''}>`);
+  wbox.appendChild(inp);
+  const sol = $(`<div class="wsol" style="display:none"></div>`);
+  wbox.appendChild(sol);
+  ctx.wrap.appendChild(wbox);
+  let answered = false, usedHint = false;
+  const ctl = cir ? campoCirillico(inp, ()=>inp.classList.remove('ok','ko'), ()=>answered) : null;
+  if(ctl){ inp.after(ctl.prev); ctx.wrap.appendChild(ctl.box); }
+  const row = $(`<div class="row"></div>`);
+  const hint = $(`<button class="btn" type="button" style="flex:0 0 auto;padding:0 16px" title="Scopre la prossima lettera (conta come sbagliata)" aria-label="Suggerimento">${ic('bulb')}</button>`);
+  const check = $(`<button class="btn primary" type="button" style="flex:1">Verifica</button>`);
+  row.append(hint, check);
+  ctx.wrap.appendChild(row);
+  if(ctl){ ctl.tieni(hint); ctl.tieni(check); }
+  const target = senzaAccento(o.risposte[0]);
+  const norm = s => cir ? normWrite(s) : String(s||'').toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu,'').replace(/\s+/g,' ').trim();
+  hint.onclick = ()=>{
+    if(answered) return;
+    usedHint = true;
+    let keep = 0;
+    while(keep < inp.value.length && keep < target.length && norm(inp.value[keep]) === norm(target[keep])) keep++;
+    inp.value = target.slice(0, keep+1);
+    if(ctl){ ctl.aggiorna(); if(ctl.telefono()) inp.focus(); }
+  };
+  check.onclick = ()=>{
+    if(answered) return;
+    const scritto = ctl ? ctl.testo() : inp.value;
+    if(!scritto.trim()) return;
+    const esatto = o.risposte.some(r=>norm(r) === norm(scritto));
+    const ok = esatto && !usedHint;
+    answered = true;
+    if(ctl) ctl.fine();
+    hint.remove(); check.remove();
+    inp.classList.add(ok ? 'ok' : 'ko');
+    haptic(ok);
+    o.dopo(ok);
+    sol.style.display = '';
+    const tr = o.tr ? ` &middot; <i>${esc(o.tr)}</i>` : '';
+    sol.innerHTML = ok ? `<span style="color:var(--good);font-weight:800">✓ Giusto!</span>${tr}`
+      : `${esatto ? 'Giusto, ma col suggerimento:' : 'Hai scritto'} <span class="typed">${cir ? diffHtml(inp.value, target) : esc(inp.value)}</span><span class="sol"></span>${o.tr ? `<span style="font-size:13px">${esc(o.tr)}</span>` : ''}`;
+    if(!ok) sol.querySelector('.sol').textContent = o.mostra;
+    if(o.intera){ const f = $(`<div class="q-after qsub" lang="ru"></div>`); f.textContent = o.intera; sol.appendChild(f); }
+    if(o.nota){ const n = $(`<div class="q-after qsub"></div>`); n.textContent = o.nota; sol.appendChild(n); }
+    const daLeggere = o.intera || o.mostra;
+    if(haCirillico(daLeggere)) speak(daLeggere);
+    if(haCirillico(daLeggere)) ctx.wrap.insertBefore(azioniTesto(senzaAccento(daLeggere), o.sub && !/^Scrivi/.test(o.sub) ? o.sub : ''), wbox.nextSibling);
+    ctx.fatto(ok?1:0, 1);
+  };
+  inp.onkeydown = e=>{
+    if(e.key !== 'Enter') return;
+    e.preventDefault();
+    if(!answered) check.onclick();
+    else { const n = ctx.wrap.querySelector('.btn.primary.block'); if(n) n.click(); }
+  };
+  if(ctl) ctl.fuoco(); else setTimeout(()=>{ try{ inp.focus({preventScroll:true}); }catch(_){} }, 60);
+}
+
+// Frase da ricomporre con le parole in disordine
+function esComponi(f, ctx){
+  const giuste = String(f.ru).split(/\s+/).map(w=>w.replace(/^[«"(—–-]+|[.,!?;:»")…]+$/g,'')).filter(w=>/[а-яё0-9]/i.test(w));
+  if(giuste.length < 2) return false;
+  ctx.kick.querySelector('span').textContent = '🧩 Componi la frase';
+  let chips = giuste.map((w,k)=>({w,k}));
+  for(let g=0; g<8; g++){ chips = shuffle(chips); if(chips.some((c,j)=>senzaAccento(c.w)!==senzaAccento(giuste[j]))) break; }
+  const scelte = [];
+  const card = $(`<div class="qcard"><div class="kick">Traduci in russo</div><div class="big-it"></div>
+    <button class="btn soft sm listen-btn" type="button">${ic('vol')} Aiutino: ascolta</button></div>`);
+  card.querySelector('.big-it').textContent = f.it;
+  card.querySelector('.big-it').style.fontSize = Math.max(18, 26 - Math.max(0, f.it.length-24)*0.3) + 'px';
+  card.querySelector('.listen-btn').onclick = ()=>speak(f.ru);
+  const line = $(`<div class="cmp-line"><span class="ph">Tocca le parole qui sotto</span></div>`);
+  const bank = $(`<div class="cmp-bank"></div>`);
+  const chk = $(`<button class="btn primary block" type="button" disabled>${ic('check')} Verifica</button>`);
+  ctx.wrap.append(card, line, bank, chk);
+  let answered = false;
+  const bankBtns = chips.map((c, j)=>{
+    const b = $(`<button class="chipw" type="button" lang="ru"></button>`);
+    b.textContent = c.w;
+    b.onclick = ()=>{ if(answered || b.classList.contains('used')) return; b.classList.add('used'); scelte.push(j); paint(); };
+    bank.appendChild(b);
+    return b;
+  });
+  function paint(){
+    line.innerHTML = '';
+    if(!scelte.length) line.appendChild($(`<span class="ph">Tocca le parole qui sotto</span>`));
+    scelte.forEach((j, p)=>{
+      const b = $(`<button class="chipw" type="button" lang="ru"></button>`);
+      b.textContent = chips[j].w;
+      b.onclick = ()=>{ if(answered) return; scelte.splice(p, 1); bankBtns[j].classList.remove('used'); paint(); };
+      line.appendChild(b);
+    });
+    chk.disabled = scelte.length !== chips.length;
+  }
+  chk.onclick = ()=>{
+    if(answered || scelte.length !== chips.length) return;
+    answered = true;
+    // parole uguali (anche con accenti diversi) valgono uguale
+    const ok = scelte.every((j, p)=>senzaAccento(chips[j].w).toLowerCase() === senzaAccento(giuste[p]).toLowerCase());
+    haptic(ok); contaExtra('cmp', ok);
+    if(!ok) logErrore(senzaAccento(f.ru), f.it, 'Corso');
+    grade(f.id, ok);
+    line.classList.add(ok ? 'ok' : 'ko');
+    bank.style.display = 'none'; chk.remove();
+    const sol = $(`<div class="cmp-sol"><div class="lab"></div><div class="ru" lang="ru"></div></div>`);
+    sol.querySelector('.lab').textContent = ok ? '✓ Perfetto!' : 'La frase giusta:';
+    sol.querySelector('.lab').style.color = ok ? 'var(--good)' : 'var(--bad)';
+    sol.querySelector('.ru').textContent = f.ru;
+    sol.onclick = ()=>speak(f.ru);
+    ctx.wrap.append(sol);
+    if(f.nota){ const n = $(`<div class="nota-box">💡<div></div></div>`); n.querySelector('div').textContent = f.nota; ctx.wrap.appendChild(n); }
+    ctx.wrap.appendChild(azioniTesto(senzaAccento(f.ru), f.it));
+    speak(f.ru);
+    ctx.fatto(ok?1:0, 1);
+  };
+  ctx.keys(e=>{
+    if(answered) return;
+    if(e.key==='Enter'){ if(!chk.disabled){ e.preventDefault(); chk.click(); } return; }
+    if(e.key==='Backspace' && scelte.length){ e.preventDefault(); bankBtns[scelte.pop()].classList.remove('used'); paint(); return; }
+    const k = parseInt(e.key, 10);
+    if(k>=1 && k<=9){ const free = bankBtns.filter(b=>!b.classList.contains('used')); if(free[k-1]) free[k-1].click(); }
+  });
+}
+
+// Una sessione di attività (esercizi del giorno, ripasso, test). Si salva a
+// ogni risposta: uscendo e rientrando si riparte dall'attività successiva.
+// Le attività sbagliate tornano una volta in fondo (opts.ripeti).
+function runSessioneCorso(o){
+  let S = sessGet(o.chiave);
+  if(!S || !Array.isArray(S.items) || !S.items.length){
+    S = {items:o.crea(), pos:0, ok:0, tot:0};
+    sessSet(o.chiave, S);
+  }
+  const stage = header(o.titolo, {narrow:true});
+  if(!S.items.length){ sessSet(o.chiave, null); return o.fine(stage, 0, 0); }
+  const bar = progressBar(stage);
+  const wrap = $(`<div class="list" style="gap:12px"></div>`); stage.appendChild(wrap);
+  let onKey = null;
+  const keyh = e=>{ if(e.target && /INPUT|TEXTAREA/.test(e.target.tagName)) return; if(onKey) onKey(e); };
+  document.addEventListener('keydown', keyh);
+  onLeave(()=>{ document.removeEventListener('keydown', keyh); stopSpeech(); });
+  function show(){
+    onKey = null;
+    if(S.pos >= S.items.length){
+      document.removeEventListener('keydown', keyh);
+      sessSet(o.chiave, null);
+      return o.fine(stage, S.ok, S.tot);
+    }
+    bar.style.width = (S.pos/S.items.length*100)+'%'; bar.setNum(S.pos, S.items.length);
+    wrap.innerHTML = '';
+    const it = S.items[S.pos];
+    const kick = $(`<div class="rp-kick"><span></span></div>`);
+    wrap.appendChild(kick);
+    let chiuso = false;
+    const ctx = {
+      wrap, kick,
+      keys(fn){ onKey = fn; },
+      fatto(giuste, totali, auto){
+        if(chiuso) return; chiuso = true;
+        S.pos++; S.ok += giuste; S.tot += totali;
+        if(o.ripeti && !giuste && !it.rq) S.items.push(Object.assign({}, it, {rq:1}));
+        sessSet(o.chiave, S);
+        if(auto) return show();
+        const next = $(`<button class="btn primary block" type="button">${S.pos < S.items.length ? 'Avanti' : 'Risultato'} →</button>`);
+        next.onclick = show;
+        wrap.appendChild(next);
+        onKey = e=>{ if(e.key==='Enter'){ e.preventDefault(); show(); } };
+      }
+    };
+    let ok = false;
+    try{ const fn = CORSO_RENDER[it.t]; ok = fn ? fn(it, ctx) !== false : false; }catch(err){ console.error(err); ok = false; }
+    if(!ok){ S.pos++; sessSet(o.chiave, S); show(); }
+  }
+  show();
+}
+// Al posto della schermata corrente (stessa voce della cronologia): i passi
+// di un giorno si susseguono e «Indietro» riporta sempre al giorno.
+function sostituisci(fn){
+  if(_navStack.length) _navStack[_navStack.length-1] = fn;
+  fn();
+}
+// Fine di un passo: punteggio, «giorno completato», il passo successivo
+function fineDiPasso(g, passo, stage, ok, tot, info){
+  info = info || {};
+  const completato = g ? segnaPassoCorso(g, passo) : false;
+  const pct = tot ? Math.round(ok/tot*100) : null;
+  let top = `<div class="big">${info.big || '✅'}</div>`;
+  if(pct !== null){
+    const col = pct>=80 ? 'var(--good)' : pct>=50 ? 'var(--accent2)' : 'var(--accent)';
+    top = `<div class="ring" style="--col:${col};background:conic-gradient(${col} ${pct*3.6}deg,var(--card3) 0)"><span>${pct}%</span></div>`;
+  }
+  const titolo = info.titolo || (pct === null ? 'Fatto!' : pct>=90 ? 'Eccellente!' : pct>=70 ? 'Ottimo lavoro!' : pct>=50 ? 'Buon allenamento!' : 'Continua così!');
+  let testo = info.testo || (pct !== null ? `${ok} risposte giuste su ${tot}.` : '');
+  if(completato) testo += `${testo ? '<br>' : ''}<b>Giorno ${g} completato!</b> Domani si va avanti; se vuoi, puoi continuare anche subito.`;
+  stage.innerHTML = `<div class="done">${top}<h2>${titolo}</h2><p class="muted" style="margin:0">${testo}</p></div>`;
+  haptic(true);
+  if((pct!==null && pct>=80) || completato) confetti(stage.querySelector('.done'));
+  const btns = $(`<div class="list" style="gap:10px"></div>`);
+  const next = g ? prossimoPasso(g, passo) : null;
+  if(next){
+    const [e, t] = PASSI_INFO[next];
+    const b = $(`<button class="btn primary block" type="button">${e} Continua: ${t}</button>`);
+    b.onclick = ()=>sostituisci(()=>apriPasso(g, next));
+    btns.appendChild(b);
+  } else if(g && g < 365 && fattoG(g)){
+    const b = $(`<button class="btn primary block" type="button">Vai al giorno ${g+1} ›</button>`);
+    b.onclick = ()=>sostituisci(()=>runGiorno(g+1));
+    btns.appendChild(b);
+  }
+  if(info.riprova){ const r = $(`<button class="btn block" type="button">${ic('refresh')} Riprova</button>`); r.onclick = info.riprova; btns.appendChild(r); }
+  const back = $(`<button class="btn block" type="button">${ic('back')} ${g ? `Torna al giorno ${g}` : 'Indietro'}</button>`);
+  back.onclick = goBack;
+  btns.appendChild(back);
+  stage.appendChild(btns);
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+// ---------- Testo delle lezioni (markdown leggero) ----------
+// **grassetto**, *corsivo*, elenchi, tabelle, riquadri «> », sottotitoli
+// «#### ». Le parole russe si toccano per ascoltarle.
+function mdInline(s){
+  let h = esc(s);
+  h = h.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(^|[^*\w])\*(?!\s)([^*]+?)\*(?!\w)/g, '$1<i>$2</i>');
+  return h.replace(/[А-Яа-яЁё́]+(?:[\s\-–,]+[А-Яа-яЁё́]+)*/g, m=>`<span class="ru-tap" lang="ru">${m}</span>`);
+}
+function mdTabella(rows){
+  const celle = r => r.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c=>c.trim());
+  const testa = celle(rows[0]);
+  const corpo = rows.slice(1).filter(r=>!/^\|\s*:?-{2,}/.test(r.trim())).map(celle);
+  // coniugazione scritta in orizzontale (я | ты | … e una riga di forme): sul telefono sta meglio in verticale
+  if(testa.length === 6 && senzaAccento(testa[0]).trim().toLowerCase() === 'я' && corpo.length === 1)
+    return `<div class="tbl-wrap"><table class="ref lz-tab"><tbody>${testa.map((h,i)=>`<tr><td>${mdInline(h)}</td><td>${mdInline(corpo[0][i] || '')}</td></tr>`).join('')}</tbody></table></div>`;
+  return `<div class="tbl-wrap"><table class="ref lz-tab${testa.length >= 4 ? ' fitta' : ''}"><thead><tr>${testa.map(h=>`<th>${mdInline(h)}</th>`).join('')}</tr></thead>`+
+         `<tbody>${corpo.map(r=>`<tr>${r.map(c=>`<td>${mdInline(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+}
+function mdHtml(src){
+  const righe = String(src||'').split('\n');
+  const speciale = r => /^(####\s|\||>|\s*[-•]\s|\s*\d+\.\s)/.test(r);
+  let out = '', i = 0;
+  while(i < righe.length){
+    const r = righe[i];
+    if(!r.trim()){ i++; continue; }
+    if(/^####\s+/.test(r)){ out += `<h3 class="lz-h">${mdInline(r.replace(/^####\s+/, ''))}</h3>`; i++; continue; }
+    if(/^\|/.test(r)){ const rows = []; while(i < righe.length && /^\|/.test(righe[i])) rows.push(righe[i++]); out += mdTabella(rows); continue; }
+    if(/^>/.test(r)){
+      const q = []; while(i < righe.length && /^>/.test(righe[i])) q.push(righe[i++].replace(/^>\s?/, ''));
+      out += `<div class="lz-box"><span aria-hidden="true">💡</span><div>${q.map(mdInline).join('<br>')}</div></div>`; continue;
+    }
+    if(/^\s*[-•]\s+/.test(r)){
+      const li = []; while(i < righe.length && /^\s*[-•]\s+/.test(righe[i])) li.push(righe[i++].replace(/^\s*[-•]\s+/, ''));
+      out += `<ul class="lz-ul">${li.map(x=>`<li>${mdInline(x)}</li>`).join('')}</ul>`; continue;
+    }
+    if(/^\s*\d+\.\s+/.test(r)){
+      const li = []; while(i < righe.length && /^\s*\d+\.\s+/.test(righe[i])) li.push(righe[i++].replace(/^\s*\d+\.\s+/, ''));
+      out += `<ol class="lz-ul">${li.map(x=>`<li>${mdInline(x)}</li>`).join('')}</ol>`; continue;
+    }
+    const p = []; while(i < righe.length && righe[i].trim() && !speciale(righe[i])) p.push(righe[i++]);
+    out += `<p>${p.map(mdInline).join('<br>')}</p>`;
+  }
+  return out;
+}
+// Tocco su una parola russa del testo: la si ascolta
+function attivaRuTap(el){
+  el.addEventListener('click', e=>{
+    const t = e.target.closest('.ru-tap');
+    if(!t) return;
+    speak(t.textContent);
+    t.classList.add('on'); setTimeout(()=>t.classList.remove('on'), 900);
+  });
+}
+const paginaLezione = txt => String(txt||'').split(/\n-{3,}\s*\n/).map(x=>x.trim()).filter(Boolean);
+
+// Popup di una parola toccata in un testo (traduzione, ascolto, Spiega, salva)
+function popParolaCorso(el, parola, gl){
+  document.querySelectorAll('.vika-pop').forEach(p=>p.remove());
+  document.querySelectorAll('.lt-w.on').forEach(p=>p.classList.remove('on'));
+  el.classList.add('on');
+  const nuda = senzaAccento(parola);
+  const tr = traduciParola(nuda, gl);
+  const pop = $(`<div class="vika-pop lt-pop"><b></b><div class="vika-it"></div><div class="pop-row"></div></div>`);
+  pop.querySelector('b').textContent = parola;
+  if(tr) pop.querySelector('.vika-it').textContent = tr.it;
+  else trEstesa(nuda, pop.querySelector('.vika-it'));
+  const row = pop.querySelector('.pop-row');
+  const sp = $(`<button type="button">🔊 Ascolta</button>`);
+  sp.onclick = e=>{ e.stopPropagation(); speak(parola); };
+  const sg = $(`<button type="button">🔍 Spiega</button>`);
+  sg.onclick = e=>{ e.stopPropagation(); pop.remove(); el.classList.remove('on'); sheetApri('La parola', ()=>pagParola(nuda, tr && !tr.nome ? tr.it : '', {glossario:gl})); };
+  row.append(sp, sg);
+  document.body.appendChild(pop);
+  const rc = el.getBoundingClientRect();
+  const pw = Math.min(300, window.innerWidth - 24);
+  pop.style.maxWidth = pw + 'px';
+  pop.style.left = Math.max(12, Math.min(window.innerWidth - pw - 12, rc.left + window.scrollX + rc.width/2 - pw/2)) + 'px';
+  pop.style.top = (rc.bottom + window.scrollY + 8) + 'px';
+  speak(parola);
+  const chiudi = ev=>{ if(!pop.contains(ev.target) && ev.target!==el){ pop.remove(); el.classList.remove('on'); document.removeEventListener('pointerdown', chiudi, true); } };
+  setTimeout(()=>document.addEventListener('pointerdown', chiudi, true), 0);
+  onLeave(()=>document.removeEventListener('pointerdown', chiudi, true));
+}
+// Righe di testo russo (frasi del giorno, letture): ogni parola si tocca
+function righeTesto(frasi, gl, tema){
+  const testo = $(`<div class="lt-text"></div>`);
+  const righe = frasi.map(f=>{
+    const r = $(`<div class="lt-s"><button class="lt-play" type="button" aria-label="Ascolta la frase">${ic('vol')}</button><div class="lt-body"><div class="lt-ru" lang="ru"></div><div class="lt-it"></div></div></div>`);
+    const lente = lensBtn(senzaAccento(f.ru), f.it, {glossario:gl, tema});
+    lente.classList.add('lt-lens');
+    r.appendChild(lente);
+    const ruEl = r.querySelector('.lt-ru');
+    f.ru.split(/(\s+)/).forEach(tok=>{
+      if(/^\s+$/.test(tok)){ ruEl.appendChild(document.createTextNode(' ')); return; }
+      const m = tok.match(/^([«"(—–-]*)(.*?)([.,!?;:»")…]*)$/);
+      const [, pre, core, post] = m || ['', '', tok, ''];
+      if(pre) ruEl.appendChild(document.createTextNode(pre));
+      if(core && /[а-яё]/i.test(core)){
+        const w = $(`<span class="lt-w" role="button" tabindex="0"></span>`);
+        w.textContent = core;
+        w.onclick = e=>{ e.stopPropagation(); popParolaCorso(w, core, gl); };
+        ruEl.appendChild(w);
+      } else if(core) ruEl.appendChild(document.createTextNode(core));
+      if(post) ruEl.appendChild(document.createTextNode(post));
+    });
+    r.querySelector('.lt-it').textContent = f.it;
+    testo.appendChild(r);
+    return r;
+  });
+  return {testo, righe};
+}
+// «Ascolta tutto» e «Mostra/Nascondi traduzione» per un testo
+function barraTesto(stage, frasi, testo, righe, mostraIt){
+  const bar = $(`<div class="dlg-bar"></div>`);
+  const playBtn = $(`<button class="btn blue sm" type="button"></button>`);
+  const trBtn = $(`<button class="btn soft sm" type="button"></button>`);
+  bar.append(playBtn, trBtn);
+  let showIt = mostraIt;
+  const paintTr = ()=>{ testo.classList.toggle('show-it', showIt); trBtn.innerHTML = `${ic('eye')} ${showIt ? 'Nascondi traduzione' : 'Mostra traduzione'}`; };
+  trBtn.onclick = ()=>{ showIt = !showIt; paintTr(); };
+  paintTr();
+  let tok = 0, playing = false;
+  const mark = k => righe.forEach((r,i)=>r.classList.toggle('playing', i===k));
+  const paintPlay = ()=>{ playBtn.innerHTML = playing ? `${ic('stop')} Ferma` : `${ic('play')} Ascolta tutto`; };
+  const stopPlay = ()=>{ tok++; playing = false; mark(-1); paintPlay(); };
+  playBtn.onclick = ()=>{
+    if(playing){ stopPlay(); stopSpeech(); return; }
+    const my = ++tok; playing = true; paintPlay();
+    let k = 0;
+    const step = ()=>{
+      if(my !== tok) return;
+      if(k >= frasi.length){ stopPlay(); return; }
+      mark(k); righe[k].scrollIntoView({block:'nearest', behavior:'smooth'});
+      speakAs(frasi[k].ru, 'A', ()=>{ if(my !== tok) return; k++; setTimeout(step, 450); });
+    };
+    step();
+  };
+  righe.forEach((r,k)=>{ r.querySelector('.lt-play').onclick = ()=>{ stopPlay(); mark(k); speakAs(frasi[k].ru, 'A', ()=>mark(-1)); }; });
+  paintPlay();
+  onLeave(()=>{ tok++; stopSpeech(); });
+  return bar;
+}
+
+// ---------- I passi ----------
+function apriPasso(g, p){
+  if(p === 'lezione') return runLezioneCorso(g);
+  if(p === 'parole') return runParoleNuove(g);
+  if(p === 'frasi') return runFrasiCorso(g);
+  if(p === 'esercizi') return runEserciziCorso(g);
+  if(p === 'ripasso') return runRipassoCorso(g);
+  if(p === 'riepilogo') return runRiepilogo(g);
+  if(p === 'lettura') return runLetturaCorso(g);
+  if(p === 'test' || p === 'modulo' || p === 'esame') return runTestCorso(g, p);
+  return runGiorno(g);
+}
+function avviaPassoCorso(g, p){
+  // aprire un giorno più avanti (non ancora fatto) lo rende il giorno corrente
+  updCorso(s=>{ if(!s.cur || (g > s.cur && !fattoIn(s, g))) s.cur = g; s.avviato = s.avviato || todayStr(); });
+  navigateTo(()=>apriPasso(g, p));
+}
+// Dopo un passo senza punteggio (lezione, frasi, riepilogo): dritti al successivo
+function passoFatto(g, p){
+  const next = prossimoPasso(g, p);
+  if(next && (next !== 'ripasso' || nDovutiCorso())){ segnaPassoCorso(g, p); sostituisci(()=>apriPasso(g, next)); }
+  else sostituisci(()=>{ const st = header(`Giorno ${g}`, {narrow:true}); fineDiPasso(g, p, st, 0, 0, {titolo:'Fatto!', big:'✅'}); });
+}
+
+function runLezioneCorso(g){
+  const d = giornoC(g);
+  const pagine = paginaLezione(d && d.lezione);
+  const stage = header(`Giorno ${g} · Lezione`, {narrow:true});
+  if(!pagine.length) return passoFatto(g, 'lezione');
+  let k = 0;
+  const top = $(`<div class="lz-top"><div class="lz-tit"></div><div class="lz-dots"></div></div>`);
+  top.querySelector('.lz-tit').textContent = d.titolo;
+  stage.appendChild(top);
+  const card = $(`<div class="pcard lz-card"></div>`);
+  stage.appendChild(card);
+  attivaRuTap(card);
+  const nav = $(`<div class="row"></div>`);
+  const prev = $(`<button class="btn" type="button" style="flex:0 0 auto;padding:0 18px" aria-label="Pagina precedente">${ic('back')}</button>`);
+  const next = $(`<button class="btn primary" type="button" style="flex:1"></button>`);
+  nav.append(prev, next);
+  stage.appendChild(nav);
+  function mostra(dir){
+    card.innerHTML = (k === 0 && d.obiettivo ? `<div class="lz-obj">🎯 ${mdInline(d.obiettivo)}</div>` : '') + mdHtml(pagine[k]);
+    card.classList.remove('slide-left','slide-right'); void card.offsetWidth;
+    if(dir) card.classList.add(dir === 'left' ? 'slide-left' : 'slide-right');
+    top.querySelector('.lz-dots').innerHTML = pagine.length > 1 ? pagine.map((_,i)=>`<i class="${i===k?'on':''}"></i>`).join('') : '';
+    prev.style.visibility = k ? 'visible' : 'hidden';
+    next.innerHTML = k < pagine.length-1 ? `Avanti ${ic('play')}` : `${ic('check')} Ho capito`;
+    window.scrollTo(0, 0);
+  }
+  prev.onclick = ()=>{ if(k > 0){ k--; mostra('right'); } };
+  next.onclick = ()=>{ if(k < pagine.length-1){ k++; mostra('left'); } else passoFatto(g, 'lezione'); };
+  onSwipe(card, dir=>{ if(dir === 'left' && k < pagine.length-1){ k++; mostra('left'); } else if(dir === 'right' && k > 0){ k--; mostra('right'); } });
+  const onKey = e=>{ if(e.key === 'ArrowRight' || e.key === 'Enter'){ e.preventDefault(); next.click(); } else if(e.key === 'ArrowLeft') prev.click(); };
+  document.addEventListener('keydown', onKey);
+  onLeave(()=>document.removeEventListener('keydown', onKey));
+  mostra();
+}
+
+// Esempio per una parola nuova: una frase del giorno (o della settimana) che la contiene
+function esempioPer(p, d){
+  const radice = w => { const b = senzaAccento(w).toLowerCase().replace(/ё/g,'е'); return b.length > 4 ? b.slice(0, b.length - 2) : b; };
+  const r = radice(p.ru.split(/\s+/)[0]);
+  if(!r || r.length < 2) return null;
+  const sw = settimanaDi(d.g);
+  const cand = [...(d.frasi||[]), ...CORSO.listaFrasi.filter(f=>settimanaDi(f.g)===sw && f.g!==d.g)];
+  return cand.find(f=>paroleFrase(senzaAccento(f.ru)).some(w=>w.toLowerCase().replace(/ё/g,'е').startsWith(r))) || null;
+}
+function runParoleNuove(g){
+  const d = giornoC(g), P = (d && d.parole) || [];
+  if(!P.length) return passoFatto(g, 'parole');
+  const stage = header(`Giorno ${g} · Parole nuove`, {narrow:true});
+  let i = 0;
+  const bar = progressBar(stage);
+  const wrap = $(`<div class="list" style="gap:12px"></div>`); stage.appendChild(wrap);
+  function verifica(){
+    sostituisci(()=>runSessioneCorso({chiave:`pn:${g}`, titolo:`Giorno ${g} · Te le ricordi?`,
+      crea:()=>shuffle(P).map(p=>({t:'pr', id:p.id})), ripeti:true,
+      fine:(st, ok, tot)=>fineDiPasso(g, 'parole', st, ok, tot, {titolo: ok===tot ? 'Tutte giuste!' : 'Parole imparate!',
+        testo:`${ok} risposte giuste su ${tot}. Le rivedrai nel ripasso: prima spesso, poi sempre più di rado.`})}));
+  }
+  function mostra(){
+    if(i >= P.length) return verifica();
+    bar.style.width = (i/P.length*100)+'%'; bar.setNum(i, P.length);
+    const p = P[i];
+    wrap.innerHTML = '';
+    const card = $(`<div class="qcard nw-card">
+        <div class="nw-top"><span class="nw-tipo"></span>${genderBadgeHTML(senzaAccento(p.ru), TIPO_CORSO[p.t])}</div>
+        <button class="nw-ru" type="button" lang="ru"></button>
+        <div class="nw-tr"></div>
+        <div class="nw-it"></div>
+        <div class="nw-nota"></div>
+      </div>`);
+    card.querySelector('.nw-tipo').textContent = TIPO_BREVE[p.t] ? TIPO_BREVE[p.t] + (p.asp ? ' ' + (ASP_IT[p.asp]||p.asp) : '') : '';
+    const ruB = card.querySelector('.nw-ru');
+    ruB.innerHTML = `<span></span>${ic('vol')}`;
+    ruB.querySelector('span').textContent = p.ru;
+    ruB.style.fontSize = fitSize(senzaAccento(p.ru), 44, 26) + 'px';
+    ruB.onclick = ()=>speak(p.ru);
+    card.querySelector('.nw-tr').textContent = p.tr || '';
+    card.querySelector('.nw-it').textContent = p.it;
+    if(p.nota) card.querySelector('.nw-nota').textContent = p.nota; else card.querySelector('.nw-nota').remove();
+    const es = esempioPer(p, d);
+    if(es){
+      const e = $(`<button class="nw-es" type="button"><span class="ru" lang="ru"></span><span class="it"></span></button>`);
+      e.querySelector('.ru').textContent = es.ru; e.querySelector('.it').textContent = es.it;
+      e.onclick = ()=>speak(es.ru);
+      card.appendChild(e);
+    }
+    wrap.appendChild(card);
+    wrap.appendChild(azioniTesto(senzaAccento(p.ru), p.it, {translit:p.tr, tipo:TIPO_CORSO[p.t]}));
+    const nav = $(`<div class="row"></div>`);
+    const prev = $(`<button class="btn" type="button" style="flex:0 0 auto;padding:0 18px" aria-label="Parola precedente">${ic('back')}</button>`);
+    const next = $(`<button class="btn primary" type="button" style="flex:1"></button>`);
+    next.innerHTML = i < P.length-1 ? `Avanti ${ic('play')}` : `${ic('check')} Ora vediamo se le ricordi`;
+    prev.style.visibility = i ? 'visible' : 'hidden';
+    prev.onclick = ()=>{ if(i > 0){ i--; mostra(); } };
+    next.onclick = ()=>{ i++; mostra(); };
+    nav.append(prev, next);
+    wrap.appendChild(nav);
+    setTimeout(()=>speak(p.ru), 220);
+  }
+  const onKey = e=>{ if(e.target && /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+    if(e.key === 'ArrowRight' || e.key === 'Enter'){ e.preventDefault(); i++; mostra(); } else if(e.key === 'ArrowLeft' && i > 0){ i--; mostra(); } };
+  document.addEventListener('keydown', onKey);
+  onLeave(()=>document.removeEventListener('keydown', onKey));
+  mostra();
+}
+
+function runFrasiCorso(g){
+  const d = giornoC(g), F = (d && d.frasi) || [];
+  if(!F.length) return passoFatto(g, 'frasi');
+  preparaDizEsteso();
+  const stage = header(`Giorno ${g} · Frasi`, {narrow:true});
+  stage.appendChild($(`<p class="sg-intro">Ascolta ogni frase e <b>ripetila ad alta voce</b>. Tocca una parola per tradurla, la lente per vederla smontata parola per parola.</p>`));
+  const gl = glossarioDi({});
+  const {testo, righe} = righeTesto(F, gl, `Corso · giorno ${g}`);
+  stage.appendChild(barraTesto(stage, F, testo, righe, true));
+  stage.appendChild(testo);
+  F.forEach((f, k)=>{ if(f.nota){ const n = $(`<div class="lt-nota"></div>`); n.textContent = '💡 ' + f.nota; righe[k].querySelector('.lt-body').appendChild(n); } });
+  const b = $(`<button class="btn primary block" type="button">${ic('check')} Fatto: agli esercizi</button>`);
+  b.onclick = ()=>passoFatto(g, 'frasi');
+  stage.appendChild(b);
+}
+
+function runEserciziCorso(g){
+  const d = giornoC(g);
+  runSessioneCorso({chiave:`es:${g}`, titolo:`Giorno ${g} · Esercizi`, crea:()=>componiEserciziGiorno(d), ripeti:true,
+    fine:(st, ok, tot)=>fineDiPasso(g, 'esercizi', st, ok, tot)});
+}
+
+function runRipassoCorso(g){
+  const chiave = 'rip:' + todayStr();
+  if(!sessGet(chiave) && !nDovutiCorso()){
+    const st = header('Ripasso', {narrow:true});
+    return fineDiPasso(g, 'ripasso', st, 0, 0, {big:'✨', titolo:'Sei in pari!',
+      testo:'Niente da ripassare adesso. Le parole che sai torneranno quando sarà il momento giusto: prima dopo un giorno, poi dopo tre, una settimana, un mese…'});
+  }
+  runSessioneCorso({chiave, titolo:'Ripasso', crea:()=>componiRipassoCorso(20), ripeti:true,
+    fine:(st, ok, tot)=>fineDiPasso(g, 'ripasso', st, ok, tot, {testo:`${ok} risposte giuste su ${tot}.${nDovutiCorso() ? ` Ne restano ${nDovutiCorso()} da ripassare: puoi fare un altro giro.` : ' Sei in pari!'}`,
+      riprova: nDovutiCorso() ? ()=>sostituisci(()=>runRipassoCorso(g)) : null})});
+}
+
+function runRiepilogo(g){
+  const sw = settimanaDi(g), S = settInfo(sw);
+  const stage = header(`Settimana ${sw} · Riepilogo`, {narrow:true});
+  stage.appendChild($(`<div class="pill-hero"><div class="e">📋</div><h2></h2><p class="muted" style="margin:0">I punti chiave dei sei giorni. Tocca un giorno per riaprire la sua lezione.</p></div>`));
+  stage.querySelector('.pill-hero h2').textContent = S.titolo;
+  giorniSettimana(sw).filter(d=>d.tipo === 'lezione').forEach(d=>{
+    const c = $(`<div class="pcard rie-card"><button class="rie-h" type="button"><span class="rie-n"></span><b></b></button><ul class="lz-ul"></ul></div>`);
+    c.querySelector('.rie-n').textContent = d.g;
+    c.querySelector('b').textContent = d.titolo;
+    c.querySelector('.rie-h').onclick = ()=>navigateTo(()=>runLezioneCorso(d.g));
+    c.querySelector('ul').innerHTML = (d.breve||[]).map(b=>`<li>${mdInline(b)}</li>`).join('');
+    attivaRuTap(c);
+    stage.appendChild(c);
+  });
+  const P = giorniSettimana(sw).flatMap(d=>d.parole||[]);
+  if(P.length){
+    const det = $(`<details class="pcard lt-gloss" open><summary>${ic('book')} Le parole della settimana <span class="pill">${P.length}</span></summary><div class="kw-list"></div></details>`);
+    P.forEach(p=>det.querySelector('.kw-list').appendChild(kwRow(p.ru, p.it, {translit:p.tr, tipo:TIPO_CORSO[p.t]})));
+    stage.appendChild(det);
+  }
+  const b = $(`<button class="btn primary block" type="button">${ic('check')} Ripassato: avanti</button>`);
+  b.onclick = ()=>passoFatto(g, 'riepilogo');
+  stage.appendChild(b);
+}
+
+function runLetturaCorso(g){
+  const d = giornoC(g), L = d && d.lettura;
+  if(!L) return passoFatto(g, 'lettura');
+  preparaDizEsteso();
+  const stage = header('Lettura', {narrow:true});
+  const hero = $(`<div class="dlg-hero"><div class="e">📰</div><div class="tx"><button class="ru" type="button" title="Ascolta"><span lang="ru"></span>${ic('vol')}</button><p></p></div></div>`);
+  hero.querySelector('.ru span').textContent = L.titoloRu;
+  hero.querySelector('p').textContent = `${L.titolo} · tocca le parole per tradurle`;
+  hero.querySelector('.ru').onclick = ()=>speak(L.titoloRu);
+  stage.appendChild(hero);
+  const gl = glossarioDi({});
+  const {testo, righe} = righeTesto(L.frasi, gl, `Lettura: ${L.titolo}`);
+  stage.appendChild(barraTesto(stage, L.frasi, testo, righe, false));
+  stage.appendChild(testo);
+  const D = L.domande || [];
+  const b = $(`<button class="btn primary block" type="button"></button>`);
+  b.innerHTML = D.length ? `${ic('quiz')} Domande di comprensione (${D.length})` : `${ic('check')} Letto: avanti`;
+  b.onclick = ()=>{
+    stopSpeech();
+    if(!D.length) return passoFatto(g, 'lettura');
+    sostituisci(()=>runSessioneCorso({chiave:`lt:${g}`, titolo:'Domande', crea:()=>shuffle(D.map(x=>({t:'ex', id:x.id}))),
+      fine:(st, ok, tot)=>fineDiPasso(g, 'lettura', st, ok, tot, {titolo: ok/tot >= .6 ? 'Hai capito il testo!' : 'Rileggi con calma',
+        testo: ok/tot >= .6 ? `${ok} risposte giuste su ${tot}.` : `${ok} risposte giuste su ${tot}. Prova a rileggere il testo con la traduzione.`,
+        riprova:()=>sostituisci(()=>runLetturaCorso(g))})}));
+  };
+  stage.appendChild(b);
+}
+
+function runTestCorso(g, tipo){
+  const m = moduloDi(g), sw = settimanaDi(g);
+  const [titolo, n, giorni] = tipo === 'esame' ? ['Esame finale', 40, CORSO.giorni]
+    : tipo === 'modulo' ? [`Test del modulo ${m}`, 25, giorniModulo(m)]
+    : [`Test della settimana ${sw}`, 16, giorniSettimana(sw)];
+  const chiave = `${tipo}:${g}`;
+  runSessioneCorso({chiave, titolo, crea:()=>componiTest(giorni, n),
+    fine:(st, ok, tot)=>{
+      const pct = tot ? Math.round(ok/tot*100) : 0;
+      const prima = corsoStato().test[chiave] || 0;
+      updCorso(s=>{ s.test[chiave] = Math.max(s.test[chiave]||0, pct); });
+      if(pct > prima && pct >= 80) addXP(tipo === 'esame' ? 300 : tipo === 'modulo' ? 100 : 40);
+      const consiglio = pct >= 80 ? 'Ottimo: puoi andare avanti tranquillo.' : pct >= 60 ? 'Bene! Il ripasso dei prossimi giorni sistemerà il resto.' : 'Conviene ripassare un po\': riapri le lezioni della settimana dal riepilogo.';
+      if(tipo === 'esame'){
+        fineDiPasso(g, 'esame', st, ok, tot, {titolo: pct >= 60 ? 'Диплом! Ce l\'hai fatta!' : 'Esame finito',
+          testo:`${ok} risposte giuste su ${tot} (${pct}%). ${pct >= 60 ? 'Hai completato il corso di russo: поздравляю!' : 'Ripassa e riprova quando vuoi.'}`,
+          riprova:()=>sostituisci(()=>runTestCorso(g, tipo))});
+        if(pct >= 60){ const dip = $(`<div class="pcard diploma"><div class="dp-k">Диплом</div><div class="dp-t">Corso di russo in 365 giorni</div><div class="dp-s">completato il ${fmtData(todayStr())} · ${pct}%</div></div>`); st.insertBefore(dip, st.children[1]); }
+        return;
+      }
+      fineDiPasso(g, tipo, st, ok, tot, {titolo: tipo === 'modulo' ? `Modulo ${m}: ${pct}%` : `Settimana ${sw}: ${pct}%`,
+        testo:`${ok} risposte giuste su ${tot}. ${consiglio}${prima ? ` Miglior risultato: ${Math.max(prima, pct)}%.` : ''}`,
+        riprova:()=>sostituisci(()=>runTestCorso(g, tipo))});
+    }});
+}
+
+// ---------- Il giorno ----------
+function descPasso(d, p){
+  if(p === 'lezione') { const n = paginaLezione(d.lezione).length; return n > 1 ? `La spiegazione, in ${n} pagine` : 'La spiegazione'; }
+  if(p === 'parole') return `${plur((d.parole||[]).length, 'parola', 'parole')} da imparare, con la pronuncia`;
+  if(p === 'frasi') return `${plur((d.frasi||[]).length, 'frase', 'frasi')} da ascoltare e ripetere`;
+  if(p === 'esercizi') return 'Scegli, ascolta, scrivi, componi';
+  if(p === 'ripasso'){ const n = nDovutiCorso(); return n ? `${n > 20 ? '20+' : n} cose dei giorni passati da ripassare` : 'Le cose dei giorni passati, quando tocca a loro'; }
+  if(p === 'riepilogo') return 'I punti chiave e le parole della settimana';
+  if(p === 'lettura') return d.lettura ? `${d.lettura.titoloRu} · ${d.lettura.titolo}` : '';
+  if(p === 'test') return 'Domande su tutta la settimana';
+  if(p === 'modulo') return 'Domande su tutto il modulo (4 settimane)';
+  if(p === 'esame') return 'Domande su tutto il corso';
+  return '';
+}
+const VEDI = {
+  cyr: ['🔤', 'Alfabeto: pronuncia e quiz', ()=>start('cyr')],
+  numeri: ['🔢', 'Numeri e ore', ()=>start('numeri')],
+  palestra: ['🧠', 'Palestra di grammatica', ()=>start('palestra')],
+  verbi: ['⚡', 'Verbi coniugati', ()=>start('verbi')],
+  ref: ['📏', 'Regole grammaticali', ()=>start('ref')],
+  frasario: ['💬', 'Frasario', ()=>start('frasario')],
+  cultura: ['🏛️', 'Letture e cultura', ()=>start('cultura')],
+};
+function vediLink(v){
+  const [k, arg] = v.split(':');
+  if(k === 'dialogo'){ const d = (DB.dialoghi||[]).find(x=>x.id===arg); return d ? [d.icona||'🎭', `Dialogo: ${d.titolo}`, ()=>navigateTo(()=>runDialogo(d))] : null; }
+  if(k === 'lettura'){ const l = (DB.letture||[]).find(x=>x.id===arg); return l ? [l.icona||'📖', `Racconto: ${l.titolo}`, ()=>navigateTo(()=>runLettura(l))] : null; }
+  if(k === 'ref'){ const r = (DB.riferimento||[]).find(x=>x.id===arg); if(r) return [r.icona||'📏', `Regole: ${r.categoria}`, ()=>navigateTo(()=>runReference(r.id))]; }
+  if(k === 'casi') return ['📐', 'Allenati con i casi', ()=>navigateTo(()=>runCasi(arg || null))];
+  if(k === 'moto') return ['🚶', 'Verbi di moto: quiz', ()=>navigateTo(()=>runMotoQuiz())];
+  return VEDI[k] || null;
+}
+function runGiorno(g){
+  g = Math.max(1, Math.min(365, g|0));
+  const d = giornoC(g);
+  const stage = header(`Giorno ${g}`);
+  const navRow = ()=>{
+    const r = $(`<div class="gd-nav"></div>`);
+    const pr = $(`<button class="btn" type="button">${ic('back')} Giorno ${g-1}</button>`);
+    const pg = $(`<button class="btn" type="button" aria-label="Il programma">${ic('map')}</button>`);
+    const nx = $(`<button class="btn" type="button">Giorno ${g+1} <span class="gd-chev">${ic('back')}</span></button>`);
+    if(g <= 1) pr.style.visibility = 'hidden';
+    if(g >= 365) nx.style.visibility = 'hidden';
+    pr.onclick = ()=>sostituisci(()=>runGiorno(g-1));
+    nx.onclick = ()=>sostituisci(()=>runGiorno(g+1));
+    pg.onclick = ()=>navigateTo(()=>runCorso(g));
+    r.append(pr, pg, nx);
+    return r;
+  };
+  if(!d){
+    stage.appendChild($(`<div class="empty"><div class="big">🛠️</div>Questo giorno è ancora in preparazione.</div>`));
+    stage.appendChild(navRow());
+    return;
+  }
+  const s = corsoStato(), info = s.g[g] || {}, fatti = new Set(info.p||[]);
+  const passi = passiDi(d), core = passiCore(d);
+  const nf = core.filter(p=>fatti.has(p)).length;
+  const m = moduloDi(g), sw = settimanaDi(g), M = modInfo(m);
+  const head = $(`<div class="gd-head"><div class="gd-kick"></div><h2 class="gd-title"></h2><p class="gd-obj"></p><div class="gd-stato"></div></div>`);
+  head.querySelector('.gd-kick').textContent = `${M.icona} Modulo ${m} · ${M.livello} · Settimana ${sw}`;
+  head.querySelector('.gd-title').textContent = d.titolo;
+  if(d.obiettivo) head.querySelector('.gd-obj').innerHTML = mdInline(d.obiettivo); else head.querySelector('.gd-obj').remove();
+  const stato = head.querySelector('.gd-stato');
+  if(info.f) stato.innerHTML = `<span class="pill green">${ic('check')} Fatto il ${fmtData(info.f)}</span>`;
+  else if(info.n) stato.innerHTML = `<span class="pill gold">⭐ Segnato come già noto</span>`;
+  else stato.innerHTML = `<span class="pill${nf ? ' blue' : ''}">${nf} di ${core.length} passi</span>` + (g === s.cur ? ` <span class="pill red">Oggi</span>` : '');
+  attivaRuTap(head);
+  stage.appendChild(head);
+
+  // i passi
+  const prossimo = prossimoPasso(g);
+  const list = $(`<div class="list"></div>`);
+  passi.forEach(p=>{
+    const [e, t] = PASSI_INFO[p];
+    const done = fatti.has(p);
+    const b = $(`<button class="tile wide passo${done?' p-fatto':''}${p===prossimo?' p-next':''}" type="button"><div class="ico">${done ? '✅' : e}</div>
+      <div class="txt"><div class="t"></div><div class="d"></div></div></button>`);
+    b.querySelector('.t').textContent = t + (passoFacoltativo(p) ? ' · consigliato' : '');
+    b.querySelector('.d').textContent = descPasso(d, p) + (done ? ' · fatto ✓' : '');
+    b.onclick = ()=>avviaPassoCorso(g, p);
+    list.appendChild(b);
+  });
+  // pulsante principale
+  if(prossimo){
+    const [e, t] = PASSI_INFO[prossimo];
+    const go = $(`<button class="btn primary block" type="button">${ic('play')} ${nf || fatti.size ? 'Continua' : 'Inizia'}: ${t}</button>`);
+    go.onclick = ()=>avviaPassoCorso(g, prossimo);
+    stage.appendChild(go);
+  } else if(g < 365){
+    const nx = $(`<button class="btn primary block" type="button">Giorno ${g+1}: ${esc((giornoC(g+1)||{}).titolo||'')} ›</button>`);
+    nx.onclick = ()=>sostituisci(()=>runGiorno(g+1));
+    stage.appendChild(nx);
+  }
+  stage.appendChild(list);
+
+  // le parole del giorno, per consultarle
+  if((d.parole||[]).length){
+    const det = $(`<details class="pcard lt-gloss"><summary>${ic('book')} Le parole del giorno <span class="pill">${d.parole.length}</span></summary><div class="kw-list"></div></details>`);
+    d.parole.forEach(p=>det.querySelector('.kw-list').appendChild(kwRow(p.ru, p.it, {translit:p.tr, tipo:TIPO_CORSO[p.t]})));
+    stage.appendChild(det);
+  }
+  // per approfondire: le sezioni dell'app collegate
+  const vedi = (d.vedi||[]).map(vediLink).filter(Boolean);
+  if(vedi.length){
+    stage.appendChild($(`<div class="sec-h">Per approfondire</div>`));
+    const l = $(`<div class="list"></div>`);
+    vedi.forEach(([e, t, fn])=>{ const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t"></div></div></button>`); b.querySelector('.t').textContent = t; b.onclick = fn; l.appendChild(b); });
+    stage.appendChild(l);
+  }
+  // azioni: lo so già, da rifare, giorno di oggi
+  const az = $(`<div class="gd-az"></div>`);
+  if(!info.f && !info.n){
+    const noto = $(`<button class="textbtn" type="button">⭐ Lo so già: segna come fatto</button>`);
+    noto.onclick = ()=>{ segnaNoti([g], true); toast(`⭐ Giorno ${g} segnato come già noto`); sostituisci(()=>runGiorno(g)); };
+    az.appendChild(noto);
+  } else {
+    const rif = $(`<button class="textbtn" type="button">${ic('refresh')} Segna come da rifare</button>`);
+    rif.onclick = ()=>{ updCorso(x=>{ delete x.g[g]; }); sostituisci(()=>runGiorno(g)); };
+    az.appendChild(rif);
+  }
+  if(s.cur !== g){
+    const cur = $(`<button class="textbtn" type="button">${ic('target')} Riparti da questo giorno</button>`);
+    cur.onclick = ()=>{ impostaCorrente(g); toast(`Da oggi il corso riparte dal giorno ${g}`); sostituisci(()=>runGiorno(g)); };
+    az.appendChild(cur);
+  }
+  stage.appendChild(az);
+  stage.appendChild(navRow());
+}
+
+// ---------- La panoramica del corso ----------
+function runCorso(apri){
+  if(!CORSO){
+    const st = header('Corso');
+    return emptyDone(st, '📡', 'Corso non disponibile', 'Non riesco a caricare i contenuti del corso. Controlla la connessione e usa «Aggiorna app».');
+  }
+  if(!corsoStato().cur) return runCorsoBenvenuto();
+  const stage = header('Il tuo corso');
+  const g = giornoCorrente(), s = corsoStato();
+  const nf = nGiorniFatti(), m = moduloDi(g), M = modInfo(m);
+  const intro = introdottiCorso().parole.size;
+  stage.appendChild($(`<div class="corso-sum">
+    <div class="cs-top"><div class="cs-ico">${M.icona}</div><div><div class="cs-k">Modulo ${m} · livello ${esc(M.livello)}</div><div class="cs-t">${esc(M.titolo)}</div></div></div>
+    <div class="pbar"><i style="width:${(nf/365*100).toFixed(1)}%;background:var(--grad-prog)"></i></div>
+    <div class="sett"><div><b>${nf}</b><span>giorni fatti su 365</span></div><div><b>${intro}</b><span>parole incontrate</span></div><div><b>${dailyStreak()}</b><span>giorni di fila</span></div></div>
+  </div>`));
+  stage.appendChild(makeCorsoHero());
+  const n = nDovutiCorso();
+  const rip = $(`<button class="tile wide feat corso-rip" type="button"><div class="ico">${ic('refresh')}</div><div class="txt"><div class="t">Ripasso del corso</div><div class="d"></div></div></button>`);
+  rip.querySelector('.d').textContent = n ? `${n > 20 ? 'Più di 20' : n} cose da ripassare adesso` : 'Sei in pari: niente da ripassare adesso';
+  rip.onclick = ()=>navigateTo(()=>runRipassoCorso(null));
+  stage.appendChild(rip);
+
+  stage.appendChild($(`<div class="sec-h">Il programma · 13 moduli</div>`));
+  const modAperto = apri ? moduloDi(apri) : m;
+  CORSO.moduli.forEach(mod=>{
+    const gg = giorniModulo(mod.n);
+    const fatti = gg.filter(d=>fattoIn(s, d.g)).length;
+    const det = $(`<details class="mod-card"><summary><span class="mc-ico"></span><span class="mc-txt"><span class="mc-k"></span><b></b><span class="mc-bar"><i></i></span></span><span class="mc-n"></span></summary><div class="mc-body"></div></details>`);
+    det.querySelector('.mc-ico').textContent = mod.icona;
+    det.querySelector('.mc-k').textContent = `Modulo ${mod.n} · ${mod.livello} · giorni ${(mod.n-1)*28+1}–${mod.n===13 ? 365 : mod.n*28}`;
+    det.querySelector('b').textContent = mod.titolo;
+    det.querySelector('.mc-bar i').style.width = (gg.length ? fatti/gg.length*100 : 0) + '%';
+    det.querySelector('.mc-n').textContent = gg.length ? `${fatti}/${gg.length}` : '';
+    if(mod.n === m) det.classList.add('cur');
+    let pronto = false;
+    const riempi = ()=>{
+      if(pronto) return; pronto = true;
+      const body = det.querySelector('.mc-body');
+      const dsc = $(`<p class="mc-desc"></p>`); dsc.textContent = mod.desc; body.appendChild(dsc);
+      for(let sw = (mod.n-1)*4+1; sw <= mod.n*4; sw++){
+        const giorni = giorniSettimana(sw);
+        body.appendChild($(`<div class="mc-week">Settimana ${sw} · ${esc(settInfo(sw).titolo)}</div>`));
+        if(!giorni.length){ body.appendChild($(`<div class="mc-vuoto">In preparazione</div>`)); continue; }
+        giorni.forEach(d=>{
+          const i = s.g[d.g] || {};
+          const st = i.f ? 'ok' : i.n ? 'noto' : d.g === g ? 'cur' : (i.p||[]).length ? 'via' : '';
+          const icona = i.f ? ic('check') : i.n ? '⭐' : d.tipo === 'lezione' ? d.g : d.tipo === 'esame' ? '🎓' : d.tipo === 'test' ? '🏅' : '📋';
+          const r = $(`<button class="gd-row ${st}" type="button"><span class="gr-dot">${icona}</span><span class="gr-t"></span>${d.g === g ? '<span class="pill red">oggi</span>' : ''}</button>`);
+          r.querySelector('.gr-t').textContent = d.tipo === 'lezione' ? d.titolo : `${d.g} · ${d.titolo}`;
+          r.onclick = ()=>navigateTo(()=>runGiorno(d.g));
+          body.appendChild(r);
+        });
+      }
+      const tutti = gg.map(d=>d.g), tuttiNoti = tutti.length && tutti.every(x=>fattoIn(s, x));
+      const az = $(`<button class="textbtn" type="button"></button>`);
+      az.textContent = tuttiNoti ? '↺ Togli il «già noto» da questo modulo' : '⭐ Lo so già: segna tutto il modulo come fatto';
+      az.onclick = ()=>{
+        if(tuttiNoti){ segnaNoti(tutti, false); sostituisci(()=>runCorso(mod.n*28)); return; }
+        scegli(`Modulo ${mod.n}: lo sai già?`, `I ${tutti.length} giorni di «${mod.titolo}» diventano «già noti». Le loro parole entrano nel ripasso a piccole dosi, così verifichi di saperle davvero.`, [
+          {label:'⭐ Sì, segnali come noti', cls:'primary', fn:()=>{ segnaNoti(tutti, true); toast(`⭐ Modulo ${mod.n} segnato come già noto`); sostituisci(()=>runCorso(mod.n*28)); }},
+          {label:'Annulla'}]);
+      };
+      body.appendChild(az);
+    };
+    det.addEventListener('toggle', ()=>{ if(det.open) riempi(); });
+    if(mod.n === modAperto){ det.open = true; riempi(); }
+    stage.appendChild(det);
+  });
+
+  const foot = $(`<div class="gd-az" style="justify-content:center"></div>`);
+  const cambia = $(`<button class="textbtn" type="button">${ic('target')} Cambia punto di partenza</button>`);
+  cambia.onclick = ()=>navigateTo(runSceltaPartenza);
+  const reset = $(`<button class="textbtn" type="button" style="color:var(--bad)">${ic('trash')} Ricomincia da zero</button>`);
+  reset.onclick = ()=>scegli('Ricominciare il corso?', 'Si cancella l\'avanzamento del corso (giorni fatti, test). Le parole studiate e il loro ripasso restano.', [
+    {label:'Sì, ricomincia', cls:'primary', fn:()=>{ try{ localStorage.removeItem(CORSO_KEY); localStorage.removeItem(CORSO_SESS_KEY); }catch(e){} sostituisci(runCorso); }},
+    {label:'Annulla'}]);
+  foot.append(cambia, reset);
+  if((DB.percorso||[]).length){
+    const vecchio = $(`<button class="textbtn" type="button">${ic('map')} Il vecchio Percorso A1</button>`);
+    vecchio.onclick = ()=>start('percorso');
+    foot.appendChild(vecchio);
+  }
+  stage.appendChild(foot);
+  requestAnimationFrame(()=>{ const c = stage.querySelector('.gd-row.cur'); if(c && !apri) c.scrollIntoView({block:'center'}); });
+}
+
+// Finestra con più scelte (bottoni: {label, cls, fn})
+function scegli(titolo, testo, bottoni){
+  const ov = $(`<div class="modal-ov"><div class="modal" role="dialog" aria-modal="true"><h3></h3><p></p><div class="list" style="gap:8px"></div></div></div>`);
+  ov.querySelector('h3').textContent = titolo;
+  ov.querySelector('p').textContent = testo;
+  const chiudi = ()=>{ ov.remove(); document.removeEventListener('keydown', esc_); };
+  const esc_ = e=>{ if(e.key === 'Escape') chiudi(); };
+  document.addEventListener('keydown', esc_);
+  ov.onclick = e=>{ if(e.target === ov) chiudi(); };
+  bottoni.forEach(b=>{
+    const el = $(`<button class="btn block${b.cls ? ' '+b.cls : ''}" type="button"></button>`);
+    el.textContent = b.label;
+    el.onclick = ()=>{ chiudi(); if(b.fn) b.fn(); };
+    ov.querySelector('.list').appendChild(el);
+  });
+  document.body.appendChild(ov);
+}
+
+// ---------- Il primo avvio ----------
+function avviaCorso(g, notiPrima){
+  updCorso(s=>{ s.avviato = s.avviato || todayStr(); s.cur = g; });
+  if(notiPrima && g > 1){ const prima = []; for(let k=1; k<g; k++) prima.push(k); segnaNoti(prima, true); impostaCorrente(g); }
+  // dritti al giorno scelto; «Indietro» riporta alla panoramica del corso
+  if(_navStack.length >= 2) sostituisci(()=>runGiorno(g));
+  else navigateTo(()=>runGiorno(g));
+}
+function runCorsoBenvenuto(){
+  const stage = header('Corso in 365 giorni');
+  stage.appendChild($(`<div class="pill-hero"><div class="e">🎓</div><h2>Il russo in un anno</h2>
+    <p class="muted" style="margin:0;max-width:440px">Un percorso guidato dall'alfabeto al <b>livello B1</b>: conversare, leggere testi veri, raccontare e dire la tua.</p></div>`));
+  stage.appendChild($(`<div class="pcard corso-come">
+    <div><span>📅</span><p><b>Ogni giorno una lezione pronta</b>, circa 20 minuti: spiegazione, parole nuove, frasi, esercizi.</p></div>
+    <div><span>🔁</span><p><b>Il ripasso pensa a tutto</b>: le cose vecchie tornano proprio quando stai per dimenticarle.</p></div>
+    <div><span>🧪</span><p><b>Ogni settimana</b> riepilogo, lettura e test; ogni 4 settimane il test del modulo.</p></div>
+    <div><span>🧭</span><p><b>Nessun blocco</b>: salta ciò che sai, torna indietro quando vuoi, segna «lo so già».</p></div>
+  </div>`));
+  stage.appendChild($(`<div class="sec-h">Da dove parti?</div>`));
+  const list = $(`<div class="list"></div>`);
+  [
+    ['🔤', 'Da zero', 'Giorno 1: l\'alfabeto cirillico', ()=>avviaCorso(1, false)],
+    ['📖', 'So già leggere il cirillico', 'Giorno 8: primi contatti. La settimana dell\'alfabeto entra nel ripasso.', ()=>avviaCorso(8, true)],
+    ['🧭', 'Ho già delle basi', 'Scegli tu la settimana da cui partire', ()=>navigateTo(runSceltaPartenza)],
+  ].forEach(([e, t, dd, fn])=>{
+    const b = $(`<button class="tile wide" type="button"><div class="ico">${e}</div><div class="txt"><div class="t"></div><div class="d"></div></div></button>`);
+    b.querySelector('.t').textContent = t; b.querySelector('.d').textContent = dd;
+    b.onclick = fn;
+    list.appendChild(b);
+  });
+  stage.appendChild(list);
+  stage.appendChild($(`<p class="sg-intro" style="text-align:center">Potrai sempre cambiare: ogni giorno del programma resta aperto.</p>`));
+}
+function runSceltaPartenza(){
+  const stage = header('Da dove parti?');
+  stage.appendChild($(`<p class="sg-intro">Tocca la settimana da cui vuoi cominciare. I giorni prima potranno diventare «già noti»: le loro parole entreranno nel ripasso a piccole dosi.</p>`));
+  CORSO.moduli.forEach(mod=>{
+    stage.appendChild($(`<div class="sec-h">${mod.icona} Modulo ${mod.n} · ${esc(mod.titolo)} · ${esc(mod.livello)}</div>`));
+    const l = $(`<div class="list" style="gap:8px"></div>`);
+    for(let sw = (mod.n-1)*4+1; sw <= mod.n*4; sw++){
+      const g0 = (sw-1)*7+1;
+      const b = $(`<button class="tile wide" type="button"><div class="ico" style="font-size:15px;font-weight:800">${sw}</div><div class="txt"><div class="t"></div><div class="d"></div></div></button>`);
+      b.querySelector('.t').textContent = settInfo(sw).titolo || `Settimana ${sw}`;
+      b.querySelector('.d').textContent = `Dal giorno ${g0}` + (giornoC(g0) ? `: ${giornoC(g0).titolo}` : '');
+      b.onclick = ()=>{
+        if(g0 === 1) return avviaCorso(1, false);
+        scegli(`Parti dal giorno ${g0}?`, `Settimana ${sw}: «${settInfo(sw).titolo}». Vuoi segnare i ${g0-1} giorni precedenti come già noti?`, [
+          {label:'⭐ Sì, segnali come noti', cls:'primary', fn:()=>avviaCorso(g0, true)},
+          {label:'No, parto da lì e basta', fn:()=>avviaCorso(g0, false)},
+          {label:'Annulla'}]);
+      };
+      l.appendChild(b);
+    }
+    stage.appendChild(l);
+  });
+}
+
+// ---------- In home ----------
+function makeCorsoHero(){
+  const g = giornoCorrente(), streak = dailyStreak();
+  const chip = streak>0 ? `<span class="chip-streak">${ic('flame')} ${plur(streak,'giorno','giorni')} di fila</span>` : '';
+  let kick, title, sub, cta, frac, lab, apri;
+  if(!g){
+    kick = 'Corso di russo · 365 giorni';
+    title = 'Impara il russo in un anno';
+    sub = 'Ogni giorno una lezione pronta: spiegazione, parole nuove, esercizi e ripasso. Dall\'alfabeto al livello B1.';
+    cta = `${ic('play')} Comincia`; frac = 0; lab = `<b>365</b><small>giorni</small>`;
+    apri = ()=>start('corso');
+  } else {
+    const d = giornoC(g), info = infoG(g) || {};
+    const core = passiCore(d), fatti = passiFattiG(g), nf = core.filter(p=>fatti.has(p)).length;
+    const oggiFatto = (info.f || info.n) === todayStr();
+    kick = `Giorno ${g} di 365 · Modulo ${moduloDi(g)}`;
+    if(oggiFatto){
+      const nx = g < 365 ? giornoC(g+1) : null;
+      title = 'Fatto per oggi!';
+      sub = nx ? `Domani: «${nx.titolo}». Se vuoi, puoi andare avanti anche subito.` : 'Hai finito il corso. Поздравляю!';
+      cta = nx ? `Vai avanti lo stesso ${ic('play')}` : `${ic('trophy')} Il corso`; frac = 1; lab = ic('check');
+      apri = ()=>{ start('corso'); if(nx) navigateTo(()=>runGiorno(g+1)); };
+    } else {
+      title = d ? d.titolo : `Giorno ${g}`;
+      sub = !d ? '' : nf ? `Ti ${core.length-nf === 1 ? 'manca un passo' : `mancano ${core.length-nf} passi`} su ${core.length}.` : descrizioneGiorno(d);
+      cta = `${ic('play')} ${nf ? 'Continua' : 'Inizia'}`;
+      frac = core.length ? nf/core.length : 0; lab = `<b>${nf}</b><small>di ${core.length}</small>`;
+      apri = ()=>{ start('corso'); navigateTo(()=>runGiorno(g)); };
+    }
+  }
+  const el = $(`<button class="hero corso-hero" type="button" data-mode="corso">
+    <span class="hero-orn" aria-hidden="true"></span>
+    <div class="h-body"><div class="h-kick"></div><div class="h-title"></div><div class="h-sub"></div>
+      <div class="h-actions"><span class="h-btn">${cta}</span>${chip}</div></div>
+    <div class="pring">${ringSVG(frac)}<div class="lab">${lab}</div></div>
+  </button>`);
+  el.querySelector('.h-kick').textContent = kick;
+  el.querySelector('.h-title').textContent = title;
+  el.querySelector('.h-sub').textContent = sub;
+  el.onclick = apri;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{ const c = el.querySelector('.val'); if(c) c.style.strokeDashoffset = c.dataset.off; }));
+  return el;
+}
+// Il vecchio «Ripasso del giorno»: 10 attività miste, ora sulle cose già studiate
+function makeAllenamentoTile(){
+  const p = dailyProgress();
+  const d = p.completatoOggi && !p.fatte ? 'Fatto oggi ✓ · se vuoi, un altro giro'
+    : p.fatte ? `${p.fatte} di ${p.totale} fatte · continua` : `${p.totale} attività miste sulle cose che hai già studiato`;
+  const el = $(`<button class="tile wide feat" data-mode="daily" type="button"><div class="ico">${ic('refresh')}</div>
+    <div class="txt"><div class="t">Ripasso misto</div><div class="d"></div></div></button>`);
+  el.querySelector('.d').textContent = d;
+  el.onclick = ()=>start('daily');
+  return el;
+}
+// Le parole per il ripasso misto: col corso avviato, quelle già incontrate
+function vociPerRipassoMisto(){
+  const tutte = (DB.voci||[]).filter(v=>v.ru && v.it);
+  if(!corsoAvviato()) return tutte;
+  const intro = introdottiCorso().parole;
+  const pool = tutte.filter(v=>intro.has(v.id) || (srs[v.id] && srs[v.id].seen));
+  return pool.length >= 15 ? pool : tutte;
+}
+function frasiPerRipassoMisto(){
+  const intro = corsoAvviato() ? introdottiCorso().frasi : new Set();
+  return (DB.frasi||[]).filter(f=>!f.corso || intro.has(f.id));
+}
+// In «Progressi»
+function makeCorsoProgressCard(){
+  if(!CORSO) return null;
+  const s = corsoStato();
+  if(!s.cur) return null;
+  const nf = nGiorniFatti(), nc = nGiorniFatti(true), g = giornoCorrente(), m = moduloDi(g), M = modInfo(m);
+  const c = $(`<div class="pcard"><h3>🎓 Corso in 365 giorni</h3>
+    <div class="pbar"><i style="width:${(nf/365*100).toFixed(1)}%;background:var(--grad-prog)"></i></div>
+    <div class="plegend"><span>Giorno ${g} · Modulo ${m} (${esc(M.livello)})</span><span>${nc} completati${nf>nc ? ` · ${nf-nc} già noti` : ''}</span></div>
+    <button class="btn blue block" type="button" style="margin-top:12px">${ic('map')} Apri il corso</button></div>`);
+  c.querySelector('button').onclick = ()=>start('corso');
+  return c;
 }
 
 // ================= HOME: «Oggi per te», livello, Cremlino vivo =================
@@ -9932,6 +11546,8 @@ function runProgressi(){
     <div class="stat s-red">${ic('target')}<b>${st.precisione}%</b><span>risposte giuste</span></div>
   </div>`));
 
+  const cc = makeCorsoProgressCard();
+  if(cc) stage.appendChild(cc);
   stage.appendChild(makeLivelloCard());
   stage.appendChild(makeTraguardiCard());
 
@@ -10442,14 +12058,18 @@ setTimeout(()=>hideSplash(true), 3000);
 renderSkeleton();
 // no-cache = ricontrolla sempre col server, ma se il file non è cambiato non lo
 // riscarica (risposta 304): avvio più rapido e meno traffico.
+// Il corso (corso.json) arriva in parallelo: se manca, l'app funziona lo stesso.
+const _corsoP = fetch("corso.json", {cache:"no-cache"}).then(r=>r.ok ? r.json() : null).catch(()=>null);
 fetch("knowledge.json", {cache:"no-cache"})
   .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
-  .then(db=>{
+  .then(db=>_corsoP.then(corso=>{
     const u = userStore();
     db.voci = [...(db.voci||[]), ...(u.voci||[])];
+    db.frasi = db.frasi || [];
+    if(corso && Array.isArray(corso.giorni)){ try{ integraCorso(db, corso); }catch(e){ console.error(e); CORSO = null; } }
     DB=db; sincronizzaVerbiEsercizi(); renderHome(); hideSplash();
     riprendiSezione();
-  })
+  }))
   .catch(e=>{
     hideSplash(true);
     app.innerHTML=`<div class="errbox"><div class="big">⚠️</div><p>Impossibile caricare i contenuti.<br><span class="muted">Controlla la connessione e riprova.</span></p><button class="btn primary" type="button" onclick="location.reload()" style="max-width:220px">Riprova</button><small>${esc(e)}</small></div>`;
